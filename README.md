@@ -15,4 +15,5 @@ day two:
     好像不是，算了。没什么进步的。今天拼凑出了一多向的proxy server and client
     但是失败了。足足被电信封杀了半天。
     还找不到原因。郁闷。
-    
+day three:
+    到了三天了。
