@@ -17,3 +17,8 @@ day two:
     还找不到原因。郁闷。
 day three:
     到了三天了。
+day four:
+    hello
+day five:
+    到今天为止，对于异步还是半知不解。defer
+    
