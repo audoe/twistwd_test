@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/!svn/ver/6272/openkomodo/trunk/src/editor/catalogs
+END
+catalog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/!svn/ver/5417/openkomodo/trunk/src/editor/catalogs/catalog.xml
+END
+w3c-catalog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/!svn/ver/14/openkomodo/trunk/src/editor/catalogs/w3c-catalog.xml
+END
+Conscript
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/280/openkomodo/trunk/src/editor/catalogs/Conscript
+END
+oasis-catalog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/!svn/ver/14/openkomodo/trunk/src/editor/catalogs/oasis-catalog.xml
+END
+wapforum-catalog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/!svn/ver/14/openkomodo/trunk/src/editor/catalogs/wapforum-catalog.xml
+END

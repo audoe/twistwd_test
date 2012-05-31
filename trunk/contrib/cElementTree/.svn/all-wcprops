@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/!svn/ver/8429/openkomodo/trunk/contrib/cElementTree
+END
+setup.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/!svn/ver/14/openkomodo/trunk/contrib/cElementTree/setup.py
+END
+CHANGES
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/!svn/ver/14/openkomodo/trunk/contrib/cElementTree/CHANGES
+END
+PKG-INFO
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/!svn/ver/14/openkomodo/trunk/contrib/cElementTree/PKG-INFO
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/!svn/ver/14/openkomodo/trunk/contrib/cElementTree/README
+END
+cElementTree.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/!svn/ver/8429/openkomodo/trunk/contrib/cElementTree/cElementTree.c
+END
+selftest.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/14/openkomodo/trunk/contrib/cElementTree/selftest.py
+END

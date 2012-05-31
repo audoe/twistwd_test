@@ -1,0 +1,112 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
+ * The contents of this file are subject to the Mozilla Public License
+ * Version 1.1 (the "License"); you may not use this file except in
+ * compliance with the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ * 
+ * Software distributed under the License is distributed on an "AS IS"
+ * basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+ * License for the specific language governing rights and limitations
+ * under the License.
+ * 
+ * The Original Code is Komodo code.
+ * 
+ * The Initial Developer of the Original Code is ActiveState Software Inc.
+ * Portions created by ActiveState Software Inc are Copyright (C) 2000-2007
+ * ActiveState Software Inc. All Rights Reserved.
+ * 
+ * Contributor(s):
+ *   ActiveState Software Inc
+ * 
+ * Alternatively, the contents of this file may be used under the terms of
+ * either the GNU General Public License Version 2 or later (the "GPL"), or
+ * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the MPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK ***** */
+
+#include "nsISupports.idl"
+
+// Interface to the Komodo process' environment variables.
+[scriptable, uuid(30537776-473C-4ad6-9A2D-3320B3B5517D)]
+interface koIEnviron : nsISupports {
+  boolean has(in wstring key);
+  wstring get(in wstring key);
+  void set(in wstring key, in wstring value);
+};
+
+
+// Interface to the user's environment (to be used for spawning external
+// commands on behalf of the user in Komodo).
+//
+// Typically/historically this is the system or shell environment when
+// Komodo is started: i.e. before komodo.exe/komodo-bin mucks with it.
+// However, the environment may be retrieved from the user's shell (as
+// set in the "Environment" prefs panel on non-Windows systems).
+//
+[scriptable, uuid(CD50AE4E-52DF-499a-95FB-E964F6A42AD2)]
+interface koIUserEnviron : nsISupports {
+    // Must be set by Komodo initialization before anything else is done
+    // with this service.
+    attribute wstring startupEnvironEncoding;
+  
+    boolean has(in wstring key);
+    wstring get(in wstring key);
+
+    // return all the env vars as "<name>=<value>" strings
+    //  - this is a convenience function for passing to process creation
+    //  - it is named after the Win32 API but no FreeEnvironmentStrings is
+    //    necessary
+    void GetEnvironmentStrings(
+      out PRUint32 count,
+      [retval, array, size_is(count)] out wstring envStrs);
+
+    // Return the user environment as a string encoded as specified by
+    // ko.run.runCommand()'s env argument.
+    wstring GetEncodedEnvironment();
+    wstring GetEncodedStartupEnvironment();
+
+    // Update the user environment from the given system shell.
+    //
+    //  "shell" is the full path to a system shell
+    //
+    // Returns null if successful, otherwise returns an error string.
+    wstring UpdateFromShell(in wstring shell);
+};
+
+
+[scriptable, uuid(10afb005-4472-4d04-9372-94addc092928)]
+interface koIEnvironUtils : nsISupports {
+    // Utils for working with the environment sets.
+
+    // Merge a set of "diff" environment strings into a "base" set of
+    // environment strings. The "diff" strings are interpolated
+    // according to the current platform shell interpolation rules,
+    // i.e.  %FOO% to interpolate in the env. var. FOO on Windows,
+    //       $FOO or $(FOO) otherwise.
+    void MergeEnvironmentStrings(
+        in PRUint32 baseCount,
+        [array, size_is(baseCount)] in wstring baseEnvStrs,
+        in PRUint32 diffCount,
+        [array, size_is(diffCount)] in wstring diffEnvStrs,
+        out PRUint32 resultCount,
+        [array, size_is(resultCount)] out wstring resultEnvStrs);
+
+    // Return a list of available system shells from which the user can
+    // select in the Environment prefs panel. (non-Windows only)
+    void GetUserShells(
+        out PRUint32 count,
+        [retval, array, size_is(count)] out wstring shells
+    );
+};
+
+

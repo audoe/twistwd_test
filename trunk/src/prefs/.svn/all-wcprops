@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/repos/!svn/ver/10184/openkomodo/trunk/src/prefs
+END
+koIPrefs.idl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/!svn/ver/9863/openkomodo/trunk/src/prefs/koIPrefs.idl
+END
+koIEnvView.p.idl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/!svn/ver/280/openkomodo/trunk/src/prefs/koIEnvView.p.idl
+END
+prefs.p.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/!svn/ver/10184/openkomodo/trunk/src/prefs/prefs.p.xml
+END
+koIOrderedPreference.idl
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/4285/openkomodo/trunk/src/prefs/koIOrderedPreference.idl
+END
+koPrefs.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/!svn/ver/10079/openkomodo/trunk/src/prefs/koPrefs.py
+END
+pref_serialization.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/!svn/ver/4765/openkomodo/trunk/src/prefs/pref_serialization.py
+END
+koEnvView.p.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/!svn/ver/2315/openkomodo/trunk/src/prefs/koEnvView.p.py
+END
+Conscript
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/!svn/ver/7483/openkomodo/trunk/src/prefs/Conscript
+END

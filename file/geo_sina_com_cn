@@ -1,0 +1,1378 @@
+<html>DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+
+DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+<!--[2,651,1] published at 2012-05-18 11:31:29 from #152 by 5385--><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>新浪环球地理_新浪网</title>
+<meta content="text/html; charset=%SOUP-ENCODING%" http-equiv="Content-type">
+<meta content="National Geographic,国家地理,环球地理,每日一图.自然,动物,科学" name="keywords">
+<meta content="美国国家地理网站中文版，独家提供来自美国国家地理网站的资讯及高清图片、壁纸等内容" name="description">
+<script src="http://i1.sinaimg.cn/unipro/pub/suda_m_v629.js" type="text/javascript"></script>
+<script type="text/javascript">suds_init(1191,100.00,1015,2);</script>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible">
+<meta content="PGLS001780" name="stencil">
+<base href="http://tech.sina.com.cn/">
+<script type="text/javascript">(function(padUrl){if(location.href.indexOf('f=pad')!==-1){return}; if(/\(iPad/i.test(navigator.userAgent)){location.replace(padUrl+'?f=web')};})('http://geo.sina.com.cn/ipad/');</script>
+<script type="text/javascript" language="javascript">
+<!--//--><![CDATA[/ /><!--
+var sina={$:function(objName){if(document.getElementById){return eval('document.getElementById("'+objName+'")')}else{return eval('document.all.'+objName)}},isIE:navigator.appVersion.indexOf("MSIE")!=-1?true:false,addEvent:function(l,i,I){if(l.attachEvent){l.attachEvent("on"+i,I)}else{l.addEventListener(i,I,false)}},delEvent:function(l,i,I){if(l.detachEvent){l.detachEvent("on"+i,I)}else{l.removeEventListener(i,I,false)}},readCookie:function(O){var o="",l=O+"=";if(document.cookie.length>0){var i=document.cookie.indexOf(l);if(i!=-1){i+=l.length;var I=document.cookie.indexOf(";",i);if(I==-1)I=document.cookie.length;o=unescape(document.cookie.substring(i,I))}};return o},writeCookie:function(i,l,o,c){var O="",I="";if(o!=null){O=new Date((new Date).getTime()+o*3600000);O="; expires="+O.toGMTString()};if(c!=null){I=";domain="+c};document.cookie=i+"="+escape(l)+O+I},readStyle:function(I,l){if(I.style[l]){return I.style[l]}else if(I.currentStyle){return I.currentStyle[l]}else if(document.defaultView&&document.defaultView.getComputedStyle){var i=document.defaultView.getComputedStyle(I,null);return i.getPropertyValue(l)}else{return null}}};
+
+//滚动图片构造函数
+//UI&UE Dept. mengjia
+//090625
+function ScrollPic(i,o,I,l,O){var c=this;c.scrollContId=i;c.arrLeftId=o;c.arrRightId=I;c.dotListId=l;c.listType=O;c.dotClassName="dotItem";c.dotOnClassName="dotItemOn";c.dotObjArr=[];c.listEvent="onclick";c.circularly=true;c.pageWidth=0;c.frameWidth=0;c.speed=10;c.space=10;c.upright=false;c.pageIndex=0;c.autoPlay=true;c.autoPlayTime=5;c._autoTimeObj;c._scrollTimeObj;c._state="ready";c.stripDiv=document.createElement("DIV");c.listDiv01=document.createElement("DIV");c.listDiv02=document.createElement("DIV")};ScrollPic.prototype.version="1.20";ScrollPic.prototype.author="mengjia";ScrollPic.prototype.initialize=function(){var O=this,l=O;if(!O.scrollContId){throw new Error("必须指定scrollContId.");return};O.scrollContDiv=sina.$(O.scrollContId);if(!O.scrollContDiv){throw new Error("scrollContId不是正确的对象.(scrollContId = \""+O.scrollContId+"\")");return};O.scrollContDiv.style[O.upright?'height':'width']=O.frameWidth+"px";O.scrollContDiv.style.overflow="hidden";O.listDiv01.innerHTML=O.scrollContDiv.innerHTML;O.scrollContDiv.innerHTML="";O.scrollContDiv.appendChild(O.stripDiv);O.stripDiv.appendChild(O.listDiv01);if(O.circularly){O.stripDiv.appendChild(O.listDiv02);O.listDiv02.innerHTML=O.listDiv01.innerHTML};O.stripDiv.style.overflow="hidden";O.stripDiv.style.zoom="1";O.stripDiv.style[O.upright?'height':'width']="32766px";if(!O.upright){O.listDiv01.style.cssFloat="left";O.listDiv01.style.styleFloat="left";O.listDiv01.style.overflow="hidden"};O.listDiv01.style.zoom="1";if(O.circularly&&!O.upright){O.listDiv02.style.cssFloat="left";O.listDiv02.style.styleFloat="left";O.listDiv02.style.overflow="hidden"};O.listDiv02.style.zoom="1";sina.addEvent(O.scrollContDiv,"mouseover",function(){l.stop()});sina.addEvent(O.scrollContDiv,"mouseout",function(){l.play()});if(O.arrLeftId){O.arrLeftObj=sina.$(O.arrLeftId);if(O.arrLeftObj){sina.addEvent(O.arrLeftObj,"mousedown",function(){l.rightMouseDown()});sina.addEvent(O.arrLeftObj,"mouseup",function(){l.rightEnd()});sina.addEvent(O.arrLeftObj,"mouseout",function(){l.rightEnd()})}};if(O.arrRightId){O.arrRightObj=sina.$(O.arrRightId);if(O.arrRightObj){sina.addEvent(O.arrRightObj,"mousedown",function(){l.leftMouseDown()});sina.addEvent(O.arrRightObj,"mouseup",function(){l.leftEnd()});sina.addEvent(O.arrRightObj,"mouseout",function(){l.leftEnd()})}};if(O.dotListId){O.dotListObj=sina.$(O.dotListId);O.dotListObj.innerHTML="";if(O.dotListObj){var I=Math.round(O.listDiv01[O.upright?'offsetHeight':'offsetWidth']/O.frameWidth+0.4),o,i;for(o=0;o<I;o++){i=document.createElement("span");O.dotListObj.appendChild(i);O.dotObjArr.push(i);if(o==O.pageIndex){i.className=O.dotOnClassName}else{i.className=O.dotClassName};if(O.listType=='number'){i.innerHTML=o+1};i.title="第"+(o+1)+"页";i.num=o;i[O.listEvent]=function(){l.pageTo(this.num)}}}};O.scrollContDiv[O.upright?'scrollTop':'scrollLeft']=0;if(O.autoPlay){O.play()}};ScrollPic.prototype.leftMouseDown=function(){if(this._state!="ready"){return};var thisTemp=this;this._state="floating";this._scrollTimeObj=setInterval(function(){thisTemp.moveLeft()},this.speed)};ScrollPic.prototype.rightMouseDown=function(){if(this._state!="ready"){return};var thisTemp=this;this._state="floating";this._scrollTimeObj=setInterval(function(){thisTemp.moveRight()},this.speed)};ScrollPic.prototype.moveLeft=function(){var i=this;if(i.circularly){if(i.scrollContDiv[(i.upright?'scrollTop':'scrollLeft')]+i.space>=i.listDiv01[(i.upright?'scrollHeight':'scrollWidth')]){i.scrollContDiv[(i.upright?'scrollTop':'scrollLeft')]=i.scrollContDiv[(i.upright?'scrollTop':'scrollLeft')]+i.space-i.listDiv01[(i.upright?'scrollHeight':'scrollWidth')]}else{i.scrollContDiv[(i.upright?'scrollTop':'scrollLeft')]+=i.space}}else{if(i.scrollContDiv[(i.upright?'scrollTop':'scrollLeft')]+i.space>=i.listDiv01[(i.upright?'scrollHeight':'scrollWidth')]-i.frameWidth){i.scrollContDiv[(i.upright?'scrollTop':'scrollLeft')]=i.listDiv01[(i.upright?'scrollHeight':'scrollWidth')]-i.frameWidth;i.leftEnd()}else{i.scrollContDiv[(i.upright?'scrollTop':'scrollLeft')]+=i.space}};i.accountPageIndex()};ScrollPic.prototype.moveRight=function(){var i=this;if(i.circularly){if(i.scrollContDiv[(i.upright?'scrollTop':'scrollLeft')]-i.space<=0){i.scrollContDiv[(i.upright?'scrollTop':'scrollLeft')]=i.listDiv01[(i.upright?'scrollHeight':'scrollWidth')]+i.scrollContDiv[(i.upright?'scrollTop':'scrollLeft')]-i.space}else{i.scrollContDiv[(i.upright?'scrollTop':'scrollLeft')]-=i.space}}else{if(i.scrollContDiv[(i.upright?'scrollTop':'scrollLeft')]-i.space<=0){i.scrollContDiv[(i.upright?'scrollTop':'scrollLeft')]=0;i.rightEnd()}else{i.scrollContDiv[(i.upright?'scrollTop':'scrollLeft')]-=i.space}};i.accountPageIndex()};ScrollPic.prototype.leftEnd=function(){var I=this;if(I._state!="floating"){return};I._state="stoping";clearInterval(I._scrollTimeObj);var i=I.pageWidth-I.scrollContDiv[(I.upright?'scrollTop':'scrollLeft')]%I.pageWidth;I.move(i)};ScrollPic.prototype.rightEnd=function(){var I=this;if(I._state!="floating"){return};I._state="stoping";clearInterval(I._scrollTimeObj);var i=-I.scrollContDiv[(I.upright?'scrollTop':'scrollLeft')]%I.pageWidth;I.move(i)};ScrollPic.prototype.move=function(num,quick){var thisTemp=this,thisMove=num/5;if(!quick){if(thisMove>this.space){thisMove=this.space};if(thisMove<-this.space){thisMove=-this.space}};if(Math.abs(thisMove)<1&&thisMove!=0){thisMove=thisMove>=0?1:-1}else{thisMove=Math.round(thisMove)};var temp=this.scrollContDiv[(this.upright?'scrollTop':'scrollLeft')]+thisMove;if(thisMove>0){if(this.circularly){if(this.scrollContDiv[(this.upright?'scrollTop':'scrollLeft')]+thisMove>=this.listDiv01[(this.upright?'scrollHeight':'scrollWidth')]){this.scrollContDiv[(this.upright?'scrollTop':'scrollLeft')]=this.scrollContDiv[(this.upright?'scrollTop':'scrollLeft')]+thisMove-this.listDiv01[(this.upright?'scrollHeight':'scrollWidth')]}else{this.scrollContDiv[(this.upright?'scrollTop':'scrollLeft')]+=thisMove}}else{if(this.scrollContDiv[(this.upright?'scrollTop':'scrollLeft')]+thisMove>=this.listDiv01[(this.upright?'scrollHeight':'scrollWidth')]-this.frameWidth){this.scrollContDiv[(this.upright?'scrollTop':'scrollLeft')]=this.listDiv01[(this.upright?'scrollHeight':'scrollWidth')]-this.frameWidth;this._state="ready";return}else{this.scrollContDiv[(this.upright?'scrollTop':'scrollLeft')]+=thisMove}}}else{if(this.circularly){if(this.scrollContDiv[(this.upright?'scrollTop':'scrollLeft')]+thisMove<0){this.scrollContDiv[(this.upright?'scrollTop':'scrollLeft')]=this.listDiv01[(this.upright?'scrollHeight':'scrollWidth')]+this.scrollContDiv[(this.upright?'scrollTop':'scrollLeft')]+thisMove}else{this.scrollContDiv[(this.upright?'scrollTop':'scrollLeft')]+=thisMove}}else{if(this.scrollContDiv[(this.upright?'scrollTop':'scrollLeft')]-thisMove<0){this.scrollContDiv[(this.upright?'scrollTop':'scrollLeft')]=0;this._state="ready";return}else{this.scrollContDiv[(this.upright?'scrollTop':'scrollLeft')]+=thisMove}}};num-=thisMove;if(Math.abs(num)==0){this._state="ready";if(this.autoPlay){this.play()};this.accountPageIndex();return}else{this.accountPageIndex();this._scrollTimeObj=setTimeout(function(){thisTemp.move(num,quick)},this.speed)}};ScrollPic.prototype.pre=function(){var i=this;if(i._state!="ready"){return};i._state="stoping";i.move(-i.pageWidth,true)};ScrollPic.prototype.next=function(i){var I=this;if(I._state!="ready"){return};I._state="stoping";if(I.circularly){I.move(I.pageWidth,true)}else{if(I.scrollContDiv[(I.upright?'scrollTop':'scrollLeft')]>=I.listDiv01[(I.upright?'scrollHeight':'scrollWidth')]-I.frameWidth){I._state="ready";if(i){I.pageTo(0)}}else{I.move(I.pageWidth,true)}}};ScrollPic.prototype.play=function(){var thisTemp=this;if(!this.autoPlay){return};clearInterval(this._autoTimeObj);this._autoTimeObj=setInterval(function(){thisTemp.next(true)},this.autoPlayTime*1000)};ScrollPic.prototype.stop=function(){clearInterval(this._autoTimeObj)};ScrollPic.prototype.pageTo=function(i){var l=this;if(l.pageIndex==i){return};clearTimeout(l._scrollTimeObj);l._state="stoping";var I=i*l.frameWidth-l.scrollContDiv[(l.upright?'scrollTop':'scrollLeft')];l.move(I,true)};ScrollPic.prototype.accountPageIndex=function(){var I=this,i=Math.round(I.scrollContDiv[(I.upright?'scrollTop':'scrollLeft')]/I.frameWidth);if(i==I.pageIndex){return};I.pageIndex=i;if(I.pageIndex>Math.round(I.listDiv01[I.upright?'offsetHeight':'offsetWidth']/I.frameWidth+0.4)-1){I.pageIndex=0};var l;for(l=0;l<I.dotObjArr.length;l++){if(l==I.pageIndex){I.dotObjArr[l].className=I.dotOnClassName}else{I.dotObjArr[l].className=I.dotClassName}}};
+//--><!]]>
+</script>
+<style type="text/css">
+
+/* 通用 */
+html, body, ul, li, ol , dl , dd , dt , p, h1, h2, h3, h4, h5, h6, form, fieldset, legend , table, td, img {margin: 0;padding: 0;border: 0;}
+ul,ol{list-style-type:none;}
+select,input{vertical-align:middle;}
+body {background:transparent;color:#333;font-family:"宋体";font-size:12px;}
+select,input,textarea {font-size:12px;}
+.clearfix:after{content:"."; display:block; height:0; visibility:hidden;}
+.clearfix{zoom:1;}
+.clearit{clear:both;height:0px;overflow:hidden;  }
+.f12 {font-size:12px;}
+.f14 {font-size:14px;}
+.fB{font-weight:bold;}
+.fwhite{color:#fff;}
+.fblack{color:#000;}
+.fred{color:#c00;}
+a.fnoL{text-decoration:none;}
+a.fnoL:hover{text-decoration:underline;}
+.fB{font-weight:bold;}
+.fgray{color:#666;}
+.space{height:10px;background:#fff;overflow:hidden;clear:both;}
+
+a {color:#333;text-decoration:none;}
+a:hover, a:active, a:focus {color: #fc0;text-decoration:underline;}
+a:visited{color:#800080;}
+
+.wrap_{margin: 0 auto;width:958px;background:url(http://i1.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_001.png) repeat-y; }
+.wrap{width:950px;margin:0 auto;background:#fff;  }
+.banner{height:122px;background:url(http://i2.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_002.jpg) no-repeat;}
+.logo{float:left;display:inline;margin:20px 20px 0px 20px; width:240px; height:68px;  }
+
+.banner{height:138px;background:url(http://d2.sina.com.cn/201009/08/249864_dl_cl_002.jpg) no-repeat;}
+.logo{float:left;display:inline;margin:20px 20px 0px 20px; width:240px; height:68px;  }
+.banner .imgarea{float:left;width:640px;height:90px; margin:11px 0 0 18px;display:inline;border:1px solid #fff;}
+.banner .imgarea img{width:640px;height:90px;}
+.banner .search{padding:10px 15px 0 0 ;text-align:right; }
+
+.ipt-01{background:none;border:none;font-size:12px;width:190px;color:#666;}
+.ipt-02{color:#fff;width:40px;background:none;border:none;padding:3px 0 0 0; }
+.nav{height:54px;background:url(http://i0.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_004.png) 0 3px no-repeat;overflow:hidden; zoom:1;margin-top:-3px;}
+.nav li{float:left; overflow:hidden; display:inline;}
+.nav li.v{width:2px;height:51px;margin:0 8px;display:inline;background:url(http://i3.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_003.png) no-repeat;margin-top:3px;   }
+.nav li.menu a{display:block; width:80px; background:url(http://i3.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_007.png) no-repeat 0 -100px;width:89px;height:54px; overflow:hidden;   }
+.nav li.menu a.selected {background-position:0 0; }
+.nav li.menu a span{display:block; width:70px;height:24px;background:url(http://i1.sinaimg.cn/IT/everydaypic/images_geo/dl_cl_005.png) no-repeat 0 0;text-indent:-1000px;cursor:pointer; margin:14px 0 0 10px;  } /* xuehua modify 20100531*/
+
+.nav li.menu.first{margin-left:15px;}
+.nav li.menu a.a1{width:89px;} /* xuehua modify 20100531*/
+.nav li.menu a.a1 span{background-position:0 0; }
+.nav li.menu a.a1.selected span{background-position:0px -100px; }
+.nav li.menu a.selected span{background-position:0 -100px; }
+.nav li.menu a.a2{width:65px; }
+.nav li.menu a.a2 span{background-position:-73px 0; }/* xuehua modify 20100531*/
+.nav li.menu a.a2.selected span{background-position:-106px -100px; }
+.nav li.menu a.a21{width:65px; } /* xuehua modify 20100531*/
+.nav li.menu a.a21 span{background-position:-158px 0; } /* xuehua modify 20100531*/
+.nav li.menu a.a21.selected span{background-position:-157px -100px; } /* xuehua modify 20100531*/
+.nav li.menu a.a22{width:80px; } /* xuehua modify 20100531*/
+.nav li.menu a.a22 span{background-position:-238px 0; } /* xuehua modify 20100531*/
+.nav li.menu a.a22.selected span{background-position:-157px -100px; } /* xuehua modify 20100531*/
+.nav li.menu a.a3{width:80px;}
+.nav li.menu a.a3 span{background-position:-324px 0; }/* xuehua modify 20100531*/
+.nav li.menu a.a3.selected span{background:url(http://i0.sinaimg.cn/IT/everydaypic/images_geo/tu_wzc01.png) no-repeat left top !important;  }
+.nav li.menu a.a4{width:80px; }
+.nav li.menu a.a4 span{background-position:-415px 0;}/* xuehua modify 20100531*/
+.nav li.menu a.a4.selected span{background-position:-406px -100px; }
+.nav li.menu a.a5{width:80px; }
+.nav li.menu a.a5 span{background-position:-520px 0; }/* xuehua modify 20100531*/
+.nav li.menu a.a5.selected span{background-position:-449px -100px; }
+.nav li.menu a.a6{width:80px; }
+.nav li.menu a.a6 span{background-position:-613px 0; }/* xuehua modify 20100531*/
+.nav li.menu a.a6.selected span{background-position:-570px -100px; }
+.nav li.menu a.a7{width:80px; }
+.nav li.menu a.a7 span{background-position:-715px 0; }/* xuehua modify 20100531*/
+.nav li.menu a.a7.selected span{background-position:-697px -100px; }
+.nav li.menu a.a8{width:80px; }
+.nav li.menu a.a8 span{background-position:-812px 0; } /* xuehua modify 20100531*/
+.nav li.menu a.a8.selected span{background-position:-830px -100px; }
+
+/* 焦点图 begin */
+.FocusPic{width:632px;height:422px;position:relative;zoom:1;overflow:hidden;}
+.FocusPic .FP_angle{width:7px;height:7px;overflow:hidden;font-size:0;line-height:0;position:absolute;z-index:10;}
+.FocusPic .FP_arr_left{width:13px;height:25px;position:absolute;z-index:8;top:145px;left:5px;filter:Alpha(Opacity=80);opacity:.8;cursor:pointer;}
+.FocusPic .FP_arr_right{width:13px;height:25px;position:absolute;z-index:8;top:145px;right:5px;filter:Alpha(Opacity=80);opacity:.8;cursor:pointer;}
+.FocusPic .FP_NumList{position:absolute;right:20px;bottom:10px;zoom:1;overflow:hidden;z-index:9;}
+.FocusPic .FP_NumList span{float:left;margin-left:5px;display:inline;line-height:14px;width:14px;text-align:center;font-family:Arial, Helvetica, sans-serif;cursor:pointer;background:url(http://i0.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_008.png);width:32px;color:#fff; font-size:10px; }
+.FocusPic .FP_NumList span.selected{background-position:0 -100px; color:#000;}
+.FocusPic .FP_pic{width:632px;height:422px;overflow:hidden;float:left;}
+.FocusPic .FP_pic .FP_tit_bg{height:96px;width:100%;margin-top:-96px;background:#000;filter:Alpha(Opacity=30);opacity:.3;}
+.FocusPic .FP_pic .FP_tit_txt{line-height:28px;padding-left:14px;margin-top:-88px;color:#fff;position:relative;*position:static;font:normal normal normal 20px/1.5em "微软雅黑","黑体"; }
+.FocusPic .FP_pic .FP_tit_cont{line-height:20px; color:#ccc;padding:5px 5px 0 14px;}
+.FocusPic .FP_pic .FP_tit_txt img{vertical-align:-3%;padding-left:8px;}
+.FocusPic .FP_pic .FP_tit_txt a:hover{color:#ffce00;text-decoration:none;}
+.FocusPic .FP_pic a:link,.FP_pic a:visited{color:#fff;text-decoration:none;}
+.FocusPic .FP_pic a:hover{text-decoration:underline;}
+/* 焦点图 end */
+.part-a{background:url(http://i2.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_006.png) repeat-y;overflow:hidden;zoom:1;height:429px;padding:8px 6px; }
+.a-l{width:632px;float:left;height:422px;padding:4px 0 0 5px; }
+.a-r{width:289px;float:right;}
+
+.title-01{padding:0 5px;height:26px;overflow:hidden;}
+.title-01 h2{float:left;padding:8px 0 0 0;text-indent:-1000px;}
+.title-01 h2 a{float:left;width:150px;height:22px;background-repeat:no-repeat; }
+.title-01 span.more{float:right;margin-top:20px;}
+
+/*有序列表*/
+.olist{line-height:24px;overflow:hidden; padding:0 10px;margin:5px 0 10px;}
+.olist li{line-height:24px;background:url(http://i0.sinaimg.cn/IT/deco/2009/0825/geo/images/t_cl_006.png) repeat-x 0 0; padding:3px 5px 3px;overflow:hidden; zoom:1;margin-top:-1px;}
+.olist li.first{background:none; }
+.olist li.first img{vertical-align:middle;padding-right:8px;}
+.olist span.num{width:20px;height:15px; float:left;background:url(http://i1.sinaimg.cn/IT/deco/2009/0825/geo/images/t_cl_003.png) no-repeat; margin:6px 5px 0 0;overflow:hidden; }
+.olist li.big-area{padding:10px 5px;}
+.olist li.bigarea{background:none; }
+.olist li.li2{background-color:#f5f5f5; }
+.olist span.num.no2{background-position:0 -37px; }
+.olist span.num.no3{background-position:0 -70px; }
+.olist span.num.no4{background-position:0 -100px; }
+.olist span.num.no5{background-position:0 -127px; }
+.olist span.num.no6{background-position:0 -155px; }
+.olist span.num.no7{background-position:0 -182px; }
+.olist span.num.no8{background-position:0 -209px; }
+.olist span.num.no9{background-position:0 -236px; }
+.olist span.num.no10{background-position:0 -263px; }
+.olist span.num.no11{background-position:0 -287px; }
+.olist span.num.no12{background-position:0 -311px; }
+/*左图(视频)右文字*/
+.box-imgleft{overflow:hidden; zoom:1;padding:6px 0;}
+.box-imgleft .box-pic{float:left; }
+.box-imgleft .box-pic h5{text-align:center;}
+.box-imgleft .info-area{line-height:20px; }
+.box-imgleft .info-area h3{font-size:12px;}
+.box-imgleft .info-area p{color:#666;}
+a.a-img2 img{border:1px solid #dedede;background:#fff;padding:3px; }
+
+.part-b{background:url(http://i0.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_013.png) repeat-y 6px 0;overflow:hidden;zoom:1;padding:0 6px;margin-top:10px; }
+.b-bot{background:url(http://i0.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_013.png)  100% 0 no-repeat; height:1px;clear:both;overflow:hidden;  }
+.b-l{width:640px;float:left;}
+.b-r{width:289px;float:right;}
+a.a-img img{border:1px solid #666;}
+a.a-img:hover img{border-color:#fc0;}
+.list-01{overflow:hidden; zoom:1;border-top:1px solid #e4e4e4;padding:0 4px;}
+.list-01 li{float:left;padding:8px 10px;width:296px; background:url(http://i0.sinaimg.cn/IT/deco/2009/0825/geo/images/t_cl_006.png) repeat-x  0 100%;  }
+.list-01 li .box-imgleft h3{font:normal normal normal 14px/1.5em "Arial"; }
+.list-01 li .box-imgleft h3 a:link{color:#bea644;}
+.list-01 li.last{background:none; }
+.box-02{border-top:1px solid #e4e4e4;}
+
+.box-02{padding:10px 27px;overflow:hidden; zoom:1;}
+.box-02-dot{text-align:center; height:20px; padding:8px 0 0 0;}
+.arrleft{float:left;width:10px;height:96px;cursor:pointer; overflow:hidden; background:url(http://i0.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_017.png) no-repeat;margin:3px 10px 0 0 ;  }
+.arrright{float:right;width:10px;height:96px;cursor:pointer; overflow:hidden; background:url(http://i0.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_017.png) no-repeat 0 100%;margin:3px 0 0 0 ; display:inline; }
+.box-02-show{float:left; width:193px; height:105px; }
+.box-02-show img{float:left;border:1px solid #333; }
+
+.box-02-dot .dotList{padding:0 5px;width:100px;margin:0 auto;display:block;  }
+.box-02-dot .dotList .dotItem{width:10px;height:10px;background:url(http://i3.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_016.png) no-repeat;cursor:pointer;float:left;margin-left:8px;}
+.box-02-dot .dotList .dotItemOn{width:10px;height:10px;background:url(http://i3.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_016.png) 0 -100px no-repeat;cursor:pointer;float:left;margin-left:8px;}
+.box-ad1{border-top:1px dashed #ccc;margin:5px 5px 0 ;padding:5px 0 0 0;text-align:center; }
+
+.part-c{border:1px solid #e4e4e4;overflow:hidden; zoom:1;margin:10px auto 0;width:932px; padding:0 2px;position:relative;}
+.part-c table{width:932px; float:left; }
+.part-c table td{vertical-align:top;}
+
+.box-03{margin:4px 0 0 0;position:relative;}
+.box-03 img{border:1px solid #999;display:block; }
+.box-03 a:hover img{border-color:#fc0;}
+.box-03 .f-bg{background:#000;opacity:0.5;filter:alpha(opacity=50);height:20px; margin:-21px 1px 0 1px;  }
+.box-03 .f-cont{text-align:center; line-height:24px;margin-top:-21px;position:relative;z-index:5;height:22px;overflow:hidden;  }
+.box-03 .f-cont a{color:#fff;}
+
+.arrleft1{position:absolute;width:40px;height:40px;z-index:5;top:45%;left:15px;background:url(http://i2.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_020.png) no-repeat;_background:none;_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src="http://i0.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_020.png");cursor:pointer; }
+.arrright1{position:absolute;width:40px;height:40px;z-index:5;top:45%;right:15px;background:url(http://i2.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_019.png) no-repeat; _background:none;_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src="http://i0.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_019.png");cursor:pointer; }
+
+.list-03{overflow:hidden; zoom:1;border-top:#e4e4e4 1px solid ;padding-bottom:8px;}
+.list-03 li{float:left;width:202px; margin:10px 0 0 9px;display:inline;}
+.list-03 li h3{ font:normal 14px/1.67em "Arial"; padding:4px 0 0 0;}
+.list-03 li h3 a{color:#a68500;}
+.list-03 li p{line-height:20px;color:#666; }
+
+.box-04{border-top:1px solid #e4e4e4;padding:5px 8px;overflow:hidden; zoom:1;}
+.box-04 .tac img{vertical-align:middle;}
+.box-05 p{padding:2px 0;}
+
+.tac{text-align:center; }
+.lh20{line-height:20px; }
+a.fyellow{color:#a68500;}
+
+.list-05 li{background:url(http://i3.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_030.png) no-repeat 3px center;padding-left:1.5em;line-height:24px;  }
+
+.box-06{width:279px;overflow:hidden; background:url(http://i3.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_034.png) no-repeat; margin:10px auto 0;line-height:22px; overflow:hidden;  }
+.box-06-show{float:left;width: 149px;overflow:hidden;}
+.arrleft2{width:36px;height:97px;margin:21px 0 0 30px;float:left;  cursor:pointer;display:inline;  }
+.arrright2{width:36px;height:97px;margin:21px 0 0 0px;float:left;  cursor:pointer; display:inline; }
+.box-06-show li{text-align:center;float:left;  }
+.box-06-show h3{font:normal normal normal 12px/1.67 "Arial"; padding:30px 0 0 0;}
+
+.box-06 .dotList{padding: 0 0 0 90px;width:100px;margin:0 auto;display:block;margin-top:-60px; float:left;overflow:hidden; zoom:1; }
+.box-06 .dotList .dotItem{width:10px;height:10px;background:url(http://i3.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_016.png) no-repeat;cursor:pointer;float:left;margin-left:8px;}
+.box-06 .dotList .dotItemOn{width:10px;height:10px;background:url(http://i3.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_016.png) 0 -100px no-repeat;cursor:pointer;float:left;margin-left:8px;}
+
+.list-031{padding:0;margin:0;border:0;background:#fff;}
+.list-031 li{margin-top:0;}
+.list-07{margin:8px 0 0 ;padding:8px 0 0 0;border-top:#ccc 1px dashed;overflow:hidden; zoom:1;clear:both; }
+.list-07 li{margin:0;line-height:21px; }
+.list-07 span.r{float:right; }
+
+.box-051 .info-area h3{font:normal normal normal 14px/1.67 "Arial"; padding:2px 0 5px;}
+.all-bot{background:url(http://i0.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_039.png); height:12px;overflow:hidden; width:958px;margin:0 auto;   }
+
+/*修改 by zichao 20100524 begin*/
+.list-04{overflow:hidden; zoom:1;border-top:#e4e4e4 1px solid ;padding-bottom:10px;}
+.list-04 li{float:left;width:127px;overflow:hidden;  margin:10px 0 0 25px;display:inline;position:relative;}
+.list-04 li h3{ font:normal 12px/1.67em "Arial"; padding:4px 0 0 0;text-align:center; }
+.list-04 li h3 a{color:#666;}
+.list-04 li img.arrow {position:absolute;top:70px;left:5px;z-index:10;border:0;}
+/*修改 by zichao 20100524 end*/
+
+#footer{text-align:center;line-height:28px;color:#505050;padding:10px 0 10px;margin-top:10px;width:950px;margin: 0 auto; }
+#footer a:link,#footer a:visited{color:#505050; text-decoration:none;}
+#footer a:hover{color:#f00; text-decoration:underline;}
+
+</style>
+</head>
+<body>
+<!-- SUDA_CODE_START --><div style="position:absolute;top:0;left:0;width:0;height:0;z-index:1"><div style="position:absolute;top:0;left:0;width:1;height:1;"><iframe src="" height="1" width="1" scrolling="NO" id="SUDA_FC" frameborder="0"></iframe></div><div style="position:absolute;top:0;left:0;width:0;height:0;visibility:hidden" id="SUDA_CS_DIV"></div></div>
+<script type="text/javascript"> 
+//<!--
+var _SGUP_ = "SGUP";var _SGUP_REQ_ = "http://sgup.beacon.sina.com.cn/cgi-bin/gsgup";var sgup = "";
+var SSL={Config:{},Space:function(str){var a=str,o=null;a=a.split('.');o=SSL;for(i=0,len=a.length;i<len;i++){o[a[i]]=o[a[i]]||{};o=o[a[i]]}return o}};
+SSL.Space('Global');SSL.Space('Core.Dom');SSL.Space('Core.Event');SSL.Space('App');SSL.Global={win:window||{},doc:document,nav:navigator,loc:location};SSL.Core.Dom={get:function(id){return document.getElementById(id)}};SSL.Core.Event={on:function(){}};
+SSL.App={
+	_S_gConType:function(){var ct="";try{SSL.Global.doc.body.addBehavior("#default#clientCaps");ct=SSL.Global.doc.body.connectionType}catch(e){ct="unkown"}return ct},
+	_S_gKeyV:function(src,k,e,sp){if(src==""){return""}if(sp==""){sp="="}k=k+sp;var ps=src.indexOf(k);if(ps<0){return""}ps=ps+k.length;var pe=src.indexOf(e,ps);if(pe<ps){pe=src.length}return src.substring(ps,pe)},
+	_S_gUCk:function(ckName){if((undefined==ckName)||(""==ckName))return"";return SSL.App._S_gKeyV(SSL.Global.doc.cookie,ckName,";","")},
+	_S_sUCk:function(ckName,ckValue,ckDays,ckDomain){if(ckValue!=null){if((undefined==ckDomain)||(null==ckDomain)){ckDomain="sina.com.cn";}if((undefined==ckDays)||(null==ckDays)||(''==ckDays)){SSL.Global.doc.cookie=ckName+"="+ckValue+";domain="+ckDomain+";path=/";}else{var now=new Date();var time=now.getTime();time=time+86400000*ckDays;now.setTime(time);time=now.getTime();SSL.Global.doc.cookie=ckName+"="+ckValue+";domain="+ckDomain+";expires="+now.toUTCString()+";path=/";}}},
+	_S_gJVer:function(_S_NAV_,_S_NAN_){var p,appsign,appver,jsver=1.0,isN6=0;if('MSIE'==_S_NAN_){appsign='MSIE';p=_S_NAV_.indexOf(appsign);if(p>=0){appver=parseInt(_S_NAV_.substring(p+5));if(3<=appver){jsver=1.1;if(4<=appver){jsver=1.3}}}}else if(("Netscape"==_S_NAN_)||("Opera"==_S_NAN_)||("Mozilla"==_S_NAN_)){jsver=1.3;appsign='Netscape6';p=_S_NAV_.indexOf(appsign);if(p>=0){jsver=1.5}}return jsver},
+	_S_gFVer:function(nav){var ua=SSL.Global.nav.userAgent.toLowerCase();var flash_version=0;if(SSL.Global.nav.plugins&&SSL.Global.nav.plugins.length){var p=SSL.Global.nav.plugins['Shockwave Flash'];if(typeof p=='object'){for(var i=10;i>=3;i--){if(p.description&&p.description.indexOf(' '+i+'.')!=-1){flash_version=i;break}}}}else if(ua.indexOf("msie")!=-1&&ua.indexOf("win")!=-1&&parseInt(SSL.Global.nav.appVersion)>=4&&ua.indexOf("16bit")==-1){for(var i=10;i>=2;i--){try{var object=eval("new ActiveXObject('ShockwaveFlash.ShockwaveFlash."+i+"');");if(object){flash_version=i;break}}catch(e){}}}else if(ua.indexOf("webtv/2.5")!=-1){flash_version=3}else if(ua.indexOf("webtv")!=-1){flash_version=2}return flash_version},
+	_S_gMeta:function(MName,pidx){var pMeta=SSL.Global.doc.getElementsByName(MName);var idx=0;if(pidx>0){idx=pidx}return(pMeta.length>idx)?pMeta[idx].content:""},
+	_S_gHost:function(sUrl){var r=new RegExp('^http(?:s)?\://([^/]+)','im');if(sUrl.match(r)){return sUrl.match(r)[1].toString()}else{return""}},
+	_S_gDomain:function(sHost){var p=sHost.indexOf('.sina.');if(p>0){return sHost.substr(0,p)}else{return sHost}},
+	_S_gTJMTMeta:function(){return SSL.App._S_gMeta("mediaid")},
+	_S_gTJZTMeta:function(){var zt=SSL.App._S_gMeta('subjectid');zt.replace(",",".");zt.replace(";",",");return zt},
+	_S_isFreshMeta:function(){var ph=SSL.Global.doc.documentElement.innerHTML.substring(0,1024);var reg=new RegExp("<meta\\s*http-equiv\\s*=((\\s*refresh\\s*)|(\'refresh\')|(\"refresh\"))\s*content\s*=","ig");return reg.test(ph)},
+	_S_isIFrameSelf:function(minH,minW){if(SSL.Global.win.top==SSL.Global.win){return false}else{try{if(SSL.Global.doc.body.clientHeight==0){return false}if((SSL.Global.doc.body.clientHeight>=minH)&&(SSL.Global.doc.body.clientWidth>=minW)){return false}else{return true}}catch(e){return true}}},
+	_S_isHome:function(curl){var isH="";try{SSL.Global.doc.body.addBehavior("#default#homePage");isH=SSL.Global.doc.body.isHomePage(curl)?"Y":"N"}catch(e){isH="unkown"}return isH;}
+}
+function SUDA(config,ext1,ext2){
+	var SG=SSL.Global,SSD=SSL.Core.Dom,SSE=SSL.Core.Event,SA=SSL.App;var _S_JV_="webbug_meta_ref_mod_noiframe_async_fc_:9.10a",_S_DPID_="-9999-0-0-1";var _S_NAN_=SG.nav.appName.indexOf('Microsoft Internet Explorer')>-1?'MSIE':SG.nav.appName;var _S_NAV_=SG.nav.appVersion;var _S_PURL_=SG.loc.href.toLowerCase();var _S_PREF_=SG.doc.referrer.toLowerCase();var _SP_MPID_="";var _S_PID_="",_S_UNA_="SUP",_S_MI_="",_S_SID_="Apache",_S_GID_="SINAGLOBAL",_S_LV_="ULV",_S_UO_="UOR",_S_UPA_="_s_upa",_S_IFW=320,_S_IFH=240,_S_GIDT=0,_S_EXT1="",_S_EXT2="",_S_SMC=0,_S_SMM=10000,_S_ET=0,_S_ACC_="_s_acc";var _S_HTTP=_S_PURL_.indexOf('https')>-1?'https://':'http://',_S_BCNDOMAIN="beacon.sina.com.cn",_S_CP_RF=_S_HTTP+_S_BCNDOMAIN+"/a.gif",_S_CP_RF_D=_S_HTTP+_S_BCNDOMAIN+"/d.gif",_S_CP_RF_E=_S_HTTP+_S_BCNDOMAIN+"/e.gif",_S_CP_FC=_S_HTTP+_S_BCNDOMAIN+"/fc.html";
+	var _S_T1=100,_S_T2=2000;
+	var handler={
+		_S_sSID:function(){handler._S_p2Bcn("",_S_CP_RF_D)},_S_gsSID:function(){var sid=SA._S_gUCk(_S_SID_);if(""==sid){handler._S_sSID()}return sid},
+		_S_sGID:function(gid){if(""!=gid){SA._S_sUCk(_S_GID_,gid,3650)}},_S_gGID:function(){return SA._S_gUCk(_S_GID_)},_S_gsGID:function(){if(""!=_S_GID_){var gid=SA._S_gUCk(_S_GID_);if(""==gid){if(SA._S_gFVer(SG.nav)<=6){return ""}else{handler._S_IFC2GID()}}return gid}else{return""}},_S_IFC2GID:function(){var _S_ifc=SSD.get("SUDA_FC");if(_S_ifc){_S_ifc.src=_S_CP_FC+"?a=g&n="+_S_GID_+"&r="+Math.random()}},
+		_S_gCid:function(){try{var metaTxt=SA._S_gMeta("publishid");if(""!=metaTxt){var pbidList=metaTxt.split(",");if(pbidList.length>0){if(pbidList.length>=3){_S_DPID_="-9999-0-"+pbidList[1]+"-"+pbidList[2]}return pbidList[0]}}else{return"0"}}catch(e){return"0"}},
+		_S_gAEC:function(){return SA._S_gUCk(_S_ACC_)},_S_sAEC:function(eid){if(""==eid){return}var acc=handler._S_gAEC();if(acc.indexOf(eid+",")<0){acc=acc+eid+",";}SA._S_sUCk(_S_ACC_,acc,7);},
+		_S_p2Bcn:function(q,u){var scd=SSD.get("SUDA_CS_DIV");if(null!=scd){var now=new Date();scd.innerHTML="<img width=0 height=0 src='"+u+"?"+q+"&gUid_"+now.getTime()+"' border='0' alt=''  />"}},
+		_S_gSUP:function(){if(_S_MI_!=""){return _S_MI_}var sup=unescape(SA._S_gUCk(_S_UNA_));if(sup!=""){var ag=SA._S_gKeyV(sup,"ag","&","");var user=SA._S_gKeyV(sup,"user","&","");var uid=SA._S_gKeyV(sup,"uid","&","");var sex=SA._S_gKeyV(sup,"sex","&","");var bday=SA._S_gKeyV(sup,"dob","&","");_S_MI_=ag+":"+user+":"+uid+":"+sex+":"+bday;return _S_MI_}else{return""}},
+		_S_gsLVisit:function(sid){var lvi=SA._S_gUCk(_S_LV_);var lva=lvi.split(":");var lvr="";if(lva.length>=6){if(sid!=lva[4]){var lvn=new Date();var lvd=new Date(parseInt(lva[0]));lva[1]=parseInt(lva[1])+1;if(lvn.getMonth()!=lvd.getMonth()){lva[2]=1}else{lva[2]=parseInt(lva[2])+1}if(((lvn.getTime()-lvd.getTime())/86400000)>=7){lva[3]=1}else{if(lvn.getDay()<lvd.getDay()){lva[3]=1}else{lva[3]=parseInt(lva[3])+1}}lvr=lva[0]+":"+lva[1]+":"+lva[2]+":"+lva[3];lva[5]=lva[0];lva[0]=lvn.getTime();SA._S_sUCk(_S_LV_,lva[0]+":"+lva[1]+":"+lva[2]+":"+lva[3]+":"+sid+":"+lva[5],360)}else{lvr=lva[5]+":"+lva[1]+":"+lva[2]+":"+lva[3]}}else{var lvn=new Date();lvr=":1:1:1";SA._S_sUCk(_S_LV_,lvn.getTime()+lvr+":"+sid+":",360)}return lvr},
+		_S_gUOR:function(){var uoc=SA._S_gUCk(_S_UO_);var upa=uoc.split(":");if(upa.length>=2){return upa[0]}else{return""}},
+		_S_sUOR:function(){var uoc=SA._S_gUCk(_S_UO_),uor="",uol="",up_t="",up="";var re=/[&|?]c=spr(_[A-Za-z0-9]{1,}){3,}/;var ct=new Date();if(_S_PURL_.match(re)){up_t=_S_PURL_.match(re)[0]}else{if(_S_PREF_.match(re)){up_t=_S_PREF_.match(re)[0]}}if(up_t!=""){up_t=up_t.substr(3)+":"+ct.getTime()}if(uoc==""){if(SA._S_gUCk(_S_LV_)==""&&SA._S_gUCk(_S_LV_)==""){uor=SA._S_gHost(_S_PREF_);uol=SA._S_gHost(_S_PURL_)}SA._S_sUCk(_S_UO_,uor+","+uol+","+up_t,365)}else{var ucg=0,uoa=uoc.split(",");if(uoa.length>=1){uor=uoa[0]}if(uoa.length>=2){uol=uoa[1]}if(uoa.length>=3){up=uoa[2]}if(up_t!=""){ucg=1}else{var upa=up.split(":");if(upa.length>=2){var upd=new Date(parseInt(upa[1]));if(upd.getTime()<(ct.getTime()-86400000*30)){ucg=1}}}if(ucg){SA._S_sUCk(_S_UO_,uor+","+uol+","+up_t,365)}}},
+		_S_gRef:function(){var re=/^[^\?&#]*.swf([\?#])?/;if((_S_PREF_=="")||(_S_PREF_.match(re))){var ref=SA._S_gKeyV(_S_PURL_,"ref","&","");if(ref!=""){return ref}}return _S_PREF_},
+		_S_MEvent:function(){if(_S_SMC==0){_S_SMC++;var c=SA._S_gUCk(_S_UPA_);if(c==""){c=0}c++;if(c<_S_SMM){var re=/[&|?]c=spr(_[A-Za-z0-9]{2,}){3,}/;if(_S_PURL_.match(re)||_S_PREF_.match(re)){c=c+_S_SMM}}SA._S_sUCk(_S_UPA_,c)}},_S_gMET:function(){var c=SA._S_gUCk(_S_UPA_);if(c==""){c=0}return c},
+		_S_gCInfo_v2:function(){var now=new Date();return"sz:"+screen.width+"x"+screen.height+"|dp:"+screen.colorDepth+"|ac:"+SG.nav.appCodeName+"|an:"+_S_NAN_+"|cpu:"+SG.nav.cpuClass+"|pf:"+SG.nav.platform+"|jv:"+SA._S_gJVer(_S_NAV_,_S_NAN_)+"|ct:"+SA._S_gConType()+"|lg:"+SG.nav.systemLanguage+"|tz:"+now.getTimezoneOffset()/60+"|fv:"+SA._S_gFVer(SG.nav)},
+		_S_gPInfo_v2:function(pid,ref){if((undefined==pid)||(""==pid)){pid=handler._S_gCid()+_S_DPID_}return"pid:"+pid+"|st:"+handler._S_gMET()+"|et:"+_S_ET+"|ref:"+escape(ref)+"|hp:"+SA._S_isHome(_S_PURL_)+"|PGLS:"+SA._S_gMeta("stencil")+"|ZT:"+escape(SA._S_gTJZTMeta())+"|MT:"+escape(SA._S_gTJMTMeta())+"|keys:"},
+		_S_gUInfo_v2:function(vid){return"vid:"+vid+"|sid:"+handler._S_gsSID()+"|lv:"+handler._S_gsLVisit(handler._S_gsSID())+"|un:"+handler._S_gSUP()+"|uo:"+handler._S_gUOR()+"|ae:"+handler._S_gAEC()},
+		_S_gEXTInfo_v2:function(ext1,ext2){_S_EXT1=(undefined==ext1)?_S_EXT1:ext1;_S_EXT2=(undefined==ext2)?_S_EXT2:ext2;return"ex1:"+_S_EXT1+"|ex2:"+_S_EXT2},
+		_S_pBeacon:function(pid,ext1,ext2){try{var gid=handler._S_gsGID();if(""==gid){if(_S_GIDT<1){setTimeout(function(){handler._S_pBeacon(pid,ext1,ext2)},_S_T2);_S_GIDT++;return}else{gid=handler._S_gsSID();handler._S_sGID(gid)}}var sgup_ck = SA._S_gUCk(_SGUP_);if(sgup_ck == ""){var channary = location.hostname.split(".");var cur_ch = (channary.length > 3) ? channary[channary.length - 4] : "";handler.__loadScript(_SGUP_REQ_,function(){if(sgup != ""){SA._S_sUCk(_SGUP_,sgup,7);}else{SA._S_sUCk(_SGUP_,"0",3);}});}var sVer="V=2";var sCI=handler._S_gCInfo_v2();var sPI=handler._S_gPInfo_v2(pid,handler._S_gRef());var sUI=handler._S_gUInfo_v2(gid);var sEX=handler._S_gEXTInfo_v2(ext1,ext2);var lbStr=sVer+"&CI="+sCI+"&PI="+sPI+"&UI="+sUI+"&EX="+sEX;handler._S_p2Bcn(lbStr,_S_CP_RF)}catch(e){}},
+		__loadScript:function(url, callback, encode){var script = document.createElement('script');script.type = 'text/javascript';if(encode)script.charset = encode;if (callback)script.onload = script.onreadystatechange = function() {if (script.readyState && script.readyState != 'loaded' && script.readyState != 'complete')return;script.onreadystatechange = script.onload = null;callback();};script.src = url;document.getElementsByTagName('head')[0].appendChild(script);},
+		_S_acTrack_i:function(eid,p){if((""==eid)||(undefined==eid)){return}handler._S_sAEC(eid);if(0==p){return}var s="AcTrack||"+handler._S_gGID()+"||"+handler._S_gsSID()+"||"+handler._S_gSUP()+"||"+eid+"||";handler._S_p2Bcn(s,_S_CP_RF_E)},
+		_S_uaTrack_i:function(acode,aext){var s="UATrack||"+handler._S_gGID()+"||"+handler._S_gsSID()+"||"+handler._S_gSUP()+"||"+acode+"||"+aext+"||"+handler._S_gRef()+"||";handler._S_p2Bcn(s,_S_CP_RF_E)}
+	};
+	if(_S_SMC==0){if('MSIE'==_S_NAN_){SSL.Global.doc.attachEvent("onclick",handler._S_MEvent);SSL.Global.doc.attachEvent("onmousemove",handler._S_MEvent);SSL.Global.doc.attachEvent("onscroll",handler._S_MEvent)}else{SSL.Global.doc.addEventListener("click",handler._S_MEvent,false);SSL.Global.doc.addEventListener("mousemove",handler._S_MEvent,false);SSL.Global.doc.addEventListener("scroll",handler._S_MEvent,false)}};handler._S_sUOR();
+	return{
+		_S_pSt:function(pid,ext1,ext2){try{if((SA._S_isFreshMeta())||(SA._S_isIFrameSelf(_S_IFH,_S_IFW))){return}if(_S_ET>0){return}++_S_ET;setTimeout(function(){handler._S_gsSID()},_S_T1);setTimeout(function(){handler._S_pBeacon(pid,ext1,ext2,0)},_S_T2)}catch(e){}},
+		_S_pStM:function(pid,ext1,ext2){++_S_ET;handler._S_pBeacon(pid,((undefined==ext1)?handler._S_upExt1():ext1),ext2)},
+		_S_acTrack:function(eid,p){try{if((undefined!=eid)&&(""!=eid)){setTimeout(function(){handler._S_acTrack_i(eid,p)},_S_T1)}}catch(e){}},
+		_S_uaTrack:function(acode,aext){try{if(undefined==acode){acode=""}if(undefined==aext){aext=""}if((""!=acode)||(""!=aext)){setTimeout(function(){handler._S_uaTrack_i(acode,aext)},_S_T1)}}catch(e){}}
+	}
+}
+var GB_SUDA;if(GB_SUDA==null){GB_SUDA=new SUDA({})}
+var _S_PID_="";
+function _S_pSt(pid,ext1,ext2){GB_SUDA._S_pSt(pid,ext1,ext2);}
+function _S_pStM(pid,ext1,ext2){GB_SUDA._S_pStM(pid,ext1,ext2);}
+function _S_acTrack(eid){GB_SUDA._S_acTrack(eid,1);}
+function _S_uaTrack(acode,aext){GB_SUDA._S_uaTrack(acode,aext);}
+//-->
+</script>
+<script type="text/javascript"> 
+//<!--
+GB_SUDA._S_pSt("");
+//-->
+</script>
+<noscript>
+<div style="position:absolute;top:0;left:0;width:0;height:0;visibility:hidden"><img width="0" alt="" src="http://beacon.sina.com.cn/a.gif?noScript" border="0" height="0"></div>
+</noscript>
+
+
+<!-- SUDA_CODE_END --><!-- for iPad begin --><script type="text/javascript">
+(function(){
+if(!/\((iPhone|iPad|iPod)/i.test(navigator.userAgent)){return};
+var iPadScript = document.createElement('script');
+iPadScript.src = 'http://news.sina.com.cn/js/ui/ipad/reset.js';
+document.getElementsByTagName('head')[0].appendChild(iPadScript);
+})();
+</script>
+
+
+<!-- for iPad end --><!-- SSO_GETCOOKIE_START --><script type="text/javascript">var sinaSSOManager=sinaSSOManager||{};sinaSSOManager.getSinaCookie=function(){function dc(u){if(u==undefined){return""}var decoded=decodeURIComponent(u);return decoded=="null"?"":decoded}function ps(str){var arr=str.split("&");var arrtmp;var arrResult={};for(var i=0;i<arr.length;i++){arrtmp=arr[i].split("=");arrResult[arrtmp[0]]=dc(arrtmp[1])}return arrResult}function gC(name){var Res=eval("/"+name+"=([^;]+)/").exec(document.cookie);return Res==null?null:Res[1]}var sup=dc(gC("SUP"));if(!sup){sup=dc(gC("SUR"))}if(!sup){return null}return ps(sup)};</script>
+
+<!-- SSO_GETCOOKIE_END --><script type="text/javascript">new function(r,s,t){this.a=function(n,t,e){if(window.addEventListener){n.addEventListener(t,e,false);}else if(window.attachEvent){n.attachEvent("on"+t,e);}};this.b=function(f){var t=this;return function(){return f.apply(t,arguments);};};this.c=function(){var f=document.getElementsByTagName("form");for(var i=0;i<f.length;i++){var o=f[i].action;if(this.r.test(o)){f[i].action=o.replace(this.r,this.s);}}};this.r=r;this.s=s;this.d=setInterval(this.b(this.c),t);this.a(window,"load",this.b(function(){this.c();clearInterval(this.d);}));}(/http:\/\/www\.google\.c(om|n)\/search/, "http://keyword.sina.com.cn/searchword.php", 250);</script>
+
+<!-- for iPad begin --><script type="text/javascript">
+(function(){
+	if(!/\((iPhone|iPad|iPod)/i.test(navigator.userAgent)){return};
+	document.addEventListener('mousedown',function(e){
+		var ele = e.target;
+		do{
+			if(ele.tagName == 'A'){
+				ele.target = '_self';
+				return;
+			};
+			if(ele.tagName == 'DIV'){return};
+		}while(ele = ele.parentNode);
+	},false);
+})();
+</script>
+
+
+<!-- for iPad end --><!-- SSO_GETCOOKIE_START --><script type="text/javascript">var sinaSSOManager=sinaSSOManager||{};sinaSSOManager.getSinaCookie=function(){function dc(u){if(u==undefined){return""}var decoded=decodeURIComponent(u);return decoded=="null"?"":decoded}function ps(str){var arr=str.split("&");var arrtmp;var arrResult={};for(var i=0;i<arr.length;i++){arrtmp=arr[i].split("=");arrResult[arrtmp[0]]=dc(arrtmp[1])}return arrResult}function gC(name){var Res=eval("/"+name+"=([^;]+)/").exec(document.cookie);return Res==null?null:Res[1]}var sup=dc(gC("SUP"));if(!sup){sup=dc(gC("SUR"))}if(!sup){return null}return ps(sup)};</script>
+
+<!-- SSO_GETCOOKIE_END --><script type="text/javascript">new function(r,s,t){this.a=function(n,t,e){if(window.addEventListener){n.addEventListener(t,e,false);}else if(window.attachEvent){n.attachEvent("on"+t,e);}};this.b=function(f){var t=this;return function(){return f.apply(t,arguments);};};this.c=function(){var f=document.getElementsByTagName("form");for(var i=0;i<f.length;i++){var o=f[i].action;if(this.r.test(o)){f[i].action=o.replace(this.r,this.s);}}};this.r=r;this.s=s;this.d=setInterval(this.b(this.c),t);this.a(window,"load",this.b(function(){this.c();clearInterval(this.d);}));}(/http:\/\/www\.google\.c(om|n)\/search/, "http://keyword.sina.com.cn/searchword.php", 250);</script>
+<div class="wrap_">
+<div class="wrap">
+
+<!-- 标准二级导航_科技 begin --><style type="text/css">
+	.secondaryHeader{height:33px;overflow:hidden;background:url(http://i3.sinaimg.cn/dy/images/header/2008/standardl2nav_bg.gif) repeat-x #fff;color:#000;font-size:12px;font-weight:100;}
+	.secondaryHeader a,.secondaryHeader a:visited{color:#000;text-decoration:none;}
+	.secondaryHeader a:hover,.secondaryHeader a:active{color:#c00;text-decoration:underline;}
+	.sHBorder{border:1px #e3e3e3 solid;padding:0 10px 0 12px;overflow:hidden;zoom:1;}
+	.sHLogo{float:left;height:31px;line-height:31px;overflow:hidden;}
+	.sHLogo span,.sHLogo span a,.sHLogo span a:link,.sHLogo span a:visited,.sHLogo span a:hover{display:block;*float:left;display:table-cell;vertical-align:middle;*display:block;*font-size:27px;*font-family:Arial;height:31px;}
+	.sHLogo span,.sHLogo span a img,.sHLogo span a:link img,.sHLogo span a:visited img,.sHLogo span a:hover img{vertical-align:middle;}
+	.sHLinks{float:right;line-height:31px;}.secondaryHeader img{border:none;}
+	</style>
+<div class="secondaryHeader">
+<div class="sHBorder">
+<div class="sHLogo"><span><a href="http://www.sina.com.cn/"><img src="http://i1.sinaimg.cn/dy/images/header/2009/standardl2nav_sina_new.gif" alt="新浪网"></a><a href="http://geo.sina.com.cn/"><img src="http://i2.sinaimg.cn/IT/deco/2009/1103/geo/images/logo.png" alt="新浪环球地理"></a></span></div>
+<div class="sHLinks"><a href="http://tech.sina.com.cn/">科技首页</a> | <a href="http://www.sina.com.cn/">新浪首页</a> | <a href="http://news.sina.com.cn/guide/">新浪导航</a></div>
+</div>
+</div>
+
+<!-- 标准二级导航_科技 end --><div class="top">
+<div class="banner">
+<a href="http://geo.sina.com.cn/" class="logo"></a>
+<div class="imgarea">
+
+<!-- 640x90轮播通栏广告 开始 --><!--ADS:begin=PDPS000000020612:--><a href="http://tech.sina.com.cn/3g/" target="_blank"><img src="http://d3.sina.com.cn/201006/12/231707_640x90.gif" height="90" border="0" width="640"></a> 
+
+<!--$$ ae/科技3G/A1 $--><!--ADS:end--><!-- 640x90轮播通栏广告 结束 --></div>
+<div class="clearit"></div>
+<div class="search">
+<form action="http://www.iask.com/n" method="get" target="_blank">
+<input onblur="if(this.value==''){this.value='请输入关键词'}" name="k" value="请输入关键词" onfocus="if(this.value=='请输入关键词'){this.value=''}" type="text" class="ipt-01">
+<input type="submit" name="" value="搜索" class="ipt-02">
+<input type="hidden" name="s" value="">
+<input type="hidden" name="sc" value="新浪">
+<input type="hidden" name="t" value="keyword">
+<input type="hidden" name="c" value="2">
+</form>
+</div>
+</div>
+<div class="nav">
+<ul>
+<li class="menu first"><a href="http://geo.sina.com.cn/" target="_blank" class="a1 selected"><span style="background-position:17px -100px ;" class="s1">首页</span></a></li> 
+<!--/* xuehua modify 20100531*/ --><li class="menu"><a href="http://geo.sina.com.cn/news/list.shtml" target="_blank" class="a2"><span class="s1">新闻</span></a></li>
+<li class="v">
+<li class="menu"><a href="http://geo.sina.com.cn/video/" target="_blank" class="a21"><span class="s1">视频</span></a></li>
+<li class="v">
+<li class="menu"><a href="http://geo.sina.com.cn/pod/" target="_blank" class="a22"><span class="s1">每日一图</span></a></li>
+<li class="v">
+<li class="menu"><a href="http://roll.tech.sina.com.cn/geo_pic/gjdl/index.shtml" target="_blank" class="a3"><span class="s1">图库</span></a></li>
+<li class="v">
+<li class="menu"><a href="http://geo.sina.com.cn/animals/list.shtml" target="_blank" class="a4"><span class="s1">动物世界</span></a></li>
+<li class="v">
+<li class="menu"><a href="http://geo.sina.com.cn/environment/list.shtml" target="_blank" class="a5"><span class="s1">环境自然</span></a></li>
+<li class="v">
+<li class="menu"><a href="http://geo.sina.com.cn/science/list.shtml" target="_blank" class="a6"><span class="s1">科学百科</span></a></li>
+<li class="v">
+<li class="menu"><a href="http://geo.sina.com.cn/travel/list.shtml" target="_blank" class="a7"><span class="s1">域外风情</span></a></li>
+<li class="v">
+<li class="menu"><a href="http://geo.sina.com.cn/history/list.shtml" target="_blank" class="a8"><span class="s1">历史考古</span></a></li>
+</ul>
+
+</div>
+</div>
+
+<!-- part begin--><div class="part-a">
+<div class="a-l">
+
+<!-- 焦点图 begin --><div class="FocusPic">
+<div class="FP_arr_left" id="FS_arr_left_01"></div>
+<div class="FP_arr_right" id="FS_arr_right_01"></div>
+<div class="FP_NumList" id="FS_numList_01"></div>
+<div class="FP_cont" id="FS_Cont_01">
+
+<!-- FocusPic_data begin --><div class="FP_pic">
+<div><a href="http://slide.geo.sina.com.cn/slide_29_16805_15211.html" target="_blank"><img src="http://i0.sinaimg.cn/IT/geo/idx/2012/0518/U5385P2T651D1F20451DT20120518112937.jpg" alt="2012最佳夜空摄影作品：Lovejoy彗星掠过壮美夜空" galleryimg="no"></a></div>
+<div class="FP_tit_bg"></div>
+<div class="FP_tit_txt"><a href="http://slide.geo.sina.com.cn/slide_29_16805_15211.html" target="_blank">2012最佳夜空摄影作品：Lovejoy彗星掠过壮美夜空<img src="http://i1.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_009.png" alt="" height="14" width="91"></a></div>
+<div class="FP_tit_cont">近日美国《国家地理》网站公布了2012年年度最佳夜空摄影作品评选结果。所有参赛的摄影作品被分成两个类别分别参加评选：“夜空之美”以及“反对光污染”。</div>
+</div>
+<div class="FP_pic">
+<div><a href="http://tech.sina.com.cn/geo/space/news/2012-05-17/08471204.shtml" target="_blank"><img src="http://i2.sinaimg.cn/IT/geo/idx/2012/0517/U2727P2T651D1F20450DT20120517115332.jpg" alt="太阳系边缘或存未知大行星直径为地球4倍" galleryimg="no"></a></div>
+<div class="FP_tit_bg"></div>
+<div class="FP_tit_txt"><a href="http://tech.sina.com.cn/geo/space/news/2012-05-17/08471204.shtml" target="_blank">太阳系边缘或存未知大行星直径为地球4倍<img src="http://i1.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_009.png" alt="" height="14" width="91"></a></div>
+<div class="FP_tit_cont">在我们的太阳系边缘可能还有一颗尚未被发现的大行星，由于它会对柯伊伯带天体施加引力摄动影响，因此科学家们可以感受到它的存在。
+</div>
+</div>
+<div class="FP_pic">
+<div><a href="http://tech.sina.com.cn/geo/space/news/2012-05-16/09211200.shtml" target="_blank"><img src="http://i2.sinaimg.cn/IT/geo/idx/2012/0516/U2727P2T651D1F20448DT20120516114457.jpg" alt="一周太空图片精选：罕见夜光云闪闪发亮" galleryimg="no"></a></div>
+<div class="FP_tit_bg"></div>
+<div class="FP_tit_txt"><a href="http://tech.sina.com.cn/geo/space/news/2012-05-16/09211200.shtml" target="_blank">一周太空图片精选：罕见夜光云闪闪发亮<img src="http://i1.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_009.png" alt="" height="14" width="91"></a></div>
+<div class="FP_tit_cont">美国国家地理网站刊登了过去一周公布的最佳太空图片，其中包括：宇宙七仙女、超级月亮、恒星诞生记等。</div>
+</div>
+<div class="FP_pic">
+<div><a href="http://slide.geo.sina.com.cn/slide_29_16805_15150.html" target="_blank"><img src="http://i3.sinaimg.cn/IT/geo/idx/2012/0515/U2727P2T651D1F20449DT20120515143358.jpg" alt="攀登8611米“狂暴之山”乔戈里峰的凶险与激情" galleryimg="no"></a></div>
+<div class="FP_tit_bg"></div>
+<div class="FP_tit_txt"><a href="http://slide.geo.sina.com.cn/slide_29_16805_15150.html" target="_blank">攀登8611米“狂暴之山”乔戈里峰的凶险与激情<img src="http://i1.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_009.png" alt="" height="14" width="91"></a></div>
+<div class="FP_tit_cont">乔戈里峰位于中国境内的这条雄伟山脊很少为人所见。由于此地极为偏僻且攀登难度极大，所以大多数登山者都是从巴基斯坦那一面登顶这座喀喇昆仑山脉上的山峰。</div>
+</div>
+
+<!-- FocusPic_data end --></div>
+</div>
+<script type="text/javascript" language="javascript">
+					<!--//--><![CDATA[/ /><!--
+					var focusScroll_01 = new ScrollPic();
+					focusScroll_01.scrollContId   = "FS_Cont_01"; //内容容器ID
+					focusScroll_01.arrLeftId      = "FS_arr_left_01";//左箭头ID
+					focusScroll_01.arrRightId     = "FS_arr_right_01"; //右箭头ID
+
+					focusScroll_01.dotListId      = "FS_numList_01";//点列表ID
+					focusScroll_01.dotClassName   = "";//点className
+					focusScroll_01.dotOnClassName	= "selected";//当前点className
+					focusScroll_01.listType		= "number";//列表类型(number:数字，其它为空)
+					focusScroll_01.listEvent      = "onmouseover"; //切换事件
+
+					focusScroll_01.frameWidth     = 632;//显示框宽度
+					focusScroll_01.pageWidth      = 632; //翻页宽度
+					focusScroll_01.upright        = false; //垂直滚动
+					focusScroll_01.speed          = 10; //移动速度(单位毫秒，越小越快)
+					focusScroll_01.space          = 30; //每次移动像素(单位px，越大越快)
+					focusScroll_01.autoPlay       = true; //自动播放
+					focusScroll_01.autoPlayTime   = 5; //自动播放间隔时间(秒)
+
+					focusScroll_01.initialize(); //初始化
+
+					//--><!]]>
+					</script>
+
+<!-- 焦点图 end --></div>
+
+<!-- left end--><div class="a-r">
+<div style="padding:0 10px; margin-top:4px;" class="title-01">
+<h2><a style="background-image:url(http://i1.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_010.png)" href="http://tech.sina.com.cn/geo/top/hotnews.shtml" target="_blank">标题文字</a></h2>
+<span class="more"><a href="http://tech.sina.com.cn/geo/top/hotnews.shtml" target="_blank"><img src="http://i2.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_011.png" alt="更多"></a></span>
+</div>
+
+<!-- 排行有序列表 begin --><ol class="olist clearfix">
+<li class="first"><img src="http://i3.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_012.png" alt="" height="32" width="26"><a href="http://tech.sina.com.cn/geo/environment/news/2011-01-21/0747626.shtml" target="_blank">黄石公园数公里地面大幅隆起 </a></li>
+<li class="bigarea">
+
+<!-- 左图右文字 begin --><div class="box-imgleft clearfix">
+<div class="box-pic">
+<a href="http://tech.sina.com.cn/geo/environment/news/2011-01-21/0747626.shtml" target="_blank" class="a-img2"><img src="http://i3.sinaimg.cn/IT/images/2011-12-22/U2727P2T78D23315F3303DT20111222182043.jpg" alt="" height="66" width="84"></a>
+</div>
+<div style="margin-left:96px;" class="info-area">
+<h3><a href="http://tech.sina.com.cn/geo/environment/news/2011-01-21/0747626.shtml" target="_blank">黄石公园大片地面大幅隆起</a></h3>
+<p>科学家称美国黄石国家公园超级火山最近进行了一次深呼吸。[<a href="http://tech.sina.com.cn/geo/environment/news/2011-01-21/0747626.shtml" target="_blank">详细</a>]</p>
+</div>
+</div>
+
+<!-- 左图右文字 end --></li>
+<li><span class="num no2"></span><a href="http://tech.sina.com.cn/geo/history/news/2012-05-10/07591193.shtml" target="_blank" title="肯尼亚现巨型史前鳄鱼化石：长8.3米可生吞活人">肯尼亚现巨型史前鳄鱼化石：长8.3米可生</a></li><li><span class="num no3"></span><a href="http://tech.sina.com.cn/geo/space/news/2012-04-28/09391182.shtml" target="_blank" title="火星发现数百大型螺旋结构 或为新型熔岩地貌">火星发现数百大型螺旋结构 或为新型熔岩</a></li><li><span class="num no4"></span><a href="http://tech.sina.com.cn/geo/history/news/2012-05-16/09291202.shtml" target="_blank" title="1200年前玛雅壁画揭穿2012世界末日谣言(图)">1200年前玛雅壁画揭穿2012世界末日谣言</a></li><li><span class="num no5"></span><a href="http://tech.sina.com.cn/geo/science/news/2012-05-02/08061184.shtml" target="_blank" title="研究称暗物质粒子平均每分钟撞击一次人体">研究称暗物质粒子平均每分钟撞击一次人</a></li><li><span class="num no6"></span><a href="http://tech.sina.com.cn/geo/animals/news/2012-05-08/07501189.shtml" target="_blank" title="巴西发现无名菌类可抑制僵尸蚂蚁感染(图)">巴西发现无名菌类可抑制僵尸蚂蚁感染(图</a></li><li><span class="num no7"></span><a href="http://tech.sina.com.cn/geo/space/news/2012-04-27/09181181.shtml" target="_blank" title="土星光环遭数百直径1公里雪球击穿变形(图)">土星光环遭数百直径1公里雪球击穿变形(</a></li><li><span class="num no8"></span><a href="http://tech.sina.com.cn/geo/environment/news/2012-05-07/07391188.shtml" target="_blank" title="研究称美国黄石公园超级火山仍处活跃状态(图)">研究称美国黄石公园超级火山仍处活跃状</a></li><li><span class="num no9"></span><a href="http://tech.sina.com.cn/geo/space/news/2012-04-19/08141171.shtml" target="_blank" title="一周太空图片精选：火星爆发尘暴高20公里(图)">一周太空图片精选：火星爆发尘暴高20公</a></li><li><span class="num no10"></span><a href="http://tech.sina.com.cn/geo/space/news/2012-05-09/07421191.shtml" target="_blank" title="一周太空图片：1.5万光年外宇宙尘埃似雷神头盔">一周太空图片：1.5万光年外宇宙尘埃似雷</a></li>
+</ol>
+
+<!-- 排行有序列表 end --></div>
+
+<!-- right end--><div class="a-bot"></div>
+</div>
+
+
+<!-- part end--><!-- part begin--><div class="part-b">
+<div class="b-l">
+<div style="background:#fff;height:36px" class="title-01">
+<h2><a style="background-image:url(http://i1.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_014.png)" href="http://tech.sina.com.cn/geo/news/list.shtml" target="_blank">焦点新闻</a></h2>
+<span class="more"><a href="http://tech.sina.com.cn/geo/news/list.shtml" target="_blank"><img src="http://i2.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_011.png" alt="更多"></a></span>
+</div>
+<div class="box-01">
+<ul class="list-01">
+<li>
+
+<!-- 左图右文字 begin --><div class="box-imgleft clearfix">
+<div class="box-pic">
+<a href="/geo/space/news/2012-05-17/10091205.shtml" target="_blank" class="a-img"><img src="http://i1.sinaimg.cn/IT/geo/space/news/2012-05-17/U2727P2T634D1205F19958DT20120517115745.jpg" alt="太阳时速8.37万公里慢于预期" height="66" width="84"></a>
+</div>
+<div style="margin-left:96px;" class="info-area">
+<h3><a href="/geo/space/news/2012-05-17/10091205.shtml" target="_blank" title="太阳时速8.37万公里慢于预期">太阳时速8.37万公里慢于预期 </a></h3>
+<p>太阳在银河系中的运行速度可能低于预期[<a href="/geo/space/news/2012-05-17/10091205.shtml" target="_blank">详细</a>]</p>
+</div>
+</div>
+
+<!-- 左图右文字 end --></li><li>
+
+<!-- 左图右文字 begin --><div class="box-imgleft clearfix">
+<div class="box-pic">
+<a href="/geo/history/news/2012-05-16/09291202.shtml" target="_blank" class="a-img"><img src="http://i1.sinaimg.cn/IT/geo/history/news/2012-05-16/U2727P2T634D1202F19958DT20120516114143.jpg" alt="玛雅壁画揭穿2012末日谣言" height="66" width="84"></a>
+</div>
+<div style="margin-left:96px;" class="info-area">
+<h3><a href="/geo/history/news/2012-05-16/09291202.shtml" target="_blank" title="玛雅壁画揭穿2012末日谣言">玛雅壁画揭穿2012末日谣言 </a></h3>
+<p>危地马拉发现1200年前玛雅壁画证实2012并非世界末日[<a href="/geo/history/news/2012-05-16/09291202.shtml" target="_blank">详细</a>]</p>
+</div>
+</div>
+
+<!-- 左图右文字 end --></li><li>
+
+<!-- 左图右文字 begin --><div class="box-imgleft clearfix">
+<div class="box-pic">
+<a href="http://slide.geo.sina.com.cn/slide_29_16805_15125.html" target="_blank" class="a-img"><img src="http://i2.sinaimg.cn/IT/http/slide.geo.sina.com.cn/U5385P2T634D1198F19958DT20120518112714.jpg" alt="壮观火烈鸟繁育栖息地" height="66" width="84"></a>
+</div>
+<div style="margin-left:96px;" class="info-area">
+<h3><a href="http://slide.geo.sina.com.cn/slide_29_16805_15125.html" target="_blank" title="壮观火烈鸟繁育栖息地">壮观火烈鸟繁育栖息地 </a></h3>
+<p>一只加勒比红鹤开始在浅滩上助跑，准备起飞[<a href="http://slide.geo.sina.com.cn/slide_29_16805_15125.html" target="_blank">详细</a>]</p>
+</div>
+</div>
+
+<!-- 左图右文字 end --></li><li>
+
+<!-- 左图右文字 begin --><div class="box-imgleft clearfix">
+<div class="box-pic">
+<a href="http://slide.geo.sina.com.cn/slide_29_16805_14988.html" target="_blank" class="a-img"><img src="http://i1.sinaimg.cn/IT/http/slide.geo.sina.com.cn/U2727P2T634D1196F19958DT20120511151134.jpg" alt="加勒比发现24种蜥蜴(图)" height="66" width="84"></a>
+</div>
+<div style="margin-left:96px;" class="info-area">
+<h3><a href="http://slide.geo.sina.com.cn/slide_29_16805_14988.html" target="_blank" title="加勒比发现24种蜥蜴(图)">加勒比发现24种蜥蜴(图) </a></h3>
+<p>加勒比发现24种蜥蜴：河岸蜥蜴长蓝色尾巴[<a href="http://slide.geo.sina.com.cn/slide_29_16805_14988.html" target="_blank">详细</a>]</p>
+</div>
+</div>
+
+<!-- 左图右文字 end --></li><li>
+
+<!-- 左图右文字 begin --><div class="box-imgleft clearfix">
+<div class="box-pic">
+<a href="http://slide.geo.sina.com.cn/slide_29_16805_15088.html" target="_blank" class="a-img"><img src="http://i1.sinaimg.cn/IT/http/slide.geo.sina.com.cn/U2727P2T634D1195F19958DT20120517115627.jpg" alt="650光年外螺旋星云似宇宙之眼" height="66" width="84"></a>
+</div>
+<div style="margin-left:96px;" class="info-area">
+<h3><a href="http://slide.geo.sina.com.cn/slide_29_16805_15088.html" target="_blank" title="650光年外螺旋星云似宇宙之眼">650光年外螺旋星云似宇宙之眼 </a></h3>
+<p>美国宇航局庆祝斯皮策空间望远镜超期运行1000天[<a href="http://slide.geo.sina.com.cn/slide_29_16805_15088.html" target="_blank">详细</a>]</p>
+</div>
+</div>
+
+<!-- 左图右文字 end --></li><li>
+
+<!-- 左图右文字 begin --><div class="box-imgleft clearfix">
+<div class="box-pic">
+<a href="http://slide.geo.sina.com.cn/slide_29_16805_15060.html" target="_blank" class="a-img"><img src="http://i1.sinaimg.cn/IT/http/slide.geo.sina.com.cn/U2727P2T634D1194F19958DT20120516115203.jpg" alt="雄性非洲象守护领地(图)" height="66" width="84"></a>
+</div>
+<div style="margin-left:96px;" class="info-area">
+<h3><a href="http://slide.geo.sina.com.cn/slide_29_16805_15060.html" target="_blank" title="雄性非洲象守护领地(图)">雄性非洲象守护领地(图) </a></h3>
+<p>罕见细腻的镜头展现了大象的精彩生活场景[<a href="http://slide.geo.sina.com.cn/slide_29_16805_15060.html" target="_blank">详细</a>]</p>
+</div>
+</div>
+
+<!-- 左图右文字 end --></li><li class="last">
+
+<!-- 左图右文字 begin --><div class="box-imgleft clearfix">
+<div class="box-pic">
+<a href="/geo/history/news/2012-05-10/07591193.shtml" target="_blank" class="a-img"><img src="http://i0.sinaimg.cn/IT/geo/history/news/2012-05-10/U2727P2T634D1193F19958DT20120510143907.jpg" alt="肯尼亚现巨型史前鳄鱼化石" height="66" width="84"></a>
+</div>
+<div style="margin-left:96px;" class="info-area">
+<h3><a href="/geo/history/news/2012-05-10/07591193.shtml" target="_blank" title="肯尼亚现巨型史前鳄鱼化石">肯尼亚现巨型史前鳄鱼化石 </a></h3>
+<p>肯尼亚现巨型史前鳄鱼化石：长8.3米可生吞活人[<a href="/geo/history/news/2012-05-10/07591193.shtml" target="_blank">详细</a>]</p>
+</div>
+</div>
+
+<!-- 左图右文字 end --></li><li class="last">
+
+<!-- 左图右文字 begin --><div class="box-imgleft clearfix">
+<div class="box-pic">
+<a href="/geo/space/news/2012-05-09/07421191.shtml" target="_blank" class="a-img"><img src="http://i3.sinaimg.cn/IT/geo/space/news/2012-05-09/U2727P2T634D1191F19958DT20120515144355.jpg" alt="遥远宇宙尘埃似雷神头盔" height="66" width="84"></a>
+</div>
+<div style="margin-left:96px;" class="info-area">
+<h3><a href="/geo/space/news/2012-05-09/07421191.shtml" target="_blank" title="遥远宇宙尘埃似雷神头盔">遥远宇宙尘埃似雷神头盔 </a></h3>
+<p>一周太空图片：1.5万光年外宇宙尘埃似雷神头盔[<a href="/geo/space/news/2012-05-09/07421191.shtml" target="_blank">详细</a>]</p>
+</div>
+</div>
+
+<!-- 左图右文字 end --></li>
+</ul>
+</div>
+</div>
+
+<!-- left end--><div class="b-r">
+<div style="background:#fff;height:36px" class="title-01">
+<h2><a style="background-image:url(http://i2.sinaimg.cn/IT/images/2010-02-01/U2727P2T78D19695F3305DT20100201162835.png)" href="http://slide.geo.sina.com.cn/i_list_29_16840.html" target="_blank">高清图集</a></h2>
+<span class="more"><a href="http://slide.geo.sina.com.cn/i_list_29_16840.html" target="_blank"><img src="http://i2.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_011.png" alt="更多"></a></span>
+</div>
+<div class="box-02">
+<div class="box-02-dot">
+<span class="dotList" id="scrollDotList"></span>
+</div>
+<div class="arrleft" id="scrollArrLeft"></div>
+<div class="box-02-show" id="scrollCont">
+<a href="http://slide.geo.sina.com.cn/slide_29_16840_13225.html" target="_blank"><img src="http://i1.sinaimg.cn/IT/images/2012-02-02/U2727P2T78D23551F1070DT20120202115035.jpg" alt="" height="103" width="191"></a>
+<a href="http://slide.geo.sina.com.cn/slide_29_16840_12945.html" target="_blank"><img src="http://i0.sinaimg.cn/IT/images/2012-02-02/U2727P2T78D23552F1070DT20120202115222.jpg" alt="" height="103" width="191"></a>
+<a href="http://slide.geo.sina.com.cn/slide_29_16840_12869.html" target="_blank"><img src="http://i0.sinaimg.cn/IT/images/2012-02-02/U2727P2T78D23553F1070DT20120202115418.jpg" alt="" height="103" width="191"></a>
+<a href="http://slide.geo.sina.com.cn/slide_29_16840_12711.html" target="_blank"><img src="http://i2.sinaimg.cn/IT/images/2012-02-02/U2727P2T78D23554F1070DT20120202115550.jpg" alt="" height="103" width="191"></a>
+</div>
+<div class="arrright" id="scrollArrRight"></div>
+<div class="clearit"></div>
+</div>
+<div class="box-ad1">
+<div style="border:1px solid #666;padding:5px;background:#fff;width:250px;height:230px;position:relative;top:-3px;">
+
+<!-- 250x230矩形 开始 --><!--ADS:begin=PDPS000000020613:--><a href="http://tech.sina.com.cn/price/" target="_blank"><img src="http://d1.sina.com.cn/201006/12/231740_250-230.gif" height="230" border="0" width="250"></a> 
+
+<!--$$ ae/科技数据库报价/A1 $--><!--ADS:end--><!-- 250x230矩形 结束 --></div>
+</div>
+<script type="text/javascript">
+					//<![CDATA[
+
+						var scrollPic_01 = new ScrollPic();
+						scrollPic_01.scrollContId   = "scrollCont"; //内容容器ID
+						scrollPic_01.arrLeftId      = "scrollArrLeft";//左箭头ID
+						scrollPic_01.arrRightId     = "scrollArrRight"; //右箭头ID
+
+						scrollPic_01.dotListId      = "scrollDotList";//点列表ID
+						scrollPic_01.dotClassName   = "dotItem";//点className
+						scrollPic_01.dotOnClassName	= "dotItemOn";//当前点className
+						scrollPic_01.listType		= "";//列表类型(number:数字，其它为空)
+						scrollPic_01.listEvent      = "onclick"; //切换事件
+
+						scrollPic_01.frameWidth     = 193;//显示框宽度 **显示框宽度必须是翻页宽度的倍数
+						scrollPic_01.pageWidth      = 193; //翻页宽度
+						scrollPic_01.upright        = false; //垂直滚动
+
+						scrollPic_01.speed          = 10; //移动速度(单位毫秒，越小越快)
+						scrollPic_01.space          = 10; //每次移动像素(单位px，越大越快)
+						scrollPic_01.autoPlay       = false; //自动播放
+						scrollPic_01.autoPlayTime   = 5; //自动播放间隔时间(秒)
+
+						scrollPic_01.initialize(); //初始化
+
+					//]]>
+					</script>
+</div>
+
+<!-- right end--><div class="b-bot"></div>
+</div>
+
+
+
+<!-- part end--><!-- 修改 by zichao 20100524 begin --><!-- part begin--><div class="part-b">
+<div class="b-l">
+<div style="height:36px;background:#fff;" class="title-01">
+<h2><a style="background-image:url(http://i1.sinaimg.cn/IT/deco/2010/0524/geo_v/images/geo_wzc01.png)" href="http://geo.sina.com.cn/video/" target="_blank">精彩视频</a></h2>
+<span class="more"><a href="http://geo.sina.com.cn/video/" target="_blank"><img src="http://i2.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_011.png" alt="更多"></a></span>
+</div>
+<div>
+<ul class="list-04">
+<li>
+<div>
+<a href="/geo/animals/v/2010-09-01/1029194.shtml" target="_blank" class="a-img">
+<img src="http://i1.sinaimg.cn/IT/geo/animals/v/2010-09-01/U2727P2T637D194F20095DT20100901163826.jpg" alt="孟加拉虎珍贵画面" height="92" width="125">
+<img width="17" alt="arrow" src="http://video.sina.com.cn/deco/2009/0903/jn_icon2.png" class="arrow" height="17">
+</a>
+</div>
+<h3><a href="/geo/animals/v/2010-09-01/1029194.shtml" target="_blank" title="孟加拉虎珍贵画面">孟加拉虎珍贵画面</a></h3>
+</li><li>
+<div>
+<a href="/geo/travel/v/2010-08-26/0958186.shtml" target="_blank" class="a-img">
+<img src="http://i0.sinaimg.cn/IT/geo/travel/v/2010-08-26/U2727P2T637D186F20095DT20100826152641.jpg" alt="视频：伊斯坦布尔之行" height="92" width="125">
+<img width="17" alt="arrow" src="http://video.sina.com.cn/deco/2009/0903/jn_icon2.png" class="arrow" height="17">
+</a>
+</div>
+<h3><a href="/geo/travel/v/2010-08-26/0958186.shtml" target="_blank" title="视频：伊斯坦布尔之行">视频：伊斯坦布尔之行</a></h3>
+</li><li>
+<div>
+<a href="/geo/animals/v/2010-08-26/0954185.shtml" target="_blank" class="a-img">
+<img src="http://i3.sinaimg.cn/IT/geo/animals/v/2010-08-26/U2727P2T637D185F20095DT20100826151630.jpg" alt="黑曼巴蛇捕食松鼠幼仔" height="92" width="125">
+<img width="17" alt="arrow" src="http://video.sina.com.cn/deco/2009/0903/jn_icon2.png" class="arrow" height="17">
+</a>
+</div>
+<h3><a href="/geo/animals/v/2010-08-26/0954185.shtml" target="_blank" title="黑曼巴蛇捕食松鼠幼仔">黑曼巴蛇捕食松鼠幼仔</a></h3>
+</li><li>
+<div>
+<a href="/geo/travel/v/2010-08-25/0949184.shtml" target="_blank" class="a-img">
+<img src="http://i3.sinaimg.cn/IT/geo/travel/v/2010-08-25/U2727P2T637D184F20095DT20100825190800.jpg" alt="蒙古那达慕节骑马比赛" height="92" width="125">
+<img width="17" alt="arrow" src="http://video.sina.com.cn/deco/2009/0903/jn_icon2.png" class="arrow" height="17">
+</a>
+</div>
+<h3><a href="/geo/travel/v/2010-08-25/0949184.shtml" target="_blank" title="蒙古那达慕节骑马比赛">蒙古那达慕节骑马比赛</a></h3>
+</li></ul>
+<ul style="background:url(http://i0.sinaimg.cn/IT/deco/2009/0825/geo/images/t_cl_006.png) repeat-x  0 top;border:0;padding:5px 0 5px 0;" class="list-04"><li>
+<div>
+<a href="/geo/animals/v/2010-08-25/0941183.shtml" target="_blank" class="a-img">
+<img src="http://i3.sinaimg.cn/IT/geo/animals/v/2010-08-25/U2727P2T637D183F20095DT20100825191032.jpg" alt="三种潜伏海底罕见鲨鱼" height="92" width="125">
+<img width="17" alt="arrow" src="http://video.sina.com.cn/deco/2009/0903/jn_icon2.png" class="arrow" height="17">
+</a>
+</div>
+<h3><a href="/geo/animals/v/2010-08-25/0941183.shtml" target="_blank" title="三种潜伏海底罕见鲨鱼">三种潜伏海底罕见鲨鱼</a></h3>
+</li><li>
+<div>
+<a href="/geo/travel/v/2010-08-24/0930182.shtml" target="_blank" class="a-img">
+<img src="http://i1.sinaimg.cn/IT/geo/travel/v/2010-08-24/U2727P2T637D182F20095DT20100825191323.jpg" alt="泰国救助遭虐待大象" height="92" width="125">
+<img width="17" alt="arrow" src="http://video.sina.com.cn/deco/2009/0903/jn_icon2.png" class="arrow" height="17">
+</a>
+</div>
+<h3><a href="/geo/travel/v/2010-08-24/0930182.shtml" target="_blank" title="泰国救助遭虐待大象">泰国救助遭虐待大象</a></h3>
+</li><li>
+<div>
+<a href="/geo/animals/v/2010-08-24/0911181.shtml" target="_blank" class="a-img">
+<img src="http://i1.sinaimg.cn/IT/geo/animals/v/2010-08-24/U2727P2T637D181F20095DT20100825191411.jpg" alt="白鹭遭章鱼喷水攻击" height="92" width="125">
+<img width="17" alt="arrow" src="http://video.sina.com.cn/deco/2009/0903/jn_icon2.png" class="arrow" height="17">
+</a>
+</div>
+<h3><a href="/geo/animals/v/2010-08-24/0911181.shtml" target="_blank" title="白鹭遭章鱼喷水攻击">白鹭遭章鱼喷水攻击</a></h3>
+</li><li>
+<div>
+<a href="/geo/animals/v/2010-08-23/1205179.shtml" target="_blank" class="a-img">
+<img src="http://i1.sinaimg.cn/IT/geo/animals/v/2010-08-23/U2727P2T637D179F20095DT20100825191543.jpg" alt="蔗蟾破坏澳生态环境" height="92" width="125">
+<img width="17" alt="arrow" src="http://video.sina.com.cn/deco/2009/0903/jn_icon2.png" class="arrow" height="17">
+</a>
+</div>
+<h3><a href="/geo/animals/v/2010-08-23/1205179.shtml" target="_blank" title="蔗蟾破坏澳生态环境">蔗蟾破坏澳生态环境</a></h3>
+</li>
+</ul>
+</div>
+</div>
+
+<!-- left end--><div class="b-r">
+<div style="height:36px;background:#fff;" class="title-01">
+<h2><a style="background-image:url(http://i2.sinaimg.cn/IT/deco/2010/0524/geo_v/images/geo_wzc02.png)">视频排行</a></h2>
+
+<!-- <span class="more"><a href="http://tech.sina.com.cn/discovery/" target="_blank"><img src="url(http://i2.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_011.png"  alt="更多"  /></a></span> --></div>
+<div style="border-top:1px solid #e4e4e4;">
+<ol class="olist clearfix">
+<li class="first"><span class="num"></span><a href="http://tech.sina.com.cn/geo/animals/v/2009-08-30/145726.shtml" target="_blank">北极熊攻击环形海豹</a></li>
+<li class="bigarea">
+
+<!-- 左图右文字 begin --><div class="box-imgleft clearfix">
+<div class="box-pic">
+<a href="http://tech.sina.com.cn/geo/animals/v/2009-08-30/145726.shtml" target="_blank" class="a-img2"><img src="http://i0.sinaimg.cn/IT/images/2009-08-29/U2727P2T78D18117F3307DT20090830154245.jpg" alt="" height="67" width="67"></a>
+</div>
+<div style="margin-left:83px;" class="info-area">
+<h3><a href="http://tech.sina.com.cn/geo/animals/v/2009-08-30/145726.shtml" target="_blank">北极熊攻击环形海豹</a></h3>
+<p>有时出来透透气并不是一个好主意，特别是当北极熊饥饿时。[<a href="http://tech.sina.com.cn/geo/animals/v/2009-08-30/145726.shtml" target="_blank">详细</a>]</p>
+</div>
+</div>
+
+<!-- 左图右文字 end --></li>
+<li><span class="num no2"></span><a href="http://tech.sina.com.cn/geo/animals/v/2009-08-30/145929.shtml" target="_blank">谐相处的河马与鳄鱼</a></li>
+<li><span class="num no3"></span><a href="http://tech.sina.com.cn/geo/history/v/2009-08-30/151143.shtml" target="_blank">揭开玛雅文明的重要环节</a></li>
+<li><span class="num no4"></span><a href="http://tech.sina.com.cn/geo/animals/v/2009-08-30/150940.shtml" target="_blank">食鱼蝙蝠与吃蝙蝠的鱼</a></li>
+<li><span class="num no5"></span><a href="http://tech.sina.com.cn/geo/science/v/2009-08-30/151751.shtml" target="_blank">英国麦田怪圈</a></li>
+<li><span class="num no6"></span><a href="http://tech.sina.com.cn/geo/science/v/2009-08-30/151952.shtml" target="_blank">被当作艺术的计算机病毒</a></li>
+</ol>
+
+<!-- 排行有序列表 end --></div>
+</div>
+
+<!-- right end--><div class="b-bot"></div>
+</div>
+
+<!-- part end--><div class="part-c">
+<!--_SINA_ADS_BEGIN_--><!--ADS:begin=PDPS000000020614:--><a href="http://tech.sina.com.cn/3g/" target="_blank"><img src="http://d5.sina.com.cn/201006/12/231705_950x90.gif" height="90" border="0" width="950"></a> 
+<!--$$ ae/科技3G/A1 $--><!--ADS:end--><!--_SINA_ADS_END_--></div>
+
+<!-- 修改 by zichao 20100524 end --><div class="part-c">
+<a class="arrleft1" id="scrollArrLeft1"></a>
+<div class="arrright1" id="scrollArrRight1"></div>
+<div style="position:relative;" class="show-c" id="scrollCont1">
+<table cellspacing="4">
+<tr>
+<td width="152">
+<h2><a href="http://roll.tech.sina.com.cn/geo_pic/gjdl/index.shtml" target="_blank">
+<img src="http://i3.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_018.png" alt="大视野"></a></h2>
+<div class="box-03">
+<a href="http://tech.sina.com.cn/geo/space/news/2012-05-09/07421191.shtml" target="_blank">
+<img src="http://i3.sinaimg.cn/IT/2012/0515/U5385P2DT20120515171659.jpg" alt="" height="147" width="150"></a>
+<div class="f-bg"></div>
+<div class="f-cont"><a href="http://tech.sina.com.cn/geo/space/news/2012-05-09/07421191.shtml" target="_blank">宇宙尘埃似雷神头盔</a></div>
+</div>
+<div class="box-03">
+<a href="slide.geo.sina.com.cn/slide_29_16805_14988.html" target="_blank">
+<img src="http://i1.sinaimg.cn/IT/2012/0515/U5385P2DT20120515171824.jpg" alt="" height="147" width="150"></a>
+<div class="f-bg"></div>
+<div class="f-cont"><a href="slide.geo.sina.com.cn/slide_29_16805_14988.html" target="_blank">加勒比蜥蜴蓝色尾巴</a></div>
+</div>
+</td>
+<td width="183">
+<div style="margin-top:0;" class="box-03">
+<a href="http://slide.geo.sina.com.cn/slide_29_16805_15060.html#p=2" target="_blank">
+<img src="http://i1.sinaimg.cn/IT/2012/0515/U5385P2DT20120515172005.jpg" alt="" height="129" width="181"></a>
+<div class="f-bg"></div>
+<div class="f-cont"><a href="http://slide.geo.sina.com.cn/slide_29_16805_15060.html#p=2" target="_blank">日暮下的丛林象</a></div>
+</div>
+<div class="box-03">
+<a href="http://slide.geo.sina.com.cn/slide_29_16805_15011.html" target="_blank">
+<img src="http://i3.sinaimg.cn/IT/2012/0515/U5385P2DT20120515172052.jpg" alt="" height="129" width="181"></a>
+<div class="f-bg"></div>
+<div class="f-cont">
+<a href="http://slide.geo.sina.com.cn/slide_29_16805_15011.html" target="_blank">40吨冰川漂石似从天而降</a></div>
+</div>
+<div class="box-03">
+<a href="http://slide.geo.sina.com.cn/slide_29_16805_15125.html#p=6" target="_blank">
+<img src="http://i2.sinaimg.cn/IT/2012/0515/U5385P2DT20120515172208.jpg" alt="" height="129" width="181"></a>
+<div class="f-bg"></div>
+<div class="f-cont">
+<a href="http://slide.geo.sina.com.cn/slide_29_16805_15125.html#p=6" target="_blank">壮观火烈鸟繁育栖息地</a></div>
+</div>
+</td>
+<td width="279">
+<div style="margin-top:0;" class="box-03">
+<a href="http://slide.geo.sina.com.cn/slide_29_16805_15088.html" target="_blank">
+<img src="http://i0.sinaimg.cn/IT/2012/0515/U5385P2DT20120515173052.jpg" alt="" height="196" width="277"></a>
+<div class="f-bg"></div>
+<div class="f-cont"><a href="http://slide.geo.sina.com.cn/slide_29_16805_15088.html" target="_blank">螺旋星云似宇宙之眼</a></div>
+</div>
+<div class="box-03">
+<a href="http://slide.geo.sina.com.cn/slide_29_16840_14977.html" target="_blank">
+<img src="http://i2.sinaimg.cn/IT/2012/0515/U5385P2DT20120515172222.jpg" alt="" height="196" width="277"></a>
+<div class="f-bg"></div>
+<div class="f-cont"><a href="http://slide.geo.sina.com.cn/slide_29_16840_14977.html" target="_blank">冰岛众神瀑布景象壮观</a></div>
+</div>
+</td>
+<td>
+<div style="margin-top:0;" class="box-03">
+<a href="http://slide.geo.sina.com.cn/slide_29_16840_15106.html" target="_blank">
+<img src="http://i2.sinaimg.cn/IT/2012/0515/U5385P2DT20120515172549.jpg" alt="" height="399" width="296"></a>
+<div class="f-bg"></div>
+<div class="f-cont"><a href="http://slide.geo.sina.com.cn/slide_29_16840_15106.html" target="_blank">美国海岸雾中美景</a></div>
+</div>
+</td>
+</tr>
+</table>
+
+<!-- --><table cellspacing="4">
+<tr>
+<td width="152">
+<h2><a href="http://roll.tech.sina.com.cn/geo_pic/gjdl/index.shtml" target="_blank">
+<img src="http://i3.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_018.png" alt="大视野"></a></h2>
+<div class="box-03">
+<a href="http://tech.sina.com.cn/geo/space/news/2012-03-08/09211125.shtml" target="_blank">
+<img src="http://i0.sinaimg.cn/IT/images/2012-03-19/U2727P2T78D23763F3442DT20120319153212.jpg" alt="" height="147" width="150"></a>
+<div class="f-bg"></div>
+<div class="f-cont"><a href="http://tech.sina.com.cn/geo/space/news/2012-03-08/09211125.shtml" target="_blank">4000光年高密度行星</a></div>
+</div>
+<div class="box-03">
+<a href="http://tech.sina.com.cn/geo/animals/news/2012-03-06/10271123.shtml" target="_blank">
+<img src="http://i1.sinaimg.cn/IT/images/2012-03-19/U2727P2T78D23763F3443DT20120319153212.jpg" alt="" height="147" width="150"></a>
+<div class="f-bg"></div>
+<div class="f-cont"><a href="http://tech.sina.com.cn/geo/animals/news/2012-03-06/10271123.shtml" target="_blank">有毒海蛇覆盖带刺鳞片</a></div>
+</div>
+</td>
+<td width="183">
+<div style="margin-top:0;" class="box-03">
+<a href="http://tech.sina.com.cn/geo/science/news/2012-03-09/09281126.shtml" target="_blank">
+<img src="http://i0.sinaimg.cn/IT/images/2012-03-19/U2727P2T78D23763F3307DT20120319153212.jpg" alt="" height="129" width="181"></a>
+<div class="f-bg"></div>
+<div class="f-cont"><a href="http://tech.sina.com.cn/geo/science/news/2012-03-09/09281126.shtml" target="_blank">卡梅隆欲探万米海沟</a></div>
+</div>
+<div class="box-03">
+<a href="http://tech.sina.com.cn/geo/space/news/2012-03-12/09241129.shtml" target="_blank">
+<img src="http://i3.sinaimg.cn/IT/images/2012-03-19/U2727P2T78D23763F3306DT20120319153212.jpg" alt="" height="129" width="181"></a>
+<div class="f-bg"></div>
+<div class="f-cont">
+<a href="http://tech.sina.com.cn/geo/space/news/2012-03-12/09241129.shtml" target="_blank">阿拉斯加上空极光</a></div>
+</div>
+<div class="box-03">
+<a href="http://tech.sina.com.cn/geo/space/news/2012-03-14/09051131.shtml" target="_blank">
+<img src="http://i2.sinaimg.cn/IT/images/2012-03-19/U2727P2T78D23763F3305DT20120319153212.jpg" alt="" height="129" width="181"></a>
+<div class="f-bg"></div>
+<div class="f-cont">
+<a href="http://tech.sina.com.cn/geo/space/news/2012-03-14/09051131.shtml" target="_blank">太阳耀斑3D图像</a></div>
+</div>
+</td>
+<td width="279">
+<div style="margin-top:0;" class="box-03">
+<a href="http://slide.geo.sina.com.cn/slide_29_16805_14064.html" target="_blank">
+<img src="http://i1.sinaimg.cn/IT/images/2012-03-19/U2727P2T78D23763F3304DT20120319153212.jpg" alt="" height="196" width="277"></a>
+<div class="f-bg"></div>
+<div class="f-cont"><a href="http://slide.geo.sina.com.cn/slide_29_16805_14064.html" target="_blank">百万蜘蛛迁移织网</a></div>
+</div>
+<div class="box-03">
+<a href="http://tech.sina.com.cn/geo/history/news/2012-03-19/09321135.shtml" target="_blank">
+<img src="http://i0.sinaimg.cn/IT/images/2012-03-19/U2727P2T78D23763F3303DT20120319153212.jpg" alt="" height="196" width="277"></a>
+<div class="f-bg"></div>
+<div class="f-cont"><a href="http://tech.sina.com.cn/geo/history/news/2012-03-19/09321135.shtml" target="_blank">中国发现盗龙化石</a></div>
+</div>
+</td>
+<td>
+<div style="margin-top:0;" class="box-03">
+<a href="http://tech.sina.com.cn/geo/other/news/2012-03-14/09301132.shtml" target="_blank">
+<img src="http://i3.sinaimg.cn/IT/images/2012-03-19/U2727P2T78D23763F1070DT20120319153212.jpg" alt="" height="399" width="296"></a>
+<div class="f-bg"></div>
+<div class="f-cont"><a href="http://tech.sina.com.cn/geo/other/news/2012-03-14/09301132.shtml" target="_blank">自然灾害巨大威力</a></div>
+</div>
+</td>
+</tr>
+</table>
+
+<!-- --><table cellspacing="4">
+<tr>
+<td width="152">
+<h2><a href="http://roll.tech.sina.com.cn/geo_pic/gjdl/index.shtml" target="_blank">
+<img src="http://i3.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_018.png" alt="大视野"></a></h2>
+<div class="box-03">
+<a href="http://tech.sina.com.cn/geo/travel/news/2011-12-29/08321048.shtml" target="_blank">
+<img src="http://i0.sinaimg.cn/IT/images/2012-01-31/U2727P2T78D23540F1070DT20120131150943.jpg" alt="" height="147" width="150"></a>
+<div class="f-bg"></div>
+<div class="f-cont"><a href="http://tech.sina.com.cn/geo/travel/news/2011-12-29/08321048.shtml" target="_blank">
+走进萨米人：与驯鹿同行</a></div>
+</div>
+<div class="box-03">
+<a href="http://slide.geo.sina.com.cn/slide_29_16805_13002.html#p=3" target="_blank">
+<img src="http://i0.sinaimg.cn/IT/images/2012-01-31/U2727P2T78D23541F1070DT20120131151011.jpg" alt="" height="147" width="150"></a>
+<div class="f-bg"></div>
+<div class="f-cont"><a href="http://slide.geo.sina.com.cn/slide_29_16805_13002.html#p=3" target="_blank">
+缠在树上的马蒂尔达角腹蛇</a></div>
+</div>
+</td>
+<td width="183">
+<div style="margin-top:0;" class="box-03">
+<a href="http://slide.geo.sina.com.cn/slide_29_16805_13202.html#p=4" target="_blank">
+<img src="http://i3.sinaimg.cn/IT/images/2012-01-31/U2727P2T78D23537F1070DT20120131150441.jpg" alt="" height="129" width="181"></a>
+<div class="f-bg"></div>
+<div class="f-cont"><a href="http://slide.geo.sina.com.cn/slide_29_16805_13202.html#p=4" target="_blank">
+在冰洞里祈祷</a></div>
+</div>
+<div class="box-03">
+<a href="http://slide.geo.sina.com.cn/slide_29_16805_12674.html" target="_blank">
+<img src="http://i0.sinaimg.cn/IT/images/2012-01-31/U2727P2T78D23538F1070DT20120131150517.jpg" alt="" height="129" width="181"></a>
+<div class="f-bg"></div>
+<div class="f-cont">
+<a href="http://slide.geo.sina.com.cn/slide_29_16805_12674.html" target="_blank">
+暴雨下的蜻蜓</a></div>
+</div>
+<div class="box-03">
+<a href="http://slide.geo.sina.com.cn/slide_29_16805_13077.html#p=3" target="_blank">
+<img src="http://i1.sinaimg.cn/IT/images/2012-01-31/U2727P2T78D23539F1070DT20120131150603.jpg" alt="" height="129" width="181"></a>
+<div class="f-bg"></div>
+<div class="f-cont"> 
+<a href="http://slide.geo.sina.com.cn/slide_29_16805_13077.html#p=3" target="_blank">
+睡梦中的威德尔海豹</a></div>
+</div>
+</td>
+<td width="279">
+<div style="margin-top:0;" class="box-03">
+<a href="http://slide.geo.sina.com.cn/slide_29_16805_13307.html#p=4" target="_blank">
+<img src="http://i3.sinaimg.cn/IT/images/2012-01-31/U2727P2T78D23534F1070DT20120131150039.jpg" alt="" height="196" width="277"></a>
+<div class="f-bg"></div>
+<div class="f-cont"><a href="http://slide.geo.sina.com.cn/slide_29_16805_13307.html#p=4" target="_blank">
+舔嘴的壁虎</a></div>
+</div>
+<div class="box-03">
+<a href="http://slide.geo.sina.com.cn/slide_29_16805_13287.html#p=3" target="_blank">
+<img src="http://i3.sinaimg.cn/IT/images/2012-01-31/U2727P2T78D23536F1070DT20120131150127.jpg" alt="" height="196" width="277"></a>
+<div class="f-bg"></div>
+<div class="f-cont"><a href="http://slide.geo.sina.com.cn/slide_29_16805_13287.html#p=3" target="_blank">
+北极光闪耀夜空</a></div>
+</div>
+</td>
+<td>
+<div style="margin-top:0;" class="box-03">
+<a href="http://slide.geo.sina.com.cn/slide_29_16840_13225.html#p=3" target="_blank">
+<img src="http://i0.sinaimg.cn/IT/images/2012-01-31/U2727P2T78D23533F1070DT20120131145419.jpg" alt="" height="399" width="296"></a>
+<div class="f-bg"></div>
+<div class="f-cont"><a href="http://slide.geo.sina.com.cn/slide_29_16840_13225.html#p=3" target="_blank">
+乌干达大象平原驰骋</a></div>
+</div>
+</td>
+</tr>
+</table>
+
+<!-- --></div>
+<script type="text/javascript">
+					//<![CDATA[
+
+						var scrollPic_01 = new ScrollPic();
+						scrollPic_01.scrollContId   = "scrollCont1"; //内容容器ID
+						scrollPic_01.arrLeftId      = "";//左箭头ID
+						scrollPic_01.arrRightId     = ""; //右箭头ID
+
+						scrollPic_01.dotListId      = "";//点列表ID
+						scrollPic_01.dotClassName   = "";//点className
+						scrollPic_01.dotOnClassName	= "";//当前点className
+						scrollPic_01.listType		= "";//列表类型(number:数字，其它为空)
+						scrollPic_01.listEvent      = "onclick"; //切换事件
+
+						scrollPic_01.frameWidth     = 932;//显示框宽度 **显示框宽度必须是翻页宽度的倍数
+						scrollPic_01.pageWidth      = 932; //翻页宽度
+						scrollPic_01.upright        = false; //垂直滚动
+
+						scrollPic_01.speed          = 10; //移动速度(单位毫秒，越小越快)
+						scrollPic_01.space          = 400; //每次移动像素(单位px，越大越快)
+						scrollPic_01.autoPlay       = false; //自动播放
+						scrollPic_01.autoPlayTime   = 5; //自动播放间隔时间(秒)
+
+						scrollPic_01.initialize(); //初始化
+						document.getElementById("scrollArrLeft1").onclick= function(){
+							scrollPic_01.pre();
+						};
+						document.getElementById("scrollArrRight1").onclick= function(){
+							scrollPic_01.next();
+						};
+
+					//]]>
+					</script>
+</div>
+
+<!-- part begin--><div class="part-b">
+<div class="b-l">
+<div style="height:36px;background:url(http://i0.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_022.png) no-repeat #fff;" class="title-01">
+<h2><a style="background-image:url(http://i3.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_021.png)" href="http://tech.sina.com.cn/geo/animals/list.shtml" target="_blank">动物世界</a></h2>
+<span class="more"><a href="http://tech.sina.com.cn/geo/animals/list.shtml" target="_blank"><img src="http://i2.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_011.png" alt="更多"></a></span>
+</div>
+<div>
+<ul class="list-03">
+<li>
+<div><a href="/geo/animals/news/2012-05-08/07501189.shtml" target="_blank" class="a-img"><img src="http://i0.sinaimg.cn/IT/geo/animals/news/2012-05-08/U2727P2T634D1189F19956DT20120510145818.jpg" alt="无名菌类可抑制僵尸蚂蚁感染" height="136" width="200"></a></div>
+<h3><a href="/geo/animals/news/2012-05-08/07501189.shtml" target="_blank" title="">无名菌类可抑制僵尸蚂蚁感染</a></h3>
+<p>巴西发现无名菌类可抑制僵尸蚂蚁感染[<a href="/geo/animals/news/2012-05-08/07501189.shtml" target="_blank">详细</a>]</p>
+</li><li>
+<div><a href="/geo/animals/news/2012-04-12/09191168.shtml" target="_blank" class="a-img"><img src="http://i2.sinaimg.cn/IT/geo/animals/news/2012-04-12/U2727P2T634D1168F19956DT20120423200032.jpg" alt="新种吸盘嘴甲鲶鱼外形怪异" height="136" width="200"></a></div>
+<h3><a href="/geo/animals/news/2012-04-12/09191168.shtml" target="_blank" title="">新种吸盘嘴甲鲶鱼外形怪异</a></h3>
+<p>厄瓜多尔圣罗莎河中生活着一种新种吸盘嘴甲鲶鱼。[<a href="/geo/animals/news/2012-04-12/09191168.shtml" target="_blank">详细</a>]</p>
+</li><li>
+<div><a href="/geo/animals/news/2012-03-06/10271123.shtml" target="_blank" class="a-img"><img src="http://i2.sinaimg.cn/IT/geo/animals/news/2012-03-06/U2727P2T634D1123F19956DT20120314103214.jpg" alt="有毒海蛇全身覆盖带刺鳞片" height="136" width="200"></a></div>
+<h3><a href="/geo/animals/news/2012-03-06/10271123.shtml" target="_blank" title="">有毒海蛇全身覆盖带刺鳞片</a></h3>
+<p>这种海蛇奇特之处在于，全身从头到尾都覆盖着一层带刺鳞...[<a href="/geo/animals/news/2012-03-06/10271123.shtml" target="_blank">详细</a>]</p>
+</li>
+</ul>
+</div>
+</div>
+
+<!-- left end--><div class="b-r">
+<style type="text/css">
+.t_hz_0128{font-size:14px;font-weight:normal;}
+.t_hz_0128 a{color:#a68500;}
+</style>
+<div class="b-r">
+<div style="height:36px;background:#fff;" class="title-01">
+<h2><a style="background-image:url(http://i3.sinaimg.cn/IT/images/2010-02-01/U2727P2T78D19695F3306DT20100201162835.png); width:180px;">调查</a></h2>
+<span class="more"><a href="url"></a></span>
+</div>
+<div style="padding-bottom:0" class="box-04">
+
+<!-- 左图右文字 begin --><div class="box-imgleft clearfix box-05">
+<div class="box-pic "><a href="http://slide.geo.sina.com.cn/slide_29_16805_14641.html" target="_blank" class="fyellow">
+<img src="http://i2.sinaimg.cn/IT/images/2012-05-07/U2727P2T78D23942F3445DT20120507150028.jpg" alt="" height="128" width="114"></a>
+</div>
+<div style="margin-left:124px;" class="info-area">
+<h2 class="t_hz_0128"><a href="http://slide.geo.sina.com.cn/slide_29_16805_14641.html" target="_blank" class="fyellow">《华夏地理》3月封面</a></h2>
+<p>泰坦尼克号的残骸在黑暗中沉睡，腐坏的钢铁乱七八糟地散落在北大西洋海底约400公顷的一片海床上。</p>
+</div>
+</div>
+
+<!-- 左图右文字 end --></div>
+<div style="margin-top:0" class="box-ad1">
+<ul style="padding-left:10px;text-align:left;">
+<li class="lh20"><a href="http://slide.geo.sina.com.cn/slide_29_16805_14787.html" target="_blank" class="fyellow">阿拉伯海中珍宝：渔夫灯光引来年幼鲸鲨(图)</a></li>
+<li class="lh20"><a href="http://slide.geo.sina.com.cn/slide_29_16805_14680.html" target="_blank" class="fyellow">犀牛血腥盗猎战争：犀角黑市价格贵比黄金(图)</a></li>
+<li class="lh20"><a href="http://tech.sina.com.cn/geo/history/news/2012-03-30/07291154.shtml" target="_blank" class="fyellow">破解达芬奇密码：神秘女子画像值上亿美元(图)</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- right end--><div class="b-bot"></div>
+</div>
+
+
+<!-- part end--><!-- part begin--><div class="part-b">
+<div class="b-l">
+<div style="height:36px;background:url(http://i2.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_028.png) no-repeat #fff 0 100%;" class="title-01">
+<h2><a style="background-image:url(http://i1.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_027.png)" href="http://tech.sina.com.cn/geo/space/list.shtml" target="_blank">太空揭秘</a></h2>
+<span class="more"><a href="http://tech.sina.com.cn/geo/space/list.shtml" target="_blank"><img src="http://i2.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_011.png" alt="更多"></a></span>
+</div>
+<div>
+<ul class="list-03">
+<li>
+<div><a href="/geo/space/news/2012-05-03/09311186.shtml" target="_blank" class="a-img"><img src="http://i3.sinaimg.cn/IT/geo/space/news/2012-05-03/U2727P2T634D1186F19956DT20120507143948.jpg" alt="火星北极沙丘造型似鸽子(图)" height="136" width="200"></a></div>
+<h3><a href="/geo/space/news/2012-05-03/09311186.shtml" target="_blank" title="">火星北极沙丘造型似鸽子(图)</a></h3>
+<p>过去一周最佳太空图片，包括：天使极光、火星鸽子等[<a href="/geo/space/news/2012-05-03/09311186.shtml" target="_blank">详细</a>]</p>
+</li><li>
+<div><a href="/geo/space/news/2012-04-10/11191166.shtml" target="_blank" class="a-img"><img src="http://i1.sinaimg.cn/IT/geo/space/news/2012-04-10/U2727P2T634D1166F19956DT20120423200153.jpg" alt="鸢尾花星云宇宙美丽绽放" height="136" width="200"></a></div>
+<h3><a href="/geo/space/news/2012-04-10/11191166.shtml" target="_blank" title="">鸢尾花星云宇宙美丽绽放</a></h3>
+<p>一周太空图片精选：鸢尾花星云宇宙美丽绽放[<a href="/geo/space/news/2012-04-10/11191166.shtml" target="_blank">详细</a>]</p>
+</li><li>
+<div><a href="/geo/space/news/2012-03-28/10321149.shtml" target="_blank" class="a-img"><img src="http://i2.sinaimg.cn/IT/geo/space/news/2012-03-28/U7917P2T634D1149F19956DT20120331104752.jpg" alt="美航天局连发5枚火箭产生烟雾" height="136" width="200"></a></div>
+<h3><a href="/geo/space/news/2012-03-28/10321149.shtml" target="_blank" title="">美航天局连发5枚火箭产生烟雾</a></h3>
+<p>美国宇航局本周二在大西洋沿岸罕见的发射了5枚探空火箭[<a href="/geo/space/news/2012-03-28/10321149.shtml" target="_blank">详细</a>]</p>
+</li>
+</ul>
+</div>
+</div>
+
+<!-- left end--><div class="b-r">
+<div style="height:36px;background:#fff;" class="title-01">
+<h2><a style="background-image:url(http://i3.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_029.png)" href="http://tech.sina.com.cn/discovery/" target="_blank">精彩推荐</a></h2>
+<span class="more"><a href="http://tech.sina.com.cn/discovery/" target="_blank"><img src="http://i2.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_011.png" alt="更多"></a></span>
+</div>
+<div class="box-04">
+<ul class="list-05">
+<li><a href="http://slide.geo.sina.com.cn/slide_29_16805_15211.html" target="_blank" title="2012最佳夜空摄影：Lovejoy彗星掠过壮美夜空">2012最佳夜空摄影：Lovejoy彗星掠过壮美夜空</a></li><li><a href="http://tech.sina.com.cn/d/2012-05-18/09527129271.shtml" target="_blank" title="每日卫星照：俄罗斯蓝灰色烟羽飘向白令海(图)">每日卫星照：俄罗斯蓝灰色烟羽飘向白令海(图)</a></li><li><a href="http://tech.sina.com.cn/d/2012-05-18/09217128994.shtml" target="_blank" title="日本研发电动独轮车最高时速5.9公里(图)">日本研发电动独轮车最高时速5.9公里(图)</a></li><li><a href="http://tech.sina.com.cn/d/2012-05-18/09117128869.shtml" target="_blank" title="下月将发生金星凌日 或有助寻找系外行星(图)">下月将发生金星凌日 或有助寻找系外行星(图)</a></li><li><a href="http://slide.tech.sina.com.cn/d/slide_5_453_21842.html" target="_blank" title="英国举办女王钻石首饰展：原石重3106克拉(图)">英国举办女王钻石首饰展：原石重3106克拉(图)</a></li><li><a href="http://slide.tech.sina.com.cn/d/slide_5_453_21840.html" target="_blank" title="摄影师拍到河马同狮子生死搏斗全程(高清)">摄影师拍到河马同狮子生死搏斗全程(高清)</a></li><li><a href="http://tech.sina.com.cn/d/2012-05-18/07437127745.shtml" target="_blank" title="NASA计划登陆500万公里外小行星 最终将其摧毁">NASA计划登陆500万公里外小行星 最终将其摧毁</a></li><li><a href="http://slide.tech.sina.com.cn/d/slide_5_453_21839.html" target="_blank" title="挪威摄影师捕捉极光迷人景色(高清)">挪威摄影师捕捉极光迷人景色(高清)</a></li><li><a href="http://slide.tech.sina.com.cn/d/slide_5_453_21837.html" target="_blank" title="印尼野生大象遭毒杀：头部和象鼻被割(高清)">印尼野生大象遭毒杀：头部和象鼻被割(高清)</a></li>
+</ul>
+</div>
+</div>
+
+<!-- right end--><div class="b-bot"></div>
+</div>
+
+
+<!-- part end--><!-- part begin--><div class="part-b">
+<div class="b-l">
+<div style="height:36px;background:url(http://i1.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_032.png) no-repeat #fff 0 100%;" class="title-01">
+<h2><a style="background-image:url(http://i0.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_031.png);width:200px;" href="http://tech.sina.com.cn/geo/environment/list.shtml" target="_blank">环境自然</a></h2>
+<span class="more"><a href="http://tech.sina.com.cn/geo/environment/list.shtml" target="_blank"><img src="http://i2.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_011.png" alt="更多"></a></span>
+</div>
+<div>
+<ul class="list-03">
+<li>
+<div><a href="/geo/environment/news/2012-05-07/07391188.shtml" target="_blank" class="a-img"><img src="http://i2.sinaimg.cn/IT/geo/environment/news/2012-05-07/U2727P2T634D1188F19956DT20120510145922.jpg" alt="黄石公园超级火山仍处活跃状态" height="136" width="200"></a></div>
+<h3><a href="/geo/environment/news/2012-05-07/07391188.shtml" target="_blank" title="">黄石公园超级火山仍处活跃状态</a></h3>
+<p>黄石超级火山可能比原先认为的喷发次数更加频繁[<a href="/geo/environment/news/2012-05-07/07391188.shtml" target="_blank">详细</a>]</p>
+</li><li>
+<div><a href="http://slide.geo.sina.com.cn/slide_29_16805_14474.html" target="_blank" class="a-img"><img src="http://i1.sinaimg.cn/IT/http/slide.geo.sina.com.cn/U2727P2T634D1185F19956DT20120502084438.jpg" alt="美国遭龙卷风袭击：大型卡车凌空卷起" height="136" width="200"></a></div>
+<h3><a href="http://slide.geo.sina.com.cn/slide_29_16805_14474.html" target="_blank" title="">美国遭龙卷风袭击：大型卡车凌</a></h3>
+<p>一场剧烈的龙卷风突然袭击了美国德克萨斯州达拉斯地区[<a href="http://slide.geo.sina.com.cn/slide_29_16805_14474.html" target="_blank">详细</a>]</p>
+</li><li>
+<div><a href="/geo/environment/news/2012-03-27/07471146.shtml" target="_blank" class="a-img"><img src="http://i2.sinaimg.cn/IT/geo/environment/news/2012-03-27/U7917P2T634D1146F19956DT20120329153002.jpg" alt="卡梅隆讲述只身万米深潜(图)" height="136" width="200"></a></div>
+<h3><a href="/geo/environment/news/2012-03-27/07471146.shtml" target="_blank" title="">卡梅隆讲述只身万米深潜(图)</a></h3>
+<p>导演卡梅隆完成了对马里亚纳海沟底部的考察之旅[<a href="/geo/environment/news/2012-03-27/07471146.shtml" target="_blank">详细</a>]</p>
+</li>
+</ul>
+</div>
+</div>
+
+<!-- left end--><div class="b-r">
+<div style="height:36px;background:#fff;" class="title-01">
+<h2><a style="background-image:url(http://i2.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_033.png)" href="http://myphoto.tech.sina.com.cn" target="_blank">新摄会</a></h2>
+<span class="more"><a href="http://myphoto.tech.sina.com.cn" target="_blank"><img src="http://i2.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_011.png" alt="更多"></a></span>
+</div>
+<div class="box-04">
+<div class="box-06">
+<div class="arrleft2" id="scrollArrLeft2">
+</div>
+<div class="box-06-show" id="scrollCont2">
+<ul>
+<li>
+<div><a href="http://myphoto.tech.sina.com.cn/p/photo.php?photoid=305196&amp;dpc=1" target="_blank" class="a-img"><img src="http://i2.sinaimg.cn/IT/images/2009-11-06/U1960P2T78D18969F1070DT20091106184349.jpg" alt="" height="147" width="147"></a></div>
+<h3><a href="http://myphoto.tech.sina.com.cn/p/photo.php?photoid=305196&amp;dpc=1" target="_blank" class="fyellow">放牧</a></h3>
+<p><a href="http://myphoto.tech.sina.com.cn/p/gallery.php?uid=1568792194" target="_blank" class="fyellow">作者：宋哥</a></p>
+</li>
+<li>
+<div><a href="http://myphoto.tech.sina.com.cn/p/photo.php?photoid=305069" target="_blank" class="a-img"><img src="http://i1.sinaimg.cn/IT/images/2009-11-06/U1960P2T78D18969F3303DT20091106184851.jpg" alt="" height="147" width="147"></a></div>
+<h3><a href="http://myphoto.tech.sina.com.cn/p/photo.php?photoid=305069" target="_blank" class="fyellow">滇池风光</a></h3>
+<p><a href="http://myphoto.tech.sina.com.cn/p/gallery.php?uid=1568792194" target="_blank" class="fyellow">作者：yngtsm</a></p>
+</li>
+<li>
+<div><a href="http://myphoto.tech.sina.com.cn/p/photo.php?photoid=305083&amp;dpc=1" target="_blank" class="a-img"><img src="http://i3.sinaimg.cn/IT/images/2009-11-06/U1960P2T78D18969F3304DT20091106185204.jpg" alt="" height="147" width="147"></a></div>
+<h3><a href="http://myphoto.tech.sina.com.cn/p/photo.php?photoid=305083&amp;dpc=1" target="_blank" class="fyellow">黄山归来</a></h3>
+<p><a href="http://myphoto.tech.sina.com.cn/p/gallery.php?uid=1214985501" target="_blank" class="fyellow">作者：欣然</a></p>
+</li>
+<li>
+<div><a href="http://myphoto.tech.sina.com.cn/p/photo.php?photoid=305019&amp;dpc=1" target="_blank" class="a-img"><img src="http://i0.sinaimg.cn/IT/images/2009-11-06/U1960P2T78D18969F3305DT20091106185451.jpg" alt="" height="147" width="147"></a></div>
+<h3><a href="http://myphoto.tech.sina.com.cn/p/photo.php?photoid=305019&amp;dpc=1" target="_blank" class="fyellow">苏州街</a></h3>
+<p><a href="http://myphoto.tech.sina.com.cn/p/gallery.php?uid=1223354691" target="_blank" class="fyellow">作者：清溪独步</a></p>
+</li>
+<li>
+<div><a href="http://myphoto.tech.sina.com.cn/p/photo.php?photoid=304959&amp;dpc=1" target="_blank" class="a-img"><img src="http://i1.sinaimg.cn/IT/images/2009-11-06/U1960P2T78D18969F3306DT20091106185820.jpg" alt="" height="147" width="147"></a></div>
+<h3><a href="http://myphoto.tech.sina.com.cn/p/photo.php?photoid=304959&amp;dpc=1" target="_blank" class="fyellow">下雪时</a></h3>
+<p><a href="http://myphoto.tech.sina.com.cn/p/gallery.php?uid=1607965322" target="_blank" class="fyellow">作者：正阳天下</a></p>
+</li>
+</ul>
+</div>
+<div class="arrright2" id="scrollArrRight2"></div>
+<div class="dotList" id="scrollDotList2"></div>
+</div>
+</div>
+<script type="text/javascript">
+					//<![CDATA[
+
+						var scrollPic_02 = new ScrollPic();
+						scrollPic_02.scrollContId   = "scrollCont2"; //内容容器ID
+						scrollPic_02.arrLeftId      = "scrollArrLeft2";//左箭头ID
+						scrollPic_02.arrRightId     = "scrollArrRight2"; //右箭头ID
+
+						scrollPic_02.dotListId      = "scrollDotList2";//点列表ID
+						scrollPic_02.dotClassName   = "dotItem";//点className
+						scrollPic_02.dotOnClassName	= "dotItemOn";//当前点className
+						scrollPic_02.listType		= "";//列表类型(number:数字，其它为空)
+						scrollPic_02.listEvent      = "onclick"; //切换事件
+
+						scrollPic_02.frameWidth     = 149;//显示框宽度 **显示框宽度必须是翻页宽度的倍数
+						scrollPic_02.pageWidth      = 149; //翻页宽度
+						scrollPic_02.upright        = false; //垂直滚动
+
+						scrollPic_02.speed          = 10; //移动速度(单位毫秒，越小越快)
+						scrollPic_02.space          = 10; //每次移动像素(单位px，越大越快)
+						scrollPic_02.autoPlay       = false; //自动播放
+						scrollPic_02.autoPlayTime   = 5; //自动播放间隔时间(秒)
+
+						scrollPic_02.initialize(); //初始化
+
+					//]]>
+					</script>
+</div>
+
+<!-- right end--><div class="b-bot"></div>
+</div>
+
+
+<!-- part end--><!-- part begin--><div class="part-b">
+<div class="b-l">
+<ul class="list-03 list-031">
+<li>
+<div style="height:36px;background:#fff;" class="title-01">
+<h2><a style="background-image:url(http://i0.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_035.png)" href="http://tech.sina.com.cn/geo/science/list.shtml" target="_blank">科学百科</a></h2>
+<span class="more"><a href="http://tech.sina.com.cn/geo/science/list.shtml" target="_blank"><img src="http://i2.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_011.png" alt="更多"></a></span>
+</div>
+</li>
+<li>
+<div style="height:36px;background:#fff;" class="title-01">
+<h2><a style="background-image:url(http://i1.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_036.png)" href="http://tech.sina.com.cn/geo/travel/list.shtml" target="_blank">域外风情</a></h2>
+<span class="more"><a href="http://tech.sina.com.cn/geo/travel/list.shtml" target="_blank"><img src="http://i2.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_011.png" alt="更多"></a></span>
+</div>
+</li>
+<li>
+<div style="height:36px;background:#fff;" class="title-01">
+<h2><a style="background-image:url(http://i2.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_037.png)" href="http://tech.sina.com.cn/geo/history/list.shtml" target="_blank">历史考古</a></h2>
+<span class="more"><a href="http://tech.sina.com.cn/geo/history/list.shtml" target="_blank"><img src="http://i2.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_011.png" alt="更多"></a></span>
+</div>
+</li>
+</ul>
+<div>
+<ul class="list-03">
+<li>
+<div><a href="/geo/science/news/2012-03-02/10071121.shtml" target="_blank" class="a-img"><img src="http://i0.sinaimg.cn/IT/geo/science/news/2012-03-02/U2727P2T634D1121F19956DT20120306115235.jpg" alt="女性育龄期内可产生新卵子" height="136" width="200"></a></div>
+<h3><a href="/geo/science/news/2012-03-02/10071121.shtml" target="_blank" title="">女性育龄期内可产生新卵子</a></h3>
+<p>最新成果显示女性在整个育龄期内都可能有新的卵子排出[<a href="/geo/science/news/2012-03-02/10071121.shtml" target="_blank">详细</a>]</p>
+<ul class="list-07">
+<li><a href="/geo/science/news/2012-05-02/08061184.shtml" target="_blank" title="研究称暗物质粒子平均每分钟撞击一次人体">研究称暗物质粒子平均每分钟撞击一</a></li><li><a href="/geo/science/news/2012-04-11/09301167.shtml" target="_blank" title="卡梅隆计划重返马里亚纳海沟探索地球最深处">卡梅隆计划重返马里亚纳海沟探索地</a></li><li><a href="/geo/science/news/2012-04-10/09161165.shtml" target="_blank" title="科学家称泰坦尼克号如健在将遭遇更多冰山(图)">科学家称泰坦尼克号如健在将遭遇更</a></li><li><a href="/geo/science/news/2012-04-01/09141159.shtml" target="_blank" title="揭开愚人节来历之谜：历法变革说与小丑说(图)">揭开愚人节来历之谜：历法变革说与</a></li>
+</ul>
+</li>
+<li>
+<div><a href="/geo/travel/news/2012-03-02/09121118.shtml" target="_blank" class="a-img"><img src="http://i3.sinaimg.cn/IT/geo/travel/news/2012-03-02/U2727P2T634D1118F19956DT20120314103348.jpg" alt="揭秘西班牙太阳能发电塔(图)" height="136" width="200"></a></div>
+<h3><a href="/geo/travel/news/2012-03-02/09121118.shtml" target="_blank" title="">揭秘西班牙太阳能发电塔(图)</a></h3>
+<p>从繁荣到衰败，西班牙太阳能产业上演大逆转令人感到吃惊[<a href="/geo/travel/news/2012-03-02/09121118.shtml" target="_blank">详细</a>]</p>
+<ul class="list-07">
+<li><a href="http://slide.geo.sina.com.cn/slide_29_16805_15150.html" target="_blank" title="攀登8611米“狂暴之山”乔戈里峰的凶险与激情">攀登8611米“狂暴之山”乔戈里峰的</a></li><li><a href="/geo/travel/news/2012-04-17/09081170.shtml" target="_blank" title="印尼海啸7年前后对比：清真寺被埋仅露顶端">印尼海啸7年前后对比：清真寺被埋仅</a></li><li><a href="/geo/travel/news/2012-03-02/09121118.shtml" target="_blank" title="揭秘西班牙太阳能发电塔：定日镜似巨型向日葵">揭秘西班牙太阳能发电塔：定日镜似</a></li>
+</ul>
+</li>
+<li>
+<div><a href="/geo/history/news/2012-03-19/09321135.shtml" target="_blank" class="a-img"><img src="http://i0.sinaimg.cn/IT/geo/history/news/2012-03-19/U7917P2T634D1135F19956DT20120322110558.jpg" alt="中国发现亿年前小盗龙化石" height="136" width="200"></a></div>
+<h3><a href="/geo/history/news/2012-03-19/09321135.shtml" target="_blank" title="">中国发现亿年前小盗龙化石</a></h3>
+<p>小盗龙是一种浑身长满羽毛的恐龙，它生活在大约1.25亿年...[<a href="/geo/history/news/2012-03-19/09321135.shtml" target="_blank">详细</a>]</p>
+<ul class="list-07">
+<li><a href="/geo/history/news/2012-05-16/09291202_2.shtml" target="_blank" title="1200年前玛雅壁画证实2012并非世界末日(图)(2)">1200年前玛雅壁画证实2012并非世界</a></li><li><a href="/geo/history/news/2012-05-16/09291202.shtml" target="_blank" title="1200年前玛雅壁画揭穿2012世界末日谣言(图)">1200年前玛雅壁画揭穿2012世界末日</a></li><li><a href="/geo/history/news/2012-05-10/07591193.shtml" target="_blank" title="肯尼亚现巨型史前鳄鱼化石：长8.3米可生吞活人">肯尼亚现巨型史前鳄鱼化石：长8.3米</a></li><li><a href="http://slide.geo.sina.com.cn/slide_29_16805_14765.html" target="_blank" title="我国出土3000尊古代佛像：头绕莲花象征轮回">我国出土3000尊古代佛像：头绕莲花</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<!-- left end--><div class="b-r">
+<div style="height:36px;background:#fff;" class="title-01">
+<h2><a style="background-image:url(http://i3.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_038.png)" href="http://tech.sina.com.cn/blog/discovery/roll.html" target="_blank">博客沙龙</a></h2>
+<span class="more"><a href="http://tech.sina.com.cn/blog/discovery/roll.html" target="_blank"><img src="http://i2.sinaimg.cn/IT/deco/2009/1103/geo/images/dl_cl_011.png" alt="更多"></a></span>
+</div>
+<div class="box-04">
+
+<!-- 左图右文字 begin --><div class="box-imgleft clearfix box-05 box-051">
+<div class="box-pic ">
+<a href="http://blog.sina.com.cn/s/blog_59a923a60100k7p9.html?tj=1" target="_blank" class="a-img"><img src="http://i3.sinaimg.cn/IT/2010/0714/2010714153914.jpg" alt="" height="96" width="98"></a>
+</div>
+<div style="margin-left:106px;" class="info-area">
+<h3><a href="http://blog.sina.com.cn/s/blog_59a923a60100k7p9.html?tj=1" target="_blank">火与艺术的绚烂结合</a></h3>
+<p>火与艺术的完美结合，真是令人叹为观止。[<a href="http://blog.sina.com.cn/s/blog_59a923a60100k7p9.html?tj=1" target="_blank">详细</a>]</p>
+</div>
+</div>
+
+
+<!-- 左图右文字 end --><!-- 左图右文字 begin --><div class="box-imgleft clearfix box-05 box-051">
+<div class="box-pic ">
+<a href="http://blog.sina.com.cn/s/blog_593e34060100jzrn.html?tj=1" target="_blank" class="a-img"><img src="http://i0.sinaimg.cn/IT/2010/0714/2010714154042.jpg" alt="" height="96" width="98"></a>
+</div>
+<div style="margin-left:106px;" class="info-area">
+<h3><a href="http://blog.sina.com.cn/s/blog_593e34060100jzrn.html?tj=1" target="_blank">霍金想象中的外星生物</a></h3>
+<p>他想象的外星生命包括陆地食草动物和像蜥蜴一样的食肉动物。[<a href="http://blog.sina.com.cn/s/blog_593e34060100jzrn.html?tj=1" target="_blank">详细</a>]</p>
+</div>
+</div>
+
+<!-- 左图右文字 end --><ul class="list-07">
+<li><span class="r"><a href="http://blog.sina.com.cn/u/2641598875%20" target="_blank" title="爱自然">爱自然</a></span><a href="http://blog.sina.com.cn/s/blog_9d73999b01015rde.html?tj=1" target="_blank" title="最恐怖的14种致命杀手">最恐怖的14种致命杀手</a></li><li><span class="r"><a href="http://blog.sina.com.cn/ikexue" target="_blank" title="爱科学">爱科学</a></span><a href="http://blog.sina.com.cn/s/blog_4ce4814f01012uye.html?tj=1" target="_blank" title="被保存了4千年的面条">被保存了4千年的面条</a></li><li><span class="r"><a href="http://blog.sina.com.cn/renwendili" target="_blank" title="华夏地理">华夏地理</a></span><a href="http://blog.sina.com.cn/s/blog_485b612b01015itp.html?tj=1" target="_blank" title="救助路边受困的考拉">救助路边受困的考拉</a></li>
+</ul>
+</div>
+</div>
+
+<!-- right end--><div class="b-bot"></div>
+</div>
+
+<!-- part end--></div>
+</div>
+<div class="all-bot"></div>
+
+
+
+<!-- sina footer begin --><!-- footer begin --><!-- footer begin --><div id="footer">
+<p><a href="http://comment4.news.sina.com.cn/comment/skin/feedback.html" target="_blank">科技时代意见反馈留言板</a>　电话：010-82628888-5595　　欢迎批评指正</p>
+<p><a href="http://corp.sina.com.cn/chn/">新浪简介</a> | <a href="http://corp.sina.com.cn/eng/">About Sina</a> | <a href="http://emarketing.sina.com.cn/">广告服务</a> | <a href="http://www.sina.com.cn/contactus.html">联系我们</a> | <a href="http://corp.sina.com.cn/chn/sina_job.html">招聘信息</a> | <a href="http://www.sina.com.cn/intro/lawfirm.shtml">网站律师</a> | <a href="http://english.sina.com">SINA English</a> | <a href="http://members.sina.com.cn/apply/">会员注册</a> | <a href="http://help.sina.com.cn/">产品答疑</a></p>
+<p>Copyright © 1996 - 2012 SINA Corporation, All Rights Reserved</p>
+<p>新浪公司　<a href="http://home.sina.com.cn/intro/copyright.shtml" target="_blank">版权所有</a></p>
+</div>
+
+
+
+
+<!-- footer end --><!-- footer end --><!-- sina footer end --><!-- SSO_UPDATECOOKIE_START --><script type="text/javascript">var sinaSSOManager=sinaSSOManager||{};sinaSSOManager.q=function(b){if(typeof b!="object"){return""}var a=new Array();for(key in b){a.push(key+"="+encodeURIComponent(b[key]))}return a.join("&")};sinaSSOManager.es=function(f,d,e){var c=document.getElementsByTagName("head")[0];var a=document.getElementById(f);if(a){c.removeChild(a)}var b=document.createElement("script");if(e){b.charset=e}else{b.charset="gb2312"}b.id=f;b.type="text/javascript";d+=(/\?/.test(d)?"&":"?")+"_="+(new Date()).getTime();b.src=d;c.appendChild(b)};sinaSSOManager.doCrossDomainCallBack=function(a){sinaSSOManager.crossDomainCounter++;document.getElementsByTagName("head")[0].removeChild(document.getElementById(a.scriptId))};sinaSSOManager.crossDomainCallBack=function(a){if(!a||a.retcode!=0){return false}var d=a.arrURL;var b,f;var e={callback:"sinaSSOManager.doCrossDomainCallBack"};sinaSSOManager.crossDomainCounter=0;if(d.length==0){return true}for(var c=0;c<d.length;c++){b=d[c];f="ssoscript"+c;e.scriptId=f;b=b+(/\?/.test(b)?"&":"?")+sinaSSOManager.q(e);sinaSSOManager.es(f,b)}};sinaSSOManager.updateCookieCallBack=function(c){var d="ssoCrossDomainScriptId";var a="http://login.sina.com.cn/sso/crossdomain.php";if(c.retcode==0){var e={scriptId:d,callback:"sinaSSOManager.crossDomainCallBack",action:"login",domain:"sina.com.cn"};var b=a+"?"+sinaSSOManager.q(e);sinaSSOManager.es(d,b)}else{}};sinaSSOManager.updateCookie=function(){var g=1800;var p=7200;var b="ssoLoginScript";var h=3600*24;var i="sina.com.cn";var m=1800;var l="http://login.sina.com.cn/sso/updatetgt.php";var n=null;var f=function(e){var r=null;var q=null;switch(e){case"sina.com.cn":q=sinaSSOManager.getSinaCookie();if(q){r=q.et}break;case"sina.cn":q=sinaSSOManager.getSinaCookie();if(q){r=q.et}break;case"51uc.com":q=sinaSSOManager.getSinaCookie();if(q){r=q.et}break}return r};var j=function(){try{return f(i)}catch(e){return null}};try{if(g>5){if(n!=null){clearTimeout(n)}n=setTimeout("sinaSSOManager.updateCookie()",g*1000)}var d=j();var c=(new Date()).getTime()/1000;var o={};if(d==null){o={retcode:6102}}else{if(d<c){o={retcode:6203}}else{if(d-h+m>c){o={retcode:6110}}else{if(d-c>p){o={retcode:6111}}}}}if(o.retcode!==undefined){return false}var a=l+"?callback=sinaSSOManager.updateCookieCallBack";sinaSSOManager.es(b,a)}catch(k){}return true};sinaSSOManager.updateCookie();</script>
+
+
+<!-- SSO_UPDATECOOKIE_END --><!-- Start  Wrating  --><script language="javascript"> 
+var wrUrl="//sina.wrating.com/";var wrDomain="sina.com.cn";var wratingDefaultAcc="860010-0323010000";var wratingAccArray={"torch.2008.sina.com.cn":"860010-0308070000","video.sina.com.cn":"860010-0309010000","cctv.sina.com.cn":"860010-0309020000","chat.sina.com.cn":"860010-0311010000","ent.sina.com.cn":"860010-0312010000","tech.sina.com.cn":"860010-0313010000","mobile.sina.com.cn":"860010-0313020000","house.sina.com.cn":"860010-0315010000","bj.house.sina.com.cn":"860010-0315020000","auto.sina.com.cn":"860010-0316010000","eladies.sina.com.cn":"860010-0317010000","bj.sina.com.cn":"860010-0317020000","woman.sina.com.cn":"860010-0317010000","women.sina.com.cn":"860010-0317010000","lady.sina.com.cn":"860010-0317010000","man.eladies.sina.com.cn":"860010-0317030000","games.sina.com.cn":"860010-0318010000","game.sina.com.cn":"860010-0318010000","edu.sina.com.cn":"860010-0307010000","baby.sina.com.cn":"860010-0320010000","kid.sina.com.cn":"860010-0320020000","astro.sina.com.cn":"860010-0321020000","news.sina.com.cn":"860010-0310010000","weather.news.sina.com.cn":"860010-0310020000","mil.news.sina.com.cn":"860010-0310030000","www.sina.com.cn":"860010-0322010000","home.sina.com.cn":"860010-0322010000","sports.sina.com.cn":"860010-0308010000","shidefc.sina.com.cn":"860010-0308020000","weiqi.sina.com.cn":"860010-0308030000","f1.sina.com.cn":"860010-0308040000","golf.sina.com.cn":"860010-0308050000","2002.sina.com.cn":"860010-0308060000","2004.sina.com.cn":"860010-0308060000","2006.sina.com.cn":"860010-0308060000","2008.sina.com.cn":"860010-0308070000","yayun2002.sina.com.cn":"860010-0308060000","yayun2006.sina.com.cn":"860010-0308060000","inter.sina.com.cn":"860010-0308080000","chelsea.sina.com.cn":"860010-0308090000","book.sina.com.cn":"860010-0319010000","cul.book.sina.com.cn":"860010-0319020000","comic.book.sina.com.cn":"860010-0319030000","finance.sina.com.cn":"860010-0314010000","money.sina.com.cn":"860010-0314020000","yue.sina.com.cn":"860010-0324010000","www.sina.com":"860010-0322010000"};function vjTrack(){var U=1800;var T=false;var S=false;var R="";var Q="0";var P="";var N;var L;var K;var J;var I;var H="expires=Fri, 1 Jan 2038 00:00:00 GMT;";var G=0;if(document.location.protocol=="file:"){return }T=navigator.cookieEnabled?"1":"0";S=navigator.javaEnabled()?"1":"0";var F="0";var E;var C=-1;var D=document.cookie;if(T=="1"){C=D.indexOf("vjuids=");if(C<0){E=vjVisitorID();document.cookie="vjuids="+escape(E)+";"+H+";domain="+wrDomain+";path=/;";if(document.cookie.indexOf("vjuids=")<0){T="0"}else{Q="1"}}else{E=vjGetCookie("vjuids")}}L=document.referrer;if(!L||L==""){L=""}R=vjFlash();if(self.screen){N=screen.width+"x"+screen.height+"x"+screen.colorDepth}else{if(self.java){var M=java.awt.Toolkit.getDefaultToolkit();var O=M.getScreenSize();N=O.width+"x"+O.height+"x0"}}if(navigator.language){K=navigator.language.toLowerCase()}else{if(navigator.browserLanguage){K=navigator.browserLanguage.toLowerCase()}else{K="-"}}I="";var B;var X;X=new Date();J=X.getTimezoneOffset()/-60;J=X.getTimezoneOffset()/-60;B="&s="+N+"&l="+K+"&z="+J+"&j="+S+"&f="+R;if(T=="1"){C=document.cookie.indexOf("vjlast=");if(C<0){G=0}else{G=parseInt(vjGetCookie("vjlast"))}}if((X.getTime()/1000)-G>U){F="1";document.cookie="vjlast="+Math.round(X.getTime()/1000)+";"+H+";domain="+wrDomain+";path=/;"}if(L!=""){B=B+"&r="+escape(L)}if(F!="0"){B=B+"&n="+G}if(Q!="0"){B=B+"&u="+Q}var V;var A=vjGetAcc();var W=vjGetDomain();V=wrUrl+"a.gif?a="+X.getTime().toString(16)+"&t="+escape(I)+"&i="+escape(E)+"&b="+escape(document.location)+"&c="+A+B+"&ck="+W;document.write('<img src="'+V+'" width="1" height="1" style="visibility:hidden;position:absolute;left:0px;top:0px;z-index:-1"  />')}function vjGetAcc(){var B=document.location.toString().toLowerCase();var C=(B.split("/"))[2];var A=wratingAccArray[C];if(typeof (A)=="undefined"){A=wratingDefaultAcc}return A}function vjFlash(){var _wr_f="-",_wr_n=navigator;if(_wr_n.plugins&&_wr_n.plugins.length){for(var ii=0;ii<_wr_n.plugins.length;ii++){if(_wr_n.plugins[ii].name.indexOf("Shockwave Flash")!=-1){_wr_f=_wr_n.plugins[ii].description.split("Shockwave Flash ")[1];break}}}else{if(window.ActiveXObject){for(var ii=10;ii>=2;ii--){try{var fl=eval("new ActiveXObject('ShockwaveFlash.ShockwaveFlash."+ii+"');");if(fl){_wr_f=ii+".0";break}}catch(e){}}}}return _wr_f}function vjHash(B){if(!B||B==""){return 0}var D=0;for(var C=B.length-1;C>=0;C--){var A=parseInt(B.charCodeAt(C));D=(D<<5)+D+A}return D}function vjVisitorID(){var B=vjHash(document.location+document.cookie+document.referrer).toString(16);var A;A=new Date();return B+"."+A.getTime().toString(16)+"."+Math.random().toString(16)}function vjGetCookieVal(B){var A=document.cookie.indexOf(";",B);if(A==-1){A=document.cookie.length}return unescape(document.cookie.substring(B,A))}function vjGetCookie(C){var B=C+"=";var F=B.length;var A=document.cookie.length;var E=0;while(E<A){var D=E+F;if(document.cookie.substring(E,D)==B){return vjGetCookieVal(D)}E=document.cookie.indexOf(" ",E)+1;if(E==0){break}}return null}function vjGetDomain(){var A=0;try{if(window.self.parent!=self){var D=/sina.com/i;var C=document.location.toString().toLowerCase();var B=parent.location.toString().toLowerCase();if(D.test(C)&&D.test(B)){A=1}}}catch(e){A=1}return A}vjTrack();
+</script>
+
+
+
+<!-- End Wrating--><!-- START Nielsen//NetRatings SiteCensus V5.3 --><!-- COPYRIGHT 2006 Nielsen//NetRatings --><script type="text/javascript"> 
+	var _rsCI="cn-sina2006";	 
+	var _rsCG="0";	
+	var _rsDN="//secure-cn.imrworldwide.com/";	
+	var _rsCC=0;	
+	var _rsSE=1;	
+	var _rsSM=0.01;	 
+	var _rsSS=1500;	 
+</script>
+<script src="//secure-cn.imrworldwide.com/v53.js" type="text/javascript"></script>
+<noscript>
+<img src="//secure-cn.imrworldwide.com/cgi-bin/m?ci=cn-sina2006&amp;cg=0" alt="">
+</noscript>
+
+<!-- END Nielsen//NetRatings SiteCensus V5.3 --></body>
+</html>
+</html>

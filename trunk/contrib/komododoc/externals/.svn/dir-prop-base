@@ -1,0 +1,6 @@
+K 13
+svn:externals
+V 96
+html5lib/html5lib  -r 1291 http://svn.openkomodo.com/repos/externals/html5lib-0.10/src/html5lib
+
+END

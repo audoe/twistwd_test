@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/4758/openkomodo/trunk/util/black/lib/python/black/configure
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/4758/openkomodo/trunk/util/black/lib/python/black/configure/__init__.py
+END
+mozilla.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/!svn/ver/281/openkomodo/trunk/util/black/lib/python/black/configure/mozilla.py
+END
+std.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/281/openkomodo/trunk/util/black/lib/python/black/configure/std.py
+END

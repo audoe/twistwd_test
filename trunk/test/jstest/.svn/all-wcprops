@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/repos/!svn/ver/9973/openkomodo/trunk/test/jstest
+END
+Conscript
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/!svn/ver/9967/openkomodo/trunk/test/jstest/Conscript
+END
+JSTest.jsm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/!svn/ver/9973/openkomodo/trunk/test/jstest/JSTest.jsm
+END
+koIJSTest.idl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/!svn/ver/9852/openkomodo/trunk/test/jstest/koIJSTest.idl
+END
+Readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/!svn/ver/9852/openkomodo/trunk/test/jstest/Readme.txt
+END
+koJSTest.js
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/!svn/ver/9973/openkomodo/trunk/test/jstest/koJSTest.js
+END
+test_jstest.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/!svn/ver/9852/openkomodo/trunk/test/jstest/test_jstest.py
+END
+test_jstest.jsm
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/!svn/ver/9852/openkomodo/trunk/test/jstest/test_jstest.jsm
+END

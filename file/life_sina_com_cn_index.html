@@ -1,0 +1,537 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>广州生活服务互动社区_新浪生活_新浪网</title>
+<meta content="text/html; charset=%SOUP-ENCODING%" http-equiv="Content-Type">
+<meta content="广州生活信息、生活搜索、生活社区、餐饮美食、休闲娱乐、购物消费、教育培训、健身美容" name="Keywords">
+<meta content="广州生活服务指南、生活社区，提供餐厅、休闲、购物、教育、健身等商户搜索及优惠打折下载，数码、化妆、演出、机票的评论及价格查询，实现“我的生活”定制与分享。" name="Description"><meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible">
+<link media="screen" href="/css/life.css" type="text/css" rel="stylesheet">
+<link media="screen" href="/css/activity/cgi/gimsg.css" type="text/css" rel="stylesheet">
+<script src="/js/jquery.js" type="text/javascript"></script>
+<script src="/js/css.js" type="text/javascript"></script>
+<script src="/js/ac.js" type="text/javascript"></script>
+<script src="/js/base.js" type="text/javascript"></script>
+<script src="/js/sso.js" type="text/javascript"></script>
+<script src="/js/jquery.jmodal.js" type="text/javascript"></script>
+<script src="/js/usersso/login_jmodal.js" type="text/javascript"></script>
+<script src="/js/jquery.ifixpng2.js" type="text/javascript"></script>
+<script src="/js/interfacesender.js" type="text/javascript"></script>
+<script src="/js/jquery.validate.js" type="text/javascript"></script>
+<link href="http://life.sina.com.cn/jipiao/css/malldatepicker.css" type="text/css" rel="stylesheet">
+<link media="screen" href="http://life.sina.com.cn/css/activity/cgi/gimsg.css" type="text/css" charset="gbk" rel="stylesheet">
+<link href="http://life.sina.com.cn/jipiao/css/style.css" type="text/css" rel="stylesheet">
+<link href="http://life.sina.com.cn/jipiao/css/jipiao.index.css" type="text/css" rel="stylesheet">
+<script src="http://life.sina.com.cn/jipiao/scripts/citydata.js" charset="utf-8" type="text/javascript"></script>
+<script src="http://life.sina.com.cn/jipiao/scripts/jq.jipiao.searchinput.js" type="text/javascript"></script>
+<script src="http://life.sina.com.cn/jipiao/scripts/life.js" type="text/javascript"></script>
+<link media="screen" href="/css/index.css" type="text/css" rel="stylesheet">
+<script src="/js/site.js" type="text/javascript"></script>
+<script src="/js/ac.js" type="text/javascript"></script>
+<link media="screen" href="/css/nav.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="header">
+<div class="head">
+<div class="head_left">
+<a href="http://www.sina.com.cn" target="_blank">新浪网</a> | 
+			<a href="http://mall.sina.com.cn/" target="_blank">商城</a> | 
+			<a href="/other/map">网站地图</a> | 
+			<a href="/help/help.html" class="help">帮助</a> </div>
+<div class="head_right" id="user_info">	 	欢迎来到新浪生活
+	 	<a href="/passport/login?url=%2Fguangzhou">登录</a>
+<a href="http://login.sina.com.cn/signup/signupmail.php?entry=life&amp;r=http%3A%2F%2Flife.sina.com.cn%2Fpassport%2Fregback%2F">注册</a>
+</div>
+</div>
+</div>
+<div id="wrap">
+<div id="head_cls" class="nav index_nav">
+<ul style="width:99%;margin:0 auto;padding:0;" class="nav_top">
+<li><a href="/"><img src="/images/cssimg/logo.jpg" alt="新版新浪生活" height="48" title="新版新浪生活" width="143"></a></li>
+<li class="about_city">
+<p id="city_name">广州</p>
+<p class="change_city" onclick="$('#city_list').css('display','block');">切换城市</p>
+<dd class="city_list" id="city_list">
+<a href="/beijing">北京</a>
+<a href="/shanghai">上海</a>
+<a href="/guangzhou">广州</a>
+<a href="/shenyang">沈阳</a>
+<a href="/hangzhou">杭州</a>
+<a href="/wuhan">武汉</a>
+<a href="/jilin">吉林</a>
+<a href="/haerbin">哈尔滨</a>
+<a href="/nanning">南宁</a>
+<a href="/shangqiu">商丘</a>
+<a href="/wuxi">无锡</a>
+<a href="/taizhou">泰州</a>
+<a href="/hefei">合肥</a>
+<a href="/shenzhen">深圳</a>
+<a href="/xian">西安</a>
+<a href="/shijiazhuang">石家庄</a>
+<a href="/nanjing">南京</a>
+<a href="/fuzhou">福州</a>
+<a href="/other/city" class="fr">全部城市</a>
+<p class="tc_close"></p>
+</dd>
+</li>
+<li id="change" class="nav_search  index_navs">
+<ol><form>
+<div id="at" class="at"> </div></form><li class="dec" id="dec_li1">在</li>
+<li class="search">
+<div><input type="text" id="search_where" value="全市" name="atwhere"></div>
+<input autocomplete="off" type="hidden" id="fromCityCodeHead1" value="PEK">
+</li>
+<li class="dec" id="dec_li2">找</li></ol></li></ul></div>
+<li id="atonon" class="search">
+<input type="hidden" id="search_class" value="0" name="search_class">
+<div><input type="text" id="search_what" value="" name="what"></div>
+<input autocomplete="off" type="hidden" id="toCityCodeHead1" value="SHA">
+<div class="search_category">
+<span id="search_selected" onclick="searchOut('search_selects');">全部分类</span>
+<dl class="category_content" id="search_selects">
+<dd><a href="#" id="63" onclick="search_selects(this,1);" target="_self">餐饮</a></dd>
+<dd><a href="#" id="62" onclick="search_selects(this,1);" target="_self">休闲</a></dd>
+<dd><a href="#" id="61" onclick="search_selects(this,1);" target="_self">购物</a></dd>
+<dd><a href="#" id="60" onclick="search_selects(this,1);" target="_self">健身</a></dd>
+<dd><a href="#" id="59" onclick="search_selects(this,1);" target="_self">教育</a></dd>
+<dd><a href="#" id="1001" onclick="search_selects(this,1);" target="_self">房产</a></dd>
+<dd><a href="#" id="1" onclick="search_selects(this,1);" target="_self">手机</a></dd>
+<dd><a href="#" id="7" onclick="search_selects(this,1);" target="_self">笔记本</a></dd>
+<dd><a href="#" id="6" onclick="search_selects(this,1);" target="_self">相机</a></dd>
+<dd><a href="#" id="5" onclick="search_selects(this,1);" target="_self">摄像机</a></dd>
+<dd><a href="#" id="4" onclick="search_selects(this,1);" target="_self">香水</a></dd>
+<dd><a href="#" id="3" onclick="search_selects(this,1);" target="_self">彩妆</a></dd>
+<dd><a href="#" id="2" onclick="search_selects(this,1);" target="_self">护肤</a></dd>
+<dd><a href="#" id="1002" onclick="search_selects(this,1);" target="_self">机票</a></dd>
+<dd><a href="#" id="168" onclick="search_selects(this,1);" target="_self">优惠券</a></dd>
+</dl>
+</div>
+</li>
+<li class="search_button">
+<div><a href="#" id="btton" onclick="searchLocation();return false;" class="btton">搜索</a></div>
+</li>
+
+
+
+
+<!--     搜索导航结束        --><input type="hidden" name="startDateHead" value="" id="startDateHead">
+<input autocomplete="off" type="hidden" id="fromCityCodeHead" value="PEK">
+<input autocomplete="off" type="hidden" id="toCityCodeHead" value="SHA">
+<script>
+$(document).ready(function(){
+	headoperate();
+	showcontent();
+});
+</script> <li style="margin-left:10px;"><img src="/images/olympic2012/5.jpg" alt="中国奥组委合作伙伴"></li>
+
+<dl class="nav_bottom">
+<dt> <a href="/guangzhou" class="index_tab">首页</a>
+</dt>
+<dt class="cut">新浪生活-分割线</dt>
+<dt>
+<a href="/canyin" class="eat_tab">餐饮</a>
+<a href="/search/city-186--class-62" class="fallow_tab">休闲</a>
+<a href="/search/city-186--class-61" class="mall_tab">购物</a>
+<a href="/search/city-186--class-59" class="edu_tab">教育</a>
+<a href="/search/city-186--class-60" class="body_tab">健身</a>
+</dt>
+<dt class="cut">新浪生活-分割线</dt>
+<dt>
+<a href="javascript:;" class="digital_tab">数码</a><span></span>
+<a href="javascript:;" class="makeup_tab">化妆</a><span></span> </dt>
+<dt class="cut">新浪生活-分割线</dt>
+<dt>
+<a href="/jipiao" class="air_tab" id="tab_jipiao">机票</a>
+
+<!--<a href="/huoche" class="huoche_tab">火车票</a>--><a href="/jcn/guangzhou" class="ser_tab">服务</a>
+</dt>
+<dt class="cut">新浪生活-分割线</dt>
+<dt>
+<a href="http://bbs.life.sina.com.cn" class="bbs_tab">论坛</a>
+</dt>
+<dd class="my_life_main">
+<a href="/home" class="my_life">我的生活</a>
+<span></span>
+<ul class="my_life_content">
+<li class="my_home"><a href="/home">我的首页</a></li>
+<li class="my_friend"><a href="/home/friend">好友/邻居</a></li>
+<li class="my_ping"><a href="/home/review">点评/贴子</a></li>
+<li class="my_want_shop"><a href="/home/want">想去的店</a></li>
+<li class="my_had_shop"><a href="/home/gone">去过的店</a></li>
+<li class="my_life_eq"><a href="/home/equ">生活装备</a></li>
+<li class="my_message"><a href="/home/message">消息</a></li>
+<li class="my_gift"><a href="/exchange">换礼品</a></li>
+</ul>
+</dd>
+<dd class="digital_content down_">
+<a href="/search/city-186--class-7">笔记本</a>
+<a href="/search/city-186--class-1">手机</a>
+<a href="/search/city-186--class-6">相机</a>
+<a href="/search/city-186--class-5">摄像机</a> </dd>
+<dd class="makeup_content down_">
+<a href="/search/city-186--class-2">护肤</a>
+<a href="/search/city-186--class-3">彩妆</a>
+<a href="/search/city-186--class-4">香水</a> </dd>
+</dl>
+</div>
+<div class="frame697">
+<div class="no_login" id="no_login">
+<div class="fl"></div>
+<div class="no_login_con">
+<h5>您还没有登录</h5>
+<span> <a href="/passport/login?url=%2Fguangzhou">登录</a> 或 <a href="http://login.sina.com.cn/signup/signupmail.php?entry=life&amp;r=http%3A%2F%2Flife.sina.com.cn%2Fpassport%2Fregback%2F" target="_blank">注册</a>  后你会拥有一个属于自己的生活空间，优先获得周边生活信息。</span>
+<a href="http://login.sina.com.cn/signup/signupmail.php?entry=life&amp;r=http%3A%2F%2Flife.sina.com.cn%2Fpassport%2Fregback%2F" class="bt" target="_blank"></a>
+<span class="close1" onclick="$('#no_login').css('display','none');">关闭</span> </div>
+<div class="fr"></div>
+</div>
+<div class="frame262">
+<div class="tit1 fldh_tit"><div class="fl"></div><h3><a>分类导航</a></h3><div class="fr"></div></div>
+<dl class="fldh_con">
+<dt class="food_icon"><a href="/search/city-186--class-63"><strong>餐饮</strong></a></dt><dd><a href="/search/city-186--class-63--rank-0--tag-1">川菜</a>|<a href="/search/city-186--class-63--rank-0--tag-2">湘菜</a>|<a href="/search/city-186--class-63--rank-0--tag-4">粤菜</a>|<a href="/search/city-186--class-63--tag-42">火锅</a>|<a href="/search/city-186--class-63--tag-43">烧烤</a>|<a href="/search/city-186--class-63--tag-53">西餐</a>|<a href="/search/city-186--class-63--tag-70">酒吧</a>|<a href="/search/city-186--class-63--tag-71">咖啡厅</a>|<a href="/search/city-186--class-63--tag-29">日本料理</a>|<a href="/search/city-186--class-63--tag-47">小吃</a></dd><dt class="fallow_icon"><a href="/search/city-186--class-62"><strong>休闲</strong></a></dt><dd><a href="/search/city-186--class-62--tag-77">KTV</a>|<a href="/search/city-186--class-62--tag-78">夜总会</a>|<a href="/search/city-186--class-62--tag-80">俱乐部</a>|<a href="/search/city-186--class-62--tag-81">电影院</a>|<a href="/search/city-186--class-62--tag-113">台球厅</a>|<a href="/search/city-186--class-62--tag-98">度假村</a>|<a href="/search/city-186--class-62--tag-104">美容</a>|<a href="/search/city-186--class-62--tag-111">按摩</a>|<a href="/search/city-186--class-62--tag-112">保龄球</a>|<a href="/search/city-186--class-62--tag-105">洗浴</a></dd><dt class="shopping_icon"><a href="/search/city-186--class-61"><strong>购物</strong></a></dt><dd><a href="/search/city-186--class-61--tag-88">男装</a>|<a href="/search/city-186--class-61--tag-89">女装</a>|<a href="/search/city-186--class-61--tag-136">书店</a>|<a href="/search/city-186--class-61--tag-131">珠宝</a>|<a href="/search/city-186--class-61--tag-133">手表</a>|<a href="/search/city-186--class-61--tag-134">眼镜</a>|<a href="/search/city-186--class-61--tag-216">家用电器</a>|<a href="/search/city-186--class-61--tag-217">化妆品</a>|<a href="/search/city-186--class-61--tag-218">家居装饰</a>|<a href="/search/city-186--class-61--tag-139">超市</a></dd><dt class="sports_icon"><a href="/search/city-186--class-60"><strong>健身</strong></a></dt><dd><a href="/search/city-186--class-60--tag-215">健身场馆</a>|<a href="/search/city-186--class-60--tag-207">游泳</a>|<a href="/search/city-186--class-60--tag-201">体育场</a>|<a href="/search/city-186--class-60--tag-208">羽毛球</a>|<a href="/search/city-186--class-60--tag-212">篮球</a>|<a href="/search/city-186--class-60--tag-209">乒乓球</a>|<a href="/search/city-186--class-60--tag-210">网球</a>|<a href="/search/city-186--class-60--tag-203">瑜伽</a>|<a href="/search/city-186--class-60--tag-214">其他健身</a></dd><dt class="prink_icon"><a href="/search/city-186--class-6"><strong>数码</strong></a></dt><dd><a href="/search/city-186--class-6">相机</a>|<a href="/search/city-186--class-1">手机</a>|<a href="/search/city-186--class-7">笔记本</a>|<a href="/search/city-186--class-5">摄像机</a>|<a href="/search/city-186--class-1--key-%C4%A6%CD%D0%C2%DE%C0%AD">摩托罗拉</a>|<a href="/search/city-186--class-1--key-%C8%FD%D0%C7">三星</a>|<a href="/search/city-186--class-1--key-%C5%B5%BB%F9%D1%C7">诺基亚</a>|<a href="/search/city-186--class-7--key-%C1%AA%CF%EB">联想</a>|<a href="/search/city-186--class-6--key-%BC%D1%C4%DC">佳能</a></dd><dt class="number_icon"><a href="/search/city-186--class-2"><strong>化妆</strong></a></dt><dd><a href="/search/city-186--class-3">彩妆</a>|<a href="/search/city-186--class-2--key-%B7%C0%C9%B9">防晒</a>|<a href="/search/city-186--class-2--key-%B1%A3%CA%AA">保湿</a>|<a href="/search/city-186--class-2--key-%C3%C0%B0%D7">美白</a>|<a href="/search/city-186--class-4">香水</a>|<a href="/search/city-186--class-2--key-%C0%BC%DE%A2">兰蔻</a></dd> </dl>
+<div class="bottom fldh_bottom"><div class="fl"></div><div class="fr"></div></div>
+
+<!--  根据 flag 标识判断是首页的控件  还是餐饮首页的控件 --><div class="tit1 rpsj_tit"><div class="fl"></div><h3>热评商家</h3><div class="fr"></div></div>
+<ul class="rpsj_con rank">
+<li class="pic"><a href="/info/62/72996" title="长隆国际大马戏"><img src="http://cache.atlas.sina.com.cn/nd/chake//1a/a7/s_1aa74f854e6b1e476438fd48a0a99299.jpg" height="60" width="80"><h5></h5></a><a href="/info/62/72996">长隆国际大马戏</a><div class="star_light"></div><div class="star_light"></div><div class="star_light"></div><div class="star_light"></div><div class="star_light"></div><br>64评论
+                   </li>
+<li><span class="num">2</span><span class="fl"><a href="/info/61/65452" target="_blank">上下九步行街</a>(32评论)</span></li>
+<li><span class="num">3</span><span class="fl"><a href="/info/63/41665" target="_blank">四海一家</a>(24评论)</span></li>
+<li><span class="num">4</span><span class="fl"><a href="/info/62/72728" target="_blank">飞扬影城（正佳店）</a>(23评论)</span></li>
+<li><span class="num">5</span><span class="fl"><a href="/info/63/41703" target="_blank">金本台湾涮涮锅(正佳广场店)</a>(16评论)</span></li>
+<li><span class="num">6</span><span class="fl"><a href="/info/62/110445" target="_blank">钱柜（天河店）</a>(16评论)</span></li>
+<li><span class="num">7</span><span class="fl"><a href="/info/62/99287" target="_blank">长隆香江野生动物世界</a>(13评论)</span></li>
+<li><span class="num">8</span><span class="fl"><a href="/info/62/4296613" target="_blank">白云山风景名胜区</a>(12评论)</span></li>
+</ul>
+<div class="clearit"></div>
+<div class="bottom rpsj_bottom"><div class="fl"></div><div class="fr"></div></div>
+<div class="tit1 rpsp_tit"><div class="fl"></div>
+<h3>热评商品</h3>
+<div class="fr"></div></div>
+<ul class="rpsp_con rank">
+<li class="pic"><a href="/info/2/5353" title="[DHC] 深层卸妆油 200ml"><img src="http://image2.sina.com.cn/ml/P/001/142/PD_1142812S.jpg" height="60" width="80"><h5></h5></a><a href="/info/2/5353">[DHC] 深层卸…</a><div class="star_light"></div><div class="star_light"></div><div class="star_light"></div><div class="star_light"></div><div class="star_gary"></div><br>145评论
+                   </li>
+<li><span class="num">2</span><span class="fl"><a href="/info/2/1163" target="_blank">[DHC] 纯榄滋养皂 90g</a>(112评论)</span></li>
+<li><span class="num">3</span><span class="fl"><a href="/info/6/8360" target="_blank">佳能IXUS 970 IS 数码相机</a>(64评论)</span></li>
+<li><span class="num">4</span><span class="fl"><a href="/info/1/15" target="_blank">诺基亚 N96</a>(59评论)</span></li>
+<li><span class="num">5</span><span class="fl"><a href="/info/2/5403" target="_blank">[Clinique] 倩碧…</a>(51评论)</span></li>
+<li><span class="num">6</span><span class="fl"><a href="/info/7/9517" target="_blank">索尼VGN-CR382/S</a>(50评论)</span></li>
+<li><span class="num">7</span><span class="fl"><a href="/info/2/1346" target="_blank">[Olay] 玉兰油乳液嫩…</a>(36评论)</span></li>
+<li><span class="num">8</span><span class="fl"><a href="/info/4/7583" target="_blank">[Chanel] Chance  邂逅 50ml</a>(30评论)</span></li>
+</ul>
+<div class="bottom rpsp_bottom"><div class="fl"></div><div class="fr"></div></div>
+</div>
+<div class="frame425"><div class="focus">
+<ul id="focusPic">
+<li><a href="http://travel.gd.sina.com.cn/focus/elementshk/" target="_blank"><img src="http://images.gd.sina.com.cn/u/201009/1285669109_48_2.jpg"></a></li>
+<li><a href="http://travel.gd.sina.com.cn/focus/guoqin/" target="_blank"><img src="http://images.gd.sina.com.cn/u/201009/1285669108_48_1.jpg"></a></li>
+<li><a href="http://life.gd.sina.com.cn/zt/cg/index.shtml" target="_blank"><img src="http://images.gd.sina.com.cn/u/201009/1283940226_48_1.jpg"></a></li>
+<li><a href="http://travel.gd.sina.com.cn/2010gdtravel/" target="_blank"><img src="http://images.gd.sina.com.cn/u/201008/1281411685_48_2.jpg"></a></li>
+</ul>
+<ul id="focusThumb">
+<li onmouseover="goFocus(0,1)" onmouseout="goOn()">1</li>
+<li onmouseover="goFocus(1,1)" onmouseout="goOn()">2</li>
+<li onmouseover="goFocus(2,1)" onmouseout="goOn()">3</li>
+<li onmouseover="goFocus(3,1)" onmouseout="goOn()">4</li>
+</ul>
+</div> <script type="text/javascript">
+<!--//--><![CDATA[/ /><!--
+vflag=0;started=1;var runs;
+if(document.getElementById("focusThumb").getElementsByTagName("li").length==document.getElementById("focusPic").getElementsByTagName("li").length){
+picLength=document.getElementById("focusThumb").getElementsByTagName("li").length;
+function moveElement(elementID,final_y,interval){ 
+  var elem = document.getElementById(elementID);
+  if (elem.movement){clearTimeout(elem.movement);}
+  if (!elem.style.top){ elem.style.top = "0px";}  
+  var ypos = parseInt(elem.style.top);
+  if (ypos < final_y){var dist =  Math.ceil((final_y - ypos)/10);ypos += dist;}
+  if (ypos > final_y){var dist = Math.ceil((ypos - final_y)/10);ypos = ypos - dist;}
+  elem.style.top = ypos + "px";
+  var repeat = "moveElement('"+elementID+"',"+final_y+","+interval+")";
+  elem.movement = setTimeout(repeat,interval);
+}
+function process(){
+    if(started==1){
+	   goFocus(vflag,0);
+	   vflag++;
+	   if(vflag==picLength){
+	   vflag=0;};
+	   runs=setTimeout("process()",3500);};};    
+function goOn(){started=1;process();};
+function goFocus(num,flag){
+	for(var i=0;i<picLength;i++){document.getElementById("focusThumb").getElementsByTagName("li")[i].className="";};
+	moveElement("focusPic",-155*num,5);
+	if(flag==1){clearTimeout(runs);vflag=num;started=0;};
+	document.getElementById("focusThumb").getElementsByTagName("li")[num].className="cur";};
+	process();
+	}else{alert("图片和按钮数量不吻合，请检查！")}
+//--><!]]>
+</script>
+<!--最新优惠--><div class="tit2 zxyh_tit"><h3><a target="_blank">最新最抵</a></h3></div>
+<dl>
+<dt class="zxyh_pic"><a href="http://eat.gd.sina.com.cn/home/rstrt/show/uid/1676329144/aid/24945" target="_blank"><img src="http://images.gd.sina.com.cn/u/201004/1271820095_48_1.jpg" alt="傻猫为食记の~首赏面~便靓正~好好味" height="90" width="120"></a><a href="http://life.sina.com.cn/info/63/4175068" target="_blank">[首赏面]</a>
+<a href="http://eat.gd.sina.com.cn/home/rstrt/show/uid/1676329144/aid/24945" target="_blank">便靓正的面店</a></dt>
+<dd class="zxyh_con">
+<a href="http://i.eat.gd.sina.com.cn/article/rstrt/25811.html" target="_blank">[特别献礼] 教师节：师恩难忘 感动心语</a><br>
+<a href="http://i.eat.gd.sina.com.cn/article/rstrt/25808.html" target="_blank">[参赛赢奖] 吃客DIY大赛 丰富大奖邀你拿</a><br>
+<a href="http://travel.gd.sina.com.cn/news/2010/04/14/4310.html" target="_blank">[人文怀旧] 重踏硝烟虎门体会历史之殇(图)</a><br>
+<a href="http://life.gd.sina.com.cn/news/2010/04/09/23073.html" target="_blank">[潮流风向] 今季不穿海魂衫就OUT啦(图)</a><br>
+<a href="http://travel.gd.sina.com.cn/news/2010/04/14/4312.html" target="_blank">[酒店优惠] 入住文华东方享500元签帐额</a><br>
+<a href="http://eat.gd.sina.com.cn/home/rstrt/show/uid/1069321930/aid/24878" target="_blank">[着数抵吃] 员村抵食小店 找到校园美好味道</a><br>
+<a href="http://eat.gd.sina.com.cn/home/rstrt/show/uid/1069321930/aid/24887" target="_blank">[时尚新味] 中国的远房亲戚 别样的意大利菜
+</a><br>
+</dd>
+</dl> 
+<!--最新点评--><div class="tit2 zxdp_tit"><h3>最新点评</h3>
+<ul>
+<li id="new_dp_tag0" class="cur" onmouseover="goTab_site(0,6,'new_dp');getNewcom(63,186,1);">餐馆</li>
+<li onmouseover="goTab_site(1,6,'new_dp');getNewcom(62,186,1);" id="new_dp_tag1">休闲</li>
+<li onmouseover="goTab_site(2,6,'new_dp');getNewcom(61,186,1);" id="new_dp_tag2">购物</li>
+<li onmouseover="goTab_site(3,6,'new_dp');getNewcom(60,186,1);" id="new_dp_tag3">健身</li>
+<li onmouseover="goTab_site(4,6,'new_dp');getNewcom('shuma',186,1);" id="new_dp_tag4">数码</li>
+<li onmouseover="goTab_site(5,6,'new_dp');getNewcom('huazh',186,1);" id="new_dp_tag5">化妆</li>
+</ul>
+</div>
+<div id="new_dp_info">
+<dl class="zxdp_con">
+<dt class="zxdp_pic"><a href="/home?uid=2234131934" target="_self"><img src="http://portrait7.sinaimg.cn/2234131934/blog/50" height="48" width="48" title="夏天的向日葵"></a><br>
+<a class="wordbreak" href="/home?uid=2234131934" target="_self" title="夏天的向日葵">夏天的向日葵</a><br><span>三年级</span></dt>
+<dd class="zxdp_bcon">
+<div class="zxdp_tcon">
+<h3><a href="/info/63/42125" target="_blank" title="哈根达斯(正佳广场店)">哈根达斯(正佳广场店)</a></h3><div class="zxdp_time"><span class="feed_time" title="2012-04-28 14:19">04月28日</span></div>
+<span class="zxdp_level">
+							口味:4							服务:4							环境:4							人均:￥30					  </span>
+<div class="clearit"></div>
+</div>
+<p class="wordbreak">最喜欢吃哈根达斯的雪糕和提拉米苏了，有很多种口味，特别喜欢巧克力味，味道香浓不…</p>
+<span class="more"><a href="/info/63/42125" target="_blank">全文</a></span>
+</dd>
+</dl>
+<dl class="zxdp_con">
+<dt class="zxdp_pic"><a href="/home?uid=1830710950" target="_self"><img src="http://portrait7.sinaimg.cn/1830710950/blog/50" height="48" width="48" title="tangjingchang"></a><br>
+<a class="wordbreak" href="/home?uid=1830710950" target="_self" title="tangjingchang">tangjingchang</a><br><span>幼稚园</span></dt>
+<dd class="zxdp_bcon">
+<div class="zxdp_tcon">
+<h3><a href="/info/63/42013" target="_blank" title="大四川火锅城(鹭江店)">大四川火锅城(鹭江店)</a></h3><div class="zxdp_time"><span class="feed_time" title="2011-12-16 17:05">12月16日</span></div>
+<span class="zxdp_level">
+							口味:3							服务:3							环境:3							人均:￥40					  </span>
+<div class="clearit"></div>
+</div>
+<p class="wordbreak">好久以前去过，觉得里边噶性价比几高，味道几好，加上选择够多，有一段时间经常去吃…</p>
+<span class="more"><a href="/info/63/42013" target="_blank">全文</a></span>
+</dd>
+</dl>
+<dl class="zxdp_con">
+<dt class="zxdp_pic"><a href="/home?uid=2528348367" target="_self"><img src="http://portrait8.sinaimg.cn/2528348367/blog/50" height="48" width="48" title="小馋牛"></a><br>
+<a class="wordbreak" href="/home?uid=2528348367" target="_self" title="小馋牛">小馋牛</a><br><span>三年级</span></dt>
+<dd class="zxdp_bcon">
+<div class="zxdp_tcon">
+<h3><a href="/info/63/4189817" target="_blank" title="东方之珠海鲜酒家">东方之珠海鲜酒家</a></h3><div class="zxdp_time"><span class="feed_time" title="2011-12-14 15:11">12月14日</span></div>
+<span class="zxdp_level">
+							口味:4							服务:4							环境:4							人均:￥30					  </span>
+<div class="clearit"></div>
+</div>
+<p class="wordbreak">和朋友两人去喝中午茶。
+
+点心品种很多，印满两大版！
+
+蒸牛肉丸9.5：4大个！我最喜…</p>
+<span class="more"><a href="/info/63/4189817" target="_blank">全文</a></span>
+</dd>
+</dl>
+</div>
+<div class="tit2 xzz_tit"><h3>精彩回顾</h3>
+</div>
+<ul class="xzz_con">
+<li class="xzz_pic"><a href="http://life.sina.com.cn/zt/mamaday/index.shtml" target="_blank"><img src="http://i3.sinaimg.cn/hs/2012-05-14/44/U7536P868T44D756F184DT20120515100008.jpg" alt="免费优惠券下载" height="115" width="85"></a><br>
+<a href="http://life.sina.com.cn/zt/mamaday/index.shtml" target="_blank">免费优惠券下载</a>
+</li>
+<li class="xzz_pic"><a href="http://life.sina.com.cn/65/2012/0509/1528.html" target="_blank"><img src="http://i0.sinaimg.cn/hs/2012-05-14/44/U7536P868T44D756F186DT20120515101204.jpg" alt="献给妈妈的美食" height="115" width="85"></a><br>
+<a href="http://life.sina.com.cn/65/2012/0509/1528.html" target="_blank">献给妈妈的美食</a>
+</li>
+<li class="xzz_pic"><a href="http://life.sina.com.cn/zt/chunyou/index.shtml" target="_blank"><img src="http://i1.sinaimg.cn/hs/2012-04-25/44/U7536P868T44D732F184DT20120425105446.jpg" alt="春季赏花专题" height="115" width="85"></a><br>
+<a href="http://life.sina.com.cn/zt/chunyou/index.shtml" target="_blank">春季赏花攻略</a>
+</li>
+<li class="xzz_pic"><a href="http://life.sina.com.cn/zt/xiaoxincuofan/index.shtml" target="_blank"><img src="http://i2.sinaimg.cn/hs/2012-04-06/44/U7536P868T44D698F176DT20120410105532.jpg" alt="小新带你去撮饭" height="115" width="85"></a><br>
+<a href="http://life.sina.com.cn/zt/xiaoxincuofan/index.shtml" target="_blank">小新带你去撮饭</a>
+</li>
+</ul>
+</div>
+</div> <div class="frame243">
+<script type="text/javascript">
+ 	jQuery(function(){
+ 		$('#ar_tabs').find('a').css('cursor', 'pointer').mouseover(function(){
+ 			var a_s = $('#ar_tabs').find('a');
+ 			var ids = ['#ar_office','#ar_home'];
+ 			a_s.removeClass('cur');
+ 			$(this).addClass('cur');
+ 			$(ids.join(',')).hide();
+ 			$(ids[a_s.index(this)]).show();
+ 		});
+ 	});
+    var home_point = {};var office_point = {}; 	</script>
+<div class="tit1 wzbd_tit">
+<div class="fl"></div>
+<h3>我周边的店</h3>
+<div class="fr"></div>
+<div class="wzbd_area" id="ar_tabs">
+<a class="cur">工作地</a> | <a>居住地</a>
+</div>
+</div>
+<div class="wzbd_con" id="ar_office">
+<div class="wzbd_add">
+<div class="wzbd_arrow"></div>
+<div class="wzbd_warn"></div>
+ 			工作地：<a href="javascript:;" class="add" point="office">[添加]</a>
+</div>
+<h3>为什么要添加生活地标？</h3>
+<span class="db_reason">
+ 			1、把您周边的商家精心挑选显示在这<br>
+ 			2、了解到你的邻居们正去哪里消费<br>
+ 			3、得到你需要的优惠信息
+ 		</span>
+</div>
+<div style="display:none" class="wzbd_con" id="ar_home">
+<div class="wzbd_add">
+<div class="wzbd_arrow2"></div>
+<div class="wzbd_warn"></div>
+ 			居住地：<a href="javascript:;" class="add" point="home">[添加]</a>
+</div>
+<h3>为什么要添加生活地标？</h3>
+<span class="db_reason">
+ 			1、把您周边的商家精心挑选显示在这<br>
+ 			2、了解到你的邻居们正去哪里消费<br>
+ 			3、得到你需要的优惠信息
+ 		</span>
+</div>
+<div class="bottom wzbd_bottom"><div class="fl"></div><div class="fr"></div></div> 
+<!--最新邻居动态--><div class="tit1 zxdt_tit">
+<div class="fl"></div><h3>最新会员动态</h3>
+<div class="fr"></div>
+</div>
+<ul class="zxdt_con">
+<li>
+<a href="/home?uid=1768775730"><img src="http://portrait3.sinaimg.cn/1768775730/blog/50" height="32" width="32" title="mummy.yi"></a>
+<div class="cottonuser">
+<a href="/home?uid=1768775730" target="_blank">mummy.yi</a> <span class="feed_action">点评了</span> <span class="feed_target"><a href="/info/62/72683" target="_blank">玩家量贩KTV</a></span></div>
+<span class="feed_time" title="2012-05-17 23:14">一天前</span></li>
+<li>
+<a href="/home?uid=1409212992"><img src="http://portrait1.sinaimg.cn/1409212992/blog/50" height="32" width="32" title="组团吧淘宝宝贝排行榜"></a>
+<div class="cottonuser">
+<a href="/home?uid=1409212992" target="_blank">组团吧淘宝宝贝排行榜</a> <span class="feed_action">添加</span> <span class="feed_target">来方工作室</span></div>
+<span class="feed_time" title="2012-05-15 01:13">05月15日</span></li>
+<li>
+<a href="/home?uid=2763873710"><img src="http://portrait7.sinaimg.cn/2763873710/blog/50" height="32" width="32" title="狂人ktv"></a>
+<div class="cottonuser">
+<a href="/home?uid=2763873710" target="_blank">狂人ktv</a> <span class="feed_action">点评了</span> <span class="feed_target"><a href="/info/62/4930838" target="_blank">必爱歌KTV</a></span></div>
+<span class="feed_time" title="2012-05-14 09:14">05月14日</span></li>
+<li>
+<a href="/home?uid=1868504903"><img src="http://portrait8.sinaimg.cn/1868504903/blog/50" height="32" width="32" title="网友1868504903"></a>
+<div class="cottonuser">
+<a href="/home?uid=1868504903" target="_blank">网友1868504903</a> <span class="feed_action">想去</span> <span class="feed_target"><a href="/info/63/41665" target="_blank">四海一家</a></span></div>
+<span class="feed_time" title="2012-05-11 13:03">05月11日</span></li>
+<li>
+<a href="/home?uid=2234131934"><img src="http://portrait7.sinaimg.cn/2234131934/blog/50" height="32" width="32" title="夏天的向日葵"></a>
+<div class="cottonuser">
+<a href="/home?uid=2234131934" target="_blank">夏天的向日葵</a> <span class="feed_action">添加</span> <span class="feed_target">西周少儿研究院</span></div>
+<span class="feed_time" title="2012-05-07 15:39">05月07日</span></li>
+</ul>
+<div class="bottom zxdt_bottom"><div class="fl"></div><div class="fr"></div></div> 
+<!--达人榜--><div class="tit1 drb_tit"><div class="fl"></div><h3>月达人榜</h3>
+<div class="fr"></div>
+<ul><li id="dr_rank_tag0" class="cur" onmouseover="goTab_life(0,2,'dr_rank')">点评榜</li>
+<li onmouseover="goTab_life(1,2,'dr_rank')" id="dr_rank_tag1">积分榜</li></ul>
+</div>
+<ul class="drb_con rank" id="dr_rank_info0">
+<li class="no1"><span class="num">1</span><span style="width:120px;" class="fl"><a href="/home?uid=1906045143" target="_blank">hi晴儿</a></span><span style="margin-right:10px;color: rgb(168, 168, 168);width:50px;text-align:right;" class="fr">1352</span></li>
+<li><span class="num">2</span><span style="width:120px;" class="fl"><a href="/home?uid=2357411481" target="_blank">一号花橘子</a></span><span style="margin-right:10px;color: rgb(168, 168, 168);width:50px;text-align:right;" class="fr">153</span></li>
+<li><span class="num">3</span><span style="width:120px;" class="fl"><a href="/home?uid=2135950553" target="_blank">火拳妞</a></span><span style="margin-right:10px;color: rgb(168, 168, 168);width:50px;text-align:right;" class="fr">80</span></li>
+<li><span class="num">4</span><span style="width:120px;" class="fl"><a href="/home?uid=1650644197" target="_blank">陈子涵</a></span><span style="margin-right:10px;color: rgb(168, 168, 168);width:50px;text-align:right;" class="fr">39</span></li>
+<li><span class="num">5</span><span style="width:120px;" class="fl"><a href="/home?uid=1088438481" target="_blank">HhSOUL</a></span><span style="margin-right:10px;color: rgb(168, 168, 168);width:50px;text-align:right;" class="fr">29</span></li>
+<li><span class="num">6</span><span style="width:120px;" class="fl"><a href="/home?uid=1251373115" target="_blank">费德勒0808</a></span><span style="margin-right:10px;color: rgb(168, 168, 168);width:50px;text-align:right;" class="fr">23</span></li>
+<li><span class="num">7</span><span style="width:120px;" class="fl"><a href="/home?uid=2660664883" target="_blank">万分之一的世界</a></span><span style="margin-right:10px;color: rgb(168, 168, 168);width:50px;text-align:right;" class="fr">19</span></li>
+<li><span class="num">8</span><span style="width:120px;" class="fl"><a href="/home?uid=1661719094" target="_blank">小米花妹</a></span><span style="margin-right:10px;color: rgb(168, 168, 168);width:50px;text-align:right;" class="fr">16</span></li>
+</ul>
+<ul style="display:none" class="drb_con rank" id="dr_rank_info1">
+<li class="no1"><span class="num">1</span><span style="width:120px;" class="fl"><a href="/home?uid=1906045143" target="_blank">hi晴儿</a></span><span style="margin-right:10px;color: rgb(168, 168, 168);width:50px;text-align:right;" class="fr">10868</span></li>
+<li><span class="num">2</span><span style="width:120px;" class="fl"><a href="/home?uid=2655641951" target="_blank">户外登山客</a></span><span style="margin-right:10px;color: rgb(168, 168, 168);width:50px;text-align:right;" class="fr">4926</span></li>
+<li><span class="num">3</span><span style="width:120px;" class="fl"><a href="/home?uid=2733541137" target="_blank">sdf4sd54f4</a></span><span style="margin-right:10px;color: rgb(168, 168, 168);width:50px;text-align:right;" class="fr">2325</span></li>
+<li><span class="num">4</span><span style="width:120px;" class="fl"><a href="/home?uid=1636508084" target="_blank">jgclmh</a></span><span style="margin-right:10px;color: rgb(168, 168, 168);width:50px;text-align:right;" class="fr">1540</span></li>
+<li><span class="num">5</span><span style="width:120px;" class="fl"><a href="/home?uid=1653335015" target="_blank">kaiyanhaodejia</a></span><span style="margin-right:10px;color: rgb(168, 168, 168);width:50px;text-align:right;" class="fr">1363</span></li>
+<li><span class="num">6</span><span style="width:120px;" class="fl"><a href="/home?uid=2135950553" target="_blank">火拳妞</a></span><span style="margin-right:10px;color: rgb(168, 168, 168);width:50px;text-align:right;" class="fr">1209</span></li>
+<li><span class="num">7</span><span style="width:120px;" class="fl"><a href="/home?uid=2357411481" target="_blank">一号花橘子</a></span><span style="margin-right:10px;color: rgb(168, 168, 168);width:50px;text-align:right;" class="fr">1035</span></li>
+<li><span class="num">8</span><span style="width:120px;" class="fl"><a href="/home?uid=2673467381" target="_blank">活甩甩</a></span><span style="margin-right:10px;color: rgb(168, 168, 168);width:50px;text-align:right;" class="fr">837</span></li>
+</ul>
+<div class="bottom drb_bottom"><div class="fl"></div><div class="fr"></div></div> 
+<!--热评话题--><div class="tit1 rmht_tit"><div class="fl"></div>
+<h3>热评话题</h3>
+<div class="fr"></div></div>
+<ul class="rmht_con rank">
+<li class="pic"><img src="http://images.gd.sina.com.cn/u/200908/1249549965_7_1.jpg" alt=" " height="48" width="64">
+<h5><a href="http://bbs.life.sina.com.cn/49/thread-20908-1-1.html" target="_blank">独家的卸妆小窍门</a></h5><br>
+<span>浏览：11488</span><br><span>作者：</span>方大胖子</li>
+<li><span class="num"></span><span class="fl"><a href="http://bbs.life.sina.com.cn/49/thread-21129-1-1.html" target="_blank">教你如何聪明使用保养品 </a></span></li>
+<li><span class="num"></span><span class="fl"><a href="http://bbs.life.sina.com.cn/12/thread-19608-1-1.html" target="_blank">巧吃日本料理 美味享瘦</a></span></li>
+<li><span class="num"></span><span class="fl"><a href="http://bbs.life.sina.com.cn/12/thread-19290-1-1.html" target="_blank">拐弯抹角品美食活动</a></span></li>
+<li><span class="num"></span><span class="fl"><a href="http://bbs.life.sina.com.cn/2/thread-17930-1-1.html" target="_blank">七夕情人节有奖征文活动</a></span></li>
+<li><span class="num"></span><span class="fl"><a href="http://bbs.life.sina.com.cn/13/thread-29396-1-1.html" target="_blank">买特价机票八大技巧</a></span></li>
+</ul>
+<div class="bottom rmht_bottom"><div class="fl"></div><div class="fr"></div></div>
+</div><script src="/js/pointinput.js" type="text/javascript"></script>
+<script src="/js/jquery.autocomplete.js" type="text/javascript"></script>
+<script src="http://dituapi.iask.com:8080/FMP-sina/js/fmp.js?key=f6007ee4ed95e72c8381a8cd59f2bcf968f63138e3a7e5fd0d7eae25716d3c420b3af2ea9ad64a2c%7C16a4150d21aaee9be07ce960b867f37003afd18377aacc41e2c477fb92a9d5b111cabea149a969f6%7C1593b2d45027667c7740b74b7fd637024ecc03b175d9db289921de3f1967c0df532c0bade61aea87%7C543a70a2a6afd157c0277aeef117a74df1edb6811c680b3c1ca69bbed31fc76f37e861261bfa8ae4%7Cd01e2745aaaa9946ade02adb81aab1f086cc7374ad4d18683c92abd7d0c64ea70e13586944cc9b07" type="text/javascript"></script>
+<script src="http://lifeditu.iask.com/js/i_map.js" type="text/javascript"></script>
+<script src="http://lifeditu.iask.com/js/handler.js" type="text/javascript"></script>
+<script src="/js/interfacesender.js" type="text/javascript"></script>
+<link href="/css/jquery.autocomplete.css" type="text/css" rel="stylesheet">
+<script type="text/javascript">
+var cur_city = {"id":"186","x":"11334153","y":"2312704","code":"0020"};
+</script>
+
+<!--尾部--><div id="siteinfo">
+
+<!--热门城市--><div class="hot_city">
+<span>热门城市：</span><a href="/beijing">北京</a><a href="/shanghai">上海</a><a href="/guangzhou">广州</a><a href="/shenyang">沈阳</a><a href="/hangzhou">杭州</a><a href="/wuhan">武汉</a><a href="/jilin">吉林</a><a href="/haerbin">哈尔滨</a><a href="/nanning">南宁</a><a href="/shangqiu">商丘</a><a href="/wuxi">无锡</a><a href="/taizhou">泰州</a><a href="/hefei">合肥</a><a href="/shenzhen">深圳</a><a href="/xian">西安</a><a href="/shijiazhuang">石家庄</a><a href="/other/city" class="all_city">全部城市&gt;&gt;</a>
+</div>
+DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+
+<!--[868,59,1] published at 2010-01-21 11:11:52 from #s152 by 2857--><!--div class="imgs"><a href="http://life.sina.com.cn/d/dlml.html" target="_blank"><img src="/images/daili.jpg"  /></a><a href="http://life.sina.com.cn/d/dlml.html" target="_blank"><img src="/images/zixun.jpg"  /></a></div--><br>
+<a href="http://corp.sina.com.cn/chn/" target="_blank">新浪简介</a> | <a href="http://corp.sina.com.cn/eng/" target="_blank">About Sina</a> | <a href="http://ads.sina.com.cn/" target="_blank">广告服务</a> | <a href="http://www.sina.com.cn/contactus.html" target="_blank">联系我们</a> | <a href="http://corp.sina.com.cn/chn/sina_job.html" target="_blank">招聘信息</a> | <a href="http://www.sina.com.cn/intro/lawfirm.shtml" target="_blank">网站律师</a> | <a href="http://english.sina.com/" target="_blank">SINA English</a> | <a href="http://members.sina.com.cn/apply/" target="_blank">会员注册</a> | <a href="http://tech.sina.com.cn/focus/sinahelp.shtml" target="_blank">产品答疑</a>
+<p>Copyright © 1996 - 2012 SINA Corporation, All Rights Reserved</p><p>新浪公司  <a href="http://www.sina.com.cn/intro/copyright.shtml" target="_blank">版权所有</a></p>
+<p>北京网通提供网络带宽</p>
+</div>
+
+
+<!-- BDTJ_CODE_START --><script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? "https://" : "http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F678def13e8a3ca246f18b255325d03cb' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+
+<!-- BDTJ_CODE_END --><!-- SUDA_CODE_START --><script src="http://i3.sinaimg.cn/unipro/pub/suda_s_v851c.js" type="text/javascript"></script>
+<script type="text/javascript">try{_S_pSt(_S_PID_);}catch(err){}</script>
+<noscript>
+<div style="position:absolute;top:0;left:0;width:0;height:0;visibility:hidden"><img width="0" alt="" src="http://beacon.sina.com.cn/a.gif?noScript" border="0" height="0"></div>
+</noscript>
+
+
+<!-- SUDA_CODE_END --><!-- GA_CODE_START --><script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-10295067-2']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    //ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.src = "/js/ga.js";
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+<!-- GA_CODE_END --><script type="text/javascript">
+$(document).ready(function(){
+	if(!jQuery('#head_cls').hasClass("mall_nav")){
+		jQuery('#tab_jipiao').css("color","red");
+		jQuery('#1002').css("color","red");
+	}
+});
+</script>
+</body>
+</html>

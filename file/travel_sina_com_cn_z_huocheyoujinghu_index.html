@@ -1,0 +1,661 @@
+<html>DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+
+DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+<!--[704,1,923] published at 2012-05-10 14:46:33 from #194 by 7870--><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible">
+<meta content="text/html; charset=%SOUP-ENCODING%" http-equiv="Content-Type">
+<base target="_blank">
+<title>京沪高铁_京沪高铁路线_沿着京沪高铁路线旅游攻略|新浪旅游</title>
+<meta content="京沪高铁,京沪高铁路线,沿着京沪高铁路线旅游,京沪高铁路线旅游攻略" name="Keywords">
+<meta content="新浪旅游策划经典火车之旅-京沪高铁游,提供沿着京沪高铁路线旅游攻略,带您乘坐京沪高铁游遍沿线美景、品尝美食,让您领略不一样的京沪高铁路线旅游攻略" name="Description">
+<meta content="704,1,923" name="subjectid">
+<link href="http://travel.sina.com.cn/91/2012/0423/public.css" rel="stylesheet">
+<link href="http://travel.sina.com.cn/91/2012/0423/j_css.css" rel="stylesheet">
+<script src="http://travel.sina.com.cn/91/2012/0423/jquery.js" type="text/javascript"></script>
+<script src="http://travel.sina.com.cn/91/2012/0423/spritely.js" type="text/javascript"></script>
+<script src="http://travel.sina.com.cn/91/2012/0423/focus.js" type="text/javascript"></script>
+<script type="text/javascript">
+        (function($) {
+  $(document).ready(function() {
+  	/*
+    $('#boot').sprite({
+      fps: 6,
+      no_of_frames: 4,
+      // the following are optional: new in version 0.6...
+      start_at_frame: 1,
+      on_first_frame: function(obj) {
+        if (window.console) {
+          //                         console.log('first frame');
+        }
+      },
+      on_last_frame: function(obj) {
+        // you could stop the sprite here with, e.g.
+        // obj.spStop();
+        if (window.console) {
+          //                       console.log('last frame');
+        }
+      },
+      on_frame: {
+        2 : function(obj) {
+          // you could change the 'state' of the
+          // sprite here with, e.g. obj.spState(2);
+          if (window.console) {
+            //                         console.log('frame 2');
+          }
+        }
+      }
+    }).spRandom({
+      top: 289,
+      bottom: 289,
+      left: 0,
+      right: 0
+    }).active();
+    */
+    $('#birds').pan({
+      fps: 30,
+      speed: 0.7,
+      dir: 'right',
+      depth: 15
+    });
+    $('#wolken').pan({
+      fps: 30,
+      speed: 0.7,
+      dir: 'left',
+      depth: 10
+    });
+
+    $('#skyline3').pan({
+      fps: 30,
+      speed: 0.9,
+      dir: 'left',
+      depth: 12
+    });
+    $('#buildings-bg').pan({
+      fps: 30,
+      speed: 1,
+      dir: 'left',
+      depth: 14
+    });
+    $('#buildings-bg2').pan({
+      fps: 30,
+      speed: 1.5,
+      dir: 'left',
+      depth: 17
+    });
+   /* $('#skyline').pan({
+      fps: 30,
+      speed: 2,
+      dir: 'down',
+      depth: 20
+    });*/
+    $('#skyline').pan({
+      fps: 30,
+      speed: 2,
+      dir: 'down',
+      depth: 7
+    });
+    $('#buildings').pan({
+      fps: 30,
+      speed: 500,
+      dir: 'left',
+      depth: 40
+    });
+
+   // $('#buildings').spRelSpeed(20);
+  /*  $('#buildings2').pan({
+      fps: 30,
+      speed: 2,
+      dir: 'left',
+      depth: 26
+    });
+    */
+
+    $('#lantaarn').pan({
+      fps: 30,
+      speed: 120,
+      dir: 'left',
+      depth: 80
+    });
+
+    $('#buildings, #buildings2, #birds, #skyline, #skyline3, #wolken, #buildings-bg, #buildings-bg2, #lantaarn, #kade, #duck, #duck2').spRelSpeed(7);
+
+    window.actions = {
+      fly_slowly_forwards: function() {
+        $('#bird').fps(10).spState(1);
+        $('#buildings, #buildings2, #birds, #skyline, #skyline3, #wolken, #buildings-bg, #buildings-bg2, #lantaarn, #kade, #duck, #duck2').spRelSpeed(10).spChangeDir('left');
+
+      },
+      fly_slowly_backwards: function() {
+        $('#bird').fps(10).spState(2);
+        $('#buildings, #buildings2, #birds, #skyline, #skyline3, #wolken, #buildings-bg, #buildings-bg2, #lantaarn, #kade, #duck, #duck2').spRelSpeed(10).spChangeDir('right');
+      },
+      fly_quickly_forwards: function() {
+        $('#bird').fps(20).spState(1);
+        $('#buildings, #buildings2, #birds, #skyline, #skyline3, #wolken, #buildings-bg, #buildings-bg2, #lantaarn, #kade, #duck, #duck2').spRelSpeed(30).spChangeDir('left');
+      },
+      fly_quickly_backwards: function() {
+        $('#bird').fps(20).spState(2);
+        $('#buildings, #buildings2, #birds, #skyline, #skyline3, #wolken, #buildings-bg, #buildings-bg2, #lantaarn, #kade, #duck, #duck2').spRelSpeed(30).spChangeDir('right');
+      },
+      fly_like_lightning_forwards: function() {
+        $('#bird').fps(25).spState(1);
+        $('#buildings, #buildings2, #birds, #skyline, #skyline3, #wolken, #buildings-bg, #buildings-bg2, #lantaarn, #kade, #duck, #duck2').spSpeed(40).spChangeDir('left');
+      },
+      fly_like_lightning_backwards: function() {
+        $('#bird').fps(25).spState(2);
+        $('#buildings, #buildings2, #birds, #skyline, #skyline3, #wolken, #buildings-bg, #buildings-bg2, #lantaarn, #kade, #duck, #duck2').spSpeed(40).spChangeDir('right');
+      }
+    };
+
+    window.page = {
+      hide_panels: function() {
+        $('.panel').hide(300);
+      },
+      show_panel: function(el_id) {
+        this.hide_panels();
+        $(el_id).show(300);
+      }
+    }
+
+  });
+})(jQuery);
+
+    </script>
+</head>
+<body>
+<!-- SUDA_CODE_START --><div style="position:absolute;top:0;left:0;width:0;height:0;z-index:1"><div style="position:absolute;top:0;left:0;width:1;height:1;"><iframe src="" height="1" width="1" scrolling="NO" id="SUDA_FC" frameborder="0"></iframe></div><div style="position:absolute;top:0;left:0;width:0;height:0;visibility:hidden" id="SUDA_CS_DIV"></div></div>
+<script type="text/javascript"> 
+//<!--
+var _SGUP_ = "SGUP";var _SGUP_REQ_ = "http://sgup.beacon.sina.com.cn/cgi-bin/gsgup";var sgup = "";
+var SSL={Config:{},Space:function(str){var a=str,o=null;a=a.split('.');o=SSL;for(i=0,len=a.length;i<len;i++){o[a[i]]=o[a[i]]||{};o=o[a[i]]}return o}};
+SSL.Space('Global');SSL.Space('Core.Dom');SSL.Space('Core.Event');SSL.Space('App');SSL.Global={win:window||{},doc:document,nav:navigator,loc:location};SSL.Core.Dom={get:function(id){return document.getElementById(id)}};SSL.Core.Event={on:function(){}};
+SSL.App={
+	_S_gConType:function(){var ct="";try{SSL.Global.doc.body.addBehavior("#default#clientCaps");ct=SSL.Global.doc.body.connectionType}catch(e){ct="unkown"}return ct},
+	_S_gKeyV:function(src,k,e,sp){if(src==""){return""}if(sp==""){sp="="}k=k+sp;var ps=src.indexOf(k);if(ps<0){return""}ps=ps+k.length;var pe=src.indexOf(e,ps);if(pe<ps){pe=src.length}return src.substring(ps,pe)},
+	_S_gUCk:function(ckName){if((undefined==ckName)||(""==ckName))return"";return SSL.App._S_gKeyV(SSL.Global.doc.cookie,ckName,";","")},
+	_S_sUCk:function(ckName,ckValue,ckDays,ckDomain){if(ckValue!=null){if((undefined==ckDomain)||(null==ckDomain)){ckDomain="sina.com.cn";}if((undefined==ckDays)||(null==ckDays)||(''==ckDays)){SSL.Global.doc.cookie=ckName+"="+ckValue+";domain="+ckDomain+";path=/";}else{var now=new Date();var time=now.getTime();time=time+86400000*ckDays;now.setTime(time);time=now.getTime();SSL.Global.doc.cookie=ckName+"="+ckValue+";domain="+ckDomain+";expires="+now.toUTCString()+";path=/";}}},
+	_S_gJVer:function(_S_NAV_,_S_NAN_){var p,appsign,appver,jsver=1.0,isN6=0;if('MSIE'==_S_NAN_){appsign='MSIE';p=_S_NAV_.indexOf(appsign);if(p>=0){appver=parseInt(_S_NAV_.substring(p+5));if(3<=appver){jsver=1.1;if(4<=appver){jsver=1.3}}}}else if(("Netscape"==_S_NAN_)||("Opera"==_S_NAN_)||("Mozilla"==_S_NAN_)){jsver=1.3;appsign='Netscape6';p=_S_NAV_.indexOf(appsign);if(p>=0){jsver=1.5}}return jsver},
+	_S_gFVer:function(nav){var ua=SSL.Global.nav.userAgent.toLowerCase();var flash_version=0;if(SSL.Global.nav.plugins&&SSL.Global.nav.plugins.length){var p=SSL.Global.nav.plugins['Shockwave Flash'];if(typeof p=='object'){for(var i=10;i>=3;i--){if(p.description&&p.description.indexOf(' '+i+'.')!=-1){flash_version=i;break}}}}else if(ua.indexOf("msie")!=-1&&ua.indexOf("win")!=-1&&parseInt(SSL.Global.nav.appVersion)>=4&&ua.indexOf("16bit")==-1){for(var i=10;i>=2;i--){try{var object=eval("new ActiveXObject('ShockwaveFlash.ShockwaveFlash."+i+"');");if(object){flash_version=i;break}}catch(e){}}}else if(ua.indexOf("webtv/2.5")!=-1){flash_version=3}else if(ua.indexOf("webtv")!=-1){flash_version=2}return flash_version},
+	_S_gMeta:function(MName,pidx){var pMeta=SSL.Global.doc.getElementsByName(MName);var idx=0;if(pidx>0){idx=pidx}return(pMeta.length>idx)?pMeta[idx].content:""},
+	_S_gHost:function(sUrl){var r=new RegExp('^http(?:s)?\://([^/]+)','im');if(sUrl.match(r)){return sUrl.match(r)[1].toString()}else{return""}},
+	_S_gDomain:function(sHost){var p=sHost.indexOf('.sina.');if(p>0){return sHost.substr(0,p)}else{return sHost}},
+	_S_gTJMTMeta:function(){return SSL.App._S_gMeta("mediaid")},
+	_S_gTJZTMeta:function(){var zt=SSL.App._S_gMeta('subjectid');zt.replace(",",".");zt.replace(";",",");return zt},
+	_S_isFreshMeta:function(){var ph=SSL.Global.doc.documentElement.innerHTML.substring(0,1024);var reg=new RegExp("<meta\\s*http-equiv\\s*=((\\s*refresh\\s*)|(\'refresh\')|(\"refresh\"))\s*content\s*=","ig");return reg.test(ph)},
+	_S_isIFrameSelf:function(minH,minW){if(SSL.Global.win.top==SSL.Global.win){return false}else{try{if(SSL.Global.doc.body.clientHeight==0){return false}if((SSL.Global.doc.body.clientHeight>=minH)&&(SSL.Global.doc.body.clientWidth>=minW)){return false}else{return true}}catch(e){return true}}},
+	_S_isHome:function(curl){var isH="";try{SSL.Global.doc.body.addBehavior("#default#homePage");isH=SSL.Global.doc.body.isHomePage(curl)?"Y":"N"}catch(e){isH="unkown"}return isH;}
+}
+function SUDA(config,ext1,ext2){
+	var SG=SSL.Global,SSD=SSL.Core.Dom,SSE=SSL.Core.Event,SA=SSL.App;var _S_JV_="webbug_meta_ref_mod_noiframe_async_fc_:9.10a",_S_DPID_="-9999-0-0-1";var _S_NAN_=SG.nav.appName.indexOf('Microsoft Internet Explorer')>-1?'MSIE':SG.nav.appName;var _S_NAV_=SG.nav.appVersion;var _S_PURL_=SG.loc.href.toLowerCase();var _S_PREF_=SG.doc.referrer.toLowerCase();var _SP_MPID_="";var _S_PID_="",_S_UNA_="SUP",_S_MI_="",_S_SID_="Apache",_S_GID_="SINAGLOBAL",_S_LV_="ULV",_S_UO_="UOR",_S_UPA_="_s_upa",_S_IFW=320,_S_IFH=240,_S_GIDT=0,_S_EXT1="",_S_EXT2="",_S_SMC=0,_S_SMM=10000,_S_ET=0,_S_ACC_="_s_acc";var _S_HTTP=_S_PURL_.indexOf('https')>-1?'https://':'http://',_S_BCNDOMAIN="beacon.sina.com.cn",_S_CP_RF=_S_HTTP+_S_BCNDOMAIN+"/a.gif",_S_CP_RF_D=_S_HTTP+_S_BCNDOMAIN+"/d.gif",_S_CP_RF_E=_S_HTTP+_S_BCNDOMAIN+"/e.gif",_S_CP_FC=_S_HTTP+_S_BCNDOMAIN+"/fc.html";
+	var _S_T1=100,_S_T2=2000;
+	var handler={
+		_S_sSID:function(){handler._S_p2Bcn("",_S_CP_RF_D)},_S_gsSID:function(){var sid=SA._S_gUCk(_S_SID_);if(""==sid){handler._S_sSID()}return sid},
+		_S_sGID:function(gid){if(""!=gid){SA._S_sUCk(_S_GID_,gid,3650)}},_S_gGID:function(){return SA._S_gUCk(_S_GID_)},_S_gsGID:function(){if(""!=_S_GID_){var gid=SA._S_gUCk(_S_GID_);if(""==gid){if(SA._S_gFVer(SG.nav)<=6){return ""}else{handler._S_IFC2GID()}}return gid}else{return""}},_S_IFC2GID:function(){var _S_ifc=SSD.get("SUDA_FC");if(_S_ifc){_S_ifc.src=_S_CP_FC+"?a=g&n="+_S_GID_+"&r="+Math.random()}},
+		_S_gCid:function(){try{var metaTxt=SA._S_gMeta("publishid");if(""!=metaTxt){var pbidList=metaTxt.split(",");if(pbidList.length>0){if(pbidList.length>=3){_S_DPID_="-9999-0-"+pbidList[1]+"-"+pbidList[2]}return pbidList[0]}}else{return"0"}}catch(e){return"0"}},
+		_S_gAEC:function(){return SA._S_gUCk(_S_ACC_)},_S_sAEC:function(eid){if(""==eid){return}var acc=handler._S_gAEC();if(acc.indexOf(eid+",")<0){acc=acc+eid+",";}SA._S_sUCk(_S_ACC_,acc,7);},
+		_S_p2Bcn:function(q,u){var scd=SSD.get("SUDA_CS_DIV");if(null!=scd){var now=new Date();scd.innerHTML="<img width=0 height=0 src='"+u+"?"+q+"&gUid_"+now.getTime()+"' border='0' alt=''  />"}},
+		_S_gSUP:function(){if(_S_MI_!=""){return _S_MI_}var sup=unescape(SA._S_gUCk(_S_UNA_));if(sup!=""){var ag=SA._S_gKeyV(sup,"ag","&","");var user=SA._S_gKeyV(sup,"user","&","");var uid=SA._S_gKeyV(sup,"uid","&","");var sex=SA._S_gKeyV(sup,"sex","&","");var bday=SA._S_gKeyV(sup,"dob","&","");_S_MI_=ag+":"+user+":"+uid+":"+sex+":"+bday;return _S_MI_}else{return""}},
+		_S_gsLVisit:function(sid){var lvi=SA._S_gUCk(_S_LV_);var lva=lvi.split(":");var lvr="";if(lva.length>=6){if(sid!=lva[4]){var lvn=new Date();var lvd=new Date(parseInt(lva[0]));lva[1]=parseInt(lva[1])+1;if(lvn.getMonth()!=lvd.getMonth()){lva[2]=1}else{lva[2]=parseInt(lva[2])+1}if(((lvn.getTime()-lvd.getTime())/86400000)>=7){lva[3]=1}else{if(lvn.getDay()<lvd.getDay()){lva[3]=1}else{lva[3]=parseInt(lva[3])+1}}lvr=lva[0]+":"+lva[1]+":"+lva[2]+":"+lva[3];lva[5]=lva[0];lva[0]=lvn.getTime();SA._S_sUCk(_S_LV_,lva[0]+":"+lva[1]+":"+lva[2]+":"+lva[3]+":"+sid+":"+lva[5],360)}else{lvr=lva[5]+":"+lva[1]+":"+lva[2]+":"+lva[3]}}else{var lvn=new Date();lvr=":1:1:1";SA._S_sUCk(_S_LV_,lvn.getTime()+lvr+":"+sid+":",360)}return lvr},
+		_S_gUOR:function(){var uoc=SA._S_gUCk(_S_UO_);var upa=uoc.split(":");if(upa.length>=2){return upa[0]}else{return""}},
+		_S_sUOR:function(){var uoc=SA._S_gUCk(_S_UO_),uor="",uol="",up_t="",up="";var re=/[&|?]c=spr(_[A-Za-z0-9]{1,}){3,}/;var ct=new Date();if(_S_PURL_.match(re)){up_t=_S_PURL_.match(re)[0]}else{if(_S_PREF_.match(re)){up_t=_S_PREF_.match(re)[0]}}if(up_t!=""){up_t=up_t.substr(3)+":"+ct.getTime()}if(uoc==""){if(SA._S_gUCk(_S_LV_)==""&&SA._S_gUCk(_S_LV_)==""){uor=SA._S_gHost(_S_PREF_);uol=SA._S_gHost(_S_PURL_)}SA._S_sUCk(_S_UO_,uor+","+uol+","+up_t,365)}else{var ucg=0,uoa=uoc.split(",");if(uoa.length>=1){uor=uoa[0]}if(uoa.length>=2){uol=uoa[1]}if(uoa.length>=3){up=uoa[2]}if(up_t!=""){ucg=1}else{var upa=up.split(":");if(upa.length>=2){var upd=new Date(parseInt(upa[1]));if(upd.getTime()<(ct.getTime()-86400000*30)){ucg=1}}}if(ucg){SA._S_sUCk(_S_UO_,uor+","+uol+","+up_t,365)}}},
+		_S_gRef:function(){var re=/^[^\?&#]*.swf([\?#])?/;if((_S_PREF_=="")||(_S_PREF_.match(re))){var ref=SA._S_gKeyV(_S_PURL_,"ref","&","");if(ref!=""){return ref}}return _S_PREF_},
+		_S_MEvent:function(){if(_S_SMC==0){_S_SMC++;var c=SA._S_gUCk(_S_UPA_);if(c==""){c=0}c++;if(c<_S_SMM){var re=/[&|?]c=spr(_[A-Za-z0-9]{2,}){3,}/;if(_S_PURL_.match(re)||_S_PREF_.match(re)){c=c+_S_SMM}}SA._S_sUCk(_S_UPA_,c)}},_S_gMET:function(){var c=SA._S_gUCk(_S_UPA_);if(c==""){c=0}return c},
+		_S_gCInfo_v2:function(){var now=new Date();return"sz:"+screen.width+"x"+screen.height+"|dp:"+screen.colorDepth+"|ac:"+SG.nav.appCodeName+"|an:"+_S_NAN_+"|cpu:"+SG.nav.cpuClass+"|pf:"+SG.nav.platform+"|jv:"+SA._S_gJVer(_S_NAV_,_S_NAN_)+"|ct:"+SA._S_gConType()+"|lg:"+SG.nav.systemLanguage+"|tz:"+now.getTimezoneOffset()/60+"|fv:"+SA._S_gFVer(SG.nav)},
+		_S_gPInfo_v2:function(pid,ref){if((undefined==pid)||(""==pid)){pid=handler._S_gCid()+_S_DPID_}return"pid:"+pid+"|st:"+handler._S_gMET()+"|et:"+_S_ET+"|ref:"+escape(ref)+"|hp:"+SA._S_isHome(_S_PURL_)+"|PGLS:"+SA._S_gMeta("stencil")+"|ZT:"+escape(SA._S_gTJZTMeta())+"|MT:"+escape(SA._S_gTJMTMeta())+"|keys:"},
+		_S_gUInfo_v2:function(vid){return"vid:"+vid+"|sid:"+handler._S_gsSID()+"|lv:"+handler._S_gsLVisit(handler._S_gsSID())+"|un:"+handler._S_gSUP()+"|uo:"+handler._S_gUOR()+"|ae:"+handler._S_gAEC()},
+		_S_gEXTInfo_v2:function(ext1,ext2){_S_EXT1=(undefined==ext1)?_S_EXT1:ext1;_S_EXT2=(undefined==ext2)?_S_EXT2:ext2;return"ex1:"+_S_EXT1+"|ex2:"+_S_EXT2},
+		_S_pBeacon:function(pid,ext1,ext2){try{var gid=handler._S_gsGID();if(""==gid){if(_S_GIDT<1){setTimeout(function(){handler._S_pBeacon(pid,ext1,ext2)},_S_T2);_S_GIDT++;return}else{gid=handler._S_gsSID();handler._S_sGID(gid)}}var sgup_ck = SA._S_gUCk(_SGUP_);if(sgup_ck == ""){var channary = location.hostname.split(".");var cur_ch = (channary.length > 3) ? channary[channary.length - 4] : "";handler.__loadScript(_SGUP_REQ_,function(){if(sgup != ""){SA._S_sUCk(_SGUP_,sgup,7);}else{SA._S_sUCk(_SGUP_,"0",3);}});}var sVer="V=2";var sCI=handler._S_gCInfo_v2();var sPI=handler._S_gPInfo_v2(pid,handler._S_gRef());var sUI=handler._S_gUInfo_v2(gid);var sEX=handler._S_gEXTInfo_v2(ext1,ext2);var lbStr=sVer+"&CI="+sCI+"&PI="+sPI+"&UI="+sUI+"&EX="+sEX;handler._S_p2Bcn(lbStr,_S_CP_RF)}catch(e){}},
+		__loadScript:function(url, callback, encode){var script = document.createElement('script');script.type = 'text/javascript';if(encode)script.charset = encode;if (callback)script.onload = script.onreadystatechange = function() {if (script.readyState && script.readyState != 'loaded' && script.readyState != 'complete')return;script.onreadystatechange = script.onload = null;callback();};script.src = url;document.getElementsByTagName('head')[0].appendChild(script);},
+		_S_acTrack_i:function(eid,p){if((""==eid)||(undefined==eid)){return}handler._S_sAEC(eid);if(0==p){return}var s="AcTrack||"+handler._S_gGID()+"||"+handler._S_gsSID()+"||"+handler._S_gSUP()+"||"+eid+"||";handler._S_p2Bcn(s,_S_CP_RF_E)},
+		_S_uaTrack_i:function(acode,aext){var s="UATrack||"+handler._S_gGID()+"||"+handler._S_gsSID()+"||"+handler._S_gSUP()+"||"+acode+"||"+aext+"||"+handler._S_gRef()+"||";handler._S_p2Bcn(s,_S_CP_RF_E)}
+	};
+	if(_S_SMC==0){if('MSIE'==_S_NAN_){SSL.Global.doc.attachEvent("onclick",handler._S_MEvent);SSL.Global.doc.attachEvent("onmousemove",handler._S_MEvent);SSL.Global.doc.attachEvent("onscroll",handler._S_MEvent)}else{SSL.Global.doc.addEventListener("click",handler._S_MEvent,false);SSL.Global.doc.addEventListener("mousemove",handler._S_MEvent,false);SSL.Global.doc.addEventListener("scroll",handler._S_MEvent,false)}};handler._S_sUOR();
+	return{
+		_S_pSt:function(pid,ext1,ext2){try{if((SA._S_isFreshMeta())||(SA._S_isIFrameSelf(_S_IFH,_S_IFW))){return}if(_S_ET>0){return}++_S_ET;setTimeout(function(){handler._S_gsSID()},_S_T1);setTimeout(function(){handler._S_pBeacon(pid,ext1,ext2,0)},_S_T2)}catch(e){}},
+		_S_pStM:function(pid,ext1,ext2){++_S_ET;handler._S_pBeacon(pid,((undefined==ext1)?handler._S_upExt1():ext1),ext2)},
+		_S_acTrack:function(eid,p){try{if((undefined!=eid)&&(""!=eid)){setTimeout(function(){handler._S_acTrack_i(eid,p)},_S_T1)}}catch(e){}},
+		_S_uaTrack:function(acode,aext){try{if(undefined==acode){acode=""}if(undefined==aext){aext=""}if((""!=acode)||(""!=aext)){setTimeout(function(){handler._S_uaTrack_i(acode,aext)},_S_T1)}}catch(e){}}
+	}
+}
+var GB_SUDA;if(GB_SUDA==null){GB_SUDA=new SUDA({})}
+var _S_PID_="";
+function _S_pSt(pid,ext1,ext2){GB_SUDA._S_pSt(pid,ext1,ext2);}
+function _S_pStM(pid,ext1,ext2){GB_SUDA._S_pStM(pid,ext1,ext2);}
+function _S_acTrack(eid){GB_SUDA._S_acTrack(eid,1);}
+function _S_uaTrack(acode,aext){GB_SUDA._S_uaTrack(acode,aext);}
+//-->
+</script>
+<script type="text/javascript"> 
+//<!--
+GB_SUDA._S_pSt("");
+//-->
+</script>
+<noscript>
+<div style="position:absolute;top:0;left:0;width:0;height:0;visibility:hidden"><img width="0" alt="" src="http://beacon.sina.com.cn/a.gif?noScript" border="0" height="0"></div>
+</noscript>
+
+
+<!-- SUDA_CODE_END --><!-- for iPad begin --><script type="text/javascript">
+(function(){
+if(!/\((iPhone|iPad|iPod)/i.test(navigator.userAgent)){return};
+var iPadScript = document.createElement('script');
+iPadScript.src = 'http://news.sina.com.cn/js/ui/ipad/reset.js';
+document.getElementsByTagName('head')[0].appendChild(iPadScript);
+})();
+</script>
+
+
+<!-- for iPad end --><!-- SSO_GETCOOKIE_START --><script type="text/javascript">var sinaSSOManager=sinaSSOManager||{};sinaSSOManager.getSinaCookie=function(){function dc(u){if(u==undefined){return""}var decoded=decodeURIComponent(u);return decoded=="null"?"":decoded}function ps(str){var arr=str.split("&");var arrtmp;var arrResult={};for(var i=0;i<arr.length;i++){arrtmp=arr[i].split("=");arrResult[arrtmp[0]]=dc(arrtmp[1])}return arrResult}function gC(name){var Res=eval("/"+name+"=([^;]+)/").exec(document.cookie);return Res==null?null:Res[1]}var sup=dc(gC("SUP"));if(!sup){sup=dc(gC("SUR"))}if(!sup){return null}return ps(sup)};</script>
+
+<!-- SSO_GETCOOKIE_END --><script type="text/javascript">new function(r,s,t){this.a=function(n,t,e){if(window.addEventListener){n.addEventListener(t,e,false);}else if(window.attachEvent){n.attachEvent("on"+t,e);}};this.b=function(f){var t=this;return function(){return f.apply(t,arguments);};};this.c=function(){var f=document.getElementsByTagName("form");for(var i=0;i<f.length;i++){var o=f[i].action;if(this.r.test(o)){f[i].action=o.replace(this.r,this.s);}}};this.r=r;this.s=s;this.d=setInterval(this.b(this.c),t);this.a(window,"load",this.b(function(){this.c();clearInterval(this.d);}));}(/http:\/\/www\.google\.c(om|n)\/search/, "http://keyword.sina.com.cn/searchword.php", 250);</script>
+<div class="vbanner">
+
+<!--标准头bengin--><div class="secondaryHeader">
+<div class="sHBorder">
+<div class="sHLogo">
+<span><a href="http://www.sina.com.cn/">
+<img src="http://i1.sinaimg.cn/dy/images/header/2009/standardl2nav_sina_new.gif" alt="新浪网"></a>
+<a href="http://travel.sina.com.cn/">
+<img src="http://i3.sinaimg.cn/dy/images/header/2009/standardl2nav_travel.gif" alt="新浪旅游"></a>
+</span>
+</div>
+<div class="sHLinks"><a href="http://travel.sina.com.cn/">旅游首页</a> | 
+                <a href="http://www.sina.com.cn/">新浪首页</a> | <a href="http://news.sina.com.cn/guide/">新浪导航</a>
+</div>
+</div>
+</div>
+
+
+<!--标准头end--><!--火车begin--><div class="stage" id="stage">
+<div class="stage" id="bg"></div>
+
+<!-- <div class="stage" id="birds"></div>--><div class="stage" id="wolken"></div>
+<div class="stage" id="skyline3"></div>
+<div class="stage" id="skyline"></div>
+<div class="stage" id="buildings"></div>
+<div class="stage" id="lantaarn"></div>
+</div>
+<div class="jingzhi">
+<div id="boot"></div>
+<div id="ziti"></div>
+<div id="balloon"></div>
+<div id="petal"></div>
+<div id="pink"></div>
+</div>
+
+<!--火车end--></div>
+
+<!--导航begin--><div class="clearit"></div>
+<div class="vnav">
+<div class="nav">
+<ul class="nav1">
+<li><a href="http://travel.sina.com.cn/z/huocheyoujinghu/" target="_self" class="current"><span></span>京沪高铁游</a></li>
+<li><a href="http://travel.sina.com.cn/z/huocheyouzhengxi/" target="_self"><span></span>郑西高铁游</a></li>
+<li><a href="http://travel.sina.com.cn/z/huocheyoutaiwan/" target="_self"><span></span>台湾环岛游</a></li>
+<li><a href="http://travel.sina.com.cn/z/huocheyoujiuzhou/" target="_self"><span></span>搭JR游九州</a></li>
+<li><a href="http://travel.sina.com.cn/z/huocheyoubc/" target="_self"><span></span>加拿大绝顶风光</a></li>
+<li><a href="http://travel.sina.com.cn/z/huocheyououzhou/" target="_self"><span></span>欧洲火车攻略</a></li>
+<li><a href="http://travel.sina.com.cn/z/huocheyoushijie/" target="_self"><span></span>乘火车游世界</a></li>
+<li><a href="http://travel.sina.com.cn/z/huochehuaijiu/" target="_self"><span></span>怀旧之旅</a></li>
+</ul>
+</div>
+</div>
+
+<!--导航end--><div class="wrap">
+
+<!--横切一bengi--><div class="hq1">
+<div class="hq1left">
+<a href="http://travel.sina.com.cn/beijing/" target="_blank"><img src="http://i0.sinaimg.cn/travel/2012/0507/U4271P704DT20120507151114.jpg" alt="北京" height="176" width="382"></a>
+</div>
+<div class="hq1right">
+<div class="title">
+<h1>经典火车之旅----京沪线</h1>
+</div>
+<div class="info">     高铁改变生活，高铁更改变旅行！从北京一路南下，经过河北、山东、安徽、江苏等省份直达上海。京沪高铁沿线除了北京、上海两座中国代表性的城市外，沿途所经过的站点几乎都囊括了各省和直辖市的旅游精华。其中有不少是游客相当熟悉的目的地，还有一些是被业界看好的美景站点。京沪高铁开通已经带动了沿线站点，掀起全新的旅游热潮。</div>
+</div>
+</div>
+
+
+<!--横切一end--><!--横切二begin--><div class="clearit"></div>
+<div class="hq2">
+<div class="bg">
+<div class="hq2left"><img src="http://i1.sinaimg.cn/travel/subject/2012/0423/train/hq2_map.jpg" alt="京沪高铁线路图" height="347" width="278"></div>
+<div class="hq2middle">
+<div class="title">
+<h3>北京 ――――― 上海</h3>
+</div>
+<ul>
+<li>北京南</li>
+<li>天津南</li>
+<li>济南西</li>
+<li>滕州东</li>
+<li>宿州东</li>
+<li>滁州</li>
+<li>丹阳北</li>
+<li>苏州北</li>
+</ul>
+<ul>
+<li>廊坊</li>
+<li>沧州西</li>
+<li>泰安</li>
+<li>枣庄</li>
+<li>蚌埠南</li>
+<li>南京南</li>
+<li>常州北</li>
+<li>昆山南</li>
+</ul>
+<ul>
+<li>天津西</li>
+<li>德州东</li>
+<li>曲阜东</li>
+<li>徐州东</li>
+<li>定远</li>
+<li>镇江南</li>
+<li>无锡东</li>
+<li>上海虹桥</li>
+</ul>
+<div class="clearit"></div>
+<div class="info"> <span>里程：</span>1318公里<br>
+<span>途经地区：</span>京津冀鲁皖苏沪<br>
+<span>全程时间：</span>5-7小时<br>
+<span>速度：</span> 300km/h和250km/h<br>
+<span>票价：</span>一等座935元、二等座555元。商务座(包括观光座、一等包座)1750元。 </div>
+</div>
+<div class="hq2right">
+
+<!--滚动图begin--><div class="infiniteCarousel">
+<div class="wrapper">
+<ul>
+<li><a href="http://travel.sina.com.cn/beijing/" target="_blank"> <img src="http://i0.sinaimg.cn/travel/2012/0423/U4271P704DT20120423180006.jpg" alt="恢弘大气 细品北京" height="205" width="165"></a> </li>
+<li><a href="http://travel.sina.com.cn/tianjin/" target="_blank"> <img src="http://i0.sinaimg.cn/travel/2012/0423/U4271P704DT20120423180842.jpg" alt="天津自助游全攻略" height="205" width="165"></a> </li>
+<li><a href="http://travel.sina.com.cn/jinan/" target="_blank"> <img src="http://i0.sinaimg.cn/travel/2012/0423/U4271P704DT20120423181557.jpg" alt="济南：一城山色半城湖" width="165"></a> </li>
+<li><a href="http://travel.sina.com.cn/nanjing/" target="_blank"> <img src="http://i0.sinaimg.cn/travel/2012/0424/U4271P704DT20120424102110.jpg" alt="六朝古都南京" height="205" width="165"></a> </li>
+<li><a href="http://jingdian.travel.sina.com.cn/1490-suzhou" target="_blank"> <img src="http://i1.sinaimg.cn/travel/2012/0424/U4271P704DT20120424174253.jpg" alt="苏州：匆匆一瞥的江南" height="205" width="165"></a> <img>
+</li><li><a href="http://jingdian.travel.sina.com.cn/1489-wuxi" target="_blank"> <img src="http://i3.sinaimg.cn/travel/2012/0509/U4271P704DT20120509104245.jpg" alt="浓郁醇香品无锡" height="205" width="165"></a> <img>
+</li><li><a href="http://travel.sina.com.cn/shanghai/" target="_blank"> <img src="http://i0.sinaimg.cn/travel/2012/0424/U4271P704DT20120424105120.jpg" alt="繁华夜上海" height="205" width="165"></a> </li>
+</ul>
+</div>
+</div>
+
+<!--滚动图end--><div class="title">
+<h3><a href="http://travel.sina.com.cn/china/2011-06-28/1114158426.shtml" target="_blank">千里京沪一日还</a> </h3>
+</div>
+<div class="info"> 　京沪高铁全线长1318公里，这个距离在欧洲相当于穿越五六个国家的版图。它像一条腾飞的巨龙，横穿京、津、冀、鲁、皖、苏、沪7省市，跨越海河、黄河、淮河、长江四大水系，舞动在“环渤海”和“长三角”两大经济区。</div>
+</div>
+</div>
+
+
+<!--横切二end--><!--横切三begin--><div class="clearit"></div>
+<div class="hq3">
+<div class="left">
+<div class="conL">
+<div class="stop"> </div>
+<div class="title"> <span>天津自助游攻略</span><br>
+<div style="margin-top:10px;"><b>北京南――天津南</b><br>
+                      全程34分钟<br>
+                      一等座95元 二等座55元<br>
+</div>
+</div>
+<div class="pic"><a href="http://travel.sina.com.cn/china/2011-07-01/1110158627.shtml"><img src="http://i1.sinaimg.cn/travel/2012/0424/U4271P704DT20120424151807.jpg" alt="天津：介奏似我们地界儿" height="115" width="159"></a></div>
+<div class="info"> <span><a href="http://travel.sina.com.cn/china/2011-07-01/1110158627.shtml">天津：介奏似我们地界儿</a></span> <br>
+                  28分钟，你能在北京干什么？这点儿时间恐怕并不够你从东三环移动到西四环，但却够你从北京抵达天津，打个盹儿再醒来的工夫，天津卫慢悠悠的小假期，就可以开始了。</div>
+</div>
+<div class="conR">
+<div class="tips"></div>
+<div class="tips_info">
+<p><span>吃:</span><a href="http://travel.sina.com.cn/food/2009-08-21/1503102681.shtml">狗不理包子</a> <a href="http://travel.sina.com.cn/food/2009-08-21/1440102665.shtml">十八街麻花</a> <a href="http://travel.sina.com.cn/food/2009-08-17/1725101745.shtml">耳朵眼炸糕</a> <a href="http://travel.sina.com.cn/food/2009-08-18/1122101898.shtml">白记水饺</a> <a href="http://travel.sina.com.cn/food/2009-08-21/1511102689.shtml">煎饼果子</a> <a href="http://travel.sina.com.cn/food/2009-08-20/1540102427.shtml">崩豆张</a> <a href="http://travel.sina.com.cn/food/2009-08-18/1559101985.shtml">石头门坎素包</a> </p>
+</div>
+<img src="http://i0.sinaimg.cn/travel/subject/2012/0423/train/line-xu.gif" alt="line" height="1" width="250">
+<div class="tips_info">
+<p><span>住:</span>南市旅馆街宾馆林立，且地处繁华地段，与多处景点都相距不远，不失为理想住处。</p>
+</div>
+<img src="http://i0.sinaimg.cn/travel/subject/2012/0423/train/line-xu.gif" alt="line" height="1" width="250">
+<div class="tips_info">
+<p><span>购：</span>滨江道商业街、和平路商业街、小白楼商业街、沈阳道古物市场是购物的好去处。</p>
+</div>
+<img src="http://i0.sinaimg.cn/travel/subject/2012/0423/train/line-xu.gif" alt="line" height="1" width="250">
+<div class="tips_info">
+<p><span>行：</span>市内公交票价1.5元，个别线路1元。出租车起步价8元，3公里以上1.7元/公里收费。</p>
+</div>
+<div class="recommend">推荐玩法<img src="http://i3.sinaimg.cn/travel/subject/2012/0423/train/Recommend.jpg" height="10" width="60"></div>
+<div class="pic_tit">
+<div class="leftpic"><a href="http://travel.sina.com.cn/china/2011-08-17/1416160798.shtml"><img src="http://i2.sinaimg.cn/travel/2012/0424/U4271P704DT20120424174452.jpg" alt="天津小洋楼自助游" height="63" width="100"></a>
+<p><a href="http://travel.sina.com.cn/china/2011-08-17/1416160798.shtml">天津小洋楼自助游</a></p>
+<a href="http://travel.sina.com.cn/china/2011-04-11/1451154954.shtml"><img src="http://i3.sinaimg.cn/travel/2012/0424/U4271P704DT20120424174718.jpg" alt="去天津听相声" height="63" width="100"></a>
+<p><a href="http://travel.sina.com.cn/china/2011-04-11/1451154954.shtml">去天津听相声</a></p>
+</div>
+<div class="rightpic"> <a href="http://travel.sina.com.cn/china/2011-03-25/1028154242.shtml"><img src="http://i3.sinaimg.cn/travel/2012/0424/U4271P704DT20120424174952.jpg" alt="tt" height="63" width="100"></a>
+<p><a href="http://travel.sina.com.cn/china/2011-03-25/1028154242.shtml">八种方法玩转天津</a></p>
+<a href="http://blog.sina.com.cn/s/blog_4dce24110102dwqj.html?tj=1"><img src="http://i1.sinaimg.cn/travel/2012/0424/U4271P704DT20120424181741.jpg" alt="价值连城的瓷房子" height="63" width="100"></a>
+<p><a href="http://blog.sina.com.cn/s/blog_4dce24110102dwqj.html?tj=1">价值连城的瓷房子</a> </p>
+</div>
+</div>
+</div>
+</div>
+<div class="right">
+<div class="conL">
+<div class="stop"> </div>
+<div class="title"> <span><a href="http://travel.sina.com.cn/jinan/">济南：聆听泉水私语</a></span><br>
+<div style="margin-top:10px;"><b>天津南――济南西</b><br>
+                      全程63分钟<br>
+                      一等座220元 二等座130元<br>
+</div>
+</div>
+<div class="pic"><a href="http://travel.sina.com.cn/china/2012-03-14/1056170591.shtml"><img src="http://i1.sinaimg.cn/travel/2012/0425/U4271P704DT20120425102144.jpg" alt="游走济南：品泉城美景美食" height="115" width="159"></a></div>
+<div class="info"> <span><a href="http://travel.sina.com.cn/china/2012-03-14/1056170591.shtml">游走济南：品泉城美景美食</a></span>
+清冽甘美的泉水是济南市的血脉，赋予这座城市灵秀的气质和旺盛的生命力。同时，济南的城市发展、历史沿革、民风民俗也与泉水密切相关，形成了独特的泉水文化。</div>
+</div>
+<div class="conR">
+<div class="tips"></div>
+<div class="tips_info">
+<p><span>最佳游季:</span>秋到济南最佳。但冬雪中的大明湖和春天的趵突泉是这两个景点最美的时候。</p>
+</div>
+<img src="http://i0.sinaimg.cn/travel/subject/2012/0423/train/line-xu.gif" alt="line" height="1" width="250">
+<div class="tips_info">
+<p><span>吃:</span>糖醋鲤鱼、九转大肠、汤爆双脆、玉记扒鸡、螺旋糕、糖酥煎饼都家喻户晓。</p>
+</div>
+<img src="http://i0.sinaimg.cn/travel/subject/2012/0423/train/line-xu.gif" alt="line" height="1" width="250">
+<div class="tips_info">
+<p><span>购:</span>最繁华的商业街是泉城路，大观园附近、人民商场附近和南门附近也比较热闹。</p>
+</div>
+<img src="http://i0.sinaimg.cn/travel/subject/2012/0423/train/line-xu.gif" alt="line" height="1" width="250">
+<div class="tips_info">
+<p><span>行:</span>市区有公共电、汽车线路100多条，出租车(起步价7.5元)人力车补充了交通不同需要。</p>
+</div>
+<div class="recommend">推荐玩法<img src="http://i3.sinaimg.cn/travel/subject/2012/0423/train/Recommend.jpg" height="10" width="60"></div>
+<div class="pic_tit">
+<div class="leftpic"><a href="http://travel.sina.com.cn/china/2011-08-12/1349160586.shtml"><img src="http://i3.sinaimg.cn/travel/2012/0425/U4271P704DT20120425134950.jpg" alt="济南灵岩寺" height="63" width="95"></a>
+<p><a href="http://travel.sina.com.cn/china/2011-08-12/1349160586.shtml">济南灵岩寺</a></p>
+<a href="http://travel.sina.com.cn/china/2011-08-05/1345160217.shtml"><img src="http://i1.sinaimg.cn/travel/2012/0425/U4271P704DT20120425135425.jpg" alt="一城山色半城湖" height="63" width="95"></a>
+<p><a href="http://travel.sina.com.cn/china/2011-08-05/1345160217.shtml">一城山色半城湖</a></p>
+</div>
+<div class="rightpic"> <a href="http://travel.sina.com.cn/china/2011-12-14/1345166206.shtml"><img src="http://i3.sinaimg.cn/travel/2012/0425/U4271P704DT20120425143811.jpg" alt="聆听泉水私语" height="63" width="95"></a>
+<p><a href="http://travel.sina.com.cn/china/2011-12-14/1345166206.shtml">聆听泉水私语</a></p>
+<a href="http://travel.sina.com.cn/china/2010-09-26/1449144065.shtml"><img src="http://i0.sinaimg.cn/travel/2012/0425/U4271P704DT20120425141324.jpg" alt="济南趵突泉" height="63" width="95"></a>
+<p><a href="http://travel.sina.com.cn/china/2010-09-26/1449144065.shtml">济南趵突泉</a> </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!--横切三end--><!--横切四begin--><div class="clearit"></div>
+<div class="hq4">
+<div class="left">
+<div class="conL">
+<div class="stop"> </div>
+<div class="title"> <span><a href="http://travel.sina.com.cn/china/2011-07-18/1100159357.shtml">寻找南京“秦淮八绝”</a></span><br>
+<div style="margin-top:10px;"><b>济南西――南京南</b><br>
+                      2小时32分<br>
+                      一等座470元 二等座280元<br>
+</div>
+</div>
+<div class="pic"><a href="http://travel.sina.com.cn/nanjing/"><img src="http://i1.sinaimg.cn/travel/2012/0425/U4271P704DT20120425160252.jpg" alt="六朝古都感受金陵神韵" height="115" width="159"></a></div>
+<div class="info"> <span><a href="http://travel.sina.com.cn/nanjing/">六朝古都感受金陵神韵</a></span> <br>
+                  这座曾被称作金陵的城市，她的味道可以无关纵横时光的历史，也可以无关闯荡格局的现在，宏观如当年规划得几近完美的理想首都，微观如当下仍荡漾在大街小巷的丹桂沁甜。</div>
+</div>
+<div class="conR">
+<div class="tips"></div>
+<div class="tips_info">
+<p><span>吃:</span>鸭血粉丝汤，秦淮八绝、盐水鸭；小吃街除夫子庙外，还有新街口、朝天宫、长安路等地。 </p>
+</div>
+<img src="http://i0.sinaimg.cn/travel/subject/2012/0423/train/line-xu.gif" alt="line" height="1" width="250">
+<div class="tips_info">
+<p><span>购:</span>新街口、湖南路、太平南路、夫子庙地区，年轻女孩可以去这些地方淘些小东西。</p>
+</div>
+<img src="http://i0.sinaimg.cn/travel/subject/2012/0423/train/line-xu.gif" alt="line" height="1" width="250">
+<div class="tips_info">
+<p><span>行：</span>公交车普通票1元，TAXI起步11元，地铁实行分段收费。很多三轮车夫是免费导游。</p>
+</div>
+<img src="http://i0.sinaimg.cn/travel/subject/2012/0423/train/line-xu.gif" alt="line" height="1" width="250">
+<div class="tips_info">
+<p><span>景点关闭时间：</span>南京景点关闭较早，总统府和鸡鸣寺17：00停止售票，建议在此之前去。</p>
+</div>
+<div class="recommend">推荐玩法<img src="http://i3.sinaimg.cn/travel/subject/2012/0423/train/Recommend.jpg" height="10" width="60"></div>
+<div class="pic_tit">
+<div class="leftpic"><a href="http://travel.sina.com.cn/china/2012-03-12/1153170439.shtml"><img src="http://i2.sinaimg.cn/travel/2012/0425/U4271P704DT20120425165922.jpg" alt="走近风月秦淮河" height="63" width="95"></a>
+<p><a href="http://travel.sina.com.cn/china/2012-03-12/1153170439.shtml">走近风月秦淮河</a></p>
+<a href="http://travel.sina.com.cn/china/2011-12-28/1213166982.shtml"><img src="http://i3.sinaimg.cn/travel/2012/0425/U4271P704DT20120425170132.jpg" alt="跟十三钗游南京" height="63" width="95"></a>
+<p><a href="http://travel.sina.com.cn/china/2011-12-28/1213166982.shtml">跟十三钗游南京</a></p>
+</div>
+<div class="rightpic"> <a href="http://travel.sina.com.cn/china/2011-12-14/1523166223.shtml"><img src="http://i2.sinaimg.cn/travel/2012/0425/U4271P704DT20120425170634.jpg" alt="悠游南京栖霞山" height="63" width="95"></a>
+<p><a href="http://travel.sina.com.cn/china/2011-12-14/1523166223.shtml">悠游南京栖霞山</a></p>
+<a href="http://travel.sina.com.cn/china/2011-08-30/1543161435.shtml"><img src="http://i1.sinaimg.cn/travel/2012/0425/U4271P704DT20120425170848.jpg" alt="南京中山陵" height="63" width="95"></a>
+<p><a href="http://travel.sina.com.cn/china/2011-08-30/1543161435.shtml">南京中山陵</a> </p>
+</div>
+</div>
+</div>
+</div>
+<div class="right">
+<div class="conL">
+<div class="stop"> </div>
+<div class="title"> <span><a href="http://travel.sina.com.cn/shanghai/">繁华上海 探寻花花世界</a></span><br>
+<div style="margin-top:10px;"><b>南京南――上海虹桥</b><br>
+                      全程67分钟<br>
+                      一等座230元 二等座135元<br>
+</div>
+</div>
+<div class="pic"><a href="http://travel.sina.com.cn/china/ard/2011-11-29/1624165477.shtml"><img src="http://i0.sinaimg.cn/travel/2012/0425/U4271P704DT20120425175437.jpg" alt="经典上海 细数百年地标" height="115" width="159"></a></div>
+<div class="info"> <span><a href="http://travel.sina.com.cn/china/ard/2011-11-29/1624165477.shtml">经典上海 细数百年地标</a></span> <br>
+                  在许多人的心目中，只要提到上海，一定会想到那些标志性的元素，它们如水墨画一般徐徐展开在每个爱上海、恋上海的人们的思绪里。</div>
+</div>
+<div class="conR">
+<div class="tips"></div>
+<div class="tips_info">
+<p><span>吃:</span>小吃街集中在繁华闹市，像城隍庙、云南南路、乍浦路、黄河路仙霞路等。</p>
+</div>
+<img src="http://i0.sinaimg.cn/travel/subject/2012/0423/train/line-xu.gif" alt="line" height="1" width="250">
+<div class="tips_info">
+<p><span>购:</span>南京路、徐家汇、福州路、淮海路、四川北路、七浦路等，让你尽享购物乐趣。</p>
+</div>
+<img src="http://i0.sinaimg.cn/travel/subject/2012/0423/train/line-xu.gif" alt="line" height="1" width="250">
+<div class="tips_info">
+<p><span>小资必去；</span>田子坊、1933老厂房、莫干山路50号、8号桥、同乐坊</p>
+</div>
+<img src="http://i0.sinaimg.cn/travel/subject/2012/0423/train/line-xu.gif" alt="line" height="1" width="250">
+<div class="tips_info">
+<p><span>周边古镇：</span>崇明岛、朱家角、嘉定古镇、枫泾镇、新场古镇</p>
+</div>
+<div class="recommend">推荐玩法<img src="http://i3.sinaimg.cn/travel/subject/2012/0423/train/Recommend.jpg" height="10" width="60"></div>
+<div class="pic_tit">
+<div class="leftpic"><a href="http://travel.sina.com.cn/china/ard/2012-03-22/1428171124.shtml"><img src="http://i1.sinaimg.cn/travel/2012/0425/U4271P704DT20120425185518.jpg" alt="感受美好明媚生活" height="63" width="95"></a>
+<p><a href="http://travel.sina.com.cn/china/ard/2012-03-22/1428171124.shtml">感受美好明媚生活</a></p>
+<a href="http://travel.sina.com.cn/china/ard/2011-10-13/1515163273.shtml"><img src="http://i3.sinaimg.cn/travel/2012/0425/U4271P704DT20120425185736.jpg" alt="花园下午茶休闲地图" height="63" width="95"></a>
+<p><a href="http://travel.sina.com.cn/china/ard/2011-10-13/1515163273.shtml">花园下午茶休闲地图</a></p>
+</div>
+<div class="rightpic"> <a href="http://travel.sina.com.cn/china/ard/2011-10-08/1357162885.shtml"><img src="http://i3.sinaimg.cn/travel/2012/0425/U4271P704DT20120425185934.jpg" alt="上海五大含情脉络" height="63" width="95"></a>
+<p><a href="http://travel.sina.com.cn/china/ard/2011-10-08/1357162885.shtml">上海五大含情脉络</a></p>
+<a href="http://travel.sina.com.cn/china/2011-07-04/1131158722.shtml"><img src="http://i3.sinaimg.cn/travel/2012/0425/U4271P704DT20120425190152.jpg" alt="上海美食之旅" height="63" width="95"></a>
+<p><a href="http://travel.sina.com.cn/china/2011-07-04/1131158722.shtml">上海美食之旅</a> </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!--横切四end--><div style="height:30px;width:930px; margin:0 auto; background:#fff; padding:10px;"><p style="height:30px; width:920px; line-height:30px; background:#E9FDFE; color:#1E5157; padding-right:10px; text-align:right;">专题策划：小七  页面设计：樊虹 技术支持：刘海峰、邓南阳</p></div>
+</div>
+</div>
+
+<!--标准footer begin--><div class="clearit"></div>
+<div class="footer"> <a href="http://corp.sina.com.cn/chn/">新浪简介</a>|<a href="http://corp.sina.com.cn/eng/">About Sina</a>|<a href="http://emarketing.sina.com.cn/">广告服务</a>|<a href="http://www.sina.com.cn/contactus.html">联系我们</a>|<a href="http://corp.sina.com.cn/chn/sina_job.html">招聘信息</a>|<a href="http://www.sina.com.cn/intro/lawfirm.shtml">网站律师</a>|<a href="http://english.sina.com/">SINA English</a>|<a href="http://members.sina.com.cn/apply/">会员注册</a>|<a href="http://tech.sina.com.cn/focus/sinahelp.shtml">产品答疑</a><br>
+    Copyright © 1996 - 2012 SINA Corporation, All Rights Reserved<br>
+    新浪公司  <a href="http://www.sina.com.cn/intro/copyright.shtml" target="_blank">版权所有</a> </div>
+
+<!--标准footer end--><style type="text/css">
+.weibosharebtn{line-height:16px;width:24px;font-size:12px;font-family:'宋体';padding:5px 3px;position:fixed;_position:absolute;_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)-90));color:#fff;right:0px;bottom:197px;background-color:#4BC1CD; left: 50%;
+    margin-left: 476px; text-align:center;}
+.weibosharebtn img{width:26px;height:26px;background:#4BC1CD url('http://i2.sinaimg.cn/travel/subject/2012/0420/wei.png') no-repeat;_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://i2.sinaimg.cn/travel/subject/2012/0420/wei.png');_background-image:none;}
+.weibosharebtn a:hover{text-decoration:none;}
+.weibosharebtn a{color:#fff;text-decoration:none;}
+</style>
+
+<!--微博分享 --><div class="weibosharebtn">
+<div><img src="http://i1.sinaimg.cn/travel/subject/2011/0720/spain/transparent.gif"></div>
+<p style="width:12px;padding:5px 0 0 6px;line-height:16px;"><a href="javascript:void(0);" id="fxwb">分享到新浪微博</a></p>
+</div>
+<script type="text/javascript">
+var sendT = {
+	getHeader : function(){
+	     var g_title='最美的风景在路上。坐在火车上，看列车经过之地，高山、平原、峡谷……沿途的风景变换，美丽壮阔尽收眼底。现在小编为您推荐：京沪、郑西高铁游/台湾环岛游/搭JR游九州/加拿大绝顶风光/欧洲火车攻略/乘火车游世界/怀旧之旅，让经典火车游，带您追逐下一站美景！ ';
+						var re = /<[^<>]*?font[^<>]*?>/gi;
+						g_title = g_title.replace(re,"");					
+						return g_title;
+	},
+	getFirstImgSrc : function(){
+	return "http://i0.sinaimg.cn/travel/2012/0507/U4271P704DT20120507151114.jpg";
+	}
+}
+
+document.getElementById("fxwb").onclick=function(){
+				 (function(s,d,e,r,l,p,t,z,c){
+					 var f='http://v.t.sina.com.cn/share/share.php?',u=z||d.location,p=['url=',e(u),'&title=',e(sendT.getHeader()),'&ralateUid=1502844527','&source=',e(r),'&sourceUrl=',e(l),'&content=',c||'gb2312','&pic=',e(p||'')].join('');
+					 function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=440,height=430,left=',(s.width-440)/2,',top=',(s.height-430)/2].join('')))u.href=[f,p].join('');
+					 };
+					 if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else a();
+				})(screen,document,encodeURIComponent,'新浪旅游','http://travel.sina.com.cn/',sendT.getFirstImgSrc(),null,null,null);
+				}
+
+</script>
+<script type="text/javascript">
+(function() {
+	if (window.opener) {
+		try {
+			var w = window.opener;
+			if (w.cancelMiniBlog && w.cancelMiniBlog[document.location.href] == true) {
+				document.getElementById("fxwb").style.display = "none";
+			}
+		}catch(e){}
+
+	}
+})();
+</script>
+
+<!-- SSO_UPDATECOOKIE_START --><script type="text/javascript">var sinaSSOManager=sinaSSOManager||{};sinaSSOManager.q=function(b){if(typeof b!="object"){return""}var a=new Array();for(key in b){a.push(key+"="+encodeURIComponent(b[key]))}return a.join("&")};sinaSSOManager.es=function(f,d,e){var c=document.getElementsByTagName("head")[0];var a=document.getElementById(f);if(a){c.removeChild(a)}var b=document.createElement("script");if(e){b.charset=e}else{b.charset="gb2312"}b.id=f;b.type="text/javascript";d+=(/\?/.test(d)?"&":"?")+"_="+(new Date()).getTime();b.src=d;c.appendChild(b)};sinaSSOManager.doCrossDomainCallBack=function(a){sinaSSOManager.crossDomainCounter++;document.getElementsByTagName("head")[0].removeChild(document.getElementById(a.scriptId))};sinaSSOManager.crossDomainCallBack=function(a){if(!a||a.retcode!=0){return false}var d=a.arrURL;var b,f;var e={callback:"sinaSSOManager.doCrossDomainCallBack"};sinaSSOManager.crossDomainCounter=0;if(d.length==0){return true}for(var c=0;c<d.length;c++){b=d[c];f="ssoscript"+c;e.scriptId=f;b=b+(/\?/.test(b)?"&":"?")+sinaSSOManager.q(e);sinaSSOManager.es(f,b)}};sinaSSOManager.updateCookieCallBack=function(c){var d="ssoCrossDomainScriptId";var a="http://login.sina.com.cn/sso/crossdomain.php";if(c.retcode==0){var e={scriptId:d,callback:"sinaSSOManager.crossDomainCallBack",action:"login",domain:"sina.com.cn"};var b=a+"?"+sinaSSOManager.q(e);sinaSSOManager.es(d,b)}else{}};sinaSSOManager.updateCookie=function(){var g=1800;var p=7200;var b="ssoLoginScript";var h=3600*24;var i="sina.com.cn";var m=1800;var l="http://login.sina.com.cn/sso/updatetgt.php";var n=null;var f=function(e){var r=null;var q=null;switch(e){case"sina.com.cn":q=sinaSSOManager.getSinaCookie();if(q){r=q.et}break;case"sina.cn":q=sinaSSOManager.getSinaCookie();if(q){r=q.et}break;case"51uc.com":q=sinaSSOManager.getSinaCookie();if(q){r=q.et}break}return r};var j=function(){try{return f(i)}catch(e){return null}};try{if(g>5){if(n!=null){clearTimeout(n)}n=setTimeout("sinaSSOManager.updateCookie()",g*1000)}var d=j();var c=(new Date()).getTime()/1000;var o={};if(d==null){o={retcode:6102}}else{if(d<c){o={retcode:6203}}else{if(d-h+m>c){o={retcode:6110}}else{if(d-c>p){o={retcode:6111}}}}}if(o.retcode!==undefined){return false}var a=l+"?callback=sinaSSOManager.updateCookieCallBack";sinaSSOManager.es(b,a)}catch(k){}return true};sinaSSOManager.updateCookie();</script>
+
+
+<!-- SSO_UPDATECOOKIE_END --><!-- Start  Wrating  --><script language="javascript"> 
+var wrUrl="//sina.wrating.com/";var wrDomain="sina.com.cn";var wratingDefaultAcc="860010-0323010000";var wratingAccArray={"torch.2008.sina.com.cn":"860010-0308070000","video.sina.com.cn":"860010-0309010000","cctv.sina.com.cn":"860010-0309020000","chat.sina.com.cn":"860010-0311010000","ent.sina.com.cn":"860010-0312010000","tech.sina.com.cn":"860010-0313010000","mobile.sina.com.cn":"860010-0313020000","house.sina.com.cn":"860010-0315010000","bj.house.sina.com.cn":"860010-0315020000","auto.sina.com.cn":"860010-0316010000","eladies.sina.com.cn":"860010-0317010000","bj.sina.com.cn":"860010-0317020000","woman.sina.com.cn":"860010-0317010000","women.sina.com.cn":"860010-0317010000","lady.sina.com.cn":"860010-0317010000","man.eladies.sina.com.cn":"860010-0317030000","games.sina.com.cn":"860010-0318010000","game.sina.com.cn":"860010-0318010000","edu.sina.com.cn":"860010-0307010000","baby.sina.com.cn":"860010-0320010000","kid.sina.com.cn":"860010-0320020000","astro.sina.com.cn":"860010-0321020000","news.sina.com.cn":"860010-0310010000","weather.news.sina.com.cn":"860010-0310020000","mil.news.sina.com.cn":"860010-0310030000","www.sina.com.cn":"860010-0322010000","home.sina.com.cn":"860010-0322010000","sports.sina.com.cn":"860010-0308010000","shidefc.sina.com.cn":"860010-0308020000","weiqi.sina.com.cn":"860010-0308030000","f1.sina.com.cn":"860010-0308040000","golf.sina.com.cn":"860010-0308050000","2002.sina.com.cn":"860010-0308060000","2004.sina.com.cn":"860010-0308060000","2006.sina.com.cn":"860010-0308060000","2008.sina.com.cn":"860010-0308070000","yayun2002.sina.com.cn":"860010-0308060000","yayun2006.sina.com.cn":"860010-0308060000","inter.sina.com.cn":"860010-0308080000","chelsea.sina.com.cn":"860010-0308090000","book.sina.com.cn":"860010-0319010000","cul.book.sina.com.cn":"860010-0319020000","comic.book.sina.com.cn":"860010-0319030000","finance.sina.com.cn":"860010-0314010000","money.sina.com.cn":"860010-0314020000","yue.sina.com.cn":"860010-0324010000","www.sina.com":"860010-0322010000"};function vjTrack(){var U=1800;var T=false;var S=false;var R="";var Q="0";var P="";var N;var L;var K;var J;var I;var H="expires=Fri, 1 Jan 2038 00:00:00 GMT;";var G=0;if(document.location.protocol=="file:"){return }T=navigator.cookieEnabled?"1":"0";S=navigator.javaEnabled()?"1":"0";var F="0";var E;var C=-1;var D=document.cookie;if(T=="1"){C=D.indexOf("vjuids=");if(C<0){E=vjVisitorID();document.cookie="vjuids="+escape(E)+";"+H+";domain="+wrDomain+";path=/;";if(document.cookie.indexOf("vjuids=")<0){T="0"}else{Q="1"}}else{E=vjGetCookie("vjuids")}}L=document.referrer;if(!L||L==""){L=""}R=vjFlash();if(self.screen){N=screen.width+"x"+screen.height+"x"+screen.colorDepth}else{if(self.java){var M=java.awt.Toolkit.getDefaultToolkit();var O=M.getScreenSize();N=O.width+"x"+O.height+"x0"}}if(navigator.language){K=navigator.language.toLowerCase()}else{if(navigator.browserLanguage){K=navigator.browserLanguage.toLowerCase()}else{K="-"}}I="";var B;var X;X=new Date();J=X.getTimezoneOffset()/-60;J=X.getTimezoneOffset()/-60;B="&s="+N+"&l="+K+"&z="+J+"&j="+S+"&f="+R;if(T=="1"){C=document.cookie.indexOf("vjlast=");if(C<0){G=0}else{G=parseInt(vjGetCookie("vjlast"))}}if((X.getTime()/1000)-G>U){F="1";document.cookie="vjlast="+Math.round(X.getTime()/1000)+";"+H+";domain="+wrDomain+";path=/;"}if(L!=""){B=B+"&r="+escape(L)}if(F!="0"){B=B+"&n="+G}if(Q!="0"){B=B+"&u="+Q}var V;var A=vjGetAcc();var W=vjGetDomain();V=wrUrl+"a.gif?a="+X.getTime().toString(16)+"&t="+escape(I)+"&i="+escape(E)+"&b="+escape(document.location)+"&c="+A+B+"&ck="+W;document.write('<img src="'+V+'" width="1" height="1" style="visibility:hidden;position:absolute;left:0px;top:0px;z-index:-1"  />')}function vjGetAcc(){var B=document.location.toString().toLowerCase();var C=(B.split("/"))[2];var A=wratingAccArray[C];if(typeof (A)=="undefined"){A=wratingDefaultAcc}return A}function vjFlash(){var _wr_f="-",_wr_n=navigator;if(_wr_n.plugins&&_wr_n.plugins.length){for(var ii=0;ii<_wr_n.plugins.length;ii++){if(_wr_n.plugins[ii].name.indexOf("Shockwave Flash")!=-1){_wr_f=_wr_n.plugins[ii].description.split("Shockwave Flash ")[1];break}}}else{if(window.ActiveXObject){for(var ii=10;ii>=2;ii--){try{var fl=eval("new ActiveXObject('ShockwaveFlash.ShockwaveFlash."+ii+"');");if(fl){_wr_f=ii+".0";break}}catch(e){}}}}return _wr_f}function vjHash(B){if(!B||B==""){return 0}var D=0;for(var C=B.length-1;C>=0;C--){var A=parseInt(B.charCodeAt(C));D=(D<<5)+D+A}return D}function vjVisitorID(){var B=vjHash(document.location+document.cookie+document.referrer).toString(16);var A;A=new Date();return B+"."+A.getTime().toString(16)+"."+Math.random().toString(16)}function vjGetCookieVal(B){var A=document.cookie.indexOf(";",B);if(A==-1){A=document.cookie.length}return unescape(document.cookie.substring(B,A))}function vjGetCookie(C){var B=C+"=";var F=B.length;var A=document.cookie.length;var E=0;while(E<A){var D=E+F;if(document.cookie.substring(E,D)==B){return vjGetCookieVal(D)}E=document.cookie.indexOf(" ",E)+1;if(E==0){break}}return null}function vjGetDomain(){var A=0;try{if(window.self.parent!=self){var D=/sina.com/i;var C=document.location.toString().toLowerCase();var B=parent.location.toString().toLowerCase();if(D.test(C)&&D.test(B)){A=1}}}catch(e){A=1}return A}vjTrack();
+</script>
+
+
+
+<!-- End Wrating--><!-- START Nielsen//NetRatings SiteCensus V5.3 --><!-- COPYRIGHT 2006 Nielsen//NetRatings --><script type="text/javascript"> 
+	var _rsCI="cn-sina2006";	 
+	var _rsCG="0";	
+	var _rsDN="//secure-cn.imrworldwide.com/";	
+	var _rsCC=0;	
+	var _rsSE=1;	
+	var _rsSM=0.01;	 
+	var _rsSS=1500;	 
+</script>
+<script src="//secure-cn.imrworldwide.com/v53.js" type="text/javascript"></script>
+<noscript>
+<img src="//secure-cn.imrworldwide.com/cgi-bin/m?ci=cn-sina2006&amp;cg=0" alt="">
+</noscript>
+
+<!-- END Nielsen//NetRatings SiteCensus V5.3 --></body>
+</html>
+</html>

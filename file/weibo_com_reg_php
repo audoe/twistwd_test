@@ -1,0 +1,129 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=%SOUP-ENCODING%" http-equiv="Content-Type">
+<meta content="IE=8" http-equiv="X-UA-Compatible">
+<meta content="5;url=/home" http-equiv="refresh"> <title>错误提示 新浪微博-随时随地分享身边的新鲜事儿</title>
+<meta content="新浪微博" name="application-name">
+<meta content="新浪微博" name="msapplication-tooltip">
+<meta content="width=1024;height=768" name="msapplication-window">
+<meta content="name=新浪微博;action-uri=http://weibo.com/;icon-uri=http://img.t.sinajs.cn/t4/style/images/common/favicon/home.ico" name="msapplication-task">
+<meta content="name=我的微博;action-uri=http://weibo.com//profile;icon-uri=http://img.t.sinajs.cn/t4/style/images/common/favicon/mypage.ico" name="msapplication-task">
+<meta content="name=微博广场;action-uri=http://plaza.weibo.com;icon-uri=http://img.t.sinajs.cn/t4/style/images/common/favicon/square.ico" name="msapplication-task">
+<meta content="#2994ce" name="msapplication-navbutton-color">
+<script type="text/javascript">
+  (function() {var loc = location.toString();var start = loc.indexOf('#!');if(start != -1){location.replace(loc.substr(start + 2).replace(/\:/g, ''));}})();
+  </script> <script type="text/javascript">
+  try{document.execCommand("BackgroundImageCache", false, true);}catch(e){}
+  </script>
+<link href="http://img.t.sinajs.cn/t4/style/css/module/base/frame.css?version=dc811edd74fba19c" type="text/css" charset="utf-8" rel="stylesheet">
+<link href="http://img.t.sinajs.cn/t4/style/css/patch/index/index.css?version=dc811edd74fba19c" type="text/css" charset="utf-8" rel="stylesheet">
+<link href="http://img.t.sinajs.cn/t4/style/css/patch/error/error.css?version=dc811edd74fba19c" type="text/css" charset="utf-8" rel="stylesheet">
+<link charset="utf-8" href="http://img1.t.sinajs.cn/t4/skin/default/skin.css?version=dc811edd74fba19c" type="text/css" id="skin_transformers" rel="stylesheet">
+<script type="text/javascript">
+var $CONFIG = {};
+$CONFIG['islogin'] = '0';
+$CONFIG['oid'] = '';
+$CONFIG['onick'] = '';
+$CONFIG['inviteCode'] = '';
+$CONFIG['entry'] = 'weiyonghu';
+$CONFIG['afterupgrade'] = 'false';
+$CONFIG['version'] = 'dc811edd74fba19c';
+$CONFIG['bigpipe'] = 'true';
+$CONFIG['timeDiff'] = (new Date() - 1337358676000);
+$CONFIG['product'] = 'v4mblog';
+$CONFIG['pageid'] = 'content_sorry';
+$CONFIG['skin'] = 'default';
+$CONFIG['background'] = ""; 
+$CONFIG['scheme'] = ""; 
+$CONFIG['colors_type'] = "0";
+$CONFIG['lang'] = 'zh-cn';
+$CONFIG['jsPath'] = 'http://js.t.sinajs.cn/t4/';
+$CONFIG['cssPath'] = 'http://img.t.sinajs.cn/t4/';
+$CONFIG['imgPath'] = 'http://img.t.sinajs.cn/t4/';
+$CONFIG['servertime'] = 1337358676;
+$CONFIG['any'] = "&wvr=3.6";
+$CONFIG['$webim'] = 0;
+$CONFIG['location'] = 'other';
+$CONFIG['mJsPath'] = ['http://js{n}.t.sinajs.cn/t4/', 1, 2];
+$CONFIG['mCssPath'] = ['http://img{n}.t.sinajs.cn/t4/', 1, 2];
+$CONFIG['enterprise']='';
+</script>
+<script src="http://js.t.sinajs.cn/STK/js/gaea_1_19.js" type="text/javascript"></script>
+</head>
+<body class="B_sorry">
+<div class="W_miniblog">
+<div id="pl_content_top">
+
+<!--顶部导航--><div class="global_header">
+<div class="header">
+<div class="logo"><a href="http://weibo.com"></a></div>
+<ul class="list">
+<li><a node-type="home" href="http://weibo.com" class="link">首页</a></li>
+<li node-type="plaza"><a href="http://plaza.weibo.com?topnav=1&amp;wvr=3.6" class="link" tabindex="4">广场</a></li>
+<li><a href="http://q.weibo.com" class="link">微群</a></li>
+<li><a href="/app" class="link">应用</a></li>
+<li><a href="http://game.weibo.com" class="link">游戏</a></li>
+</ul>
+<div class="search">
+<input node-type="searchInput" type="text" class="input W_no_outline" value="" maxlength="40">
+<a node-type="searchSubmit" href="javascript:void(0)" class="btn" onclick="return false"></a>
+<div node-type="searchSuggest" style="top: 27px; left: 0px; display: none; " class="W_layer_suggest">
+<div node-type="basic"></div>
+<div node-type="plus"></div>
+</div>
+</div>
+<div class="right">
+<p class="no_login"><span>还没有微博帐号？</span><a href="http://weibo.com/signup/signup.php?inviteCode=&amp;entry=weiyonghu">注册</a><em>|</em><a node-type="loginBtn" href="javascript:void(0)">登录</a></p>
+</div>
+</div>
+</div>
+
+<!--/顶部导航--></div>
+<div class="W_main">
+<div class="W_error_bg">
+<div class="page_error">
+<div class="note"><span class="icon_delM"></span><p>抱歉，你访问的页面地址有误，或者该页面不存在</p></div>
+<dl class="detail">
+<dt>请检查输入的网址是否正确，或者联系新浪客服：<br>4000 960 960（个人） 4000 980 980（企业）按当地市话标准计费</dt>
+<dd><span class="W_spetxt" id="reload_num_span">5</span>秒之后页面自动跳转，你还可以： <br>1）<a href="/">返回首页</a><br>2）去其它地方逛逛：<a href="http://plaza.weibo.com">广场</a><i class="W_vline">|</i><a href="http://weibo.com/jx/pic.php?topnav=1">微博精选</a><i class="W_vline">|</i><a href="http://verified.weibo.com/">名人堂</a><i class="W_vline">|</i><a href="http://data.weibo.com/top?topnav=1">风云榜</a></dd>
+</dl>
+</div>
+</div>
+</div>
+<script>
+(function() {
+	var box = document.getElementById('reload_num_span');
+	var time = parseInt(box.innerHTML, 10);
+	function go() {
+	box.innerHTML = time;
+	time = time-1;
+	if(time > 0) {
+		setTimeout(go, 1000);
+	}
+	}
+	go();
+})();
+</script>
+<div class="global_footer">
+<div class="other_link clearfix">
+<div class="help_link">
+<p><a href="http://help.weibo.com/?refer=didao&amp;bottomnav=1&amp;wvr=3.6" class="ico_service" target="__blank">微博帮助</a>　<a href="http://weibo.com/zt/s?k=9286&amp;bottomnav=1&amp;wvr=3.6" target="__blank">意见反馈</a>　<a href="http://open.weibo.com?bottomnav=1&amp;wvr=3.6" target="__blank">开放平台</a>　<a href="http://hr.weibo.com?bottomnav=1&amp;wvr=3.6" target="__blank">微博招聘</a>　<a href="http://news.sina.com.cn/guide?bottomnav=1&amp;wvr=3.6" target="__blank">新浪网导航</a>　<a href="javascript:void(0);" action-type="login">不良信息举报</a>　<a href="http://weibo.com/z/guize/gongyue.html?bottomnav=1&amp;wvr=3.6" target="__blank">社区管理中心</a></p>
+<p>北京微梦创科网络技术有限公司 <a href="http://weibo.com/aj/static/jww.html" target="_blank">京网文[2011]0398-130号</a> <a href="http://www.miibeian.gov.cn" target="_blank">京ICP证100780号</a></p>
+</div>
+<div class="copy">
+<p class="W_linkb">
+<select class="htc_select" id="pl_content_changeLanguage" suda-data="key=tblog_home_click&amp;value=language_versions_click"><option selected value="zh-cn">中文(简体)</option><option value="zh-tw">中文(繁体)</option></select>
+</p>
+<p>Copyright © 1996-2012 SINA</p>
+</div>
+</div>
+</div>
+<a href="javascript:;" id="base_scrollToTop" class="W_gotop">
+<span><em class="sj">♦</em><em class="fk">▐</em>返回顶部</span>
+</a> </div>
+<div style="display:none" id="pl_content_Base"></div>
+</body>
+<script src="http://js.t.sinajs.cn/t4/home/js/base.js?version=dc811edd74fba19c" type="text/javascript"></script>
+<script>STK && STK.pageletM && STK.pageletM.view({"pid":"pl_content_top","js":["home\/js\/pl\/content\/top.js?version=dc811edd74fba19c"]})</script>
+<script>STK && STK.pageletM && STK.pageletM.view({"pid":"pl_content_Base","js":["home\/js\/pl\/content\/changeLanguage.js?version=dc811edd74fba19c","home\/js\/pl\/content\/base.js?version=dc811edd74fba19c"],"css":[],"html":""})</script>
+</html>

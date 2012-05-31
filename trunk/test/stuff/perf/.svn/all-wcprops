@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/repos/!svn/ver/300/openkomodo/trunk/test/stuff/perf
+END
+measure_typing_speed.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/!svn/ver/300/openkomodo/trunk/test/stuff/perf/measure_typing_speed.py
+END
+perf.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/!svn/ver/300/openkomodo/trunk/test/stuff/perf/perf.py
+END
+unitperf.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/!svn/ver/300/openkomodo/trunk/test/stuff/perf/unitperf.py
+END
+memutils.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/!svn/ver/300/openkomodo/trunk/test/stuff/perf/memutils.py
+END
+parse_timeline.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/!svn/ver/300/openkomodo/trunk/test/stuff/perf/parse_timeline.py
+END
+perf_timeline.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/!svn/ver/300/openkomodo/trunk/test/stuff/perf/perf_timeline.py
+END
+perf_memory.py.obselete
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/!svn/ver/300/openkomodo/trunk/test/stuff/perf/perf_memory.py.obselete
+END
+ptimeline.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/!svn/ver/300/openkomodo/trunk/test/stuff/perf/ptimeline.py
+END
+perfsupport.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/!svn/ver/300/openkomodo/trunk/test/stuff/perf/perfsupport.py
+END

@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/!svn/ver/9407/openkomodo/trunk/src/codeintel/test2/scan_outputs/python
+END
+koi8r.py.cix
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/!svn/ver/8489/openkomodo/trunk/src/codeintel/test2/scan_outputs/python/koi8r.py.cix
+END
+properties.py.cix
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/!svn/ver/8489/openkomodo/trunk/src/codeintel/test2/scan_outputs/python/properties.py.cix
+END
+policy.py.cix
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/!svn/ver/8489/openkomodo/trunk/src/codeintel/test2/scan_outputs/python/policy.py.cix
+END
+superfancy_default_args.py.cix
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/!svn/ver/8489/openkomodo/trunk/src/codeintel/test2/scan_outputs/python/superfancy_default_args.py.cix
+END
+eol_LF.py.cix
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/!svn/ver/8489/openkomodo/trunk/src/codeintel/test2/scan_outputs/python/eol_LF.py.cix
+END
+doc_processing.py.cix
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/!svn/ver/9407/openkomodo/trunk/src/codeintel/test2/scan_outputs/python/doc_processing.py.cix
+END
+cdata_close.py.cix
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/!svn/ver/8489/openkomodo/trunk/src/codeintel/test2/scan_outputs/python/cdata_close.py.cix
+END
+eol_CR.py.cix
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/!svn/ver/8489/openkomodo/trunk/src/codeintel/test2/scan_outputs/python/eol_CR.py.cix
+END
+multiple_inheritance.py.cix
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/!svn/ver/8489/openkomodo/trunk/src/codeintel/test2/scan_outputs/python/multiple_inheritance.py.cix
+END
+complex_default_arg.py.cix
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/!svn/ver/8489/openkomodo/trunk/src/codeintel/test2/scan_outputs/python/complex_default_arg.py.cix
+END
+python_encoded_utf8.py.cix
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/!svn/ver/8489/openkomodo/trunk/src/codeintel/test2/scan_outputs/python/python_encoded_utf8.py.cix
+END
+invalid_arg_list.py.cix
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/!svn/ver/8489/openkomodo/trunk/src/codeintel/test2/scan_outputs/python/invalid_arg_list.py.cix
+END
+lower_ord_chars.py.cix
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/!svn/ver/9407/openkomodo/trunk/src/codeintel/test2/scan_outputs/python/lower_ord_chars.py.cix
+END
+func_spaced_params.py.cix
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/!svn/ver/8489/openkomodo/trunk/src/codeintel/test2/scan_outputs/python/func_spaced_params.py.cix
+END
+yield_stmt.py.cix
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/!svn/ver/8489/openkomodo/trunk/src/codeintel/test2/scan_outputs/python/yield_stmt.py.cix
+END
+broken_on_curr_line.py.cix
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/!svn/ver/8489/openkomodo/trunk/src/codeintel/test2/scan_outputs/python/broken_on_curr_line.py.cix
+END
+python_encoded_koi8r.py.cix
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/!svn/ver/8489/openkomodo/trunk/src/codeintel/test2/scan_outputs/python/python_encoded_koi8r.py.cix
+END
+fancy_default_args.py.cix
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/!svn/ver/9407/openkomodo/trunk/src/codeintel/test2/scan_outputs/python/fancy_default_args.py.cix
+END
+sample.py.cix
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/!svn/ver/8489/openkomodo/trunk/src/codeintel/test2/scan_outputs/python/sample.py.cix
+END
+with_stmt.py.cix
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/!svn/ver/8489/openkomodo/trunk/src/codeintel/test2/scan_outputs/python/with_stmt.py.cix
+END
+xmlreader.py.cix
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/!svn/ver/9407/openkomodo/trunk/src/codeintel/test2/scan_outputs/python/xmlreader.py.cix
+END
+eol_CRLF.py.cix
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/!svn/ver/8489/openkomodo/trunk/src/codeintel/test2/scan_outputs/python/eol_CRLF.py.cix
+END
+try_stmt.py.cix
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/!svn/ver/8489/openkomodo/trunk/src/codeintel/test2/scan_outputs/python/try_stmt.py.cix
+END
+utf8.py.cix
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/!svn/ver/8489/openkomodo/trunk/src/codeintel/test2/scan_outputs/python/utf8.py.cix
+END
+relative_imports.py.cix
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/!svn/ver/8489/openkomodo/trunk/src/codeintel/test2/scan_outputs/python/relative_imports.py.cix
+END
+getattr_baseclass.py.cix
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/!svn/ver/8489/openkomodo/trunk/src/codeintel/test2/scan_outputs/python/getattr_baseclass.py.cix
+END
+class_instance_variables_bug89416.py.cix
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/!svn/ver/7335/openkomodo/trunk/src/codeintel/test2/scan_outputs/python/class_instance_variables_bug89416.py.cix
+END
+bug_86727.py.cix
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/!svn/ver/8489/openkomodo/trunk/src/codeintel/test2/scan_outputs/python/bug_86727.py.cix
+END

@@ -1,0 +1,69 @@
+/* Copyright (c) 2004-2006 ActiveState Software Inc.
+ * See the file LICENSE.txt for licensing information.
+ *
+ * Interfaces for Komodo's editor history backend.
+ */
+
+#include "nsISupports.idl"
+
+interface koIView;
+interface koIScintillaView;
+interface ISciMoz;
+
+[scriptable, uuid(589dbbf1-4366-4cf8-a542-c860d686050f)]
+interface koIHistoryLocation : nsISupports
+{
+    attribute wstring uri;
+    attribute PRUint32 line;
+    attribute PRUint32 col;
+    attribute wstring view_type;
+
+    attribute PRint32  marker_handle;
+    attribute PRUint32 window_num;
+    attribute PRUint32 tabbed_view_id;
+    attribute wstring section_title;
+    
+    attribute wstring session_name;
+};
+
+
+[scriptable, uuid(5fac7c33-bed3-405e-8183-216a91e8a1b5)]
+interface koIHistoryService : nsISupports
+{
+    boolean can_go_back(in wstring session_name);
+    boolean can_go_forward(in wstring session_name);
+    boolean have_recent_history(in wstring session_name);
+    koIHistoryLocation go_back(in koIHistoryLocation curr_loc,
+                               in PRUint32 n,
+                               in wstring session_name);
+    koIHistoryLocation go_forward(in koIHistoryLocation curr_loc,
+                                  in PRUint32 n,
+                                  in wstring session_name);
+    koIHistoryLocation note_loc(in koIHistoryLocation loc,
+                                in boolean check_section_change,
+                                in koIScintillaView view);
+    koIHistoryLocation note_curr_editor_loc(in koIScintillaView view);
+    koIHistoryLocation loc_from_view_info(
+        in wstring view_type,
+        in PRUint32 window_num,
+        in PRUint32 tabbed_view_id,
+        in koIView view,
+        in PRint32 pos,
+        in wstring session_name);
+    void get_recent_locs(in koIHistoryLocation loc,
+                         in wstring session_name,
+                         out unsigned long current_idx,
+                         [array, size_is(count)] out koIHistoryLocation locs,
+                         out unsigned long count);
+    void recent_uris_as_array(in PRUint32 num_requested,
+                              in wstring session_name,
+                              [array, size_is(count)] out wstring uris,
+                              out unsigned long count);
+    void obsolete_uri(in wstring uri,
+                      in PRUint32 undo_delta,
+                      in boolean undo_dir_is_back,
+                      in wstring session_name);
+    void update_marker_handles_on_close(in wstring uri, in ISciMoz scimoz);
+};
+
+// update

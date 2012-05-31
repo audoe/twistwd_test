@@ -1,0 +1,209 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/!svn/ver/9314/openkomodo/trunk/mozilla/patches-new/mozilla-6.0
+END
+extend-console-option.patch
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/!svn/ver/8591/openkomodo/trunk/mozilla/patches-new/mozilla-6.0/extend-console-option.patch
+END
+osx_forcefront.patch
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/!svn/ver/8591/openkomodo/trunk/mozilla/patches-new/mozilla-6.0/osx_forcefront.patch
+END
+__patchinfo__.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/!svn/ver/8697/openkomodo/trunk/mozilla/patches-new/mozilla-6.0/__patchinfo__.py
+END
+win32-appactivate.patch
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/!svn/ver/8591/openkomodo/trunk/mozilla/patches-new/mozilla-6.0/win32-appactivate.patch
+END
+autoupdate_base_dir.patch
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/!svn/ver/8591/openkomodo/trunk/mozilla/patches-new/mozilla-6.0/autoupdate_base_dir.patch
+END
+bugzilla513747_hack_sign_sh.patch
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/!svn/ver/8591/openkomodo/trunk/mozilla/patches-new/mozilla-6.0/bugzilla513747_hack_sign_sh.patch
+END
+bug642332_addonmanager_xpcom.patch
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/!svn/ver/8591/openkomodo/trunk/mozilla/patches-new/mozilla-6.0/bug642332_addonmanager_xpcom.patch
+END
+silo-mozilla-runtime.ppatch
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/!svn/ver/8591/openkomodo/trunk/mozilla/patches-new/mozilla-6.0/silo-mozilla-runtime.ppatch
+END
+bug40904_resize_fails.patch
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/!svn/ver/8591/openkomodo/trunk/mozilla/patches-new/mozilla-6.0/bug40904_resize_fails.patch
+END
+gk_atom_additions.patch
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/!svn/ver/8591/openkomodo/trunk/mozilla/patches-new/mozilla-6.0/gk_atom_additions.patch
+END
+osx_application_activated.patch
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/!svn/ver/8591/openkomodo/trunk/mozilla/patches-new/mozilla-6.0/osx_application_activated.patch
+END
+mar_error_reporting.patch
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/!svn/ver/8591/openkomodo/trunk/mozilla/patches-new/mozilla-6.0/mar_error_reporting.patch
+END
+prevent_plugins_dir.patch
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/!svn/ver/8591/openkomodo/trunk/mozilla/patches-new/mozilla-6.0/prevent_plugins_dir.patch
+END
+bug70739_myspell_en-us_dic.patch
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/!svn/ver/8591/openkomodo/trunk/mozilla/patches-new/mozilla-6.0/bug70739_myspell_en-us_dic.patch
+END
+osx_plugin_events_bug89902.patch
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/!svn/ver/8591/openkomodo/trunk/mozilla/patches-new/mozilla-6.0/osx_plugin_events_bug89902.patch
+END
+bug80215_horiz_mouse_wheel.patch
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/!svn/ver/8591/openkomodo/trunk/mozilla/patches-new/mozilla-6.0/bug80215_horiz_mouse_wheel.patch
+END
+XRE_USERAPPDATADIR.patch
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/!svn/ver/8591/openkomodo/trunk/mozilla/patches-new/mozilla-6.0/XRE_USERAPPDATADIR.patch
+END
+no_dde.patch
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/!svn/ver/8591/openkomodo/trunk/mozilla/patches-new/mozilla-6.0/no_dde.patch
+END
+msys-perl-always.patch
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/!svn/ver/8591/openkomodo/trunk/mozilla/patches-new/mozilla-6.0/msys-perl-always.patch
+END
+komodo_configure.patch
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/!svn/ver/8591/openkomodo/trunk/mozilla/patches-new/mozilla-6.0/komodo_configure.patch
+END
+update_komodo_appropriate_copy.patch
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/!svn/ver/8591/openkomodo/trunk/mozilla/patches-new/mozilla-6.0/update_komodo_appropriate_copy.patch
+END
+ime_handling_in_xul.patch
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/!svn/ver/8591/openkomodo/trunk/mozilla/patches-new/mozilla-6.0/ime_handling_in_xul.patch
+END
+plugin.patch
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/!svn/ver/8591/openkomodo/trunk/mozilla/patches-new/mozilla-6.0/plugin.patch
+END
+mar_read_from_stdin.patch
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/!svn/ver/8591/openkomodo/trunk/mozilla/patches-new/mozilla-6.0/mar_read_from_stdin.patch
+END
+textbox_autocomplete_popup_width.patch
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/!svn/ver/8591/openkomodo/trunk/mozilla/patches-new/mozilla-6.0/textbox_autocomplete_popup_width.patch
+END
+textbox_autocomplete_crop.patch
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/!svn/ver/8591/openkomodo/trunk/mozilla/patches-new/mozilla-6.0/textbox_autocomplete_crop.patch
+END
+osx_contextmenu_event.patch
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/!svn/ver/8591/openkomodo/trunk/mozilla/patches-new/mozilla-6.0/osx_contextmenu_event.patch
+END
+gtk2_drag_target_check.patch
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/!svn/ver/8591/openkomodo/trunk/mozilla/patches-new/mozilla-6.0/gtk2_drag_target_check.patch
+END
+updates_dialog_url_handling.patch
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/!svn/ver/8591/openkomodo/trunk/mozilla/patches-new/mozilla-6.0/updates_dialog_url_handling.patch
+END
+silo-mozilla-profiles.ppatch
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/!svn/ver/8591/openkomodo/trunk/mozilla/patches-new/mozilla-6.0/silo-mozilla-profiles.ppatch
+END
+querycontent-event.patch
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/!svn/ver/8591/openkomodo/trunk/mozilla/patches-new/mozilla-6.0/querycontent-event.patch
+END
+osx_allow_ctrl_space_bug89069.patch
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/!svn/ver/8591/openkomodo/trunk/mozilla/patches-new/mozilla-6.0/osx_allow_ctrl_space_bug89069.patch
+END
+gtk2_plugin_drag_scrollbar.patch
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/!svn/ver/8591/openkomodo/trunk/mozilla/patches-new/mozilla-6.0/gtk2_plugin_drag_scrollbar.patch
+END
+osx_disable_nullPlugin_events.patch
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/!svn/ver/8591/openkomodo/trunk/mozilla/patches-new/mozilla-6.0/osx_disable_nullPlugin_events.patch
+END

@@ -1,0 +1,1300 @@
+<html>DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=%SOUP-ENCODING%" http-equiv="Content-type">
+<title>资料库首页_互动资料库_影音娱乐_新浪网-</title>
+<meta content="娱乐 资料 互动 资料库 电影 电视 音乐 歌曲 专辑 演员 歌手 主持人 模特 导演 编剧 制片人 美女 明星 绯闻 趣闻 传闻 曝光 劲爆 国际 婚变 传闻 演出 经典 追星 八卦 追踪 fans 巨星 演艺 动态 推荐 写真 风头 初吻 风情 造型 魅力 海外 港台 大陆 恋情 新欢 代言 热播 颁奖 现场 情缘 红人 主持人 玉女 娱乐 论坛 曝光 魅力 恋情 新欢 热点 girls 女孩 模特 人体艺术 选美小姐 港台明星 日韩明星 欧美明星 内地明星 其他明星 明星写真  性感 花边 美女 杂志 封面 韩国美女 片场 泳装 大片 剧情 喜剧 爱情 动作 惊悚 犯罪 恐怖 冒险 家庭 动画 悬疑 短片 战争 歌舞 音乐 西部 传记 历史 古装 运动 成人 武侠 情色 儿童 青春 体育 纪录片 科幻奇幻 黑色幽默 剧照海报 高清 图集 欧美 日韩 内地 印度 好莱坞 婚恋伦理 爱情 青春偶像 武侠 古装 军事战争 职业 医学 悬疑 刑侦 栏目剧 都市题材 农村题材 神话戏说 科幻奇幻 红色经典 古典文学 情景喜剧 剧情类 真人秀 动画 动作冒险 家庭 喜剧 纪实传记 年代剧 剧照海报  高清 图集 欧洲 美剧 日剧 韩剧 内地 摇滚 另类 独立 艺术摇滚 乡村摇滚 布鲁斯摇滚 金属 Punk 迷幻 新浪潮 流行 兰草 布鲁斯 乡村 轻音乐 电子乐 民谣 福音 爵士 拉丁 New Age R&amp;B 嘻哈 电影音乐 世界音乐 先锋 古典音乐" name="keywords">
+<meta content="新浪娱乐互动资料库产品是吸引每一名网友参与编辑的以wiki技术为基础的大型影视、音乐及明星资料数据库，及其衍生出的用户互动社区服务。它是基于web2.0概念的产品创新尝试。" name="description">
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible">
+<title>资料库首页_娱乐频道_新浪网</title>
+<link href="/css/mainstyle.css" type="text/css" rel="stylesheet">
+<style type="text/css"></style>
+<script type="text/javascript">
+//<![CDATA[
+function changeTab(btnName,dataName,clickId,count,classname,objEvent){objEvent=typeof(objEvent)=="string"?objEvent:"mouseover";function addEvent(obj,evType,fn,useCapture){if(!useCapture)useCapture=false;if(obj.addEventListener){obj.addEventListener(evType,fn,useCapture)}else{if(useCapture){alert('This browser does not support event capturing!')}else{var evTypeRef='__'+evType;if(!obj[evTypeRef]){obj[evTypeRef]=[];var orgEvent=obj['on'+evType];if(orgEvent)obj[evTypeRef][0]=orgEvent;obj['on'+evType]=IEEventHandler}else{for(var ref in obj[evTypeRef]){if(obj[evTypeRef][ref]===fn)return}}
+obj[evTypeRef][obj[evTypeRef].length]=fn}}}
+function IEEventHandler(e){e=e||window.event;var evTypeRef='__'+e.type;if(this[evTypeRef]){for(var ref in this[evTypeRef]){if(Function.call){this[evTypeRef][ref].call(this,e)}else{this.__fn=this[evTypeRef][ref];this.__fn(e);this.__fn=null}}}}
+function doChange(obj){var curId=obj.id.substr(btnName.length,obj.id.length-btnName.length);changeTab(btnName,dataName,curId,count,classname,curId,objEvent)}
+var $o=function(objName){if(document.getElementById){return eval('document.getElementById("'+objName+'")')}else{return eval('document.all.'+objName)}}
+for(b=0;b<count;b++){$o(btnName+b).style.cursor="pointer";$o(btnName+b).className=$o(btnName+b).className.replace(classname,"");$o(dataName+b).style.display="none";addEvent($o(btnName+b),objEvent,function(){doChange(this)})}
+$o(btnName+clickId).className+=" "+classname;$o(btnName+clickId).blur();$o(dataName+clickId).style.display="";}
+
+//]]>
+</script>
+<script src="/js/global_function.js"></script>
+<script src="/js/md5.js"></script>
+<script src="/js/jq/jquery-1.2.6.js"></script>
+<script src="/js/jq/jquery.cookie.js"></script>
+<script src="/js/jq/jquery.json.js"></script>
+<script src="/js/jq/jquery.form.js"></script>
+<script src="/js/jq/ajaxfileupload.js"></script>
+<script src="/js/data/function.js"></script>
+<script src="/js/IO.Script.js"></script>
+<script src="/iframe/ndata.php?&amp;dpc=1"></script>
+<script src="http://i.sso.sina.com.cn/js/sinaSSOManager.js" charset="GB2312" type="text/javascript"></script>
+</head>
+<body>
+<div id="wrap">
+
+<!-- 标准二级导航_娱乐 begin --><style type="text/css">
+.secondaryHeader{height:33px;overflow:hidden;background:url(http://i2.sinaimg.cn/dy/images/header/2008/standardl2nav_bg.gif) repeat-x #fff;color:#000;font-size:12px;font-weight:100;}
+.secondaryHeader a,.secondaryHeader a:visited{color:#000;text-decoration:none;}
+.secondaryHeader a:hover,.secondaryHeader a:active{color:#c00;text-decoration:underline;}
+.sHBorder{border:1px #e3e3e3 solid;padding:0 10px 0 12px;overflow:hidden;zoom:1;}
+.sHLogo{float:left;height:31px;line-height:31px;overflow:hidden;}
+.sHLogo span,.sHLogo span a,.sHLogo span a:link,.sHLogo span a:visited,.sHLogo span a:hover{display:block;*float:left;display:table-cell;vertical-align:middle;*display:block;*font-size:27px;*font-family:Arial;height:31px;}
+.sHLogo span,.sHLogo span a img,.sHLogo span a:link img,.sHLogo span a:visited img,.sHLogo span a:hover img{vertical-align:middle;}
+.sHLinks{float:right;line-height:31px;}
+</style>
+<div class="secondaryHeader">
+<div class="sHBorder">
+<div class="sHLogo"><span><a href="http://ent.sina.com.cn/"><img src="http://i1.sinaimg.cn/dy/images/header/2009/standardl2nav_sina_new.gif" alt="新浪网"></a><a href="http://ent.sina.com.cn/"><img src="http://i1.sinaimg.cn/dy/images/header/2009/standardl2nav_ent.gif" alt="新浪娱乐"></a></span></div>
+<div class="sHLinks"><a href="http://ent.sina.com.cn/">影音娱乐</a> | <a href="http://www.sina.com.cn/">新浪首页</a> | <a href="http://news.sina.com.cn/guide/">新浪导航</a></div>
+</div>
+</div>
+
+<!-- 标准二级导航_娱乐 end --><div class="nav"><a href="http://video.sina.com.cn/movie/" target="_blank"><img src="http://www.sinaimg.cn/ent/data/title/950x90.gif" style="border:0;" height="90" width="950" alt="新浪大片" border="0"></a> </div>
+<div class="nav"> <img src="http://www.sinaimg.cn/ent/data/a/hdzlk.png" style="border:0;" height="30" width="227" alt="" border="0"> </div>
+<div class="nav1">
+<ul class="listNav">
+<li class="cur"><a href="/index.html">首页</a></li>
+<li><a href="/star/index.html">明星库</a></li>
+<li><a href="/movie/index.html">电影库</a></li>
+<li><a href="/tv/index.html">电视库</a></li>
+<li><a href="/music/index.html">音乐库</a></li>
+<li><a href="/top/index.html">排行榜</a></li>
+</ul>
+<div class="nav1R fwhite"> <a href="/user/">个人中心</a> </div>
+</div>
+<style>
+
+/* main 01 blcok */
+.main1 { margin-top:10px; overflow:hidden; }
+.main1L { width:632px; height:522px; overflow:hidden; float:left; border:1px solid #fd7d7b; padding:6px; background:#fbbbba; }
+
+/* main 01 left block 01 */
+.m1L_con1 { width:171px; float:left; border-top:1px solid #cf0209; border-bottom:1px solid #fd7d7b; background:url(http://www.sinaimg.cn/ent/data/1/zly_jn_m1ItemBg.png) 0 -390px no-repeat; }
+
+
+.m1L_con1 .item { height:130px; text-align:center; font-weight:normal; line-height:30px; }
+.m1L_con1 .item h3 { font-size:14px; padding-top:15px; }
+.m1L_con1 .item h3, .m1L_con1 .item h3 a { color:#cf0209; }
+.m1L_con1 .item h3 a:hover { color:#f00; }
+
+/* main 01 left block 02 */
+.m1L_con2 { width:458px; height:520px; float:left; border:solid #cf0209; border-width:1px 1px 1px 0; background:#fff; }
+.m1L_con2 dl { margin:0; height:500px; overflow:hidden; padding:10px 10px 10px 15px; }
+.m1L_con2 dt { margin:0; padding:0;/* background:url(http://www.sinaimg.cn/ent/data/1/zly_jn_15.gif) 0 12px no-repeat;*/ font-weight:normal; padding-left:10px; line-height:30px; }
+.m1L_con2 dd { padding:0 5px 15px 10px; line-height:21px; margin:0; background:url(http://www.sinaimg.cn/ent/data/1/zly_jn_ddBg.gif) bottom center no-repeat; }
+.m1L_con2 dd a { text-decoration:none; margin-right:9px; white-space:nowrap;}
+.m1L_con2 dd a:hover { text-decoration:underline; }
+.m1L_con2 dd.dd1 { padding-bottom:0; background:none; line-height:28px; font-weight:normal; font-size:14px; }
+.m1L_con2 dd.dd1 a { color:#444; text-decoration:underline; }
+.m1L_con2 dd.dd1 a:hover { color:#f00; text-decoration:none; }
+.m1L_con2 dt, .m1L_con2 dt a { color:#cd0404; }
+.main1R { width:295px; height:535px; overflow:hidden; float:right; border:solid #fcc9c8; border-width:0 1px 1px 1px; background:#fef3f5; }
+.main1R h2 { background:url(http://www.sinaimg.cn/ent/data/1/zly_jn_titleBg.png) no-repeat; line-height:29px; padding-left:18px; font-size:14px; border-top:1px solid #fcc9c8; color:#cd0507; }
+.main1R h2 a, .main1R .title a { color:#cd0507; }
+.mainR a:hover, .main1R .title a:hover { color:#f00; }
+.main1R .title { background:url(http://www.sinaimg.cn/ent/data/1/zly_jn_titleBg.png) no-repeat; line-height:29px; padding-right:18px; border-top:1px solid #fcc9c8; }
+.main1R .title h2 { background:none; border:none; float:left; }
+.main1R .title em { font-style:normal; float:right; }
+
+/* main 01 right block 01 */
+.blkLogin, .m1R_con1 { background:url(http://www.sinaimg.cn/ent/data/1/zly_jn_bg.jpg) top repeat-x; }
+.blkLogin { height:50px; overflow:hidden; }
+.blkLogin p { color:#666; padding:2px 10px 2px 14px; }
+.blkLogin p.p1 { text-align:right; margin-top:-20px; }
+.blkLogin a { color:#cb0100; }
+.blkLogin a:hover { color:#f00; }
+
+/* main 01 right block 02 */
+.m1R_con1 { text-align:center; padding:5px 0; margin:0 1px; }
+.m1R_con1 input { margin:5px; }
+
+/* main 01 right block 03 */
+.m1R_con2 { margin:5px; border:1px solid #f9b1b4; background:#fff; }
+.m1R_con2 ul { padding:5px 12px; }
+.m1R_con2 li { background:url(http://www.sinaimg.cn/ent/data/1/zly_jn_btnBg.jpg) -495px 0 no-repeat; padding-left:8px; line-height:21px; }
+.m1R_con2 li, .m1R_con2 li a { color:#5c5c5c; }
+.m1R_con2 li a:hover { color:#f00; }
+
+/* main 01 right block 04 */
+.m1R_con3 { background:url(http://www.sinaimg.cn/ent/data/1/zly_jn_bg.jpg) top repeat-x; margin:5px; border:1px solid #f9b1b4; background:#fff; height:133px; padding:5px 10px; line-height:25px; }
+.m1R_con3 a { margin-right:3px; color:#000; }
+.m1R_con3 a:hover { color:#f00; }
+
+/* main 02 blcok */
+.main2 { margin-top:10px; background:url(http://www.sinaimg.cn/ent/data/1/zly_jn_m2TableBg.gif) no-repeat bottom; padding-bottom:12px; }
+.main2 a { text-decoration:none; }
+.main2 a:hover { text-decoration:underline; }
+.m2_con, .m2_con_last { float:left; width:228px; margin-right:10px; border:solid #fcc9c8; border-width:1px 1px 0 1px; padding-bottom:5px; background:#fff; }
+.m2_con_last { margin-right:0; }
+.main2 h2 { background:url(http://www.sinaimg.cn/ent/data/1/zly_jn_titleBg.png) right 0px no-repeat/*-33px 有箭头*/; line-height:25px; font-size:14px; padding-left:10px; }
+.main2 h2, .main2 h2 a { color:#cd0505; }
+.main2 h2 a:hover { color:#f00; }
+.main2 table { margin:10px 10px 0; width:208px; text-align:center; }
+.main2 th { font-weight:normal; line-height:20px; }
+.main2 td { line-height:29px; border-bottom:1px dashed #c9c9c9; }
+.main2 td, .main2 td a { color:#5c5c5c; text-decoration:none; }
+.main2 td a:hover { color:#f00; text-decoration:underline; }
+.main2 table tr.last td { border-bottom:none; }
+.main2 span.paiming_1, span.paiming_other { background:url(http://www.sinaimg.cn/ent/data/2/zly_jn_btnBg.jpg) -235px 0 no-repeat; color:#fff; font-weight:normal; width:18px; line-height:14px; display:block; margin:0 auto; text-align:center; font-size:11px; font-family:Arial; }
+.main2 span.paiming_other { background-position:-217px 0; }
+.main2 p.more { margin-right:15px; text-align:right; line-height:16px; }
+.main2 p.more, .main2 p.more a { color:#cd0505; }
+.main2 p.more a:hover { color:#f00; text-decoration:underline; }
+
+/* main 03 blcok */
+.main3 { border:1px solid #fcc9c8; background:url(http://www.sinaimg.cn/ent/data/1/zly_jn_bg.jpg) 0 29px repeat-x #fef2f4; }
+.main3L, .main3R { float:left; background:#fff; border:1px solid #f9b1b5; margin:5px 0 15px 7px; display:inline; width:460px; }
+.main3R { float:right; margin:5px 7px 15px 0; }
+.main3 h2 { background:url(http://www.sinaimg.cn/ent/data/1/zly_jn_titleBg.png) no-repeat; line-height:29px; padding-left:18px; font-size:14px; color:#cd0507; }
+.main3 .title { background:url(http://www.sinaimg.cn/ent/data/1/zly_jn_titleBg.png) 0 -29px no-repeat; height:29px; line-height:25px; }
+.main3 .title h3 { font-size:14px; float:left; padding-left:28px; }
+.main3 .title em { float:right; padding-right:20px; font-style:normal;  }
+.main3 .title, .main3 .title a { color:#cd0505; text-decoration:none; }
+.main3 .title a:hover { color:#f00; text-decoration:underline; }
+.main3 th { line-height:25px; border:dashed #d1d1d1; border-width:0 0 1px 1px; font-weight:normal; color:#000; }
+.main3 th.first { border-left:none; }
+.main3 td { border-left:1px dashed #d1d1d1; text-align:center; line-height:27px; color:#5c5c5c; }
+.main3 td a { color:#000; }
+.main3 td strong a { color:#cd0404; font-weight:normal; }
+.main3 td a:hover { color:#f00; }
+.main3 td.td1 { border-left:none; padding-left:15px; text-align:left; }
+
+/* footer */
+#uni_footer { text-align:center; line-height:24px; color:#000; margin-top:15px; }
+#uni_footer, #uni_footer a { color:#343434; }
+#uni_footer a { text-decoration:underline; }
+#uni_footer a:hover { color:#f00; text-decoration:none; }
+
+/* other defines */
+.input_btn2 { background:url(http://www.sinaimg.cn/ent/data/1/zly_jn_btnBg.jpg) -114px 0 no-repeat; width:103px; height:26px; color:#454545; padding-left:10px; font-size:12px; border:none; cursor:pointer; display:block; margin:0 auto; }
+.input_btn3 { background:url(http://www.sinaimg.cn/ent/data/1/zly_jn_btnBg.jpg) no-repeat; width:114px; height:26px; color:#fff; padding-left:15px; font-size:12px; border:none; cursor:pointer; font-size:14px; }
+.input_text { border:1px solid #ccc6c8; padding:1px; height:16px; line-height:16px; width:60px; }
+a.red12 { color:#c40300; }
+a.red14 { color:#c40300; font-size:14px; }
+a.gray12 { color:#5c5c5c; }
+a.gray14 { color:#5c5c5c; font-size:14px; }
+a:hover { color:#f00; }
+</style>
+<script>
+function init(){var divItem=document.getElementById("selected_item").getElementsByTagName("div");var dlItem=document.getElementById("selected_content").getElementsByTagName("dl");	for(i=0;i<divItem.length;i++){divItem[i].onmouseover=function(){for(j=0;j<divItem.length;j++){dlItem[j].style.display="none";if(divItem[j]==this){divItem[j].parentNode.style.background="url(http://www.sinaimg.cn/ent/data/1/zly_jn_m1ItemBg.png) 0 "+(j*130-390)+"px no-repeat";dlItem[j].style.display="";}}}}}
+</script>
+
+<!-- 标准二级导航_娱乐 begin --><div class="blkSearch50">
+
+<!-- search begin --><script>
+function deletewhitespace()
+{
+    var inputvalue = document.getElementById('inputkeyword').value;
+    //这里直接输入空格作为替换
+    inputvalue = inputvalue.replace(/　/g," ");
+    var objvar = document.getElementById('inputkeyword');
+    objvar.value = inputvalue;
+}
+</script>
+<form action="search.php" onsubmit="if(this.keyword.value=='请输入搜索关键字'||this.keyword.value.trim()==''){alert('请输入搜索关键字');this.keyword.focus();return false;}" method="get" target="_self">
+<p><span class="fred">搜索：</span>
+<input style="width:300px;" name="keyword" onblur="deletewhitespace();if(this.value.trim()=='')this.value='请输入搜索关键字';" value="请输入搜索关键字" id="inputkeyword" maxlength="100" onfocus="if(this.value=='请输入搜索关键字')this.value='';" class="iptS1">
+<input type="submit" class="iptS2" value="搜索">
+	  　<span class="fred">热门搜索：<script src="/iframe/hotsearch.php?type=main&amp;dpc=1"></script></span><input type="hidden" name="dpc" value="1">
+</p>
+</form> 
+<!-- search end --></div>
+
+
+<!-- search begin
+  <div class="blkSearch">
+    <p><span class="fred">搜索：</span>
+      <input  type="text" name="" value="请输入搜索关键字" class="iptS1" style="width:300px;" onfocus="this.value='';"  />
+      <input type="submit" value="搜索" class="iptS2"  />
+      <span class="fred"><a href="#">高级搜索</a></span> <span class="fred">热门搜索：</span><a href="url" target="_blank" class="fL fgray">孔令辉</a> <a href="url" target="_blank" class="fL fgray">刘国梁</a></p>
+  </div>
+   search end --><!-- 主内容 begin --><div class="main1">
+<div class="main1L">
+<div class="m1L_con1" id="selected_item">
+<div class="item">
+<h3>明星检索</h3>
+          (8932)
+          <input type="button" class="input_btn2" value="[全部明星]" onclick="window.location='/star/index.html'">
+</div>
+<div class="item">
+<h3>电影检索</h3>
+          (6132)
+          <input type="button" class="input_btn2" value="[全部电影]" onclick="window.location='/movie/index.html'">
+</div>
+<div class="item">
+<h3>电视剧检索</h3>
+          (5477)
+          <input type="button" class="input_btn2" value="[全部电视剧]" onclick="window.location='/tv/index.html'">
+</div>
+<div class="item">
+<h3>音乐检索</h3>
+          (47333)
+          <input type="button" class="input_btn2" value="[全部音乐]" onclick="window.location='/music/index.html'">
+</div>
+</div>
+<div class="m1L_con2" id="selected_content">
+<dl>
+<dt>地域</dt>
+<dd>
+<a href="/star/index.html?area=%E5%86%85%E5%9C%B0">内地</a>
+<a href="/star/index.html?area=%E6%B8%AF%E5%8F%B0">港台</a>
+<a href="/star/index.html?area=%E6%AC%A7%E7%BE%8E">欧美</a>
+<a href="/star/index.html?area=%E4%BA%9A%E6%B4%B2">亚洲</a>
+</dd>
+<dt>国家</dt>
+<dd>
+<a style="work-break:normal;word-wrap:normal" href="/star/index.html?nationality=%E4%B8%AD%E5%9B%BD">中国</a>
+<a style="work-break:normal;word-wrap:normal" href="/star/index.html?nationality=%E6%97%A5%E6%9C%AC">日本</a>
+<a style="work-break:normal;word-wrap:normal" href="/star/index.html?nationality=%E9%9F%A9%E5%9B%BD">韩国</a>
+<a style="work-break:normal;word-wrap:normal" href="/star/index.html?nationality=%E7%BE%8E%E5%9B%BD">美国</a>
+<a style="work-break:normal;word-wrap:normal" href="/star/index.html?nationality=%E8%8B%B1%E5%9B%BD">英国</a>
+<a style="work-break:normal;word-wrap:normal" href="/star/index.html?nationality=%E5%BE%B7%E5%9B%BD">德国</a>
+<a style="work-break:normal;word-wrap:normal" href="/star/index.html?nationality=%E6%B3%95%E5%9B%BD">法国</a>
+<a style="work-break:normal;word-wrap:normal" href="/star/index.html?nationality=%E5%8D%B0%E5%BA%A6">印度</a>
+<a style="work-break:normal;word-wrap:normal" href="/star/index.html?nationality=%E7%91%9E%E5%85%B8">瑞典</a>
+<a style="work-break:normal;word-wrap:normal" href="/star/index.html?nationality=%E6%8C%AA%E5%A8%81">挪威</a>
+<a style="work-break:normal;word-wrap:normal" href="/star/index.html?nationality=%E6%9C%9D%E9%B2%9C">朝鲜</a>
+<a style="work-break:normal;word-wrap:normal" href="/star/index.html?nationality=%E8%B6%8A%E5%8D%97">越南</a>
+<a style="work-break:normal;word-wrap:normal" href="/star/index.html?nationality=%E4%BC%8A%E6%9C%97">伊朗</a>
+<a style="work-break:normal;word-wrap:normal" href="/star/index.html?nationality=%E5%8F%A4%E5%B7%B4">古巴</a>
+<a style="work-break:normal;word-wrap:normal" href="/star/index.html?nationality=%E5%B8%8C%E8%85%8A">希腊</a>
+<a style="work-break:normal;word-wrap:normal" href="/star/index.html?nationality=%E5%B7%B4%E8%A5%BF">巴西</a>
+<a style="work-break:normal;word-wrap:normal" href="/star/index.html?nationality=%E6%8D%B7%E5%85%8B">捷克</a>
+<a style="work-break:normal;word-wrap:normal" href="/star/index.html?nationality=%E6%B3%B0%E5%9B%BD">泰国</a>
+<a style="work-break:normal;word-wrap:normal" href="/star/index.html?nationality=%E6%B3%A2%E5%85%B0">波兰</a>
+<a style="work-break:normal;word-wrap:normal" href="/star/index.html?nationality=%E8%8D%B7%E5%85%B0">荷兰</a>
+<a style="work-break:normal;word-wrap:normal" href="/star/index.html?nationality=%E5%8D%97%E9%9D%9E">南非</a>
+<a style="work-break:normal;word-wrap:normal" href="/star/index.html?nationality=%E6%84%8F%E5%A4%A7%E5%88%A9">意大利</a>
+<a style="work-break:normal;word-wrap:normal" href="/star/index.html?nationality=%E5%A5%A5%E5%9C%B0%E5%88%A9">奥地利</a>
+<a style="work-break:normal;word-wrap:normal" href="/star/index.html?nationality=%E6%96%B0%E8%A5%BF%E5%85%B0">新西兰</a>
+<a style="work-break:normal;word-wrap:normal" href="/star/index.html?nationality=%E5%A2%A8%E8%A5%BF%E5%93%A5">墨西哥</a>
+<a style="work-break:normal;word-wrap:normal" href="/star/index.html?nationality=%E4%BF%84%E7%BD%97%E6%96%AF">俄罗斯</a>
+<a style="work-break:normal;word-wrap:normal" href="/star/index.html?nationality=%E8%A5%BF%E7%8F%AD%E7%89%99">西班牙</a>
+<a style="work-break:normal;word-wrap:normal" href="/star/index.html?nationality=%E6%96%B0%E5%8A%A0%E5%9D%A1">新加坡</a>
+<a style="work-break:normal;word-wrap:normal" href="/star/index.html?nationality=%E7%89%99%E4%B9%B0%E5%8A%A0">牙买加</a>
+<a style="work-break:normal;word-wrap:normal" href="/star/index.html?nationality=%E9%A9%AC%E6%9D%A5%E8%A5%BF%E4%BA%9A">马来西亚</a>
+<a style="work-break:normal;word-wrap:normal" href="/star/index.html?nationality=%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A">澳大利亚</a>
+<a style="work-break:normal;word-wrap:normal" href="/star/index.html?nationality=%E5%93%A5%E4%BC%A6%E6%AF%94%E4%BA%9A">哥伦比亚</a>
+<a style="work-break:normal;word-wrap:normal" href="/star/index.html?nationality=%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A">罗马尼亚</a>
+</dd>
+<dt>星座</dt>
+<dd>
+<a href="/star/index.html?astrology=%E7%99%BD%E7%BE%8A%E5%BA%A7">白羊座</a>
+<a href="/star/index.html?astrology=%E9%87%91%E7%89%9B%E5%BA%A7">金牛座</a>
+<a href="/star/index.html?astrology=%E5%8F%8C%E5%AD%90%E5%BA%A7">双子座</a>
+<a href="/star/index.html?astrology=%E5%B7%A8%E8%9F%B9%E5%BA%A7">巨蟹座</a>
+<a href="/star/index.html?astrology=%E7%8B%AE%E5%AD%90%E5%BA%A7">狮子座</a>
+<a href="/star/index.html?astrology=%E5%A4%84%E5%A5%B3%E5%BA%A7">处女座</a>
+<a href="/star/index.html?astrology=%E5%A4%A9%E7%A7%A4%E5%BA%A7">天秤座</a>
+<a href="/star/index.html?astrology=%E5%A4%A9%E8%9D%8E%E5%BA%A7">天蝎座</a>
+<a href="/star/index.html?astrology=%E5%B0%84%E6%89%8B%E5%BA%A7">射手座</a>
+<a href="/star/index.html?astrology=%E6%91%A9%E7%BE%AF%E5%BA%A7">摩羯座</a>
+<a href="/star/index.html?astrology=%E6%B0%B4%E7%93%B6%E5%BA%A7">水瓶座</a>
+<a href="/star/index.html?astrology=%E5%8F%8C%E9%B1%BC%E5%BA%A7">双鱼座</a>
+</dd>
+<dt>职业</dt>
+<dd>
+<a href="/star/index.html?career=%E5%AF%BC%E6%BC%94">导演</a>
+<a href="/star/index.html?career=%E6%BC%94%E5%91%98">演员</a>
+<a href="/star/index.html?career=%E6%AD%8C%E6%89%8B">歌手</a>
+<a href="/star/index.html?career=%E5%88%B6%E7%89%87%E4%BA%BA">制片人</a>
+<a href="/star/index.html?career=%E4%B8%BB%E6%8C%81%E4%BA%BA">主持人</a>
+<a href="/star/index.html?career=%E7%BC%96%E5%89%A7">编剧</a>
+<a href="/star/index.html?career=%E6%A8%A1%E7%89%B9">模特</a>
+</dd>
+<dt>性别</dt>
+<dd>
+<a href="/star/index.html?gender=M">男性</a>
+<a href="/star/index.html?gender=F">女性</a>
+<a href="/star/index.html?gender=H">变性</a>
+</dd>
+<dt>首字母</dt>
+<dd class="dd1">
+<a href="/star/index.html?initial=A">A</a>
+<a href="/star/index.html?initial=B">B</a>
+<a href="/star/index.html?initial=C">C</a>
+<a href="/star/index.html?initial=D">D</a>
+<a href="/star/index.html?initial=E">E</a>
+<a href="/star/index.html?initial=F">F</a>
+<a href="/star/index.html?initial=G">G</a>
+<a href="/star/index.html?initial=H">H</a>
+<a href="/star/index.html?initial=I">I</a>
+<a href="/star/index.html?initial=J">J</a>
+<a href="/star/index.html?initial=K">K</a>
+<a href="/star/index.html?initial=L">L</a>
+<a href="/star/index.html?initial=M">M</a>
+<a href="/star/index.html?initial=N">N</a>
+<a href="/star/index.html?initial=O">O</a>
+<a href="/star/index.html?initial=P">P</a>
+<a href="/star/index.html?initial=Q">Q</a>
+<a href="/star/index.html?initial=R">R</a>
+<a href="/star/index.html?initial=S">S</a>
+<a href="/star/index.html?initial=T">T</a>
+<a href="/star/index.html?initial=U">U</a>
+<a href="/star/index.html?initial=V">V</a>
+<a href="/star/index.html?initial=W">W</a>
+<a href="/star/index.html?initial=X">X</a>
+<a href="/star/index.html?initial=Y">Y</a>
+<a href="/star/index.html?initial=Z">Z</a>
+<a href="/star/index.html?char=1">0-9</a>
+</dd>
+</dl>
+<dl style="display:none;"> 
+<!--电影--><dt>地域</dt>
+<dd>
+<a href="/movie/index.html?area=%E5%86%85%E5%9C%B0">内地</a>
+<a href="/movie/index.html?area=%E6%B8%AF%E5%8F%B0">港台</a>
+<a href="/movie/index.html?area=%E6%AC%A7%E7%BE%8E">欧美</a>
+<a href="/movie/index.html?area=%E4%BA%9A%E6%B4%B2">亚洲</a>
+</dd>
+<dt>国家</dt>
+<dd>
+<a href="/movie/index.html?nationality=%E4%B8%AD%E5%9B%BD">中国</a>
+<a href="/movie/index.html?nationality=%E6%97%A5%E6%9C%AC">日本</a>
+<a href="/movie/index.html?nationality=%E9%9F%A9%E5%9B%BD">韩国</a>
+<a href="/movie/index.html?nationality=%E7%BE%8E%E5%9B%BD">美国</a>
+<a href="/movie/index.html?nationality=%E8%8B%B1%E5%9B%BD">英国</a>
+<a href="/movie/index.html?nationality=%E5%BE%B7%E5%9B%BD">德国</a>
+<a href="/movie/index.html?nationality=%E6%B3%95%E5%9B%BD">法国</a>
+<a href="/movie/index.html?nationality=%E5%8D%B0%E5%BA%A6">印度</a>
+<a href="/movie/index.html?nationality=%E7%91%9E%E5%85%B8">瑞典</a>
+<a href="/movie/index.html?nationality=%E6%8C%AA%E5%A8%81">挪威</a>
+<a href="/movie/index.html?nationality=%E6%9C%9D%E9%B2%9C">朝鲜</a>
+<a href="/movie/index.html?nationality=%E8%B6%8A%E5%8D%97">越南</a>
+<a href="/movie/index.html?nationality=%E4%BC%8A%E6%9C%97">伊朗</a>
+<a href="/movie/index.html?nationality=%E5%8F%A4%E5%B7%B4">古巴</a>
+<a href="/movie/index.html?nationality=%E5%B8%8C%E8%85%8A">希腊</a>
+<a href="/movie/index.html?nationality=%E5%B7%B4%E8%A5%BF">巴西</a>
+<a href="/movie/index.html?nationality=%E6%8D%B7%E5%85%8B">捷克</a>
+<a href="/movie/index.html?nationality=%E6%B3%B0%E5%9B%BD">泰国</a>
+<a href="/movie/index.html?nationality=%E6%B3%A2%E5%85%B0">波兰</a>
+<a href="/movie/index.html?nationality=%E8%8D%B7%E5%85%B0">荷兰</a>
+<a href="/movie/index.html?nationality=%E5%8D%97%E9%9D%9E">南非</a>
+<a href="/movie/index.html?nationality=%E6%84%8F%E5%A4%A7%E5%88%A9">意大利</a>
+<a href="/movie/index.html?nationality=%E5%A5%A5%E5%9C%B0%E5%88%A9">奥地利</a>
+<a href="/movie/index.html?nationality=%E6%96%B0%E8%A5%BF%E5%85%B0">新西兰</a>
+<a href="/movie/index.html?nationality=%E5%A2%A8%E8%A5%BF%E5%93%A5">墨西哥</a>
+<a href="/movie/index.html?nationality=%E4%BF%84%E7%BD%97%E6%96%AF">俄罗斯</a>
+<a href="/movie/index.html?nationality=%E8%A5%BF%E7%8F%AD%E7%89%99">西班牙</a>
+<a href="/movie/index.html?nationality=%E6%96%B0%E5%8A%A0%E5%9D%A1">新加坡</a>
+</dd>
+<dt>类型</dt>
+<dd>
+<a href="/movie/index.html?class=%E5%89%A7%E6%83%85">剧情</a>
+<a href="/movie/index.html?class=%E5%96%9C%E5%89%A7">喜剧</a>
+<a href="/movie/index.html?class=%E7%88%B1%E6%83%85">爱情</a>
+<a href="/movie/index.html?class=%E5%8A%A8%E4%BD%9C">动作</a>
+<a href="/movie/index.html?class=%E6%83%8A%E6%82%9A">惊悚</a>
+<a href="/movie/index.html?class=%E7%8A%AF%E7%BD%AA">犯罪</a>
+<a href="/movie/index.html?class=%E6%81%90%E6%80%96">恐怖</a>
+<a href="/movie/index.html?class=%E5%86%92%E9%99%A9">冒险</a>
+<a href="/movie/index.html?class=%E5%AE%B6%E5%BA%AD">家庭</a>
+<a href="/movie/index.html?class=%E5%8A%A8%E7%94%BB">动画</a>
+<a href="/movie/index.html?class=%E6%82%AC%E7%96%91">悬疑</a>
+<a href="/movie/index.html?class=%E7%9F%AD%E7%89%87">短片</a>
+<a href="/movie/index.html?class=%E6%88%98%E4%BA%89">战争</a>
+<a href="/movie/index.html?class=%E6%AD%8C%E8%88%9E">歌舞</a>
+<a href="/movie/index.html?class=%E9%9F%B3%E4%B9%90">音乐</a>
+<a href="/movie/index.html?class=%E8%A5%BF%E9%83%A8">西部</a>
+<a href="/movie/index.html?class=%E4%BC%A0%E8%AE%B0">传记</a>
+<a href="/movie/index.html?class=%E5%8E%86%E5%8F%B2">历史</a>
+<a href="/movie/index.html?class=%E5%8F%A4%E8%A3%85">古装</a>
+<a href="/movie/index.html?class=%E8%BF%90%E5%8A%A8">运动</a>
+</dd>
+<dt>年份</dt>
+<dd>
+<a href="/movie/index.html?premiere=2009">2009</a>
+<a href="/movie/index.html?premiere=2008">2008</a>
+<a href="/movie/index.html?premiere=2007">2007</a>
+<a href="/movie/index.html?premiere=2006">2006</a>
+<a href="/movie/index.html?premiere=2005">2005</a>
+<a href="/movie/index.html?premiere=2004">2004</a>
+<a href="/movie/index.html?premiere=2003">2003</a>
+<a href="/movie/index.html?premiere=2002">2002</a>
+<a href="/movie/index.html?premiere=2001">2001</a>
+<a href="/movie/index.html?premiere=2000">2000</a>
+<a href="/movie/index.html?premiere=1990s">1990s</a>
+<a href="/movie/index.html?premiere=1980s">1980s</a>
+<a href="/movie/index.html?premiere=1970s">1970s</a>
+<a href="/movie/index.html?premiere=1960s">1960s</a>
+<a href="/movie/index.html?premiere=1950s">1950s</a>
+<a href="/movie/index.html?premiere=1940s">1940s</a>
+<a href="/movie/index.html?premiere=1930s">1930s</a>
+<a href="/movie/index.html?premiere=1920s">1920s</a>
+<a href="/movie/index.html?premiere=1910s">1910s</a>
+</dd>
+<dt>分级</dt>
+<dd>
+<a href="/movie/index.html?level=G%E7%BA%A7">G级</a>
+<a href="/movie/index.html?level=PG%E7%BA%A7">PG级</a>
+<a href="/movie/index.html?level=PG-13%E7%BA%A7">PG-13级</a>
+<a href="/movie/index.html?level=R%E7%BA%A7">R级</a>
+<a href="/movie/index.html?level=NC-17%E7%BA%A7">NC-17级</a>
+<a href="/movie/index.html?level=NR%E7%BA%A7">NR级</a>
+<a href="/movie/index.html?level=X">X</a>
+</dd>
+<dt>首字母</dt>
+<dd class="dd1">
+<a href="/movie/index.html?char=A">A</a>
+<a href="/movie/index.html?char=B">B</a>
+<a href="/movie/index.html?char=C">C</a>
+<a href="/movie/index.html?char=D">D</a>
+<a href="/movie/index.html?char=E">E</a>
+<a href="/movie/index.html?char=F">F</a>
+<a href="/movie/index.html?char=G">G</a>
+<a href="/movie/index.html?char=H">H</a>
+<a href="/movie/index.html?char=I">I</a>
+<a href="/movie/index.html?char=J">J</a>
+<a href="/movie/index.html?char=K">K</a>
+<a href="/movie/index.html?char=L">L</a>
+<a href="/movie/index.html?char=M">M</a>
+<a href="/movie/index.html?char=N">N</a>
+<a href="/movie/index.html?char=O">O</a>
+<a href="/movie/index.html?char=P">P</a>
+<a href="/movie/index.html?char=Q">Q</a>
+<a href="/movie/index.html?char=R">R</a>
+<a href="/movie/index.html?char=S">S</a>
+<a href="/movie/index.html?char=T">T</a>
+<a href="/movie/index.html?char=U">U</a>
+<a href="/movie/index.html?char=V">V</a>
+<a href="/movie/index.html?char=W">W</a>
+<a href="/movie/index.html?char=X">X</a>
+<a href="/movie/index.html?char=Y">Y</a>
+<a href="/movie/index.html?char=Z">Z</a>
+<a href="/movie/index.html?char=1">0-9</a>
+</dd>
+</dl>
+<dl style="display:none;">
+<!--电视剧TV--><dt>地域</dt>
+<dd>
+<a href="/tv/index.html?area=%E5%86%85%E5%9C%B0">内地</a>
+<a href="/tv/index.html?area=%E6%B8%AF%E5%8F%B0">港台</a>
+<a href="/tv/index.html?area=%E6%AC%A7%E7%BE%8E">欧美</a>
+<a href="/tv/index.html?area=%E4%BA%9A%E6%B4%B2">亚洲</a>
+</dd>
+<dt>国家</dt>
+<dd>
+<a href="/tv/index.html?nationality=%E4%B8%AD%E5%9B%BD">中国</a>
+<a href="/tv/index.html?nationality=%E6%97%A5%E6%9C%AC">日本</a>
+<a href="/tv/index.html?nationality=%E9%9F%A9%E5%9B%BD">韩国</a>
+<a href="/tv/index.html?nationality=%E7%BE%8E%E5%9B%BD">美国</a>
+<a href="/tv/index.html?nationality=%E8%8B%B1%E5%9B%BD">英国</a>
+<a href="/tv/index.html?nationality=%E5%BE%B7%E5%9B%BD">德国</a>
+<a href="/tv/index.html?nationality=%E6%B3%95%E5%9B%BD">法国</a>
+<a href="/tv/index.html?nationality=%E5%8D%B0%E5%BA%A6">印度</a>
+<a href="/tv/index.html?nationality=%E7%91%9E%E5%85%B8">瑞典</a>
+<a href="/tv/index.html?nationality=%E6%8C%AA%E5%A8%81">挪威</a>
+<a href="/tv/index.html?nationality=%E6%9C%9D%E9%B2%9C">朝鲜</a>
+<a href="/tv/index.html?nationality=%E8%B6%8A%E5%8D%97">越南</a>
+<a href="/tv/index.html?nationality=%E4%BC%8A%E6%9C%97">伊朗</a>
+<a href="/tv/index.html?nationality=%E5%8F%A4%E5%B7%B4">古巴</a>
+<a href="/tv/index.html?nationality=%E5%B8%8C%E8%85%8A">希腊</a>
+<a href="/tv/index.html?nationality=%E5%B7%B4%E8%A5%BF">巴西</a>
+<a href="/tv/index.html?nationality=%E6%8D%B7%E5%85%8B">捷克</a>
+<a href="/tv/index.html?nationality=%E6%B3%B0%E5%9B%BD">泰国</a>
+<a href="/tv/index.html?nationality=%E6%B3%A2%E5%85%B0">波兰</a>
+<a href="/tv/index.html?nationality=%E8%8D%B7%E5%85%B0">荷兰</a>
+<a href="/tv/index.html?nationality=%E5%8D%97%E9%9D%9E">南非</a>
+<a href="/tv/index.html?nationality=%E6%84%8F%E5%A4%A7%E5%88%A9">意大利</a>
+<a href="/tv/index.html?nationality=%E5%A5%A5%E5%9C%B0%E5%88%A9">奥地利</a>
+<a href="/tv/index.html?nationality=%E6%96%B0%E8%A5%BF%E5%85%B0">新西兰</a>
+<a href="/tv/index.html?nationality=%E5%A2%A8%E8%A5%BF%E5%93%A5">墨西哥</a>
+<a href="/tv/index.html?nationality=%E4%BF%84%E7%BD%97%E6%96%AF">俄罗斯</a>
+<a href="/tv/index.html?nationality=%E8%A5%BF%E7%8F%AD%E7%89%99">西班牙</a>
+<a href="/tv/index.html?nationality=%E6%96%B0%E5%8A%A0%E5%9D%A1">新加坡</a>
+<a href="/tv/index.html?nationality=%E7%89%99%E4%B9%B0%E5%8A%A0">牙买加</a>
+<a href="/tv/index.html?nationality=%E9%A9%AC%E6%9D%A5%E8%A5%BF%E4%BA%9A">马来西亚</a>
+<a href="/tv/index.html?nationality=%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A">澳大利亚</a>
+<a href="/tv/index.html?nationality=%E5%93%A5%E4%BC%A6%E6%AF%94%E4%BA%9A">哥伦比亚</a>
+<a href="/tv/index.html?nationality=%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A">罗马尼亚</a>
+</dd>
+<dt>类型</dt>
+<dd>
+<a href="/tv/index.html?class=%E5%A9%9A%E6%81%8B%E4%BC%A6%E7%90%86">婚恋伦理</a>
+<a href="/tv/index.html?class=%E7%88%B1%E6%83%85">爱情</a>
+<a href="/tv/index.html?class=%E9%9D%92%E6%98%A5%E5%81%B6%E5%83%8F">青春偶像</a>
+<a href="/tv/index.html?class=%E6%AD%A6%E4%BE%A0">武侠</a>
+<a href="/tv/index.html?class=%E5%8F%A4%E8%A3%85">古装</a>
+<a href="/tv/index.html?class=%E5%86%9B%E4%BA%8B%E6%88%98%E4%BA%89">军事战争</a>
+<a href="/tv/index.html?class=%E8%81%8C%E4%B8%9A">职业</a>
+<a href="/tv/index.html?class=%E5%8C%BB%E5%AD%A6">医学</a>
+<a href="/tv/index.html?class=%E6%82%AC%E7%96%91">悬疑</a>
+<a href="/tv/index.html?class=%E5%88%91%E4%BE%A6">刑侦</a>
+<a href="/tv/index.html?class=%E6%A0%8F%E7%9B%AE%E5%89%A7">栏目剧</a>
+<a href="/tv/index.html?class=%E9%83%BD%E5%B8%82%E9%A2%98%E6%9D%90">都市题材</a>
+<a href="/tv/index.html?class=%E5%86%9C%E6%9D%91%E9%A2%98%E6%9D%90">农村题材</a>
+<a href="/tv/index.html?class=%E7%A5%9E%E8%AF%9D%E6%88%8F%E8%AF%B4">神话戏说</a>
+<a href="/tv/index.html?class=%E7%A7%91%E5%B9%BB%E5%A5%87%E5%B9%BB">科幻奇幻</a>
+<a href="/tv/index.html?class=%E7%BA%A2%E8%89%B2%E7%BB%8F%E5%85%B8">红色经典</a>
+<a href="/tv/index.html?class=%E5%8F%A4%E5%85%B8%E6%96%87%E5%AD%A6">古典文学</a>
+<a href="/tv/index.html?class=%E6%83%85%E6%99%AF%E5%96%9C%E5%89%A7">情景喜剧</a>
+<a href="/tv/index.html?class=%E5%89%A7%E6%83%85%E7%B1%BB">剧情类</a>
+<a href="/tv/index.html?class=%E7%9C%9F%E4%BA%BA%E7%A7%80">真人秀</a>
+<a href="/tv/index.html?class=%E5%8A%A8%E7%94%BB">动画</a>
+<a href="/tv/index.html?class=%E5%8A%A8%E4%BD%9C%E5%86%92%E9%99%A9">动作冒险</a>
+<a href="/tv/index.html?class=%E5%AE%B6%E5%BA%AD">家庭</a>
+<a href="/tv/index.html?class=%E5%96%9C%E5%89%A7">喜剧</a>
+</dd>
+<dt>年份</dt>
+<dd>
+<a href="/tv/index.html?premiere=2009">2009</a>
+<a href="/tv/index.html?premiere=2008">2008</a>
+<a href="/tv/index.html?premiere=2007">2007</a>
+<a href="/tv/index.html?premiere=2006">2006</a>
+<a href="/tv/index.html?premiere=2005">2005</a>
+<a href="/tv/index.html?premiere=2004">2004</a>
+<a href="/tv/index.html?premiere=2003">2003</a>
+<a href="/tv/index.html?premiere=2002">2002</a>
+<a href="/tv/index.html?premiere=2001">2001</a>
+<a href="/tv/index.html?premiere=2000">2000</a>
+<a href="/tv/index.html?premiere=1990s">1990s</a>
+<a href="/tv/index.html?premiere=1980s">1980s</a>
+<a href="/tv/index.html?premiere=1970s">1970s</a>
+<a href="/tv/index.html?premiere=1960s">1960s</a>
+<a href="/tv/index.html?premiere=1950s">1950s</a>
+<a href="/tv/index.html?premiere=1940s">1940s</a>
+<a href="/tv/index.html?premiere=1930s">1930s</a>
+<a href="/tv/index.html?premiere=1920s">1920s</a>
+<a href="/tv/index.html?premiere=1910s">1910s</a>
+<a href="/tv/index.html?premiere=1900s">1900s</a>
+<a href="/tv/index.html?premiere=1900%E5%B9%B4%E4%BB%A5%E5%89%8D">1900年以前</a>
+</dd>
+<dt>首字母</dt>
+<dd class="dd1">
+<a href="/tv/index.html?char=A">A</a>
+<a href="/tv/index.html?char=B">B</a>
+<a href="/tv/index.html?char=C">C</a>
+<a href="/tv/index.html?char=D">D</a>
+<a href="/tv/index.html?char=E">E</a>
+<a href="/tv/index.html?char=F">F</a>
+<a href="/tv/index.html?char=G">G</a>
+<a href="/tv/index.html?char=H">H</a>
+<a href="/tv/index.html?char=I">I</a>
+<a href="/tv/index.html?char=J">J</a>
+<a href="/tv/index.html?char=K">K</a>
+<a href="/tv/index.html?char=L">L</a>
+<a href="/tv/index.html?char=M">M</a>
+<a href="/tv/index.html?char=N">N</a>
+<a href="/tv/index.html?char=O">O</a>
+<a href="/tv/index.html?char=P">P</a>
+<a href="/tv/index.html?char=Q">Q</a>
+<a href="/tv/index.html?char=R">R</a>
+<a href="/tv/index.html?char=S">S</a>
+<a href="/tv/index.html?char=T">T</a>
+<a href="/tv/index.html?char=U">U</a>
+<a href="/tv/index.html?char=V">V</a>
+<a href="/tv/index.html?char=W">W</a>
+<a href="/tv/index.html?char=X">X</a>
+<a href="/tv/index.html?char=Y">Y</a>
+<a href="/tv/index.html?char=Z">Z</a>
+<a href="/tv/index.html?char=1">0-9</a>
+</dd>
+</dl>
+<dl style="display:none;"> 
+<!--音乐--><dt>地域</dt>
+<dd>
+<a href="/music/index.html?area=%E5%86%85%E5%9C%B0">内地</a>
+<a href="/music/index.html?area=%E6%B8%AF%E5%8F%B0">港台</a>
+<a href="/music/index.html?area=%E6%AC%A7%E7%BE%8E">欧美</a>
+<a href="/music/index.html?area=%E4%BA%9A%E6%B4%B2">亚洲</a>
+</dd>
+<dt>国家</dt>
+<dd>
+<a href="/music/index.html?nationality=%E4%B8%AD%E5%9B%BD">中国</a>
+<a href="/music/index.html?nationality=%E6%97%A5%E6%9C%AC">日本</a>
+<a href="/music/index.html?nationality=%E9%9F%A9%E5%9B%BD">韩国</a>
+<a href="/music/index.html?nationality=%E7%BE%8E%E5%9B%BD">美国</a>
+<a href="/music/index.html?nationality=%E8%8B%B1%E5%9B%BD">英国</a>
+<a href="/music/index.html?nationality=%E5%BE%B7%E5%9B%BD">德国</a>
+<a href="/music/index.html?nationality=%E6%B3%95%E5%9B%BD">法国</a>
+<a href="/music/index.html?nationality=%E5%8D%B0%E5%BA%A6">印度</a>
+<a href="/music/index.html?nationality=%E7%91%9E%E5%85%B8">瑞典</a>
+<a href="/music/index.html?nationality=%E6%8C%AA%E5%A8%81">挪威</a>
+<a href="/music/index.html?nationality=%E6%9C%9D%E9%B2%9C">朝鲜</a>
+<a href="/music/index.html?nationality=%E8%B6%8A%E5%8D%97">越南</a>
+<a href="/music/index.html?nationality=%E4%BC%8A%E6%9C%97">伊朗</a>
+<a href="/music/index.html?nationality=%E5%8F%A4%E5%B7%B4">古巴</a>
+<a href="/music/index.html?nationality=%E5%B8%8C%E8%85%8A">希腊</a>
+<a href="/music/index.html?nationality=%E5%B7%B4%E8%A5%BF">巴西</a>
+<a href="/music/index.html?nationality=%E6%8D%B7%E5%85%8B">捷克</a>
+<a href="/music/index.html?nationality=%E6%B3%B0%E5%9B%BD">泰国</a>
+<a href="/music/index.html?nationality=%E6%B3%A2%E5%85%B0">波兰</a>
+<a href="/music/index.html?nationality=%E8%8D%B7%E5%85%B0">荷兰</a>
+<a href="/music/index.html?nationality=%E5%8D%97%E9%9D%9E">南非</a>
+<a href="/music/index.html?nationality=%E6%84%8F%E5%A4%A7%E5%88%A9">意大利</a>
+<a href="/music/index.html?nationality=%E5%A5%A5%E5%9C%B0%E5%88%A9">奥地利</a>
+<a href="/music/index.html?nationality=%E6%96%B0%E8%A5%BF%E5%85%B0">新西兰</a>
+<a href="/music/index.html?nationality=%E5%A2%A8%E8%A5%BF%E5%93%A5">墨西哥</a>
+<a href="/music/index.html?nationality=%E4%BF%84%E7%BD%97%E6%96%AF">俄罗斯</a>
+<a href="/music/index.html?nationality=%E8%A5%BF%E7%8F%AD%E7%89%99">西班牙</a>
+<a href="/music/index.html?nationality=%E6%96%B0%E5%8A%A0%E5%9D%A1">新加坡</a>
+<a href="/music/index.html?nationality=%E7%89%99%E4%B9%B0%E5%8A%A0">牙买加</a>
+<a href="/music/index.html?nationality=%E9%A9%AC%E6%9D%A5%E8%A5%BF%E4%BA%9A">马来西亚</a>
+<a href="/music/index.html?nationality=%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A">澳大利亚</a>
+<a href="/music/index.html?nationality=%E5%93%A5%E4%BC%A6%E6%AF%94%E4%BA%9A">哥伦比亚</a>
+<a href="/music/index.html?nationality=%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A">罗马尼亚</a>
+</dd>
+<dt>类型</dt>
+<dd>
+<a href="/music/index.html?style=%E6%B5%81%E8%A1%8C">流行</a>
+<a href="/music/index.html?style=%E6%91%87%E6%BB%9A">摇滚</a>
+<a href="/music/index.html?style=%E5%BD%B1%E8%A7%86%E5%8E%9F%E5%A3%B0">影视原声</a>
+<a href="/music/index.html?style=%E5%8F%A4%E5%85%B8">古典</a>
+<a href="/music/index.html?style=%E8%BD%BB%E9%9F%B3%E4%B9%90">轻音乐</a>
+<a href="/music/index.html?style=Hip-Hop">Hip-Hop</a>
+<a href="/music/index.html?style=%E7%88%B5%E5%A3%AB/%E5%B8%83%E9%B2%81%E6%96%AF">爵士/布鲁斯</a>
+<a href="/music/index.html?style=%E6%B0%91%E6%97%8F">民族</a>
+<a href="/music/index.html?style=R%26B">R&amp;B</a>
+<a href="/music/index.html?style=%E4%B9%A1%E6%9D%91">乡村</a>
+<a href="/music/index.html?style=Indie">Indie</a>
+<a href="/music/index.html?style=%E4%B8%96%E7%95%8C%E9%9F%B3%E4%B9%90">世界音乐</a>
+<a href="/music/index.html?style=%E7%94%B5%E5%AD%90">电子</a>
+<a href="/music/index.html?style=%E5%85%B6%E5%AE%83">其它</a>
+<a href="/music/index.html?style="></a>
+</dd>
+<dt>年份</dt>
+<dd>
+<a href="/music/index.html?publishdate=2009">2009</a>
+<a href="/music/index.html?publishdate=2008">2008</a>
+<a href="/music/index.html?publishdate=2007">2007</a>
+<a href="/music/index.html?publishdate=2006">2006</a>
+<a href="/music/index.html?publishdate=2005">2005</a>
+<a href="/music/index.html?publishdate=2004">2004</a>
+<a href="/music/index.html?publishdate=2003">2003</a>
+<a href="/music/index.html?publishdate=2002">2002</a>
+<a href="/music/index.html?publishdate=2001">2001</a>
+<a href="/music/index.html?publishdate=2000">2000</a>
+<a href="/music/index.html?publishdate=1990s">1990s</a>
+<a href="/music/index.html?publishdate=1980s">1980s</a>
+<a href="/music/index.html?publishdate=1970s">1970s</a>
+<a href="/music/index.html?publishdate=1960s">1960s</a>
+<a href="/music/index.html?publishdate=1950s">1950s</a>
+<a href="/music/index.html?publishdate=1940s">1940s</a>
+<a href="/music/index.html?publishdate=1930s">1930s</a>
+<a href="/music/index.html?publishdate=1920s">1920s</a>
+<a href="/music/index.html?publishdate=1910s">1910s</a>
+<a href="/music/index.html?publishdate=1900s">1900s</a>
+<a href="/music/index.html?publishdate=1900%E5%B9%B4%E4%BB%A5%E5%89%8D">1900年以前</a>
+</dd>
+<dt>首字母</dt>
+<dd class="dd1">
+<a href="/music/index.html?char=A">A</a>
+<a href="/music/index.html?char=B">B</a>
+<a href="/music/index.html?char=C">C</a>
+<a href="/music/index.html?char=D">D</a>
+<a href="/music/index.html?char=E">E</a>
+<a href="/music/index.html?char=F">F</a>
+<a href="/music/index.html?char=G">G</a>
+<a href="/music/index.html?char=H">H</a>
+<a href="/music/index.html?char=I">I</a>
+<a href="/music/index.html?char=J">J</a>
+<a href="/music/index.html?char=K">K</a>
+<a href="/music/index.html?char=L">L</a>
+<a href="/music/index.html?char=M">M</a>
+<a href="/music/index.html?char=N">N</a>
+<a href="/music/index.html?char=O">O</a>
+<a href="/music/index.html?char=P">P</a>
+<a href="/music/index.html?char=Q">Q</a>
+<a href="/music/index.html?char=R">R</a>
+<a href="/music/index.html?char=S">S</a>
+<a href="/music/index.html?char=T">T</a>
+<a href="/music/index.html?char=U">U</a>
+<a href="/music/index.html?char=V">V</a>
+<a href="/music/index.html?char=W">W</a>
+<a href="/music/index.html?char=X">X</a>
+<a href="/music/index.html?char=Y">Y</a>
+<a href="/music/index.html?char=Z">Z</a>
+<a href="/music/index.html?char=1">0-9</a>
+</dd>
+</dl>
+</div>
+</div>
+<div class="main1R">
+<div class="titleS1">
+<h2 style="background:none;">登录</h2>
+</div>
+<iframe src="/iframe/login/login.php" style="margin:0 1px;" height="51" width="293" allowtransparency="no" scrolling="no" id="iframelogin" frameborder="0"></iframe>
+<div class="titleS1">
+<h2 style="background:none;">我要贡献</h2>
+<span class="more"><a href="http://ent.sina.com.cn/x/2009-06-24/22312580566.shtml" target="_blank">创建有奖</a>　<a href="http://ent.sina.com.cn/x/2009-07-30/12152631225.shtml" target="_blank">积分规则</a></span> </div>
+<ul class="listS1">
+<li><a href="/star/staradd1.php" target="_blank">添加一位明星</a></li>
+<li><a href="/movie/movieadd1.php" target="_blank">添加一部电影</a></li>
+<li><a href="/music/musicadd1.php" target="_blank">添加一部音乐</a></li>
+<li><a href="/tv/tvadd1.php" target="_blank">添加一部电视剧</a></li>
+</ul>
+<h2>公告板</h2>
+<div class="m1R_con2">
+<ul>
+<li><a href="http://ent.sina.com.cn/x/2010-10-08/15323106368.shtml" target="_blank"><font color="red">创建完善词条拿奖(10月初公布9月奖励)</font></a></li>
+<li><a href="http://ent.sina.com.cn/x/2009-06-24/22312580566.shtml" target="_blank">创建、完善词条拿奖细则</a></li>
+<li><a href="http://ent.sina.com.cn/x/2009-06-24/22342580568.shtml" target="_blank">参加与明星互动拿奖品</a></li>
+<li><a href="http://ent.sina.com.cn/x/2009-06-24/22352580569.shtml" target="_blank">纠错、提建议拿奖品</a></li>
+<li><a href="http://ent.sina.com.cn/x/2010-03-26/11122909321.shtml" target="_blank">娱乐首页固定位确定</a></li>
+</ul>
+</div>
+<h2>热门标签</h2>
+<div class="m1R_con3">
+<strong><a href="/search.php?keyword=%E8%BF%88%E5%85%8B%E5%B0%94-%E6%9D%B0%E5%85%8B%E9%80%8A&amp;dpc=1" class="red14">迈克尔-杰克逊</a></strong>
+<a href="/search.php?keyword=%E6%96%B9%E9%9D%99&amp;dpc=1" class="red12">方静</a>
+<strong><a href="/search.php?keyword=%E5%8F%98%E5%BD%A2%E9%87%91%E5%88%9A&amp;dpc=1" class="red14">变形金刚</a></strong>
+<a href="/search.php?keyword=%E5%AE%8B%E7%A5%96%E8%8B%B1&amp;dpc=1" class="red12">宋祖英</a>
+<strong><a href="/search.php?keyword=%E6%BB%A1%E6%96%87%E5%86%9B&amp;dpc=1" class="red14">满文军</a></strong>
+<a href="/search.php?keyword=%E8%B0%A2%E9%9C%86%E9%94%8B&amp;dpc=1" class="red12">谢霆锋</a>
+<strong><a href="/search.php?keyword=%E6%88%91%E7%9A%84%E5%85%84%E5%BC%9F%E5%8F%AB%E9%A1%BA%E6%BA%9C&amp;dpc=1" class="red14">我的兄弟叫顺溜</a></strong>
+<strong><a href="/search.php?keyword=%E9%98%BF%E5%A8%87&amp;dpc=1" class="red14">阿娇</a></strong>
+<a href="/search.php?keyword=%E5%91%A8%E6%9D%B0%E4%BC%A6&amp;dpc=1">周杰伦</a>
+<a href="/search.php?keyword=%E9%99%88%E5%86%A0%E5%B8%8C&amp;dpc=1" class="red12">陈冠希</a>
+<a href="/search.php?keyword=%E5%BC%A0%E6%9F%8F%E8%8A%9D&amp;dpc=1" class="red12">张柏芝</a>
+<a href="/search.php?keyword=%E7%BD%97%E4%BA%AC&amp;dpc=1">罗京</a>
+<a href="/search.php?keyword=%E5%AD%99%E7%BA%A2%E9%9B%B7&amp;dpc=1" class="red12">孙红雷</a>
+<a href="/search.php?keyword=%E6%9D%8E%E8%BF%9E%E6%9D%B0&amp;dpc=1" class="red12">李连杰</a>
+<a href="/search.php?keyword=%E7%8E%8B%E5%AE%9D%E5%BC%BA&amp;dpc=1">王宝强</a>
+<a href="/search.php?keyword=%E4%BA%BA%E9%97%B4%E6%AD%A3%E9%81%93%E6%98%AF%E6%B2%A7%E6%A1%91&amp;dpc=1" class="red12">人间正道是沧桑</a>
+<a href="/search.php?keyword=%E6%88%90%E9%BE%99&amp;dpc=1" class="red12">成龙</a>
+<a href="/search.php?keyword=%E6%96%B0%E7%BA%A2%E6%A5%BC%E6%A2%A6&amp;dpc=1">新红楼梦</a>
+</div>
+</div>
+</div>
+<div class="main2">
+<div class="m2_con">
+<h2>明星聚焦排行</h2>
+<table cellpadding="0" width="100%" cellspacing="0">
+<tr>
+<th>名次</th>
+<th>姓名</th>
+<th>上周</th>
+<th>趋势</th>
+</tr>
+<tr> <td>
+<span class="paiming_1">1
+          </span>
+</td>
+<td><a href="/star/262.html" title="张国荣">
+          张国荣
+                    </a></td>
+<td>205</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_up.gif"> </td>
+</tr>
+<tr> <td>
+<span class="paiming_other">2
+          </span>
+</td>
+<td><a href="/star/19650.html" title="Adele">
+          Adele
+                    </a></td>
+<td>3234</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_up.gif"> </td>
+</tr>
+<tr> <td>
+<span class="paiming_other">3
+          </span>
+</td>
+<td><a href="/star/777.html" title="陈奕迅">
+          陈奕迅
+                    </a></td>
+<td>358</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_up.gif"> </td>
+</tr>
+<tr> <td>
+<span class="paiming_other">4
+          </span>
+</td>
+<td><a href="/star/7861.html" title="张译">
+          张译
+                    </a></td>
+<td>1</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_down.gif"> </td>
+</tr>
+<tr> <td>
+<span class="paiming_other">5
+          </span>
+</td>
+<td><a href="/star/521.html" title="孙红雷">
+          孙红雷
+                    </a></td>
+<td>9</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_up.gif"> </td>
+</tr>
+<tr> <td>
+<span class="paiming_other">6
+          </span>
+</td>
+<td><a href="/star/13753.html" title="刘心">
+          刘心
+                    </a></td>
+<td>3234</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_up.gif"> </td>
+</tr>
+<tr> <td>
+<span class="paiming_other">7
+          </span>
+</td>
+<td><a href="/star/12714.html" title="武艺">
+          武艺
+                    </a></td>
+<td>3234</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_up.gif"> </td>
+</tr>
+<tr> <td>
+<span class="paiming_other">8
+          </span>
+</td>
+<td><a href="/star/13789.html" title="陈翔">
+          陈翔
+                    </a></td>
+<td>3234</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_up.gif"> </td>
+</tr>
+<tr> <td>
+<span class="paiming_other">9
+          </span>
+</td>
+<td><a href="/star/9681.html" title="巴哈古丽">
+          巴哈古丽
+                    </a></td>
+<td>3</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_down.gif"> </td>
+</tr>
+<tr class="last"> <td>
+<span class="paiming_other">10
+          </span>
+</td>
+<td><a href="/star/6796.html" title="张国强">
+          张国强
+                    </a></td>
+<td>2</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_down.gif"> </td>
+</tr>
+</table>
+<p class="more"><a href="/top/index.html?glb1=1&amp;glb2=1&amp;glb3=1&amp;dpc=1">更多&gt;&gt;</a></p>
+</div>
+<div class="m2_con">
+<h2>电影聚焦排行</h2>
+<table cellpadding="0" width="100%" cellspacing="0">
+<tr>
+<th>名次</th>
+<th>电影</th>
+<th>上周</th>
+<th>趋势</th>
+</tr>
+<tr> <td><span class="paiming_1">1</span></td>
+<td><a href="movie/7828.html" title="情色自拍">
+          情色自拍
+          </a></td>
+<td>2</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_up.gif"> </td>
+</tr>
+<tr> <td><span class="paiming_other">2</span></td>
+<td><a href="movie/9203.html" title="真性假爱">
+          真性假爱
+          </a></td>
+<td>10</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_up.gif"> </td>
+</tr>
+<tr> <td><span class="paiming_other">3</span></td>
+<td><a href="movie/8999.html" title="特种部队">
+          特种部队
+          </a></td>
+<td>1</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_down.gif"> </td>
+</tr>
+<tr> <td><span class="paiming_other">4</span></td>
+<td><a href="movie/13915.html" title="3D肉蒲团">
+          3D肉蒲团
+          </a></td>
+<td>3844</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_up.gif"> </td>
+</tr>
+<tr> <td><span class="paiming_other">5</span></td>
+<td><a href="movie/10530.html" title="唐山大地震">
+          唐山大地震
+          </a></td>
+<td>3844</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_up.gif"> </td>
+</tr>
+<tr> <td><span class="paiming_other">6</span></td>
+<td><a href="movie/9752.html" title="消魂玉">
+          消魂玉
+          </a></td>
+<td>37</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_up.gif"> </td>
+</tr>
+<tr> <td><span class="paiming_other">7</span></td>
+<td><a href="movie/8987.html" title="五感图">
+          五感图
+          </a></td>
+<td>4</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_down.gif"> </td>
+</tr>
+<tr> <td><span class="paiming_other">8</span></td>
+<td><a href="movie/10104.html" title="古墓迷途">
+          古墓迷途
+          </a></td>
+<td>230</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_up.gif"> </td>
+</tr>
+<tr> <td><span class="paiming_other">9</span></td>
+<td><a href="movie/9567.html" title="暮光之城2：新月">
+          暮光之城2：新..
+          </a></td>
+<td>3</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_down.gif"> </td>
+</tr>
+<tr class="last"> <td><span class="paiming_other">10</span></td>
+<td><a href="movie/10155.html" title="迷魂陷阱">
+          迷魂陷阱
+          </a></td>
+<td>1300</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_up.gif"> </td>
+</tr>
+</table>
+<p class="more"><a href="/top/index.html?glb1=1&amp;glb2=2&amp;dpc=1">更多&gt;&gt;</a></p>
+</div>
+<div class="m2_con">
+<h2>电视聚焦排行</h2>
+<table cellpadding="0" width="100%" cellspacing="0">
+<tr>
+<th>名次</th>
+<th>电视</th>
+<th>上周</th>
+<th>趋势</th>
+</tr>
+<tr> <td><span class="paiming_1">1</span></td>
+<td><a href="/tv/11043.html" title="回家的诱惑">
+          回家的诱惑
+          </a></td>
+<td>3163</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_up.gif"> </td>
+</tr>
+<tr> <td><span class="paiming_other">2</span></td>
+<td><a href="/tv/6675.html" title="叶挺将军">
+          叶挺将军
+          </a></td>
+<td>2504</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_up.gif"> </td>
+</tr>
+<tr> <td><span class="paiming_other">3</span></td>
+<td><a href="/tv/8749.html" title="灿烂的遗产">
+          灿烂的遗产
+          </a></td>
+<td>740</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_up.gif"> </td>
+</tr>
+<tr> <td><span class="paiming_other">4</span></td>
+<td><a href="/tv/1834.html" title="仙剑奇侠传">
+          仙剑奇侠传
+          </a></td>
+<td>1069</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_up.gif"> </td>
+</tr>
+<tr> <td><span class="paiming_other">5</span></td>
+<td><a href="/tv/7929.html" title="妻子的诱惑">
+          妻子的诱惑
+          </a></td>
+<td>661</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_up.gif"> </td>
+</tr>
+<tr> <td><span class="paiming_other">6</span></td>
+<td><a href="/tv/7760.html" title="《潜伏》">
+          《潜伏》
+          </a></td>
+<td>2788</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_up.gif"> </td>
+</tr>
+<tr> <td><span class="paiming_other">7</span></td>
+<td><a href="/tv/9072.html" title="爱你千万遍">
+          爱你千万遍
+          </a></td>
+<td>3163</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_up.gif"> </td>
+</tr>
+<tr> <td><span class="paiming_other">8</span></td>
+<td><a href="/tv/1875.html" title="神雕侠侣">
+          神雕侠侣
+          </a></td>
+<td>1088</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_up.gif"> </td>
+</tr>
+<tr> <td><span class="paiming_other">9</span></td>
+<td><a href="/tv/8915.html" title="善德女王">
+          善德女王
+          </a></td>
+<td>3163</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_up.gif"> </td>
+</tr>
+<tr class="last"> <td><span class="paiming_other">10</span></td>
+<td><a href="/tv/9023.html" title="拜托小姐">
+          拜托小姐
+          </a></td>
+<td>3163</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_up.gif"> </td>
+</tr>
+</table>
+<p class="more"><a href="/top/index.html?glb1=1&amp;glb2=3&amp;dpc=1">更多&gt;&gt;</a></p>
+</div>
+<div class="m2_con_last">
+<h2>音乐聚焦排行</h2>
+<table cellpadding="0" width="100%" cellspacing="0">
+<tr>
+<th>名次</th>
+<th>音乐</th>
+<th>上周</th>
+<th>趋势</th>
+</tr>
+<tr> <td><span class="paiming_1">1</span></td>
+<td><a href="/music/_95350.html" title="我的团长">
+          我的团长</a></td>
+<td>46289</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_up.gif"> </td>
+</tr>
+<tr> <td><span class="paiming_other">2</span></td>
+<td><a href="/music/_34606.html" title="记忆中的忘记">
+          记忆中的忘记</a></td>
+<td>7302</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_up.gif"> </td>
+</tr>
+<tr> <td><span class="paiming_other">3</span></td>
+<td><a href="/music/_95187.html" title="可爱的你">
+          可爱的你</a></td>
+<td>46168</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_up.gif"> </td>
+</tr>
+<tr> <td><span class="paiming_other">4</span></td>
+<td><a href="/music/_59989.html" title="新的约定">
+          新的约定</a></td>
+<td>24684</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_up.gif"> </td>
+</tr>
+<tr> <td><span class="paiming_other">5</span></td>
+<td><a href="/music/_28310.html" title="爱定你">
+          爱定你</a></td>
+<td>3093</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_up.gif"> </td>
+</tr>
+<tr> <td><span class="paiming_other">6</span></td>
+<td><a href="/music/_299.html" title="狂野之城">
+          狂野之城</a></td>
+<td>84</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_up.gif"> </td>
+</tr>
+<tr> <td><span class="paiming_other">7</span></td>
+<td><a href="/music/_314.html" title="绝对">
+          绝对</a></td>
+<td>86</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_up.gif"> </td>
+</tr>
+<tr> <td><span class="paiming_other">8</span></td>
+<td><a href="/music/_86117.html" title="爱的呼唤">
+          爱的呼唤</a></td>
+<td>43864</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_up.gif"> </td>
+</tr>
+<tr> <td><span class="paiming_other">9</span></td>
+<td><a href="/music/_308.html" title="城意三部曲">
+          城意三部曲</a></td>
+<td>85</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_up.gif"> </td>
+</tr>
+<tr class="last"> <td><span class="paiming_other">10</span></td>
+<td><a href="/music/_28325.html" title="对你爱不完">
+          对你爱不完</a></td>
+<td>3103</td>
+<td><img src="http://www.sinaimg.cn/ent/data/1/zly_jn_up.gif"> </td>
+</tr>
+</table>
+<p class="more"><a href="/top/index.html?glb1=1&amp;glb2=4&amp;dpc=1">更多&gt;&gt;</a></p>
+</div>
+</div>
+<div class="main3">
+<h2>分享互动</h2>
+<div class="main3L">
+<div class="title">
+<h3>资料库吧热帖</h3>
+<em><a href="http://ent.sina.com.cn/bar/" target="_blank">更多&gt;&gt;</a></em> </div>
+<table cellpadding="0" width="100%" cellspacing="0">
+<tr>
+<th class="first">标题</th>
+<th>点击</th>
+<th>回复</th>
+<th>网友</th>
+</tr>
+<tr>
+<td class="td1"><a href="http://bbs.bar.sina.com.cn/thread.php?tid=2171690545&amp;bid=462" target="_blank" title="【组图】《新旅行》3月刊封面人物赵薇 体验迪拜豪华之旅">【组图】《新旅行》3月刊封面人物赵薇 体验迪拜</a></td>
+<td nowrap>89125</td>
+<td nowrap>404</td>
+<td nowrap><a href="http://bbs.bar.sina.com.cn/user.php?uid=1834847692" target="_blank">奔跑ing520</a></td>
+</tr>
+<tr>
+<td class="td1"><a href="http://bbs.bar.sina.com.cn/thread.php?tid=2158558627&amp;bid=462" target="_blank" title="【图文】赵薇爸妈探孙 复出后急返新加坡（南都周刊）">【图文】赵薇爸妈探孙 复出后急返新加坡（南都</a></td>
+<td nowrap>94190</td>
+<td nowrap>97</td>
+<td nowrap><a href="http://bbs.bar.sina.com.cn/user.php?uid=1714314732" target="_blank">传奇的平凡女子</a></td>
+</tr>
+<tr>
+<td class="td1"><a href="http://bbs.bar.sina.com.cn/thread.php?tid=2173942313&amp;bid=61915" target="_blank" title="〖★甘甜滋味2011★〗《风尚周报》专访甘婷婷：胸有大波澜">〖★甘甜滋味2011★〗《风尚周报》专访甘婷婷：</a></td>
+<td nowrap>184</td>
+<td nowrap>4</td>
+<td nowrap><a href="http://bbs.bar.sina.com.cn/user.php?uid=1611272780" target="_blank">诺曼底111</a></td>
+</tr>
+<tr>
+<td class="td1"><a href="http://bbs.bar.sina.com.cn/thread.php?tid=2170821084&amp;bid=61915" target="_blank" title="【★新浪甘婷婷吧★】甘婷婷的资料和海量美图集锦">【★新浪甘婷婷吧★】甘婷婷的资料和海量美图集</a></td>
+<td nowrap>596</td>
+<td nowrap>27</td>
+<td nowrap><a href="http://bbs.bar.sina.com.cn/user.php?uid=1504407222" target="_blank">爱美婷223</a></td>
+</tr>
+<tr>
+<td class="td1"><a href="http://bbs.bar.sina.com.cn/thread.php?tid=18865682&amp;bid=59131" target="_blank" title="【爱心周杰】周杰的爱心慈善事业（不断更新中）">【爱心周杰】周杰的爱心慈善事业（不断更新中）</a></td>
+<td nowrap>806</td>
+<td nowrap>13</td>
+<td nowrap><a href="http://bbs.bar.sina.com.cn/user.php?uid=1591513092" target="_blank">小猪阿翠</a></td>
+</tr>
+<tr>
+<td class="td1"><a href="http://bbs.bar.sina.com.cn/thread.php?tid=11931841&amp;bid=59131" target="_blank" title="【明星问答】【杰傲不驯】周杰哥哥我们爱你！">【明星问答】【杰傲不驯】周杰哥哥我们爱你！</a></td>
+<td nowrap>1038</td>
+<td nowrap>8</td>
+<td nowrap><a href="http://bbs.bar.sina.com.cn/user.php?uid=1632714247" target="_blank">穗穗爱杰</a></td>
+</tr>
+<tr>
+<td class="td1"><a href="http://bbs.bar.sina.com.cn/thread.php?tid=2162228611&amp;bid=59131" target="_blank" title="周杰车祸事件后接新剧 望媒体多报贪官少报自己">周杰车祸事件后接新剧 望媒体多报贪官少报自己</a></td>
+<td nowrap>386</td>
+<td nowrap>10</td>
+<td nowrap class="last"><a href="http://bbs.bar.sina.com.cn/user.php?uid=1632013233" target="_blank">就是喜欢周杰</a></td>
+</tr>
+</table>
+</div>
+<div class="main3R">
+<div class="title">
+<h3>网友最新提交</h3>
+<em><!--<a href="#">更多&gt;&gt;</a>--></em> </div>
+<table cellpadding="0" width="100%" cellspacing="0">
+<tr>
+<th class="first">最近更新</th>
+<th>更新时间</th>
+</tr>
+<tr>
+<td class="td1">网友"<!--<a href="#">--><a href="http://profile.blog.sina.com.cn/u/0" target="_blank" title=""></a>"
+            编辑了
+                                    音乐
+                        "<!--</a>--><strong><a href="/music/1073746788.html" title="轻闭双眼">轻闭双眼</a></strong>"
+            </td>
+<td>
+            2012-05-18 18:03:50
+            </td>
+</tr>
+<tr>
+<td class="td1">网友"<!--<a href="#">--><a href="http://profile.blog.sina.com.cn/u/0" target="_blank" title=""></a>"
+            编辑了
+                                    音乐
+                        "<!--</a>--><strong><a href="/music/1073746788.html" title="轻闭双眼">轻闭双眼</a></strong>"
+            </td>
+<td>
+            2012-05-18 18:03:50
+            </td>
+</tr>
+<tr>
+<td class="td1">网友"<!--<a href="#">--><a href="http://profile.blog.sina.com.cn/u/0" target="_blank" title=""></a>"
+            编辑了
+                                    音乐
+                        "<!--</a>--><strong><a href="/music/1073746788.html" title="轻闭双眼">轻闭双眼</a></strong>"
+            </td>
+<td>
+            2012-05-18 18:03:50
+            </td>
+</tr>
+<tr>
+<td class="td1">网友"<!--<a href="#">--><a href="http://profile.blog.sina.com.cn/u/0" target="_blank" title=""></a>"
+            编辑了
+                                    音乐
+                        "<!--</a>--><strong><a href="/music/1073746788.html" title="轻闭双眼">轻闭双眼</a></strong>"
+            </td>
+<td>
+            2012-05-18 18:03:50
+            </td>
+</tr>
+<tr>
+<td class="td1">网友"<!--<a href="#">--><a href="http://profile.blog.sina.com.cn/u/0" target="_blank" title=""></a>"
+            编辑了
+                                    音乐
+                        "<!--</a>--><strong><a href="/music/1073746788.html" title="轻闭双眼">轻闭双眼</a></strong>"
+            </td>
+<td>
+            2012-05-18 18:03:42
+            </td>
+</tr>
+<tr>
+<td class="td1">网友"<!--<a href="#">--><a href="http://profile.blog.sina.com.cn/u/0" target="_blank" title=""></a>"
+            编辑了
+                                    音乐
+                        "<!--</a>--><strong><a href="/music/1073746788.html" title="轻闭双眼">轻闭双眼</a></strong>"
+            </td>
+<td>
+            2012-05-18 18:03:41
+            </td>
+</tr>
+<tr>
+<td class="td1">网友"<!--<a href="#">--><a href="http://profile.blog.sina.com.cn/u/0" target="_blank" title=""></a>"
+            编辑了
+                                    音乐
+                        "<!--</a>--><strong><a href="/music/1073746788.html" title="轻闭双眼">轻闭双眼</a></strong>"
+            </td>
+<td>
+            2012-05-18 18:03:41
+            </td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+
+<!-- sina footer begin --><iframe src="/iframe/fdata/data.html" style="height:0px;width:1px;overflow:hidden;" scrolling="no" id="dataFrame" frameborder="0"></iframe>
+<div id="uni_footer"> <a href="http://ent.sina.com.cn/guest.html" target="_blank">影音娱乐意见反馈留言板</a> 电话：010-62647003 欢迎批评指正<br>
+<a href="http://corp.sina.com.cn/chn/">新浪简介</a> | <a href="http://corp.sina.com.cn/eng/">About Sina</a> | <a href="http://ads.sina.com.cn/">广告服务</a> | <a href="http://www.sina.com.cn/contactus.html">联系我们</a> | <a href="http://corp.sina.com.cn/chn/sina_job.html">招聘信息</a> | <a href="http://www.sina.com.cn/intro/lawfirm.shtml">网站律师</a> | <a href="http://english.sina.com">SINA English</a> | <a href="http://members.sina.com.cn/apply/">会员注册</a> | <a href="http://tech.sina.com.cn/focus/sinahelp.shtml">产品答疑</a><br>
+    Copyright © 1996-2012 SINA Corporation, All Rights Reserved<br>
+    新浪公司 <a href="http://www.sina.com.cn/intro/copyright.shtml">版权所有</a><br>
+    北京网通提供网络宽带 </div>
+
+
+
+<!-- sina footer end --><!-- SUDA_CODE_START --><script src="http://www.sinaimg.cn/unipro/pub/suda_s_v851c.js" type="text/javascript"></script>
+<script type="text/javascript"> 
+_S_pSt(_S_PID_); 
+</script>
+<noscript>
+<div style="position:absolute;top:0;left:0;width:0;height:0;visibility:hidden"><img width="0" alt="" src="http://beacon.sina.com.cn/a.gif?noScript" border="0" height="0"></div>
+</noscript>
+
+
+<!-- SUDA_CODE_END --><!-- START WRating v1.0 --><script src="http://sina.wrating.com/a1.js" type="text/javascript"></script>
+<script type="text/javascript">
+try{
+var vjAcc="860010-0312010000"; 
+var wrUrl="http://sina.wrating.com/";
+vjTrack("");
+}catch(e){};
+</script>
+<noscript><img src="http://sina.wrating.com/a.gif?a=&amp;c=860010-0312010000" style="display: none;" height="1" width="1"></noscript>
+
+
+
+<!-- END WRating v1.0 --><!-- START Nielsen//NetRatings SiteCensus V5.2 --><!-- COPYRIGHT 2006 Nielsen//NetRatings --><script type="text/javascript">
+    var _rsCI="cn-sina2006";     
+    var _rsCG="0";    
+    var _rsDN="//secure-cn.imrworldwide.com/";    
+    var _rsCC=0;    
+    var _rsSE=1;    
+    var _rsSM=0.01;     
+    var _rsSS=1500;     
+</script>
+<script src="//secure-cn.imrworldwide.com/v52.js" type="text/javascript"></script>
+<noscript>
+<img src="//secure-cn.imrworldwide.com/cgi-bin/m?ci=cn-sina2006&amp;cg=0" alt="">
+</noscript>
+
+<!-- END Nielsen//NetRatings SiteCensus V5.2 --></body>
+<script>init();</script>
+</html> <!-- Fri, 18 May 2012 16:24:16 --></html>

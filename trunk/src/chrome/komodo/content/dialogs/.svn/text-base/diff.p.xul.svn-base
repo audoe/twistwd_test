@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<!DOCTYPE window SYSTEM "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" [
+  <!ENTITY % dialogsDTD SYSTEM "chrome://komodo/locale/dialogs.dtd">
+  %dialogsDTD;
+]>
+
+<!-- ***** BEGIN LICENSE BLOCK *****
+ Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ 
+ The contents of this file are subject to the Mozilla Public License
+ Version 1.1 (the "License"); you may not use this file except in
+ compliance with the License. You may obtain a copy of the License at
+ http://www.mozilla.org/MPL/
+ 
+ Software distributed under the License is distributed on an "AS IS"
+ basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+ License for the specific language governing rights and limitations
+ under the License.
+ 
+ The Original Code is Komodo code.
+ 
+ The Initial Developer of the Original Code is ActiveState Software Inc.
+ Portions created by ActiveState Software Inc are Copyright (C) 2000-2007
+ ActiveState Software Inc. All Rights Reserved.
+ 
+ Contributor(s):
+   ActiveState Software Inc
+ 
+ Alternatively, the contents of this file may be used under the terms of
+ either the GNU General Public License Version 2 or later (the "GPL"), or
+ the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ in which case the provisions of the GPL or the LGPL are applicable instead
+ of those above. If you wish to allow use of your version of this file only
+ under the terms of either the GPL or the LGPL, and not to allow others to
+ use your version of this file under the terms of the MPL, indicate your
+ decision by deleting the provisions above and replace them with the notice
+ and other provisions required by the GPL or the LGPL. If you do not delete
+ the provisions above, a recipient may use your version of this file under
+ the terms of any one of the MPL, the GPL or the LGPL.
+ 
+ ***** END LICENSE BLOCK ***** -->
+
+<!-- A diff viewer window.
+     See diff.js for info on how to call and use this dialog.
+  -->
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://komodo/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://komodo/skin/global/global.css" type="text/css"?>
+<?xml-stylesheet href="chrome://komodo/skin/bindings/views.css" type="text/css"?>
+<?xml-stylesheet href="chrome://komodo/skin/toolbar.css" type="text/css"?>
+
+<?xul-overlay href="chrome://komodo/content/bindings/scintilla-overlay.xul"?>
+
+
+<window
+    id="komodo_diff_window"
+    windowtype="Komodo:DiffWindow"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+    width="600"
+    height="400"
+    screenX="20"
+    screenY="20"
+    persist="screenX screenY width height"
+    orient="vertical"
+    onload="OnLoad();"
+    onunload="OnUnload();">
+
+    <script src="chrome://xtk/content/xtk.js" type="application/x-javascript;version=1.7"/>
+    <script src="chrome://komodo/content/library/logging.js" type="application/x-javascript;version=1.7"/>
+    <script src="chrome://komodo/content/library/open.js" type="application/x-javascript;version=1.7"/>
+    <script src="chrome://komodo/content/library/dialogs.js" type="application/x-javascript;version=1.7"/>
+    <script src="chrome://komodo/content/library/filepickers.js" type="application/x-javascript;version=1.7"/>
+    <script src="chrome://komodo/content/library/uriparse.js" type="application/x-javascript;version=1.7"/>
+    <!-- Required for scintilla overlay. -->
+    <script src="chrome://komodo/content/library/timers.js" type="application/x-javascript;version=1.7"/>
+    <script src="chrome://komodo/content/library/stringutils.js" type="application/x-javascript;version=1.7"/>
+    <script src="chrome://komodo/content/library/commands.js" type="application/x-javascript;version=1.7"/>
+    <script src="chrome://komodo/content/library/dragdrop.js" type="application/x-javascript;version=1.7"/>
+    <script src="chrome://komodo/content/library/windowManager.js" type="application/x-javascript;version=1.7"/>
+    <script src="chrome://komodo/content/markers.js" type="application/x-javascript;version=1.7"/>
+
+    <script src="chrome://komodo/content/dialogs/diff.js" type="application/x-javascript;version=1.7"/>
+
+    <keyset>
+        <key keycode="VK_ESCAPE" oncommand="window.close()"/>
+<!-- #if PLATFORM != "darwin" -->
+        <key id="key_jumpToPreviousDiff" keycode="VK_F7"
+             command="cmd_jumpToPreviousDiff"/>
+        <key id="key_jumpToNextDiff" keycode="VK_F8"
+             command="cmd_jumpToNextDiff"/>
+        <key id="key_revealPositionInEditor" keycode="VK_F9"
+             command="cmd_revealPositionInEditor"/>
+<!-- #else -->
+        <key id="key_jumpToPreviousDiff" key="," modifiers="meta,shift"
+             command="cmd_jumpToPreviousDiff"/>
+        <key id="key_jumpToNextDiff" key="." modifiers="meta,shift"
+             command="cmd_jumpToNextDiff"/>
+        <key id="key_revealPositionInEditor" key="J" modifiers="meta"
+             command="cmd_revealPositionInEditor"/>
+<!-- #endif -->
+    </keyset>
+
+    <hbox id="scintillaOverlayXul"/>
+    
+    <commandset>
+        <command id="cmd_jumpToPreviousDiff"
+                 key="key_jumpToPreviousDiff"
+                 oncommand="document.getElementById('view').jumpToPreviousDiff()"/>
+        <command id="cmd_jumpToNextDiff"
+                 key="key_jumpToNextDiff"
+                 oncommand="document.getElementById('view').jumpToNextDiff()"/>
+        <command id="cmd_revealPositionInEditor"
+                 key="key_revealPositionInEditor"
+                 oncommand="document.getElementById('view').revealPositionInEditor()"/>
+    </commandset>
+
+    <menupopup id="diffContextMenu"
+               onpopupshowing="window.updateCommands('buffer_context_menu_showing');">
+        <menuitem label="&previousDiff.label;"
+                  class="menuitem-iconic previous-diff-icon"
+                  observes="cmd_jumpToPreviousDiff"/>
+        <menuitem label="&nextDiff.label;"
+                  class="menuitem-iconic next-diff-icon"
+                  observes="cmd_jumpToNextDiff"/>
+        <menuitem id="menu_revealPositionInEditor"
+                  label="&revealPositionInEditor.label;"
+                  class="menuitem-iconic reveal-in-editor-icon"
+                  observes="cmd_revealPositionInEditor"/>
+        <menuseparator/>
+        <menuitem id="buffer-context-copy"
+                  label="&copy.label;"
+                  class="menuitem-iconic native-copy-icon"
+                  observes="cmd_copy"/>
+        <menuitem id="buffer-context-editSelectAll"
+                  label="&selectAll.label;"
+                  observes="cmd_selectAll"/>
+        <menuseparator id="context-buffer-sep-paste"/>
+        <menuitem label="&viewWhitespace.label;"
+                  observes="cmd_viewWhitespace"/>
+        <menuitem label="&viewIndentationGuides.label;"
+                  observes="cmd_viewIndentationGuides"/>
+        <menuitem label="&viewLineNumbers.label;"
+                  observes="cmd_viewLineNumbers"/>
+        <menuitem label="&viewEOLMarkers.label;"
+                  observes="cmd_viewEOL"/>
+        <menuitem label="&wordWrap.label;"
+                  observes="cmd_wordWrap"/>
+    </menupopup>
+
+    <view id="view"
+          type="diff"
+          flex="1"
+          style="cursor: text"/>
+<!-- #if PLATFORM == "darwin" -->
+    <statusbar fullscreentoolbar="true" orient="horizontal"/>
+<!-- #endif -->
+    <keyset id="widekeyset" persist="persisted_kb" persisted_kb="false"/>
+</window>

@@ -1,0 +1,461 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/!svn/ver/10168/openkomodo/trunk/src/chrome/komodo/content/pref
+END
+pref-ruby.js
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/!svn/ver/10156/openkomodo/trunk/src/chrome/komodo/content/pref/pref-ruby.js
+END
+preview-properties.js
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/!svn/ver/8660/openkomodo/trunk/src/chrome/komodo/content/pref/preview-properties.js
+END
+pref-alllangfonts.p.js
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/!svn/ver/10067/openkomodo/trunk/src/chrome/komodo/content/pref/pref-alllangfonts.p.js
+END
+pref-jshint-options.xul
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/!svn/ver/10148/openkomodo/trunk/src/chrome/komodo/content/pref/pref-jshint-options.xul
+END
+koPrefWindow.js
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/!svn/ver/10067/openkomodo/trunk/src/chrome/komodo/content/pref/koPrefWindow.js
+END
+pref-php.p.js
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/!svn/ver/10156/openkomodo/trunk/src/chrome/komodo/content/pref/pref-php.p.js
+END
+pref-proxies.xul
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/!svn/ver/2971/openkomodo/trunk/src/chrome/komodo/content/pref/pref-proxies.xul
+END
+pref-editsmart.xul
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/7843/openkomodo/trunk/src/chrome/komodo/content/pref/pref-editsmart.xul
+END
+pref-helplang.p.js
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/7810/openkomodo/trunk/src/chrome/komodo/content/pref/pref-helplang.p.js
+END
+pref-save.xul
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/!svn/ver/9443/openkomodo/trunk/src/chrome/komodo/content/pref/pref-save.xul
+END
+koFilteredPrefTree.js
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/!svn/ver/9678/openkomodo/trunk/src/chrome/komodo/content/pref/koFilteredPrefTree.js
+END
+pref-html.xul
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/!svn/ver/7705/openkomodo/trunk/src/chrome/komodo/content/pref/pref-html.xul
+END
+pref-perl.js
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/7826/openkomodo/trunk/src/chrome/komodo/content/pref/pref-perl.js
+END
+pref-keys.p.xul
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/!svn/ver/7017/openkomodo/trunk/src/chrome/komodo/content/pref/pref-keys.p.xul
+END
+pref-ui.p.xul
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/!svn/ver/10067/openkomodo/trunk/src/chrome/komodo/content/pref/pref-ui.p.xul
+END
+pref-web.p.js
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/!svn/ver/10009/openkomodo/trunk/src/chrome/komodo/content/pref/pref-web.p.js
+END
+pref-find.xul
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/!svn/ver/9758/openkomodo/trunk/src/chrome/komodo/content/pref/pref-find.xul
+END
+pref-environ.xul
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/!svn/ver/8375/openkomodo/trunk/src/chrome/komodo/content/pref/pref-environ.xul
+END
+pref-association.js
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/!svn/ver/5693/openkomodo/trunk/src/chrome/komodo/content/pref/pref-association.js
+END
+setupFileAssociations.xul
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/!svn/ver/4893/openkomodo/trunk/src/chrome/komodo/content/pref/setupFileAssociations.xul
+END
+pref-servers.p.xul
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/9274/openkomodo/trunk/src/chrome/komodo/content/pref/pref-servers.p.xul
+END
+pref-helplang.p.xul
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/!svn/ver/7017/openkomodo/trunk/src/chrome/komodo/content/pref/pref-helplang.p.xul
+END
+pref-projects.xul
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/!svn/ver/9157/openkomodo/trunk/src/chrome/komodo/content/pref/pref-projects.xul
+END
+pref.p.xul
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/!svn/ver/9216/openkomodo/trunk/src/chrome/komodo/content/pref/pref.p.xul
+END
+pref-javascript.p.xul
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/!svn/ver/7826/openkomodo/trunk/src/chrome/komodo/content/pref/pref-javascript.p.xul
+END
+pref-folderImport.xul
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/!svn/ver/6355/openkomodo/trunk/src/chrome/komodo/content/pref/pref-folderImport.xul
+END
+pref-python3.js
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/!svn/ver/9352/openkomodo/trunk/src/chrome/komodo/content/pref/pref-python3.js
+END
+pref-codeintel.p.js
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/!svn/ver/7637/openkomodo/trunk/src/chrome/komodo/content/pref/pref-codeintel.p.js
+END
+editenvironvar.js
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/!svn/ver/8762/openkomodo/trunk/src/chrome/komodo/content/pref/editenvironvar.js
+END
+koPrefWidgets.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/!svn/ver/9111/openkomodo/trunk/src/chrome/komodo/content/pref/koPrefWidgets.xml
+END
+pref-association.xul
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/!svn/ver/6590/openkomodo/trunk/src/chrome/komodo/content/pref/pref-association.xul
+END
+koPrefUtils.js
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/!svn/ver/9117/openkomodo/trunk/src/chrome/komodo/content/pref/koPrefUtils.js
+END
+preview-properties.xul
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/!svn/ver/8654/openkomodo/trunk/src/chrome/komodo/content/pref/preview-properties.xul
+END
+file-properties.p.js
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/!svn/ver/10112/openkomodo/trunk/src/chrome/komodo/content/pref/file-properties.p.js
+END
+pref-nodejs.xul
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/!svn/ver/10159/openkomodo/trunk/src/chrome/komodo/content/pref/pref-nodejs.xul
+END
+file-advanced-properties.xul
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/!svn/ver/4893/openkomodo/trunk/src/chrome/komodo/content/pref/file-advanced-properties.xul
+END
+pref-python.js
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/!svn/ver/9352/openkomodo/trunk/src/chrome/komodo/content/pref/pref-python.js
+END
+pref-php.p.xul
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/!svn/ver/10067/openkomodo/trunk/src/chrome/komodo/content/pref/pref-php.p.xul
+END
+pref-mappeduri.xul
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/!svn/ver/10067/openkomodo/trunk/src/chrome/komodo/content/pref/pref-mappeduri.xul
+END
+prefs.js
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/!svn/ver/5668/openkomodo/trunk/src/chrome/komodo/content/pref/prefs.js
+END
+pref-printing.xul
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/!svn/ver/8676/openkomodo/trunk/src/chrome/komodo/content/pref/pref-printing.xul
+END
+setupFileAssociations.js
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/!svn/ver/2317/openkomodo/trunk/src/chrome/komodo/content/pref/setupFileAssociations.js
+END
+pref-servers.js
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/!svn/ver/9274/openkomodo/trunk/src/chrome/komodo/content/pref/pref-servers.js
+END
+pref-proxies.js
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/!svn/ver/2317/openkomodo/trunk/src/chrome/komodo/content/pref/pref-proxies.js
+END
+pref-perl.p.xul
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/!svn/ver/9981/openkomodo/trunk/src/chrome/komodo/content/pref/pref-perl.p.xul
+END
+pref-python3.xul
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/!svn/ver/9352/openkomodo/trunk/src/chrome/komodo/content/pref/pref-python3.xul
+END
+pref-codeintel.p.xul
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/!svn/ver/10067/openkomodo/trunk/src/chrome/komodo/content/pref/pref-codeintel.p.xul
+END
+pref-intl.xul
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/!svn/ver/7936/openkomodo/trunk/src/chrome/komodo/content/pref/pref-intl.xul
+END
+pref-languages.xul
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/9116/openkomodo/trunk/src/chrome/komodo/content/pref/pref-languages.xul
+END
+pref-xml-catalog.xul
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/!svn/ver/7832/openkomodo/trunk/src/chrome/komodo/content/pref/pref-xml-catalog.xul
+END
+pref-newfiles.p.xul
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/!svn/ver/6618/openkomodo/trunk/src/chrome/komodo/content/pref/pref-newfiles.p.xul
+END
+project.p.xul
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/!svn/ver/10113/openkomodo/trunk/src/chrome/komodo/content/pref/project.p.xul
+END
+pref-ruby.p.xul
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/!svn/ver/8762/openkomodo/trunk/src/chrome/komodo/content/pref/pref-ruby.p.xul
+END
+pref-alllangfonts.p.xul
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/!svn/ver/8509/openkomodo/trunk/src/chrome/komodo/content/pref/pref-alllangfonts.p.xul
+END
+pref-nodejs.js
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/!svn/ver/10168/openkomodo/trunk/src/chrome/komodo/content/pref/pref-nodejs.js
+END
+file-advanced-properties.js
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/!svn/ver/3840/openkomodo/trunk/src/chrome/komodo/content/pref/file-advanced-properties.js
+END
+pref-editor.xul
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/!svn/ver/7843/openkomodo/trunk/src/chrome/komodo/content/pref/pref-editor.xul
+END
+pref-winInteg.js
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/!svn/ver/9238/openkomodo/trunk/src/chrome/komodo/content/pref/pref-winInteg.js
+END
+pref-jshint-options.js
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/!svn/ver/10148/openkomodo/trunk/src/chrome/komodo/content/pref/pref-jshint-options.js
+END
+file-permissions.xul
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/!svn/ver/4893/openkomodo/trunk/src/chrome/komodo/content/pref/file-permissions.xul
+END
+pref-syntax-checking.xul
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/!svn/ver/10148/openkomodo/trunk/src/chrome/komodo/content/pref/pref-syntax-checking.xul
+END
+Conscript
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/!svn/ver/10127/openkomodo/trunk/src/chrome/komodo/content/pref/Conscript
+END
+pref-syntax-checking.js
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/!svn/ver/10148/openkomodo/trunk/src/chrome/komodo/content/pref/pref-syntax-checking.js
+END
+editenvironvar.xul
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/9111/openkomodo/trunk/src/chrome/komodo/content/pref/editenvironvar.xul
+END
+pref-intl.js
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/8762/openkomodo/trunk/src/chrome/komodo/content/pref/pref-intl.js
+END
+pref-javascript.js
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/!svn/ver/10067/openkomodo/trunk/src/chrome/komodo/content/pref/pref-javascript.js
+END
+pref-languages.js
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/!svn/ver/9117/openkomodo/trunk/src/chrome/komodo/content/pref/pref-languages.js
+END
+pref-indentation.xul
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/!svn/ver/8762/openkomodo/trunk/src/chrome/komodo/content/pref/pref-indentation.xul
+END
+pref-web.xul
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/!svn/ver/10009/openkomodo/trunk/src/chrome/komodo/content/pref/pref-web.xul
+END
+file-properties.p.xul
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/!svn/ver/8789/openkomodo/trunk/src/chrome/komodo/content/pref/file-properties.p.xul
+END
+pref-newfiles.p.js
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/2317/openkomodo/trunk/src/chrome/komodo/content/pref/pref-newfiles.p.js
+END
+pref-keys.js
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/9110/openkomodo/trunk/src/chrome/komodo/content/pref/pref-keys.js
+END
+pref-python.xul
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/!svn/ver/9352/openkomodo/trunk/src/chrome/komodo/content/pref/pref-python.xul
+END
+pref-winInteg.xul
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/!svn/ver/7017/openkomodo/trunk/src/chrome/komodo/content/pref/pref-winInteg.xul
+END
+pref-environ.js
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/!svn/ver/2317/openkomodo/trunk/src/chrome/komodo/content/pref/pref-environ.js
+END
+project-folderImport.js
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/!svn/ver/6998/openkomodo/trunk/src/chrome/komodo/content/pref/project-folderImport.js
+END

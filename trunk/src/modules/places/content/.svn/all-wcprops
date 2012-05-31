@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/!svn/ver/10067/openkomodo/trunk/src/modules/places/content
+END
+manageViewFilters.js
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/!svn/ver/7032/openkomodo/trunk/src/modules/places/content/manageViewFilters.js
+END
+project_places.js
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/!svn/ver/10067/openkomodo/trunk/src/modules/places/content/project_places.js
+END
+pref_places.xul
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/!svn/ver/8030/openkomodo/trunk/src/modules/places/content/pref_places.xul
+END
+widgets-places.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/!svn/ver/8772/openkomodo/trunk/src/modules/places/content/widgets-places.xml
+END
+pref_overlay_places.xul
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/!svn/ver/6465/openkomodo/trunk/src/modules/places/content/pref_overlay_places.xul
+END
+places_panel.xul
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/9951/openkomodo/trunk/src/modules/places/content/places_panel.xul
+END
+pref_places.js
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/!svn/ver/8541/openkomodo/trunk/src/modules/places/content/pref_places.js
+END
+overlay_places.xul
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/!svn/ver/8181/openkomodo/trunk/src/modules/places/content/overlay_places.xul
+END
+projectCommandHelper.js
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/!svn/ver/9182/openkomodo/trunk/src/modules/places/content/projectCommandHelper.js
+END
+project_places_SPV.js
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/!svn/ver/9942/openkomodo/trunk/src/modules/places/content/project_places_SPV.js
+END
+places.js
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/9960/openkomodo/trunk/src/modules/places/content/places.js
+END
+manageViewFilters.xul
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/!svn/ver/6470/openkomodo/trunk/src/modules/places/content/manageViewFilters.xul
+END
+placeController.js
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/!svn/ver/8773/openkomodo/trunk/src/modules/places/content/placeController.js
+END

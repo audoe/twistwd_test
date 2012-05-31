@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/973/openkomodo/trunk/test/find_data/projtest/inside/insidedir/a/b
+END
+b.txt
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/973/openkomodo/trunk/test/find_data/projtest/inside/insidedir/a/b/b.txt
+END

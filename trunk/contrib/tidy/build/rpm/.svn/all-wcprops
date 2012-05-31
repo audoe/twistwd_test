@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/!svn/ver/2297/openkomodo/trunk/contrib/tidy/build/rpm
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/!svn/ver/14/openkomodo/trunk/contrib/tidy/build/rpm/readme.txt
+END
+tidy.spec
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/!svn/ver/2297/openkomodo/trunk/contrib/tidy/build/rpm/tidy.spec
+END

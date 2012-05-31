@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/!svn/ver/4769/openkomodo/trunk/contrib/pycrypto/lib/Crypto/Random/Fortuna
+END
+FortunaAccumulator.py
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/!svn/ver/4769/openkomodo/trunk/contrib/pycrypto/lib/Crypto/Random/Fortuna/FortunaAccumulator.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/!svn/ver/4769/openkomodo/trunk/contrib/pycrypto/lib/Crypto/Random/Fortuna/__init__.py
+END
+FortunaGenerator.py
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/!svn/ver/4769/openkomodo/trunk/contrib/pycrypto/lib/Crypto/Random/Fortuna/FortunaGenerator.py
+END
+SHAd256.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/!svn/ver/4769/openkomodo/trunk/contrib/pycrypto/lib/Crypto/Random/Fortuna/SHAd256.py
+END

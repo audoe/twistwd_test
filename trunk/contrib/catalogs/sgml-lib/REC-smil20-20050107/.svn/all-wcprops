@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/30/openkomodo/trunk/contrib/catalogs/sgml-lib/REC-smil20-20050107
+END
+SMIL-link.mod
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/!svn/ver/17/openkomodo/trunk/contrib/catalogs/sgml-lib/REC-smil20-20050107/SMIL-link.mod
+END
+smil-model-1.mod
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/!svn/ver/17/openkomodo/trunk/contrib/catalogs/sgml-lib/REC-smil20-20050107/smil-model-1.mod
+END
+smil-qname-1.mod
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/!svn/ver/17/openkomodo/trunk/contrib/catalogs/sgml-lib/REC-smil20-20050107/smil-qname-1.mod
+END
+SMIL20.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/!svn/ver/17/openkomodo/trunk/contrib/catalogs/sgml-lib/REC-smil20-20050107/SMIL20.dtd
+END
+SMIL20Basic.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/!svn/ver/14/openkomodo/trunk/contrib/catalogs/sgml-lib/REC-smil20-20050107/SMIL20Basic.dtd
+END
+smil-attribs-1.mod
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/!svn/ver/17/openkomodo/trunk/contrib/catalogs/sgml-lib/REC-smil20-20050107/smil-attribs-1.mod
+END
+SMIL-layout.mod
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/!svn/ver/17/openkomodo/trunk/contrib/catalogs/sgml-lib/REC-smil20-20050107/SMIL-layout.mod
+END
+SMIL-media.mod
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/!svn/ver/17/openkomodo/trunk/contrib/catalogs/sgml-lib/REC-smil20-20050107/SMIL-media.mod
+END
+SMIL-control.mod
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/!svn/ver/17/openkomodo/trunk/contrib/catalogs/sgml-lib/REC-smil20-20050107/SMIL-control.mod
+END
+SMIL-struct.mod
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/!svn/ver/17/openkomodo/trunk/contrib/catalogs/sgml-lib/REC-smil20-20050107/SMIL-struct.mod
+END
+SMIL-anim.mod
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/!svn/ver/17/openkomodo/trunk/contrib/catalogs/sgml-lib/REC-smil20-20050107/SMIL-anim.mod
+END
+SMIL-timing.mod
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/!svn/ver/17/openkomodo/trunk/contrib/catalogs/sgml-lib/REC-smil20-20050107/SMIL-timing.mod
+END
+SMIL-transition.mod
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/!svn/ver/17/openkomodo/trunk/contrib/catalogs/sgml-lib/REC-smil20-20050107/SMIL-transition.mod
+END
+smil-framework-1.mod
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/!svn/ver/17/openkomodo/trunk/contrib/catalogs/sgml-lib/REC-smil20-20050107/smil-framework-1.mod
+END
+smil-datatypes-1.mod
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/!svn/ver/14/openkomodo/trunk/contrib/catalogs/sgml-lib/REC-smil20-20050107/smil-datatypes-1.mod
+END
+SMIL-metainformation.mod
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/!svn/ver/17/openkomodo/trunk/contrib/catalogs/sgml-lib/REC-smil20-20050107/SMIL-metainformation.mod
+END

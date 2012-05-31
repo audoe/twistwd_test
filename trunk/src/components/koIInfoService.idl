@@ -1,0 +1,82 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
+ * The contents of this file are subject to the Mozilla Public License
+ * Version 1.1 (the "License"); you may not use this file except in
+ * compliance with the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ * 
+ * Software distributed under the License is distributed on an "AS IS"
+ * basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+ * License for the specific language governing rights and limitations
+ * under the License.
+ * 
+ * The Original Code is Komodo code.
+ * 
+ * The Initial Developer of the Original Code is ActiveState Software Inc.
+ * Portions created by ActiveState Software Inc are Copyright (C) 2000-2007
+ * ActiveState Software Inc. All Rights Reserved.
+ * 
+ * Contributor(s):
+ *   ActiveState Software Inc
+ * 
+ * Alternatively, the contents of this file may be used under the terms of
+ * either the GNU General Public License Version 2 or later (the "GPL"), or
+ * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the MPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK ***** */
+
+#include "nsISupports.idl"
+
+// Provide general (read-only) information about a Komodo build/installation
+[scriptable, uuid(0AB1F57E-B2BD-4796-B579-D57CBA4E795D)]
+interface koIInfoService : nsISupports {
+    //---- Platform information. (XXX This should be minimized.)
+    readonly attribute string platform;
+    readonly attribute boolean isWindows; // DEPRECATED
+
+    // exports from platform.py (DEPRECATED)
+    readonly attribute string osSystem;   // e.g. Linux, Windows
+    readonly attribute string osRelease;  // "NT", "2000", "2.2.0"
+    readonly attribute string osVersion;
+
+    //---- Generic Komodo information.
+    readonly attribute string version;
+    readonly attribute string buildNumber;  
+    readonly attribute string buildASCTime;
+    readonly attribute string buildPlatform;
+    readonly attribute wstring mozBinDir;  
+
+    // "debug" or "release" build of Komodo and Mozilla
+    readonly attribute string buildType;
+    // "dev" or "full", note that this isn't really the right way to
+    // distinguish versus whether internal features should be turned on.
+    // It is currently the *best* such way, though.
+    readonly attribute string buildFlavour;
+    readonly attribute string productType;          // 'edit' or 'ide'
+    readonly attribute string prettyProductType;    // 'Edit' or 'IDE'
+
+    // Indicates whether Komodo is operating in a non-interactive mode,
+    // e.g. when the performance metric suite is being run via "bk
+    // perf". This allows some parts of Komodo to avoid halting
+    // operation with "Can I do you this favour?" dialogs. Note that
+    // this is NOT enforced at all, i.e. there is guarantee that Komodo
+    // won't hang waiting for user input when in this mode.
+    //
+    // Currently non-interactive mode is intiated if the
+    // KOMODO_NONINTERACTIVE environment variable is non-zero.
+    readonly attribute boolean nonInteractiveMode;
+    
+    // This belongs better in a koIWindowService.
+    // Tracks a set of used IDs (small integers)
+    long nextWindowNum();
+    void setUsedWindowNum(in long num);  // used for workspace restore
+};

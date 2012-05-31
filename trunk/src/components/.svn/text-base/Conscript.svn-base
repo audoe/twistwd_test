@@ -1,0 +1,345 @@
+#!/usr/local/bin/perl
+# ***** BEGIN LICENSE BLOCK *****
+# Version: MPL 1.1/GPL 2.0/LGPL 2.1
+# 
+# The contents of this file are subject to the Mozilla Public License
+# Version 1.1 (the "License"); you may not use this file except in
+# compliance with the License. You may obtain a copy of the License at
+# http://www.mozilla.org/MPL/
+# 
+# Software distributed under the License is distributed on an "AS IS"
+# basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+# License for the specific language governing rights and limitations
+# under the License.
+# 
+# The Original Code is Komodo code.
+# 
+# The Initial Developer of the Original Code is ActiveState Software Inc.
+# Portions created by ActiveState Software Inc are Copyright (C) 2000-2007
+# ActiveState Software Inc. All Rights Reserved.
+# 
+# Contributor(s):
+#   ActiveState Software Inc
+# 
+# Alternatively, the contents of this file may be used under the terms of
+# either the GNU General Public License Version 2 or later (the "GPL"), or
+# the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+# in which case the provisions of the GPL or the LGPL are applicable instead
+# of those above. If you wish to allow use of your version of this file only
+# under the terms of either the GPL or the LGPL, and not to allow others to
+# use your version of this file under the terms of the MPL, indicate your
+# decision by deleting the provisions above and replace them with the notice
+# and other provisions required by the GPL or the LGPL. If you do not delete
+# the provisions above, a recipient may use your version of this file under
+# the terms of any one of the MPL, the GPL or the LGPL.
+# 
+# ***** END LICENSE BLOCK *****
+
+
+Import(
+    'cons',
+    'build',
+    'platform',
+    'ranRegxpcomStateFileName',
+    'mozComponentsDir',
+    'mozIdlIncludePath',
+    'idlExportDir',
+    'supportDir',
+    'mozChromeDir',
+    'mozResourcesDir',
+    'mozBin',
+    'mozExe',
+    'mozSrc',
+    'version',
+    'buildNum',
+    'buildType',
+    'buildFlavour',
+    'productType',
+    'prettyProductType',
+    'komodoPythonUtilsDir',
+    'komodoAppDataDirName',
+    'komodoShortVersion',
+    'buildASCTime',
+    'buildPlatform',
+    'unsiloedPythonExe',
+    'mozVersion',
+    'withCrypto',
+    'sdkDir',
+);
+
+# a python implementation of nsIObserverService
+# does not need an idl, it implements nsIObserverService only
+$cons->InstallXpcomComponent('koObserverService.py');
+$cons->Install($idlExportDir, 'koIObserverService.idl');
+$cons->BuildAndInstallXpt('koIObserverService.idl');
+
+# asIJSProxy
+$cons->InstallXpcomComponent('asJSDialogProxy.js',
+                             {'@activestate.com/asDialogProxy;1' => "{57002286-C22C-4e42-BCFC-DE91AF24B5CA}"});
+$cons->Install($idlExportDir, 'asIJSDialogProxy.idl');
+$cons->BuildAndInstallXpt('asIJSDialogProxy.idl');
+
+$cons->Preprocess('asCommandLineHandler.p.js',
+                  'asCommandLineHandler.js',
+                  {"USE_BETA_LICENSE" => $useBetaLicense});
+$cons->InstallXpcomComponent('asCommandLineHandler.js',
+                             {'@activestate.com/komodo/final-clh;1' => "{07DCEAC7-31F6-11DA-BC61-000D935D3368}"},
+                             ["command-line-handler", "m-komodo", '@activestate.com/komodo/final-clh;1']);
+
+# koIInitServive
+$cons->Preprocess('koInitService.p.py',
+                  'koInitService.py');
+$cons->InstallXpcomComponent('koInitService.py');
+$cons->Install($idlExportDir, 'koIInitService.idl');
+$cons->BuildAndInstallXpt('koIInitService.idl');
+
+# koIFinalizeServive
+$cons->InstallXpcomComponent('koFinalizeService.py');
+$cons->Install($idlExportDir, 'koIFinalizeService.idl');
+$cons->BuildAndInstallXpt('koIFinalizeService.idl');
+
+# koIDirs
+$cons->Preprocess('koDirs.p.py',
+                  'koDirs.py',
+                  {"PP_KO_APPDATADIR_NAME" => $komodoAppDataDirName,
+                   "PP_KO_VER" => $komodoShortVersion});
+$cons->InstallXpcomComponent('koDirs.py');
+$cons->Install($idlExportDir, 'koIDirs.idl');
+$cons->BuildAndInstallXpt('koIDirs.idl');
+
+# koIDiffService
+$cons->InstallXpcomComponent('koDiffService.py');
+$cons->Install($idlExportDir, 'koIDiffService.idl');
+$cons->BuildAndInstallXpt('koIDiffService.idl');
+
+# koIFile
+$cons->InstallXpcomComponent('koFile.py');
+$cons->Install($idlExportDir, 'koIFile.idl');
+$cons->BuildAndInstallXpt('koIFile.idl');
+
+# koIEnviron
+$cons->InstallXpcomComponent('koEnviron.py');
+$cons->Install($idlExportDir, 'koIEnviron.idl');
+$cons->BuildAndInstallXpt('koIEnviron.idl');
+
+# koIWebbrowser
+$cons->InstallXpcomComponent('koWebbrowser.py');
+$cons->Install($idlExportDir, 'koIWebbrowser.idl');
+$cons->BuildAndInstallXpt('koIWebbrowser.idl');
+
+# koISysUtils
+
+if ($platform eq "win") {
+    $cons->InstallXpcomComponent('koSysUtils.py',
+                                 {'@activestate.com/koSysUtils;1' => "{56F686E0-A989-4714-A5D6-D77BC850C5C0}",
+                                  '@activestate.com/koSystemColorPicker;1' => "{a482cb10-823b-4142-9f39-65991a94f0fa}"},
+                                 ["colorpicker", "windows_system_color_picker", '@activestate.com/koSystemColorPicker;1']);
+} elsif ($platform eq "darwin") {
+    $cons->InstallXpcomComponent('koSysUtils.py',
+                                 {'@activestate.com/koSysUtils;1' => "{56F686E0-A989-4714-A5D6-D77BC850C5C0}",
+                                  '@activestate.com/koSystemColorPicker;1' => "{434c3a68-5485-4b27-a852-e220358333f3}"},
+                                 ["colorpicker", "macosx_system_color_picker", '@activestate.com/koSystemColorPicker;1']);
+} else {
+    $cons->InstallXpcomComponent('koSysUtils.py');
+}
+$cons->Install($idlExportDir, 'koISysUtils.idl');
+$cons->BuildAndInstallXpt('koISysUtils.idl');
+
+# koIUrlUtils
+$cons->InstallXpcomComponent('koUrlUtils.py');
+$cons->Install($idlExportDir, 'koIUrlUtils.idl');
+$cons->BuildAndInstallXpt('koIUrlUtils.idl');
+
+# koIOs
+$cons->InstallXpcomComponent('koOs.py');
+$cons->Install($idlExportDir, 'koIOs.idl');
+$cons->BuildAndInstallXpt('koIOs.idl');
+
+# koIUrllib
+$cons->InstallXpcomComponent('koUrllib.py');
+$cons->Install($idlExportDir, 'koIUrllib.idl');
+$cons->BuildAndInstallXpt('koIUrllib.idl');
+
+# koIInfoServive
+my %ppInfo = (
+    'PP_VERSION' => $version,
+    'PP_BUILD_NUMBER' => $buildNum,
+    'PP_BUILD_ASC_TIME' => $buildASCTime,
+    'PP_BUILD_PLAT' => $buildPlatform,              # avoid PLATFORM var
+    'PP_BUILD_TYPE' => $buildType,
+    'PP_BUILD_FLAV' => $buildFlavour,               # avoid BUILD_FLAVOUR var
+    'PP_MOZ_BIN_DIR' => $mozBin,
+    'PP_PROD_TYPE' => $productType,                 # avoid PRODUCT_TYPE var
+    'PP_PRETTY_PROD_TYPE' => $prettyProductType,    # avoid PRODUCT_TYPE var
+);
+$cons->Preprocess('koInfoService.p.py', 'koInfoService.py', \%ppInfo);
+$cons->InstallXpcomComponent('koInfoService.py');
+$cons->Install($idlExportDir, 'koIInfoService.idl');
+$cons->BuildAndInstallXpt('koIInfoService.idl');
+
+# koIPythonProfiler
+$cons->InstallXpcomComponent('koPythonProfiler.py');
+$cons->Install($idlExportDir, 'koIPythonProfiler.idl');
+$cons->BuildAndInstallXpt('koIPythonProfiler.idl');
+
+# koIEncoding
+$cons->InstallXpcomComponent('koEncoding.py');
+$cons->Install($idlExportDir, 'koIEncoding.idl');
+$cons->BuildAndInstallXpt('koIEncoding.idl',
+                          'koIEncodingServices.idl');
+
+# koIEncodingServices
+$cons->Preprocess('koEncodingServices.p.py',
+                  'koEncodingServices.py');
+$cons->InstallXpcomComponent('koEncodingServices.py');
+$cons->Install($idlExportDir, 'koIEncodingServices.idl');
+$cons->BuildAndInstallXpt('koIEncodingServices.idl');
+
+# koIHierarchyItem
+$cons->Install($idlExportDir, 'koIHierarchyItem.idl');
+$cons->BuildAndInstallXpt('koIHierarchyItem.idl');
+
+## Remote file handling
+# Remote file information
+$cons->InstallXpcomComponent('koRemoteFileInfo.py');
+$cons->Install($idlExportDir, 'koIRemoteFileInfo.idl');
+$cons->BuildAndInstallXpt('koIRemoteFileInfo.idl');
+# Library for remote files
+$cons->Preprocess('remotefilelib.p.py',
+                  'remotefilelib.py');
+$cons->InstallPythonUtility('remotefilelib.py');
+# Ftp handling
+$cons->InstallXpcomComponent('koFTP.py');
+$cons->Install($idlExportDir, 'koIRemoteConnection.idl');
+$cons->BuildAndInstallXpt('koIRemoteConnection.idl');
+
+# Enable SFTP and SCP if crypto is enabled
+if ($withCrypto) {
+    # Sftp handling
+    $cons->InstallXpcomComponent('koSFTP.py');
+    # Scp handling
+    $cons->InstallXpcomComponent('koSCP.py');
+}
+
+# Remote connection service
+$cons->InstallXpcomComponent('koRemoteConnectionService.py');
+$cons->Install($idlExportDir, 'koIRemoteConnectionService.idl');
+$cons->BuildAndInstallXpt('koIRemoteConnectionService.idl');
+## End of Remote file handling
+
+# koIStatusMessage
+$cons->InstallXpcomComponent('koStatusMessage.py');
+$cons->Install($idlExportDir, 'koIStatusMessage.idl');
+$cons->BuildAndInstallXpt('koIStatusMessage.idl');
+
+# koIAppInfo
+$cons->InstallXpcomComponent('koAppInfo.py');
+$cons->Install($idlExportDir, 'koIAppInfo.idl');
+$cons->BuildAndInstallXpt('koIAppInfo.idl');
+
+# koIFileLoggingService
+$cons->InstallXpcomComponent('koFileLoggingService.py');
+$cons->Install($idlExportDir, 'koIFileLoggingService.idl');
+$cons->BuildAndInstallXpt('koIFileLoggingService.idl');
+
+# koILastErrorService
+$cons->InstallXpcomComponent('koLastErrorService.py');
+$cons->Install($idlExportDir, 'koILastErrorService.idl');
+$cons->BuildAndInstallXpt('koILastErrorService.idl');
+
+# koIFileStatusService
+$cons->Preprocess('koFileStatusService.p.py',
+                  'koFileStatusService.py');
+$cons->InstallXpcomComponent('koFileStatusService.py');
+$cons->Install($idlExportDir, 'koIFileStatusService.idl');
+$cons->BuildAndInstallXpt('koIFileStatusService.idl');
+
+# koIProgress stuff
+$cons->Install($idlExportDir, 'koIProgress.idl');
+$cons->BuildAndInstallXpt('koIProgress.idl');
+
+# koIWindowsIntegration - Windows system file associations, etc.
+if ($platform eq "win") {
+    $cons->Preprocess('koWindowsIntegration.p.py',
+                      'koWindowsIntegration.py');
+    $cons->InstallXpcomComponent('koWindowsIntegration.py');
+    $cons->Install($idlExportDir, 'koIWindowsIntegration.idl');
+    $cons->BuildAndInstallXpt('koIWindowsIntegration.idl');
+}
+
+# koIPythonStdLib
+$cons->InstallXpcomComponent('koPythonStdLib.py');
+$cons->Install($idlExportDir, 'koIPythonStdLib.idl');
+$cons->BuildAndInstallXpt('koIPythonStdLib.idl');
+
+# koITextUtils
+$cons->InstallXpcomComponent('koTextUtils.py');
+$cons->Install($idlExportDir, 'koITextUtils.idl');
+$cons->BuildAndInstallXpt('koITextUtils.idl');
+
+# koIFeatureStatusService - a service to determine the functional status
+#   of major features within Komodo.
+$cons->Preprocess('koFeatureStatusService.p.py',
+                  'koFeatureStatusService.py');
+$cons->InstallXpcomComponent('koFeatureStatusService.py');
+$cons->Install($idlExportDir, 'koIFeatureStatusService.idl');
+$cons->BuildAndInstallXpt('koIFeatureStatusService.idl');
+
+
+# koTextboxAutoComplete - implementations of nsIAutoCompleteSearch
+$cons->InstallXpcomComponent('koTextboxAutoComplete.py');
+$cons->Install($idlExportDir, 'koITextboxAutoComplete.idl');
+$cons->BuildAndInstallXpt('koITextboxAutoComplete.idl');
+
+# koIMacroService - a service for running macros
+$cons->InstallXpcomComponent('koMacroService.py');
+$cons->Install($idlExportDir, 'koIMacroService.idl');
+$cons->BuildAndInstallXpt('koIMacroService.idl');
+
+# koISciUtils - a service for working with ISciMoz's and scintilla's
+$cons->InstallPythonUtility('sciutils.py');
+$cons->InstallXpcomComponent('koSciUtils.py');
+$cons->Install($idlExportDir, 'koISciUtils.idl');
+$cons->BuildAndInstallXpt('koISciUtils.idl');
+
+# koIXMLCatalogService
+$cons->InstallXpcomComponent('koXMLCatalogService.py');
+$cons->Install($idlExportDir, 'koIXMLCatalogService.idl');
+$cons->BuildAndInstallXpt('koIXMLCatalogService.idl');
+
+$cons->Install($idlExportDir, 'koILoggingService.idl');
+$cons->BuildAndInstallXpt('koILoggingService.idl');
+$cons->InstallXpcomComponent('koLoggingService.py');
+
+# koIColorPicker
+$cons->BuildAndInstallXpt('koIColorPicker.idl');
+
+# Komodo memory reporter.
+$cons->InstallXpcomComponent('koMemoryReporter.py');
+
+# koIWindowManagerUtils - things to do with platform-native windows
+$cons->BuildAndInstallXpt('koIWindowManagerUtils.idl');
+$cons->Install($idlExportDir, 'koIWindowManagerUtils.idl');
+$cons->InstallXpcomComponent('koWindowManagerUtils.py');
+
+## Install test cases.
+#$cons->Install("$supportDir/test", "test_koIndexer.py");
+#$cons->Install("$supportDir/test", "test_koObserverService.py");
+
+# XPCOM component registration (Gecko 2.0+)
+my $dllName = "libpyloader.so";
+if ($platform eq "win") {
+    $dllName = "pyloader.dll";
+} elsif ($platform eq "darwin") {
+    $dllName = "libpyloader.dylib";
+}
+$cons->Command("$mozComponentsDir/komodo.manifest",
+               "$sdkDir/pylib/chromereg.py",
+               "$mozResourcesDir/chrome.manifest",
+               "$mozExe",
+               qq(
+                 $unsiloedPythonExe %1 %0 "$mozComponentsDir/$dllName"
+                 $unsiloedPythonExe %1 %2 %0 "components"
+               ));
+$cons->Precious("$mozComponentsDir/komodo.manifest");
+$cons->Precious("$mozBin/chrome.manifest");

@@ -21,3 +21,4 @@ t1=[i[len(i)-1:] for i in tmp]
 lia=[''.join((t1[i],t1[i+1])) for i in range(0,len(t1)-1,2)]
 print 'ip is %s'%ip
 print 'mac is %s'%(':'.join(lia))
+

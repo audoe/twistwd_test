@@ -1,0 +1,92 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
+ * The contents of this file are subject to the Mozilla Public License
+ * Version 1.1 (the "License"); you may not use this file except in
+ * compliance with the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ * 
+ * Software distributed under the License is distributed on an "AS IS"
+ * basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+ * License for the specific language governing rights and limitations
+ * under the License.
+ * 
+ * The Original Code is Komodo code.
+ * 
+ * The Initial Developer of the Original Code is ActiveState Software Inc.
+ * Portions created by ActiveState Software Inc are Copyright (C) 2000-2007
+ * ActiveState Software Inc. All Rights Reserved.
+ * 
+ * Contributor(s):
+ *   ActiveState Software Inc
+ * 
+ * Alternatively, the contents of this file may be used under the terms of
+ * either the GNU General Public License Version 2 or later (the "GPL"), or
+ * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the MPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK ***** */
+
+#include "nsISupports.idl"
+#include "nsIURI.idl"
+#include "nsIFile.idl"
+
+/**
+ * All of these interfaces are ** DEPRECATED ** since Komodo 7.0.0.
+ */
+
+// Avoid including IDL for interfaces where internal knowledge of
+// the structure is not required.  This avoids having to change
+// every IDL file that includes us to get around our recusive
+// dependancy problem.
+interface koIRemoteFileInfo;
+   
+// A simple file.
+[deprecated, scriptable, uuid(BA0E1CF0-F56D-4679-B609-AA4B02C53CE8)]
+interface koIFile : nsISupports {
+  [deprecated] void init(in wstring fileName, in string mode);
+  [deprecated] void read(in unsigned long aCount, out unsigned long count, [array, size_is(count), retval] out octet text);
+  [deprecated] void write([array, size_is(count)] in octet text, in unsigned long count);
+  [deprecated] void puts(in AString text); // get around xpconnect limitations
+  [deprecated] void readline(in unsigned long aCount, out unsigned long count, [array, size_is(count), retval] out octet text);
+  [deprecated] void flush();
+  [deprecated] void close();
+  [deprecated] readonly attribute nsIFile file;
+};
+
+// A file addressed by URI.
+[deprecated, scriptable, uuid(332BE465-8120-43a8-8C32-02FD9F24F7B0)]
+interface koIURIFile : koIFile {
+  // just like the parent 'init' function, but accepting a URI object instead of string.
+  [deprecated] void initURI(in nsIURI uri, in string mode);
+};
+
+// A local file.
+[deprecated, scriptable, uuid(9C1A72FB-002F-43de-9E45-BD8C23C07076)]
+interface koILocalFile : koIFile {
+};
+
+// A FTP file.
+[deprecated, scriptable, uuid(6130195E-4B6C-4214-BF2C-B04C6264440F)]
+interface koIFTPFile : koIFile {
+    [deprecated] void initServer(in wstring fileName, in string mode, in wstring server_alias);
+    [deprecated] void refreshStats();
+    [deprecated] readonly attribute boolean isWritable;
+    [deprecated] readonly attribute boolean isReadable;
+    [deprecated] readonly attribute koIRemoteFileInfo rfinfo;
+};
+
+// A temp-file factory.
+[deprecated, scriptable, uuid(783a25f1-f23c-4773-97cc-832fcae944f6)]
+interface koITempFileFactory : nsISupports {
+    [deprecated] wstring MakeTempName(in wstring suffix);
+    [deprecated] koIFile MakeTempFile(in wstring suffix, in string mode);
+    [deprecated] koIFile MakeTempFileInDir(in wstring dir, in wstring suffix, in string mode);
+};

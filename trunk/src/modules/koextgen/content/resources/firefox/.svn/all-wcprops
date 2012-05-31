@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/!svn/ver/9915/openkomodo/trunk/src/modules/koextgen/content/resources/firefox
+END
+overlay.xul
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/!svn/ver/9290/openkomodo/trunk/src/modules/koextgen/content/resources/firefox/overlay.xul
+END
+chrome.p.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/!svn/ver/9915/openkomodo/trunk/src/modules/koextgen/content/resources/firefox/chrome.p.manifest
+END
+install.rdf
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/!svn/ver/9290/openkomodo/trunk/src/modules/koextgen/content/resources/firefox/install.rdf
+END
+chrome.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/!svn/ver/9290/openkomodo/trunk/src/modules/koextgen/content/resources/firefox/chrome.manifest
+END

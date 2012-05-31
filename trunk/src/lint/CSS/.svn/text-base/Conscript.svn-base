@@ -1,0 +1,177 @@
+#!/usr/local/bin/perl
+# ***** BEGIN LICENSE BLOCK *****
+# Version: MPL 1.1/GPL 2.0/LGPL 2.1
+# 
+# The contents of this file are subject to the Mozilla Public License
+# Version 1.1 (the "License"); you may not use this file except in
+# compliance with the License. You may obtain a copy of the License at
+# http://www.mozilla.org/MPL/
+# 
+# Software distributed under the License is distributed on an "AS IS"
+# basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+# License for the specific language governing rights and limitations
+# under the License.
+# 
+# The Original Code is Komodo code.
+# 
+# The Initial Developer of the Original Code is ActiveState Software Inc.
+# Portions created by ActiveState Software Inc are Copyright (C) 2000-2007
+# ActiveState Software Inc. All Rights Reserved.
+# 
+# Contributor(s):
+#   ActiveState Software Inc
+# 
+# Alternatively, the contents of this file may be used under the terms of
+# either the GNU General Public License Version 2 or later (the "GPL"), or
+# the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+# in which case the provisions of the GPL or the LGPL are applicable instead
+# of those above. If you wish to allow use of your version of this file only
+# under the terms of either the GPL or the LGPL, and not to allow others to
+# use your version of this file under the terms of the MPL, indicate your
+# decision by deleting the provisions above and replace them with the notice
+# and other provisions required by the GPL or the LGPL. If you do not delete
+# the provisions above, a recipient may use your version of this file under
+# the terms of any one of the MPL, the GPL or the LGPL.
+# 
+# ***** END LICENSE BLOCK *****
+
+Import(
+    'cons',
+    'build',
+    'idlExportDir',
+    'mozComponentsDir',
+    'ranRegxpcomStateFileName',
+    'mozIncludePath',
+    'mozIdlIncludePath',
+    'mozLibPath',
+    'mozSrc',
+    'mozDevelDist',
+    'mozObjDir',
+    'platform',
+    'architecture',
+    'buildType',
+    'supportDir',
+    'withSymbols',
+    'unsiloedPerlExe',
+    'mozVersionNumber',
+    'mozDist',
+    'sdkDir',
+);
+
+
+# koICSSParser
+$cons->Install($idlExportDir, 'koICSSParser.idl');
+$cons->BuildAndInstallXpt('koICSSParser.idl');
+$cons->BuildHeaderFromIdl('koICSSParser.idl');
+
+if ($platform eq "win") {
+    my $LDFLAGS = "";
+    my $CXXFLAGS = "";
+    foreach my $includeDir (split(';', $mozIncludePath)) {
+        $CXXFLAGS .= " -I$includeDir";
+    }
+    $CXXFLAGS .= " -I$mozDevelDist/include/content" .
+        " -I$mozDevelDist/include/necko" .
+        " -I$mozDevelDist/include/layout";
+
+    # override the construction environment as necessary:
+    #   - specify a DLL
+    #   - link in some Mozilla libs
+    #   - CXXFLAGS is basically a copy of the that obtained via Mozilla's
+    #     build makefiles, huge, mostly probably not necessary
+    foreach my $libDir (split(';', $mozLibPath)) {
+        $LDFLAGS .= " /libpath:$libDir";
+    }
+
+    $CXXFLAGS .= ' -I./include';
+    $CXXFLAGS .= ' -I./include/private';
+    $LDFLAGS .= " xpcom.lib nspr4.lib xpcom_core.lib ";
+    $LDFLAGS .= " /dll";
+    $CXXFLAGS .= " -DLAYERS -W3 -D_WINDOWS -DWIN32 -DMOZILLA_INTERNAL_API=1 ";
+    $CXXFLAGS .= " -D_IMPL_NS_LAYOUT -DMOZ_VERSION=$mozVersionNumber";
+    $CXXFLAGS .= " /FI$mozObjDir\\mozilla-config.h";
+
+    if ($buildType eq 'debug') {
+        $LDFLAGS .= " /DEBUG";
+        $CXXFLAGS .= " /Od -Zi  -DDEBUG  -D_DEBUG -MDd";
+    } else {
+        $CXXFLAGS .= " /Ox -DNDEBUG -D_NDEBUG -MD";
+        # LDFLAGS is fine!
+    }
+    $dllName = 'koCSSParser.dll';
+
+    $cons->Command($dllName,
+        "koCSSParser.cpp",
+        "koICSSParser.idl",
+        "koICSSParser.h",
+        qq(
+            pwd || exit 0
+            cl /nologo $CXXFLAGS /Fo%1:b.obj /c %1
+            link /nologo $LDFLAGS /out:%0 %1:b.obj
+        )
+    );
+}
+
+else {
+    %consLocal = $cons->copy();
+
+    $consLocal{'LIBPATH'} = $mozLibPath;
+    $consLocal{'CPPPATH'} = "$mozIncludePath";
+    $consLocal{'CXXFLAGS'} = $consLocal{ENV}{'CXXFLAGS'};
+    $consLocal{'CXXFLAGS'} .= " -I$mozDevelDist/include/content" .
+        " -I$mozDevelDist/include/necko" .
+        " -I$mozDevelDist/include/layout";
+    $consLocal{'LDFLAGS'} = $consLocal{ENV}{'LDFLAGS'};
+
+    
+
+    $consLocal{'CXX'} = "g++";
+    $consLocal{'CC'} = "gcc";
+    $consLocal{'LIBS'} = "-lxpcom -lnspr4 -lplds4 -lplc4 -lxpcom_core ";
+    if ($platform eq "darwin") {
+	$consLocal{'LIBS'} .= " -Wl,-dead_strip -L$mozDevelDist/bin ";
+	$consLocal{'LIBS'} .= " -Wl,-executable_path,$mozDevelDist/bin ";
+	#TODO: should these two be used for Linux?
+	$consLocal{'LIBS'} .= " -L$mozDevelDist/lib ";
+	$consLocal{'LIBS'} .= " $mozDevelDist/lib/libxpcomglue.a ";
+        $consLocal{'LDFLAGS'} .= " -framework Carbon -bundle";
+    } else {
+        $consLocal{'LDFLAGS'} .= " -fPIC -shared";
+    }
+    $consLocal{'CXXFLAGS'} .= " -fno-rtti -DLAYERS -Wall -DMOZILLA_INTERNAL_API=1 -D_IMPL_NS_LAYOUT";
+    $consLocal{'CXXFLAGS'} .= " -include $mozObjDir/mozilla-config.h -DMOZ_VERSION=$mozVersionNumber";
+
+    if ($platform eq "solaris" or ($platform eq "darwin" and $architecture ne "x86")) {
+
+	# big-endian byte order indicator to license code
+        $consLocal{'CXXFLAGS'} .= " -DBYTEORDER=0x4321";
+    }
+    # On Solaris, you have to use the -mimpure-text option if you are linking
+    # a shared library that links to static libs.
+    if ($platform eq "solaris") {
+        $consLocal{'LDFLAGS'} .= " -mimpure-text";
+    }
+
+    if ($buildType eq 'debug') {
+        $consLocal{'CXXFLAGS'} .= " -g -DDEBUG -D_DEBUG";
+    } else {
+        $consLocal{'CXXFLAGS'} .= " -DNDEBUG -D_NDEBUG";
+        if ($withSymbols) {
+            $consLocal{'CXXFLAGS'} .= " -g";
+        }
+    }
+    if ($platform eq "darwin") {
+      $consLocal{'DYLD_LIBRARY_PATH'} = "$mozSrc/mozilla/dist/bin";
+      $dllName = "libkoCSSParser.dylib";
+    } else {
+      $dllName = 'libkoCSSParser.so';
+    }
+    $consLocal = new cons(%consLocal);
+
+    $consLocal->Program($dllName,
+                        "koCSSParser.cpp");
+}
+
+$cons->InstallXpcomComponent($dllName);
+$cons->InstallXpcomComponent('koCSSLinter.py');
+

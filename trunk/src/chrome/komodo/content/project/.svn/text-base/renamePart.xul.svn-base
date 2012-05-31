@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<!DOCTYPE dialog SYSTEM "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" [
+  <!ENTITY % projectDTD SYSTEM "chrome://komodo/locale/project.dtd">
+  %projectDTD;
+]>
+
+<!-- ***** BEGIN LICENSE BLOCK *****
+ Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ 
+ The contents of this file are subject to the Mozilla Public License
+ Version 1.1 (the "License"); you may not use this file except in
+ compliance with the License. You may obtain a copy of the License at
+ http://www.mozilla.org/MPL/
+ 
+ Software distributed under the License is distributed on an "AS IS"
+ basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+ License for the specific language governing rights and limitations
+ under the License.
+ 
+ The Original Code is Komodo code.
+ 
+ The Initial Developer of the Original Code is ActiveState Software Inc.
+ Portions created by ActiveState Software Inc are Copyright (C) 2000-2007
+ ActiveState Software Inc. All Rights Reserved.
+ 
+ Contributor(s):
+   ActiveState Software Inc
+ 
+ Alternatively, the contents of this file may be used under the terms of
+ either the GNU General Public License Version 2 or later (the "GPL"), or
+ the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ in which case the provisions of the GPL or the LGPL are applicable instead
+ of those above. If you wish to allow use of your version of this file only
+ under the terms of either the GPL or the LGPL, and not to allow others to
+ use your version of this file under the terms of the MPL, indicate your
+ decision by deleting the provisions above and replace them with the notice
+ and other provisions required by the GPL or the LGPL. If you do not delete
+ the provisions above, a recipient may use your version of this file under
+ the terms of any one of the MPL, the GPL or the LGPL.
+ 
+ ***** END LICENSE BLOCK ***** -->
+
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+<?xml-stylesheet href="chrome://komodo/skin/global/global.css" type="text/css"?>
+
+<dialog xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+    title="&renameItem.title;"
+    orient="vertical"
+    buttons="cancel,accept"
+    ondialogcancel="return onCancel()"
+    ondialogaccept="return onOk()"
+    onload="onLoad()"
+    width="350"
+    height="260">
+
+    <keyset id="dialogKeys" />
+
+    <script src="chrome://xtk/content/xtk.js" type="application/x-javascript;version=1.7"/>
+    <script>
+    <![CDATA[
+        var partName, partValue;
+
+        function onLoad() {
+            partName = document.getElementById('partName');
+            partValue = document.getElementById('partValue');
+            if (window.arguments && window.arguments[0]) {
+                partName.value = window.arguments[0].name;
+                partValue.value = window.arguments[0].value;
+            }
+            partName.focus();
+            partName.select();
+            var dialog = document.documentElement;
+            dialog.centerWindowOnScreen();
+        };
+
+        function onOk()  {
+            if (window.arguments && window.arguments[0]) {
+                window.arguments[0].name=partName.value;
+                window.arguments[0].value=partValue.value;
+                window.arguments[0].res = true;
+            }
+            return true;
+        };
+
+        function onCancel()  {
+            window.arguments[0].res= false;
+            return true;
+        };
+
+    ]]>
+    </script>
+
+    <spacer id="location" offsetY="50" persist="offsetX offsetY"/>
+
+    <label value="&itemName.Label;"/>
+    <textbox id="partName" pref="true" value=""/>
+    <separator class="thin"/>
+    <label value="&itemValue.Label;"/>
+    <textbox id="partValue" pref="true" readonly="true" multiline="true" value="" flex="1"/>
+</dialog>

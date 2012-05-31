@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>新浪会员</title>
+<meta content="0; url='http://login.sina.com.cn/crossdomain2.php?action=logout&amp;r=https%3A%2F%2Flogin.sina.com.cn%2F'" http-equiv="refresh">
+<meta content="text/html; charset=%SOUP-ENCODING%" http-equiv="Content-Type">
+</head>
+<body alink="#ff0000" bgcolor="#ffffff" vlink="#551a8b" link="#0000cc" text="#000000">
+<script type="text/javascript" language="javascript">
+		location.replace("http://login.sina.com.cn/crossdomain2.php?action=logout&r=https%3A%2F%2Flogin.sina.com.cn%2F");
+		</script>
+</body>
+</html>

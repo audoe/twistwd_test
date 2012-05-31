@@ -1,0 +1,122 @@
+10
+
+dir
+10184
+http://svn.openkomodo.com/repos/openkomodo/trunk/contrib
+http://svn.openkomodo.com/repos
+
+
+
+2012-05-09T21:21:54.141612Z
+10120
+ericp
+has-props
+
+
+svn:externals
+
+
+
+
+
+
+
+
+
+
+b87d16e7-d29f-4ee1-b5ec-817d645d335f
+
+html5lib
+dir
+
+smallstuff
+dir
+
+scintilla
+dir
+
+simplejson
+dir
+
+inflector
+dir
+
+patches
+dir
+
+pycrypto
+dir
+
+pcre
+dir
+
+catalogs
+dir
+
+watchdog
+dir
+
+sgmlop
+dir
+
+paramiko
+dir
+
+jslint
+dir
+
+jslib
+dir
+
+Conscript
+file
+
+
+
+
+2012-05-17T16:01:25.447520Z
+eed2e5cf6beb8a47c429cdd7d2e996b0
+2012-05-04T00:15:28.281661Z
+10096
+toddw
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+22630
+
+pywin
+dir
+
+elementtree
+dir
+
+tidy
+dir
+
+cElementTree
+dir
+
+pathtools
+dir
+
+zope
+dir
+

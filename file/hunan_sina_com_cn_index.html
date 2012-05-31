@@ -1,0 +1,1054 @@
+<html>DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+
+<!--[1192,58,1] published at 2012-05-18 23:36:12 from #194 by system--><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=%SOUP-ENCODING%" http-equiv="Content-Type">
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible">
+<title>ÐÂÀËºþÄÏ_ÐÂÀËÍø</title>
+<link href="http://hunan.sinaimg.cn/201109/images/favicon.ico" rel="shortcut icon">
+<meta content="ÐÂÀËºþÄÏ,ºþÄÏÐÂÎÅ,ÃÀÊ³,¹ºÎï,ÓéÀÖ,Ò¹³¤É³,ºþÄÏÆû³µ" name="Keywords">
+<meta content="ÐÂÀËºþÄÏ_ÐÂÀËÍø" name="Description">
+<meta content="92qzs9uFqNLDU6TU" name="baidu-site-verification">
+<meta content="M2XXG1zQk2arnAGp" name="baidu-site-verification">
+<link href="http://hunan.sinaimg.cn/201109/css/base.css" type="text/css" rel="stylesheet">
+<link href="http://hunan.sinaimg.cn/201109/css/index.css" type="text/css" rel="stylesheet">
+<script src="http://hunan.sinaimg.cn/201109/css/base.js" type="text/javascript" language="javascript"></script>
+<script src="http://i1.sinaimg.cn/unipro/pub/suda_m_v629.js" type="text/javascript"></script>
+<script src="http://i3.sinaimg.cn/home/sinaflash.js" type="text/javascript"></script>
+<script type="text/javascript">suds_init(1838,100.0000,1015,2);</script>
+<script src="http://i1.sinaimg.cn/dy/deco/2011/0608/common.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+(function($){
+$.fn.extend({
+         Scroll:function(opt,callback){
+
+                //²ÎÊý³õÊ¼»¯
+                if(!opt) var opt={};
+
+                var _this=this.eq(0).find("ul:first");
+               var lineH=_this.find("li:first").outerHeight(), //»ñÈ¡ÐÐ¸ß
+
+                     line=opt.line?parseInt(opt.line,10):parseInt(this.height()/lineH,10), //Ã¿´Î¹ö¶¯µÄÐÐÊý£¬Ä¬ÈÏÎªÒ»ÆÁ£¬¼´¸¸ÈÝÆ÷¸ß¶È
+
+                     speed=opt.speed?parseInt(opt.speed,10):1000, //¾í¶¯ËÙ¶È£¬ÊýÖµÔ½´ó£¬ËÙ¶ÈÔ½Âý£¨ºÁÃë£©
+
+                     timer=opt.timer?parseInt(opt.timer,10):5000; //¹ö¶¯µÄÊ±¼ä¼ä¸ô£¨ºÁÃë£©
+
+                if(line==0) line=1;
+
+                var upHeight=0-line*lineH;
+
+                 //¹ö¶¯º¯Êý
+
+                scrollUp=function(){
+
+                     _this.animate({
+
+                               marginTop:upHeight-35
+
+                       },speed,function(){
+
+                                for(i=1;i<=line;i++){
+
+                                       _this.find("li:first").appendTo(_this);
+
+                               }
+
+                               _this.css({marginTop:0});
+
+                       });
+
+                }
+
+                //Êó±êÊÂ¼þ°ó¶¨
+
+                _this.hover(function(){
+
+                       clearInterval(timerID);
+
+                },function(){
+
+                       timerID=setInterval("scrollUp()",timer);
+
+               }).mouseout();
+
+        }        
+
+})
+
+ })(jQuery);
+
+ $(document).ready(function(){
+        $('.nav-cq li:first').addClass('on');
+        $("#scrollDiv").Scroll({line:3,speed:2000,timer:5000});
+
+$(".follow").click(function(){
+		options=
+		{
+			site_id:_site_id_,
+			uid: $(this).attr('uid')
+		};
+		DFZ.APP.MblogFollow.init(options);
+	});
+
+ });
+</script>
+</head>
+<body>
+<!-- SUDA_CODE_START --><div style="position:absolute;top:0;left:0;width:0;height:0;z-index:1"><div style="position:absolute;top:0;left:0;width:1;height:1;"><iframe src="" height="1" width="1" scrolling="NO" id="SUDA_FC" frameborder="0"></iframe></div><div style="position:absolute;top:0;left:0;width:0;height:0;visibility:hidden" id="SUDA_CS_DIV"></div></div>
+<script type="text/javascript"> 
+//<!--
+var _SGUP_ = "SGUP";var _SGUP_REQ_ = "http://sgup.beacon.sina.com.cn/cgi-bin/gsgup";var sgup = "";
+var SSL={Config:{},Space:function(str){var a=str,o=null;a=a.split('.');o=SSL;for(i=0,len=a.length;i<len;i++){o[a[i]]=o[a[i]]||{};o=o[a[i]]}return o}};
+SSL.Space('Global');SSL.Space('Core.Dom');SSL.Space('Core.Event');SSL.Space('App');SSL.Global={win:window||{},doc:document,nav:navigator,loc:location};SSL.Core.Dom={get:function(id){return document.getElementById(id)}};SSL.Core.Event={on:function(){}};
+SSL.App={
+	_S_gConType:function(){var ct="";try{SSL.Global.doc.body.addBehavior("#default#clientCaps");ct=SSL.Global.doc.body.connectionType}catch(e){ct="unkown"}return ct},
+	_S_gKeyV:function(src,k,e,sp){if(src==""){return""}if(sp==""){sp="="}k=k+sp;var ps=src.indexOf(k);if(ps<0){return""}ps=ps+k.length;var pe=src.indexOf(e,ps);if(pe<ps){pe=src.length}return src.substring(ps,pe)},
+	_S_gUCk:function(ckName){if((undefined==ckName)||(""==ckName))return"";return SSL.App._S_gKeyV(SSL.Global.doc.cookie,ckName,";","")},
+	_S_sUCk:function(ckName,ckValue,ckDays,ckDomain){if(ckValue!=null){if((undefined==ckDomain)||(null==ckDomain)){ckDomain="sina.com.cn";}if((undefined==ckDays)||(null==ckDays)||(''==ckDays)){SSL.Global.doc.cookie=ckName+"="+ckValue+";domain="+ckDomain+";path=/";}else{var now=new Date();var time=now.getTime();time=time+86400000*ckDays;now.setTime(time);time=now.getTime();SSL.Global.doc.cookie=ckName+"="+ckValue+";domain="+ckDomain+";expires="+now.toUTCString()+";path=/";}}},
+	_S_gJVer:function(_S_NAV_,_S_NAN_){var p,appsign,appver,jsver=1.0,isN6=0;if('MSIE'==_S_NAN_){appsign='MSIE';p=_S_NAV_.indexOf(appsign);if(p>=0){appver=parseInt(_S_NAV_.substring(p+5));if(3<=appver){jsver=1.1;if(4<=appver){jsver=1.3}}}}else if(("Netscape"==_S_NAN_)||("Opera"==_S_NAN_)||("Mozilla"==_S_NAN_)){jsver=1.3;appsign='Netscape6';p=_S_NAV_.indexOf(appsign);if(p>=0){jsver=1.5}}return jsver},
+	_S_gFVer:function(nav){var ua=SSL.Global.nav.userAgent.toLowerCase();var flash_version=0;if(SSL.Global.nav.plugins&&SSL.Global.nav.plugins.length){var p=SSL.Global.nav.plugins['Shockwave Flash'];if(typeof p=='object'){for(var i=10;i>=3;i--){if(p.description&&p.description.indexOf(' '+i+'.')!=-1){flash_version=i;break}}}}else if(ua.indexOf("msie")!=-1&&ua.indexOf("win")!=-1&&parseInt(SSL.Global.nav.appVersion)>=4&&ua.indexOf("16bit")==-1){for(var i=10;i>=2;i--){try{var object=eval("new ActiveXObject('ShockwaveFlash.ShockwaveFlash."+i+"');");if(object){flash_version=i;break}}catch(e){}}}else if(ua.indexOf("webtv/2.5")!=-1){flash_version=3}else if(ua.indexOf("webtv")!=-1){flash_version=2}return flash_version},
+	_S_gMeta:function(MName,pidx){var pMeta=SSL.Global.doc.getElementsByName(MName);var idx=0;if(pidx>0){idx=pidx}return(pMeta.length>idx)?pMeta[idx].content:""},
+	_S_gHost:function(sUrl){var r=new RegExp('^http(?:s)?\://([^/]+)','im');if(sUrl.match(r)){return sUrl.match(r)[1].toString()}else{return""}},
+	_S_gDomain:function(sHost){var p=sHost.indexOf('.sina.');if(p>0){return sHost.substr(0,p)}else{return sHost}},
+	_S_gTJMTMeta:function(){return SSL.App._S_gMeta("mediaid")},
+	_S_gTJZTMeta:function(){var zt=SSL.App._S_gMeta('subjectid');zt.replace(",",".");zt.replace(";",",");return zt},
+	_S_isFreshMeta:function(){var ph=SSL.Global.doc.documentElement.innerHTML.substring(0,1024);var reg=new RegExp("<meta\\s*http-equiv\\s*=((\\s*refresh\\s*)|(\'refresh\')|(\"refresh\"))\s*content\s*=","ig");return reg.test(ph)},
+	_S_isIFrameSelf:function(minH,minW){if(SSL.Global.win.top==SSL.Global.win){return false}else{try{if(SSL.Global.doc.body.clientHeight==0){return false}if((SSL.Global.doc.body.clientHeight>=minH)&&(SSL.Global.doc.body.clientWidth>=minW)){return false}else{return true}}catch(e){return true}}},
+	_S_isHome:function(curl){var isH="";try{SSL.Global.doc.body.addBehavior("#default#homePage");isH=SSL.Global.doc.body.isHomePage(curl)?"Y":"N"}catch(e){isH="unkown"}return isH;}
+}
+function SUDA(config,ext1,ext2){
+	var SG=SSL.Global,SSD=SSL.Core.Dom,SSE=SSL.Core.Event,SA=SSL.App;var _S_JV_="webbug_meta_ref_mod_noiframe_async_fc_:9.10a",_S_DPID_="-9999-0-0-1";var _S_NAN_=SG.nav.appName.indexOf('Microsoft Internet Explorer')>-1?'MSIE':SG.nav.appName;var _S_NAV_=SG.nav.appVersion;var _S_PURL_=SG.loc.href.toLowerCase();var _S_PREF_=SG.doc.referrer.toLowerCase();var _SP_MPID_="";var _S_PID_="",_S_UNA_="SUP",_S_MI_="",_S_SID_="Apache",_S_GID_="SINAGLOBAL",_S_LV_="ULV",_S_UO_="UOR",_S_UPA_="_s_upa",_S_IFW=320,_S_IFH=240,_S_GIDT=0,_S_EXT1="",_S_EXT2="",_S_SMC=0,_S_SMM=10000,_S_ET=0,_S_ACC_="_s_acc";var _S_HTTP=_S_PURL_.indexOf('https')>-1?'https://':'http://',_S_BCNDOMAIN="beacon.sina.com.cn",_S_CP_RF=_S_HTTP+_S_BCNDOMAIN+"/a.gif",_S_CP_RF_D=_S_HTTP+_S_BCNDOMAIN+"/d.gif",_S_CP_RF_E=_S_HTTP+_S_BCNDOMAIN+"/e.gif",_S_CP_FC=_S_HTTP+_S_BCNDOMAIN+"/fc.html";
+	var _S_T1=100,_S_T2=2000;
+	var handler={
+		_S_sSID:function(){handler._S_p2Bcn("",_S_CP_RF_D)},_S_gsSID:function(){var sid=SA._S_gUCk(_S_SID_);if(""==sid){handler._S_sSID()}return sid},
+		_S_sGID:function(gid){if(""!=gid){SA._S_sUCk(_S_GID_,gid,3650)}},_S_gGID:function(){return SA._S_gUCk(_S_GID_)},_S_gsGID:function(){if(""!=_S_GID_){var gid=SA._S_gUCk(_S_GID_);if(""==gid){if(SA._S_gFVer(SG.nav)<=6){return ""}else{handler._S_IFC2GID()}}return gid}else{return""}},_S_IFC2GID:function(){var _S_ifc=SSD.get("SUDA_FC");if(_S_ifc){_S_ifc.src=_S_CP_FC+"?a=g&n="+_S_GID_+"&r="+Math.random()}},
+		_S_gCid:function(){try{var metaTxt=SA._S_gMeta("publishid");if(""!=metaTxt){var pbidList=metaTxt.split(",");if(pbidList.length>0){if(pbidList.length>=3){_S_DPID_="-9999-0-"+pbidList[1]+"-"+pbidList[2]}return pbidList[0]}}else{return"0"}}catch(e){return"0"}},
+		_S_gAEC:function(){return SA._S_gUCk(_S_ACC_)},_S_sAEC:function(eid){if(""==eid){return}var acc=handler._S_gAEC();if(acc.indexOf(eid+",")<0){acc=acc+eid+",";}SA._S_sUCk(_S_ACC_,acc,7);},
+		_S_p2Bcn:function(q,u){var scd=SSD.get("SUDA_CS_DIV");if(null!=scd){var now=new Date();scd.innerHTML="<img width=0 height=0 src='"+u+"?"+q+"&gUid_"+now.getTime()+"' border='0' alt=''  />"}},
+		_S_gSUP:function(){if(_S_MI_!=""){return _S_MI_}var sup=unescape(SA._S_gUCk(_S_UNA_));if(sup!=""){var ag=SA._S_gKeyV(sup,"ag","&","");var user=SA._S_gKeyV(sup,"user","&","");var uid=SA._S_gKeyV(sup,"uid","&","");var sex=SA._S_gKeyV(sup,"sex","&","");var bday=SA._S_gKeyV(sup,"dob","&","");_S_MI_=ag+":"+user+":"+uid+":"+sex+":"+bday;return _S_MI_}else{return""}},
+		_S_gsLVisit:function(sid){var lvi=SA._S_gUCk(_S_LV_);var lva=lvi.split(":");var lvr="";if(lva.length>=6){if(sid!=lva[4]){var lvn=new Date();var lvd=new Date(parseInt(lva[0]));lva[1]=parseInt(lva[1])+1;if(lvn.getMonth()!=lvd.getMonth()){lva[2]=1}else{lva[2]=parseInt(lva[2])+1}if(((lvn.getTime()-lvd.getTime())/86400000)>=7){lva[3]=1}else{if(lvn.getDay()<lvd.getDay()){lva[3]=1}else{lva[3]=parseInt(lva[3])+1}}lvr=lva[0]+":"+lva[1]+":"+lva[2]+":"+lva[3];lva[5]=lva[0];lva[0]=lvn.getTime();SA._S_sUCk(_S_LV_,lva[0]+":"+lva[1]+":"+lva[2]+":"+lva[3]+":"+sid+":"+lva[5],360)}else{lvr=lva[5]+":"+lva[1]+":"+lva[2]+":"+lva[3]}}else{var lvn=new Date();lvr=":1:1:1";SA._S_sUCk(_S_LV_,lvn.getTime()+lvr+":"+sid+":",360)}return lvr},
+		_S_gUOR:function(){var uoc=SA._S_gUCk(_S_UO_);var upa=uoc.split(":");if(upa.length>=2){return upa[0]}else{return""}},
+		_S_sUOR:function(){var uoc=SA._S_gUCk(_S_UO_),uor="",uol="",up_t="",up="";var re=/[&|?]c=spr(_[A-Za-z0-9]{1,}){3,}/;var ct=new Date();if(_S_PURL_.match(re)){up_t=_S_PURL_.match(re)[0]}else{if(_S_PREF_.match(re)){up_t=_S_PREF_.match(re)[0]}}if(up_t!=""){up_t=up_t.substr(3)+":"+ct.getTime()}if(uoc==""){if(SA._S_gUCk(_S_LV_)==""&&SA._S_gUCk(_S_LV_)==""){uor=SA._S_gHost(_S_PREF_);uol=SA._S_gHost(_S_PURL_)}SA._S_sUCk(_S_UO_,uor+","+uol+","+up_t,365)}else{var ucg=0,uoa=uoc.split(",");if(uoa.length>=1){uor=uoa[0]}if(uoa.length>=2){uol=uoa[1]}if(uoa.length>=3){up=uoa[2]}if(up_t!=""){ucg=1}else{var upa=up.split(":");if(upa.length>=2){var upd=new Date(parseInt(upa[1]));if(upd.getTime()<(ct.getTime()-86400000*30)){ucg=1}}}if(ucg){SA._S_sUCk(_S_UO_,uor+","+uol+","+up_t,365)}}},
+		_S_gRef:function(){var re=/^[^\?&#]*.swf([\?#])?/;if((_S_PREF_=="")||(_S_PREF_.match(re))){var ref=SA._S_gKeyV(_S_PURL_,"ref","&","");if(ref!=""){return ref}}return _S_PREF_},
+		_S_MEvent:function(){if(_S_SMC==0){_S_SMC++;var c=SA._S_gUCk(_S_UPA_);if(c==""){c=0}c++;if(c<_S_SMM){var re=/[&|?]c=spr(_[A-Za-z0-9]{2,}){3,}/;if(_S_PURL_.match(re)||_S_PREF_.match(re)){c=c+_S_SMM}}SA._S_sUCk(_S_UPA_,c)}},_S_gMET:function(){var c=SA._S_gUCk(_S_UPA_);if(c==""){c=0}return c},
+		_S_gCInfo_v2:function(){var now=new Date();return"sz:"+screen.width+"x"+screen.height+"|dp:"+screen.colorDepth+"|ac:"+SG.nav.appCodeName+"|an:"+_S_NAN_+"|cpu:"+SG.nav.cpuClass+"|pf:"+SG.nav.platform+"|jv:"+SA._S_gJVer(_S_NAV_,_S_NAN_)+"|ct:"+SA._S_gConType()+"|lg:"+SG.nav.systemLanguage+"|tz:"+now.getTimezoneOffset()/60+"|fv:"+SA._S_gFVer(SG.nav)},
+		_S_gPInfo_v2:function(pid,ref){if((undefined==pid)||(""==pid)){pid=handler._S_gCid()+_S_DPID_}return"pid:"+pid+"|st:"+handler._S_gMET()+"|et:"+_S_ET+"|ref:"+escape(ref)+"|hp:"+SA._S_isHome(_S_PURL_)+"|PGLS:"+SA._S_gMeta("stencil")+"|ZT:"+escape(SA._S_gTJZTMeta())+"|MT:"+escape(SA._S_gTJMTMeta())+"|keys:"},
+		_S_gUInfo_v2:function(vid){return"vid:"+vid+"|sid:"+handler._S_gsSID()+"|lv:"+handler._S_gsLVisit(handler._S_gsSID())+"|un:"+handler._S_gSUP()+"|uo:"+handler._S_gUOR()+"|ae:"+handler._S_gAEC()},
+		_S_gEXTInfo_v2:function(ext1,ext2){_S_EXT1=(undefined==ext1)?_S_EXT1:ext1;_S_EXT2=(undefined==ext2)?_S_EXT2:ext2;return"ex1:"+_S_EXT1+"|ex2:"+_S_EXT2},
+		_S_pBeacon:function(pid,ext1,ext2){try{var gid=handler._S_gsGID();if(""==gid){if(_S_GIDT<1){setTimeout(function(){handler._S_pBeacon(pid,ext1,ext2)},_S_T2);_S_GIDT++;return}else{gid=handler._S_gsSID();handler._S_sGID(gid)}}var sgup_ck = SA._S_gUCk(_SGUP_);if(sgup_ck == ""){var channary = location.hostname.split(".");var cur_ch = (channary.length > 3) ? channary[channary.length - 4] : "";handler.__loadScript(_SGUP_REQ_,function(){if(sgup != ""){SA._S_sUCk(_SGUP_,sgup,7);}else{SA._S_sUCk(_SGUP_,"0",3);}});}var sVer="V=2";var sCI=handler._S_gCInfo_v2();var sPI=handler._S_gPInfo_v2(pid,handler._S_gRef());var sUI=handler._S_gUInfo_v2(gid);var sEX=handler._S_gEXTInfo_v2(ext1,ext2);var lbStr=sVer+"&CI="+sCI+"&PI="+sPI+"&UI="+sUI+"&EX="+sEX;handler._S_p2Bcn(lbStr,_S_CP_RF)}catch(e){}},
+		__loadScript:function(url, callback, encode){var script = document.createElement('script');script.type = 'text/javascript';if(encode)script.charset = encode;if (callback)script.onload = script.onreadystatechange = function() {if (script.readyState && script.readyState != 'loaded' && script.readyState != 'complete')return;script.onreadystatechange = script.onload = null;callback();};script.src = url;document.getElementsByTagName('head')[0].appendChild(script);},
+		_S_acTrack_i:function(eid,p){if((""==eid)||(undefined==eid)){return}handler._S_sAEC(eid);if(0==p){return}var s="AcTrack||"+handler._S_gGID()+"||"+handler._S_gsSID()+"||"+handler._S_gSUP()+"||"+eid+"||";handler._S_p2Bcn(s,_S_CP_RF_E)},
+		_S_uaTrack_i:function(acode,aext){var s="UATrack||"+handler._S_gGID()+"||"+handler._S_gsSID()+"||"+handler._S_gSUP()+"||"+acode+"||"+aext+"||"+handler._S_gRef()+"||";handler._S_p2Bcn(s,_S_CP_RF_E)}
+	};
+	if(_S_SMC==0){if('MSIE'==_S_NAN_){SSL.Global.doc.attachEvent("onclick",handler._S_MEvent);SSL.Global.doc.attachEvent("onmousemove",handler._S_MEvent);SSL.Global.doc.attachEvent("onscroll",handler._S_MEvent)}else{SSL.Global.doc.addEventListener("click",handler._S_MEvent,false);SSL.Global.doc.addEventListener("mousemove",handler._S_MEvent,false);SSL.Global.doc.addEventListener("scroll",handler._S_MEvent,false)}};handler._S_sUOR();
+	return{
+		_S_pSt:function(pid,ext1,ext2){try{if((SA._S_isFreshMeta())||(SA._S_isIFrameSelf(_S_IFH,_S_IFW))){return}if(_S_ET>0){return}++_S_ET;setTimeout(function(){handler._S_gsSID()},_S_T1);setTimeout(function(){handler._S_pBeacon(pid,ext1,ext2,0)},_S_T2)}catch(e){}},
+		_S_pStM:function(pid,ext1,ext2){++_S_ET;handler._S_pBeacon(pid,((undefined==ext1)?handler._S_upExt1():ext1),ext2)},
+		_S_acTrack:function(eid,p){try{if((undefined!=eid)&&(""!=eid)){setTimeout(function(){handler._S_acTrack_i(eid,p)},_S_T1)}}catch(e){}},
+		_S_uaTrack:function(acode,aext){try{if(undefined==acode){acode=""}if(undefined==aext){aext=""}if((""!=acode)||(""!=aext)){setTimeout(function(){handler._S_uaTrack_i(acode,aext)},_S_T1)}}catch(e){}}
+	}
+}
+var GB_SUDA;if(GB_SUDA==null){GB_SUDA=new SUDA({})}
+var _S_PID_="";
+function _S_pSt(pid,ext1,ext2){GB_SUDA._S_pSt(pid,ext1,ext2);}
+function _S_pStM(pid,ext1,ext2){GB_SUDA._S_pStM(pid,ext1,ext2);}
+function _S_acTrack(eid){GB_SUDA._S_acTrack(eid,1);}
+function _S_uaTrack(acode,aext){GB_SUDA._S_uaTrack(acode,aext);}
+//-->
+</script>
+<script type="text/javascript"> 
+//<!--
+GB_SUDA._S_pSt("");
+//-->
+</script>
+<noscript>
+<div style="position:absolute;top:0;left:0;width:0;height:0;visibility:hidden"><img width="0" alt="" src="http://beacon.sina.com.cn/a.gif?noScript" border="0" height="0"></div>
+</noscript>
+
+
+<!-- SUDA_CODE_END --><!-- for iPad begin --><script type="text/javascript">
+(function(){
+if(!/\((iPhone|iPad|iPod)/i.test(navigator.userAgent)){return};
+var iPadScript = document.createElement('script');
+iPadScript.src = 'http://news.sina.com.cn/js/ui/ipad/reset.js';
+document.getElementsByTagName('head')[0].appendChild(iPadScript);
+})();
+</script>
+
+
+<!-- for iPad end --><!-- SSO_GETCOOKIE_START --><script type="text/javascript">var sinaSSOManager=sinaSSOManager||{};sinaSSOManager.getSinaCookie=function(){function dc(u){if(u==undefined){return""}var decoded=decodeURIComponent(u);return decoded=="null"?"":decoded}function ps(str){var arr=str.split("&");var arrtmp;var arrResult={};for(var i=0;i<arr.length;i++){arrtmp=arr[i].split("=");arrResult[arrtmp[0]]=dc(arrtmp[1])}return arrResult}function gC(name){var Res=eval("/"+name+"=([^;]+)/").exec(document.cookie);return Res==null?null:Res[1]}var sup=dc(gC("SUP"));if(!sup){sup=dc(gC("SUR"))}if(!sup){return null}return ps(sup)};</script>
+
+<!-- SSO_GETCOOKIE_END --><script type="text/javascript">new function(r,s,t){this.a=function(n,t,e){if(window.addEventListener){n.addEventListener(t,e,false);}else if(window.attachEvent){n.attachEvent("on"+t,e);}};this.b=function(f){var t=this;return function(){return f.apply(t,arguments);};};this.c=function(){var f=document.getElementsByTagName("form");for(var i=0;i<f.length;i++){var o=f[i].action;if(this.r.test(o)){f[i].action=o.replace(this.r,this.s);}}};this.r=r;this.s=s;this.d=setInterval(this.b(this.c),t);this.a(window,"load",this.b(function(){this.c();clearInterval(this.d);}));}(/http:\/\/www\.google\.c(om|n)\/search/, "http://keyword.sina.com.cn/searchword.php", 250);</script>
+<div style="display:none;HEIGHT:300px;POSITION:absolute;LEFT:95%;       VISIBILITY:visible;TOP:30px;HEIGHT:231px;width:12%;" id="right-ad">
+<div id="image2">
+<a href="http://hunan.sina.com.cn/z/yyabl/index.shtml" target="_blank"><img src="http://hunan.sinaimg.cn/2012/0119/U7070P1192DT20120119090026.gif" alt="ÐÂÀËºþÄÏ" border="0"></a>
+</div>
+<a style="display:block; width:25px; margin-bottom:2px; text-align:right;" href="javascript:;" target="_self"><img src="http://hunan.sinaimg.cn/2012/0110/U7070P1192DT20120110104218.gif" id="closs"></a>
+</div>
+<div style="display:none;HEIGHT:300px;POSITION:absolute;LEFT:4%;       VISIBILITY:visible;TOP:30px;HEIGHT:231px;width:12%;" id="right-ad1">
+<div id="image1">
+<a href="http://hunan.sina.com.cn/z/yyabl/index.shtml" target="_blank"><img src="http://hunan.sinaimg.cn/2012/0119/U7070P1192DT20120119090026.gif" alt="ÐÂÀËºþÄÏ" border="0"></a>
+</div>
+<a style="display:block; width:25px; margin-bottom:2px; text-align:right;" href="javascript:;" target="_self"><img src="http://hunan.sinaimg.cn/2012/0110/U7070P1192DT20120110104218.gif" id="closs1"></a>
+</div>
+<script type="text/javascript">
+$('#closs').click(function(){
+     var img1 = document.getElementById("right-ad");
+     img1.style.display = "none";
+})
+$('#image2').mouseover(function(){
+	var img = document.getElementById("ad");
+        img.style.display = "block";
+        //img.style.display = "inline";
+        setTimeout(function() {img.style.display = "none";},5000);
+})
+</script>
+<script type="text/javascript">
+$('#closs1').click(function(){
+     var img2 = document.getElementById("right-ad1");
+     img2.style.display = "none";
+})
+$('#image1').mouseover(function(){
+	var img = document.getElementById("ad");
+        img.style.display = "block";
+        //img.style.display = "inline";
+        setTimeout(function() {img.style.display = "none";},5000);
+})
+</script>
+<div class="topNav">
+<ul class="toplist">
+<li class="bg"><a href="http://www.sina.com.cn" target="_blank">ÐÂÀËÊ×Ò³</a></li>
+<li class="bg"><a href="http://hunan.sina.com.cn/" target="_blank">ÐÂÀËºþÄÏ</a></li>
+<li><a href="javascript:;" id="sethomepage" onclick="hnz_SetHome(this);return false;">ÉèÎªÊ×Ò³</a></li>
+</ul>
+</div>
+<div class="topadv">
+<div class="l_topadv"><iframe src="http://hunan.sina.com.cn/iframe/ad/26.html" height="100" width="170" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"></iframe></div>
+<div class="c_topadv"><iframe src="http://hunan.sina.com.cn/iframe/ad/28.html" height="100" width="585" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"></iframe></div>
+<div class="r_topadv"><iframe src="http://hunan.sina.com.cn/iframe/ad/27.html" height="100" width="170" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"></iframe></div>
+<div style="clear:both"></div>
+</div>
+<div style="display:none;margin:0 auto; width:950px; margin-bottom:5px;" id="ad">
+<a href="http://hunan.sina.com.cn/z/yyabl/index.shtml" target="_blank"><img src="http://hunan.sinaimg.cn/2012/0119/U7070P1192DT20120119090444.gif" alt="ÐÂÀËºþÄÏ" border="0" id="image22 "></a>
+</div>
+<div class="top_nav">
+<a style="width:210px;" href="http://hunan.sina.com.cn/" class="top_nav_logo"></a>
+<ul style="width:130px">
+<li class="tt"><a href="http://hunan.sina.com.cn/news">ÐÂÎÅ</a></li>
+<li><a href="/news/today/list.html">ºþÄÏÒªÎÅ</a><a href="/news/shms/list.html">ÃñÉú</a></li>
+<li><a href="/caijing/">Í¶×ÊÀí²Æ</a><a href="/news/video/list.html">ÊÓÆµ</a></li>
+</ul>
+<ul style="width:150px">
+<li class="tt"><a href="http://hunan.sina.com.cn/eat">ÃÀÊ³»ã</a></li>
+<li><a href="http://group.hunan.sina.com.cn/">ÃÀÊ³Î¢Èº</a><a href="http://hunan.sina.com.cn/zt/eat/mszk010/index.shtml">ÃÀÊ³ÖÜ¿¯</a></li>
+<li><a href="http://hunan.sina.com.cn/eat/news/list.html">ºþÄÏÊ³ÉÐ</a><a href="http://hunan.sina.com.cn/zt/eat/wtd011/index.shtml">Î¢Ì½µê</a></li>
+</ul>
+<ul style="width:110px">
+<li class="tt"><a href="http://hunan.sina.com.cn/shopping">»¶ÀÖ¹º</a></li>
+<li><a href="http://hunan.sina.com.cn/shopping/activity/list.html">³±Á÷×ÊÑ¶</a></li>
+<li><a href="http://hunan.sina.com.cn/shopping/gwtj/list.html">¹ºÎïÍ¼¼¯</a></li>
+</ul>
+<ul style="width:110px">
+<li class="tt"><a href="http://hunan.sina.com.cn/ent">Ò¹³¤É³</a></li>
+<li><a href="/ent/ycxx/list.html">ÑÝ³ö</a><a href="/ent/weibo/w4/list.html">KTV</a></li>
+<li><a href="/ent/weibo/w3/list.html">¾Æ°É</a><a href="/ent/weibo/w1/list.html">Ó°Ôº</a></li>
+</ul>
+<ul style="width:142px">
+<li class="tt"><a href="http://cs.auto.sina.com.cn/">³µÊÀ½ç</a></li>
+<li><a href="http://cs.auto.sina.com.cn/cshq/list.html">ºþÄÏÐÐÇé</a><a href="http://cs.auto.sina.com.cn/xcmn/list.html">Ïã³µÃÀÅ®</a></li>
+<li><a href="http://cs.auto.sina.com.cn/xcrx/list.html">ÐÂ³µÈëÏæ</a><a href="http://dealer.auto.sina.com.cn/price/">³µÐÍ±¨¼Û</a></li>
+</ul>
+<ul style="width:85px">
+<li class="tt"><a href="http://hunan.sina.com.cn/city/">³ÇÊÐ</a></li>
+<li><a href="http://hunan.sina.com.cn/city/gdyw/list.html">¸÷µØÒªÎÅ</a></li>
+<li><a href="http://hunan.sina.com.cn/city/gcdt/list.html">¸ß²ã¶¯Ì¬</a></li>
+</ul>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+var focusScroll_02 = new ScrollPic();
+focusScroll_02.scrollContId   = "FS_Cont_02"; //ÄÚÈÝÈÝÆ÷ID
+focusScroll_02.arrLeftId      = "FS_arr_left_02";//×ó¼ýÍ·ID
+focusScroll_02.arrRightId     = "FS_arr_right_02"; //ÓÒ¼ýÍ·ID
+focusScroll_02.frameWidth     = 157;//ÏÔÊ¾¿ò¿í¶È
+focusScroll_02.pageWidth      = 157; //·­Ò³¿í¶È
+focusScroll_02.upright        = false; //´¹Ö±¹ö¶¯
+focusScroll_02.speed          = 20; //ÒÆ¶¯ËÙ¶È(µ¥Î»ºÁÃë£¬Ô½Ð¡Ô½¿ì)
+focusScroll_02.space          = 20; //Ã¿´ÎÒÆ¶¯ÏñËØ(µ¥Î»px£¬Ô½´óÔ½¿ì)
+focusScroll_02.autoPlay       = true; //×Ô¶¯²¥·Å
+focusScroll_02.autoPlayTime   = 5; //×Ô¶¯²¥·Å¼ä¸ôÊ±¼ä(Ãë)
+focusScroll_02.circularly     = true;
+focusScroll_02.initialize(); //³õÊ¼»¯
+//-->
+</script>
+<div style="margin:0px auto;width:950px;margin-top:5px;" id="head-ad">
+<div style="height:45px;">
+<span><a href="http://www.hnradio.com/zhuanti/2012/893cyx/cyx.asp" target="_blank"><img src="http://hunan.sinaimg.cn/2012/0510/U7070P1192DT20120510104300.jpg" border="0"></a></span>
+</div>
+<div style="height:180px;display:none;">
+<span><a href="http://www.hnradio.com/zhuanti/2012/893cyx/cyx.asp" target="_blank"><img src="http://hunan.sinaimg.cn/2012/0510/U7070P1192DT20120510104559.jpg" border="0"></a></span>
+</div>
+</div>
+<script>
+$('#head-ad').mouseover(function(){
+	$(this).find('div:first').hide().next().show();
+}).mouseout(function(){
+	$(this).find('div:last').hide().prev().show();
+});
+</script>
+<div style="height:45px;display:none;" class="wrap"><iframe src="http://hunan.sina.com.cn/iframe/ad/56.html" width="950" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"></iframe></div>
+<div class="wrap">
+<div class="cl" id="f-ent">
+<script>
+ //½¹µãÍ¼ÂÖ²¥
+    options={
+    	interval:5000,
+    	container:'#f-ent',
+    	tpl_form:' <div class="focus-picture" id="f-ent">{{html board}}\
+			<div class="focus-tit">\
+			{{html text}}\
+			</div>\
+			 <ul>\
+			{{html btns}}\
+			</ul>  </div>',
+    	tpl_board:'<a href="${link}" target="_blank"><img src="${big_img_src}" alt="${alt}"></a>',
+    	tpl_text:' <h3><a href="${link}" target="_blank">${alt}</a></h3><i> </i>',
+    	tpl_btn:' <li><a><img src="${src}" alt="${alt}"></a></li>',
+    	tpl_btn_cur:' <li class="cur"><a><img src="${src}" alt="${alt}"></a></li>',
+    	btn_event:'hover',
+    	//Í¼Æ¬Êý×é
+    	imgs:[{
+    			link:'http://hunan.sina.com.cn/news/today/2012-05-17/28354.html',
+				alt:'³¤É³éÙÖÞÉÏÑÝÊÀ½ç¶¥¼¶¼¤¹âÑæ»ðÍí»á',
+    			subject:'³¤É³éÙÖÞÉÏÑÝÊÀ½ç¶¥¼¶¼¤¹âÑæ»ðÍí»á',
+    			src:'http://hunan.sinaimg.cn/iframe/index/idx/2012/0518/U6992P1192T59D1F1049DT20120518094719.jpg',
+    			big_img_src:'http://hunan.sinaimg.cn/iframe/index/idx/2012/0518/U6992P1192T59D1F1049DT20120518094719.jpg'
+    		},{
+    			link:'http://hunan.sina.com.cn/news/qyxw/2012-05-18/28405.html',
+				alt:'ÒåÈ®¾ÈÆðÄçË®Õß ÊÐÃñÉèµñÏñ±íÕÃ',
+    			subject:'ÒåÈ®¾ÈÆðÄçË®Õß ÊÐÃñÉèµñÏñ±íÕÃ',
+    			src:'http://hunan.sinaimg.cn/iframe/index/idx/2012/0518/U6992P1192T59D1F1050DT20120518095845.jpg',
+    			big_img_src:'http://hunan.sinaimg.cn/iframe/index/idx/2012/0518/U6992P1192T59D1F1050DT20120518095845.jpg'
+    		},{
+    			link:'http://hunan.sina.com.cn/eat/',
+				alt:'Ò©Íõ½Ö¾¢±¬ÔÏÎ¶µÄÂéÀ±ÌÌ',
+    			subject:'Ò©Íõ½Ö¾¢±¬ÔÏÎ¶µÄÂéÀ±ÌÌ',
+    			src:'http://hunan.sinaimg.cn/iframe/index/idx/2012/0518/U6992P1192T59D1F1051DT20120518095845.jpg',
+    			big_img_src:'http://hunan.sinaimg.cn/iframe/index/idx/2012/0518/U6992P1192T59D1F1051DT20120518095845.jpg'
+    		},{
+    			link:'http://hunan.sina.com.cn/shopping/activity/2012-05-18/28266.html',
+				alt:'¾ÉÉÏº£¹ã¸æ¡°Ë«ÃÃ¡±¾¹ÊÇÄÐ¶ùÉí',
+    			subject:'¾ÉÉÏº£¹ã¸æ¡°Ë«ÃÃ¡±¾¹ÊÇÄÐ¶ùÉí',
+    			src:'http://hunan.sinaimg.cn/iframe/index/idx/2012/0518/U6992P1192T59D1F1052DT20120518095845.jpg',
+    			big_img_src:'http://hunan.sinaimg.cn/iframe/index/idx/2012/0518/U6992P1192T59D1F1052DT20120518095845.jpg'
+    		}]
+    };
+
+   DFZ.APP.Slider.init(options);
+ </script>
+<div class="gdiv">
+<h3 class="tit_left"><strong>ÈÈµã×¨Ìâ</strong><span><a href="http://hunan.sina.com.cn/news/special/list.html" target="_blank">¸ü¶à&gt;&gt;</a></span></h3>
+<dl class="pic-detail">
+<dt><a href="http://hunan.sina.com.cn/zt/ExpoCentralChina2012/index.shtml" target="_blank"><img src="http://hunan.sinaimg.cn/2012/0517/U6992P1192DT20120517091509.jpg" border="0"></a></dt>
+<dd>
+<h4><a href="http://hunan.sina.com.cn/zt/ExpoCentralChina2012/index.shtml" target="_blank">µÚÆß½ìÖÐ²¿²©ÀÀ»á</a></h4>
+<p>µÚÆß½ìÖÐ²¿²©ÀÀ»á¼´½«¿ªÄ»...
+<a href="http://hunan.sina.com.cn/zt/ExpoCentralChina2012/index.shtml" target="_blank" class="imp">[ÏêÇé]</a></p>
+</dd>
+</dl>
+<ul class="ull">
+<li><a style="font-size:12px;" href="http://hunan.sina.com.cn/zt/ent/mxzd/index.shtml" target="_blank">ÐÂÀËºþÄÏÁÁÏà¡¶ÃÎÏëÖ°´ï¡·¾Í°®Î¢²©¿Ø
+</a></li>
+<li><a style="font-size:12px;" href="http://hunan.sina.com.cn/zt/news/hnzaihai/index.shtml" target="_blank">ºþÄÏ°ÙÍòÈËÔâÓöºéÀÔÔÖº¦</a></li>
+</ul></div>
+<div class="gdiv">
+<h3 class="tit_left"><strong>ÈÈµãÊÓÆµ</strong><span><a href="/news/video/list.html" target="_blank">¸ü¶à&gt;&gt;</a></span></h3>
+<dl class="pic-detail video-list">
+<dt><a href="/news/video/2012-05-17/28324.html" target="_blank"><img src="http://p2.v.iask.com/256/6/77176122_1.jpg"></a></dt>
+<dd>
+<h4><a href="/news/video/2012-05-17/28324.html" target="_blank">ÊÓÆµ£ºÑ§ÉúÒäÌ®Ëú³¡¾°</a></h4>
+<p>ºþÄÏÖÐÑ§Î§Ç½Ì®ËúÇ×ÀúÕß»ØÒäµ±Ê±³¡¾°¡­¡­ <a href="/news/video/2012-05-17/28324.html" class="imp" target="_blank">[ÏêÇé]</a></p>
+</dd>
+</dl>
+<ul class="ull"><li><a style="font-size:12px;" href="/news/video/2012-05-17/28296.html" target="_blank">ÊÓÆµ£ºµÚÆß½ìÖÐ²©»á18ÈÕ³¤É³¿ªÄ»</a></li><li><a style="font-size:12px;" href="/news/video/2012-05-14/27694.html" target="_blank">ÊÓÆµ£º´óÇÅ±»ÆØÎÞ¸Ö½î ¹Ù·½³ÆÕýÔÚµ÷²é</a></li><li><a style="font-size:12px;" href="/news/video/2012-05-14/27676.html" target="_blank">ÊÓÆµ£º´óÇÅ¿åÇ°±»×²»÷ ÇÅÁä13Äê¿´²»µ½¸Ö½î</a></li><li><a style="font-size:12px;" href="/news/video/2012-05-13/27636.html" target="_blank">ÊÓÆµ£ºÆ½½­Ò»´óÇÅ¿åËú Ïû·À¹Ù±øÒÑ¸Ïµ½ÏÖ³¡ÇÀ¾È</a></li><li><a style="font-size:12px;" href="/news/video/2012-05-13/27620.html" target="_blank">ÊÓÆµ£ººþÄÏÓö×îÇ¿½µÓê ½ñÄêÊ×ÆôÆøÏóÔÖº¦Ó¦¼±ÏìÓ¦ </a></li></ul>
+</div>
+</div>
+<div class="important-news">
+<div class="hot-news">
+<h3>ºþÄÏÒªÎÅ</h3>
+<h2>
+</h2><p>
+<a href="http://hunan.sina.com.cn/news/today/2012-05-18/28362.html" target="_blank" class="imp">µÚÆß½ìÖÐ²¿²©ÀÀ»á½ñÈÕ³¤É³¿ªÄ»</a>
+
+</p>
+<p>
+<a href="http://hunan.sina.com.cn/news/today/2012-05-18/28415.html" target="_blank">[Õ¹Ê¾8´óÊÀ½çÖ®×î]</a>
+<a href="http://hunan.sina.com.cn/news/today/2012-05-18/28420.html" target="_blank">[Àú½ìÖÐ²©»áÁÁµã»Ø¹Ë]</a>
+<a href="http://slide.hunan.sina.com.cn/slide_38_22386_59823.html#p=2" target="_blank">[¸ßÇåÍ¼¼¯]</a>
+<a href="http://hunan.sina.com.cn/zt/ExpoCentralChina2012/index.shtml" target="_blank">[×¨Ìâ]</a>
+</p>
+</div>
+<style type="text/css">
+
+<!--
+.STYLE1 {color: #000000}
+.STYLE2 {color: #FF0000}
+.nodot {
+    background-position: none;
+    font-size: 14px;
+    line-height: 23px;
+    padding: 0 0 0 0;
+}
+--></style>
+<ul class="ull">
+<li><a href="http://hunan.sina.com.cn/news/shms/2012-05-18/28389.html%0D%0A" target="_blank">ºþÄÏ°Ë³É¿í´øÓÃ»§ÍøËÙÌáÖÁ20M ÊÖ»úÉÏÍøÌáËÙ2±¶</a></li>
+<li><a href="http://hunan.sina.com.cn/news/shms/2012-05-17/28353.html" target="_blank">ºþÄÏ»õÔËÒµÎñÔ±ÀûÓÃÂ©¶´ÇÖÕ¼154ÍòÓàÔª±»ÅÐ8Äê</a></li>
+<li><a href="http://hunan.sina.com.cn/news/shms/2012-05-18/28446.html" target="_blank">ÏæÌ¶Ò×Ë×ºÓ¹«¿ªÈý¹«Ïû·Ñ ¹Ù·½³Æ¾ÓÃñ¿ÉÉêÇëÖªÏþ</a></li>
+<li><a href="http://hunan.sina.com.cn/news/today/2012-05-18/28392.html" target="_blank">×ÔÁôµØ±»´åÎ¯»áË½×Ô³ö×â ´åÃñÆßÄêÉÏËßË÷ÒªÅâ³¥</a></li>
+<li><a href="http://hunan.sina.com.cn/news/today/2012-05-17/28352.html" target="_blank">ÐÂÉÛÏØ·¢Éú¿óÄÑÖÂ6ÈËËÀÍö ËÑ¾È¹¤×÷½áÊø </a></li>
+<li><a href="http://hunan.sina.com.cn/news/shms/2012-05-18/28357.html" target="_blank">½ñÈÕ»òÓ­ÐÂÒ»ÂÖ½µË® Ã÷ºóÈ«Ê¡×ÔÎ÷Ïò¶«ÓÐ±©Óê</a></li>
+<li style="height:10px;margin:10px 0 0 -6px;" class="line">
+<li><a href="http://hunan.sina.com.cn/news/shms/2012-05-18/28451.html" target="_blank">ºþÄÏñçÑô¹æ»®¾ÖÈËÔ±Ö´·¨Ê±±»ÆÃÆûÓÍÉÕÉË</a></li>
+<li><a href="http://hunan.sina.com.cn/news/caijing/2012-05-17/28285.html" target="_blank">³ÉË¼Î£19ÈÕÏÖÉí³¤É³ÂÛµÀ¹ÉÈ¨Í¶×Ê</a> <a href="http://hunan.sina.com.cn/news/caijing/2012-05-18/28472.html" target="_blank">¶Ô»°Èý´ó²ÂÏë</a></li>
+<li><a href="http://hunan.sina.com.cn/news/shms/2012-05-18/28427.html" target="_blank">Ä³Æ·ÅÆ»ðÍÈ³¦ÄÚ³Ô³ö¡°Çù³æ¡± ¹¤ÉÌÔðÁî³¬ÊÐ1Åâ10</a></li>
+<li><a href="http://hunan.sina.com.cn/news/shms/2012-05-18/28428.html" target="_blank">ÄÐ×Ó¼µ¶ÊÁÚ¾ÓÃÞ»¨ÑíÃç³¤µÃºÃ È÷³ý²Ý¼Á½«ÆäÒ©ËÀ</a></li>
+<li><a href="http://hunan.sina.com.cn/news/shms/2012-05-18/28404.html" target="_blank">·òÆÞÁ½Àë»éºóÔÙ¾ÛÊ× 30Äêºó·¢ÏÖ¼Ì×ÓÊÇÇ×Éú×Ó</a></li>
+<li><a href="http://www.ccitexpo.com/" target="_blank"><font color="red">ÍøÉÏÖÐ²¿²©ÀÀ»á</font></a> <a href="http://hunan.sina.com.cn/news/caijing/2012-05-18/28454.html" target="_blank">ÖÐ²©»á³¤É³ÄâÒý×Ê448.8ÒÚÔª</a></li>
+</ul>
+<h3 class="tit"><strong>Àí²ÆÉú»î</strong><span><a href="http://hunan.sina.com.cn/caijing/" target="_blank">¸ü¶à&gt;&gt;</a></span></h3>
+<ul class="cmul" id="quxian_list">
+<li><a title="ºþÄÏÉç»áÏû·ÑÆ·ÁãÊÛ×Ü¶îÇ°4ÔÂÓâ2334ÒÚ Ôö15.4%" href="/news/caijing/2012-05-18/28414.html%0D%0A" class="nodot" target="_blank">ºþÄÏÉç»áÏû·ÑÆ·ÁãÊÛ×Ü¶îÇ°4ÔÂÓâ2334ÒÚ Ôö15.4%
+</a></li>
+<li><a title="1ÖÁ4ÔÂºþÄÏÂ¥ÊÐ¾ù¼Û3797.84Ôª/Æ½ Í¬±È½µ2.2%
+" href="/news/caijing/2012-05-18/28421.html%0D%0A" class="nodot" target="_blank">1ÖÁ4ÔÂºþÄÏÂ¥ÊÐ¾ù¼Û3797.84Ôª/Æ½ Í¬±È½µ2.2%</a></li>
+<li><a title="ºþÄÏÒ»¼¾¶ÈÐÂÔö¾ÍÒµÓâ20ÍòÈË Éç±£»ù½ðÔö19.17ÒÚ
+" href="/news/caijing/2012-05-18/28407.html%0D%0A" class="nodot" target="_blank">ºþÄÏÒ»¼¾¶ÈÐÂÔö¾ÍÒµÓâ20ÍòÈË Éç±£»ù½ðÔö19.17ÒÚ
+</a></li>
+<li><a title="³¤É³Ç§×ã½ð½ñÄêÊ×´ÎµøÆÆ400Ôª/¿Ë ÊÐÃñ³­µ×½ðÌõ
+ " href="/news/caijing/2012-05-18/28423.html%0D%0A" class="nodot" target="_blank">³¤É³Ç§×ã½ð½ñÄêÊ×´ÎµøÆÆ400Ôª/¿Ë ÊÐÃñ³­µ×½ðÌõ
+</a></li>
+</ul>
+<h3 class="tit"><strong>ÈýÏæËÄË®</strong><span><a href="/news/qyxw/list.html" target="_blank">¸ü¶à&gt;&gt;</a></span></h3>
+<ul class="cmul" id="quxian_list">
+<li><a title="Å®×ÓºÍÕÉ·òâæÆøÌøÂ¥ Ðü¿ÕÉ²ÄÇ±»Çå½à¹¤×§×¡" href="/news/qyxw/2012-05-18/28434.html" class="nodot" target="_blank"><span class="quxian">[ÖêÖÞ]</span>Å®×ÓºÍÕÉ·òâæÆøÌøÂ¥ Ðü¿ÕÉ²ÄÇ±»Çå½à¹¤×§×¡</a></li><li><a title="Å®×Ó°ó¼ÜÐ¡Ñ§Éú·´¸´Ë÷ÒªÊê½ð»ñÐÌÊ®Äê" href="/news/qyxw/2012-05-18/28433.html" class="nodot" target="_blank"><span class="quxian">[ÏæÌ¶]</span>Å®×Ó°ó¼ÜÐ¡Ñ§Éú·´¸´Ë÷ÒªÊê½ð»ñÐÌÊ®Äê</a></li><li><a title="ÒåÈ®¾ÈÆðÄçË®Õß ÊÐÃñÉè¡°Ïæ½­ÒåÈ®¡±±íÕÃµñÏñ" href="/news/qyxw/2012-05-18/28405.html" class="nodot" target="_blank"><span class="quxian">[ÖêÖÞ]</span>ÒåÈ®¾ÈÆðÄçË®Õß ÊÐÃñÉè¡°Ïæ½­ÒåÈ®¡±±íÕÃµñÏñ</a></li><li><a title="ºâÑôÆÆ»ñÒ»ÌØ´óÌÓË°°¸ ÌÓË°½ð¶î´ï800ÓàÍòÔª" href="/news/today/2012-05-18/28399.html" class="nodot" target="_blank"><span class="quxian">[ºâÑô]</span>ºâÑôÆÆ»ñÒ»ÌØ´óÌÓË°°¸ ÌÓË°½ð¶î´ï800ÓàÍòÔª</a></li>
+</ul>
+</div>
+<div class="cr">
+<div class="baoliao">
+<h3 class="tit"><strong>Î¢±¬ÁÏ</strong></h3>
+<div id="scrollDiv">
+<ul>
+<li>
+<div>
+<div style="float:left;width:29%;"><a href="javascript:;" onclick="dweibo_detail('1168978171','yjI0av9sV');return false;"><img src="http://tp4.sinaimg.cn/1168978171/50/5606826711/0" alt="ÈýÏæë½Ð¡²Ó"></a>
+</div>
+<div style="float:left;width:70%;">
+<a href="javascript:;" onclick="dweibo_detail('1168978171','yjI0av9sV');return false;">ÈýÏæë½Ð¡²Ó</a>£º³¤É³²ÌïÉÂ·ºÍÖÐÉ½Â·½»½ç´¦Ò»Ãñ·¿Æð»ð<a href="javascript:;" class="imp" onclick="dweibo_detail('1168978171','yjI0av9sV');return false;">[ÏêÏ¸]</a>
+</div>
+<div style="clear:left;"></div>
+</div>
+</li>
+<li>
+<div>
+<div style="float:left;width:29%;"><a href="javascript:;" onclick="dweibo_detail('1510133663','yjB0ilTh8');return false;"><img src="http://tp4.sinaimg.cn/1510133663/50/1276253162/0" alt="½»¾¯ºÅÊÖ"></a>
+</div>
+<div style="float:left;width:70%;">
+<a href="javascript:;" onclick="dweibo_detail('1510133663','yjB0ilTh8');return false;">½»¾¯ºÅÊÖ</a>£ºË«ºÅ½ûÐÐÆô¶¯Ò»Ð¡Ê±£¬¿ª¸£ËÂÂ·¿Ú£¬Ðí¶àË«ºÅ³µÁ¾Ã»ÓÐÌáÇ°ÈÆÐÐ<a href="javascript:;" class="imp" onclick="dweibo_detail('1510133663','yjB0ilTh8');return false;">[ÏêÏ¸]</a>
+</div>
+<div style="clear:left;"></div>
+</div>
+</li>
+<li>
+<div>
+<div style="float:left;width:29%;"><a href="javascript:;" onclick="dweibo_detail('2049373947','yjApzjmaH');return false;"><img src="http://tp4.sinaimg.cn/2049373947/50/5601014582/1" alt="ÎÒÃÇ¶¼ÊÇºþÄÏÈË"></a>
+</div>
+<div style="float:left;width:70%;">
+<a href="javascript:;" onclick="dweibo_detail('2049373947','yjApzjmaH');return false;">ÎÒÃÇ¶¼ÊÇºþÄÏÈË</a>£ºÉí²Ð£¬µ«ÒÀ¾ÉÃæ´øÎ¢Ð¦£¡Çë°ï°ïËû°É£¡<a href="javascript:;" class="imp" onclick="dweibo_detail('2049373947','yjApzjmaH');return false;">[ÏêÏ¸]</a>
+</div>
+<div style="clear:left;"></div>
+</div>
+</li>
+<li>
+<div>
+<div style="float:left;width:29%;"><a href="javascript:;" onclick="dweibo_detail('1859891822','yj14Q2Q9U');return false;"><img src="http://tp3.sinaimg.cn/1859891822/50/5621935328/0" alt="carmenÐ¡ÁúÅ®"></a>
+</div>
+<div style="float:left;width:70%;">
+<a href="javascript:;" onclick="dweibo_detail('1859891822','yj14Q2Q9U');return false;">carmenÐ¡ÁúÅ®</a>£º#Ãî¸ß·å#¾ÉÎª³¤É³³ÇÄÏµÚÒ»ÃûÊ¤, Î»ÓÚÌìÐÄÇøÊéÔºÂ·<a href="javascript:;" class="imp" onclick="dweibo_detail('1859891822','yj14Q2Q9U');return false;">[ÏêÏ¸]</a>
+</div>
+<div style="clear:left;"></div>
+</div>
+</li>
+<li>
+<div>
+<div style="float:left;width:29%;"><a href="javascript:;" onclick="dweibo_detail('2145650707','yigyR4ebh');return false;"><img src="http://tp4.sinaimg.cn/2145650707/50/5601912466/0" alt="½ðÅÆ°ïÅ®ÀÉ³ÂÐñ"></a>
+</div>
+<div style="float:left;width:70%;">
+<a href="javascript:;" onclick="dweibo_detail('2145650707','yigyR4ebh');return false;">½ðÅÆ°ïÅ®ÀÉ³ÂÐñ</a>£º#°ïÅ®ÀÉÔÚÐÐ¶¯#Æ½½­ÏØÍ¯²¼ÕòÌØ´ó±ù±¢ÔÖº¦¾ÈÔ®<a href="javascript:;" class="imp" onclick="dweibo_detail('2145650707','yigyR4ebh');return false;">[ÏêÏ¸]</a>
+</div>
+<div style="clear:left;"></div>
+</div>
+</li>
+<li>
+<div>
+<div style="float:left;width:29%;"><a href="javascript:;" onclick="dweibo_detail('2034399564','yjB2eDkE9');return false;"><img src="http://tp1.sinaimg.cn/2034399564/50/1301025093/0" alt="ÏæÌ¶½»¾¯Ö§¶Ó"></a>
+</div>
+<div style="float:left;width:70%;">
+<a href="javascript:;" onclick="dweibo_detail('2034399564','yjB2eDkE9');return false;">ÏæÌ¶½»¾¯Ö§¶Ó</a>£º5ÔÂ16ÈÕ£¬ÈýÇÅÇÅ±±Ä³¹¤µØÍÚ¾ò³öÒ»Ã¶ÒÉËÆ¡°ÊÖÀ×¡±µÄÎïÆ·<a href="javascript:;" class="imp" onclick="dweibo_detail('2034399564','yjB2eDkE9');return false;">[ÏêÏ¸]</a>
+</div>
+<div style="clear:left;"></div>
+</div>
+</li>
+</ul></div><a href="javascript:;" class="to-wei" onclick="pub_dialog('ÐÂÀËºþÄÏ ');return false;">±¬ÁÏµ½Î¢²©</a>
+</div>
+<div class="img_mar"><iframe src="http://hunan.sina.com.cn/iframe/ad/24.html" height="120" width="250" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"></iframe></div>
+<div class="gdiv">
+<h3 class="tit"><strong>ÐÂÎÅÅÅÐÐ°ñ</strong></h3>
+<ol class="phlist">
+<li><i class="impi">1</i><a href="http://hunan.sina.com.cn/news/today/2012-05-18/28415.html" target="_blank">ÖÐ²©»áºþÄÏÕ¹Ê¾8´óÊÀ½çÖ®×î</a></li>
+<li><i class="impi">2</i><a href="http://slide.hunan.sina.com.cn/slide_38_22386_59823.html#p=4" target="_blank">ÊÀ½ç¶¥¼¶Ñæ»ðÕÕÁÁÏæ½­</a></li>
+<li><i class="impi">3</i><a href="http://hunan.sina.com.cn/news/shms/2012-05-17/28143.html" target="_blank">ºþÄÏÏÖÊ×ÀýÕòÕþ¸®Èý¹«Ïû·ÑÇåµ¥</a></li> <li><i>4</i><a href="http://hunan.sina.com.cn/news/shms/2012-05-17/28161.html" target="_blank">ºþÄÏ¹«°²ÌüÔ­¸±Ìü³¤ÉæÏÓÊÜ»ß</a></li>
+<li><i>5</i><a href="http://hunan.sina.com.cn/news/today/2012-05-18/28435.html" target="_blank">ÉÛÑôÊÐ¾ºÕùÐÔÑ¡°Î91ÃûÁìµ¼¸É²¿</a></li>
+<li><i>6</i><a href="http://hunan.sina.com.cn/news/shms/2012-05-18/28446.html" target="_blank">ÏæÌ¶Ò×Ë×ºÓ¹«¿ªÈý¹«Ïû·Ñ</a></li>
+<li><i>7</i><a href="http://hunan.sina.com.cn/news/shms/2012-05-18/28359.html" target="_blank">³¤É³´óÈýÅ®Éú¹«½»Õ¾ÒÉ±»ÏÂÃÔÒ©</a></li>
+<li><i>8</i><a href="http://hunan.sina.com.cn/news/shms/2012-05-18/28427.html" target="_blank">Ä³Æ·ÅÆ»ðÍÈ³¦ÄÚ³Ô³ö¡°Çù³æ¡±</a></li>
+<li><i>9</i><a href="http://hunan.sina.com.cn/news/shms/2012-05-18/28452.html" target="_blank">ºþÄÏ¸ß¿¼Ð¡ÓïÖÖµÈ3Àà¿¼ÊÔ°²ÅÅÈ·¶¨</a></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="wrap"><iframe src="http://hunan.sina.com.cn/iframe/ad/index/1.html" height="90" width="950" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"></iframe></div>
+<div class="title title01">
+<h3 class="s1">ÃÀÊ³³Ô¿Í</h3>
+<p> <a href="http://group.hunan.sina.com.cn/">ÃÀÊ³Î¢Èº</a>|    <a href="http://hunan.sina.com.cn/eat/weibo.html">@³¤É³ºÃßÈ¹í</a>|    <a href="http://hunan.sina.com.cn/eat/join.html">ºÃßÈ°ï</a>|    <a href="http://hunan.sina.com.cn/eat">¸ü¶à&gt;&gt;</a></p>
+</div>
+<div class="wrap2">
+<div class="con">
+<div class="clear">
+<div class="focus-pic fl focus-pic01">
+<a href="http://hunan.sina.com.cn/eat/" target="_blank" title="ÑøÉúÎåÔÂ³Ô±é³¤É³¾­µäÔÁ²Ë"><img src="http://hunan.sinaimg.cn/iframe/index/idx/2012/0518/U6995P1192T62D1F1122DT20120518091556.jpg" alt="ÑøÉúÎåÔÂ³Ô±é³¤É³¾­µäÔÁ²Ë"></a>
+<h3><a href="http://hunan.sina.com.cn/eat/" target="_blank">ÑøÉúÎåÔÂ³Ô±é³¤É³¾­µäÔÁ²Ë</a></h3>
+</div>
+<div class="fr fame">
+<h2 class="tc"><a href="http://group.hunan.sina.com.cn/1195979/thread-26893.html" target="_blank" class="imp">ÍøÓÑÍÂ²Û£ºÄÇÐ©É½Õ¯Ê³Æ·µÄÓÐÈ¤logo</a></h2>
+<p class="tin">Å¼ÕûÀíÁËÒ»Ð©¾ªÌìµØÆü¹íÉñµÄÉ½Õ¯Ê³Æ·¡£Ì«¹ýÓÚ¼òµ¥µÄ¶¼²»Ð¼ÓÚ·ÅÉÏÀ´¡£<a href="http://group.hunan.sina.com.cn/1195979/thread-26893.html" target="_blank" class="imp">[ÏêÏ¸]</a></p>
+<i class="hr"> </i>
+<ul class="ull">
+<li><a href="/eat/news/2012-05-18/28297.html" target="_blank">[ÃÀÊ³DIY]½ÌÄãÓÍÌõÎ±×°³ÉÅÅ¹ÇÀ´³Ô</a></li>
+<li><a href="/eat/news/2012-05-18/28293.html" target="_blank">[ÒìÓò·çÇé]³Ôµ½·öÇ½³öµÄÃÀÎ¶º£ÏÊ×ÔÖú²Í</a></li>
+<li><a href="/eat/news/2012-05-18/28289.html" target="_blank">[ÃÀÊ³ÖªÊ¶]ÈçºÎ±æ±ðË®¹ûÊÇ·ñ±»´ßÊì</a></li>
+<li><a href="/eat/news/2012-05-18/28288.html" target="_blank">[ÃÀÊ³È¤ÎÅ]ÃÀÊ³ÓÕ»ó ¿´¿´ÊÀ½ç¸÷¹ú¹ú²ËÓÐÄÄÐ©</a></li>
+</ul>
+</div>
+</div>
+<h3 style="font-family:ËÎÌå;font-size:12px" class="tit tit_01_l"><strong>ÃÀÊ³Ì½µê</strong><a href="http://hunan.sina.com.cn/eat/weibo.html" target="_blank"><em>ÈËÆø²ÍÌü¾«Ñ¡</em></a><span><a href="http://hunan.sina.com.cn/eat/weibo.html" target="_blank">¸ü¶à&gt;&gt;</a></span></h3>
+<ul class="clear shove-list">
+<li class="fl">
+<dl class="pic-detail">
+<dt><a href="javascript:;" onclick="javascript:dweibo_detail('2309624915','yjhLFlRkY');return false;"><img src="http://hunan.sinaimg.cn/iframe/index/idx/2012/0518/U8206P1192T62D1F1123DT20120518101641.jpg"></a></dt>
+<dd>
+<h4><a href="javascript:;" onclick="javascript:dweibo_detail('2309624915','yjhLFlRkY');return false;">´¨½­°ÍÊ³</a></h4>
+<p><a href="javascript:;" class="imp" onclick="javascript:dweibo_detail('2309624915','yjhLFlRkY');return false;">@³¤É³ºÃßÈ¹í</a>£ºÎå¸öÈËÒ»¹²115£¬ÈË¾ù23£¬Î¶µÀ¶¼ºÜ²»´í~<a href="javascript:;" class="imp" onclick="javascript:dweibo_detail('2309624915','yjhLFlRkY');return false;">[ÏêÇé]</a></p>
+</dd>
+</dl>
+<ul>
+<li><a href="javascript:;" class="imp" onclick="javascript:dweibo_detail('2103083032','y6pyMtdWk');return false;">@Cinque_Chen£º</a><a href="javascript:;" onclick="javascript:dweibo_detail('2103083032','y6pyMtdWk');return false;">ÍÆ¼öË½·¿²ËºÃÈ¥´¦ £¬×ÏËÕÅ£ÍÜ³¬ÏÂ·¹</a></li>
+<li><a href="javascript:;" class="imp" onclick="javascript:dweibo_detail('2434266174','y5VhNrIbQ');return false;">@ÎÒÊÇÐ¡¿û×Ó£º</a><a href="javascript:;" onclick="javascript:dweibo_detail('2434266174','y5VhNrIbQ');return false;">ÔÓ½´ÈâË¿¸É·Û£¬·Ç³£ºÃ³Ô</a></li>
+</ul>
+</li>
+<li class="fr">
+<dl class="pic-detail">
+<dt><a href="javascript:;" onclick="javascript:dweibo_detail('2309624915','yjzoK6dDi');return false;"><img src="http://hunan.sinaimg.cn/iframe/index/idx/2012/0518/U8206P1192T62D1F1124DT20120518101641.jpg"></a></dt>
+<dd>
+<h4><a href="javascript:;" onclick="javascript:dweibo_detail('2309624915','yjzoK6dDi');return false;">Áõ¶þ¼Ò²Ë</a></h4>
+<p><a href="javascript:;" class="imp" onclick="javascript:dweibo_detail('2309624915','yjzoK6dDi');return false;">@³¤É³ºÃßÈ¹í</a>£ºÔÚÕâÀï³Ô·¹¾ÍÏñ¼ÒÀïÒ»Ñù£¬¶ÔÓÚËûÃÇµÄ¶«Î÷ÎÒ»¹ÊÇºÜ·ÅÐÄµÄ£¡<a href="javascript:;" class="imp" onclick="javascript:dweibo_detail('2309624915','yjzoK6dDi');return false;">[ÏêÇé]</a></p>
+</dd>
+</dl>
+<ul>
+<li><a href="javascript:;" class="imp" onclick="javascript:dweibo_detail('1600059170','y6g9XDfn2');return false;">@¾ýËÆÃ÷ÔÂÎÒËÆÎí2£º</a><a href="javascript:;" onclick="javascript:dweibo_detail('1600059170','y6g9XDfn2');return false;">¿¾·¢¸â£¬Ò»¿éÇ®Ò»¸ö</a></li>
+<li><a href="javascript:;" class="imp" onclick="javascript:dweibo_detail('1770438417','y6fgDzny3');return false;">@viviÖ¯Î§²±£º</a><a href="javascript:;" onclick="javascript:dweibo_detail('1770438417','y6fgDzny3');return false;">³¤É³¾íÑÌ³§ÕâÀïµÄÀ´·ïÓãÕæµÄÀ«ÒÔÀà</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="side">
+<h3 class="tit tit_01_s"><strong>ÃÀÊ³·¢ÏÖ</strong><em>·¢ÏÖºÃ³ÔµÄ<a href="javascript:;" onclick="pub_dialog('³¤É³ºÃßÈ¹í');return false;">@³¤É³ºÃßÈ¹í</a></em><span><a href="/eat/weibo.html" target="_blank">¸ü¶à&gt;&gt;</a></span></h3>
+<dl class="pic-detail">
+<dt><a href="javascript:;" onclick="javascript:dweibo_detail('2309624915','yjxXqzVBI');return false;"><img src="http://hunan.sinaimg.cn/iframe/index/idx/2012/0518/U8206P1192T62D1F1121DT20120518101641.jpg"></a></dt>
+<dd>
+<h4><a href="javascript:;" onclick="javascript:dweibo_detail('2309624915','yjxXqzVBI');return false;">ÓÀÖÝÌØÉ«¼¦·ÛÓã·Ûµê</a></h4>
+<p>Àï±ßµÄÓÀÖÝÃ×ÏßÈ·ÊµºÍ³¤É³²»Ò»ÑùÅ¶,±È½ÏQ£¡<a href="javascript:;" class="imp" onclick="javascript:dweibo_detail('2309624915','yjxXqzVBI');return false;">[ÏêÇé]</a></p>
+</dd>
+</dl>
+<ul class="hot-food">
+<li><span><a href="http://hunan.sina.com.cn/eat/weibo.html" target="_blank">½ÖÍ·Ð¡³Ô£º</a></span><a href="http://weibo.com/1140581460/y6pmEsuvq" target="_blank">Æ½Í·ÈÈÂ±</a>|<a href="http://weibo.com/1497071283/y4ijuyWt4" target="_blank">°ÔÄÔ¿Ç³ô¶¹¸¯</a>|<a href="http://weibo.com/1199532767/y6nZO7wCn" target="_blank">ÈÈÌÀÃæ</a></li>
+<li><span><a href="http://hunan.sina.com.cn/eat/weibo.html" target="_blank">ºþÏæ¿ÚÎ¶£º</a></span><a href="http://weibo.com/2309624915/y6biD9Me8" target="_blank">ÃÎ÷Ï¼Ò</a>|<a href="http://weibo.com/2309624915/y5UWHAnGk" target="_blank">Ë®¿âÊ®Îå¶°</a>|<a href="http://weibo.com/1763431284/y4zRM1y0S" target="_blank">·¹Ê±ºò</a></li>
+<li><span><a href="http://hunan.sina.com.cn/eat/weibo.html" target="_blank">ÍâÀ´ÃÀÊ³£º</a></span><a href="http://weibo.com/1418682217/y57DA0fs8" target="_blank">Ïã¸ÛÀÐ</a>|<a href="http://weibo.com/1732626935/y6fBYdfIw" target="_blank">½ðÅÆÐ¡Áý</a>|<a href="http://weibo.com/2309624915/y65FyFhVf" target="_blank">º£ä×ÊÙË¾</a></li>
+</ul>
+<h3 class="tit tit_01_s"><strong>ÃÀÊ³´ïÈË</strong><span><a href="/eat/join.html" target="_blank">¸ü¶à&gt;&gt;</a></span></h3>
+<ul class="tatsujin-list">
+<li>
+<a href="http://weibo.com/520ppting" target="_blank"><img src="http://tp4.sinaimg.cn/2388960163/50/5629299730/0" alt="Carina_æÃp"></a>
+<p><a href="http://weibo.com/520ppting" target="_blank">Carina_æÃp</a>£ºÌìÐÄ¸óÏÂ²»ÅÂÑòÑòÈâ·ÛÎ¶µÀºÃ£¬À±½·½´Ò²ºÜÀ±<a href="javascript:;" class="imp" onclick="dweibo_detail('2388960163','y44dF00pa');return false;">[ÏêÇé]</a></p>
+</li>
+<li>
+<a href="http://weibo.com/cshaochigui" target="_blank"><img src="http://tp4.sinaimg.cn/2309624915/50/5615103823/0" alt="³¤É³ºÃßÈ¹í"></a>
+<p><a href="http://weibo.com/cshaochigui" target="_blank">³¤É³ºÃßÈ¹í</a>£ºÌì¹¤Ð¡³ø µÄÌøÌøÍÜ×îºÃ³Ô,ÓÖÀ±ÓÖÄÛ,¶¼À±µÄËµ²»³ö»°ÁË<a href="javascript:;" class="imp" onclick="dweibo_detail('2309624915','y4zmbiV13');return false;">[ÏêÇé]</a></p>
+</li>
+</ul>
+</div>
+<em class="clear"> </em>
+</div>
+<div class="wrap"><iframe src="http://hunan.sina.com.cn/iframe/ad/index/2.html" height="90" width="950" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"></iframe></div>
+
+<!--Ê±ÉÐ¹ºÎï--><div class="title title02">
+<h3 class="s3">Ê±ÉÐ¹ºÎï</h3>
+<p><a href="http://hunan.sina.com.cn/shopping/activity/list.html" target="_blank">³±Á÷×ÊÑ¶</a>|<a href="http://hunan.sina.com.cn/shopping/weibo.html" target="_blank">@³¤É³¹ºÀïÊÖ</a>|<a href="http://hunan.sina.com.cn/shopping/join.html" target="_blank">¹ºÎï¿ñ¼¯ºÏ</a>|<a href="http://hunan.sina.com.cn/shopping" target="_blank">¸ü¶à&gt;&gt;</a></p>
+</div>
+<div class="wrap2">
+<div class="con">
+<div class="clear">
+<div class="focus-pic fl focus-pic02" id="mallslide">
+</div>
+<script>
+(function(){
+   var opt = {
+     interval:10871088,
+     container:'#mallslide',
+     imgs: [{link:'http://hunan.sina.com.cn/shopping/activity/2012-05-18/28295.html',src:'http://hunan.sinaimg.cn/iframe/index/idx/2012/0518/U6993P1192T60D1F1090DT20120518101338.jpg',btn:'1',title:'Ê±÷ÖÁ¬ÒÂÈ¹´î³öÂüÃîÉí×Ë'}],
+     tpl_board:'<a target="_blank" href="${link}" title="${title}"><img src="${src}" alt="${title}" /></a><h3><a target="_blank" href="${link}" title="${title}">${title}</a></h3>',
+     tpl_form:'{{html board}}'
+   }
+   DFZ.APP.Slider.init(opt);
+})();
+</script>
+<div class="fr fame">
+<h2 class="tc"><a href="http://hunan.sina.com.cn/shopping/activity/2012-05-18/28348.html" target="_blank" class="imp">Å®ÐÇ³öµÀ¾ÉÕÕ:Ã»ÕûÈÝÃ»Â¡ÐØ</a></h2>
+<p class="tin">Å®ÐÇ¾ÉÕÕ×ÜÊÇ´ó¼Ò×îÏ²»¶ÌÖÂÛµÄ»°Ìâ£¬·²×ß¹ý±ØÁôÏÂºÛ¼££¬Å®Ã÷ÐÇ¸Õ³öµÀÊ±µÄÕÕÆ¬ÎÞÂÛÊÇÇàÉ¬¡¢À×ÈË»òÊÇ¾ªÑÞ¶¼ÊÇÕä¹óµÄ¼ÇÒä¡£<a href="http://hunan.sina.com.cn/shopping/activity/2012-05-18/28348.html" target="_blank" class="imp">[ÏêÏ¸]</a></p> <i class="hr hr2"> </i> <h2 class="tc"><a href="http://hunan.sina.com.cn/shopping/activity/2012-05-18/28310.html" target="_blank" class="imp">·¶±ù±ù´©Ä¨ÐØÒ¸ÏÂ¾ªÏÖºÚ°ß</a></h2>
+<p class="tin">ê©ÄÉºìÌºÉÏ£¬·¶±ù±ùÒ»Ï®ÆÄ¡°CHINA´É¡±³¤È¹Ê¾ÈË£¬µ«·¶±ù±ùÌ§ÊÖµÄË²¼ä¾ªÏÖÒ¸ÏÂ°ß£¬ÈÃÃÀÀö´ó´òÕÛ¿ÛÁË¡£<a href="http://hunan.sina.com.cn/shopping/activity/2012-05-18/28310.html" target="_blank" class="imp">[ÏêÏ¸]</a></p>
+</div>
+</div>
+<h3 style="font-family:'ËÎÌå';font-size:12px;" class="tit tit_02_l"><strong>¹ºÎïÔÚºþÄÏ</strong><em>³±Á÷Æ·ÅÆ¡¤¹ºÎïÍÆ¼ö</em><span></span></h3>
+<ul class="clear shove-list">
+<li class="fl">
+<dl class="pic-detail">
+<dt><a href="javascript:;" onclick="javascript:dweibo_detail('1769705813','yhkNS9bV9');return false;"><img src="http://hunan.sinaimg.cn/iframe/index/idx/2012/0503/U6993P1192T60D1F1083DT20120503135448.jpg"></a></dt>
+<dd>
+<h4><a href="javascript:;" onclick="javascript:dweibo_detail('1769705813','yhkNS9bV9');return false;">ONLYÂú200Ôª¼õ60</a></h4>
+<p><a href="javascript:;" class="imp" onclick="javascript:dweibo_detail('1769705813','yhkNS9bV9');return false;">@LaNovaÀÖºÍ³Ç</a>£º4ÔÂ28ÈÕ-5ÔÂ3ÈÕ£¬ONLY²¿·ÖÉÌÆ·Âú200Ôª¼õ60<a href="javascript:;" class="imp" onclick="javascript:dweibo_detail('1769705813','yhkNS9bV9');return false;">[ÏêÇé]</a></p>
+</dd>
+</dl>
+<ul>
+<li><a href="javascript:;" class="imp" onclick="javascript:dweibo_detail('1213854487','yiuQcfPu9');return false;">@Ã×ÄÝµ¤£º</a><a href="javascript:;" onclick="javascript:dweibo_detail('1213854487','yiuQcfPu9');return false;">H&amp;mµÄÍ¯×°ÕæºÃ¿´£¬Ò»²»Ð¡ÐÄÂòÁËÕâÃ´¶à</a></li>
+<li><a href="javascript:;" class="imp" onclick="javascript:dweibo_detail('1855445930','yiuKZAqHr');return false;">@Ë¼ÁâÂèßä£º</a><a href="javascript:;" onclick="javascript:dweibo_detail('1855445930','yiuKZAqHr');return false;">É´Íø´îÅä×ÅÀÙË¿×öµÄ·¢¼Ð£¬ºÜÃÀºÜÏÉà¸~</a></li>
+</ul>
+</li>
+<li class="fr">
+<dl class="pic-detail">
+<dt><a href="javascript:;" onclick="javascript:dweibo_detail('2050874663','ygnlNkSTJ');return false;"><img src="http://hunan.sinaimg.cn/iframe/index/idx/2012/0428/U6993P1192T60D1F1084DT20120428100434.jpg"></a></dt>
+<dd>
+<h4><a href="javascript:;" onclick="javascript:dweibo_detail('2050874663','ygnlNkSTJ');return false;">²½²½¸ßÎåÒ»ÓÅ»Ý</a></h4>
+<p><a href="javascript:;" class="imp" onclick="javascript:dweibo_detail('2050874663','ygnlNkSTJ');return false;">@²½²½¸ß¹ã³¡³¤É³µê</a>£º200ËÍ201£¡Ïæ¸ÓÁ½Ê¡19¼Ò²½²½¸ß°Ù»õÈ«Á¦´òÔì£¬ÎåÒ»îÒÏ×£¡<a href="javascript:;" class="imp" onclick="javascript:dweibo_detail('2050874663','ygnlNkSTJ');return false;">[ÏêÇé]</a></p>
+</dd>
+</dl>
+<ul>
+<li><a href="javascript:;" class="imp" onclick="javascript:dweibo_detail('1871757342','yiuQHhIxg');return false;">@ÇåÏªºþ¾²£º</a><a href="javascript:;" onclick="javascript:dweibo_detail('1871757342','yiuQHhIxg');return false;">Ä¸Ç×½Ú¾ÍÒªµ½ÁË£¬²»ÒªÍü¼ÇÂò»¨Å¶</a></li>
+<li><a href="javascript:;" class="imp" onclick="javascript:dweibo_detail('1768931920','yiqHNn0qk');return false;">@³ÌÜ°Èçcc£º</a><a href="javascript:;" onclick="javascript:dweibo_detail('1768931920','yiqHNn0qk');return false;">ÐÂÈëµÄ°ü°ü£¬ÊÇ²»ÊÇºÜÑÞÀö~</a></li>
+</ul>
+</li>
+</ul>
+<h3 style="font-family:'ËÎÌå';font-size:12px;" class="tit tit_02_l"><strong>Ã¿ÈÕÒ»LOOK</strong><em>½ÖÅÄ¡¤×ÔÅÄ</em><span><a href="http://hunan.sina.com.cn/shopping/weibo.html">¸ü¶à&gt;&gt;</a></span></h3>
+<ul class="pat-list clear">
+<li>
+<a href="javascript:;" onclick="javascript:dweibo_detail('1738198233','yjEXlENjN');return false;" title=""><img src="http://hunan.sinaimg.cn/iframe/index/idx/2012/0518/U6993P1192T60D1F1085DT20120518103103.jpg" alt=""></a>
+</li>
+<li>
+<a href="javascript:;" onclick="javascript:dweibo_detail('1768232714','yjHX2E1sR');return false;" title=""><img src="http://hunan.sinaimg.cn/iframe/index/idx/2012/0518/U6993P1192T60D1F1086DT20120518103103.jpg" alt=""></a>
+</li>
+<li>
+<a href="javascript:;" onclick="javascript:dweibo_detail('1788021607','yjDJeCu38');return false;" title=""><img src="http://hunan.sinaimg.cn/iframe/index/idx/2012/0518/U6993P1192T60D1F1087DT20120518103103.jpg" alt=""></a>
+</li>
+<li>
+<a href="javascript:;" onclick="javascript:dweibo_detail('1915138582','yjHHU9SXg');return false;" title=""><img src="http://hunan.sinaimg.cn/iframe/index/idx/2012/0518/U6993P1192T60D1F1088DT20120518103103.jpg" alt=""></a>
+</li>
+<li>
+<a href="javascript:;" onclick="javascript:dweibo_detail('1834607767','yjDM5lg8K');return false;" title=""><img src="http://hunan.sinaimg.cn/iframe/index/idx/2012/0518/U6993P1192T60D1F1089DT20120518103103.jpg" alt=""></a>
+</li>
+</ul>
+</div>
+<div class="side">
+<h3 class="tit tit_02_s"><strong>Ê±ÉÐ¿´µã</strong><span><a href="/shopping/activity/list.html">¸ü¶à&gt;&gt;</a></span></h3>
+<dl class="pic-detail">
+<dt><a href="javascript:;" onclick="javascript:dweibo_detail('2274451730','yiXj4rw3E');return false;"><img src="http://hunan.sinaimg.cn/iframe/index/idx/2012/0514/U6993P1192T60D1F1081DT20120514103915.jpg"></a></dt>
+<dd>
+<h4><a href="javascript:;" onclick="javascript:dweibo_detail('2274451730','yiXj4rw3E');return false;">Gucci°ü°ü</a></h4>
+<p>¾­µäµÄLOVELYÏµÁÐÊÖÌá´ü£¬¾«ÃÀµÄµ××ùÕæÆ¤°ü±ß£¬ºÜºÃµÄ±£»¤ÁËµ××ùµÄ·«²¼²ÄÖÊ¡£<a href="javascript:;" class="imp" onclick="javascript:dweibo_detail('2274451730','yiXj4rw3E');return false;">[ÏêÇé]</a></p>
+</dd>
+</dl>
+<dl class="pic-detail">
+<dt><a href="javascript:;" onclick="javascript:dweibo_detail('1854471750','yiPPKb093');return false;"><img src="http://hunan.sinaimg.cn/iframe/index/idx/2012/0514/U6993P1192T60D1F1082DT20120514103915.jpg"></a></dt>
+<dd>
+<h4><a href="javascript:;" onclick="javascript:dweibo_detail('1854471750','yiPPKb093');return false;">Dior×êÊ¯Ãµ¹å</a></h4>
+<p>Ãµ¹å¹£²øÈÆ×ÅÊÖÖ¸£¬ÁîÖé±¦É¢·¢ÈáÇéÊ«Òâ£¬¾ÍÏñÀËÂþµÄÐû¸æ»òÓÀºãµÄ°®ÇéÏóÕ÷¡£¡±<a href="javascript:;" class="imp" onclick="javascript:dweibo_detail('1854471750','yiPPKb093');return false;">[ÏêÇé]</a></p>
+</dd>
+</dl>
+<h3 class="tit mt1 tit_02_s"><strong>´òÕÛÇé±¨Õ¾</strong><span><a href="/shopping/hot/list.html">¸ü¶à&gt;&gt;</a></span></h3>
+<ul class="dis-list clear"><li><a href="javascript:;" onclick="dweibo_detail('2394454654','y7T1j4ExD');return false;">°¢²¨ÂÞ Âú380ËÍ100</a></li>
+<li><a href="javascript:;" onclick="dweibo_detail('2076157835','y8021dD2W');return false;">ÓÑÒêÉÌµê Âú380¼õ100</a></li>
+<li><a href="javascript:;" onclick="dweibo_detail('2050874663','y7USUwffX');return false;">²½²½¸ß Âú200¼õ60</a></li>
+<li><a href="javascript:;" onclick="dweibo_detail('1973711521','y80fd90S8');return false;">ÔÃ·½IDMALL Âú200¼õ60</a></li>
+<li><a href="javascript:;" onclick="dweibo_detail('1838402083','y7KxhACVC');return false;">ÐÂÊÀ½ç Âú200¼õ80</a></li>
+<li><a href="javascript:;" onclick="dweibo_detail('2027793600','y8G0NfGTg');return false;">ÓÑ°¢°Ù»õ Âú238ËÍ138</a></li></ul>
+<h3 class="tit tit_02_s"><strong>Ê±ÉÐ´ïÈË</strong><span><a href="/shopping/join.html">¸ü¶à&gt;&gt;</a></span></h3>
+<ul class="tatsujin-list">
+<li>
+<a href="http://weibo.com/dandan984" target="_blank"><img src="http://tp4.sinaimg.cn/1213854487/50/5596703544/0" alt="Ã×ÄÝµ¤"></a>
+<p><a href="http://weibo.com/dandan984" target="_blank">Ã×ÄÝµ¤</a>£ºH&amp;mµÄÍ¯×°ÕæºÃ¿´£¬Ò»²»Ð¡ÐÄ¾ÍÂòÁËÕâÃ´¶à¡£<a href="javascript:;" class="imp" onclick="dweibo_detail('1213854487','yiuQcfPu9');return false;">[ÏêÇé]</a></p>
+</li>
+<li>
+<a href="http://weibo.com/52siling" target="_blank"><img src="http://tp3.sinaimg.cn/1855445930/50/5627898912/0" alt="Ë¼ÁâÂèßä"></a>
+<p><a href="http://weibo.com/52siling" target="_blank">Ë¼ÁâÂèßä</a>£º×òÌì¹ä½ÖÊ±ÂòµÄ£¬É´Íø´îÅä×ÅÀÙË¿×ö³öÀ´µÄ·¢¼Ð£¬ºÜÃÀºÜÏÉà¸~<a href="javascript:;" class="imp" onclick="dweibo_detail('1855445930','yiuKZAqHr');return false;">[ÏêÇé]</a></p>
+</li>
+</ul>
+</div>
+<em class="clear"> </em>
+</div>
+<div class="wrap"><iframe src="http://hunan.sina.com.cn/iframe/ad/25.html" height="90" width="950" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"></iframe></div>
+
+<!--Ò¹³¤É³--><div class="title title03">
+<h3 class="s3">Ò¹³¤É³</h3>
+<p><a href="http://hunan.sina.com.cn/ent/mxbg/list.html" target="_blank">Ã÷ÐÇ°ËØÔ</a>|<a href="http://hunan.sina.com.cn/ent/wzycs/list.html" target="_blank">Íæ×ªÒ¹³¤É³</a>|<a href="http://hunan.sina.com.cn/ent/ycxx/list.html" target="_blank">ÑÝ³öÐÅÏ¢</a>|<a href="http://hunan.sina.com.cn/ent" target="_blank">¸ü¶à&gt;&gt;</a></p>
+</div>
+<div class="wrap2">
+<div class="con">
+<div class="clear">
+<div class="focus-pic fl focus-pic03" id="mallslide1">
+</div>
+<script>
+(function(){
+   var opt = {
+     interval:10871088,
+     container:'#mallslide1',
+     imgs: [{link:'http://hunan.sina.com.cn/ent/mxbg/2012-05-18/28400.html',src:'http://hunan.sinaimg.cn/iframe/index/idx/2012/0518/U7698P1192T96D1F1600DT20120518102353.jpg',btn:'1',title:'ÑîÃÝµÍÐØÐÔ¸ÐÁÁÏàê©ÄÉºìÌº'}],
+     tpl_board:'<a target="_blank" href="${link}" title="${title}"><img src="${src}" alt="${title}" /></a><h3><a target="_blank" href="${link}" title="${title}">${title}</a></h3>',
+     tpl_form:'{{html board}}'
+   }
+   DFZ.APP.Slider.init(opt);
+})();
+</script>
+<div class="fr fame">
+<h2 class="tc"><a href="http://hunan.sina.com.cn/ent/mxbg/2012-05-18/28400.html" target="_blank" class="imp">ÑîÃÝµÍÐØÐÔ¸ÐÁÁÏàê©ÄÉºìÌº</a></h2>
+<p class="tin">µ±µØÊ±¼ä5ÔÂ17ÈÕ£¬µÚ65½ìê©ÄÉµçÓ°½Ú£¬ÑîÃÝµÍÐØ»ÆÉ«ÍÏµØÈ¹ÃÀÑÞÁÁÏà¡£³ÂÍ¢¼ÎÍ¸ÊÓÈ¹ÐÔ¸ÐÈÇÈËåÚÏë¡£<a href="http://hunan.sina.com.cn/ent/mxbg/2012-05-18/28400.html" target="_blank" class="imp">[ÏêÏ¸]</a></p> <i class="hr hr2"> </i> <h2 class="tc"><a href="http://hunan.sina.com.cn/ent/mxbg/2012-05-18/28424.html" target="_blank" class="imp">ÎºµÂÊ¥²»Âú¡¶ÈüµÂ¿Ë¡·Æ±·¿×Ô³°¶ªÁ³</a></h2>
+<p class="tin">¡¶ÈüµÂ¿Ë¡¤°ÍÀ³¡·×Ô5ÔÂÉÏÓ³ºó£¬ËäµÃµ½¸÷½çºÃÆÀ£¬µ«Ê×ÖÜÆ±·¿²»µ½500Íò£¬ÎºµÂÊ¥Ì¹³ÐÓÐÐ©ÒâÍâ£¬Ëû×Ô³°µÀ£º»¹ºÃÓ®µÃÁËºÃÆÀ£¬²»È»»ØÌ¨<a href="http://hunan.sina.com.cn/ent/mxbg/2012-05-18/28424.html" target="_blank" class="imp">[ÏêÏ¸]</a></p>
+</div>
+</div>
+<ul class="clear shove-list">
+<li class="fl">
+<h3 style="font-family:'ËÎÌå';font-size:12px;" class="tit tit_03_s"><strong>¾Æ °É</strong><span style="padding-right:4px;"><a href="/ent/weibo/w3/list.html" target="_blank">¸ü¶à&gt;&gt;</a></span></h3>
+<dl class="pic-detail">
+<dt><a href="javascript:;" onclick="javascript:dweibo_detail('2107321042','yj2Eagtff');return false;"><img src="http://hunan.sinaimg.cn/iframe/index/idx/2012/0514/U7958P1192T96D1F1605DT20120514105127.jpg"></a></dt>
+<dd>
+<h4><a href="javascript:;" onclick="javascript:dweibo_detail('2107321042','yj2Eagtff');return false;">¾Æ¿âSTAR</a></h4>
+<p><a href="javascript:;" class="imp" onclick="javascript:dweibo_detail('2107321042','yj2Eagtff');return false;">@¾Æ¿âSTAR</a>£º¾Æ¿â[6]ÖÜËêÉúÈÕÀ²£¡ÎªÍøÓÑ×¼±¸ÁË¾«ÐÄÖÆ×÷µÄµêÇì´óÀñ°ü£¡<a href="javascript:;" class="imp" onclick="javascript:dweibo_detail('2107321042','yj2Eagtff');return false;">[ÏêÇé]</a></p>
+</dd>
+</dl>
+<ul>
+<li><a href="javascript:;" class="imp" onclick="javascript:dweibo_detail('1764473871','yiXLrepGh');return false;">@ÖÁ_×ð_Œš¾ÍÊÇÏ²»¶ÖÜ½ÜÂ×²»½âÊÍ£º</a><a href="javascript:;" onclick="javascript:dweibo_detail('1764473871','yiXLrepGh');return false;">ÉúÈÕÔÚËÕºÉÓ®ÁË</a></li>
+<li><a href="javascript:;" class="imp" onclick="javascript:dweibo_detail('1415954295','yiTMhhSlJ');return false;">@Minnie-_-ÃôÃô£º</a><a href="javascript:;" onclick="javascript:dweibo_detail('1415954295','yiTMhhSlJ');return false;">ËÕºÉ¾Æ°ÉÌìÊ¹°®ÃÀÀö»¤Ê¿Ö®Ò¹</a></li>
+</ul>
+</li>
+<li class="fr">
+<h3 style="font-family:'ËÎÌå';font-size:12px;" class="tit tit_03_s"><strong>KTV</strong><span style="padding-right:4px;"><a href="/ent/weibo/w4/list.html" target="_blank">¸ü¶à&gt;&gt;</a></span></h3>
+<dl class="pic-detail">
+<dt><a href="javascript:;" onclick="javascript:dweibo_detail('1921421220','yiZBFg89e');return false;"><img src="http://hunan.sinaimg.cn/iframe/index/idx/2012/0514/U7958P1192T96D1F1606DT20120514105127.jpg"></a></dt>
+<dd>
+<h4><a href="javascript:;" onclick="javascript:dweibo_detail('1921421220','yiZBFg89e');return false;">˜·µãKTV</a></h4>
+<p><a href="javascript:;" class="imp" onclick="javascript:dweibo_detail('1921421220','yiZBFg89e');return false;">@˜·µãKTV</a>£ºÕæÐÄÏ£ÍûÃ¿Î»À´µ½ÀÖµãµÄ¿ÍÈË¶¼ÄÜÕÀ·ÅÕâÑù¿ªÐÄµÄÐ¦ÈÝ¡£<a href="javascript:;" class="imp" onclick="javascript:dweibo_detail('1921421220','yiZBFg89e');return false;">[ÏêÇé]</a></p>
+</dd>
+</dl>
+<ul>
+<li><a href="javascript:;" class="imp" onclick="javascript:dweibo_detail('1062535135','yiSx41T2v');return false;">@-è£è£-£º</a><a href="javascript:;" onclick="javascript:dweibo_detail('1062535135','yiSx41T2v');return false;">ÀÖµãvvip×¨Ö°µÄ·þÎñÉúË§µ½±¬£¡</a></li>
+<li><a href="javascript:;" class="imp" onclick="javascript:dweibo_detail('1753019071','yj1dag8hO');return false;">@³¤É³½ñÒ¹ÎÞÃß£º</a><a href="javascript:;" onclick="javascript:dweibo_detail('1753019071','yj1dag8hO');return false;">ÎÂÉ¯µÄÏºÕæÐÄ²»´í¡£</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="side">
+<h3 class="tit tit_03_s"><strong>ÓéÀÖ²¥±¨</strong><span><a href="/ent/mxbg/list.html" target="_blank">¸ü¶à&gt;&gt;</a></span></h3>
+<dl class="pic-detail">
+<dt><a href="http://hunan.sina.com.cn/ent/mxbg/2012-05-18/28395.html" target="_blank"><img src="http://hunan.sinaimg.cn/iframe/index/idx/2012/0518/U7698P1192T96D1F1610DT20120518102353.jpg"></a></dt>
+<dd>
+<h4><a href="http://hunan.sina.com.cn/ent/mxbg/2012-05-18/28395.html" target="_blank">·¶±ù±ùÒ¸Ã«Î´¾»ºÜÞÏÞÎ</a></h4>
+<p>µÚ65½ìê©ÄÉ¹ú¼ÊµçÓ°½Ú¿ªÄ»£¬·¶±ù±ùµÄÔìÐÍ³öÂ¯ºó£¬ÑÛ¼âµÄÍøÓÑÁ¢¿Ì·¢ÏÖ¡­¡­<a href="http://hunan.sina.com.cn/ent/mxbg/2012-05-18/28395.html" target="_blank" class="imp">[ÏêÇé]</a></p>
+</dd>
+</dl>
+<ul style="margin-top:6px;" class="ull"><li><a style="font-size:12px;" href="/ent/mxbg/2012-05-18/28416.html" target="_blank" title="Õç‹Ö´«åú×Ó×ßÐã±»ºôÐ¡ÕÅ°ØÖ¥(Í¼)">Õç‹Ö´«åú×Ó×ßÐã±»ºôÐ¡ÕÅ°ØÖ¥(Í¼)</a></li><li><a style="font-size:12px;" href="/ent/mxbg/2012-05-18/28393.html" target="_blank" title="ÕÔÑÅÖ¥×Å·ÛÈ¹ÀÌ½ðÏÔÀÏÌ¬ ´©¸ß¸úÐ¬ÏÕË¤µ¹(Í¼)">ÕÔÑÅÖ¥×Å·ÛÈ¹ÀÌ½ðÏÔÀÏÌ¬ ´©¸ß¸úÐ¬ÏÕË¤µ¹(Í¼)</a></li><li><a style="font-size:12px;" href="/ent/mxbg/2012-05-18/28376.html" target="_blank" title="23ËêTVBÅ®ÒÕÈËÂ¼ÒôÊÒ±»Ç¿¼é(Í¼)">23ËêTVBÅ®ÒÕÈËÂ¼ÒôÊÒ±»Ç¿¼é(Í¼)</a></li><li><a style="font-size:12px;" href="/ent/mxbg/2012-05-18/28360.html" target="_blank" title="¸ÛÐÔÇÖÄÐÐÇ°¸¿ªÍ¥£ºÄÐÐÇ×÷Ö¤ÀÇ±· ±»¸æÊÜ·Ã·çÉ§">¸ÛÐÔÇÖÄÐÐÇ°¸¿ªÍ¥£ºÄÐÐÇ×÷Ö¤ÀÇ±· ±»¸æÊÜ·Ã·çÉ§</a></li></ul>
+<h3 class="tit mt1 tit_03_s"><strong>Î¢²©Ðã</strong><span><a href="/.html"></a></span></h3>
+<ul class="tatsujin-list">
+<li>
+<a href="http://weibo.com/2057070033" target="_blank"><img src="http://tp2.sinaimg.cn/2057070033/50/5609132527/1" alt="Âí¿É"></a>
+<p><a href="http://weibo.com/2057070033" target="_blank">Âí¿É</a>£º<a style="color:#333333;" href="javascript:;" onclick="dweibo_detail('2057070033','yj8Ugdi5n');return false;">ÀÙ°¡ÀÙ£¬°Ö°Ö±¥º¬ÈÈÀá¶ÔÄãËµ£¬ÕâÑùµÄ»­ÃæÊÇ·ñºÜÊìÏ¤£¿</a><a href="javascript:;" class="imp" onclick="dweibo_detail('2057070033','yj8Ugdi5n');return false;">[ÏêÇé]</a></p>
+</li>
+<li>
+<a href="http://weibo.com/xiaoxiao422" target="_blank"><img src="http://tp4.sinaimg.cn/1225907163/50/5617979723/0" alt="Ëïæçæç"></a>
+<p><a href="http://weibo.com/xiaoxiao422" target="_blank">Ëïæçæç</a>£º<a style="color:#333333;" href="javascript:;" onclick="dweibo_detail('1225907163','yjbqFmhED');return false;">×î°®µÄÄÐÈËµ±µùÁË£¬º¢ËûÂè•••²»ÊÇÎÒ£¡</a><a href="javascript:;" class="imp" onclick="dweibo_detail('1225907163','yjbqFmhED');return false;">[ÏêÇé]</a></p>
+</li>
+</ul>
+</div>
+<em class="clear"> </em>
+</div>
+<div style="display:none;" class="wrap"><iframe src="http://hunan.sina.com.cn/iframe/ad/index/3.html" height="90" width="950" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"></iframe></div>
+<div class="item cont5">
+<div class="bor">
+<div class="titbk">
+<strong>ºþÄÏ³µÊÐ</strong>
+<div class="sub-nav"><a href="http://cs.auto.sina.com.cn/" target="_blank">Æû³µÊ×Ò³&gt;&gt;</a></div>
+<form class="supply">
+<select class="bid">
+<option value="">Ñ¡³§ÉÌ</option>
+</select>
+<select class="subid">
+<option value="">Ñ¡×ÓÆ·ÅÆ</option>
+</select>
+<script src="http://hunan.sina.com.cn/js/auto/index_search.js" type="text/javascript" language="javascript"></script>
+<input type="button" class="index_btn sch-price" value="ËÑ Ë÷">
+</form>
+</div>
+<div class="con_auto">
+<div class="slidebox">
+<div class="imgstyle" id="auto_intro_cnt">
+<a href="http://cs.auto.sina.com.cn/xcpc/daogou/2012-05-18/24-5991.html" target="_blank"><img src="http://hunan.sinaimg.cn/iframe/index/U7013P1192T82D1F1365DT20120518100432.jpg" alt="Õë¶Ô»ðÈÈµÄSUVÊÐ³¡£¬±à¼­×Ü½áÁË½üÆÚ³¤É³ÊÐ³¡½ø¿ÚÒÔ¼°¹ú²úSUVÒ»Ð©ÓÅ»Ý¡£" title="Õë¶Ô»ðÈÈµÄSUVÊÐ³¡£¬±à¼­×Ü½áÁË½üÆÚ³¤É³ÊÐ³¡½ø¿ÚÒÔ¼°¹ú²úSUVÒ»Ð©ÓÅ»Ý¡£"></a>
+<a style="display:none" href="http://cs.auto.sina.com.cn/ycyc/baoyang/2012-05-18/24-6002.html" target="_blank"><img src="http://hunan.sinaimg.cn/iframe/index/U7013P1192T82D1F1366DT20120518100432.jpg" alt="³µÁ¾×ÔÈ¼²»½öÉæ¼°µ½ÀÏ¾É³µÁ¾ºÍ¸Ä×°³µ£¬ÐÂ³µºÍ¸ßµµ³µÍ¬Ñù»á³öÏÖ×ÔÈ¼ÊÂ¹Ê¡£" title="³µÁ¾×ÔÈ¼²»½öÉæ¼°µ½ÀÏ¾É³µÁ¾ºÍ¸Ä×°³µ£¬ÐÂ³µºÍ¸ßµµ³µÍ¬Ñù»á³öÏÖ×ÔÈ¼ÊÂ¹Ê¡£"></a>
+<a style="display:none" href="http://cs.auto.sina.com.cn/xwjj/xinwen/2012-05-18/24-6018.html" target="_blank"><img src="http://hunan.sinaimg.cn/2012/0518/U7039P1192DT20120518111250.jpg" alt="½üÈÕ£¬ÓÉÐÂÀËÆû³µÉè¼Æ¿ª·¢µÄÆû³µÉí·ÝÖ¤ÊÖ»ú¿Í»§¶ËÕýÊ½ÉÏ¼ÜAPP StoreÈí¼þÉÌµê¡£" title="½üÈÕ£¬ÓÉÐÂÀËÆû³µÉè¼Æ¿ª·¢µÄÆû³µÉí·ÝÖ¤ÊÖ»ú¿Í»§¶ËÕýÊ½ÉÏ¼ÜAPP StoreÈí¼þÉÌµê¡£"></a>
+</div>
+<ul class="slidelist" id="auto_intro_tab">
+<li class="on">
+<h5>ÏíÊÜÑô¹âÉú»î ³¤É³³µÊÐ±¾ÖÜSUVÓÅ»Ý»ã×Ü</h5>
+<p>Õë¶Ô»ðÈÈµÄSUVÊÐ³¡£¬±à¼­×Ü½áÁË½üÆÚ³¤É³ÊÐ³¡½ø¿ÚÒÔ¼°¹ú²úSUVÒ»Ð©ÓÅ»Ý¡£<a href="http://cs.auto.sina.com.cn/xcpc/daogou/2012-05-18/24-5991.html" target="_blank">[ÏêÏ¸]</a></p>
+</li>
+<li>
+<h5>Ñ×Ñ×ÏÄÈÕÆû³µ×ÔÈ¼Æµ·¢ ×¨¼Ò½²½âÔ¤·ÀÖ®µÀ</h5>
+<p>³µÁ¾×ÔÈ¼²»½öÉæ¼°µ½ÀÏ¾É³µÁ¾ºÍ¸Ä×°³µ£¬ÐÂ³µºÍ¸ßµµ³µÍ¬Ñù»á³öÏÖ×ÔÈ¼ÊÂ¹Ê¡£<a href="http://cs.auto.sina.com.cn/ycyc/baoyang/2012-05-18/24-6002.html" target="_blank">[ÏêÏ¸]</a></p>
+</li>
+<li>
+<h5>ÐÂÀËÆû³µÍÆ³ö¡¶Æû³µÉí·ÝÖ¤¡·ÊÖ»ú¿Í»§¶Ë</h5>
+<p>½üÈÕ£¬ÓÉÐÂÀËÆû³µÉè¼Æ¿ª·¢µÄÆû³µÉí·ÝÖ¤ÊÖ»ú¿Í»§¶ËÕýÊ½ÉÏ¼ÜAPP StoreÈí¼þÉÌµê¡£<a href="http://cs.auto.sina.com.cn/xwjj/xinwen/2012-05-18/24-6018.html" target="_blank">[ÏêÏ¸]</a></p>
+</li>
+</ul>
+<ul class="t-list">
+<li class="sp2"><a href="/auto/xwjj/list.html" target="_blank">[ÐÂÎÅ]</a><a href="http://cs.auto.sina.com.cn/xwjj/xinwen/2012-05-18/24-6024.html" class="lk-black" target="_blank">ÂìÒÏÆû³µ³ÉÎª³¤É³ÖÐ²©»áÈËÆø¾ø¶Ô½¹µã</a></li>
+<li><a href="/auto/xwjj/list.html" target="_blank">[ÐÂÎÅ]</a><a href="http://cs.auto.sina.com.cn/xwjj/xinwen/2012-05-18/24-6011.html" class="lk-black" target="_blank">ÆæÈð121ÒÚ¡°ºÀÈ¢¡±½Ý±ªÂ·»¢</a></li>
+<li class="sp2"><a href="/auto/cshq/list.html" target="_blank">[»î¶¯]</a><a href="http://cs.auto.sina.com.cn/cshq/huodong/2012-05-18/24-6010.html" class="lk-black" target="_blank">¹ºBMW X5ËÍ3ÍòºÀ»ªÀñ°ü »ÝÏí¸Ð¶÷5ÔÂ</a></li>
+<li><a href="/auto/xcrx/list.html" target="_blank">[µýÕÕ]</a><a href="http://cs.auto.sina.com.cn/xcrx/2012-05-17/24-6005.html" class="lk-black" target="_blank">±¦ÂíÐÂ¿îX6ÕýÊ½ÉÏÊÐ ÊÛ¼Û106.3-206.2Íò </a></li>
+<li class="sp2"><a href="/auto/xcrx/list.html" target="_blank">[µýÕÕ]</a><a href="http://cs.auto.sina.com.cn/xcrx/2012-05-17/24-5990.html" class="lk-black" target="_blank">±¦ÂíÐÂX6±êÅä8AT±äËÙÏä ½ñÍí¹«²¼ÉÏÊÐ¼Û¸ñ</a></li>
+<li><a href="/auto/cshq/list.html" target="_blank">[ÐÐÇé]</a><a href="http://cs.auto.sina.com.cn/cshq/hangqing/2012-05-18/24-5988.html" class="lk-black" target="_blank">¹º¶«·ç±êÖÂ508Ê×¸¶50% ¿ÉÏí0ÀûÂÊ¡¢0ÔÂ¹©</a></li>
+</ul>
+<script>DFZ.APP.Tab.init(['auto_intro_tab','auto_intro_cnt','on']);</script>
+</div>
+<!-- end of slidebox --><h4 class="htit htit_l"><strong>³µÉÌÎ¢²©ÍÆ¼ö</strong><span class="fr"><em class="cor-blue">³µÊÐÈÈÃÅ»°Ìâ£º</em><a href="http://hunan.sina.com.cn/z/auto/2012hunanchezhan/index.shtml" target="_blank">2012ºþÄÏ³µÕ¹</a>|<a href="http://cs.auto.sina.com.cn/xwjj/xinwen/2012-04-20/24-4878.html" target="_blank">¡°ÎÇ²»Æð¡±µÄ³¬¼¶ºÀ»ª³µ</a>|<a href="http://weibo.com/2309215517/profile/" target="_blank">@ÐÂÀËºþÄÏÆû³µ</a></span></h4>
+<ul class="imglist">
+<li uid="2480025084"><a href="http://weibo.com/hytaudi" target="_blank"><img src="http://tp1.sinaimg.cn/2480025084/50/5620356407/1" alt="ºþÄÏÓÀÍ¨»ªÔËÍ¨°ÂµÏ4Sµê" title="ºþÄÏÓÀÍ¨»ªÔËÍ¨°ÂµÏ4Sµê">ÓÀÍ¨°ÂµÏ<span></span></a><a href="javascript:;" class="hot followone" onclick="MblogFollow_dialog('2480025084');return false;">+¹Ø×¢</a></li>
+<li uid="1951307534"><a href="http://weibo.com/cstoyota" target="_blank"><img src="http://tp3.sinaimg.cn/1951307534/50/5603243166/1" alt="³¤É³»ªÔËÍ¨·áÌï" title="³¤É³»ªÔËÍ¨·áÌï">ÓÀÍ¨·áÌï<span></span></a><a href="javascript:;" class="hot followone" onclick="MblogFollow_dialog('1951307534');return false;">+¹Ø×¢</a></li>
+<li uid="2144230061"><a href="http://weibo.com/yongtongmg" target="_blank"><img src="http://tp2.sinaimg.cn/2144230061/50/5616893089/1" alt="ÉÏÆûMGºþÄÏÓÀÍ¨»ªÃ¯" title="ÉÏÆûMGºþÄÏÓÀÍ¨»ªÃ¯">ÓÀÍ¨»ªÃ¯<span></span></a><a href="javascript:;" class="hot followone" onclick="MblogFollow_dialog('2144230061');return false;">+¹Ø×¢</a></li>
+<li uid="2041576805"><a href="http://weibo.com/hunanhuamei" target="_blank"><img src="http://tp2.sinaimg.cn/2041576805/50/5607476447/0" alt="»ªÃÀ±¼³Û4sµê" title="»ªÃÀ±¼³Û4sµê">»ªÃÀ±¼³Û<span></span></a><a href="javascript:;" class="hot followone" onclick="MblogFollow_dialog('2041576805');return false;">+¹Ø×¢</a></li>
+<li uid="2654069850"><a href="http://weibo.com/hnzfsmart" target="_blank"><img src="http://tp3.sinaimg.cn/2654069850/50/5624841245/0" alt="ºþÄÏÈÊæÚsmart" title="ºþÄÏÈÊæÚsmart">ÈÊæÚsmart <span></span></a><a href="javascript:;" class="hot followone" onclick="MblogFollow_dialog('2654069850');return false;">+¹Ø×¢</a></li>
+<li uid="2313509212"><a href="http://weibo.com/2313509212" target="_blank"><img src="http://tp1.sinaimg.cn/2313509212/50/5608454475/1" alt="ºþÄÏº«ÏÖ½ø¿ÚÏÖ´ú" title="ºþÄÏº«ÏÖ½ø¿ÚÏÖ´ú">º«ÏÖÏÖ´ú<span></span></a><a href="javascript:;" class="hot followone" onclick="MblogFollow_dialog('2313509212');return false;">+¹Ø×¢</a></li>
+<li uid="2216976707"><a href="http://weibo.com/cshxdlinfiniti" target="_blank"><img src="http://tp4.sinaimg.cn/2216976707/50/5609464654/1" alt="³¤É³ºãÐÅµÂÁúÓ¢·ÆÄáµÏ" title="³¤É³ºãÐÅµÂÁúÓ¢·ÆÄáµÏ">Ó¢·ÆÄáµÏ<span></span></a><a href="javascript:;" class="hot followone" onclick="MblogFollow_dialog('2216976707');return false;">+¹Ø×¢</a></li>
+<li uid="2298807007"><a href="http://weibo.com/2298807007" target="_blank"><img src="http://tp4.sinaimg.cn/2298807007/50/5608084127/1" alt="»ªÑóÊÀ¼Í_ÎÒÎªÊ¨¿ñ" title="»ªÑóÊÀ¼Í_ÎÒÎªÊ¨¿ñ">¶«·ç±êÖÂ<span></span></a><a href="javascript:;" class="hot followone" onclick="MblogFollow_dialog('2298807007');return false;">+¹Ø×¢</a></li>
+<li uid="2189902657"><a href="http://weibo.com/hnwanda" target="_blank"><img src="http://tp2.sinaimg.cn/2189902657/50/5603589211/1" alt="³¤Âí-ºþÄÏÍò´ïµê" title="³¤Âí-ºþÄÏÍò´ïµê">³¤ÂíÍò´ï<span></span></a><a href="javascript:;" class="hot followone" onclick="MblogFollow_dialog('2189902657');return false;">+¹Ø×¢</a></li>
+<li uid="2164719762"><a href="http://weibo.com/thleinuo" target="_blank"><img src="http://tp3.sinaimg.cn/2164719762/50/5605928149/0" alt="ÌìºÍÀ×Åµ" title="ÌìºÍÀ×Åµ">ÌìºÍÀ×Åµ<span></span></a><a href="javascript:;" class="hot followone" onclick="MblogFollow_dialog('2164719762');return false;">+¹Ø×¢</a></li>
+<li uid="1985384383"><a href="http://weibo.com/sxroewe" target="_blank"><img src="http://tp4.sinaimg.cn/1985384383/50/1298540380/1" alt="ºþÄÏÉêÏæÈÙÍþ4Sµê" title="ºþÄÏÉêÏæÈÙÍþ4Sµê">ÉêÏæÈÙÍþ<span></span></a><a href="javascript:;" class="hot followone" onclick="MblogFollow_dialog('1985384383');return false;">+¹Ø×¢</a></li>
+<li uid="2185170695"><a href="http://weibo.com/honda01" target="_blank"><img src="http://tp4.sinaimg.cn/2185170695/50/5618047938/1" alt="¹ã±¾ºþÄÏµÚÒ»µê-³¤É³°²´óµê" title="¹ã±¾ºþÄÏµÚÒ»µê-³¤É³°²´óµê">¹ãÆû±¾Ìï<span></span></a><a href="javascript:;" class="hot followone" onclick="MblogFollow_dialog('2185170695');return false;">+¹Ø×¢</a></li>
+<li uid="2568736954"><a href="http://weibo.com/hyjtbk" target="_blank"><img src="http://tp3.sinaimg.cn/2568736954/50/5618301549/0" alt="ºþÄÏ»ªÑó½­Í¨±ð¿Ë4Sµê" title="ºþÄÏ»ªÑó½­Í¨±ð¿Ë4Sµê">½­Í¨±ð¿Ë<span></span></a><a href="javascript:;" class="hot followone" onclick="MblogFollow_dialog('2568736954');return false;">+¹Ø×¢</a></li>
+<li uid="1772982624"><a href="http://weibo.com/hnydao" target="_blank"><img src="http://tp1.sinaimg.cn/1772982624/50/5617462106/1" alt="³¤³ÇÆû³µºþÄÏÓÐµÀÆì½¢µê" title="³¤³ÇÆû³µºþÄÏÓÐµÀÆì½¢µê">³¤³ÇÓÐµÀ<span></span></a><a href="javascript:;" class="hot followone" onclick="MblogFollow_dialog('1772982624');return false;">+¹Ø×¢</a></li>
+<li uid="1340394847"><a href="http://weibo.com/2011beetle" target="_blank"><img src="http://tp4.sinaimg.cn/1340394847/50/5597130975/1" alt="ºþÄÏ½ø¿Ú´óÖÚÆû³µ" title="ºþÄÏ½ø¿Ú´óÖÚÆû³µ">½ø¿Ú´óÖÚ<span></span></a><a href="javascript:;" class="hot followone" onclick="MblogFollow_dialog('1340394847');return false;">+¹Ø×¢</a></li>
+<li uid="2174188484"><a href="http://weibo.com/hyundai07" target="_blank"><img src="http://tp1.sinaimg.cn/2174188484/50/5603069901/0" alt="½ø¿ÚÏÖ´úºþÄÏ¾Å³Ç" title="½ø¿ÚÏÖ´úºþÄÏ¾Å³Ç">ÏÖ´ú¾Å³Ç<span></span></a><a href="javascript:;" class="hot followone" onclick="MblogFollow_dialog('2174188484');return false;">+¹Ø×¢</a></li>
+</ul>
+</div>
+<!-- end of con --><div class="cr porzj">
+<a href="http://cs.sina.com.cn/auto/#easybuyin" target="_blank" class="more">¸ü¶à&gt;&gt;</a>
+<ul class="tab-f" id="auto-buy-tab">
+<li class="on">¹ú²ú³µ</li>
+<li>½ø¿Ú³µ</li>
+</ul>
+<div class="tab-cont" id="auto-buy-cnt">
+<div style="display:block;" class="tcont tcont1" id="easybuyin">
+<table cellpadding="0" width="100%" cellspacing="0" border="0" class="tablestyle">
+<tr><th class="w1">Æ·ÅÆ</th><th class="w1">³µÐÍ</th><th class="w2">±¨¼Û</th><th class="w3">¾­ÏúÉÌ</th></tr>
+</table>
+</div>
+<!-- end--><div style="display:none;" class="tcont tcont1" id="easybuyout">
+<table cellpadding="0" width="100%" cellspacing="0" border="0" class="tablestyle">
+<tr><th class="w1">Æ·ÅÆ</th><th class="w1">³µÐÍ</th><th class="w2">±¨¼Û</th><th class="w3">¾­ÏúÉÌ</th></tr>
+</table>
+</div>
+<!-- end--></div>
+<!-- end of tab-cont-f--><script>
+jQuery.JSONP('http://weidealer.auto.sina.com.cn/api/auto/difang/get_carpay_rec.php?province=43&country=all&limit=7&t=jsonp',function(jsonp){
+inland = jsonp.inland;
+overseas = jsonp.overseas;
+inland_html = '';
+overseas_html = '';
+for(i=0;i<7;i++){
+date = new Date(inland[i].update_time*1000);
+date = (date.getMonth()+1)+'-'+date.getDate();
+inland_html += '<tr><td><a href="'+inland[i].p_link+'" title="'+inland[i].brand+'" target="_blank" >'+inland[i].brand+'</a></td><td><a href="'+inland[i].p_link+'" title="'+inland[i].subbrand+'" target="_blank">'+inland[i].subbrand+'</a></td><td>'+inland[i].price+'Íò</td><td><a href="'+inland[i].d_link+'" title="'+inland[i].short_name+'" target="_blank">'+inland[i].short_name.substr(0,8)+'</a></td></tr>';
+}
+for(i=0;i<7;i++){
+date = new Date(overseas[i].update_time*1000);
+date = (date.getMonth()+1)+'-'+date.getDate();
+overseas_html += '<tr><td><a href="'+overseas[i].p_link+'" title="'+overseas[i].brand+'" target="_blank">'+overseas[i].brand+'</a></td><td><a href="'+overseas[i].p_link+'" title="'+overseas[i].subbrand+'" target="_blank">'+overseas[i].subbrand+'</a></td><td>'+overseas[i].price+'Íò</td><td><a href="'+overseas[i].d_link+'" title="'+overseas[i].short_name+'" target="_blank">'+overseas[i].short_name.substr(0,8)+'</a></td></tr>';
+}
+jQuery('#easybuyin table').append(inland_html);
+jQuery('#easybuyout table').append(overseas_html);
+DFZ.APP.Tab.init(['auto-buy-tab','auto-buy-cnt','on']);
+});
+</script>
+<h4 class="htit htit_s"><strong>×¨·Ã×¨Ìâ»î¶¯</strong></h4>
+<ul class="list-comment">
+<li>
+<div class="fl">
+<a href="http://hunan.sina.com.cn/z/auto/2012hunanchezhan/index.shtml" target="_blank"><img src="http://hunan.sinaimg.cn/iframe/index/U7038P1192T82D1F1369DT20120424122337.jpg" alt="2012ÖÐ¹ú£¨ºþÄÏ£©Æû³µÕ¹ÀÀ»á" title="2012ÖÐ¹ú£¨ºþÄÏ£©Æû³µÕ¹ÀÀ»á"></a>
+</div>
+<div class="fr">
+<h5><a href="http://hunan.sina.com.cn/z/auto/2012hunanchezhan/index.shtml" target="_blank" title="2012ÖÐ¹ú£¨ºþÄÏ£©Æû³µÕ¹ÀÀ»á">2012ÖÐ¹ú£¨ºþÄÏ£©Æû³µÕ¹ÀÀ»á</a></h5>
+<p>¡¾²ÎÕ¹Ê±¼ä¡¿£º2012Äê5ÔÂ3ÈÕ-7ÈÕ¡¾²ÎÕ¹µØµã¡¿£ººþÄÏ¹ú¼Ê»áÕ¹ÖÐÐÄ¡¾Õ½ÂÔºÏ×÷»ï°é¡¿£º@ÐÂÀËºþÄÏÆû³µ<a href="http://hunan.sina.com.cn/z/auto/2012hunanchezhan/index.shtml" target="_blank">[ÏêÏ¸]</a></p>
+</div>
+</li>
+<li>
+<div class="fl">
+<a href="http://hunan.sina.com.cn/z/auto/csh14/index.shtml" target="_blank"><img src="http://hunan.sinaimg.cn/iframe/index/U7037P1192T82D1F1370DT20120514095627.jpg" alt="ºþÄÏÒ»ÖÜ³µÉú»î£¨µÚ14ÆÚ£©" title="ºþÄÏÒ»ÖÜ³µÉú»î£¨µÚ14ÆÚ£©"></a>
+</div>
+<div class="fr">
+<h5><a href="http://hunan.sina.com.cn/z/auto/csh14/index.shtml" target="_blank" title="ºþÄÏÒ»ÖÜ³µÉú»î£¨µÚ14ÆÚ£©">ºþÄÏÒ»ÖÜ³µÉú»î£¨µÚ14ÆÚ£©</a></h5>
+<p>³¤É³³µÊÐÒ»ÖÜÐÂÎÅ¡¢ÐÐÇéÓÅ»Ý¡¢ÐÂ³µÊµÅÄ¡¢Æû³µ±¦±´×¨Ìâ»ã×Ü¡£<a href="http://hunan.sina.com.cn/z/auto/csh14/index.shtml" target="_blank">[ÏêÏ¸]</a></p>
+</div>
+</li>
+</ul>
+</div>
+<!-- end of cr --></div>
+<!-- end of bor --></div>
+<!-- end of area3 --><div class="title title05">
+<h3 class="s4">ÃÀÍ¼ÐÀÉÍ</h3>
+<p><a href="http://hunan.sina.com.cn/news/xwtj/list.html" target="_blank">ÐÂÎÅ</a>|<a href="http://hunan.sina.com.cn/eat/mstj/list.html" target="_blank">ÃÀÊ³</a>|<a href="http://hunan.sina.com.cn/shopping/gwtj/list.html" target="_blank">¹ºÎï</a>|<a href="http://hunan.sina.com.cn/ent/ycstj/list.html" target="_blank">Ò¹³¤É³</a></p>
+</div>
+<div class="pretty-pic piczj clear">
+<div class="zjpic">
+<div class="fl">
+<a href="http://slide.hunan.sina.com.cn/auto/slide_38_22088_59509.html#p=3" target="_blank" title="»¨°êÖÐÑýæ¬Å­·ÅµÄÀÙË¿»Êºó"><img src="http://hunan.sinaimg.cn/iframe/index/idx/2012/0516/U8043P1192T61D1F1102DT20120516113914.jpg" alt="http://slide.hunan.sina.com.cn/auto/slide_38_22088_59509.html#p=3"></a>
+<p><a href="http://slide.hunan.sina.com.cn/auto/slide_38_22088_59509.html#p=3" target="_blank" title="»¨°êÖÐÑýæ¬Å­·ÅµÄÀÙË¿»Êºó">»¨°êÖÐÑýæ¬Å­·ÅµÄÀÙË¿»Êºó</a></p>
+</div>
+<ul class="pretty-list fr">
+<li>
+<a href="http://slide.hunan.sina.com.cn/auto/slide_38_22088_57992.html#p=9/slide_38_22671_56881.html#p=2" target="_blank" title="³¤É³ÊªäõäõÓ­½Ó¸ÉÂ¶Â¶"><img src="http://hunan.sinaimg.cn/iframe/index/idx/2012/0507/U7001P1192T61D1F1103DT20120507105346.jpg" alt="http://slide.hunan.sina.com.cn/auto/slide_38_22088_57992.html#p=9/slide_38_22671_56881.html#p=2"></a>
+<p><a href="http://slide.hunan.sina.com.cn/auto/slide_38_22088_57992.html#p=9/slide_38_22671_56881.html#p=2" target="_blank" title="³¤É³ÊªäõäõÓ­½Ó¸ÉÂ¶Â¶">³¤É³ÊªäõäõÓ­½Ó¸ÉÂ¶Â¶</a></p>
+</li>
+<li>
+<a href="http://slide.hunan.sina.com.cn/ent/slide_38_22375_57583.html#p=1" target="_blank" title="Ò¶è¯ËÖÐØÎ¢Â¶±äSÐÎÅ®ÀÉ"><img src="http://hunan.sinaimg.cn/iframe/index/idx/2012/0507/U7001P1192T61D1F1104DT20120507110053.jpg" alt="http://slide.hunan.sina.com.cn/ent/slide_38_22375_57583.html#p=1"></a>
+<p><a href="http://slide.hunan.sina.com.cn/ent/slide_38_22375_57583.html#p=1" target="_blank" title="Ò¶è¯ËÖÐØÎ¢Â¶±äSÐÎÅ®ÀÉ">Ò¶è¯ËÖÐØÎ¢Â¶±äSÐÎÅ®ÀÉ</a></p>
+</li>
+<li>
+<a href="http://slide.hunan.sina.com.cn/ent/slide_38_22375_57581.html" target="_blank" title="º£Çå»¯Éí»ªÀö×ÏºûµûÔìÐÍ"><img src="http://hunan.sinaimg.cn/iframe/index/idx/2012/0507/U7001P1192T61D1F1105DT20120507110614.jpg" alt="http://slide.hunan.sina.com.cn/ent/slide_38_22375_57581.html"></a>
+<p><a href="http://slide.hunan.sina.com.cn/ent/slide_38_22375_57581.html" target="_blank" title="º£Çå»¯Éí»ªÀö×ÏºûµûÔìÐÍ">º£Çå»¯Éí»ªÀö×ÏºûµûÔìÐÍ</a></p>
+</li>
+<li class="img2">
+<a href="http://slide.hunan.sina.com.cn/auto/slide_38_30497_58165.html#p=2" target="_blank" title="ÅÌµãºþÄÏ³µÕ¹×î¾´Òµ³µÄ£"><img src="http://hunan.sinaimg.cn/iframe/index/idx/2012/0507/U6992P1192T61D1F1106DT20120507172620.jpg" alt="http://slide.hunan.sina.com.cn/auto/slide_38_30497_58165.html#p=2"></a>
+<p><a href="http://slide.hunan.sina.com.cn/auto/slide_38_30497_58165.html#p=2" target="_blank" title="ÅÌµãºþÄÏ³µÕ¹×î¾´Òµ³µÄ£">ÅÌµãºþÄÏ³µÕ¹×î¾´Òµ³µÄ£</a></p>
+</li>
+<li class="img2">
+<a href="http://slide.hunan.sina.com.cn/auto/slide_38_30497_57993.html#p=1" target="_blank" title="²»Ñ·¸ÉÂ¶Â¶ ºþÄÏ³µÕ¹ÃûÄ£¶·ÑÞ"><img src="http://hunan.sinaimg.cn/iframe/index/idx/2012/0507/U7001P1192T61D1F1107DT20120507104746.jpg" alt="http://slide.hunan.sina.com.cn/auto/slide_38_30497_57993.html#p=1"></a>
+<p><a href="http://slide.hunan.sina.com.cn/auto/slide_38_30497_57993.html#p=1" target="_blank" title="²»Ñ·¸ÉÂ¶Â¶ ºþÄÏ³µÕ¹ÃûÄ£¶·ÑÞ">²»Ñ·¸ÉÂ¶Â¶ ºþÄÏ³µÕ¹ÃûÄ£¶·ÑÞ</a></p>
+</li>
+<li>
+<a href="http://slide.hunan.sina.com.cn/auto/slide_38_30497_57781.html#p=1" target="_blank" title="À¼²©»ùÄáÃÀÄ£ÐÔ¸ÐÈü¸ÉÂ¶Â¶"><img src="http://hunan.sinaimg.cn/iframe/index/idx/2012/0507/U6992P1192T61D1F1108DT20120507173426.jpg" alt="http://slide.hunan.sina.com.cn/auto/slide_38_30497_57781.html#p=1"></a>
+<p><a href="http://slide.hunan.sina.com.cn/auto/slide_38_30497_57781.html#p=1" target="_blank" title="À¼²©»ùÄáÃÀÄ£ÐÔ¸ÐÈü¸ÉÂ¶Â¶">À¼²©»ùÄáÃÀÄ£ÐÔ¸ÐÈü¸ÉÂ¶Â¶</a></p>
+</li>
+<li>
+<a href="http://slide.hunan.sina.com.cn/ent/slide_38_22375_58874.html" target="_blank" title="³¬Ä£Î¨ÃÀ¹ÅµäÄÚÒÂÐ´Õæ"><img src="http://hunan.sinaimg.cn/iframe/index/idx/2012/0511/U6992P1192T61D1F1109DT20120511145003.jpg" alt="http://slide.hunan.sina.com.cn/ent/slide_38_22375_58874.html"></a>
+<p><a href="http://slide.hunan.sina.com.cn/ent/slide_38_22375_58874.html" target="_blank" title="³¬Ä£Î¨ÃÀ¹ÅµäÄÚÒÂÐ´Õæ">³¬Ä£Î¨ÃÀ¹ÅµäÄÚÒÂÐ´Õæ</a></p>
+</li>
+<li>
+<a href="http://slide.hunan.sina.com.cn/ent/slide_38_22375_58866.html" target="_blank" title="Ì©¹úÈËÑýÑ¡ÃÀ´óÈü"><img src="http://hunan.sinaimg.cn/iframe/index/idx/2012/0511/U6992P1192T61D1F1110DT20120511145003.jpg" alt="http://slide.hunan.sina.com.cn/ent/slide_38_22375_58866.html"></a>
+<p><a href="http://slide.hunan.sina.com.cn/ent/slide_38_22375_58866.html" target="_blank" title="Ì©¹úÈËÑýÑ¡ÃÀ´óÈü">Ì©¹úÈËÑýÑ¡ÃÀ´óÈü</a></p>
+</li>
+</ul>
+</div>
+</div>
+DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+
+<!--[1192,63,1] published at 2012-05-07 10:25:22 from #194 by 7001--><div class="wbh">
+<div style=" margin-top:0px" class="title title06">
+<h3 class="s4">ºìÈË¹Ý</h3>
+</div>
+<ul class="wb_pic">
+<li><a href="http://weibo.com/baochunlai" target="_blank" title="±«´ºÀ´"><img src="http://tp4.sinaimg.cn/1247685455/50/5629634848/1" alt="±«´ºÀ´"><span>±«´ºÀ´</span></a><a href="javascript:;" class="hot1" onclick="MblogFollow_dialog('1247685455');return false;">+¹Ø×¢</a></li>
+<li><a href="http://weibo.com/1496863563" target="_blank" title="¹¨ÏþÔ¾"><img src="http://tp4.sinaimg.cn/1496863563/50/5627938816/1" alt="¹¨ÏþÔ¾"><span>¹¨ÏþÔ¾</span></a><a href="javascript:;" class="hot1" onclick="MblogFollow_dialog('1496863563');return false;">+¹Ø×¢</a></li>
+<li><a href="http://weibo.com/1733596871" target="_blank" title="ÁõÔ­"><img src="http://tp4.sinaimg.cn/1733596871/50/5611725726/1" alt="ÁõÔ­"><span>ÁõÔ­</span></a><a href="javascript:;" class="hot1" onclick="MblogFollow_dialog('1733596871');return false;">+¹Ø×¢</a></li>
+<li><a href="http://weibo.com/1786213845" target="_blank" title="ÀîÈñhntv"><img src="http://tp2.sinaimg.cn/1786213845/50/5624777578/1" alt="ÀîÈñhntv"><span>ÀîÈñ</span></a><a href="javascript:;" class="hot1" onclick="MblogFollow_dialog('1786213845');return false;">+¹Ø×¢</a></li>
+<li><a href="http://weibo.com/zwx1102" target="_blank" title="ÑÝÔ±ÖÜÎÀÐÇ"><img src="http://tp1.sinaimg.cn/1885504540/50/5622988506/1" alt="ÑÝÔ±ÖÜÎÀÐÇ"><span>ÖÜÎÀÐÇ</span></a><a href="javascript:;" class="hot1" onclick="MblogFollow_dialog('1885504540');return false;">+¹Ø×¢</a></li>
+<li><a href="http://weibo.com/1689040213" target="_blank" title="ËÕÈªsuquan688"><img src="http://tp2.sinaimg.cn/1689040213/50/5623148100/1" alt="ËÕÈªsuquan688"><span>ËÕÈª</span></a><a href="javascript:;" class="hot1" onclick="MblogFollow_dialog('1689040213');return false;">+¹Ø×¢</a></li>
+<li><a href="http://weibo.com/1944791814" target="_blank" title="ÁøËà"><img src="http://tp3.sinaimg.cn/1944791814/50/5600911378/1" alt="ÁøËà"><span>ÁøËà</span></a><a href="javascript:;" class="hot1" onclick="MblogFollow_dialog('1944791814');return false;">+¹Ø×¢</a></li>
+<li><a href="http://weibo.com/ganyuanchun" target="_blank" title="¸ÊÔª´ºÂÉÊ¦"><img src="http://tp4.sinaimg.cn/1952722131/50/1296923339/1" alt="¸ÊÔª´ºÂÉÊ¦"><span>¸ÊÔª´º</span></a><a href="javascript:;" class="hot1" onclick="MblogFollow_dialog('1952722131');return false;">+¹Ø×¢</a></li>
+<li><a href="http://weibo.com/2738489670" target="_blank" title="ÖêÖÞÕÅºº»ª"><img src="http://tp3.sinaimg.cn/2738489670/50/5626584437/1" alt="ÖêÖÞÕÅºº»ª"><span>ÕÅºº»ª</span></a><a href="javascript:;" class="hot1" onclick="MblogFollow_dialog('2738489670');return false;">+¹Ø×¢</a></li>
+<li><a href="http://weibo.com/huaibao" target="_blank" title="Ñî»³±£"><img src="http://tp3.sinaimg.cn/1180325114/50/1295572756/1" alt="Ñî»³±£"><span>Ñî»³±£</span></a><a href="javascript:;" class="hot1" onclick="MblogFollow_dialog('1180325114');return false;">+¹Ø×¢</a></li>
+</ul>
+<ul class="wb_pic xx">
+<li><a href="http://weibo.com/1756855687" target="_blank" title="ÂÞ°ÔµÀ"><img src="http://tp4.sinaimg.cn/1756855687/50/5628620040/1" alt="ÂÞ°ÔµÀ"><span>ÂÞ°ÔµÀ</span></a><a href="javascript:;" class="hot1" onclick="MblogFollow_dialog('1756855687');return false;">+¹Ø×¢</a></li>
+<li><a href="http://weibo.com/2626838437" target="_blank" title="µÔÓñ»ªÂÉÊ¦"><img src="http://tp2.sinaimg.cn/2626838437/50/5624096182/1" alt="µÔÓñ»ªÂÉÊ¦"><span>µÔÓñ»ª</span></a><a href="javascript:;" class="hot1" onclick="MblogFollow_dialog('2626838437');return false;">+¹Ø×¢</a></li>
+<li><a href="http://weibo.com/1867422881" target="_blank" title="Ã¢¹ûÅÉºÎÐ¡Í¥"><img src="http://tp2.sinaimg.cn/1867422881/50/5630320309/1" alt="Ã¢¹ûÅÉºÎÐ¡Í¥"><span>Ã¢¹ûÅÉºÎÐ¡Í¥</span></a><a href="javascript:;" class="hot1" onclick="MblogFollow_dialog('1867422881');return false;">+¹Ø×¢</a></li>
+<li><a href="http://weibo.com/wyuewen" target="_blank" title="ÍõÔ¾ÎÄ"><img src="http://tp3.sinaimg.cn/1442054902/50/5623026883/1" alt="ÍõÔ¾ÎÄ"><span>ÍõÔ¾ÎÄ</span></a><a href="javascript:;" class="hot1" onclick="MblogFollow_dialog('1442054902');return false;">+¹Ø×¢</a></li>
+<li><a href="http://weibo.com/yanggengshen" target="_blank" title="Ñî¸ûÉí"><img src="http://tp1.sinaimg.cn/1448429544/50/5601490526/1" alt="Ñî¸ûÉí"><span>Ñî¸ûÉí</span></a><a href="javascript:;" class="hot1" onclick="MblogFollow_dialog('1448429544');return false;">+¹Ø×¢</a></li>
+<li><a href="http://weibo.com/duhaitao" target="_blank" title="¶Åº£ÌÎHito"><img src="http://tp2.sinaimg.cn/1220924217/50/5618679790/1" alt="¶Åº£ÌÎHito"><span>¶Åº£ÌÎ</span></a><a href="javascript:;" class="hot1" onclick="MblogFollow_dialog('1220924217');return false;">+¹Ø×¢</a></li>
+<li><a href="http://weibo.com/wuxin" target="_blank" title="Îâê¿"><img src="http://tp2.sinaimg.cn/1220926753/50/5625789858/0" alt="Îâê¿"><span>Îâê¿</span></a><a href="javascript:;" class="hot1" onclick="MblogFollow_dialog('1220926753');return false;">+¹Ø×¢</a></li>
+<li><a href="http://weibo.com/wumeishi" target="_blank" title="ÎèÃÀÊ¦"><img src="http://tp2.sinaimg.cn/1229327625/50/1281352065/1" alt="ÎèÃÀÊ¦"><span>ÎèÃÀÊ¦</span></a><a href="javascript:;" class="hot1" onclick="MblogFollow_dialog('1229327625');return false;">+¹Ø×¢</a></li>
+<li><a href="http://weibo.com/chensisi" target="_blank" title="³ÂË¼Ë¼"><img src="http://tp3.sinaimg.cn/1224672814/50/5605687214/0" alt="³ÂË¼Ë¼"><span>³ÂË¼Ë¼</span></a><a href="javascript:;" class="hot1" onclick="MblogFollow_dialog('1224672814');return false;">+¹Ø×¢</a></li>
+<li><a href="http://weibo.com/1970431332" target="_blank" title="Ö¤È¯Ê±±¨ÎÄÐÇÃ÷"><img src="http://tp1.sinaimg.cn/1970431332/50/5604731760/1" alt="Ö¤È¯Ê±±¨ÎÄÐÇÃ÷"><span>ÎÄÐÇÃ÷</span></a><a href="javascript:;" class="hot1" onclick="MblogFollow_dialog('1970431332');return false;">+¹Ø×¢</a></li>
+</ul>
+<a href="javascript:;" class="a_bt" onclick="MblogFollow_dialog('1247685455,1496863563,1733596871,1786213845,1885504540,1689040213,1944791814,1952722131,2738489670,1180325114,1756855687,2626838437,1867422881,1442054902,1448429544,1220924217,1220926753,1229327625,1224672814,1970431332');return false;">Ò»¼ü¹Ø×¢</a>
+</div>
+<div class="friend">
+<h3 class="tit-anew"><strong>ÓÑÇéÁ´½Ó</strong></h3>
+<p class="friend-list"><a href="http://www.sina.com.cn/%20" target="_blank" title="ÐÂÀËÍø">ÐÂÀËÍø</a>|<a href="http://weibo.com/%20" target="_blank" title="ÐÂÀËÎ¢²©">ÐÂÀËÎ¢²©</a>|<a href="http://henan.sina.com.cn/%20" target="_blank" title="ÐÂÀËºÓÄÏ">ÐÂÀËºÓÄÏ</a>|<a href="http://sc.sina.com.cn/%20" target="_blank" title="ÐÂÀËËÄ´¨">ÐÂÀËËÄ´¨</a>|<a href="http://fj.sina.com.cn/%20" target="_blank" title="ÐÂÀË¸£½¨">ÐÂÀË¸£½¨</a>|<a href="http://sh.sina.com.cn/%20" target="_blank" title="ÐÂÀËÉÏº£">ÐÂÀËÉÏº£</a>|<a href="http://gd.sina.com.cn/%20" target="_blank" title="ÐÂÀË¹ã¶«">ÐÂÀË¹ã¶«</a>|<a href="http://zj.sina.com.cn/%20" target="_blank" title="ÐÂÀËÕã½­">ÐÂÀËÕã½­</a>|<a href="http://cq.sina.com.cn/%20" target="_blank" title="ÐÂÀËÖØÇì">ÐÂÀËÖØÇì</a>|<a href="http://hb.sina.com.cn/" target="_blank" title="ÐÂÀËºþ±±">ÐÂÀËºþ±±</a>|<a href="http://ln.sina.com.cn/" target="_blank" title="ÐÂÀËÁÉÄþ">ÐÂÀËÁÉÄþ</a>|<a href="http://sx.sina.com.cn/" target="_blank" title="ÐÂÀËÉÂÎ÷">ÐÂÀËÉÂÎ÷</a>|<a href="http://hb.sina.com.cn/" target="_blank" title="ÐÂÀËºÓ±±">ÐÂÀËºÓ±±</a>|<a href="http://www.ziyou.com" target="_blank" title="×ÔÓÎÍø">×ÔÓÎÍø</a>|<a href="http://www.rednet.cn/" target="_blank" title="ºìÍø">ºìÍø</a>|<a href="http://www.voc.com.cn/" target="_blank" title="»ªÉùÔÚÏß">»ªÉùÔÚÏß</a>|<a href="http://www.changsha.cn/" target="_blank" title="ÐÇ³½ÔÚÏß">ÐÇ³½ÔÚÏß</a></p>
+</div>
+<div id="footer" class="footer">
+<p><a href="http://corp.sina.com.cn/chn/sina_index.html" target="_blank">ÐÂÀË¼ò½é</a>  |
+     <a href="http://hunan.sina.com.cn/about/index.html" target="_blank">ÐÂÀËºþÄÏ¼ò½é</a>  |
+    <a href="http://corp.sina.com.cn/eng/sina_index_eng.htm" target="_blank">About Sina</a> |
+    <a href="http://emarketing.sina.com.cn/" target="_blank">¹ã¸æ·þÎñ</a> |
+    <a href="http://www.sina.com.cn/contactus.html" target="_blank">ÁªÏµÎÒÃÇ</a> |
+   <a href="http://hunan.sina.com.cn/about/job.html" target="_blank">³ÏÆ¸Ó¢²Å</a> |
+   <a href="http://www.sina.com.cn/intro/lawfirm.shtml" target="_blank">ÍøÕ¾ÂÉÊ¦</a> |
+   <a href="http://english.sina.com/" target="_blank">SINA English</a> |
+   <a href="http://login.sina.com.cn/signup/signup.php" target="_blank">»áÔ±×¢²á</a> |
+   <a href="http://help.sina.com.cn/" target="_blank">²úÆ·´ðÒÉ</a>
+</p>
+<p>Copyright © 1996-2012 SINA Corporation, All Rights Reserved</p>
+<p>ÐÂÀË¹«Ë¾°æÈ¨ËùÓÐ</p>
+</div>
+
+<!-- SSO_UPDATECOOKIE_START --><script type="text/javascript">var sinaSSOManager=sinaSSOManager||{};sinaSSOManager.q=function(b){if(typeof b!="object"){return""}var a=new Array();for(key in b){a.push(key+"="+encodeURIComponent(b[key]))}return a.join("&")};sinaSSOManager.es=function(f,d,e){var c=document.getElementsByTagName("head")[0];var a=document.getElementById(f);if(a){c.removeChild(a)}var b=document.createElement("script");if(e){b.charset=e}else{b.charset="gb2312"}b.id=f;b.type="text/javascript";d+=(/\?/.test(d)?"&":"?")+"_="+(new Date()).getTime();b.src=d;c.appendChild(b)};sinaSSOManager.doCrossDomainCallBack=function(a){sinaSSOManager.crossDomainCounter++;document.getElementsByTagName("head")[0].removeChild(document.getElementById(a.scriptId))};sinaSSOManager.crossDomainCallBack=function(a){if(!a||a.retcode!=0){return false}var d=a.arrURL;var b,f;var e={callback:"sinaSSOManager.doCrossDomainCallBack"};sinaSSOManager.crossDomainCounter=0;if(d.length==0){return true}for(var c=0;c<d.length;c++){b=d[c];f="ssoscript"+c;e.scriptId=f;b=b+(/\?/.test(b)?"&":"?")+sinaSSOManager.q(e);sinaSSOManager.es(f,b)}};sinaSSOManager.updateCookieCallBack=function(c){var d="ssoCrossDomainScriptId";var a="http://login.sina.com.cn/sso/crossdomain.php";if(c.retcode==0){var e={scriptId:d,callback:"sinaSSOManager.crossDomainCallBack",action:"login",domain:"sina.com.cn"};var b=a+"?"+sinaSSOManager.q(e);sinaSSOManager.es(d,b)}else{}};sinaSSOManager.updateCookie=function(){var g=1800;var p=7200;var b="ssoLoginScript";var h=3600*24;var i="sina.com.cn";var m=1800;var l="http://login.sina.com.cn/sso/updatetgt.php";var n=null;var f=function(e){var r=null;var q=null;switch(e){case"sina.com.cn":q=sinaSSOManager.getSinaCookie();if(q){r=q.et}break;case"sina.cn":q=sinaSSOManager.getSinaCookie();if(q){r=q.et}break;case"51uc.com":q=sinaSSOManager.getSinaCookie();if(q){r=q.et}break}return r};var j=function(){try{return f(i)}catch(e){return null}};try{if(g>5){if(n!=null){clearTimeout(n)}n=setTimeout("sinaSSOManager.updateCookie()",g*1000)}var d=j();var c=(new Date()).getTime()/1000;var o={};if(d==null){o={retcode:6102}}else{if(d<c){o={retcode:6203}}else{if(d-h+m>c){o={retcode:6110}}else{if(d-c>p){o={retcode:6111}}}}}if(o.retcode!==undefined){return false}var a=l+"?callback=sinaSSOManager.updateCookieCallBack";sinaSSOManager.es(b,a)}catch(k){}return true};sinaSSOManager.updateCookie();</script>
+
+
+<!-- SSO_UPDATECOOKIE_END --><!-- Start  Wrating  --><script language="javascript"> 
+var wrUrl="//sina.wrating.com/";var wrDomain="sina.com.cn";var wratingDefaultAcc="860010-0323010000";var wratingAccArray={"torch.2008.sina.com.cn":"860010-0308070000","video.sina.com.cn":"860010-0309010000","cctv.sina.com.cn":"860010-0309020000","chat.sina.com.cn":"860010-0311010000","ent.sina.com.cn":"860010-0312010000","tech.sina.com.cn":"860010-0313010000","mobile.sina.com.cn":"860010-0313020000","house.sina.com.cn":"860010-0315010000","bj.house.sina.com.cn":"860010-0315020000","auto.sina.com.cn":"860010-0316010000","eladies.sina.com.cn":"860010-0317010000","bj.sina.com.cn":"860010-0317020000","woman.sina.com.cn":"860010-0317010000","women.sina.com.cn":"860010-0317010000","lady.sina.com.cn":"860010-0317010000","man.eladies.sina.com.cn":"860010-0317030000","games.sina.com.cn":"860010-0318010000","game.sina.com.cn":"860010-0318010000","edu.sina.com.cn":"860010-0307010000","baby.sina.com.cn":"860010-0320010000","kid.sina.com.cn":"860010-0320020000","astro.sina.com.cn":"860010-0321020000","news.sina.com.cn":"860010-0310010000","weather.news.sina.com.cn":"860010-0310020000","mil.news.sina.com.cn":"860010-0310030000","www.sina.com.cn":"860010-0322010000","home.sina.com.cn":"860010-0322010000","sports.sina.com.cn":"860010-0308010000","shidefc.sina.com.cn":"860010-0308020000","weiqi.sina.com.cn":"860010-0308030000","f1.sina.com.cn":"860010-0308040000","golf.sina.com.cn":"860010-0308050000","2002.sina.com.cn":"860010-0308060000","2004.sina.com.cn":"860010-0308060000","2006.sina.com.cn":"860010-0308060000","2008.sina.com.cn":"860010-0308070000","yayun2002.sina.com.cn":"860010-0308060000","yayun2006.sina.com.cn":"860010-0308060000","inter.sina.com.cn":"860010-0308080000","chelsea.sina.com.cn":"860010-0308090000","book.sina.com.cn":"860010-0319010000","cul.book.sina.com.cn":"860010-0319020000","comic.book.sina.com.cn":"860010-0319030000","finance.sina.com.cn":"860010-0314010000","money.sina.com.cn":"860010-0314020000","yue.sina.com.cn":"860010-0324010000","www.sina.com":"860010-0322010000"};function vjTrack(){var U=1800;var T=false;var S=false;var R="";var Q="0";var P="";var N;var L;var K;var J;var I;var H="expires=Fri, 1 Jan 2038 00:00:00 GMT;";var G=0;if(document.location.protocol=="file:"){return }T=navigator.cookieEnabled?"1":"0";S=navigator.javaEnabled()?"1":"0";var F="0";var E;var C=-1;var D=document.cookie;if(T=="1"){C=D.indexOf("vjuids=");if(C<0){E=vjVisitorID();document.cookie="vjuids="+escape(E)+";"+H+";domain="+wrDomain+";path=/;";if(document.cookie.indexOf("vjuids=")<0){T="0"}else{Q="1"}}else{E=vjGetCookie("vjuids")}}L=document.referrer;if(!L||L==""){L=""}R=vjFlash();if(self.screen){N=screen.width+"x"+screen.height+"x"+screen.colorDepth}else{if(self.java){var M=java.awt.Toolkit.getDefaultToolkit();var O=M.getScreenSize();N=O.width+"x"+O.height+"x0"}}if(navigator.language){K=navigator.language.toLowerCase()}else{if(navigator.browserLanguage){K=navigator.browserLanguage.toLowerCase()}else{K="-"}}I="";var B;var X;X=new Date();J=X.getTimezoneOffset()/-60;J=X.getTimezoneOffset()/-60;B="&s="+N+"&l="+K+"&z="+J+"&j="+S+"&f="+R;if(T=="1"){C=document.cookie.indexOf("vjlast=");if(C<0){G=0}else{G=parseInt(vjGetCookie("vjlast"))}}if((X.getTime()/1000)-G>U){F="1";document.cookie="vjlast="+Math.round(X.getTime()/1000)+";"+H+";domain="+wrDomain+";path=/;"}if(L!=""){B=B+"&r="+escape(L)}if(F!="0"){B=B+"&n="+G}if(Q!="0"){B=B+"&u="+Q}var V;var A=vjGetAcc();var W=vjGetDomain();V=wrUrl+"a.gif?a="+X.getTime().toString(16)+"&t="+escape(I)+"&i="+escape(E)+"&b="+escape(document.location)+"&c="+A+B+"&ck="+W;document.write('<img src="'+V+'" width="1" height="1" style="visibility:hidden;position:absolute;left:0px;top:0px;z-index:-1"  />')}function vjGetAcc(){var B=document.location.toString().toLowerCase();var C=(B.split("/"))[2];var A=wratingAccArray[C];if(typeof (A)=="undefined"){A=wratingDefaultAcc}return A}function vjFlash(){var _wr_f="-",_wr_n=navigator;if(_wr_n.plugins&&_wr_n.plugins.length){for(var ii=0;ii<_wr_n.plugins.length;ii++){if(_wr_n.plugins[ii].name.indexOf("Shockwave Flash")!=-1){_wr_f=_wr_n.plugins[ii].description.split("Shockwave Flash ")[1];break}}}else{if(window.ActiveXObject){for(var ii=10;ii>=2;ii--){try{var fl=eval("new ActiveXObject('ShockwaveFlash.ShockwaveFlash."+ii+"');");if(fl){_wr_f=ii+".0";break}}catch(e){}}}}return _wr_f}function vjHash(B){if(!B||B==""){return 0}var D=0;for(var C=B.length-1;C>=0;C--){var A=parseInt(B.charCodeAt(C));D=(D<<5)+D+A}return D}function vjVisitorID(){var B=vjHash(document.location+document.cookie+document.referrer).toString(16);var A;A=new Date();return B+"."+A.getTime().toString(16)+"."+Math.random().toString(16)}function vjGetCookieVal(B){var A=document.cookie.indexOf(";",B);if(A==-1){A=document.cookie.length}return unescape(document.cookie.substring(B,A))}function vjGetCookie(C){var B=C+"=";var F=B.length;var A=document.cookie.length;var E=0;while(E<A){var D=E+F;if(document.cookie.substring(E,D)==B){return vjGetCookieVal(D)}E=document.cookie.indexOf(" ",E)+1;if(E==0){break}}return null}function vjGetDomain(){var A=0;try{if(window.self.parent!=self){var D=/sina.com/i;var C=document.location.toString().toLowerCase();var B=parent.location.toString().toLowerCase();if(D.test(C)&&D.test(B)){A=1}}}catch(e){A=1}return A}vjTrack();
+</script>
+
+
+
+<!-- End Wrating--><!-- START Nielsen//NetRatings SiteCensus V5.3 --><!-- COPYRIGHT 2006 Nielsen//NetRatings --><script type="text/javascript"> 
+	var _rsCI="cn-sina2006";	 
+	var _rsCG="0";	
+	var _rsDN="//secure-cn.imrworldwide.com/";	
+	var _rsCC=0;	
+	var _rsSE=1;	
+	var _rsSM=0.01;	 
+	var _rsSS=1500;	 
+</script>
+<script src="//secure-cn.imrworldwide.com/v53.js" type="text/javascript"></script>
+<noscript>
+<img src="//secure-cn.imrworldwide.com/cgi-bin/m?ci=cn-sina2006&amp;cg=0" alt="">
+</noscript>
+
+<!-- END Nielsen//NetRatings SiteCensus V5.3 --></body>
+</html></html>

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/!svn/ver/8456/openkomodo/trunk/src/codeintel/test2/bits/bad_css_files
+END
+jezdez-reset-fonts-grids.css
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/!svn/ver/8456/openkomodo/trunk/src/codeintel/test2/bits/bad_css_files/jezdez-reset-fonts-grids.css
+END
+charset_no_string.css
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/!svn/ver/8456/openkomodo/trunk/src/codeintel/test2/bits/bad_css_files/charset_no_string.css
+END
+selector_missing_stem_01.css
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/!svn/ver/8456/openkomodo/trunk/src/codeintel/test2/bits/bad_css_files/selector_missing_stem_01.css
+END

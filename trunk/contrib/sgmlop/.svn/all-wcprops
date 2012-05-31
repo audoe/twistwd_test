@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/repos/!svn/ver/3739/openkomodo/trunk/contrib/sgmlop
+END
+setup.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/!svn/ver/14/openkomodo/trunk/contrib/sgmlop/setup.py
+END
+sgmlop.css
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/!svn/ver/14/openkomodo/trunk/contrib/sgmlop/sgmlop.css
+END
+PKG-INFO
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/!svn/ver/14/openkomodo/trunk/contrib/sgmlop/PKG-INFO
+END
+doctest.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/!svn/ver/14/openkomodo/trunk/contrib/sgmlop/doctest.py
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/!svn/ver/14/openkomodo/trunk/contrib/sgmlop/README
+END
+xmllib.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/!svn/ver/14/openkomodo/trunk/contrib/sgmlop/xmllib.py
+END
+selftest.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/!svn/ver/14/openkomodo/trunk/contrib/sgmlop/selftest.py
+END
+sgmllib.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/!svn/ver/14/openkomodo/trunk/contrib/sgmlop/sgmllib.py
+END
+sgmlop.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/!svn/ver/3738/openkomodo/trunk/contrib/sgmlop/sgmlop.c
+END

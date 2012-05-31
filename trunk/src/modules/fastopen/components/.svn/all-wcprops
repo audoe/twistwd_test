@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/!svn/ver/7259/openkomodo/trunk/src/modules/fastopen/components
+END
+koIFastOpen.idl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/!svn/ver/7095/openkomodo/trunk/src/modules/fastopen/components/koIFastOpen.idl
+END
+koFastOpen.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/!svn/ver/7259/openkomodo/trunk/src/modules/fastopen/components/koFastOpen.py
+END

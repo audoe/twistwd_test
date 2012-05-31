@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/10049/openkomodo/trunk/src/codeintel/support/gencix/python
+END
+parsedocs.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/!svn/ver/5243/openkomodo/trunk/src/codeintel/support/gencix/python/parsedocs.py
+END
+genallcix.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/10049/openkomodo/trunk/src/codeintel/support/gencix/python/genallcix.py
+END
+gencixcore.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/!svn/ver/10038/openkomodo/trunk/src/codeintel/support/gencix/python/gencixcore.py
+END
+gencix.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/!svn/ver/5243/openkomodo/trunk/src/codeintel/support/gencix/python/gencix.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/!svn/ver/5115/openkomodo/trunk/src/codeintel/support/gencix/python/__init__.py
+END

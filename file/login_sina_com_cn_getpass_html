@@ -1,0 +1,11 @@
+<html>
+<head>
+<meta content="text/html;" charset="gb2312" http-equiv="Content-Type">
+<title>索取密码_会员中心_新浪网</title>
+</head>
+<body>
+<script language="JAVASCRIPT">
+setTimeout("document.location.href='http://login.sina.com.cn/member/getpwd/getpwd0.php?entry=sso'",0);
+</script>
+</body>
+</html>

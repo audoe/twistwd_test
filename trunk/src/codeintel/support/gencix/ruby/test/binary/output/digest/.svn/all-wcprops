@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/!svn/ver/14/openkomodo/trunk/src/codeintel/support/gencix/ruby/test/binary/output/digest
+END
+sha1.cix
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/!svn/ver/14/openkomodo/trunk/src/codeintel/support/gencix/ruby/test/binary/output/digest/sha1.cix
+END
+sha2.cix
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/!svn/ver/14/openkomodo/trunk/src/codeintel/support/gencix/ruby/test/binary/output/digest/sha2.cix
+END
+md5.cix
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/!svn/ver/14/openkomodo/trunk/src/codeintel/support/gencix/ruby/test/binary/output/digest/md5.cix
+END
+rmd160.cix
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/!svn/ver/14/openkomodo/trunk/src/codeintel/support/gencix/ruby/test/binary/output/digest/rmd160.cix
+END

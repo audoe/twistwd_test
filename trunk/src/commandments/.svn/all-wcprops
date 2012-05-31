@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/!svn/ver/10060/openkomodo/trunk/src/commandments
+END
+koICommandmentService.idl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/!svn/ver/280/openkomodo/trunk/src/commandments/koICommandmentService.idl
+END
+koCommandmentService.p.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/10060/openkomodo/trunk/src/commandments/koCommandmentService.p.py
+END
+Conscript
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/!svn/ver/9001/openkomodo/trunk/src/commandments/Conscript
+END

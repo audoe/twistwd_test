@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/!svn/ver/9865/openkomodo/trunk/src/udl/udl/epMojo
+END
+epMojo2html.udl
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/7332/openkomodo/trunk/src/udl/udl/epMojo/epMojo2html.udl
+END
+html2epMojo.udl
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/9865/openkomodo/trunk/src/udl/udl/epMojo/html2epMojo.udl
+END
+epMojolex.udl
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/!svn/ver/7332/openkomodo/trunk/src/udl/udl/epMojo/epMojolex.udl
+END

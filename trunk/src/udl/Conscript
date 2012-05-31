@@ -1,0 +1,261 @@
+#!/usr/local/bin/perl
+# ***** BEGIN LICENSE BLOCK *****
+# Version: MPL 1.1/GPL 2.0/LGPL 2.1
+# 
+# The contents of this file are subject to the Mozilla Public License
+# Version 1.1 (the "License"); you may not use this file except in
+# compliance with the License. You may obtain a copy of the License at
+# http://www.mozilla.org/MPL/
+# 
+# Software distributed under the License is distributed on an "AS IS"
+# basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+# License for the specific language governing rights and limitations
+# under the License.
+# 
+# The Original Code is Komodo code.
+# 
+# The Initial Developer of the Original Code is ActiveState Software Inc.
+# Portions created by ActiveState Software Inc are Copyright (C) 2000-2007
+# ActiveState Software Inc. All Rights Reserved.
+# 
+# Contributor(s):
+#   ActiveState Software Inc
+# 
+# Alternatively, the contents of this file may be used under the terms of
+# either the GNU General Public License Version 2 or later (the "GPL"), or
+# the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+# in which case the provisions of the GPL or the LGPL are applicable instead
+# of those above. If you wish to allow use of your version of this file only
+# under the terms of either the GPL or the LGPL, and not to allow others to
+# use your version of this file under the terms of the MPL, indicate your
+# decision by deleting the provisions above and replace them with the notice
+# and other provisions required by the GPL or the LGPL. If you do not delete
+# the provisions above, a recipient may use your version of this file under
+# the terms of any one of the MPL, the GPL or the LGPL.
+# 
+# ***** END LICENSE BLOCK *****
+
+Import(
+    'cons',
+    'build',
+    'platform',
+    'productType',
+    'buildFlavour',
+    'buildType',
+    'supportDir',
+    'unsiloedPythonExe',
+    'ranRegxpcomStateFileName',
+    'mozComponentsDir',
+    'mozIdlIncludePath',
+    'idlExportDir',
+    'komodoPythonUtilsDir',
+    'mozVersion',
+    'mozBin',
+    'ludditeVersion',
+    'mozExtensionDir',
+    'sdkDir',
+);
+
+
+# Install Komodo's "core" UDL-based language extensions: currently just RHTML.
+
+my $RMDIR = ($platform eq "win"? "rd /s/q" : "rm -rf");
+my $MKDIR = ($platform eq "win"? "mkdir" : "mkdir -p");
+my $COPY = ($platform eq "win"? "xcopy /s/q" : "cp -R");
+
+
+my $creator = "ActiveState";
+my @lexers = (
+              {
+               language_name => "Django",
+               codename => "django_language",
+               udl_path => "django-mainlex.udl",
+               ext => ".django.html",
+               skel => "skel/Django",
+              },
+              {
+               language_name => "EJS",
+               codename => "ejs_language",
+               udl_path => "ejs-mainlex.udl",
+               ext => ".ejs.html",
+               skel => "skel/EJS",
+              },
+              {
+               language_name => "HTML",
+               codename => "html_language",
+               udl_path => "html-mainlex.udl",
+               ext => ".html",
+               skel => "skel/HTML",
+              },
+              {
+               language_name => "Luddite",
+               codename => "luddite_language",
+               udl_path => "luddite-mainlex.udl",
+               ext => ".udl",
+              },
+              {
+               language_name => "RHTML",
+               codename => "rhtml_language",
+               udl_path => "rhtml-mainlex.udl",
+               ext => ".rhtml",
+               skel => "skel/RHTML",
+              },
+              {
+               language_name => "PHP",
+               codename => "php_language",
+               udl_path => "php-mainlex.udl",
+               ext => ".php",
+               skel => "skel/PHP",
+              },
+              {
+               language_name => "Smarty",
+               codename => "smarty_language",
+               udl_path => "php-smarty-mainlex.udl",
+               ext => ".tpl",
+              },
+              {
+               language_name => "Mason",
+               codename => "mason_language",
+               udl_path => "mason-mainlex.udl",
+               ext => ".mason.html",
+               skel => "skel/Mason",
+              },
+              {
+               language_name => "epMojo",
+               codename => "epmojo_language",
+               udl_path => "epMojo-mainlex.udl",
+               ext => ".ep",
+               skel => "skel/epMojo",
+              },
+              {
+               language_name => "TemplateToolkit",
+               codename => "templatetoolkit_language",
+               udl_path => "template-toolkit-mainlex.udl",
+               ext => ".ttkt.html",
+               skel => "skel/TemplateToolkit",
+              },
+              {
+               language_name => "XBL",
+               codename => "xbl_language",
+               udl_path => "xbl-mainlex.udl",
+               ext => ".xbl",
+               skel => "skel/XBL",
+              },
+              {
+               language_name => "XUL",
+               codename => "xul_language",
+               udl_path => "xul-mainlex.udl",
+               ext => ".xul",
+               skel => "skel/XUL",
+              },
+              {
+               language_name => "XML",
+               codename => "xml_language",
+               udl_path => "xml-mainlex.udl",
+               ext => ".xml",
+               skel => "skel/XML",
+              },
+              {
+               language_name => "XSLT",
+               codename => "xslt_language",
+               udl_path => "xslt-mainlex.udl",
+               ext => ".xsl",
+               skel => "skel/XSLT",
+              },
+              {
+               language_name => "ActionScript",
+               codename => "actionscript_language",
+               udl_path => "actionscript-mainlex.udl",
+               ext => ".as",
+               skel => "skel/ActionScript",
+              },
+              {
+               language_name => "MXML",
+               codename => "mxml_language",
+               udl_path => "mxml-mainlex.udl",
+               ext => ".mxml",
+               skel => "skel/MXML",
+              },
+              {
+               language_name => "reStructuredText",
+               codename => "restructuredtext_language",
+               udl_path => "restructuredtext-mainlex.udl",
+               ext => ".rst",
+               skel => "skel/reStructuredText",
+              },
+              {
+               language_name => "TracWiki",
+               codename => "tracwiki_language",
+               udl_path => "tracwiki-mainlex.udl",
+               ext => ".tracwiki",
+               skel => "skel/TracWiki",
+              },
+             );
+foreach my $info (@lexers) {
+    my $language_name = $info->{language_name};
+    my $codename = $info->{codename};
+    my $udl_path = "udl/" . $info->{udl_path};
+    my $version = $info->{version} || "1.0.0";
+    my $xpi_path = "$codename-$version-ko.xpi";
+    my $build_dir = "build/$language_name";
+    my $rmdir_cmd = "$RMDIR $build_dir";
+    my $mkdir_cmd = "$MKDIR build";
+    if ($platform eq "win") {
+        $build_dir =~ s/\//\\/g;
+        $build_dir .= '\\';
+        $rmdir_cmd = "IF EXIST $build_dir $RMDIR $build_dir";
+        $mkdir_cmd = "IF NOT EXIST build $MKDIR build";
+    }
+    if ($info->{skel}) {
+        my $skel_dir = $info->{skel};
+        if ($platform eq "win") {
+            $skel_dir =~ s/\//\\/g;
+        }
+        $cons->Command(
+            $xpi_path,
+            "luddite.py",
+            $udl_path,
+            qq(
+                cd %1:d && $rmdir_cmd
+                cd %1:d && $mkdir_cmd
+                cd %1:d && $COPY $skel_dir $build_dir
+                cd %1:d && python %1:f compile $udl_path
+                cd %1:d && python %1:f package -f -c "$creator" -V $version "$language_name"
+            ));
+        $cons->DependsRecursive($xpi_path, $info->{skel}, ('\.svn'));
+    } else {
+        $cons->Command(
+            $xpi_path,
+            "luddite.py",
+            "GUIDs.txt",
+            $udl_path,
+            qq(
+                cd %1:d && python %1:f compile --skel --ext=$info->{ext} -g GUIDs.txt -f $udl_path
+                cd %1:d && python %1:f package -f -c "$creator" -V $version "$language_name"
+            ));
+    }
+    $cons->DependsRecursive($xpi_path, "udl",
+                            ($info->{udl_path}, '\.consign', '\.svn'));
+    $cons->DependsRecursive($xpi_path, "ludditelib",
+                            ('\.consign', '.*\.pyc', '\.svn'));
+
+    my $landmark = "$mozExtensionDir/$codename\@ActiveState.com/install.rdf";
+    $cons->Command(
+        $landmark,
+        $xpi_path,
+        qq(
+            unzip -o -q -d %0:d %1
+        ));
+}
+
+
+# Put UDL and luddite bits into the Komodo SDK dir for extension development.
+$cons->InstallRecursive("$sdkDir/udl", cwd()."/src/udl/udl", ('\.svn'));
+$cons->InstallRecursive("$sdkDir/pylib/ludditelib",
+                        cwd()."/src/udl/ludditelib",
+                        (".*\.pyc", ".*\.pyo", '\.svn'));
+if ($platform eq "win") {
+    $cons->InstallAs("$sdkDir/bin/luddite.py", "luddite.py");
+} else {
+    $cons->InstallAs("$sdkDir/bin/luddite", "luddite.py");
+}

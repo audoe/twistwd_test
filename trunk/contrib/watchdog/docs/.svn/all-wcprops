@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/!svn/ver/8878/openkomodo/trunk/contrib/watchdog/docs
+END
+_fsevents.pyx
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/!svn/ver/8878/openkomodo/trunk/contrib/watchdog/docs/_fsevents.pyx
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/8878/openkomodo/trunk/contrib/watchdog/docs/Makefile
+END
+eclipse_cdt_style.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/8878/openkomodo/trunk/contrib/watchdog/docs/eclipse_cdt_style.xml
+END
+make.bat
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/8878/openkomodo/trunk/contrib/watchdog/docs/make.bat
+END
+echo.py.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/!svn/ver/8878/openkomodo/trunk/contrib/watchdog/docs/echo.py.txt
+END

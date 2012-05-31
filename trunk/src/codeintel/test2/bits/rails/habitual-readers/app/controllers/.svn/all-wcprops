@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/!svn/ver/14/openkomodo/trunk/src/codeintel/test2/bits/rails/habitual-readers/app/controllers
+END
+tags_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/!svn/ver/14/openkomodo/trunk/src/codeintel/test2/bits/rails/habitual-readers/app/controllers/tags_controller.rb
+END
+application.rb
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/!svn/ver/14/openkomodo/trunk/src/codeintel/test2/bits/rails/habitual-readers/app/controllers/application.rb
+END
+readers_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/!svn/ver/14/openkomodo/trunk/src/codeintel/test2/bits/rails/habitual-readers/app/controllers/readers_controller.rb
+END
+reader_images_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/!svn/ver/14/openkomodo/trunk/src/codeintel/test2/bits/rails/habitual-readers/app/controllers/reader_images_controller.rb
+END
+admin_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/!svn/ver/14/openkomodo/trunk/src/codeintel/test2/bits/rails/habitual-readers/app/controllers/admin_controller.rb
+END
+home_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/!svn/ver/14/openkomodo/trunk/src/codeintel/test2/bits/rails/habitual-readers/app/controllers/home_controller.rb
+END
+readings_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/!svn/ver/14/openkomodo/trunk/src/codeintel/test2/bits/rails/habitual-readers/app/controllers/readings_controller.rb
+END
+books_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/!svn/ver/14/openkomodo/trunk/src/codeintel/test2/bits/rails/habitual-readers/app/controllers/books_controller.rb
+END

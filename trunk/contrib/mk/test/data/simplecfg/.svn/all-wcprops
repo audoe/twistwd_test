@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/repos/!svn/ver/3406/mk/trunk/test/data/simplecfg
+END
+do.doctest
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/!svn/ver/3406/mk/trunk/test/data/simplecfg/do.doctest
+END
+configure.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/!svn/ver/3406/mk/trunk/test/data/simplecfg/configure.py
+END

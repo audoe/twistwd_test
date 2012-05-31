@@ -1,0 +1,115 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
+ * The contents of this file are subject to the Mozilla Public License
+ * Version 1.1 (the "License"); you may not use this file except in
+ * compliance with the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ * 
+ * Software distributed under the License is distributed on an "AS IS"
+ * basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+ * License for the specific language governing rights and limitations
+ * under the License.
+ * 
+ * The Original Code is Komodo code.
+ * 
+ * The Initial Developer of the Original Code is ActiveState Software Inc.
+ * Portions created by ActiveState Software Inc are Copyright (C) 2000-2007
+ * ActiveState Software Inc. All Rights Reserved.
+ * 
+ * Contributor(s):
+ *   ActiveState Software Inc
+ * 
+ * Alternatively, the contents of this file may be used under the terms of
+ * either the GNU General Public License Version 2 or later (the "GPL"), or
+ * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the MPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK ***** */
+
+#include "nsISupports.idl"
+
+// some useful system utilities
+[scriptable, uuid(6D9F47DE-ADC1-4a8e-8E7D-2F7B037239BF)]
+interface koISysUtils : nsISupports {
+    // Search for 'exeName' on the user's startup PATH.
+    // Returns the fullpath to the executable if found, the empty string
+    // otherwise.
+    wstring Which(in wstring exeName);
+    // Search for 'exeName' on the user's startup PATH.
+    // Returns a list of fullpaths if found, the empty string if not.
+    void WhichAll(in wstring exeName,
+        out PRUint32 count,
+        [retval, array, size_is(count)] out wstring str);
+    // do a quick search if an executable with this name exists.
+    // designed to be fast, but *may* rarely return false when
+    // Which() would find something.
+    boolean FastCheckIfHaveExecutable(in wstring exeName);
+
+    // see similarly named functions in Python's os and os.path modules
+    boolean IsFile(in wstring filename);
+    boolean IsDir(in wstring dirname);
+    void Stat(in wstring filename,
+              out PRUint32 st_mode,
+              out PRUint32 st_ino,
+              out PRUint32 st_dev,
+              out PRUint32 st_nlink,
+              out PRUint32 st_uid,
+              out PRUint32 st_gid,
+              out PRUint32 st_size,
+              out PRUint32 st_atime,
+              out PRUint32 st_mtime,
+              out PRUint32 st_ctime);
+    // e.g. Access("myfile.txt", W_OK) to see if a file is read-only
+    boolean Access(in wstring filename, in PRUint32 mode);
+    readonly attribute PRUint32 F_OK;
+    readonly attribute PRUint32 R_OK;
+    readonly attribute PRUint32 W_OK;
+    readonly attribute PRUint32 X_OK;
+
+    void Touch(in wstring filename);
+
+    // Used to flush the standard IO handles: "sys.stdout" and "sys.stderr". Used
+    // by the Komodo view error log to ensure the log file doesn't have pending
+    // write operations.
+    void FlushStdout();
+    void FlushStderr();
+    
+    // some os finder style utility functions
+    void MoveToTrash(in wstring filename);
+    void ShowFileInFileManager(in wstring filename);
+    void OpenFile(in wstring filename);
+    
+    wstring joinargv(in PRUint32 count, [array, size_is(count)] in wstring args);
+
+    wstring diff_files(in wstring fname1, in wstring fname2);
+ 
+        /**
+         * Open the color picker dialog with the startingcolor.
+         * @param startingcolor - Color string, must use the format "#ABCDEF".
+         * @deprecated since Komodo 7.0b1 - QI to koIColorPickerAsync and use
+         *      pickColorAsync instead. See reasoning in koIColorPicker.idl.
+         */
+    [deprecated] AString pickColor(in AString startingcolor);
+        /**
+         * Open the color picker dialog with the startingcolor at position x,y.
+         * @param startingcolor - Color string, must use the format "#ABCDEF".
+         * @param screenX - the X screen position to open the dialog at.
+         * @param screenY - the Y screen position to open the dialog at.
+         * @deprecated since Komodo 7.0b1 - QI to koIColorPickerAsync and use
+         *      pickColorAsync instead. See reasoning in koIColorPicker.idl.
+         */
+    [deprecated] AString pickColorWithPositioning(in AString startingcolor,
+                                                  in long screenX,
+                                                  in long screenY);
+
+    long byteLength(in AString unicodestr);
+    long charIndexFromPosition(in AString unicodestr, in long bytePos);
+};

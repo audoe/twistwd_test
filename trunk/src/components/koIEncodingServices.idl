@@ -1,0 +1,83 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
+ * The contents of this file are subject to the Mozilla Public License
+ * Version 1.1 (the "License"); you may not use this file except in
+ * compliance with the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ * 
+ * Software distributed under the License is distributed on an "AS IS"
+ * basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+ * License for the specific language governing rights and limitations
+ * under the License.
+ * 
+ * The Original Code is Komodo code.
+ * 
+ * The Initial Developer of the Original Code is ActiveState Software Inc.
+ * Portions created by ActiveState Software Inc are Copyright (C) 2000-2007
+ * ActiveState Software Inc. All Rights Reserved.
+ * 
+ * Contributor(s):
+ *   ActiveState Software Inc
+ * 
+ * Alternatively, the contents of this file may be used under the terms of
+ * either the GNU General Public License Version 2 or later (the "GPL"), or
+ * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the MPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK ***** */
+
+#include "nsIEnumerator.idl"
+#include "nsITreeView.idl"
+
+interface koIHierarchyItem;
+
+[scriptable, uuid(99a9a01d-498e-4d79-9fb9-3e9c5cbb0d00)]
+interface koIEncodingInfo : nsISupports {
+    readonly attribute string python_encoding_name;
+    readonly attribute string friendly_encoding_name;
+    readonly attribute string short_encoding_name;
+    readonly attribute ACString byte_order_marker;
+    readonly attribute boolean ascii_superset;
+    readonly attribute string fontspec;
+};
+
+[scriptable, uuid(4474e045-c02c-4514-9cae-8411bb84488f)]
+interface koIEncodingServices : nsISupports {
+    void enumerateEncodings([array, size_is(count)] out koIEncodingInfo encodingInfo,
+                            out unsigned long count);
+
+    koIEncodingInfo get_encoding_info(in string python_encoding_name);
+    string get_canonical_python_encoding_name(in string python_encoding_name);
+    
+    // returns -1 if the encoding cannot be found in the list of supported encodings 
+    PRInt32 get_encoding_index(in string python_encoding_name);
+    readonly attribute koIHierarchyItem encoding_hierarchy;
+    
+    // The meaning of errors is as in the Python standard library w.r.t. dealing with 
+    // characters that can't fit in the encoding which is asked for.
+    //   'ignore': means they are skipped
+    //   'strict': means that the lastErrorService will be used to signal errors
+    //   'replace': means that a ? will be inserted instead (not recommended)
+    // Both of these functions use the lastErrorSvc to report errors
+    AString unicode(in ACString encoded_string,
+                    in string python_encoding_name,
+                    in string errors);
+    ACString encode(in AString unicode_string,
+                    in string python_encoding_name,
+                    in string errors);
+    AString getUnicodeEncodedString(in ACString raw_string,
+                                    out wstring encoding_name,
+                                    out string bom);
+    AString getUnicodeEncodedStringUsingOSDefault(in ACString raw_string,
+                                                  out wstring encoding_name,
+                                                  out string bom);
+};
+

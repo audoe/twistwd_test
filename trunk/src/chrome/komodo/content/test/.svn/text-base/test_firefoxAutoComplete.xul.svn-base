@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<!-- ***** BEGIN LICENSE BLOCK *****
+ Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ 
+ The contents of this file are subject to the Mozilla Public License
+ Version 1.1 (the "License"); you may not use this file except in
+ compliance with the License. You may obtain a copy of the License at
+ http://www.mozilla.org/MPL/
+ 
+ Software distributed under the License is distributed on an "AS IS"
+ basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+ License for the specific language governing rights and limitations
+ under the License.
+ 
+ The Original Code is Komodo code.
+ 
+ The Initial Developer of the Original Code is ActiveState Software Inc.
+ Portions created by ActiveState Software Inc are Copyright (C) 2000-2007
+ ActiveState Software Inc. All Rights Reserved.
+ 
+ Contributor(s):
+   ActiveState Software Inc
+ 
+ Alternatively, the contents of this file may be used under the terms of
+ either the GNU General Public License Version 2 or later (the "GPL"), or
+ the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ in which case the provisions of the GPL or the LGPL are applicable instead
+ of those above. If you wish to allow use of your version of this file only
+ under the terms of either the GPL or the LGPL, and not to allow others to
+ use your version of this file under the terms of the MPL, indicate your
+ decision by deleting the provisions above and replace them with the notice
+ and other provisions required by the GPL or the LGPL. If you do not delete
+ the provisions above, a recipient may use your version of this file under
+ the terms of any one of the MPL, the GPL or the LGPL.
+ 
+ ***** END LICENSE BLOCK ***** -->
+
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+<?xml-stylesheet href="chrome://komodo/skin/autocomplete.css" type="text/css"?>
+
+<window id="test_firefoxAutoComplete"
+        xmlns:html="http://www.w3.org/1999/xhtml"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        title="Test Firefox AutoComplete"
+        windowtype="komodo_test"
+        class="kodialog"
+        onload="OnLoad()"
+        orient="vertical"
+        width="650" height="800"
+        persist="screenX screenY width height"
+        flex="1">
+
+    <script src="chrome://komodo/content/library/logging.js" type="application/x-javascript;version=1.7"/>
+    <script src="chrome://komodo/content/test/test_firefoxAutoComplete.js" type="application/x-javascript;version=1.7"/>
+
+    <popupset>
+        <panel type="autocomplete" id="popupTextboxAutoComplete" noautofocus="true"/>
+    </popupset>
+
+    <vbox style="padding: 10px 10px 20px 10px;" flex="1">
+        <description>
+            This dialog is used to test/try out Firefox's new autocomplete
+            textbox functionality. Note that you must manually edit the
+            'autocompletesearch' attribute in test_firefoxAutoComplete.xul to
+            try out the other available autocomplete searches. Changing that
+            dynamically doesn't "take".
+        </description>
+
+        <separator style="height: 10px;"/>
+        <hbox align="center" flex="1">
+            <label value="Complete:" accesskey="m" control="complete"/>
+            <!-- Notes:
+                 - Note that "onfocus", if that attribute is defined, will get
+                   hit twice: once for the textbox and once for the underlying
+                   html:input. Guard against that like this:
+                     onfocus="if (event.target.nodeName == 'textbox') { /* do stuff */ }"
+                   Actually sometimes the only event is on the html:input.
+              -->
+            <textbox id="complete"
+                     type="autocomplete"
+                     flex="1" 
+                     accesskey="m"
+                     autocompletesearch="mru_and_filepath"
+                     autocompletesearchparam="mru:find-patternMru; cwd: /Users/trentm; maxmru: 4"
+                     autocompletepopup="popupTextboxAutoComplete"
+                     enablehistory="true"
+                     tabscrolling="true"
+                     maxrows="10"
+                     completeselectedindex="true"
+                     />
+        </hbox>
+
+        <spacer flex="1"/>
+        <groupbox orient="vertical" flex="1">
+            <caption label="Options"/>
+            <hbox align="center">
+                <label value="autocompletesearch:" control="autocompletesearch"/>
+                <!-- changing the autocompletesearch type on the fly doesn't "take" 
+                <menulist id="autocompletesearch"
+                          sizetopopup="false"
+                          style="width: 140px;"
+                          flex="1"
+                          value="filepath"
+                          oncommand="UpdateStringCompleteAttribute('autocompletesearch', this.value);">
+                    <menupopup>
+                        <menuitem value="demo" label="demo (files in ~/tmp)"/>
+                        <menuitem value="filepath" label="filepath (local file paths)"/>
+                    </menupopup>
+                </menulist>
+                -->
+                <label value="mru_and_filepath (must change manually in XUL)"/>
+            </hbox>
+            <hbox align="center">
+                <label value="autocompletesearchparam:" control="autocompletesearchparam"/>
+                <textbox id="autocompletesearchparam" flex="1"
+                         value="mru:find-patternMru; cwd: /Users/trentm; maxmru: 4"
+                         onchange="UpdateStringCompleteAttribute('autocompletesearchparam', this.value);"/>
+            </hbox>
+            <checkbox label="enablehistory" checked="true"
+                      oncommand="UpdateBooleanCompleteAttribute('enablehistory', this.checked);"/>
+            <checkbox label="tabscrolling" checked="true"
+                      oncommand="UpdateBooleanCompleteAttribute('tabscrolling', this.checked);"/>
+            <checkbox label="completeselectedindex" checked="true"
+                      oncommand="UpdateBooleanCompleteAttribute('completeselectedindex', this.checked);"/>
+            <checkbox label="completedefaultindex" checked="false"
+                      oncommand="UpdateBooleanCompleteAttribute('completedefaultindex', this.checked);"/>
+            <checkbox label="showcommentcolumn" checked="false"
+                      oncommand="UpdateBooleanCompleteAttribute('showcommentcolumn', this.checked);"/>
+        </groupbox>
+
+        <hbox align="right">
+            <button id="close" accesskey="c" label="Close" oncommand="window.close();"/>
+        </hbox>
+    </vbox>
+</window>
+

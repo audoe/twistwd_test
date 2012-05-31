@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/!svn/ver/7847/openkomodo/trunk/contrib/pycrypto/lib/Crypto/SelfTest/PublicKey
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/!svn/ver/7847/openkomodo/trunk/contrib/pycrypto/lib/Crypto/SelfTest/PublicKey/__init__.py
+END
+test_importKey.py
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/!svn/ver/7847/openkomodo/trunk/contrib/pycrypto/lib/Crypto/SelfTest/PublicKey/test_importKey.py
+END
+test_RSA.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/!svn/ver/7847/openkomodo/trunk/contrib/pycrypto/lib/Crypto/SelfTest/PublicKey/test_RSA.py
+END
+test_DSA.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/!svn/ver/4769/openkomodo/trunk/contrib/pycrypto/lib/Crypto/SelfTest/PublicKey/test_DSA.py
+END

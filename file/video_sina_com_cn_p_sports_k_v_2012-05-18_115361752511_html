@@ -1,0 +1,600 @@
+<html>DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+
+<!--[167,272,511827] published at 2012-05-18 11:54:10 from #236 by 3914--><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>暴龙滑翔暴扣威震三军 邓肯无奈低头成背景|NBA视频点播首页|NBA_新浪视频</title>
+<meta content="text/html; charset=%SOUP-ENCODING%" http-equiv="Content-Type">
+<meta content="NBA视频点播首页,NBA,新浪体育,新浪视频" name="keywords">
+<meta content="NBA视频点播首页,NBA,北京时间5月18日，NBA季后赛第二轮继续进行，马刺主场迎战快船，比赛进行到第三节5分40秒时，一直带伤出战的巴特勒突破斯普利特后面对邓肯暴扣得手。 声色NBA微博以上为相关视频。(责编：巴丁格)" name="description">
+<meta content="6,76,4803,5;6,76,148,8" name="subjectid">
+<link href="http://sjs2.sinajs.cn/video/css/common/common.css?version=1.0.2.0" type="text/css" rel="stylesheet">
+<link href="http://sjs3.sinajs.cn/video/css/play/play.css?version=1.0.2.0" type="text/css" rel="stylesheet">
+<link href="http://sjs0.sinajs.cn/video/css/common/common.css?version=1.0.2.0" type="text/css" rel="stylesheet">
+<link href="http://sjs0.sinajs.cn/video/css/play/play_002.css?version=1.0.2.0" type="text/css" rel="stylesheet">
+<link href="http://img.t.sinajs.cn/t35/style/css/common/layer.css?version=20110802192359" type="text/css" rel="stylesheet">
+<link href="http://sjs0.sinajs.cn/video/video/css/weibocomment.css" type="text/css" rel="stylesheet">
+<script src="http://sjs2.sinajs.cn/video/js/iframeAjax.js?version=1.0.2.0" type="text/javascript"></script>
+<script src="http://sjs1.sinajs.cn/video/js/detectbrowserplayer.js?version=1.0.2.0" type="text/javascript"></script>
+<script src="http://sjs3.sinajs.cn/video/js/album.js?version=1.0.2.0" type="text/javascript"></script>
+<script src="http://sjs3.sinajs.cn/video/js/newsinterfix.js?version=1.0.2.0" type="text/javascript"></script>
+<script src="http://sjs1.sinajs.cn/video/js/jquery.js" type="text/javascript"></script>
+<script src="http://sjs1.sinajs.cn/video/js/jquery.md5.js" type="text/javascript"></script>
+<script src="http://sjs0.sinajs.cn/video/js/playvideo_worldcup.js?version=1.0.2.0" type="text/javascript"></script>
+<script src="http://sjs0.sinajs.cn/video/js/movieplayer.js?version=1.0.2.0" type="text/javascript"></script>
+<script src="http://sjs2.sinajs.cn/video/js/separation.js?version=1.0.2.0" type="text/javascript"></script>
+
+<!--广告--><script src="http://pfp.sina.com.cn/dcs/js/dc_video_svv.js" type="text/javascript"></script>
+<style type="text/css">
+.loading{height:280px;display:block;clear:both;}
+.conTable.big td.videoContent{font-size:14px;}
+.conTable.normal td.videoContent{font-size:12px;}
+.conTable.small td.videoContent{font-size:10px;}
+.vlayer .content{background:#FFF;}
+.co_linedot1 .cur .vp74 {display:none;}
+.pic-con .con.sigleline{width:100%;}
+.pic-con .con.sigleline em{color:#0082CB}
+.pic-con .con.sigleline a{margin-bottom:0px;}
+.hotvideo ul.con .pic-con.cur {padding:0px;}
+.mp_news_pic{height:50px;}
+.mp_news_login .title{position:static;}
+</style>
+<script type="text/javascript">
+document.domain="sina.com.cn";
+var video = {
+	channel:'ty',
+	vid :'77228434',
+	cid:'',
+    epgid:'',
+	sid :'61752511',
+	uid : '6',
+	pid:'6',
+	tid:'408',
+	pic: 'http://p3.v.iask.com/597/2/77228434_2.jpg',
+		newsid:'6-408-106239',
+		ad_state:'1',
+	categoryId:'2',
+	videoStyle:2,
+	resolution:1,
+	isWide:0,
+	    swfOutsideUrl:'http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/vid=77228434_6_a0K3S3FtC2PK+l1lHz2stqkM7KQNt6njnynt71+iJAlcVwmPZorfO4kK5y7UAsdG8mg/s.swf',
+    	userId:null,
+	userName:null,
+	videoList:[],
+	playVideoStyle:'flv',
+	worldVideoList:{"flv":[77228434,77228434,0,0],"wmv":[0,0,0,0]},
+	defaultVid:'1'-1,
+	video:{ipad_vid:77227147,class_code:1},
+	backupURL:'http://d331.v.iask.com/f/1/fc83c86639e3fb3d3c35ebd06e97c08d77228434.hlv',
+	url:window.location.href,
+	title:'视频-暴龙滑翔暴扣威震三军 邓肯无奈低头成背景',
+	setInit:function(channl,newsid,vid,uid,sid,categoryId,op){
+		video.channel = channl;
+		video.categoryId = categoryId;
+		video.vid = vid;
+		video.sid = sid;
+		video.newsid = newsid;
+		video.uid = uid;
+		if(op){
+			video.title = op.title||'';
+			video.url = op.url || document.location.href;
+			video.swfOutsideUrl = op.swfOutsideUrl;
+			}
+		cmnt_channel = video.channel;
+		cmnt_newsid = video.newsid.toString();
+		if(channl!='vblog'){
+			$("#ztTxtVblog").hide();
+		}
+	}
+}
+var cookie = eval('('+login.parseCookie(login.getCookie('SUP'))+')');
+if(cookie&&cookie.nick){
+	video.userId = cookie.uid;
+	video.userName = cookie.nick;
+}
+function setUser(json,flag){
+	video.userId = json.uid;
+	video.userName = json.nick;
+	if(!pl.userId){
+		pl.setUser(json);
+	}
+	if(topic&&topic.user&&!topic.user.uid){
+		try{
+			topic.initUser(json)
+		}catch(error){}
+	}
+	if(!flag&&playList&&!playList.login&&playList.exportData){
+		try{playList.exportData()}catch(error){}
+	}
+}
+var cmnt_channel = video.channel;
+var cmnt_newsid = video.newsid.toString();
+var cmnt_group = 0;
+var cmnt_page = 1;
+var cmnt_pagesize = 5;
+var $setHost = function(url){
+	cmnt_host = url;
+}
+function flashListRead(){
+	interfix.getFlashList();
+}
+function flashPlayNext(vid,uid){
+	interfix.playNext(vid,uid);
+}
+$(document).ready(function() {
+	$('#videoChannel a').removeAttr("class").removeAttr("style").click(function(){window.open(this.href);return false;}).attr('title',function(){return this.innerHTML});
+	//$("#videoPTBox,#videoPTBoxL").hide();
+	//try{$IFRAME_TJ.IframeClass.init();}catch(error){}
+	getVideoPlayTimes(video.vid,video.uid)
+	window.onbeforeunload = function () {  try{$IFRAME_TJ.Quality.init();}catch(error){}}
+	
+});
+
+$(document).ready(function(){
+	//如果canSupportHTML5Video() 为true 则不支持高标清切换
+	if(canSupportHTML5Video()){
+		var flag = 0
+		}else{var flag = 1}
+	WorldCupVideo.switchVideo.check(flag);
+		   
+})
+</script>
+</head>
+<body>
+<div id="tblog_container"><!-- 2011/1/31 加微博模块 --></div>
+<table border="0" class="adNone" width="950" cellpadding="0" cellspacing="0" id="PublicRelation1">
+<tr>
+
+<!-- 顶通广告 尺寸950x90 start --><td width="950" height="90">
+<script type="text/javascript">
+    document.domain = "sina.com.cn";
+</script>
+<iframe src="http://video.sina.com.cn/iframe/2010-05-31/21/55.html" hspace="0" height="90px" width="950px" vspace="0" scrolling="NO" frameborder="0"></iframe>
+</td>
+
+<!-- 顶通广告 尺寸950x90 end --></tr>
+</table>
+<div class="topTrayBg">
+<div class="topTray">
+<div class="logo">
+<a href="http://video.sina.com.cn"><img src="http://simg0.sinajs.cn/video/images/common/logo.gif"></a>
+</div>
+<div class="topTrayNav">
+<a href="http://video.sina.com.cn/">首页</a><span>|</span><a href="http://video.sina.com.cn/movie/">大片</a><span>|</span><a href="http://video.sina.com.cn/news/">视频新闻</a><span>|</span><a href="http://v.sina.com.cn/">播客</a><span>|</span><a href="http://video.sina.com.cn/live/">嘉宾聊天</a><span>|</span><a href="http://video.sina.com.cn/tv">电视台</a>
+</div>
+<div class="search">
+<form action="http://video.sina.com.cn/search/index.php" method="get" id="search_video_form" target="_blank">
+<input type="text" name="k" class="textbg">
+<input type="submit" class="btn" value=" ">
+<input type="hidden" name="m1" value="e">
+</form>
+</div>
+<script src="http://sjs0.sinajs.cn/video/js/top.js?version=1.0.2.0" type="text/javascript"></script>
+</div>
+<div class="clear"></div>
+</div>
+<div class="mainPlay">
+<div class="playerBox">
+<div class="crumbs">
+<ul id="tagsList">
+<li><a href="http://video.sina.com.cn" id="sinaVideoHref">新浪视频</a></li>
+<li class="path">&gt;</li>
+<li><a href="http://video.sina.com.cn/news/">视频新闻</a></li>
+<li class="path">&gt;</li>
+<li><a href="http://video.sina.com.cn/sports/">体育视频</a></li>
+<li class="path">&gt;</li>
+<li class="current">正文</li>
+</ul>
+</div>
+<div class="title" id="videoTitle">视频-暴龙滑翔暴扣威震三军 邓肯无奈低头成背景</div>
+<div class="time" id="videoUpdatetime">
+<a href="http://www.sina.com.cn/">http://www.sina.com.cn/</a>  2012年05月18日11:53  新浪体育
+
+				                
+<!-- 2011/1/31 加微博模块 --><span style="display:none;" id="tblog_name">新浪体育</span>
+<a class="add_tblog" href="javascript:;" id="add_tblog" target="_blank">官方微博</a>
+<script src="http://i.sso.sina.com.cn/js/sinaSSOManager.js" charset="utf-8" type="text/javascript"></script>
+<script type="text/javascript">
+                var tblog_skin=6;//设置模板
+                var tblog_channel=167;//设置suda统计参数
+                </script>
+<script src="http://news.sina.com.cn/js/694/2011/0131/10/weibo.js" charset="gb2312" type="text/javascript"></script>
+<link href="http://news.sina.com.cn/css/694/2011/0131/11/weibo.css" type="text/css" rel="stylesheet">
+</div>
+<div class="player">
+<a style="display:none;" href="#sinaVideoHref" class="openUpBtn" id="openUpBtn"></a>
+<div style="display:none;" class="openUpBtn_tips" id="openUpTitle"><a href="javascript:void(0)" id="closeOpenUpTitle">关闭</a><span>宽屏模式</span></div>
+<div style="z-index: 10000; position: relative;" id="myflashBox"></div>
+</div>
+<div style="display:none" class="addbtn_new" id="addbtn_new">
+<span><a rel="0" href="javascript:void(0)" class="dingBtn" onclick="WorldCupVideo.switchVideo.click(this,video.worldVideoList)" id="switchVideoCCTVBtn"><cite><em>普清版</em></cite></a></span>
+<span><a rel="1" href="javascript:void(0)" class="dingBtn cur" onclick="WorldCupVideo.switchVideo.click(this,video.worldVideoList)" id="switchVideoCCTVBtng"><cite><em>高清版</em></cite></a></span>
+<span><a rel="2" href="javascript:void(0)" class="dingBtn" onclick="WorldCupVideo.switchVideo.click(this,video.worldVideoList)" id="switchVideoBtn"><cite><em></em></cite></a></span>
+<span><a rel="3" href="javascript:void(0)" class="dingBtn" onclick="WorldCupVideo.switchVideo.click(this,video.worldVideoList)" id="switchVideoBtng"><cite><em></em></cite></a></span>
+</div>
+</div>
+<div style="overflow:visible;" class="mpRightBox">
+
+<!--广告--><div style="height:150px;" class="adFrame clearfix"><div style="width:300px; height:150px; text-align:center; line-height:150px;"><div style="width:300px;margin:0 auto"><iframe src="http://v.sina.com.cn/v/iframe/15/2009/0930/8.html" hspace="0" height="150px" width="300px" vspace="0" scrolling="NO" frameborder="0"></iframe></div></div></div>
+<div style="display:none;" class="mp_news" id="RUser">
+<div class="mp_news_pic" id="RUserImg"><img width="38" alt="头像" src="http://simg0.sinajs.cn/video/images/common/co_transparent.gif" height="38"></div>
+<div class="mp_news_login">
+<div class="title" id="RUserTitle"></div>
+<div class="co_linedot2"></div>
+<div class="news n1" id="RUserListOne"></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="mp_news" id="RNews">
+<div class="title">
+<span id="RnewsTitle">
+<a href="http://sports.sina.com.cn/" target="_blank">
+												新浪体育
+											</a>
+</span>
+<img src="http://simg3.sinajs.cn/video/images/common/co_transparent.gif" class="icon icon10" width="16" alt="vip" height="16" id="RnewsTitleIcon">
+</div>
+<div class="co_linedot2"></div>
+<div class="news n1" id="RNewsListOne">
+				所属专题：<a href="http://sports.sina.com.cn/nba/video/index.shtml" title="NBA视频点播首页">NBA视频点播首页</a>
+</div>
+</div>
+<div style="overflow:visible;" class="related" id="Interfix">
+<div class="title"><b id="Interfix_title">相关视频列表</b><em>|</em><span id="Interfix_num">0</span></div>
+<div id="Interfix_loading" class="loading"><img src="http://simg1.sinajs.cn/video/images/common/cn_loading.gif"></div>
+</div>
+
+<!--广告--><iframe src="http://d1.sina.com.cn/jianyu1/TaoBao/NB10110188/taobao_if.html" style="margin-top: 10px;" height="250" width="300" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"></iframe>
+<div class="hotvideo" id="hotvideo">
+<ul class="tab" id="hotVideo_title">
+<li class="cur" id="hotvid"><a href="javascript:void(0)">热点视频</a></li>
+<li id="likeVid"><a href="javascript:void(0)">您可能喜欢</a></li>
+<li id="attentionVid" class="last"><a href="javascript:void(0)">实时关注视频</a></li>
+</ul>
+<ul id="hotvid_div" class="con"><div class="loading"><img src="http://simg2.sinajs.cn/video/images/common/cn_loading.gif"></div></ul>
+<ul style="display:none;" id="likeVid_div" class="con"></ul>
+<ul style="display:none;height:416px;overflow:hidden; clear: both;position:relative;" id="attentionVid_div" class="con"></ul>
+</div>
+<div class="album_reco">
+<div class="title">专辑推荐</div>
+<ul id="album_con"><script type="text/javascript">
+var Album = {
+	getAlbum: function() {
+		$.getScript("http://v.sinaimg.cn/video/js/js_seo/albumList.js?rad=" + new Date().getTime())
+	},
+	albumCallback: function(b) {
+		if (!b && typeof(b) != "object" && b.code != "T001") {
+			return
+		}
+		var c = b.data;
+		var e = [];
+		for (var a = 0; c[a]; a++) {
+			var d = '<li class="co_linedot1"><div class="albumVPic avp78"><a href="' + c[a].url + '?rec=4" class="album" target="_blank"><img src="' + c[a].thumb + '"  /></a><p class="vnumbg"></p><span class="nvnumtxt">共' + c[a].totle + '部视频</span></div><div class="con"><a href="' + c[a].url + '?rec=4" target="_blank">' + c[a].title + "</a><p>" + c[a].descr + '<em>[<a href="' + c[a].url + '?rec=4" target="_blank">观看</a>]</em></p> </div></li>';
+			e.push(d)
+		}
+		e.push('<li class="more"><a href="http://v.sina.com.cn/v/z/hotvideo/index.html" target="_blank">更多精彩专辑</a>>></li>');
+		$("#album_con").append(e.join(""));
+	},
+	getLen: function(f, b) {
+		var a = f.substr(0, b);
+		if (f.length > b) {
+			a += "..."
+		}
+		return a
+	}
+};
+</script> </ul>
+</div>
+</div>
+<div class="mpLeftBox">
+<div class="videoBox">
+<div id="videoMainContent">
+<div style="text-align:center;" class="ad"><iframe src="http://v.sina.com.cn/v/iframe/vblog/2008/1014/taglist.html" height="26px" width="560" allowtransparency="true" scrolling="no" frameborder="0"></iframe></div>
+<div class="vpModule">
+<div class="left">
+<a class="dingBtn"><cite id="videoUp"><img src="http://simg1.sinajs.cn/video/images/common/co_transparent.gif" alt="顶" height="14" class="icon icon1" width="10"><span id="videoUpText">顶</span><em id="videoUpNu"></em></cite></a>
+<div style="width:1px;height:1px;" id="diggSwfContainer"></div>
+</div>
+<div style="float:left;margin-left:10px;height:30px; line-height:30px;"><iframe src="http://kandian.com/whtml/ad/sinavideo/Ad_long.html" hspace="0" height="30px" width="240px" vspace="0" scrolling="NO" frameborder="0"></iframe></div>
+<div class="right">
+<ul class="dingIcon" id="share_collect">
+<li><a style="display:none" href="javascript:void(0)" id="collect" title="收藏"><img src="http://simg0.sinajs.cn/video/images/common/co_transparent.gif" height="11" class="icon icon2" width="12"><span>收藏</span></a></li>
+<li><a href="javascript:void(0)" id="share" title="分享"><img src="http://simg3.sinajs.cn/video/images/common/co_transparent.gif" alt="分享" height="12" class="icon icon3" width="14">分享</a></li>
+<li><a href="javascript:void(0)" id="addVOD" title="加入点播单"><img src="http://simg3.sinajs.cn/video/images/common/co_transparent.gif" height="12" class="icon icon4" width="12"><span>加入点播单</span></a></li>
+</ul>
+<ul class="dingTxt">
+<li id="videoPTBox">播放:<em id="videoPlayTimes">0</em></li>
+<li class="line" id="videoPTBoxL">|</li>
+<li><a style="cursor:pointer;" href="javascript:void(0)" id="PLConBox">评论:<em id="videoPL">0</em></a></li>
+</ul>
+</div>
+</div>
+<div class="co_line"></div>
+<div class="vpModule">
+<ul class="ztIcon" id="ztList">
+<li><span class="co_txtC">转帖到：</span></li>
+<li><a href="javascript:void(0)" id="miniBlog"><img height="16" src="http://simg2.sinajs.cn/video/images/common/co_transparent.gif" width="16" class="icon icon6" title="新浪微博"></a></li>
+<li><a href="javascript:void(0)" id="sinaBlog"><img width="16" src="http://simg2.sinajs.cn/video/images/common/co_transparent.gif" title="新浪博客" class="icon icon21" height="16"></a></li>
+<li><a href="javascript:void(0)" id="kaixin"><img height="16" src="http://simg2.sinajs.cn/video/images/common/co_transparent.gif" width="16" class="icon icon9" title="开心网"></a></li>
+<li><a href="javascript:void(0)" id="shareToQiyi" onclick="window.open('http://t.qiyi.com/share/share.php?appkey=eae27d77ca20db309e056e3d2dcd7d69&amp;url='+encodeURIComponent(video.url)+'&amp;title='+encodeURIComponent(video.title)+'&amp;pic='+encodeURIComponent(video.pic))" title="奇谈"><img src="http://www.qiyipic.com/common/fix/qitIcon_images/qitLogo16.png" alt="奇谈" class="addIcon"></a></li>
+<li><a href="javascript:void((function(s,d,e)%7Bif(/renren%5C.com/.test(d.location))return;var%20f='http://share.renren.com/share/buttonshare?link=',u=(video.video&amp;&amp;video.video.videoShareURL!==''?video.video.videoShareURL:(video.video&amp;&amp;video.video.rewrite_url!==''?video.video.rewrite_url:window.location.href))%7C%7Cd.location,l=d.title,p=%5Be(u),'&amp;title=',e(l)%5D.join('');function%20a()%7Bif(!window.open(%5Bf,p%5D.join(''),'xnshare',%5B'toolbar=0,status=0,resizable=1,width=626,height=436,left=',(s.width-626)/2,',top=',(s.height-436)/2%5D.join('')))u.href=%5Bf,p%5D.join('');%7D;if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();%7D)(screen,document,encodeURIComponent));" title="分享到人人"><img src="http://a.xnimg.cn/imgpro/share/share-tinybtn.png" title="人人网"></a></li>
+<li><a href="javascript:void(0)" id="douban"><img height="16" src="http://simg0.sinajs.cn/video/images/common/co_transparent.gif" width="16" class="icon icon22" title="豆瓣网"></a></li>
+<li><a href="javascript:void(0)" id="fetion"><img height="16" src="http://simg1.sinajs.cn/video/images/common/co_transparent.gif" width="16" class="icon icon23" title="飞信"></a></li>
+<li><a href="javascript:void(0)" id="shareToMSN" onclick="window.open('http://share.51.com/share/out_share_video.php?vaddr='+encodeURIComponent(video.url)+'&amp;title='+encodeURIComponent(video.title)+'&amp;from=sina&amp;charset=utf-8')" title="51"><img src="http://sjs1.sinajs.cn/video/video/images/icon_51.gif" alt="51" class="addIcon"></a></li>
+<li><a href="javascript:void(0)" id="shareToMSN" onclick="window.open('http://profile.live.com/badge?url='+encodeURIComponent(video.url)+'&amp;title='+encodeURIComponent(video.title)+'&amp;screenshot='+encodeURIComponent(video.pic)+'&amp;swfurl='+encodeURIComponent(video.swfOutsideUrl)+'&amp;height=356&amp;width=440&amp;ctype=flash')" title="MSN"><img src="http://js.live.net/static/img/SharingBadge16x16White.png" alt="MSN" class="addIcon"></a></li>
+</ul>
+<ul class="ztTxt" id="ztTxtVblog">
+<li class="line">|</li>
+<li><a href="http://blog.sina.com.cn/lm/help/2009/video.html" target="_blank">常见问题</a></li>
+<li class="line">|</li>
+<li><a href="javascript:void(0)" id="Whistleblowing">举报</a></li>
+</ul>
+<ul class="ztTxt">
+<li><a href="javascript:void(0);" id="PLToConBox">我要评论</a></li>
+</ul>
+</div>
+<div class="co_linedot"></div>
+<div class="vpModule">
+<div class="left">
+<span class="co_txtC">频道：</span>
+<span id="videoChannel"> <a href="http://sports.sina.com.cn/" class="a02">体育</a> /  <a href="http://sports.sina.com.cn/basketball/nba.shtml" class="path">篮球-NBA</a>  / <a href="http://sports.sina.com.cn/nba/video/index.shtml" class="path">NBA视频点播首页</a> </span>
+</div>
+<ul class="tagTxt" id="video_tag">
+<li><span class="co_txtC">标签：</span></li>
+<li><a href="http://search.video.sina.com.cn/search.php?k=NBA&amp;type=all" onclick="window.open(this.href);return false;" title="NBA">NBA</a></li>
+</ul>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="conTable" id="conTable">
+<tr>
+<td width="38"><span class="co_txtC">简介：</span></td>
+<td id="videoContent" class="videoContent"><p>　　北京时间5月18日，NBA季后赛第二轮继续进行，马刺主场迎战快船，比赛进行到第三节5分40秒时，一直带伤出战的巴特勒突破斯普利特后面对邓肯暴扣得手。<span style="color: #ff0000;"><a href="http://weibo.com/sinanbavideo" target="_blank"><span style="color: red;"> 声色NBA微博</span></a></span></p>
+<p>　　以上为相关视频。(责编：巴丁格)
+</p>
+</td>
+</tr>
+<tr>
+<td colspan="2" id="videoAbout"></td>
+</tr>
+</table>
+<div style="display:none" class="vpModule" id="show_play_time">
+<div class="vNameTime"></div>
+<div>首播时间：<span id="play_time"></span></div>
+</div>
+<div class="vpModule">
+<div class="right" id="videoConHandle">
+						【<a href="javascript:void(0)" id="big">大</a>
+<a href="javascript:void(0)" id="normal">中</a>
+<a href="javascript:void(0)" id="small">小</a>】
+						【<a href="javascript:void(0)" id="videoPrint">打印</a>】
+						【<a href="javascript:void(0)" id="videoClose">关闭</a>】
+					</div>
+</div>
+</div>
+</div>
+
+<!--评论部分 begin--><form id="sendPl"></form>
+<div id="comment_wrapper" class="commentBox"></div>
+
+<!--淘宝广告 begin--><script src="http://d2.sina.com.cn/d1images/button/rotator.js" type="text/javascript" language="javascript"></script>
+<script src="http://pfp.sina.com.cn/2012taobaonew/shipin/taobao_video.js" type="text/javascript"></script>
+
+<!--淘宝广告 end--></div>
+<div class="clear"></div>
+</div>
+<div class="foot">
+<p>欢迎联系我们，提出您的宝贵意见　E-mail：bn@staff.sina.com.cn</p>
+<div class="boxborder"></div>
+<p class="link">
+<a href="http://corp.sina.com.cn/chn/" target="_blank">新浪简介</a>
+<span>|</span>
+<a href="http://corp.sina.com.cn/eng/" target="_blank">About Sina</a>
+<span>|</span>
+<a href="http://emarketing.sina.com.cn/" target="_blank">广告服务</a>
+<span>|</span>
+<a href="http://www.sina.com.cn/contactus.html" target="_blank">联系我们</a>
+<span>|</span>
+<a href="http://corp.sina.com.cn/chn/sina_job.html" target="_blank">招聘信息</a>
+<span>|</span>
+<a href="http://www.sina.com.cn/intro/lawfirm.shtml" target="_blank">网站律师</a>
+<span>|</span>
+<a href="http://english.sina.com/" target="_blank">SINA English</a>
+<span>|</span>
+<a href="http://members.sina.com.cn/apply/" target="_blank">会员注册</a>
+<span>|</span>
+<a href="http://help.sina.com.cn/" target="_blank">产品答疑</a>
+</p>
+<p>Copyright © 1996-2012 SINA Corporation, All Rights Reserved</p>
+<p>新浪公司 版权所有</p>
+</div>
+<div style="width:398px; display:none;" class="vlayer" id="collectionDivBox">
+<div class="top">
+<em><a href="javascript:void(0)" onclick="closeAllDiv('collectionDivBox')"><img src="http://simg3.sinajs.cn/video/images/common/close.gif"></a></em>添加到专辑
+	</div>
+<div class="content special">
+<div class="co_navi">
+<ul class="co_naviu">
+<li id="cate_list_create_btn" class="alt"><div><a href="javascript:void(0);">新建专辑</a></div></li>
+<li id="cate_list_btn" class="alt"><div><em>已有专辑</em></div></li>
+</ul>
+</div>
+<div class="clear"></div>
+<div style="display:none;" id="cate_list" class="specialInfo"></div>
+<div style="display:none;" id="cate_list_create" class="specialInfo">
+<div class="tit">
+<span><em class="mimi">*</em>为必填</span>请填写专辑信息
+			</div>
+<table>
+<tr>
+<th><em class="mimi">*</em>标题：</th><td><input type="text" id="new_album_title" class="co_input txtLan"></td>
+</tr>
+<tr><th><em class="mimi">*</em>描述：</th><td><textarea id="new_album_desc" class="co_input txtA"></textarea></td>
+</tr>
+<tr>
+<th><em class="mimi">*</em>频道：</th><td><select id="new_album_channel" class="sel"></select></td>
+</tr>
+</table>
+</div>
+<div class="co_linedot"></div>
+<div class="btn">
+<a href="javascript:void(0);" id="cate_save_btn" class="co_aBtn co_aBtnB"><cite>  添加  </cite></a>
+<a href="javascript:collection.hide();" class="co_aBtn co_aBtnB"><cite>  取消  </cite></a>
+</div>
+</div>
+</div>
+<div style="width:398px; display:none" class="vlayer" id="userLogin">
+<div class="top"><em><a href="javascript:void(0)" id="closeLogin"><img src="http://simg2.sinajs.cn/video/images/common/close.gif"></a></em>通行证登录</div>
+<div class="content loginLayer2">
+<table>
+<tr>
+<th>用户名：</th>
+<td><input type="text" class="loginInput" id="loginUserName">  <a href="javascript:void(0)" onclick="registration()">立即注册</a></td>
+</tr>
+<tr>
+<th>密    码：</th>
+<td><input type="password" class="loginInput" id="loginPwd">  <a href="http://login.sina.com.cn/getpass.html" target="_blank">找回密码</a></td>
+</tr>
+<tr>
+<th></th><td class="tdCenter"><a href="javascript:void(0)" class="layerloginbtn2" id="userLoginBtn"></a></td>
+</tr>
+</table>
+</div>
+</div>
+<script src="http://sjs0.sinajs.cn/video/video/js/video/weiboComment-merge.js" type="text/javascript" language="javascript"></script>
+<script src="http://i.sso.sina.com.cn/js/ssologin.js" charset="utf-8" language="javascript"></script>
+<script src="http://sjs3.sinajs.cn/video/js/plWeibo.js?version=1.0.2.0" type="text/javascript"></script>
+<script type="text/javascript">
+
+var __width=600,__height = 476;
+	// 初始化播放器大小 
+	if(video.isWide==1){
+		if(!moviePlayer.isHTML5&&video.resolution==1){
+		__width=871;
+		__height = 516; 
+		}else{
+			__width=653;
+		  __height = 516; 
+			}
+		moviePlayer._isPlayOpen = true;
+		$('#openUpBtn').parent().parent().addClass('fullPlayerBox')
+		$('#openUpBtn').attr('href',"javascript:void(0)");
+		$('#openUpTitle').css("display","none");
+		}else{
+			if(!moviePlayer.isHTML5&&video.resolution==1){
+				__height = 364; 
+				}
+			if(!moviePlayer.isHTML5){
+				$('#openUpTitle').css("display","");
+			}
+		}
+var init = function(){
+	if(video.channel=='vblog'){
+		$setHost("http://comment.v.blog.sina.com.cn");
+	}else{
+		$("#ztTxtVblog").hide();
+	}
+	moviePlayer.firstPlay = null;
+	
+	moviePlayer.firstPlay={vid:video.vid,
+						   uid:(video.uid||0),
+						   pid:video.pid,
+						   ad_state:(!video.ad_state||video.ad_state==''?1:video.ad_state),
+						   op:{
+							title:video.title,
+							url:video.url,
+							swfurl:video.swfOutsideUrl
+							},
+						   style:false};
+	moviePlayer.setAutoNext(video.vid,0);
+	moviePlayer.setLogo(video.vid);
+	moviePlayer.firstPlay.style=false;
+	moviePlayer.init({
+					title:video.title,
+					url:video.url,
+					epgId:video.epgid,
+					vId:video.vid,
+					cId:video.cid,
+					swfurl:video.swfOutsideUrl,
+					playerHeight : __height,
+					playerWidth:__width
+					 });
+	
+	
+	
+	interfix.init(video.vid,video.uid,video.sid);
+	Album.getAlbum();
+	Hotvideo.url = {hotvid:'http://v.sinaimg.cn/video/live/hotvideoList.js?rad='+new Date().getTime()+'&version=1.0.0.8',
+	likeVid:'/interfaces/video/getnewstopten/callback=?',
+	attentionVid:'/interfaces/video/getnowviewvideo/callback=?'};
+	Hotvideo.hotvide_init();
+	ding.init(video.vid,video.uid,video.userId,0);
+	setFontPrintCallback();
+	share_init();
+	other_init();
+	jubao_init();
+	//getVideoPlayTimes(video.vid,video.uid,video.sid);
+	login.userlogin.init();
+	cmnt_checksso();
+	pl.init(video.channel,video.newsid,video.userId);
+}
+$(document).ready(function(){
+	init();
+})
+</script>
+<script src="http://rm.sina.com.cn/forflash/videoNblk.js" type="text/javascript"></script>
+
+
+<!--广告结束--><!-- SUDA_CODE_START --><script src="http://www.sinaimg.cn/unipro/pub/suda_s_v851c.js" type="text/javascript"></script>
+<script type="text/javascript"> 
+//<!--
+var _S_Retry=0;
+function _S_SudaStart(){if(GB_SUDA==null){if(_S_Retry<=3){setTimeout(function(){GB_SUDA._S_pSt(_S_PID_)},2000);_S_Retry++;}}else{GB_SUDA._S_pSt(_S_PID_);}}
+_S_SudaStart();
+//-->
+</script>
+<noscript>
+<div style="position:absolute;top:0;left:0;width:0;height:0;visibility:hidden"><img width="0" alt="" src="http://beacon.sina.com.cn/a.gif?noScript" border="0" height="0"></div>
+</noscript>
+
+
+<!-- SUDA_CODE_END --><!-- WRating code start --><script src="http://sina.wrating.com/v2_pre.js" type="text/javascript"></script>
+<script src="http://sina.wrating.com/v2.js" type="text/javascript"></script>
+<script type="text/javascript">
+var vjAcc="860010-0325010000";
+var vjVideoAcc="860010-0390010000";
+var wrUrl = "//sina.wrating.com/";
+var wrVideoUrl = "//sina.wrating.com/";
+var wrDomain = "sina.com.cn";
+vjTrack();
+</script>
+<noscript><img src="http://sina.wrating.com/a.gif?c=860010-0325010000" height="1" width="1"></noscript>
+
+
+
+<!-- WRating code end --><!-- START Nielsen//NetRatings SiteCensus V5.2 --><!-- COPYRIGHT 2006 Nielsen//NetRatings --><script type="text/javascript">
+var _rsCI="cn-sina2006";
+var _rsCG="0";
+var _rsDN="//secure-cn.imrworldwide.com/";
+var _rsCC=0;
+var _rsSE=1;
+var _rsSM=0.01;
+var _rsSS=1500;
+</script>
+<script src="//secure-cn.imrworldwide.com/v52.js" type="text/javascript"></script>
+<noscript><img src="//secure-cn.imrworldwide.com/cgi-bin/m?ci=cn-sina2006&amp;cg=0" alt=""></noscript>
+
+<!-- END Nielsen//NetRatings SiteCensus V5.2 --><script src="http://www.sinaimg.cn/unipro/pub/suda_m_v629.js" type="text/javascript"></script>
+<script type="text/javascript">suds_init(1420,1.00,980,2);</script>
+
+<!-- Begin comScore Tag --><script>
+  var _comscore = _comscore || [];
+  _comscore.push({ c1: "2", c2: "6035678",c5:video.pid });
+  (function() {
+    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+    s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+    el.parentNode.insertBefore(s, el);
+  })();
+	var src = 'http://b.scorecardresearch.com/p?c1=2&c2=6035678&c5='+video.pid+'&cv=2.0&cj=1';
+	document.write('<img src="'+src+'" />')
+</script>
+
+<!-- End comScore Tag --></body>
+</html> </html>

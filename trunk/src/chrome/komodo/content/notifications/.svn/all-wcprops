@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/!svn/ver/9362/openkomodo/trunk/src/chrome/komodo/content/notifications
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/!svn/ver/7019/openkomodo/trunk/src/chrome/komodo/content/notifications/README
+END
+Conscript
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/8670/openkomodo/trunk/src/chrome/komodo/content/notifications/Conscript
+END
+notifications.js
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/!svn/ver/9300/openkomodo/trunk/src/chrome/komodo/content/notifications/notifications.js
+END
+notificationsWidget.xul
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/!svn/ver/9142/openkomodo/trunk/src/chrome/komodo/content/notifications/notificationsWidget.xul
+END
+notification.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/!svn/ver/9148/openkomodo/trunk/src/chrome/komodo/content/notifications/notification.xml
+END
+load-service.js
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/!svn/ver/8670/openkomodo/trunk/src/chrome/komodo/content/notifications/load-service.js
+END
+notificationsWidget.js
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/!svn/ver/9362/openkomodo/trunk/src/chrome/komodo/content/notifications/notificationsWidget.js
+END
+overlay.xul
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/!svn/ver/8670/openkomodo/trunk/src/chrome/komodo/content/notifications/overlay.xul
+END

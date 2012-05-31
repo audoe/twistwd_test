@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/!svn/ver/9976/openkomodo/trunk/contrib/patches/scintilla/lexers
+END
+LexXSLT.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/!svn/ver/8716/openkomodo/trunk/contrib/patches/scintilla/lexers/LexXSLT.cxx
+END
+LexCoffeeScript.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/!svn/ver/9976/openkomodo/trunk/contrib/patches/scintilla/lexers/LexCoffeeScript.cxx
+END
+LexRuby.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/!svn/ver/9814/openkomodo/trunk/contrib/patches/scintilla/lexers/LexRuby.cxx
+END
+LexPerl.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/!svn/ver/9644/openkomodo/trunk/contrib/patches/scintilla/lexers/LexPerl.cxx
+END
+LexTcl.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/8720/openkomodo/trunk/contrib/patches/scintilla/lexers/LexTcl.cxx
+END
+LexUDL.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/8807/openkomodo/trunk/contrib/patches/scintilla/lexers/LexUDL.cxx
+END
+LexCSS.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/9869/openkomodo/trunk/contrib/patches/scintilla/lexers/LexCSS.cxx
+END

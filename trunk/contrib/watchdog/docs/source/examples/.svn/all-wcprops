@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/8878/openkomodo/trunk/contrib/watchdog/docs/source/examples
+END
+simple.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/!svn/ver/8878/openkomodo/trunk/contrib/watchdog/docs/source/examples/simple.py
+END
+tricks.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/8878/openkomodo/trunk/contrib/watchdog/docs/source/examples/tricks.yaml
+END
+logger.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/!svn/ver/8878/openkomodo/trunk/contrib/watchdog/docs/source/examples/logger.py
+END
+patterns.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/8878/openkomodo/trunk/contrib/watchdog/docs/source/examples/patterns.py
+END
+tricks.json
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/8878/openkomodo/trunk/contrib/watchdog/docs/source/examples/tricks.json
+END

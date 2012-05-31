@@ -1,0 +1,988 @@
+<html>DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+
+<!--[31,763,1] published at 2012-05-18 10:21:54 from #153 by system--><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=%SOUP-ENCODING%" http-equiv="Content-type">
+<title>金融e路通_新浪财经_新浪网</title>
+<meta content="," name="keywords">
+<meta content="金融e路通" name="description">
+<style type="text/css">
+/* ================== css reset ================== */
+/* 初始化CSS */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend,img{margin:0;padding:0;}
+h1, h2, h3, h4, h5, strong, em {font-weight:normal;}
+fieldset,img{border:none;}
+address,caption,cite,code,dfn,th,var{font-style:normal;font-weight:normal;}
+ul,ol{list-style:none;}
+select,input{vertical-align:middle;}
+select,input,textarea{font-size:12px;margin:0;}
+table{border-collapse:collapse;}
+body{background:#fff;color:#484848;padding:5px 0;font:12px/20px "宋体";}
+.clearfix:after{content:".";display:block;height:0;visibility:hidden;clear:both;}
+.clearfix{zoom:1;}
+.clearit{clear:both;height:0;font-size:0;overflow:hidden;}
+a{color:#484848;text-decoration:none;}
+a:visited{color:#800080;}
+a:hover, a:active, a:focus{color:#f00;text-decoration:underline;}
+a.linkRed:link,a.linkRed:visited{color:#f00!important;}/* 红色 */
+a.linkRed:hover{color:#c00!important;}
+a.linkRed01:link,a.linkRed01:visited{color:red!important}
+a.linkRed01:hover{color:red!important}
+.wrap{margin:0 auto;width:950px;}
+
+/* 页面导航 开始 */
+.secondaryHeader {height:33px;overflow:hidden;background:url(http://i2.sinaimg.cn/dy/images/header/2008/standardl2nav_bg.gif) repeat-x #fff;color:#000;font-size:12px; font-weight:100; }
+.secondaryHeader a, .secondaryHeader a:visited { color:#000; text-decoration:none; }
+.secondaryHeader a:hover, .secondaryHeader a:active { color:#c00; text-decoration:underline; }
+.sHBorder {border:1px #e3e3e3 solid; padding:0 10px 0 12px; overflow:hidden; zoom:1; }
+.sHLogo {float:left; height:31px; line-height:31px; overflow:hidden; }
+.sHLogo span, .sHLogo span a { display:block; *float:left;display:table-cell; vertical-align:middle; *display:block;*font-size:27px;*font-family:Arial;height:31px; }
+.sHLogo span, .sHLogo span a img { vertical-align:middle; }
+.sHLinks { float:right; line-height:31px; }
+
+/* 左图-右文 */
+.zcbox {line-height:20px;float:left;width:305px;  }
+.zcbox .zch {font-size:14px;color:#fb7000;font-weight:normal; }
+.zcbox .zch a {color:#fb7000;}
+.zcbox .zcimg {float:left;margin-right:10px;}
+.zcbox .zcimg img {display:block;}
+.zcbox .zcwords {width:190px;float:left;color:#666; }
+.zcbox .zcwords a {color:#fb7000;}
+.zcbox a:visited {color:#800080  !important;}
+.zcbox a:hover {color:#f00  !important;}
+
+/* 上图-下文 */
+.zcbox2 {float:left;width:33.3%;text-align:center; }
+.zcbox2 .zcimg {display:block;margin:0 auto;}
+.zcbox2 .zcwords {line-height:25px;color:#666; }
+.zcbox2 .zcwords a {color:#666;}
+.zcbox2 a:visited {color:#800080  !important;}
+.zcbox2 a:hover {color:#f00  !important;}
+
+/* 标题 */
+.zctit1 {line-height:35px;background:url(http://i0.sinaimg.cn/cj/jrelt2011/images/elt_wzc01new.png) no-repeat;}
+.zctit1 h2 {float:left;line-height:300px;height:35px;overflow:hidden;   }
+.zctit1 h2 a {display:block;width:150px; }
+.zctit1 ul {float:left;display:inline;margin-left:20px;}
+.zctit1 li {float:left;background:url(http://i3.sinaimg.cn/cj/jrelt2011/images/elt_wzc02.png) no-repeat left center;margin-right:20px; }
+.zctit1 li a {color:#770101;display:block;background:url(http://i2.sinaimg.cn/cj/jrelt2011/images/elt_wzc10.png) no-repeat right center;padding:0 5px;  }
+.zctit1 li a:visited {color:#770101;}
+.zctit1 li a:hover {color:#770101;}
+
+.zctit2 {line-height:30px;background:url(http://i1.sinaimg.cn/cj/jrelt2011/images/elt_wzc08.png) no-repeat;}
+.zctit2 h2 { font-family:"微软雅黑","宋体";float:left;padding-left:15px;width:50%; color:#993520;font-size:14px;background:url(http://i1.sinaimg.cn/cj/jrelt2011/images/ws_wzc12.png) no-repeat;}
+.zctit2 h2 a {color:#993520;}
+.zctit2 h2 a:visited {color:#993520;}
+.zctit2 h2 a:hover {color:#f00;}
+
+/* 列表 */
+.zclist {font-size:12px;}
+.zclist a {}
+.zclist a:visited {}
+.zclist a:hover {}
+.zclist li {padding-left:10px;background:url(http://i0.sinaimg.cn/ent/deco/2010/0401/ent_wzc29.png) no-repeat left 7px;line-height:20px;overflow:hidden;}
+.zclist .extra {float:right;}
+.zclist .extra a {color:#999;}
+.zclist .extra a:visited {color:#800080;}
+.zclist .extra a:hover {color:#f00;}
+.zclist_noBg li {background:none;padding:0; }
+.lh24 li {line-height:24px;background-position:0 10px;}
+.lh26 li {line-height:26px;background-position:0 10px;}
+.blueDot li {background-image:url(http://i2.sinaimg.cn/ty/lmdaohang20100612/images/f_m_04.gif);}
+
+.list_grey a {color:#333;}
+.list_grey a:visited {color:#800080;}
+.list_grey a:hover {color:#f00;}
+/* other */
+.aPd0 img {border:1px solid #b5b5b5;}
+.aPd0:hover img {border-color:#f00;}
+.aPd2 img {border:1px solid #b5b5b5;padding:2px;}
+.aPd2:hover img {border-color:#f00;}
+
+.aBd2 img {border:2px solid #b5b5b5;}
+.aBd2:hover img {border-color:#f00;}
+
+.zcgrey {color:#828282;}
+a.zcgrey:hover {color:#f00;}
+
+.zcspace {height:10px;font-size:0px;background:#fff;overflow:hidden;clear:both;}
+.zchide {display:none; }
+.zcplay {position:absolute;left:13px;top:32px;cursor:pointer;}
+.fs14  {font-size:14px;}
+.fs12 {font-size:12px;}
+.noBd {border:0 !important;}
+.noBg {background:none !important; }
+
+/* ============== 横切定义 ============== */
+.zcpart1 {margin-top:10px;}
+.zcpart1 .zcleft {width:618px;overflow:hidden;float:left;margin-right:10px;}
+.zcpart1 .zcright {width:320px;overflow:hidden;float:right;}
+
+.zcblk01 {}
+.zcblk01 .zccont {border:2px solid #ff7e00;padding:0 0 10px 10px;border-top:0;background:url(http://i2.sinaimg.cn/cj/jrelt2011/images/elt_wzc05.png) no-repeat left 45px;width:936px;overflow:hidden;   }
+.zcblk01 .zcsearch {line-height:34px;border-bottom:1px solid #ccc; height:34px;overflow:hidden;  }
+.zcblk01 form {float:left;padding-top:3px;line-height:20px;display:inline;margin-right:40px; }
+.zcblk01 .zctext {width:235px;line-height:18px;height:18px; border:1px solid #ccc;color:#b2b2b2;  }
+.zcblk01 select {width:100px;color:#b2b2b2;  }
+.zcblk01 .zcas {float:left;margin-left:20px;color:#fb7000; }
+.zcblk01 .zcas a {color:#fb7000;}
+.zcblk01 .zcas a:visited {color:#fb7000;}
+.zcblk01 .zcas a:hover {color:#f00;}
+
+.zcblks1 {width:210px;overflow:hidden; float:left;margin-right:30px;margin-top:45px;  }
+.zcblks1 dt {float:left;margin-right:10px;color:#770101; }
+.zcblks1 dd {float:left; width:145px; }
+
+.zcblk02 {width:616px;height:310px;overflow:hidden;background:#f1ede4;border:1px solid #e2cfbc;   }
+
+.zcblk03 {padding-right:10px;}
+.zcblk03 h1 {line-height:30px;font-size:20px;font-family:"黑体"; text-align:center; }
+.zcblk  a {color:#fb7000;}
+.zcblk  a:visited {color:#fb7000;}
+.zcblk  a:hover {color:#f00;}
+.zcblk p {text-indent:24px;}
+
+.zcblk03 .zclist {padding-top:10px;padding-left:5px;margin-top:10px;background:url(http://i0.sinaimg.cn/cj/jrelt2011/images/elt_wzc07.png) repeat-x left top; }
+
+.zcblk04 {margin-top:10px;}
+.zcblk04 .zccont {border:1px solid #ffe9c1;padding:0 0 0 10px;background:url(http://i2.sinaimg.cn/cj/jrelt2011/images/elt_wzc09.png) no-repeat 5px 5px; }
+.zcblk04 .list1 {float:left;padding:8px 0 0 40px;width:275px;  }
+.list1 li {line-height:25px; }
+.list1 .top3  {padding-left:10px;line-height:40px; }
+
+.zcblks2 {padding:12px 0;background:url(http://i0.sinaimg.cn/cj/jrelt2011/images/elt_wzc07.png) repeat-x left bottom;width:610px;overflow:hidden;float:left;   }
+
+.zcblk05 .zcblks2 {width:305px;background:none;padding:0;  } 
+.zcblk05 .zcbox {float:none;padding:12px 0;background:url(http://i0.sinaimg.cn/cj/jrelt2011/images/elt_wzc07.png) repeat-x left bottom; }
+
+.zcblk05 .zclist {float:left;padding:8px 0 0 30px; }
+
+.zcblk06 .blkRight {margin-top:10px;float:left;padding:3px;background:#fffcd0;width:298px;margin-left:7px;display:inline;   }
+.zcblk06 h3 {line-height:25px;border-bottom:1px solid #d0cdad;color:#40403d;font-size:14px;font-family:"微软雅黑","宋体";text-indent:10px; }
+.zcblk06 .zcas {margin-right:-11px;}
+.zcblk06 .zcas a {float:left;width:88px;height:28px;border:1px solid #d8d8d8;background:url(http://i3.sinaimg.cn/cj/jrelt2011/images/elt_wzc11.png) repeat-x;font-size:14px;text-align:center;line-height:28px;margin:9px 11px 0 0; overflow:hidden;     }
+.zcblk06 .blkRight ul {margin-top:10px;padding:10px 0 8px 10px;background:url(http://i0.sinaimg.cn/cj/jrelt2011/images/elt_wzc07.png) repeat-x left top; }
+.zcblk06 .blkRight li {width:92px;float:left;}
+.zcblk06 .zctime {text-align:center;line-height:30px;height:30px;font-size:14px;background:#ffefb6;color:#fb780b;   }
+
+/* footer */
+#footer { width:950px; line-height:22px; text-align:center; color:#000; font-size:12px; padding-top:20px; margin:0 auto; }
+#footer a:link, #footer a:visited { text-decoration:underline; }
+#footer a:hover, #footer a:active {  text-decoration:underline; }
+</style>
+<script type="text/javascript">
+
+					var FocusPic=function(BigPicID,SmallPicsID,TitleID,MemoID,width,height){this.Data=[];this.ImgLoad=[];this.TimeOut=5000;var isIE=navigator.appVersion.indexOf("MSIE")!=-1?true:false;this.width=width;this.height=height;this.adNum=0;var TimeOutObj;if(!FocusPic.childs){FocusPic.childs=[]};this.showTime=null;this.showSum=10;this.ID=FocusPic.childs.push(this)-1;this.Add=function(BigPic,SmallPic,Title,Url,Memo){var ls;this.Data.push([BigPic,SmallPic,Title,Url,Memo]);ls=this.ImgLoad.length;this.ImgLoad.push(new Image);this.ImgLoad[ls].src=BigPic};this.TimeOutBegin=function(){clearInterval(TimeOutObj);TimeOutObj=setInterval("FocusPic.childs["+this.ID+"].next()",this.TimeOut)};this.TimeOutEnd=function(){clearInterval(TimeOutObj)};this.select=function(num){if(num>this.Data.length-1){return};if(num==this.adNum){return};this.TimeOutBegin();if(BigPicID){if(this.$(BigPicID)){var aObj=this.$(BigPicID).getElementsByTagName("a")[0];aObj.href=this.Data[num][2];if(this.aImgY){this.aImgY.style.display='none';this.aImg.style.position="relative";this.aImg.style.left=0;this.aImg.style.top=0;this.aImg.style.zIndex=0};this.aImgY=this.$('F'+this.ID+'BF'+this.adNum);this.aImg=this.$('F'+this.ID+'BF'+num);clearTimeout(this.showTime);this.showSum=10;this.showTime=setTimeout("FocusPic.childs["+this.ID+"].show()",50)}};if(TitleID){if(this.$(TitleID)){this.$(TitleID).innerHTML="<a href=\""+this.Data[num][2]+"\" target=\"_blank\">"+this.Data[num][3]+"</a>"}};if(MemoID){if(this.$(MemoID)){this.$(MemoID).innerHTML=this.Data[num][4]}};if(SmallPicsID){if(this.$(SmallPicsID)){var sImg=this.$(SmallPicsID).getElementsByTagName("span"),i;for(i=0;i<simg.length><=0){this.aImgY.style.display='none';this.aImg.style.position="relative";this.aImg.style.left=0;this.aImg.style.top=0;this.aImg.style.zIndex=0;this.aImgY=null}else{this.aImg.style.zIndex=2;this.showTime=setTimeout("FocusPic.childs["+this.ID+"].show()",50)}};this.next=function(){var temp=this.adNum;temp++;if(temp>=this.Data.length){temp=0};this.select(temp)};this.MInStopEvent=function(ObjID){if(ObjID){if(this.$(ObjID)){if(this.$(ObjID).attachEvent){this.$(ObjID).attachEvent("onmouseover",Function("FocusPic.childs["+this.ID+"].TimeOutEnd()"));this.$(ObjID).attachEvent("onmouseout",Function("FocusPic.childs["+this.ID+"].TimeOutBegin()"))}else{this.$(ObjID).addEventListener("mouseover",Function("FocusPic.childs["+this.ID+"].TimeOutEnd()"),false);this.$(ObjID).addEventListener("mouseout",Function("FocusPic.childs["+this.ID+"].TimeOutBegin()"),false)}}}};this.begin=function(){this.MInStopEvent(TitleID);this.MInStopEvent(SmallPicsID);this.MInStopEvent(BigPicID);this.adNum=0;var i,temp="";if(BigPicID){if(this.$(BigPicID)){var aObj=this.$(BigPicID).getElementsByTagName("a")[0];aObj.style.zoom=1;this.$(BigPicID).style.position="relative";for(i=0;i<this.data.length><img src="'+this.Data[i][0]+'" id="F'+this.ID+'BF'+i+'" style="display:'+(i==this.adNum?'block':'none')+'" galleryimg="no">'};aObj.innerHTML=temp}};if(SmallPicsID){if(this.$(SmallPicsID)){temp="";for(i=0;i<this.data.length><span><a href=""><img src=""></a></span>"};this.$(SmallPicsID).innerHTML=temp}};if(TitleID){if(this.$(TitleID)){this.$(TitleID).innerHTML="<a href="">"+this.Data[this.adNum][3]+"</a>"}};if(MemoID){if(this.$(MemoID)){this.$(MemoID).innerHTML=this.Data[this.adNum][4]}};this.TimeOutBegin()};this.$=function(objName){if(document.getElementById){return eval('document.getElementById("'+objName+'")')}else{return eval('document.all.'+objName)}}};
+
+</script>
+</head>
+<body>
+<!-- SUDA_CODE_START --><div style="position:absolute;top:0;left:0;width:0;height:0;z-index:1"><div style="position:absolute;top:0;left:0;width:1;height:1;"><iframe src="" height="1" width="1" scrolling="NO" id="SUDA_FC" frameborder="0"></iframe></div><div style="position:absolute;top:0;left:0;width:0;height:0;visibility:hidden" id="SUDA_CS_DIV"></div></div>
+<script type="text/javascript"> 
+//<!--
+var _SGUP_ = "SGUP";var _SGUP_REQ_ = "http://sgup.beacon.sina.com.cn/cgi-bin/gsgup";var sgup = "";
+var SSL={Config:{},Space:function(str){var a=str,o=null;a=a.split('.');o=SSL;for(i=0,len=a.length;i<len;i++){o[a[i]]=o[a[i]]||{};o=o[a[i]]}return o}};
+SSL.Space('Global');SSL.Space('Core.Dom');SSL.Space('Core.Event');SSL.Space('App');SSL.Global={win:window||{},doc:document,nav:navigator,loc:location};SSL.Core.Dom={get:function(id){return document.getElementById(id)}};SSL.Core.Event={on:function(){}};
+SSL.App={
+	_S_gConType:function(){var ct="";try{SSL.Global.doc.body.addBehavior("#default#clientCaps");ct=SSL.Global.doc.body.connectionType}catch(e){ct="unkown"}return ct},
+	_S_gKeyV:function(src,k,e,sp){if(src==""){return""}if(sp==""){sp="="}k=k+sp;var ps=src.indexOf(k);if(ps<0){return""}ps=ps+k.length;var pe=src.indexOf(e,ps);if(pe<ps){pe=src.length}return src.substring(ps,pe)},
+	_S_gUCk:function(ckName){if((undefined==ckName)||(""==ckName))return"";return SSL.App._S_gKeyV(SSL.Global.doc.cookie,ckName,";","")},
+	_S_sUCk:function(ckName,ckValue,ckDays,ckDomain){if(ckValue!=null){if((undefined==ckDomain)||(null==ckDomain)){ckDomain="sina.com.cn";}if((undefined==ckDays)||(null==ckDays)||(''==ckDays)){SSL.Global.doc.cookie=ckName+"="+ckValue+";domain="+ckDomain+";path=/";}else{var now=new Date();var time=now.getTime();time=time+86400000*ckDays;now.setTime(time);time=now.getTime();SSL.Global.doc.cookie=ckName+"="+ckValue+";domain="+ckDomain+";expires="+now.toUTCString()+";path=/";}}},
+	_S_gJVer:function(_S_NAV_,_S_NAN_){var p,appsign,appver,jsver=1.0,isN6=0;if('MSIE'==_S_NAN_){appsign='MSIE';p=_S_NAV_.indexOf(appsign);if(p>=0){appver=parseInt(_S_NAV_.substring(p+5));if(3<=appver){jsver=1.1;if(4<=appver){jsver=1.3}}}}else if(("Netscape"==_S_NAN_)||("Opera"==_S_NAN_)||("Mozilla"==_S_NAN_)){jsver=1.3;appsign='Netscape6';p=_S_NAV_.indexOf(appsign);if(p>=0){jsver=1.5}}return jsver},
+	_S_gFVer:function(nav){var ua=SSL.Global.nav.userAgent.toLowerCase();var flash_version=0;if(SSL.Global.nav.plugins&&SSL.Global.nav.plugins.length){var p=SSL.Global.nav.plugins['Shockwave Flash'];if(typeof p=='object'){for(var i=10;i>=3;i--){if(p.description&&p.description.indexOf(' '+i+'.')!=-1){flash_version=i;break}}}}else if(ua.indexOf("msie")!=-1&&ua.indexOf("win")!=-1&&parseInt(SSL.Global.nav.appVersion)>=4&&ua.indexOf("16bit")==-1){for(var i=10;i>=2;i--){try{var object=eval("new ActiveXObject('ShockwaveFlash.ShockwaveFlash."+i+"');");if(object){flash_version=i;break}}catch(e){}}}else if(ua.indexOf("webtv/2.5")!=-1){flash_version=3}else if(ua.indexOf("webtv")!=-1){flash_version=2}return flash_version},
+	_S_gMeta:function(MName,pidx){var pMeta=SSL.Global.doc.getElementsByName(MName);var idx=0;if(pidx>0){idx=pidx}return(pMeta.length>idx)?pMeta[idx].content:""},
+	_S_gHost:function(sUrl){var r=new RegExp('^http(?:s)?\://([^/]+)','im');if(sUrl.match(r)){return sUrl.match(r)[1].toString()}else{return""}},
+	_S_gDomain:function(sHost){var p=sHost.indexOf('.sina.');if(p>0){return sHost.substr(0,p)}else{return sHost}},
+	_S_gTJMTMeta:function(){return SSL.App._S_gMeta("mediaid")},
+	_S_gTJZTMeta:function(){var zt=SSL.App._S_gMeta('subjectid');zt.replace(",",".");zt.replace(";",",");return zt},
+	_S_isFreshMeta:function(){var ph=SSL.Global.doc.documentElement.innerHTML.substring(0,1024);var reg=new RegExp("<meta\\s*http-equiv\\s*=((\\s*refresh\\s*)|(\'refresh\')|(\"refresh\"))\s*content\s*=","ig");return reg.test(ph)},
+	_S_isIFrameSelf:function(minH,minW){if(SSL.Global.win.top==SSL.Global.win){return false}else{try{if(SSL.Global.doc.body.clientHeight==0){return false}if((SSL.Global.doc.body.clientHeight>=minH)&&(SSL.Global.doc.body.clientWidth>=minW)){return false}else{return true}}catch(e){return true}}},
+	_S_isHome:function(curl){var isH="";try{SSL.Global.doc.body.addBehavior("#default#homePage");isH=SSL.Global.doc.body.isHomePage(curl)?"Y":"N"}catch(e){isH="unkown"}return isH;}
+}
+function SUDA(config,ext1,ext2){
+	var SG=SSL.Global,SSD=SSL.Core.Dom,SSE=SSL.Core.Event,SA=SSL.App;var _S_JV_="webbug_meta_ref_mod_noiframe_async_fc_:9.10a",_S_DPID_="-9999-0-0-1";var _S_NAN_=SG.nav.appName.indexOf('Microsoft Internet Explorer')>-1?'MSIE':SG.nav.appName;var _S_NAV_=SG.nav.appVersion;var _S_PURL_=SG.loc.href.toLowerCase();var _S_PREF_=SG.doc.referrer.toLowerCase();var _SP_MPID_="";var _S_PID_="",_S_UNA_="SUP",_S_MI_="",_S_SID_="Apache",_S_GID_="SINAGLOBAL",_S_LV_="ULV",_S_UO_="UOR",_S_UPA_="_s_upa",_S_IFW=320,_S_IFH=240,_S_GIDT=0,_S_EXT1="",_S_EXT2="",_S_SMC=0,_S_SMM=10000,_S_ET=0,_S_ACC_="_s_acc";var _S_HTTP=_S_PURL_.indexOf('https')>-1?'https://':'http://',_S_BCNDOMAIN="beacon.sina.com.cn",_S_CP_RF=_S_HTTP+_S_BCNDOMAIN+"/a.gif",_S_CP_RF_D=_S_HTTP+_S_BCNDOMAIN+"/d.gif",_S_CP_RF_E=_S_HTTP+_S_BCNDOMAIN+"/e.gif",_S_CP_FC=_S_HTTP+_S_BCNDOMAIN+"/fc.html";
+	var _S_T1=100,_S_T2=2000;
+	var handler={
+		_S_sSID:function(){handler._S_p2Bcn("",_S_CP_RF_D)},_S_gsSID:function(){var sid=SA._S_gUCk(_S_SID_);if(""==sid){handler._S_sSID()}return sid},
+		_S_sGID:function(gid){if(""!=gid){SA._S_sUCk(_S_GID_,gid,3650)}},_S_gGID:function(){return SA._S_gUCk(_S_GID_)},_S_gsGID:function(){if(""!=_S_GID_){var gid=SA._S_gUCk(_S_GID_);if(""==gid){if(SA._S_gFVer(SG.nav)<=6){return ""}else{handler._S_IFC2GID()}}return gid}else{return""}},_S_IFC2GID:function(){var _S_ifc=SSD.get("SUDA_FC");if(_S_ifc){_S_ifc.src=_S_CP_FC+"?a=g&n="+_S_GID_+"&r="+Math.random()}},
+		_S_gCid:function(){try{var metaTxt=SA._S_gMeta("publishid");if(""!=metaTxt){var pbidList=metaTxt.split(",");if(pbidList.length>0){if(pbidList.length>=3){_S_DPID_="-9999-0-"+pbidList[1]+"-"+pbidList[2]}return pbidList[0]}}else{return"0"}}catch(e){return"0"}},
+		_S_gAEC:function(){return SA._S_gUCk(_S_ACC_)},_S_sAEC:function(eid){if(""==eid){return}var acc=handler._S_gAEC();if(acc.indexOf(eid+",")<0){acc=acc+eid+",";}SA._S_sUCk(_S_ACC_,acc,7);},
+		_S_p2Bcn:function(q,u){var scd=SSD.get("SUDA_CS_DIV");if(null!=scd){var now=new Date();scd.innerHTML="<img width=0 height=0 src='"+u+"?"+q+"&gUid_"+now.getTime()+"' border='0' alt=''  />"}},
+		_S_gSUP:function(){if(_S_MI_!=""){return _S_MI_}var sup=unescape(SA._S_gUCk(_S_UNA_));if(sup!=""){var ag=SA._S_gKeyV(sup,"ag","&","");var user=SA._S_gKeyV(sup,"user","&","");var uid=SA._S_gKeyV(sup,"uid","&","");var sex=SA._S_gKeyV(sup,"sex","&","");var bday=SA._S_gKeyV(sup,"dob","&","");_S_MI_=ag+":"+user+":"+uid+":"+sex+":"+bday;return _S_MI_}else{return""}},
+		_S_gsLVisit:function(sid){var lvi=SA._S_gUCk(_S_LV_);var lva=lvi.split(":");var lvr="";if(lva.length>=6){if(sid!=lva[4]){var lvn=new Date();var lvd=new Date(parseInt(lva[0]));lva[1]=parseInt(lva[1])+1;if(lvn.getMonth()!=lvd.getMonth()){lva[2]=1}else{lva[2]=parseInt(lva[2])+1}if(((lvn.getTime()-lvd.getTime())/86400000)>=7){lva[3]=1}else{if(lvn.getDay()<lvd.getDay()){lva[3]=1}else{lva[3]=parseInt(lva[3])+1}}lvr=lva[0]+":"+lva[1]+":"+lva[2]+":"+lva[3];lva[5]=lva[0];lva[0]=lvn.getTime();SA._S_sUCk(_S_LV_,lva[0]+":"+lva[1]+":"+lva[2]+":"+lva[3]+":"+sid+":"+lva[5],360)}else{lvr=lva[5]+":"+lva[1]+":"+lva[2]+":"+lva[3]}}else{var lvn=new Date();lvr=":1:1:1";SA._S_sUCk(_S_LV_,lvn.getTime()+lvr+":"+sid+":",360)}return lvr},
+		_S_gUOR:function(){var uoc=SA._S_gUCk(_S_UO_);var upa=uoc.split(":");if(upa.length>=2){return upa[0]}else{return""}},
+		_S_sUOR:function(){var uoc=SA._S_gUCk(_S_UO_),uor="",uol="",up_t="",up="";var re=/[&|?]c=spr(_[A-Za-z0-9]{1,}){3,}/;var ct=new Date();if(_S_PURL_.match(re)){up_t=_S_PURL_.match(re)[0]}else{if(_S_PREF_.match(re)){up_t=_S_PREF_.match(re)[0]}}if(up_t!=""){up_t=up_t.substr(3)+":"+ct.getTime()}if(uoc==""){if(SA._S_gUCk(_S_LV_)==""&&SA._S_gUCk(_S_LV_)==""){uor=SA._S_gHost(_S_PREF_);uol=SA._S_gHost(_S_PURL_)}SA._S_sUCk(_S_UO_,uor+","+uol+","+up_t,365)}else{var ucg=0,uoa=uoc.split(",");if(uoa.length>=1){uor=uoa[0]}if(uoa.length>=2){uol=uoa[1]}if(uoa.length>=3){up=uoa[2]}if(up_t!=""){ucg=1}else{var upa=up.split(":");if(upa.length>=2){var upd=new Date(parseInt(upa[1]));if(upd.getTime()<(ct.getTime()-86400000*30)){ucg=1}}}if(ucg){SA._S_sUCk(_S_UO_,uor+","+uol+","+up_t,365)}}},
+		_S_gRef:function(){var re=/^[^\?&#]*.swf([\?#])?/;if((_S_PREF_=="")||(_S_PREF_.match(re))){var ref=SA._S_gKeyV(_S_PURL_,"ref","&","");if(ref!=""){return ref}}return _S_PREF_},
+		_S_MEvent:function(){if(_S_SMC==0){_S_SMC++;var c=SA._S_gUCk(_S_UPA_);if(c==""){c=0}c++;if(c<_S_SMM){var re=/[&|?]c=spr(_[A-Za-z0-9]{2,}){3,}/;if(_S_PURL_.match(re)||_S_PREF_.match(re)){c=c+_S_SMM}}SA._S_sUCk(_S_UPA_,c)}},_S_gMET:function(){var c=SA._S_gUCk(_S_UPA_);if(c==""){c=0}return c},
+		_S_gCInfo_v2:function(){var now=new Date();return"sz:"+screen.width+"x"+screen.height+"|dp:"+screen.colorDepth+"|ac:"+SG.nav.appCodeName+"|an:"+_S_NAN_+"|cpu:"+SG.nav.cpuClass+"|pf:"+SG.nav.platform+"|jv:"+SA._S_gJVer(_S_NAV_,_S_NAN_)+"|ct:"+SA._S_gConType()+"|lg:"+SG.nav.systemLanguage+"|tz:"+now.getTimezoneOffset()/60+"|fv:"+SA._S_gFVer(SG.nav)},
+		_S_gPInfo_v2:function(pid,ref){if((undefined==pid)||(""==pid)){pid=handler._S_gCid()+_S_DPID_}return"pid:"+pid+"|st:"+handler._S_gMET()+"|et:"+_S_ET+"|ref:"+escape(ref)+"|hp:"+SA._S_isHome(_S_PURL_)+"|PGLS:"+SA._S_gMeta("stencil")+"|ZT:"+escape(SA._S_gTJZTMeta())+"|MT:"+escape(SA._S_gTJMTMeta())+"|keys:"},
+		_S_gUInfo_v2:function(vid){return"vid:"+vid+"|sid:"+handler._S_gsSID()+"|lv:"+handler._S_gsLVisit(handler._S_gsSID())+"|un:"+handler._S_gSUP()+"|uo:"+handler._S_gUOR()+"|ae:"+handler._S_gAEC()},
+		_S_gEXTInfo_v2:function(ext1,ext2){_S_EXT1=(undefined==ext1)?_S_EXT1:ext1;_S_EXT2=(undefined==ext2)?_S_EXT2:ext2;return"ex1:"+_S_EXT1+"|ex2:"+_S_EXT2},
+		_S_pBeacon:function(pid,ext1,ext2){try{var gid=handler._S_gsGID();if(""==gid){if(_S_GIDT<1){setTimeout(function(){handler._S_pBeacon(pid,ext1,ext2)},_S_T2);_S_GIDT++;return}else{gid=handler._S_gsSID();handler._S_sGID(gid)}}var sgup_ck = SA._S_gUCk(_SGUP_);if(sgup_ck == ""){var channary = location.hostname.split(".");var cur_ch = (channary.length > 3) ? channary[channary.length - 4] : "";handler.__loadScript(_SGUP_REQ_,function(){if(sgup != ""){SA._S_sUCk(_SGUP_,sgup,7);}else{SA._S_sUCk(_SGUP_,"0",3);}});}var sVer="V=2";var sCI=handler._S_gCInfo_v2();var sPI=handler._S_gPInfo_v2(pid,handler._S_gRef());var sUI=handler._S_gUInfo_v2(gid);var sEX=handler._S_gEXTInfo_v2(ext1,ext2);var lbStr=sVer+"&CI="+sCI+"&PI="+sPI+"&UI="+sUI+"&EX="+sEX;handler._S_p2Bcn(lbStr,_S_CP_RF)}catch(e){}},
+		__loadScript:function(url, callback, encode){var script = document.createElement('script');script.type = 'text/javascript';if(encode)script.charset = encode;if (callback)script.onload = script.onreadystatechange = function() {if (script.readyState && script.readyState != 'loaded' && script.readyState != 'complete')return;script.onreadystatechange = script.onload = null;callback();};script.src = url;document.getElementsByTagName('head')[0].appendChild(script);},
+		_S_acTrack_i:function(eid,p){if((""==eid)||(undefined==eid)){return}handler._S_sAEC(eid);if(0==p){return}var s="AcTrack||"+handler._S_gGID()+"||"+handler._S_gsSID()+"||"+handler._S_gSUP()+"||"+eid+"||";handler._S_p2Bcn(s,_S_CP_RF_E)},
+		_S_uaTrack_i:function(acode,aext){var s="UATrack||"+handler._S_gGID()+"||"+handler._S_gsSID()+"||"+handler._S_gSUP()+"||"+acode+"||"+aext+"||"+handler._S_gRef()+"||";handler._S_p2Bcn(s,_S_CP_RF_E)}
+	};
+	if(_S_SMC==0){if('MSIE'==_S_NAN_){SSL.Global.doc.attachEvent("onclick",handler._S_MEvent);SSL.Global.doc.attachEvent("onmousemove",handler._S_MEvent);SSL.Global.doc.attachEvent("onscroll",handler._S_MEvent)}else{SSL.Global.doc.addEventListener("click",handler._S_MEvent,false);SSL.Global.doc.addEventListener("mousemove",handler._S_MEvent,false);SSL.Global.doc.addEventListener("scroll",handler._S_MEvent,false)}};handler._S_sUOR();
+	return{
+		_S_pSt:function(pid,ext1,ext2){try{if((SA._S_isFreshMeta())||(SA._S_isIFrameSelf(_S_IFH,_S_IFW))){return}if(_S_ET>0){return}++_S_ET;setTimeout(function(){handler._S_gsSID()},_S_T1);setTimeout(function(){handler._S_pBeacon(pid,ext1,ext2,0)},_S_T2)}catch(e){}},
+		_S_pStM:function(pid,ext1,ext2){++_S_ET;handler._S_pBeacon(pid,((undefined==ext1)?handler._S_upExt1():ext1),ext2)},
+		_S_acTrack:function(eid,p){try{if((undefined!=eid)&&(""!=eid)){setTimeout(function(){handler._S_acTrack_i(eid,p)},_S_T1)}}catch(e){}},
+		_S_uaTrack:function(acode,aext){try{if(undefined==acode){acode=""}if(undefined==aext){aext=""}if((""!=acode)||(""!=aext)){setTimeout(function(){handler._S_uaTrack_i(acode,aext)},_S_T1)}}catch(e){}}
+	}
+}
+var GB_SUDA;if(GB_SUDA==null){GB_SUDA=new SUDA({})}
+var _S_PID_="";
+function _S_pSt(pid,ext1,ext2){GB_SUDA._S_pSt(pid,ext1,ext2);}
+function _S_pStM(pid,ext1,ext2){GB_SUDA._S_pStM(pid,ext1,ext2);}
+function _S_acTrack(eid){GB_SUDA._S_acTrack(eid,1);}
+function _S_uaTrack(acode,aext){GB_SUDA._S_uaTrack(acode,aext);}
+//-->
+</script>
+<script type="text/javascript"> 
+//<!--
+GB_SUDA._S_pSt("");
+//-->
+</script>
+<noscript>
+<div style="position:absolute;top:0;left:0;width:0;height:0;visibility:hidden"><img width="0" alt="" src="http://beacon.sina.com.cn/a.gif?noScript" border="0" height="0"></div>
+</noscript>
+
+
+<!-- SUDA_CODE_END --><!-- for iPad begin --><script type="text/javascript">
+(function(){
+if(!/\((iPhone|iPad|iPod)/i.test(navigator.userAgent)){return};
+var iPadScript = document.createElement('script');
+iPadScript.src = 'http://news.sina.com.cn/js/ui/ipad/reset.js';
+document.getElementsByTagName('head')[0].appendChild(iPadScript);
+})();
+</script>
+
+
+<!-- for iPad end --><!-- SSO_GETCOOKIE_START --><script type="text/javascript">var sinaSSOManager=sinaSSOManager||{};sinaSSOManager.getSinaCookie=function(){function dc(u){if(u==undefined){return""}var decoded=decodeURIComponent(u);return decoded=="null"?"":decoded}function ps(str){var arr=str.split("&");var arrtmp;var arrResult={};for(var i=0;i<arr.length;i++){arrtmp=arr[i].split("=");arrResult[arrtmp[0]]=dc(arrtmp[1])}return arrResult}function gC(name){var Res=eval("/"+name+"=([^;]+)/").exec(document.cookie);return Res==null?null:Res[1]}var sup=dc(gC("SUP"));if(!sup){sup=dc(gC("SUR"))}if(!sup){return null}return ps(sup)};</script>
+
+<!-- SSO_GETCOOKIE_END --><script type="text/javascript">new function(r,s,t){this.a=function(n,t,e){if(window.addEventListener){n.addEventListener(t,e,false);}else if(window.attachEvent){n.attachEvent("on"+t,e);}};this.b=function(f){var t=this;return function(){return f.apply(t,arguments);};};this.c=function(){var f=document.getElementsByTagName("form");for(var i=0;i<f.length;i++){var o=f[i].action;if(this.r.test(o)){f[i].action=o.replace(this.r,this.s);}}};this.r=r;this.s=s;this.d=setInterval(this.b(this.c),t);this.a(window,"load",this.b(function(){this.c();clearInterval(this.d);}));}(/http:\/\/www\.google\.c(om|n)\/search/, "http://keyword.sina.com.cn/searchword.php", 250);</script>
+<div class="wrap">
+
+<!-- 通用导航 开始 --><div class="secondaryHeader">
+<div class="sHBorder">
+<div class="sHLogo"><span><a href="http://finance.sina.com.cn/"><img src="http://i1.sinaimg.cn/dy/images/header/2009/standardl2nav_sina_new.gif" alt="新浪网"></a><a href="http://finance.sina.com.cn/"><img src="http://i1.sinaimg.cn/dy/images/header/2009/standardl2nav_finance.gif" alt="新浪财经"></a></span></div>
+<div class="sHLinks"><a href="http://finance.sina.com.cn/">财经首页</a> | <a href="http://www.sina.com.cn/">新浪首页</a> | <a href="http://news.sina.com.cn/guide/">新浪导航</a></div>
+</div>
+</div>
+
+<!-- 通用导航  结束 --><div style="margin: 5px 0px;"><a href="http://finance.sina.com.cn/money/mall/insurance/tkse.shtml" target="_blank"><img width="950" alt="10" src="http://i2.sinaimg.cn/cj/imgtable/idx/2012/0507/U5710P31T88D30617F2013DT20120507175002.jpg" height="90"></a></div>
+
+<!-- main start --><div class="zcblk01">
+<div class="zctit1 clearfix">
+<a style="float:right;margin-right:20px" href="http://finance.sina.com.cn/money/roll/20090519/09156244226.shtml" target="_blank"><color font="red">联系我们</color></a>
+<h2><a href="http://finance.sina.com.cn/money/mall.shtml" target="_blank">金融e路通</a></h2>
+<ul class="clearfix">
+<li><a href="http://money.finance.sina.com.cn/insurance/mall/" target="_blank">保险超市</a></li>
+<li><a href="http://finance.sina.com.cn/fund/supermall/fundmall.html" target="_blank">基金e路通</a></li>
+<li><a href="http://money.finance.sina.com.cn/bank/mall/" target="_blank">银行超市</a></li>
+</ul>
+</div>
+<div class="zccont clearfix">
+<div class="zcsearch clearfix">
+<script src="http://i1.sinaimg.cn/cj/finance_js/mall/IO.XSRV2.js" type="text/javascript"></script>
+<script src="http://i3.sinaimg.cn/cj/finance_js/mall/Util.Common.js" type="text/javascript"></script>
+<script src="http://i0.sinaimg.cn/cj/finance_js/mall/IO.Ajax.js" type="text/javascript"></script>
+<script type="text/javascript">
+		var CATE_CORP = [{cate:"1",corp:["46","5","49","47","60","55","44","3","82","76","6"]},{cate:"2",corp:["46","5","44","56","3","60","76","55","58","69"]},{cate:"3",corp:["46","5","8","3","7","1","11","16"]},{cate:"4",corp:["1","7","11","3"]},{cate:"6",corp:["5","1","3","7","11"]},{cate:"9",corp:["5","1","7"]},{cate:"10",corp:["46","44","49","60","55"]},{cate:"11",corp:["46"]}];
+		</script>
+<div style="clear: both;position:relative" class="nf">
+<div style="float:left; padding-top:2px;margin-top:5px;*padding-top:0px;*margin-top:-2px;_padding-top:2px;_margin-top:3px;">
+<select name="bigcate" id="bigcate">
+<option value="-1">--全部--</option>
+<option value="1">保险搜索</option>
+<option value="2">基金搜索</option>
+<option value="3">理财产品</option>
+<option value="4">信用卡</option>
+</select>
+</div>
+<div style="display:none;float:left; " id="ser">
+<form action="http://money.finance.sina.com.cn/insurance/mall/vInsProdSearchList.php" style=" padding-left:5px;margin-left:0px;" method="get" target="_blank">
+<select style="vertical-align: middle;" name="instype" id="instype">
+<option value="-1">--全部--</option>
+<option value="1">意外保险</option><option value="2">旅游保险</option><option value="3">健康保险</option><option value="4">养老保险</option><option value="6">少儿保险</option><option value="9">投资保险</option><option value="10">家财保险</option><option value="11">汽车保险</option> </select>
+<select style="vertical-align: middle;" name="inscorp" id="inscorp">
+<option value="-1">--全部--</option>
+<option value="1">中国人寿</option><option value="3">太平洋人寿</option><option value="5">泰康人寿</option><option value="6">太平人寿</option><option value="7">友邦人寿</option><option value="8">中意人寿</option><option value="11">信诚人寿</option><option value="16">人保健康</option><option value="44">人保财险</option><option value="46">中国平安</option><option value="47">中华联合</option><option value="49">大地产险</option><option value="55">阳光产险</option><option value="56">华泰产险</option><option value="58">美亚产险</option><option value="60">都邦产险</option><option value="69">安联产险</option><option value="76">利宝互助</option><option value="82">安诚保险</option> </select>
+<input src="http://i3.sinaimg.cn/cj/jrelt2011/images/elt_wzc04.png" alt="提交" type="image" title="提交">
+</form>
+</div>
+
+<!-- start --><div style="padding-left:5px; z-index:10000;display:none;float:left;" id="ser2" class="dark_inpt">
+<div style="margin:0px; padding:0px; display:block; float:left; height:19px;margin-top:5px;" id="user_help">
+<span style="margin:0px; padding:0px; padding-left:20px; padding-right:10px; height:19px; display:block;position:absolute;" class="fun_wrap">
+</span><form action="http://biz.finance.sina.com.cn/suggest/lookup_n.php" style="margin:0px; padding:0px;position:relative;z-index:10000;zoom:1;_top:-75px;_right:275px;_margin-top:-100px;" onsubmit="return checkFormSuggest_0(this);" target="_blank" method="get">
+<input style="background:none;" checked name="suggest_radio" value="lookupn" type="radio" id="suggest_radio_lookupn"><label for="suggest_radio_lookupn">基金</label>
+<input style="background:none;" type="radio" name="suggest_radio" value="bar" id="suggest_radio_bar"><label for="suggest_radio_bar">基金吧</label>
+<input style="background:none;" type="radio" name="suggest_radio" value="news" id="suggest_radio_news"><label for="suggest_radio_news">新闻</label>
+<input style="width:124px; color:#999;" name="q" value="代码/名称/拼音" id="textSuggest_0" type="text" class="user_inf"><input type="hidden" name="country" value="fund"><input type="hidden" name="name"><input type="hidden" name="t" value="keyword"><input type="hidden" name="c" value="all"><input type="hidden" name="k">
+<button style="width:5em;*margin-left:5px;height:22px;vertical-align: middle;" type="submit" class="Ybtn long">搜 索</button>
+<button style="width:8em;*margin-left:5px;height:22px;vertical-align: middle;" type="button" class="Ybtn long" id="gotoMyfund">基金代码查询</button>
+</form>
+
+</div>
+<script src="http://i2.sinaimg.cn/cj/financewidget/js/SuggestServer_3_0_17.js" type="text/javascript"></script>
+<script type="text/javascript">
+				function $(__stringId) {
+					return document.getElementById(__stringId);
+				}
+				$("suggest_radio_lookupn").onclick = function () {
+					suggestServer_0.changeLink("http://biz.finance.sina.com.cn/suggest/lookup_n.php?country=@type@&q=@code@");
+				};
+				$("suggest_radio_bar").onclick = function () {
+					suggestServer_0.changeLink("http://bar.sina.com.cn/bar.php?name=@code@");
+				};
+				$("suggest_radio_news").onclick = function () {
+					suggestServer_0.changeLink("http://iask.com/n?t=keyword&c=all&k=@code@");
+				};
+				$("gotoMyfund").onclick = function () {
+					window.open("http://money.finance.sina.com.cn/fund/view/vNewFund_FundListings.php");
+				};
+				var suggestServer_0 = new SuggestServer();
+				suggestServer_0.bind({
+					"input": "textSuggest_0",
+					"default": "拼音/代码/名称",
+					"value": "@2@",
+					"type": "fund",
+					"width": 283,
+					'max':5,
+					"link": "http://biz.finance.sina.com.cn/suggest/lookup_n.php?country=@type@&q=@2@",
+					"callback": null
+				});
+				function checkFormSuggest_0(__formSuggest) {
+					var __stringCode = $("textSuggest_0").value;
+					if (__stringCode != "代码/名称/拼音" && __stringCode != "") {
+						var stringUrl = "";
+						if ($("suggest_radio_lookupn").checked) {
+							stringUrl = "http://biz.finance.sina.com.cn/suggest/lookup_n.php";
+						}
+						if ($("suggest_radio_bar").checked) {
+							stringUrl = "http://bar.sina.com.cn/bar.php";
+						}
+						if ($("suggest_radio_news").checked) {
+							stringUrl = "http://iask.com/n";
+						}
+						__formSuggest.action = stringUrl;
+						__formSuggest["name"].value = __stringCode;
+						__formSuggest["k"].value = __stringCode;
+					}
+					else {
+						return false;
+					}
+				}
+			</script>
+</div>
+
+<!-- end --><div style="position:relative;  padding-left:5px;float:left" id="ser3">
+<form action="" method="get" id="searchForm">
+<select name="bid" id="firstSelect">
+<option value="-1">选择银行</option>
+</select>
+<select name="cmax" id="secondSelect">
+<option value="-1">最高信用额</option>
+</select>
+<select name="fmin" id="thirdSelect">
+<option value="-1">最低年费</option>
+</select>
+<input style="width: 84px;" type="text" name="key" value="" class="inpt_txt">
+<button style="cursor: pointer;vertical-align: middle;" type="submit" class="Ybtn">搜 索</button>
+</form>
+</div>
+</div>
+
+<!-- end --><script type="text/javascript">
+if(typeof $ == 'undefined'){
+	function $(id){
+		return document.getElementById(id);
+	}
+}
+var BankSelect = function(dd){
+	this.curPage = dd;
+	this.searchForm = $("searchForm");
+	this.getFormType();
+	//this.radioFinancing = $("radioFinancing");
+	//this.radioCard = $("radioCard");
+	this.firstSelect = $("firstSelect");
+	this.secondSelect = $("secondSelect");
+	this.thirdSelect = $("thirdSelect");
+	//记住之前select框选中的值
+	this.allSelect = new Array();
+	//this.financingUrl = "http://money.finance.sina.com.cn/bank/api/jsonp_v2.php/Bank_FinanceService.onSelectList";
+	this.cardUrl = "http://money.finance.sina.com.cn/bank/api/json_v2.php/Bank_CardService.onSelectList";
+	this.getParam = this.QueryString();
+	if(this.curPage == 'financing'){
+		this.initFinancingForm();
+	}
+	else{
+		this.initCardForm();
+	}
+	//Util.AddEvent(this.radioFinancing , "click" , this.initFinancingForm._Bind(this) , false);
+	//Util.AddEvent(this.radioCard , "click" , this.initCardForm._Bind(this) , false);
+	//以下初始化显示选中值
+}
+BankSelect.prototype = {
+	QueryString : function () {
+		var path = window.location.search, pattern = /[?&]([^=]+)=([^&]+)(?=&|$)/g, hash = {};
+		while (pattern.test(path)) hash[RegExp.$1] = RegExp.$2;
+		return hash;
+	},
+	//如果URI中含有bid/cmax/fmin中任意一项，需要重新发送一次请求，得到对应的其他两项值
+	reRenderCardSelect : function(){
+		var cardSelect = {"bid":this.firstSelect , "cmax" :this.secondSelect , "fmin":this.thirdSelect};
+		for(key in cardSelect){
+			if(this.getParam[key] != -1 && typeof this.getParam[key] != 'undefined') {
+				this.changeCardSelect(new Object() , cardSelect[key]);
+				return;
+			}
+		}
+		return;
+	},
+	reRenderFinancingSelect	: function(){
+		var financingSelect = {"bid":this.firstSelect , "bz" :this.secondSelect };
+		for(key in financingSelect){
+			if(this.getParam[key] != -1 && typeof this.getParam[key] != 'undefined') {
+				this.changeFinancingSelect(new Object() , financingSelect[key]);
+				return;
+			}
+		}
+		return;
+	},
+	resetSelect : function(){
+		for(var i=0 ; i < this.searchForm.childNodes.length ; i++){
+			var node = this.searchForm.childNodes[i];
+			if(node.nodeType == 1 && node.tagName.toLowerCase() == 'select'){
+				for(var j=0 ; j<node.options.length ; j++){
+					if(node.options[j].value == decodeURIComponent(this.getParam[node.name])){
+						node.options[j].selected = true;
+						break;
+					}
+				}
+			}
+		}
+	},
+	getFormType : function(){
+		var radios = document.getElementsByName("searchType");
+		for(var i=0 ; i < radios.length ; i++){
+			if(radios[i].checked ) this.searchFormType = radios[i].value;
+		}
+	},
+	//初始化信用卡select框
+	initCardForm : function(){
+		this.searchForm.action = "http://money.finance.sina.com.cn/bank/mall/cardList.php";
+		this.clearSelect();
+		var x = new IO.XSRV2('http://money.finance.sina.com.cn/bank/api/jsonp.php', function(){});
+		x.Call('Bank_CardService.onSelectList', this.renderCardSelect._Bind(this),{});
+
+	},
+	renderCardSelect : function(cardContent){
+	//	eval("var cardContent = " + rtn.responseText + ";");
+		this.firstSelect.name = 'bid';
+		this.fillBankSelect(cardContent.bid);
+		this.secondSelect.name = 'cmax';
+		this.fillOtherSelect(this.secondSelect , cardContent.cmax , new Option("最高额度" , "-1"));
+		this.thirdSelect.name = 'fmin';
+		this.fillOtherSelect(this.thirdSelect , cardContent.fmin , new Option("最低年费" , "-1"));
+
+		this.firstSelect.onchange=null;
+		this.secondSelect.onchange=null;
+		this.thirdSelect.onchange=null;
+		this.firstSelect.onchange = this.changeCardSelect._Bind(this , this.firstSelect) ;
+		this.secondSelect.onchange = this.changeCardSelect._Bind(this , this.secondSelect) ;
+		this.thirdSelect.onchange = this.changeCardSelect._Bind(this , this.thirdSelect) ;
+		if(this.searchFormType == 'card') this.resetSelect();
+		this.reRenderCardSelect();
+	},
+	//初始化理财产品select框
+	initFinancingForm : function(){
+		this.searchForm.action = "http://money.finance.sina.com.cn/bank/mall/financingList.php";
+		this.clearSelect();
+		var x = new IO.XSRV2('http://money.finance.sina.com.cn/bank/api/jsonp.php', function(){});
+		x.Call('Bank_FinanceService.onSelectList', this.renderFinancingSelect._Bind(this),{});
+		//ajax.get(this.financingUrl , this.renderFinancingSelect._Bind(this) );
+	},
+	renderFinancingSelect : function(financingContent){
+		//eval("var financingContent = " + rtn.responseText + ';');
+		this.firstSelect.name = 'bid';
+		this.fillBankSelect(financingContent.bid);
+		this.secondSelect.name = 'bz';
+		this.fillCurrencySelect(financingContent.bz );
+		this.thirdSelect.name = 'yield';
+		this.fillOtherSelect(this.thirdSelect , financingContent.yield , new Option("选择收益率" , "-1"));
+
+		this.firstSelect.onchange=null;
+		this.secondSelect.onchange=null;
+		this.thirdSelect.onchange=null;
+		this.firstSelect.onchange = this.changeFinancingSelect._Bind(this , this.firstSelect) ;
+		this.secondSelect.onchange = this.changeFinancingSelect._Bind(this , this.secondSelect) ;
+		this.thirdSelect.onchange = this.changeFinancingSelect._Bind(this , this.thirdSelect) ;
+		if(this.searchFormType == 'financing') this.resetSelect();
+		this.reRenderFinancingSelect();
+	},
+	clearSelect : function(){
+		$("firstSelect").options.length = 0;
+		$("secondSelect").options.length = 0;
+		$("thirdSelect").options.length = 0;
+	},
+	fillBankSelect : function(data){
+		$("firstSelect").options.length = 0;
+		this.firstSelect.options.add(new Option("选择银行" , "-1"));
+		for(var i=0 ; i < data.length ; i++){
+			this.firstSelect.options.add(new Option(data[i].shortname , data[i].id));
+		}
+	},
+	fillCurrencySelect : function(data ){
+		$("secondSelect").options.length = 0;
+		this.secondSelect.options.add( new Option("选择币种" , "-1"));
+		for(var i=0 ; i < data.length ; i++){
+			this.secondSelect.options.add(new Option(data[i].name , data[i].id));
+		}
+	},
+	fillOtherSelect : function(selectObj , data , firstOption ){
+		selectObj.options.length = 0;
+		selectObj.options.add(firstOption);
+		for(var i=0 ; i < data.length ; i++){
+			selectObj.options.add(new Option(data[i][1] , data[i][0]));
+		}
+	},
+	//信用卡搜索改变搜索条件
+	changeCardSelect : function(obj , select){
+		var select = arguments.length == 1 ? obj : select;
+		//var ajax = new IO.Ajax();
+		var x = new IO.XSRV2('http://money.finance.sina.com.cn/bank/api/jsonp.php', function(){});
+		var selectVal = select.options[select.selectedIndex].value;
+		if(selectVal != -1){
+			//var url = this.cardUrl + "?k=" + select.name + "&v=" + selectVal ;
+			x.Call('Bank_CardService.onSelectList', this.changeRenderCardSelect._Bind(this , select),{k:select.name,v:selectVal});
+			//ajax.get(url , this.changeRenderCardSelect._Bind(this , select));
+		}
+	},
+	changeRenderCardSelect : function(cardContent , select){
+		this.getAllSelectVal();
+		//eval("var cardContent = " + rtn.responseText + ";");
+		var cardMapping = {"bid" : this.firstSelect , "cmax" : this.secondSelect , "fmin" : this.thirdSelect};
+		var firstOptionMapping = {"cmax" : new Option("最高额度" , "-1"), "fmin" : new Option("最低年费" , "-1")};
+		for(key in cardContent){
+			if( key == 'bid' ) this.fillBankSelect(cardContent.bid);
+			else this.fillOtherSelect(cardMapping[key] , cardContent[key] , firstOptionMapping[key] );
+		}
+		this.updateAllSelectVal(select);
+	},
+	//理财产品搜索改变条件
+	changeFinancingSelect : function(obj , select){
+
+		var select = arguments.length == 1 ? obj : select;
+		//var ajax = new IO.Ajax();
+		var x = new IO.XSRV2('http://money.finance.sina.com.cn/bank/api/jsonp.php', function(){});
+
+		var selectVal = select.options[select.selectedIndex].value;
+		if(selectVal != -1){
+		//	var url = this.financingUrl + "?k=" + select.name + "&v=" + selectVal ;
+			x.Call('Bank_FinanceService.onSelectList', this.changeRenderFinancingSelect._Bind(this , select),{k:select.name,v:selectVal});
+			//ajax.get(url , this.changeRenderFinancingSelect._Bind(this , select));
+		}
+	},
+	changeRenderFinancingSelect : function(cardContent , select){
+		this.getAllSelectVal();
+		//eval("var cardContent = " + rtn.responseText + ";");
+		var cardMapping = {"yield" : this.thirdSelect};
+		var firstOptionMapping = {"yield" : new Option("收益率" , "-1")};
+		for(key in cardContent){
+			if( key == 'bid' ) this.fillBankSelect(cardContent.bid);
+			else if( key == 'bz' ) this.fillCurrencySelect(cardContent.bz);
+			else this.fillOtherSelect(cardMapping[key] , cardContent[key] , firstOptionMapping[key] );
+		}
+		this.updateAllSelectVal(select);
+	},
+	//取出form中所有select框的值，按先后顺序返回
+	getAllSelectVal : function(){
+		this.allSelect.length = 0;
+		for(var i=0 ; i < this.searchForm.childNodes.length ; i++){
+			var node = this.searchForm.childNodes[i];
+			if(node.nodeType == 1 && node.tagName.toLowerCase() == 'select'){
+				this.allSelect.push(new Array(node , node[node.selectedIndex].value));
+			}
+		}
+	},
+	//把联动后的select默认值置为先前选中的值
+	updateAllSelectVal : function(opSelect){
+		for(var i=0 ; i<this.allSelect.length ; i++){
+			var oneSelect = this.allSelect[i][0];
+			var oldVal = this.allSelect[i][1];
+			if(opSelect.id == oneSelect.id) continue;//遍历时，遇到当前操作的select跳过去。当前的select应该是用最新操作选择的值
+			for(var j=0 ; j < oneSelect.options.length ; j++){
+				var oneOption = oneSelect.options[j];
+				if(oneOption.value == oldVal) {
+					oneOption.selected = true;
+					break;
+				}
+			}
+		}
+	}
+}
+
+</script>
+<script src="http://i0.sinaimg.cn/cj/finance_js/mall/cat_corp_select.js?1" type="text/javascript"></script>
+<p style="float:right;margin-right:20px;" class="zcas">热搜：<a href="http://finance.sina.com.cn/insurance/mall/insurancecard2010/" target="_blank">保险卡</a> <a href="http://finance.sina.com.cn/fund/supermall/fundmall.html" target="_blank">买基金</a> </p>
+</div>
+<div class="zcblks1">
+<dl class="clearfix">
+<dt>热门关注</dt>
+<dd><a href="http://finance.sina.com.cn/money/mall/insurance/tkelc.shtml" target="_blank">2011理财何去何从？</a> <br><a href="http://finance.sina.com.cn/money/insurance/rhgmywx/" target="_blank">投保指南：如何购买意外险</a></dd>
+</dl>
+<dl class="clearfix">
+<dt>保险险种</dt>
+<dd><a href="http://money.finance.sina.com.cn/insurance/mall/vInsProdSearchList.php?instype=1" target="_blank">意外保险</a>|<a href="http://money.finance.sina.com.cn/insurance/mall/vInsProdSearchList.php?instype=2" target="_blank">旅游险</a>|<a href="http://money.finance.sina.com.cn/insurance/mall/vInsProdSearchList.php?instype=3" target="_blank">意外游险</a><a href="http://money.finance.sina.com.cn/insurance/mall/vInsProdSearchList.php?instype=3" target="_blank">健康保险</a>|<a href="http://money.finance.sina.com.cn/insurance/mall/vInsProdSearchList.php?instype=4" target="_blank">养老险</a>|<a href="http://money.finance.sina.com.cn/insurance/mall/vInsProdSearchList.php?instype=6" target="_blank">少儿保险</a></dd>
+</dl>
+<dl class="clearfix">
+<dt>保险公司</dt>
+<dd><a href="http://money.finance.sina.com.cn/insurance/mall/vInsProdSearchList.php?instype=-1&amp;inscorp=5" target="_blank">泰康人寿</a>|<a href="http://money.finance.sina.com.cn/insurance/mall/vInsProdSearchList.php?instype=-1&amp;inscorp=46" target="_blank">中国平安</a> </dd>
+</dl>
+</div>
+<div class="zcblks1">
+<dl class="clearfix">
+<dt>热门关注</dt>
+<dd><a href="http://finance.sina.com.cn/fund/quotes/of000021/bc.shtml" target="_blank">华夏优势增长股票
+</a> <a href="http://finance.sina.com.cn/fund/quotes/of630002/bc.shtml" target="_blank">华商盛世成长股票
+</a> <a href="http://finance.sina.com.cn/fund/quotes/of160719/bc.shtml" target="_blank">嘉实黄金
+</a></dd>
+</dl>
+<dl class="clearfix">
+<dt>基金分类</dt>
+<dd><a href="http://finance.sina.com.cn/fund/supermall/fundsort01.html" target="_blank">股票型</a>|<a href="http://finance.sina.com.cn/fund/supermall/fundsort02.html" target="_blank">混合型</a>|<a href="http://finance.sina.com.cn/fund/supermall/fundsort03.html" target="_blank">债券型</a>|<a href="http://finance.sina.com.cn/fund/supermall/fundsort05.html" target="_blank">货币型</a>|<a href="http://finance.sina.com.cn/fund/supermall/fundsort04.html" target="_blank">其他类型</a></dd>
+</dl>
+<dl class="clearfix">
+<dt>基金公司</dt>
+<dd><a href="http://finance.sina.com.cn/fund/supermall/fundcomp106.html" target="_blank">汇丰晋信</a>|<a href="http://finance.sina.com.cn/fund/supermall/fundcomp37.html" target="_blank">上投摩根</a>|<a href="http://finance.sina.com.cn/fund/supermall/fundcomp8.html" target="_blank">嘉实</a></dd>
+</dl>
+</div>
+<div class="zcblks1">
+<dl class="clearfix">
+<dt>热门关注</dt>
+<dd><a href="http://money.finance.sina.com.cn/creditcard/view/vHuodongsearch.php" target="_blank">优惠查询：银行卡最新优惠活动推荐
+</a></dd>
+</dl>
+<dl class="clearfix">
+<dt>理财产品</dt>
+<dd><a href="http://money.finance.sina.com.cn/bank/mall/financingMore.php?type=2" target="_blank">外币理财</a>|<a href="http://money.finance.sina.com.cn/bank/mall/financingMore.php?type=1" target="_blank">人民币理财</a>|<a href="http://supports.house.sina.com.cn/fangdai/vote_market_search.php?bank=" target="_blank">房贷理财产品</a>|<a href="http://money.finance.sina.com.cn/bank/mall/cardList.php?searchType=card&amp;bid=-1&amp;cmax=-1&amp;fmin=-1&amp;key=" target="_blank">信用卡</a></dd>
+</dl>
+<dl class="clearfix">
+<dt>银行</dt>
+<dd style="width: 170px;"><a href="http://money.finance.sina.com.cn/bank/mall/" target="_blank">光大银行</a>|<a href="http://money.finance.sina.com.cn/bank/mall/financingList.php?searchType=financing&amp;bid=1&amp;bz=-1&amp;yield=-1&amp;key=" target="_blank">中信银行</a>|<a href="http://money.finance.sina.com.cn/bank/mall/financingList.php?searchType=financing&amp;bid=18&amp;bz=-1&amp;yield=-1&amp;key=" target="_blank">邮储银行</a></dd>
+</dl>
+</div>
+<div style="margin-right:0;" class="zcblks1">
+<dl class="clearfix">
+<dt>热门关注</dt>
+<dd><a href="http://client.sina.com.cn/zt/kingold999/" target="_blank">新品推荐：故宫五福金碗 福运万代相传</a></dd>
+</dl>
+<dl class="clearfix">
+<dt>收藏金</dt>
+<dd><a href="http://kingold999.mall.sina.com.cn/sproduct-2963188.html" target="_blank">金银算盘系列</a>|<a href="http://kingold999.mall.sina.com.cn/sproduct-2965442.html" target="_blank">金银纪念章</a>|<a href="http://mall.sina.com.cn/product-2959799.html" target="_blank">世代富余金条</a></dd>
+</dl>
+<dl class="clearfix">
+<dt>黄金公司</dt>
+<dd><a href="#" target="_blank"> </a></dd>
+</dl>
+</div>
+</div>
+</div>
+
+<!-- zcpart1 begin --><div class="zcpart1 clearfix">
+<div class="zcleft">
+
+<!-- left begin --><div class="zcblk02">
+<div class="zccont">
+<style type="text/css"> 
+				/* 焦点图 */
+				.FocusImg{position:relative;}
+				.FocusImg .BigPic{text-align:center;height:290px;width:488px;overflow:hidden;}
+				.FocusImg .BigPic img{ position:absolute !important;width:476px;height:278px;border:1px solid #90590a;left:10px !important;top:10px !important;}
+				.FocusImg .TitleBg{position:absolute;height:77px;width:476px;left:11px;top:212px;background:#000;filter:Alpha(Opacity=58);opacity:0.58;z-index:10;}
+				.FocusImg .TitleBox{position:absolute;padding-left:15px;height:23px;line-height:23px;left:11px;top:222px;font-weight:bold;z-index:20;}
+				.FocusImg .TitleBox a {color:#fadf46;font-size:16px;}
+				.MemoBox{position:absolute;padding-left:15px;top:248px;left:11px;height:18px;line-height:18px;color:#fff;z-index:20;width:430px; }
+				.FocusImg a:link,.FocusImg a:visited{text-decoration:none;color:#fadf46;}
+				.FocusImg a:hover{color:#f00;text-decoration:underline;}
+				.SmallPics{position:absolute;right:10px;top:11px;overflow:hidden;width:116px; }
+				.SmallPics span{width:116px;height:64px;margin-bottom:7px;display:block;overflow:hidden;   }
+				.SmallPics span img{width:106px;height:62px;border:1px solid #90590a;margin-left:8px;}
+				.SmallPics span.selected{background:url(http://i3.sinaimg.cn/cj/jrelt2011/images/elt_wzc06.png) no-repeat left center; }
+				.SmallPics span.selected img{border:0;width:95px;height:50px;padding:6px;}
+				</style>
+
+<!-- 焦点图 begin --><div class="FocusImg">
+<div class="BigPic" id="BigPic_01"><a href="http://client.sina.com.cn/zt/kingold999/" target="_blank"><img src="http://i2.sinaimg.cn/cj/money/idx/2011/0428/U5710P31T763D1F21492DT20110428155115.jpg" style="FILTER: revealTrans(duration=1,transition=23);" galleryimg="no" alt="故宫五福金碗 福运万代相传"></a></div>
+<div class="TitleBg"></div>
+<div class="TitleBox" id="TitleBox_01"></div>
+<div class="MemoBox" id="MemoBox_01"></div>
+<div class="SmallPics" id="SmallPics_01"><!-- 小图列表 --></div>
+</div>
+<script type="text/javascript" language="javascript"> 
+				<!--//--><![CDATA[/ /><!--
+					var FocusPic_01 = new FocusPic("BigPic_01","SmallPics_01","TitleBox_01","MemoBox_01");
+
+FocusPic_01.Add('http://i0.sinaimg.cn/cj/money/idx/2012/0507/U5710P31T763D1F21504DT20120507175201.jpg','http://i1.sinaimg.cn/cj/money/idx/2012/0507/U5710P31T763D1F21504DT20120507175201_w106.jpg',"http://finance.sina.com.cn/money/mall/insurance/tkse.shtml","孩子的保险你买对了吗？","");
+
+FocusPic_01.Add('http://i0.sinaimg.cn/cj/money/idx/2012/0220/U5710P31T763D1F21500DT20120220134628.jpg','http://i1.sinaimg.cn/cj/money/idx/2012/0220/U5710P31T763D1F21500DT20120220134628_w106.jpg',"http://finance.sina.com.cn/money/mall/insurance/tkelc5.shtml","8年11倍收益 停售账户重开销售","");
+
+FocusPic_01.Add('http://i1.sinaimg.cn/cj/money/idx/2012/0412/U5710P31T763D1F21496DT20120412154614.jpg','http://i2.sinaimg.cn/cj/money/idx/2012/0412/U5710P31T763D1F21496DT20120412154614_w106.jpg',"http://finance.sina.com.cn/money/mall/insurance/tkqslc.shtml","轻松理财 惬意生活","");
+
+FocusPic_01.Add('http://i2.sinaimg.cn/cj/money/idx/2011/0428/U5710P31T763D1F21492DT20110428155115.jpg','http://i3.sinaimg.cn/cj/money/idx/2011/0428/U5710P31T763D1F21492DT20110428155115_w106.jpg',"http://client.sina.com.cn/zt/kingold999/","故宫五福金碗 福运万代相传","");
+
+					FocusPic_01.begin();
+					//--><!]]>
+				</script>
+
+<!-- 焦点图 end --></div>
+</div>
+
+<!-- left end --></div>
+<div class="zcright">
+
+<!-- right begin --><div class="zcblk03">
+<div class="zccont">
+<div class="zcblk">
+<h1><a href="http://finance.sina.com.cn/focus/flwdbp/" target="_blank">《福禄万代宝瓶》介绍</a></h1>
+<p>2009年，北京瀚海秋拍宫廷御用瓷器专场，一件名为“清乾隆青花海水红彩龙纹八吉祥如意耳葫芦瓶”震惊世界。8344 万元天价拍出，创下当时“清三代”瓷器拍卖最高价！为传承文化精品，弘扬艺术黄金文化，北京故宫联合国金黄金集团，费尽心血，终让这款乾隆皇帝生前最爱的瓷器，以999 纯金得以再现。<a href="http://finance.sina.com.cn/focus/flwdbp/" target="_blank">[详细]</a></p>
+</div>
+<ul class="zclist lh24 fs14">
+<li><a href="http://client.sina.com.cn/zt/kingold999/" target="_blank">故宫五福金碗 福运万代相传</a></li>
+<li><a href="http://finance.sina.com.cn/money/mall/insurance/tknxzj.shtml" target="_blank">花样女人别样关爱：女性疾病保险推荐</a></li>
+<li><a href="http://finance.sina.com.cn/insurance/mall/chunyou4c2010china/" target="_blank">平安国内旅游意外险4折特惠</a></li>
+<li><a href="http://finance.sina.com.cn/insurance/mall/licaitsdchina/" target="_blank">泰康e理财万能险女性定投计划</a></li>
+<li><a href="http://finance.sina.com.cn/insurance/mall/babylovechina/" target="_blank">泰康e顺少儿重大疾病险</a></li>
+<li><a href="http://finance.sina.com.cn/insurance/mall/qianzbchina/" target="_blank">境外出行选 e顺签证宝旅行保障计划</a></li>
+</ul>
+</div>
+</div>
+
+<!-- right end --></div>
+</div>
+
+<!-- zcpart1 end --><div class="zcblk04">
+<div class="zctit2 clearfix">
+<h2><a href="http://money.finance.sina.com.cn/insurance/mall/" target="_blank">保险专区</a></h2>
+</div>
+<div class="zccont clearfix">
+<ul class="list1">
+<li class="top3"><a href="http://money.finance.sina.com.cn/insurance/mall/vInsProdDetail.php?pid=10047" target="_blank">e理财投资连结保险</a></li>
+<li class="top3"><a href="http://money.finance.sina.com.cn/insurance/mall/vInsProdDetail.php?pid=10117" target="_blank">e顺交通意外保障计划</a></li>
+<li style="margin-bottom:11px;" class="top3"><a href="http://money.finance.sina.com.cn/insurance/mall/vInsProdDetail.php?pid=10046" target="_blank">爱相随定期寿险</a></li>
+<li><a href="http://money.finance.sina.com.cn/insurance/mall/vInsProdDetail.php?pid=1074" target="_blank">“和谐阳光”家庭意外伤害综合保险  </a></li>
+<li><a href="http://money.finance.sina.com.cn/insurance/mall/vInsProdDetail.php?pid=10075" target="_blank">平安福佑天年卡</a></li>
+<li><a href="http://money.finance.sina.com.cn/insurance/mall/vInsProdDetail.php?pid=10070" target="_blank">平安祈福-守护天使卡</a></li>
+<li><a href="http://money.finance.sina.com.cn/insurance/mall/vInsProdDetail.php?pid=10118" target="_blank">泰康航空意外保险</a></li>
+<li><a href="http://money.finance.sina.com.cn/insurance/mall/vInsProdDetail.php?pid=10067" target="_blank">中国平安交通意外保险</a></li>
+</ul>
+<div class="zcblks2 clearfix">
+<div class="zcbox clearfix">
+<a href="http://money.finance.sina.com.cn/insurance/mall/vInsProdDetail.php?pid=10047" target="_blank" class="zcimg aPd2">
+<img width="90" alt="e理财投资连结保险" src="http://i1.sinaimg.cn/cj/imgtable/idx/2011/0425/U5710P31T88D28706F2012DT20110425142303.jpg" title="" height="60">
+</a>
+<h3 class="zch"><a href="http://money.finance.sina.com.cn/insurance/mall/vInsProdDetail.php?pid=10047" target="_blank">e理财投资连结保险 </a></h3>
+<p class="zcwords">风险承受能力较高的，希望能得到投资+保障的客户购买。 <a href="http://money.finance.sina.com.cn/insurance/mall/vInsProdDetail.php?pid=10047" target="_blank">[详情]</a></p>
+</div>
+<div class="zcbox clearfix">
+<a href="http://money.finance.sina.com.cn/insurance/mall/vInsProdDetail.php?pid=10080" target="_blank" class="zcimg aPd2">
+<img width="90" alt="平安网销车险" src="http://i3.sinaimg.cn/cj/U5710P31T88D28706F2013DT20110425142714.jpg" title="" height="60">
+</a>
+<h3 class="zch"><a href="http://money.finance.sina.com.cn/insurance/mall/vInsProdDetail.php?pid=10080" target="_blank">平安网销车险</a></h3>
+<p class="zcwords">私家车商业险多省15%！现在体验更有油卡连环抽！有省有赚！ <a href="http://money.finance.sina.com.cn/insurance/mall/vInsProdDetail.php?pid=10080" target="_blank">[详情]</a></p>
+</div>
+</div>
+<div class="zcblks2 clearfix">
+<div class="zcbox clearfix">
+<a href="http://money.finance.sina.com.cn/insurance/mall/vInsProdDetail.php?pid=10118" target="_blank" class="zcimg aPd2">
+<img width="90" alt="泰康航空意外保险" src="http://i3.sinaimg.cn/cj/U5710P31T88D28706F2015DT20110425143148.jpg" title="" height="60">
+</a>
+<h3 class="zch"><a href="http://money.finance.sina.com.cn/insurance/mall/vInsProdDetail.php?pid=10118" target="_blank">泰康航空意外保险</a></h3>
+<p class="zcwords">随走随买，简单高保障。适合乘坐飞机出行的人群。 <a href="http://money.finance.sina.com.cn/insurance/mall/vInsProdDetail.php?pid=10118" target="_blank">[详情]</a></p>
+</div>
+<div class="zcbox clearfix">
+<a href="http://money.finance.sina.com.cn/insurance/mall/vInsProdDetail.php?pid=1074" target="_blank" class="zcimg aPd2">
+<img width="90" alt="家庭意外伤害综合保险" src="http://i1.sinaimg.cn/cj/U5710P31T88D28706F2016DT20110425143752.jpg" title="" height="60">
+</a>
+<h3 class="zch"><a href="http://money.finance.sina.com.cn/insurance/mall/vInsProdDetail.php?pid=1074" target="_blank">家庭意外伤害综合保险</a></h3>
+<p class="zcwords">适合保障乘坐营运交通工具外出旅游的四人家庭。 <a href="http://money.finance.sina.com.cn/insurance/mall/vInsProdDetail.php?pid=1074" target="_blank">[详情]</a></p>
+</div>
+</div>
+<div class="zcblks2 clearfix noBg">
+<div class="zcbox clearfix">
+<a href="http://money.finance.sina.com.cn/insurance/mall/vInsProdDetail.php?pid=10046" target="_blank" class="zcimg aPd2">
+<img width="90" alt="爱相随定期寿险" src="http://i3.sinaimg.cn/cj/U5710P31T88D28706F2018DT20110425144319.jpg" title="" height="60">
+</a>
+<h3 class="zch"><a href="http://money.finance.sina.com.cn/insurance/mall/vInsProdDetail.php?pid=10046" target="_blank">爱相随定期寿险</a></h3>
+<p class="zcwords">适合家庭支柱，具有较强家庭责任感的中青年人群。 <a href="http://money.finance.sina.com.cn/insurance/mall/vInsProdDetail.php?pid=10046" target="_blank">[详情]</a></p>
+</div>
+<div class="zcbox clearfix">
+<a href="http://money.finance.sina.com.cn/insurance/mall/vInsProdDetail.php?pid=10075" target="_blank" class="zcimg aPd2">
+<img width="90" alt="平安福佑天年卡" src="http://i3.sinaimg.cn/cj/U5710P31T88D28706F2019DT20110425145601.jpg" title="" height="60">
+</a>
+<h3 class="zch"><a href="http://money.finance.sina.com.cn/insurance/mall/vInsProdDetail.php?pid=10075" target="_blank">平安福佑天年卡</a></h3>
+<p class="zcwords">投保年龄最高达80岁，照顾得不到有效保障的高龄人群。 <a href="http://money.finance.sina.com.cn/insurance/mall/vInsProdDetail.php?pid=10075" target="_blank">[详情]</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="zcblk04 zcblk05 zcblk06">
+<div class="zctit2 clearfix">
+<h2><a href="http://finance.sina.com.cn/fund/supermall/fundmall.html" target="_blank">基金专区</a></h2>
+</div>
+<div class="zccont clearfix">
+<ul class="list1">
+<li class="top3"><a href="http://finance.sina.com.cn/fund/quotes/of481001/bc.shtml" target="_blank">工银核心价值股票</a></li>
+<li class="top3"><a href="http://finance.sina.com.cn/fund/quotes/of519001/bc.shtml" target="_blank">银华价值优选股票</a></li>
+<li style="margin-bottom:11px;" class="top3"><a href="http://finance.sina.com.cn/fund/quotes/of519690/bc.shtml" target="_blank">交银稳健配置混合</a></li>
+<li><a href="http://finance.sina.com.cn/fund/quotes/of110003/bc.shtml" target="_blank">易方达上证50指数</a></li>
+<li><a href="http://finance.sina.com.cn/fund/quotes/of159902/bc.shtml" target="_blank">华夏中小板ETF</a></li>
+<li><a href="http://finance.sina.com.cn/fund/quotes/of519688/bc.shtml" target="_blank">交银精选</a></li>
+<li><a href="http://finance.sina.com.cn/fund/quotes/of180012/bc.shtml" target="_blank">银华富裕</a></li>
+<li><a href="http://finance.sina.com.cn/fund/quotes/of160105/bc.shtml" target="_blank">南方积极配置股票</a></li>
+</ul>
+<div class="zcblks2 clearfix">
+<div class="zcbox clearfix">
+<a href="http://finance.sina.com.cn/fund/quotes/of160119/bc.shtml" target="_blank" class="zcimg aPd2">
+<img width="90" alt="南方500(LOF)" src="http://i2.sinaimg.cn/cj/U5710P31T88D28706F2020DT20110425152741.jpg" title="" height="60">
+</a>
+<h3 class="zch"><a href="http://finance.sina.com.cn/fund/quotes/of160119/bc.shtml" target="_blank">南方500(LOF)</a></h3>
+<p class="zcwords">基金经理毕业于密歇根大学获硕士学位，有扎实研究经验。 <a href="http://finance.sina.com.cn/fund/quotes/of160119/bc.shtml" target="_blank">[详情]</a></p>
+</div>
+<div class="zcbox clearfix">
+<a href="http://finance.sina.com.cn/fund/quotes/of160719/bc.shtml" target="_blank" class="zcimg aPd2">
+<img width="90" alt="嘉实黄金" src="http://i3.sinaimg.cn/cj/U5710P31T88D28706F2021DT20110425152741.jpg" title="" height="60">
+</a>
+<h3 class="zch"><a href="http://finance.sina.com.cn/fund/quotes/of160719/bc.shtml" target="_blank">嘉实黄金</a></h3>
+<p class="zcwords">投资黄金ETF，让您变个方式屯黄金。 <a href="http://finance.sina.com.cn/fund/quotes/of160719/bc.shtml" target="_blank">[详情]</a></p>
+</div>
+<div class="zcbox clearfix noBg">
+<a href="http://finance.sina.com.cn/fund/quotes/of519692/bc.shtml" target="_blank" class="zcimg aPd2">
+<img width="90" alt="交银成长股票" src="http://i0.sinaimg.cn/cj/U5710P31T88D28706F2022DT20110425152741.jpg" title="" height="60">
+</a>
+<h3 class="zch"><a href="http://finance.sina.com.cn/fund/quotes/of519692/bc.shtml" target="_blank">交银成长股票</a></h3>
+<p class="zcwords">投资风格比较稳健，风险控制能力较好。 <a href="http://finance.sina.com.cn/fund/quotes/of519692/bc.shtml" target="_blank">[详情]</a></p>
+</div>
+</div>
+<div class="blkRight">
+<h3>基金客服在线</h3>
+<p class="zcas clearfix"><a href="javascript:void(0);" target="_blank" onclick="window.open('http://finance.sina.com.cn/iframe/fund/fundchat.shtml?id=1888001&amp;name=' + encodeURIComponent('南方基金在线客服') ,'',
+'width=602,height=402');return false;" title="南方基金管理有限公司">南方基金</a>
+<a href="javascript:void(0);" target="_blank" onclick="window.open('http://finance.sina.com.cn/iframe/fund/fundchat.shtml?id=1888003&amp;name=' + encodeURIComponent('交银施罗德在线客服') ,'',
+'width=602,height=402');return false;" title="交银施罗德基金管理有限公司">交银施罗德基金</a>
+<a href="javascript:void(0);" target="_blank" onclick="window.open('http://finance.sina.com.cn/iframe/fund/fundchat.shtml?id=1888004&amp;name=' + encodeURIComponent('上投摩根基金在线客服') ,'',
+'width=602,height=402');return false;" title="上投摩根基金管理有限公司">上投摩根基金</a>
+<a href="javascript:void(0);" target="_blank" onclick="window.open('http://finance.sina.com.cn/iframe/fund/fundchat.shtml?id=1888005&amp;name=' + encodeURIComponent('银华基金在线客服') ,'',
+'width=602,height=402');return false;" title="银华基金管理有限公司">银华基金</a>
+<a href="javascript:void(0);" target="_blank" onclick="window.open('http://finance.sina.com.cn/iframe/fund/fundchat.shtml?id=1888006&amp;name=' + encodeURIComponent('工银瑞信基金在线客服') ,'',
+'width=602,height=402');return false;" title="工银瑞信基金管理有限公司">工银瑞信基金</a>
+<a href="javascript:void(0);" target="_blank" onclick="window.open('http://finance.sina.com.cn/iframe/fund/fundchat.shtml?id=1888007&amp;name=' + encodeURIComponent('汇添富基金在线客服') ,'',
+'width=602,height=402');return false;" title="汇添富基金管理有限公司">汇添富基金</a>
+<a href="javascript:void(0);" target="_blank" onclick="window.open('http://finance.sina.com.cn/iframe/fund/fundchat.shtml?id=1888008&amp;name=' + encodeURIComponent('博时基金在线客服') ,'',
+'width=602,height=402');return false;" title="博时基金管理有限公司">博时基金</a>
+<a href="javascript:void(0);" target="_blank" onclick="window.open('http://finance.sina.com.cn/iframe/fund/fundchat.shtml?id=1888009&amp;name=' + encodeURIComponent('嘉实基金在线客服') ,'',
+'width=602,height=402');return false;" title="嘉实基金管理有限公司">嘉实基金</a>
+<a style="color:#FF6600;display:inline;margin-right:5px;" href="http://finance.sina.com.cn/fund/online/#yfd" target="_blank">更多&gt;&gt;</a></p>
+<ul class="clearfix">
+<li><a href="http://finance.sina.com.cn/fund/openfund_daily.html" target="_blank">基金净值快递</a></li>
+<li><a href="http://money.finance.sina.com.cn/fund/view/vFundRating_BaseInfo.php?rating_type=cx&amp;sort_key=starRating2y&amp;cx_type=gp&amp;sort_order=1" target="_blank">基金评级大全</a></li>
+<li><a href="http://money.finance.sina.com.cn/fund/view/vFR_Quotes_Contain_Title.php" target="_blank">开基净值预测</a></li>
+<li><a href="http://finance.sina.com.cn/fund/fund_ranks/open/netvalue_return0_0.html" target="_blank">基金收益率一览</a></li>
+<li><a href="http://money.finance.sina.com.cn/fund/view/vFundFilter_Search.php" target="_blank">基金筛选器</a></li>
+<li><a href="http://biz.finance.sina.com.cn/radar/?orderby=payoffone&amp;order=DESC" target="_blank">基金雷达测评</a></li>
+<li><a href="http://finance.sina.com.cn/fund/fund_ranks/open/netvalue_return0_0.html" target="_blank">基金回报排行</a></li>
+<li><a href="http://finance.sina.com.cn/fund/fund_ranks/open/sharebonus_compare0_0.html" target="_blank">基金分红排行</a></li>
+</ul>
+<p class="zctime">在线时间：9：00至21：00(周一至周五)</p>
+</div>
+</div>
+</div>
+<div class="zcblk04 zcblk05">
+<div class="zctit2 clearfix">
+<h2><a href="http://money.finance.sina.com.cn/bank/mall/" target="_blank">银行专区</a></h2>
+</div>
+<div class="zccont clearfix">
+<ul class="list1">
+<li class="top3"><a href="http://money.finance.sina.com.cn/bank/mall/financingDetail.php?id=10732" target="_blank">阳光理财活期宝现金管理类人民币理财产品 </a></li>
+<li class="top3"><a href="http://money.finance.sina.com.cn/bank/mall/financingDetail.php?id=78896" target="_blank">中信理财快车A计划78号人民币7天产品</a></li>
+<li style="margin-bottom:11px;" class="top3"><a href="http://money.finance.sina.com.cn/bank/mall/financingDetail.php?id=78458" target="_blank">财富债券2011年第2期人民币71天产品</a></li>
+<li><a href="http://money.finance.sina.com.cn/bank/mall/financingDetail.php?id=78474" target="_blank">中信理财之假日赢1105期利率挂钩人民币8天产品</a></li>
+<li><a href="http://money.finance.sina.com.cn/bank/mall/financingDetail.php?id=78472" target="_blank">中信理财之优债计划63期人民币10天产品</a></li>
+<li><a href="http://money.finance.sina.com.cn/bank/mall/financingDetail.php?id=78389" target="_blank">中信理财之债赢二十六期人民币48天产品</a></li>
+<li><a href="http://money.finance.sina.com.cn/bank/mall/financingDetail.php?id=79043" target="_blank">工银财富专属人民币理财产品365天</a></li>
+<li><a href="http://money.finance.sina.com.cn/bank/mall/financingDetail.php?id=79088" target="_blank">乾元日新鑫月异溢2011人民币理财12天</a></li>
+</ul>
+<div class="zcblks2 clearfix">
+<div class="zcbox clearfix">
+<a href="http://money.finance.sina.com.cn/creditcard/view/vCardinfo.php?id=709" target="_blank" class="zcimg aPd2">
+<img width="90" alt="建行My Love卡" src="http://i2.sinaimg.cn/cj/imgtable/idx/2011/0425/U5710P31T88D28707F2012DT20110425153543.jpg" title="" height="60">
+</a>
+<h3 class="zch"><a href="http://money.finance.sina.com.cn/creditcard/view/vCardinfo.php?id=709" target="_blank">建行My Love卡</a></h3>
+<p class="zcwords">客户可通过网站个性化信用卡（My Love信用卡）频道上传、编辑个人所属的照片 <a href="http://money.finance.sina.com.cn/creditcard/view/vCardinfo.php?id=709" target="_blank">[详情]</a></p>
+</div>
+<div class="zcbox clearfix">
+<a href="http://money.finance.sina.com.cn/creditcard/view/vCardinfo.php?id=982" target="_blank" class="zcimg aPd2">
+<img width="90" alt="民生女人花VISA异型卡" src="http://i3.sinaimg.cn/cj/imgtable/idx/2011/0425/U5710P31T88D28707F2013DT20110425153543.jpg" title="" height="60">
+</a>
+<h3 class="zch"><a href="http://money.finance.sina.com.cn/creditcard/view/vCardinfo.php?id=982" target="_blank">民生女人花VISA异型卡</a></h3>
+<p class="zcwords">结合时尚生活元素融入信用卡，女人花信用卡从此完美绽放。 <a href="http://money.finance.sina.com.cn/creditcard/view/vCardinfo.php?id=982" target="_blank">[详情]</a></p>
+</div>
+<div class="zcbox clearfix noBg">
+<a href="http://money.finance.sina.com.cn/creditcard/view/vCardinfo.php?id=938" target="_blank" class="zcimg aPd2">
+<img width="90" alt="中银长城国际港澳自由行卡" src="http://i0.sinaimg.cn/cj/imgtable/idx/2011/0425/U5710P31T88D28707F2014DT20110425153543.jpg" title="" height="60">
+</a>
+<h3 class="zch"><a href="http://money.finance.sina.com.cn/creditcard/view/vCardinfo.php?id=938" target="_blank">中银长城国际港澳自由行卡</a></h3>
+<p class="zcwords">中银长城国际港澳自由行卡为中银长城国际卡特色主题产品。 <a href="http://money.finance.sina.com.cn/creditcard/view/vCardinfo.php?id=938" target="_blank">[详情]</a></p>
+</div>
+</div>
+<ul class="zclist">
+<li><a href="http://finance.sina.com.cn/money/bank/ywycp/20120518/101712095245.shtml" target="_blank">工行总行叫停拉卡拉还款 不满对方违规玩花样</a></li><li><a href="http://finance.sina.com.cn/money/bank/ywycp/20120518/094012094878.shtml" target="_blank">高端理财品门槛高 投资客抱团分蛋糕</a></li><li><a href="http://finance.sina.com.cn/money/bank/ywycp/20120518/024912092288.shtml" target="_blank">银行创新委托债权投资类理财品 应对利率市场化</a></li><li><a href="http://finance.sina.com.cn/money/bank/ywycp/20120517/164912089218.shtml" target="_blank">银行高息揽存一千万存一天付8万利息</a></li><li><a href="http://finance.sina.com.cn/money/bank/ywycp/20120517/111012086384.shtml" target="_blank">二季度银行理财产品收益或小升</a></li><li><a href="http://finance.sina.com.cn/money/bank/ywycp/20120517/103712086017.shtml" target="_blank">银行理财品预期收益下降 投资宜选中长期产品</a></li><li><a href="http://finance.sina.com.cn/money/bank/ywycp/20120517/023512082516.shtml" target="_blank">银行理财产品入表变身存款 利率市场化潜行</a></li><li><a href="http://finance.sina.com.cn/money/bank/ywycp/20120516/103912076453.shtml" target="_blank">小投资客团购高门槛理财品 业内建议谨慎操作</a></li><li><a href="http://finance.sina.com.cn/money/bank/ywycp/20120516/101512076233.shtml" target="_blank">渣打客户理财12万亏成5万 称被威胁拉进黑名单</a></li><li><a href="http://finance.sina.com.cn/money/bank/ywycp/20120516/085212075224.shtml" target="_blank">首套房贷8.5折利率若隐若现 银行按揭政策藏变</a></li><li><a href="http://finance.sina.com.cn/money/bank/ywycp/20120516/022012072988.shtml" target="_blank">收益率下降影响竞争力 银行力推保本型理财产品</a></li><li><a href="http://finance.sina.com.cn/money/bank/ywycp/20120515/100812066669.shtml" target="_blank">广州大型银行对优质客户按揭贷款再推8.5折优惠</a></li><li><a href="http://finance.sina.com.cn/money/bank/ywycp/20120515/073412064879.shtml" target="_blank">渣打理财为何赔得那么狠 风控薄弱暴露管理弊端</a></li>
+</ul>
+</div>
+</div>
+<div class="zcblk04">
+<div class="zctit2 clearfix">
+</div>
+<div class="zccont clearfix">
+<ul class="list1">
+</ul>
+</div>
+</div>
+
+
+<!-- main end --><!-- footer begin --><div id="footer"> 
+	　客户服务热线：95105670　4006900000　欢迎批评指正<br>
+<a href="http://tech.sina.com.cn/focus/sinahelp.shtml" target="_blank">常见问题解答</a> <a href="http://net.china.cn/chinese/index.htm" target="_blank">互联网违法和不良信息举报</a>　<a href="/guest.html" target="_blank">新浪财经意见反馈留言板</a><br><br><a href="http://corp.sina.com.cn/chn/">新浪简介</a> | <a href="http://corp.sina.com.cn/eng/">About Sina</a> | <a href="http://emarketing.sina.com.cn/">广告服务</a> | <a href="http://www.sina.com.cn/contactus.html">联系我们</a> | <a href="http://corp.sina.com.cn/chn/sina_job.html">招聘信息</a> | <a href="http://www.sina.com.cn/intro/lawfirm.shtml">网站律师</a> | <a href="http://english.sina.com">SINA English</a> | <a href="http://members.sina.com.cn/apply/">会员注册</a> | <a href="http://tech.sina.com.cn/focus/sinahelp.shtml">产品答疑</a><br><br>Copyright © 1996-2012 SINA Corporation, All Rights Reserved<br><br>新浪公司　<a href="http://home.sina.com.cn/intro/copyright.shtml" target="_blank">版权所有</a>
+</div>
+
+<!-- footer end --></div>
+
+<!-- SSO_UPDATECOOKIE_START --><script type="text/javascript">var sinaSSOManager=sinaSSOManager||{};sinaSSOManager.q=function(b){if(typeof b!="object"){return""}var a=new Array();for(key in b){a.push(key+"="+encodeURIComponent(b[key]))}return a.join("&")};sinaSSOManager.es=function(f,d,e){var c=document.getElementsByTagName("head")[0];var a=document.getElementById(f);if(a){c.removeChild(a)}var b=document.createElement("script");if(e){b.charset=e}else{b.charset="gb2312"}b.id=f;b.type="text/javascript";d+=(/\?/.test(d)?"&":"?")+"_="+(new Date()).getTime();b.src=d;c.appendChild(b)};sinaSSOManager.doCrossDomainCallBack=function(a){sinaSSOManager.crossDomainCounter++;document.getElementsByTagName("head")[0].removeChild(document.getElementById(a.scriptId))};sinaSSOManager.crossDomainCallBack=function(a){if(!a||a.retcode!=0){return false}var d=a.arrURL;var b,f;var e={callback:"sinaSSOManager.doCrossDomainCallBack"};sinaSSOManager.crossDomainCounter=0;if(d.length==0){return true}for(var c=0;c<d.length;c++){b=d[c];f="ssoscript"+c;e.scriptId=f;b=b+(/\?/.test(b)?"&":"?")+sinaSSOManager.q(e);sinaSSOManager.es(f,b)}};sinaSSOManager.updateCookieCallBack=function(c){var d="ssoCrossDomainScriptId";var a="http://login.sina.com.cn/sso/crossdomain.php";if(c.retcode==0){var e={scriptId:d,callback:"sinaSSOManager.crossDomainCallBack",action:"login",domain:"sina.com.cn"};var b=a+"?"+sinaSSOManager.q(e);sinaSSOManager.es(d,b)}else{}};sinaSSOManager.updateCookie=function(){var g=1800;var p=7200;var b="ssoLoginScript";var h=3600*24;var i="sina.com.cn";var m=1800;var l="http://login.sina.com.cn/sso/updatetgt.php";var n=null;var f=function(e){var r=null;var q=null;switch(e){case"sina.com.cn":q=sinaSSOManager.getSinaCookie();if(q){r=q.et}break;case"sina.cn":q=sinaSSOManager.getSinaCookie();if(q){r=q.et}break;case"51uc.com":q=sinaSSOManager.getSinaCookie();if(q){r=q.et}break}return r};var j=function(){try{return f(i)}catch(e){return null}};try{if(g>5){if(n!=null){clearTimeout(n)}n=setTimeout("sinaSSOManager.updateCookie()",g*1000)}var d=j();var c=(new Date()).getTime()/1000;var o={};if(d==null){o={retcode:6102}}else{if(d<c){o={retcode:6203}}else{if(d-h+m>c){o={retcode:6110}}else{if(d-c>p){o={retcode:6111}}}}}if(o.retcode!==undefined){return false}var a=l+"?callback=sinaSSOManager.updateCookieCallBack";sinaSSOManager.es(b,a)}catch(k){}return true};sinaSSOManager.updateCookie();</script>
+
+
+<!-- SSO_UPDATECOOKIE_END --><!-- Start  Wrating  --><script language="javascript"> 
+var wrUrl="//sina.wrating.com/";var wrDomain="sina.com.cn";var wratingDefaultAcc="860010-0323010000";var wratingAccArray={"torch.2008.sina.com.cn":"860010-0308070000","video.sina.com.cn":"860010-0309010000","cctv.sina.com.cn":"860010-0309020000","chat.sina.com.cn":"860010-0311010000","ent.sina.com.cn":"860010-0312010000","tech.sina.com.cn":"860010-0313010000","mobile.sina.com.cn":"860010-0313020000","house.sina.com.cn":"860010-0315010000","bj.house.sina.com.cn":"860010-0315020000","auto.sina.com.cn":"860010-0316010000","eladies.sina.com.cn":"860010-0317010000","bj.sina.com.cn":"860010-0317020000","woman.sina.com.cn":"860010-0317010000","women.sina.com.cn":"860010-0317010000","lady.sina.com.cn":"860010-0317010000","man.eladies.sina.com.cn":"860010-0317030000","games.sina.com.cn":"860010-0318010000","game.sina.com.cn":"860010-0318010000","edu.sina.com.cn":"860010-0307010000","baby.sina.com.cn":"860010-0320010000","kid.sina.com.cn":"860010-0320020000","astro.sina.com.cn":"860010-0321020000","news.sina.com.cn":"860010-0310010000","weather.news.sina.com.cn":"860010-0310020000","mil.news.sina.com.cn":"860010-0310030000","www.sina.com.cn":"860010-0322010000","home.sina.com.cn":"860010-0322010000","sports.sina.com.cn":"860010-0308010000","shidefc.sina.com.cn":"860010-0308020000","weiqi.sina.com.cn":"860010-0308030000","f1.sina.com.cn":"860010-0308040000","golf.sina.com.cn":"860010-0308050000","2002.sina.com.cn":"860010-0308060000","2004.sina.com.cn":"860010-0308060000","2006.sina.com.cn":"860010-0308060000","2008.sina.com.cn":"860010-0308070000","yayun2002.sina.com.cn":"860010-0308060000","yayun2006.sina.com.cn":"860010-0308060000","inter.sina.com.cn":"860010-0308080000","chelsea.sina.com.cn":"860010-0308090000","book.sina.com.cn":"860010-0319010000","cul.book.sina.com.cn":"860010-0319020000","comic.book.sina.com.cn":"860010-0319030000","finance.sina.com.cn":"860010-0314010000","money.sina.com.cn":"860010-0314020000","yue.sina.com.cn":"860010-0324010000","www.sina.com":"860010-0322010000"};function vjTrack(){var U=1800;var T=false;var S=false;var R="";var Q="0";var P="";var N;var L;var K;var J;var I;var H="expires=Fri, 1 Jan 2038 00:00:00 GMT;";var G=0;if(document.location.protocol=="file:"){return }T=navigator.cookieEnabled?"1":"0";S=navigator.javaEnabled()?"1":"0";var F="0";var E;var C=-1;var D=document.cookie;if(T=="1"){C=D.indexOf("vjuids=");if(C<0){E=vjVisitorID();document.cookie="vjuids="+escape(E)+";"+H+";domain="+wrDomain+";path=/;";if(document.cookie.indexOf("vjuids=")<0){T="0"}else{Q="1"}}else{E=vjGetCookie("vjuids")}}L=document.referrer;if(!L||L==""){L=""}R=vjFlash();if(self.screen){N=screen.width+"x"+screen.height+"x"+screen.colorDepth}else{if(self.java){var M=java.awt.Toolkit.getDefaultToolkit();var O=M.getScreenSize();N=O.width+"x"+O.height+"x0"}}if(navigator.language){K=navigator.language.toLowerCase()}else{if(navigator.browserLanguage){K=navigator.browserLanguage.toLowerCase()}else{K="-"}}I="";var B;var X;X=new Date();J=X.getTimezoneOffset()/-60;J=X.getTimezoneOffset()/-60;B="&s="+N+"&l="+K+"&z="+J+"&j="+S+"&f="+R;if(T=="1"){C=document.cookie.indexOf("vjlast=");if(C<0){G=0}else{G=parseInt(vjGetCookie("vjlast"))}}if((X.getTime()/1000)-G>U){F="1";document.cookie="vjlast="+Math.round(X.getTime()/1000)+";"+H+";domain="+wrDomain+";path=/;"}if(L!=""){B=B+"&r="+escape(L)}if(F!="0"){B=B+"&n="+G}if(Q!="0"){B=B+"&u="+Q}var V;var A=vjGetAcc();var W=vjGetDomain();V=wrUrl+"a.gif?a="+X.getTime().toString(16)+"&t="+escape(I)+"&i="+escape(E)+"&b="+escape(document.location)+"&c="+A+B+"&ck="+W;document.write('<img src="'+V+'" width="1" height="1" style="visibility:hidden;position:absolute;left:0px;top:0px;z-index:-1"  />')}function vjGetAcc(){var B=document.location.toString().toLowerCase();var C=(B.split("/"))[2];var A=wratingAccArray[C];if(typeof (A)=="undefined"){A=wratingDefaultAcc}return A}function vjFlash(){var _wr_f="-",_wr_n=navigator;if(_wr_n.plugins&&_wr_n.plugins.length){for(var ii=0;ii<_wr_n.plugins.length;ii++){if(_wr_n.plugins[ii].name.indexOf("Shockwave Flash")!=-1){_wr_f=_wr_n.plugins[ii].description.split("Shockwave Flash ")[1];break}}}else{if(window.ActiveXObject){for(var ii=10;ii>=2;ii--){try{var fl=eval("new ActiveXObject('ShockwaveFlash.ShockwaveFlash."+ii+"');");if(fl){_wr_f=ii+".0";break}}catch(e){}}}}return _wr_f}function vjHash(B){if(!B||B==""){return 0}var D=0;for(var C=B.length-1;C>=0;C--){var A=parseInt(B.charCodeAt(C));D=(D<<5)+D+A}return D}function vjVisitorID(){var B=vjHash(document.location+document.cookie+document.referrer).toString(16);var A;A=new Date();return B+"."+A.getTime().toString(16)+"."+Math.random().toString(16)}function vjGetCookieVal(B){var A=document.cookie.indexOf(";",B);if(A==-1){A=document.cookie.length}return unescape(document.cookie.substring(B,A))}function vjGetCookie(C){var B=C+"=";var F=B.length;var A=document.cookie.length;var E=0;while(E<A){var D=E+F;if(document.cookie.substring(E,D)==B){return vjGetCookieVal(D)}E=document.cookie.indexOf(" ",E)+1;if(E==0){break}}return null}function vjGetDomain(){var A=0;try{if(window.self.parent!=self){var D=/sina.com/i;var C=document.location.toString().toLowerCase();var B=parent.location.toString().toLowerCase();if(D.test(C)&&D.test(B)){A=1}}}catch(e){A=1}return A}vjTrack();
+</script>
+
+
+
+<!-- End Wrating--><!-- START Nielsen//NetRatings SiteCensus V5.3 --><!-- COPYRIGHT 2006 Nielsen//NetRatings --><script type="text/javascript"> 
+	var _rsCI="cn-sina2006";	 
+	var _rsCG="0";	
+	var _rsDN="//secure-cn.imrworldwide.com/";	
+	var _rsCC=0;	
+	var _rsSE=1;	
+	var _rsSM=0.01;	 
+	var _rsSS=1500;	 
+</script>
+<script src="//secure-cn.imrworldwide.com/v53.js" type="text/javascript"></script>
+<noscript>
+<img src="//secure-cn.imrworldwide.com/cgi-bin/m?ci=cn-sina2006&amp;cg=0" alt="">
+</noscript>
+
+<!-- END Nielsen//NetRatings SiteCensus V5.3 --></body>
+</html>
+</html>

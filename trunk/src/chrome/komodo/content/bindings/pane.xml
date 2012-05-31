@@ -1,0 +1,812 @@
+<?xml version="1.0"?>
+<!-- ***** BEGIN LICENSE BLOCK *****
+   - Version: MPL 1.1/GPL 2.0/LGPL 2.1
+   -
+   - The contents of this file are subject to the Mozilla Public License Version
+   - 1.1 (the "License"); you may not use this file except in compliance with
+   - the License. You may obtain a copy of the License at
+   - http://www.mozilla.org/MPL/
+   -
+   - Software distributed under the License is distributed on an "AS IS" basis,
+   - WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+   - for the specific language governing rights and limitations under the
+   - License.
+   -
+   - The Original Code is Komodo.
+   -
+   - The Initial Developer of the Original Code is
+   - ActiveState Software Inc.
+   - Portions created by the Initial Developer are Copyright (C) 2011
+   - the Initial Developer. All Rights Reserved.
+   -
+   - Contributor(s):
+   -
+   - Alternatively, the contents of this file may be used under the terms of
+   - either the GNU General Public License Version 2 or later (the "GPL"), or
+   - the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+   - in which case the provisions of the GPL or the LGPL are applicable instead
+   - of those above. If you wish to allow use of your version of this file only
+   - under the terms of either the GPL or the LGPL, and not to allow others to
+   - use your version of this file under the terms of the MPL, indicate your
+   - decision by deleting the provisions above and replace them with the notice
+   - and other provisions required by the LGPL or the GPL. If you do not delete
+   - the provisions above, a recipient may use your version of this file under
+   - the terms of any one of the MPL, the GPL or the LGPL.
+   -
+   - ***** END LICENSE BLOCK ***** -->
+<!DOCTYPE bindings PUBLIC "-//MOZILLA//DTD XBL V1.0//EN" "http://www.mozilla.org/xbl" [
+  <!ENTITY % komodoDTD SYSTEM "chrome://komodo/locale/komodo.dtd">
+  %komodoDTD;
+  <!ENTITY % bindingsDTD SYSTEM "chrome://komodo/locale/bindings.dtd">
+  %bindingsDTD;
+]>
+
+<bindings
+    xmlns="http://www.mozilla.org/xbl"
+    xmlns:xbl="http://www.mozilla.org/xbl"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<!--
+  - Panes for sidebars and the like
+  - See kd 0272 for specifications
+  -->
+
+  <binding id="pane" extends="chrome://global/content/bindings/tabbox.xml#tabbox">
+    <content>
+      <xul:deck anonid="pane-dummy-container" flex="1">
+        <xul:vbox class="pane-empty-container" align="stretch" pack="center">
+          <xul:description>&pane.empty.label;</xul:description>
+        </xul:vbox>
+        <xul:stack>
+          <xul:box class="pane-container">
+            <xul:hbox class="pane-tabs-container"
+                      ondragstart="_onTabsDragStart(event);"
+                      ondragend="_onTabsDragEnd(event);">
+              <!-- this is for the "sidebar" and "horzontal" modes -->
+              <xul:tabs anonid="tabs"
+                        closecollapsed="false"
+                        orient="this is here to prevent the tabs binding setting it to horizontal"
+                        xbl:inherits="rotation,label=tabLabel"
+                        oncontextmenu="return document.getBindingParent(this)._onTabContext(event);"
+                        onclose="var elem = this;
+                                 while (!/pane/.test(elem.localName))
+                                   elem = document.getBindingParent(elem);
+                                 elem.collapsed = true;"/>
+            </xul:hbox>
+            <xul:vbox flex="1">
+              <!-- this is here for the "vertical" case -->
+              <xul:hbox class="tabs-vertical-label"
+                        oncontextmenu="return _onTabContext(event);">
+                <xul:label class="tab-text" xbl:inherits="value=tabLabel"/>
+                <xul:spacer/>
+                <xul:toolbarbutton anonid="panel-close-button"
+                        class="tabs-closebutton"
+                        tooltiptext="&closePane.tooltiptext;"
+                        buttonstyle="pictures"
+                        oncommand="document.getBindingParent(this).collapsed = true;"/>
+              </xul:hbox>
+              <xul:tabpanels anonid="tabpanels" flex="1">
+                <children/>
+              </xul:tabpanels>
+            </xul:vbox>
+          </xul:box>
+          <xul:box class="pane-drop-target">
+          </xul:box>
+        </xul:stack>
+      </xul:deck>
+
+      <xul:menupopup anonid="tabs_popup">
+        <xul:menu label="&pane.moveTo.label;">
+          <xul:menupopup anonid="tabs_popup_moveto"/>
+        </xul:menu>
+      </xul:menupopup>
+    </content>
+    <implementation>
+      <method name="addWidget">
+        <!--
+          - Add the given widget to the pane
+          -->
+        <parameter name="widget"/>
+        <body>
+        <![CDATA[
+          if (!widget.tab) {
+            this._log.debug("Widget " + widget.id + " has no tab, creating one (" + this.id + ")");
+            var tab = this.ownerDocument.createElementNS(this.namespaceURI, "tab");
+            // set label now so vertical text gets it right
+            tab.setAttribute("label", widget.getAttribute("label"));
+            if (widget.hasAttribute("short-label")) {
+              tab.setAttribute("short-label", widget.getAttribute("short-label"));
+            }
+            tab.setAttribute("observes", widget.id);
+            tab.setAttribute("linkedpanel", widget.id);
+            tab.linkedpanel = widget;
+            tab.addEventListener("contextmenu", (function(event) {
+              this._updateMoveToPopup(event);
+              var popup = document.getAnonymousElementByAttribute(this, "anonid", "tabs_popup");
+              popup.openPopup(tab, "after_pointer", 0, 0, true, false, event);
+            }).bind(this), false);
+            tab.addEventListener("dragstart", (function(event) {
+              document.documentElement.setAttribute("ko-pane-dragging", true);
+              this.setAttribute("ko-pane-dragging", true);
+              event.dataTransfer.setData("application/x-komodo-pane", widget.id);
+            }).bind(this), false);
+            tab.addEventListener("dragend", (function(event) {
+              document.documentElement.removeAttribute("ko-pane-dragging");
+              this.removeAttribute("ko-pane-dragging");
+            }).bind(this), false);
+            // copy any attributes over that start with "tab_" without the prefix
+            // so we can have things like oncommand
+            for (var [index, attr] in Iterator(widget.attributes)) {
+              if (/^tab_/.test(attr.name)) {
+                // copy the attribute over
+                tab.setAttribute(attr.name.replace(/^tab_/, ""), attr.value);
+                // add a <observes> to catch the attribute changing dynamically
+                var observes = this.ownerDocument.createElementNS(this.namespaceURI, "observes");
+                observes.setAttribute("element", widget.id);
+                observes.setAttribute("attribute", attr.name);
+                observes.addEventListener("broadcast", (function(event){
+                  var observes = event.target;
+                  var attr = observes.getAttribute("attribute");
+                  observes.parentNode.setAttribute(attr.replace(/^tab_/, ""),
+                                                   this.getAttribute(attr));
+                }).bind(widget), false);
+                tab.appendChild(observes);
+              }
+            }
+            widget.tab = tab;
+          }
+          this._log.debug("Adding tab " + widget.tab.getAttribute("label") + " for " + widget.id);
+          this.tabs.appendChild(widget.tab);
+          // we never want to have flex by the attr; remove the flex generated
+          // by the tab binding. (we can do it from css if we really want to.)
+          widget.tab.removeAttribute("flex");
+          this.tabpanels.appendChild(widget);
+          document.getAnonymousElementByAttribute(this, "anonid", "pane-dummy-container")
+                  .selectedIndex = 1;
+
+          // update the menu listing the widgets to show
+          var refElem = document.getElementById("menu_view_tabs_stub_" + this.id);
+          if (refElem) {
+            var menuitem = document.createElement("menuitem");
+            menuitem.setAttribute("label", widget.getAttribute("label"));
+            menuitem.setAttribute("type", "checkbox");
+            menuitem.setAttribute("widget", widget.id);
+            refElem.parentNode.insertBefore(menuitem, refElem);
+            menuitem.addEventListener("command",
+                                      ko.uilayout.ensureTabShown.bind(ko.uilayout, widget, true),
+                                      false);
+            widget._menuitem = menuitem;
+          }
+          
+          // Update tab strip visibility
+          if (widget.tabbox.tabs.setTabVisibility) {
+            widget.tabbox.tabs.setTabVisibility();
+          }
+        ]]>
+        </body>
+      </method>
+
+      <method name="removeWidget">
+        <!--
+          - Remove a given widget.
+          - This should not be used if you just want to hide the widget
+          - temporarily.
+          -->
+        <parameter name="widget"/>
+        <body>
+        <![CDATA[
+          var tabbox = widget.tabbox;
+
+          // find a tab to focus after we've moved things
+          var nextTab = null;
+          if (tabbox && tabbox.selectedTab == widget.tab) {
+            for each (var dir in ["nextElementSibling", "previousElementSibling"]) {
+              if (nextTab) break; // already found
+              for (var elem = widget.tab[dir]; elem; elem = elem[dir]) {
+                if (elem.hidden || elem.collapsed) continue;
+                nextTab = elem;
+                break;
+              }
+            }
+          } else {
+            // we still might need to switch selected widget, if we're removing
+            // a widget with a lower index (so <tabpanels>.selectedIndex will
+            // be too large).
+            nextTab = tabbox ? tabbox.selectedTab : null;
+          }
+
+          if (nextTab) {
+            // Select the new tab now, so the dying tab knows it's going to lose
+            // its selected state (and clear "beforeselected" correctly).
+            // See bug 92203.
+            tabbox.selectedIndex = tabbox.tabs.getIndexOfItem(nextTab);
+          }
+
+          if (widget.tab && widget.tab.parentNode) {
+            widget.tab.parentNode.removeChild(widget.tab);
+          }
+          widget.tab = null;
+          if (widget.parentNode) {
+            widget.parentNode.removeChild(widget);
+          }
+
+          if (nextTab) {
+            // Select the new tab _again_, now that the old one is gone, so we
+            // don't end up with weird borders if we removed a tab to the left;
+            // bug 92203 again.  Also, need to select the panel manually too
+            // for much the same reason (avoids blank panels).
+            tabbox.selectedIndex = tabbox.tabs.getIndexOfItem(nextTab);
+            tabbox.tabpanels.selectedPanel = nextTab.linkedpanel;
+          }
+
+          // update the menu listing the widgets
+          var refElem = document.getElementById("menu_view_tabs_stub_" + this.id);
+          var menu = refElem.parentNode;
+          var menuitem = widget._menuitem;
+          if (!menuitem) {
+            menuitem = menu.querySelector("menuitem[widget='" + widget.id + "']");
+          }
+          if (menuitem) {
+            menuitem.parentNode.removeChild(menuitem);
+          }
+
+          // Update tab strip visibility
+          if (tabbox && tabbox.tabs.setTabVisibility) {
+            tabbox.tabs.setTabVisibility();
+          }
+          
+          // Update pane visiblity. (this has to come after updating tab strip
+          // visibility otherwise the tab strip would be unbound and we can't
+          // use its methods anymore)
+          if (tabbox && !nextTab) {
+            document.getAnonymousElementByAttribute(this, "anonid", "pane-dummy-container")
+                    .selectedIndex = 0;
+            tabbox.collapsed = true;
+          }
+        ]]>
+        </body>
+      </method>
+
+      <method name="showWidget">
+        <parameter name="widget"/>
+        <body>
+        <![CDATA[
+          if ((typeof(widget) == "object") && ("localName" in widget)) {
+            if ("linkedpanel" in widget) {
+              // We got the <tab>. Find the corresponding widget.
+              widget = widget.linkedpanel;
+            }
+          } else if (widget) {
+            // Got a string, probably the widget id. Be nice and find it.
+            widget = this.ownerDocument.getElementById(widget);
+          }
+          if (!widget || !widget.tabbox || widget.tabbox != this) {
+            // Bad widget.
+            this._log.exception("showWidget got a bad widget!");
+            throw("Widget does not exist or doesn't belong to this pane");
+          }
+
+          // First make sure that this pane is visible
+          this.collapsed = false;
+          this.selectedTab = widget.tab;
+
+          // let's be very, very sure. (this is needed in the case where we're here
+          // because a tab in front of us got moved away, in which case .selectedIndex
+          // will not properly reflect reality)
+          this.tabpanels.selectedPanel = widget;
+
+          // Make sure we're showing the tabpanels.  This can be needed if this
+          // widget used to be hidden.
+          document.getAnonymousElementByAttribute(this, "anonid", "pane-dummy-container")
+                  .selectedIndex = 1;
+        ]]>
+        </body>
+      </method>
+
+      <method name="_updateMoveToPopup">
+        <parameter name="event"/>
+        <body>
+        <![CDATA[
+          var tab = event.target;
+          var popup = document.getAnonymousElementByAttribute(this, "anonid", "tabs_popup_moveto");
+          while (popup.firstChild) {
+            popup.removeChild(popup.firstChild);
+          }
+          var widget = tab.linkedpanel;
+          popup.setAttribute("_widgetToMove", widget.id);
+          for each (var paneid in Object.keys(ko.widgets._panes)) {
+            var pane = ko.widgets._panes[paneid];
+            var menuitem = document.createElementNS(this.namespaceURI, "menuitem");
+            menuitem.setAttribute("label", pane.getAttribute("label") || pane.id);
+            menuitem.setAttribute("type", "checkbox");
+            menuitem.setAttribute("_paneId", pane.id);
+            if (widget.tabbox == pane) {
+              // it's alreayd here
+              menuitem.setAttribute("disabled", true);
+              menuitem.setAttribute("checked", true);
+            }
+            menuitem.addEventListener("command", (function(event) {
+              this.moveWidgetToPane(popup.getAttribute("_widgetToMove"),
+                                    event.target.getAttribute("_paneId"));
+            }).bind(this), false);
+            popup.appendChild(menuitem);
+          }
+        ]]>
+        </body>
+      </method>
+
+      <method name="_onTabContext">
+        <!--
+          - This handles context menu events on the <tabs> (and children)
+          -->
+        <parameter name="event"/>
+        <body>
+        <![CDATA[
+          var elem = event.originalTarget;
+          var tab = null;
+          for (; elem && elem != event.target; elem = elem.parentNode) {
+            if (elem.getAttribute("anonid") == "label-box") {
+              // this is the label for <tabs type="sidebar">
+              tab = document.getBindingParent(elem).selectedItem;
+              break;
+            }
+            if (elem.localName == "menuitem" && elem.tab) {
+              // this is a menu item
+              tab = elem.tab;
+              break;
+            }
+          }
+          if (!tab && elem) {
+            for (; elem; elem = elem.parentNode) {
+              if (elem.classList && elem.classList.contains("tabs-vertical-label")) {
+                // this is the header label for vertical tabs
+                tab = this.selectedTab;
+                break;
+              }
+            }
+          }
+          if (tab) {
+            // found an interesting element
+            this._updateMoveToPopup({target: tab});
+            var popup = document.getAnonymousElementByAttribute(this, "anonid", "tabs_popup");
+            popup.openPopup(elem, "after_pointer", 0, 0, true, false, event);
+            return;
+          }
+        ]]>
+        </body>
+      </method>
+
+      <method name="_onTabsDragStart">
+        <parameter name="event"/>
+        <body>
+        <![CDATA[
+          var widget = this.selectedPanel;
+          if (!widget || !widget.id) {
+            return;
+          }
+          if (event.dataTransfer.types.contains("application/x-komodo-pane")) {
+            return;
+          }
+          document.documentElement.setAttribute("ko-pane-dragging", true);
+          this.setAttribute("ko-pane-dragging", true);
+          event.dataTransfer.setData("application/x-komodo-pane", widget.id);
+          event.dataTransfer.effectAllowed = "move";
+        ]]>
+        </body>
+      </method>
+      <method name="_onTabsDragEnd">
+        <parameter name="event"/>
+        <body>
+        <![CDATA[
+          document.documentElement.removeAttribute("ko-pane-dragging");
+          this.removeAttribute("ko-pane-dragging");
+        ]]>
+        </body>
+      </method>
+
+      <method name="moveWidgetToPane">
+        <!--
+          - Move a widget to a given pane
+          - @param widget {str or ko-widget} The widget to move (or its id)
+          - @param pane {str or ko-pane} The pane to move to (or its id)
+          - @param focus {boolean} Whether to focus the widget after moving
+          -         (defaults to true)
+          -->
+        <parameter name="widget"/>
+        <parameter name="pane"/>
+        <parameter name="focus"/>
+        <body>
+        <![CDATA[
+          // sanity check the input, because it always pays to have good error
+          // messages... (also, this is an API people might want to use)
+          if (!widget._is_ko_widget) {
+            var widgetId = widget;
+            widget = document.getElementById(widgetId);
+            if (!widget) {
+              var error = new Error("widget " + widgetId + " not found");
+              Components.utils.reportError(error);
+              throw(error);
+            }
+            widgetId = (widgetId.id) ? widgetId.id : widgetId;
+            if (!widget._is_ko_widget) {
+              var error = new Error(widgetId + " is not a ko-widget");
+              Components.utils.reportError(error);
+              throw(error);
+            }
+          }
+          if (!pane.addWidget) {
+            var paneId = pane;
+            pane = document.getElementById(paneId);
+            if (!pane) {
+              var error = new Error("pane" + paneId + " not found");
+              Components.utils.reportError(error);
+              throw(error);
+            }
+            paneId = (paneId.id) ? paneId.id : paneId;
+            if (!("addWidget" in pane)) {
+              var error = new Error(paneId + " is not a ko-pane");
+              Components.utils.reportError(error);
+              throw(error);
+            }
+          }
+          if (typeof(focus) == "undefined") {
+            focus = true;
+          }
+          var oldPane = widget.tabbox;
+          if (oldPane == pane) {
+            this._log.debug("Skipping moving widget " + widget.id +
+                            ", already in " + pane.id);
+            return;
+          }
+
+          this._log.debug("moving widget " + widget.id + " to " + pane.id);
+
+          // dispatch an event into the widget so they can stop this if they
+          // want to veto it, or otherwise do some preparation
+          var event = widget.contentDocument.createEvent("DataContainerEvent");
+          event.initEvent("ko-widget-move", true /*bubble*/, true /*cancel*/);
+          event.setData("from-pane", oldPane);
+          event.setData("to-pane", pane);
+          widget.contentDocument.dispatchEvent(event);
+          if (event.getPreventDefault()) {
+            // the widget asked us to stop
+            return;
+          }
+
+          // create a target ko-widget to stuff things into
+          // "id", "src", and "disablehistory" are special
+          var widgetId = widget.id;
+          widget.id = null;
+          var newWidget = pane.ownerDocument.createElementNS(this.namespaceURI, "browser");
+          newWidget.setAttribute("disablehistory", true);
+          newWidget.setAttribute("id", widgetId);
+          var widgetSrc = widget.getAttribute("src");
+          newWidget.setAttribute("src", widgetSrc);
+          var attr;
+          for ([,attr] in Iterator(widget.attributes)) {
+            if (attr && attr.name != "src" && attr.name != "id") {
+              newWidget.setAttributeNS(attr.namespaceURI, attr.name, attr.value);
+            }
+          }
+
+          // Do the swap
+          pane.addWidget(newWidget);
+          newWidget.swapDocShells(widget);
+
+          // move the observers over
+          var oldBroadcasters = document.getAnonymousElementByAttribute(widget, "anonid", "pane_broadcasterset");
+          var newBroadcasters = document.getAnonymousElementByAttribute(newWidget, "anonid", "pane_broadcasterset");
+          while (oldBroadcasters.firstChild) {
+            newBroadcasters.appendChild(oldBroadcasters.firstChild);
+          }
+
+          // remove the old widget
+          var attrs = [attr for ([,attr] in Iterator(widget.attributes)) if (attr)];
+          for each (attr in attrs) {
+            if (attr.name != "disablehistory")
+              widget.removeAttributeNode(attr);
+          }
+          oldPane.removeWidget(widget);
+
+          // set the focus if requested, or if no other tabs are in the pane
+          if (focus || pane.tabs.itemCount < 2) {
+            ko.uilayout.ensureTabShown(newWidget.id, true);
+          }
+
+          // dispatch an event into the widget to notify that we've done the move
+          // (this is dead last so it has a chance to do random things like,
+          // say, deciding to focus a different widget...)
+          var event = newWidget.contentDocument.createEvent("DataContainerEvent");
+          event.initEvent("ko-widget-move-completed", true /*bubble*/, false /*cancel*/);
+          event.setData("from-pane", oldPane);
+          event.setData("to-pane", pane);
+          newWidget.contentDocument.dispatchEvent(event);
+        ]]>
+        </body>
+      </method>
+
+      <property name="splitter">
+        <getter>
+        <![CDATA[
+          for each (var elem in [this.previousElementSibling, this.nextElementSibling]) {
+            if (elem && elem.namespaceURI == this.namespaceURI && elem.localName == "splitter") {
+              return elem;
+            }
+          }
+          return null;
+        ]]>
+        </getter>
+      </property>
+      <property name="tabs">
+        <getter>
+          return this.ownerDocument.getAnonymousElementByAttribute(this, "anonid", "tabs");
+        </getter>
+      </property>
+      <property name="tabpanels">
+        <getter>
+          return this.ownerDocument.getAnonymousElementByAttribute(this, "anonid", "tabpanels");
+        </getter>
+      </property>
+      <property name="widgets">
+        <getter>
+          return Array.slice(this.tabpanels.childNodes);
+        </getter>
+      </property>
+      <property name="collapsed">
+        <getter>
+        <![CDATA[
+          // We need to set the attribute to "false", rather than the typical
+          // missing attribute or emptry string, in order for XUL attribute
+          // persistence to remove it and fall back to the default value.  See
+          // bug 90908 and https://bugzilla.mozilla.org/show_bug.cgi?id=682918
+          return this.getAttribute("collapsed") == "true";
+        ]]>
+        </getter>
+        <setter>
+        <![CDATA[
+          // Note that the splitter is expected to observe the collapsed attr
+          // on this element, and the toolbar button is expected to observe the
+          // checked attr.  Also note that we need to set it to "false" instead
+          // of missing attribute or empty string due to XUL persistence bugs.
+          if (val) {
+            this.setAttribute("collapsed", "true");
+            this.removeAttribute("checked"); // for reflecting to toolbarbutton
+          } else {
+            this.setAttribute("collapsed", "false");
+            this.setAttribute("checked", "true");
+          }
+        ]]>
+        </setter>
+      </property>
+
+      <field name="_log">ko.logging.getLogger("ko-pane")</field>
+
+      <constructor>
+      <![CDATA[
+      try{
+        if (!this.hasAttribute("type")) {
+          // no type; this leads to broken UI, so default to something
+          this.setAttribute("type", "sidebar");
+        }
+        if (this.hasAttribute("pref")) {
+          // the type of this pane is persisted in prefs
+          var prefs = Components.classes["@activestate.com/koPrefService;1"]
+                                .getService(Components.interfaces.koIPrefService)
+                                .effectivePrefs;
+          var prefid = this.getAttribute("pref");
+          if (prefs.hasStringPref(prefid)) {
+            this.setAttribute("type", prefs.getStringPref(prefid));
+          }
+        }
+        
+        // register this pane. TODO: use some sort of API for this.
+        if (!ko) window.ko = {};
+        if (!ko.widgets) ko.widgets = {};
+        if (!ko.widgets._panes) ko.widgets._panes = {};
+        ko.widgets._panes[this.id] = this;
+        
+        // re-inserting the tabpanel in the same place causes it to show up
+        // in DOM inspector's tree (still as a anonymous node)...
+        // (this is not strictly necessary, since things still work without it)
+        this.tabpanels.parentNode.insertBefore(this.tabpanels, this.tabpanels.nextSibling);
+        // re-insert the widgets so we can properly construct tabs for them
+        var widgets = Array.slice(this.childNodes);
+        for each (var widget in widgets) {
+          this.addWidget(widget);
+        }
+
+        // Normalize attributes here in case XUL persistence screws up
+        if (this.getAttribute("collapsed") != "true") {
+          this.setAttribute("collapsed", "false");
+        }
+        if (this.collapsed) {
+          this.removeAttribute("checked");
+          this.splitter.setAttribute("collapsed", "true");
+        } else {
+          this.setAttribute("checked", "true");
+          this.splitter.removeAttribute("collapsed");
+        }
+      } catch (e) { Components.utils.reportError(e); }
+      ]]>
+      </constructor>
+    </implementation>
+    <handlers>
+      <handler event="select" phase="bubbling">
+      <![CDATA[
+        if (event.originalTarget == this.tabs) {
+          var tab = this.tabs.selectedItem;
+          this.setAttribute("tabLabel", tab.label);
+          var panel = this.ownerDocument.getElementById(tab.linkedPanel);
+          this.tabpanels.selectedPanel = panel;
+        }
+      ]]>
+      </handler>
+      <handler event="dragenter" phase="bubbling">
+      <![CDATA[
+        if (!event.dataTransfer.types.contains("application/x-komodo-pane")) {
+          return;
+        }
+        this.setAttribute("ko-pane-drag-status", "dragover");
+        event.preventDefault();
+      ]]>
+      </handler>
+      <handler event="dragleave" phase="bubbling">
+      <![CDATA[
+        this.removeAttribute("ko-pane-drag-status");
+      ]]>
+      </handler>
+      <handler event="drop" phase="bubbling">
+      <![CDATA[
+        this.removeAttribute("ko-pane-drag-status");
+        if (!event.dataTransfer.types.contains("application/x-komodo-pane")) {
+          return;
+        }
+        var id = event.dataTransfer.getData("application/x-komodo-pane");
+        this.moveWidgetToPane(id, this, true);
+        event.preventDefault();
+      ]]>
+      </handler>
+    </handlers>
+  </binding>
+
+  <binding id="pane-browser" extends="chrome://global/content/bindings/browser.xml#browser">
+    <content disablehistory="true">
+      <broadcasterset anonid="pane_broadcasterset"/>
+      <children/>
+    </content>
+
+    <implementation>
+      <method name="hookupObservers">
+        <!--
+          - hook up the observes= elements in the child document so they work
+          - @param containerElement An element in the child document that can be
+          -         used to hold generated elements
+          - @param parentNode [optional] the node from which to look for observes=
+          -         attributes; defaults to the content document
+          -->
+        <parameter name="containerElement"/>
+        <parameter name="parentNode"/>
+        <body>
+        <![CDATA[
+          if (typeof(containerElement) == "string") {
+            containerElement = this.contentDocument.getElementById(containerElement);
+          } else if (!containerElement) {
+            containerElement = this.contentDocument.documentElement;
+          }
+          var parentSet = this.ownerDocument.getAnonymousElementByAttribute(this, "anonid", "pane_broadcasterset");
+
+          var onBroadcast = (function onBroadcast(aCmdId) {
+            if (!this.contentDocument) {
+              // Our content document went away.  This can happen on widget moves,
+              // or on destroy - generally, times that would be better to cover
+              // our ears and shout really loudly.
+              return;
+            }
+            if (typeof(aCmdId) != "string") {
+              // This is not a string; therefore, it's an onbroadcast event.
+              // Figure out the target element and read the id off that.
+              aCmdId = aCmdId.target.getAttribute("element");
+            }
+            var srcCmd = this.ownerDocument.getElementById(aCmdId);
+            var destCmd = this.contentDocument.getElementById(aCmdId);
+            for each (let attr in Array.slice(destCmd.attributes)) {
+                if (!srcCmd.hasAttribute(attr.name))
+                    destCmd.removeAttribute(attr.name);
+            }
+            for each (let attr in Array.slice(srcCmd.attributes)) {
+                destCmd.setAttributeNS(attr.namespaceURI, attr.name, attr.value);
+            }
+          }).bind(this);
+
+          // Find all elements with observes= attributes and create proxying
+          // <observes> elements in the parent document, and <command> elements
+          // in the child document.
+          if (!parentNode) parentNode = this.contentDocument;
+          var elems = Array.slice(parentNode.querySelectorAll("[observes]"));
+          for each (let elem in elems) {
+            let cmdId = elem.getAttribute("observes");
+            let srcCmd = this.ownerDocument.getElementById(cmdId);
+            if (!srcCmd) continue; // not observing into the parent
+            let destCmd = this.contentDocument.getElementById(cmdId);
+            if (!destCmd) {
+              // create a <command> in the child document and force refresh
+              destCmd = this.contentDocument.createElement("command");
+              destCmd.setAttribute("id", cmdId);
+              containerElement.appendChild(destCmd);
+              onBroadcast(cmdId);
+
+              // create a <observes> in the parent and listen for changes
+              let observer = this.ownerDocument.createElement("observes");
+              observer.setAttribute("element", cmdId);
+              observer.setAttribute("attribute", "*");
+              parentSet.appendChild(observer);
+              observer.addEventListener("broadcast", onBroadcast, false);
+            }
+            // re-insert the element to make sure observes= gets hooked up :(
+            elem.parentNode.insertBefore(elem, elem.nextSibling);
+          }
+        ]]>
+        </body>
+      </method>
+    </implementation>
+    
+    <handlers>
+      <handler event="DOMWindowCreated" phase="target"><![CDATA[
+        // inject the bits the content window will need; this is the exposed API.
+        this.contentWindow.parent = window;
+        ["ko", "xtk", "gEditorTooltipHandler"].forEach(function(prop) {
+          this.contentWindow.__defineGetter__(prop, function()window[prop]);
+        }, this);
+      ]]></handler>
+    </handlers>
+  </binding>
+
+  <binding id="widget" extends="#pane-browser">
+    <!--
+      - A widget to be displayed in a <ko-pane>.
+      - It's a cross between a <tabpanel> and a <browser>.
+      - Instantiate as <browser type="ko-widget">
+      -->
+    <implementation>
+      <property name="tabbox">
+        <getter>
+        <![CDATA[
+          /**
+           * This is more complicated than normal because we want to look for
+           * any element that uses the tabbox binding, instead of matching on
+           * the tag name.
+           */
+          var utils = Components.classes["@mozilla.org/inspector/dom-utils;1"]
+                                .getService(Components.interfaces.inIDOMUtils);
+          const TABBOX_URL = "chrome://global/content/bindings/tabbox.xml#tabbox";
+          var result = null;
+          for (var parent = this.parentNode; !result && parent; parent = parent.parentNode) {
+              if (!(parent instanceof Element)) continue;
+              var urls = utils.getBindingURLs(parent).enumerate();
+              while (urls.hasMoreElements()) {
+                  var uri = urls.getNext().QueryInterface(Components.interfaces.nsIURI);
+                  if (uri.spec == TABBOX_URL) {
+                      result = parent;
+                      break;
+                  }
+              }
+          }
+          return result;
+        ]]>
+        </getter>
+      </property>
+      
+      <!-- This is just here because instanceof isn't going to work with XBL -->
+      <field name="_is_ko_widget">true</field>
+      <constructor>
+      <![CDATA[
+        if (!this.hasAttribute("disablehistory")) {
+          this.setAttribute("disablehistory", true);
+        }
+      ]]>
+      </constructor>
+    </implementation>
+  </binding>
+
+</bindings>

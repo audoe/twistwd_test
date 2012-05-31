@@ -1,0 +1,7 @@
+K 13
+svn:externals
+V 123
+mk          -r 4631 http://svn.openkomodo.com/repos/mk/trunk/
+komododoc   http://svn.openkomodo.com/repos/komododoc/trunk/
+
+END

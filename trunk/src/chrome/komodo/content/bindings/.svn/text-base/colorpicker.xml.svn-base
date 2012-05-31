@@ -1,0 +1,229 @@
+<?xml version="1.0"?>
+<!-- ***** BEGIN LICENSE BLOCK *****
+ Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ 
+ The contents of this file are subject to the Mozilla Public License
+ Version 1.1 (the "License"); you may not use this file except in
+ compliance with the License. You may obtain a copy of the License at
+ http://www.mozilla.org/MPL/
+ 
+ Software distributed under the License is distributed on an "AS IS"
+ basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+ License for the specific language governing rights and limitations
+ under the License.
+ 
+ The Original Code is Komodo code.
+ 
+ The Initial Developer of the Original Code is ActiveState Software Inc.
+ Portions created by ActiveState Software Inc are Copyright (C) 2000-2007
+ ActiveState Software Inc. All Rights Reserved.
+ 
+ Contributor(s):
+   ActiveState Software Inc
+ 
+ Alternatively, the contents of this file may be used under the terms of
+ either the GNU General Public License Version 2 or later (the "GPL"), or
+ the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ in which case the provisions of the GPL or the LGPL are applicable instead
+ of those above. If you wish to allow use of your version of this file only
+ under the terms of either the GPL or the LGPL, and not to allow others to
+ use your version of this file under the terms of the MPL, indicate your
+ decision by deleting the provisions above and replace them with the notice
+ and other provisions required by the GPL or the LGPL. If you do not delete
+ the provisions above, a recipient may use your version of this file under
+ the terms of any one of the MPL, the GPL or the LGPL.
+ 
+ ***** END LICENSE BLOCK ***** -->
+
+<!DOCTYPE bindings PUBLIC "-//MOZILLA//DTD XBL V1.0//EN" "http://www.mozilla.org/xbl">
+
+<bindings id="colorpickerBindings"
+    xmlns       = "http://www.mozilla.org/xbl"
+    xmlns:xbl   = "http://www.mozilla.org/xbl"
+    xmlns:html  = "http://www.w3.org/1999/xhtml"
+    xmlns:xul   = "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+    <binding id="kocolorpicker-base">
+        <resources>
+            <stylesheet src="chrome://komodo/skin/bindings/colorpicker.css"/>
+        </resources>
+    </binding>
+
+    <binding id="colorpicker-dbl-button" xbl:inherits="disabled"
+                    extends="chrome://komodo/content/bindings/colorpicker.xml#kocolorpicker-base">
+        <content>
+            <xul:stack id="ColorButtons" autostretch="never">
+                <xul:colorpicker
+                    class="back"
+                    xbl:inherits="palettename"
+                    type="button-flat" allowevents="true"
+                    onchange="document.getBindingParent(this).pickerChange();"/>
+                <xul:colorpicker
+                    class="fore"
+                    xbl:inherits="palettename"
+                    type="button-flat" allowevents="true"
+                    onchange="document.getBindingParent(this).pickerChange();"/>
+            </xul:stack>
+        </content>
+        <implementation>
+            <constructor>
+                <![CDATA[
+                    this.initialize();
+                ]]>
+            </constructor>
+
+            <destructor>
+                <![CDATA[
+
+                ]]>
+            </destructor>
+
+            <method name="initialize">
+                <body>
+                    <![CDATA[
+                        var change = this.getAttribute("onchange");
+                        if (change) {
+                          try {
+                            this.onchange = new Function("event", change);
+                          } catch (ex) {
+                            // watch out for syntax errors in the function code
+                          }
+                        }
+                    ]]>
+                </body>
+            </method>
+
+            <method name="pickerChange">
+                <body>
+                    <![CDATA[
+                        if (this.onchange)
+                            this.onchange();
+                    ]]>
+                </body>
+            </method>
+
+            <property name="fore"
+                onget="return document.getAnonymousNodes(this)[0].lastChild.color;"
+                onset="document.getAnonymousNodes(this)[0].lastChild.color = val;"/>
+
+            <property name="back"
+                onget="return document.getAnonymousNodes(this)[0].firstChild.color;"
+                onset="document.getAnonymousNodes(this)[0].firstChild.color = val;"/>
+
+        </implementation>
+    </binding>
+
+  <binding id="ko-colorpicker-button" display="xul:menu"
+           extends="chrome://global/content/bindings/general.xml#basecontrol">
+    <resources>
+        <stylesheet src="chrome://komodo/skin/bindings/colorpicker.css"/>
+    </resources>
+
+    <content>
+        <xul:hbox class="colorpicker-button-colorbox" anonid="colorbox" flex="1" xbl:inherits="disabled"/>
+    </content>
+    
+    <implementation implements="nsIAccessibleProvider">
+
+        <constructor>
+        <![CDATA[
+            this.mColorBox = document.getAnonymousElementByAttribute(this, "anonid", "colorbox");
+            this.mColorBox.style.backgroundColor = this.color;
+        ]]>
+        </constructor>
+      
+        <property name="accessibleType" readonly="true">
+            <getter>
+              <![CDATA[
+                return Components.interfaces.nsIAccessibleProvider.XULColorPicker;
+              ]]>
+            </getter>
+        </property>
+  
+        <property name="color">
+            <getter>
+              <![CDATA[
+                return this.getAttribute("color");
+              ]]>
+            </getter>
+            <setter>
+              <![CDATA[
+                this.mColorBox.setAttribute("style", "background-color: " + val);
+                this.setAttribute("color", val);
+                return val;
+              ]]>
+            </setter>
+        </property>
+
+        <method name="_fireEvent">
+          <parameter name="aTarget"/>
+          <parameter name="aEventName"/>
+          <body>
+          <![CDATA[      
+            try {
+              var event = document.createEvent("Events");
+              event.initEvent(aEventName, true, true);
+              var cancel = !aTarget.dispatchEvent(event);
+              if (aTarget.hasAttribute("on" + aEventName)) {
+                var fn = new Function ("event", aTarget.getAttribute("on" + aEventName));
+                var rv = fn.call(aTarget, event);
+                if (rv == false)
+                  cancel = true;
+              }
+              return !cancel;  
+            }
+            catch (e) { 
+              dump(e);
+            }
+            return false;
+          ]]>
+          </body>
+        </method>
+  
+        <method name="selectColor">
+          <body><![CDATA[
+            var cpSvc = Components.classes["@activestate.com/koColorPicker;1"].
+                        getService(Components.interfaces.koIColorPicker);
+            var handleResult = (function handleResult(newcolor) {
+                if (newcolor && newcolor != this.color) {
+                    this.color = newcolor;
+                    this._fireEvent(this, "change");
+                }
+            }).bind(this);
+            if (cpSvc instanceof Components.interfaces.koIColorPickerAsync) {
+                cpSvc.pickColorAsync(handleResult, this.color, 1.0);
+            } else {
+                handleResult(cpSvc.pickColor(this.color));
+            }
+          ]]></body>
+        </method>
+
+    </implementation>
+
+    <handlers>
+        <handler event="click">
+          <![CDATA[
+            if (event.originalTarget.hasAttribute("color")) {
+              this.selectColor();
+            }
+          ]]>
+        </handler>
+
+        <handler event="keydown">
+          <![CDATA[
+            // open popup if key is space/up/left/right/down
+            if (event.keyCode == Components.interfaces.nsIDOMKeyEvent.DOM_VK_ENTER ||
+                event.keyCode == Components.interfaces.nsIDOMKeyEvent.DOM_VK_SPACE ||
+                event.keyCode == Components.interfaces.nsIDOMKeyEvent.DOM_VK_LEFT ||
+                event.keyCode == Components.interfaces.nsIDOMKeyEvent.DOM_VK_RIGHT ||
+                event.keyCode == Components.interfaces.nsIDOMKeyEvent.DOM_VK_UP ||
+                event.keyCode == Components.interfaces.nsIDOMKeyEvent.DOM_VK_DOWN) {
+                this.selectColor();
+            }
+          ]]>
+        </handler>
+    </handlers>
+
+  </binding>
+
+</bindings>

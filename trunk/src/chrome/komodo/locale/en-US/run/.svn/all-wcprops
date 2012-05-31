@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/!svn/ver/10141/openkomodo/trunk/src/chrome/komodo/locale/en-US/run
+END
+run.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/10141/openkomodo/trunk/src/chrome/komodo/locale/en-US/run/run.dtd
+END
+run.properties
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/4939/openkomodo/trunk/src/chrome/komodo/locale/en-US/run/run.properties
+END
+commandproperties.properties
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/!svn/ver/4939/openkomodo/trunk/src/chrome/komodo/locale/en-US/run/commandproperties.properties
+END
+run_functions.properties
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/!svn/ver/4939/openkomodo/trunk/src/chrome/komodo/locale/en-US/run/run_functions.properties
+END
+runOutputWindow.properties
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/!svn/ver/4939/openkomodo/trunk/src/chrome/komodo/locale/en-US/run/runOutputWindow.properties
+END

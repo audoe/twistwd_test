@@ -1,0 +1,147 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
+ * The contents of this file are subject to the Mozilla Public License
+ * Version 1.1 (the "License"); you may not use this file except in
+ * compliance with the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ * 
+ * Software distributed under the License is distributed on an "AS IS"
+ * basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+ * License for the specific language governing rights and limitations
+ * under the License.
+ * 
+ * The Original Code is Komodo code.
+ * 
+ * The Initial Developer of the Original Code is ActiveState Software Inc.
+ * Portions created by ActiveState Software Inc are Copyright (C) 2000-2007
+ * ActiveState Software Inc. All Rights Reserved.
+ * 
+ * Contributor(s):
+ *   ActiveState Software Inc
+ * 
+ * Alternatively, the contents of this file may be used under the terms of
+ * either the GNU General Public License Version 2 or later (the "GPL"), or
+ * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the MPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK ***** */
+
+#include "nsISupports.idl"
+#include "koIDocument.idl"
+
+/**
+ * This allows for querying of information on a particular installation of an
+ * application.
+ *
+ * Application information (like executable paths and version information) will
+ * be cached for each instance.
+ */
+[scriptable, uuid(61a45a55-0cb0-4019-b1a7-8096ab2cca88)]
+interface koIAppInfoEx : nsISupports {
+    // Query for a list of found installation executables for this application.
+    void FindExecutables(out PRUint32 count,
+                         [retval, array, size_is(count)] out wstring strs);
+
+    // Query for a list of found installation paths for this application. These
+    // are the installation directories for the paths found by
+    // FindExecutables, typically the parent directories.
+    void FindInstallationPaths(out PRUint32 count,
+                               [retval,
+                                array,
+                                size_is(count)] out wstring strs);
+    // Given the path to an interpreter binary, return the
+    // path of the installation
+    wstring getInstallationPathFromBinary(in wstring binaryPath);
+
+    // Resets any cached information.
+    void reset();
+
+    // The specific installation path for which the other attributes
+    // apply to. It may be required for this to be set for certain
+    // attributes to be determined.
+    attribute wstring installationPath;
+
+    // The path to the executable for the interpreter e.g. "usr/bin/perl"
+    attribute wstring executablePath;
+
+    wstring getExecutableFromDocument(in koIDocument koDoc);
+
+    // True if user is licensed for the current version of this app.
+    // (For an app that does not require a license this will always be
+    //  true.)
+    attribute boolean haveLicense;
+
+    // version (duh, null if don't know how to determine)
+    attribute string version;
+    // The build number. (May be null if it is not applicable.)
+    attribute long buildNumber;
+
+    // path to local help file (null if none)
+    attribute wstring localHelpFile;
+    // Web URL to main help file (null if none)
+    attribute wstring webHelpURL;
+    
+    // Return true if the language's current installation has the given modules.
+    boolean haveModules(in PRUint32 count,
+                        [array, size_is(count)] in wstring modules);
+
+    // A few methods from several of the subclasses should go here:
+    wstring getVersionForBinary(in wstring binaryPath);
+    
+    // determines if php is 4.0.5 or later
+    readonly attribute boolean valid_version;
+};
+
+[scriptable, uuid(3E2D6B06-3488-4069-B471-2510DE0109C2)]
+interface koIPerlInfoEx : koIAppInfoEx {
+    boolean isPerlCriticInstalled(in boolean forceCheck);
+    double getPerlCriticVersion();
+};
+
+
+[scriptable, uuid(e31fcd80-dca2-4174-8d7d-243423775b95)]
+interface koIPHPInfoEx : koIAppInfoEx {
+    // The PHP.ini file which would be used by the given PHP installation.
+    // NOTE: This cannot handle the case where an alternate PHP.ini file
+    //       is typically specified on the command line of the PHP
+    //       invocation.
+    attribute wstring cfg_file_path;
+    // get the sapi version (cgi, cgi-fcgi, cli, etc.)
+    readonly attribute wstring sapi;
+    readonly attribute wstring cliExecutable;
+    readonly attribute wstring cgiExecutable;
+
+    // Configuration items of interest.
+    // where php looks for included files
+    readonly attribute wstring include_path;
+    void GetIncludePathArray(out PRUint32 count,    // must use method
+                             [retval,               // retval to return array
+                              array,
+                              size_is(count)] out wstring strs);
+    // where activedebug extension is located
+    readonly attribute wstring extension_dir;
+    // True if the ActiveState debugging extension is loadable.
+    readonly attribute boolean isDebuggerExtensionLoadable;
+    
+    wstring autoConfigureDebugger();
+};
+
+[scriptable, uuid(7f582dbf-b88a-407e-a3b5-726b3e766afa)]
+interface koITclInfoEx : koIAppInfoEx {
+    // Try to select a Tcl installation (falling back to just
+    // the first one found). "installationPath" is set to this installation
+    // as a side-effect. It is set to None if no TclPro can be found.
+    // Returns true if an installation was found.
+    boolean selectDefault();
+    
+    readonly attribute wstring tclsh_path;
+    readonly attribute wstring wish_path;
+};

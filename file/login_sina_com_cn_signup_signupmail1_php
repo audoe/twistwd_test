@@ -1,0 +1,79 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=%SOUP-ENCODING%" http-equiv="Content-Type">
+<title>注册新浪会员</title>
+<link href="/css/signup/style.css" type="text/css" rel="stylesheet">
+<script src="/js/signup/common.js" type="text/javascript"></script>
+<script src="/js/signup/vconf.js" type="text/javascript"></script>
+<script src="/js/signup/validator.js" type="text/javascript"></script>
+</head>
+<body>
+<form action="" method="post" name="vForm" id="vForm">
+
+<!-- control info --><input type="hidden" id="act" value="1" name="act">
+<input type="hidden" id="entry" value="sso" name="entry">
+<div id="wrap">
+<div class="head">
+<div class="logo"></div>
+<div class="logotxt">- 注册</div>
+<div class="headlink"><a href="http://www.sina.com.cn">新浪首页</a> | <a href="/help.html">帮助</a></div>
+<div class="clearit"></div>
+</div>
+<div class="main">
+<div class="logoicon"></div>
+<div class="main_top">
+</div>
+<div class="main_cen">
+<p class="title_big red">重新发送验证邮件</p>
+<p class="title1"></p>
+<p style="text-align:center">
+			请在输入框内填写您注册时使用的邮箱地址，然后点击“重发确认信”。<br><br>
+<b>友情提示：</b>如果您未能在上次成功发送确认信的48小时内完成确认，请您<a href="/signup/signupmail.php?entry=sso"><u>重新注册新浪会员</u></a>。
+		</p>
+<br>
+<ul class="mainlogin">
+<li>
+<div class="ml_l f14">您的邮件地址：</div>
+<div class="ml_r">
+<div class="inputbox"><span class="input"><cite><input name="user" value="" maxlength="64" alt="邮箱地址:无内容/有全角/有空格/有大写/有中文/邮箱地址/非新浪邮箱/focusFn{unameTip}/errArea{usernametip}" type="text" id="username"></cite></span></div>
+<span id="usernametip"></span>
+</div>
+</li>
+<li>
+<div class="ml_l"></div>
+<div class="ml_r">
+<input type="submit" name="submit" value="重发确认信" class="btn_submit">
+</div>
+</li>
+</ul>
+</div>
+<div class="main_bottom"></div>
+</div>
+<div class="Footer">
+<p>客户服务电话 <a href="http://help.sina.com.cn/contact/contact.html" target="_blank">400-690-0000</a>      欢迎批评指正</p>
+<p><a href="http://corp.sina.com.cn/chn/" target="_blank">新浪简介</a> | <a href="http://corp.sina.com.cn/eng/" target="_blank">About Sina</a> | <a href="http://ads.sina.com.cn/" target="_blank">广告服务</a> | <a href="http://www.sina.com.cn/contactus.html" target="_blank">联系我们</a> | <a href="http://corp.sina.com.cn/chn/sina_job.html" target="_blank">招聘信息</a> | <a href="http://www.sina.com.cn/intro/lawfirm.shtml" target="_blank">网站律师</a> | <a href="http://english.sina.com/" target="_blank">SINA English</a> | <a href="http://members.sina.com.cn/apply/" target="_blank">会员注册</a> | <a href="http://tech.sina.com.cn/focus/sinahelp.shtml" target="_blank">产品答疑</a></p>
+<p>Copyright © 1996 - 2012 SINA Corporation, All Rights Reserved 新浪公司 <a href="http://www.sina.com.cn/intro/copyright.shtml" target="_blank">版权所有</a></p>
+
+<!-- SUDA_CODE_START --><script src="http://www.sinaimg.cn/unipro/pub/suda_s_v851c.js" type="text/javascript"></script>
+<script type="text/javascript"> 
+	_S_PID_="179";
+	_S_pSt(_S_PID_); 
+</script>
+<noscript>
+<div style="position:absolute;top:0;left:0;width:0;height:0;visibility:hidden">
+<img width="0" alt="" src="http://beacon.sina.com.cn/a.gif?noScript" border="0" height="0">
+</div>
+</noscript>
+
+<!-- SUDA_CODE_END --></div>
+</div>
+</form>
+<script type="text/javascript">
+onReady(function(){
+	var conf = (typeof $vconf == 'undefined') ? {} : $vconf;
+	var v = new Validator(conf);
+	v.init('vForm');
+});
+</script>
+</body>
+</html> 

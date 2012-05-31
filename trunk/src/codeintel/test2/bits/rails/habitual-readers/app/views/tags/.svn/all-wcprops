@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/!svn/ver/14/openkomodo/trunk/src/codeintel/test2/bits/rails/habitual-readers/app/views/tags
+END
+_tagged_book.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/!svn/ver/14/openkomodo/trunk/src/codeintel/test2/bits/rails/habitual-readers/app/views/tags/_tagged_book.rhtml
+END
+index.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/!svn/ver/14/openkomodo/trunk/src/codeintel/test2/bits/rails/habitual-readers/app/views/tags/index.rhtml
+END
+_book.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/!svn/ver/14/openkomodo/trunk/src/codeintel/test2/bits/rails/habitual-readers/app/views/tags/_book.rhtml
+END
+_tag.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/!svn/ver/14/openkomodo/trunk/src/codeintel/test2/bits/rails/habitual-readers/app/views/tags/_tag.rhtml
+END
+show.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/!svn/ver/14/openkomodo/trunk/src/codeintel/test2/bits/rails/habitual-readers/app/views/tags/show.rhtml
+END

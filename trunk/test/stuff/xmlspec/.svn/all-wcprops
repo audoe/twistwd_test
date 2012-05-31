@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repos/!svn/ver/14/openkomodo/trunk/test/stuff/xmlspec
+END
+xmlspec.kpf
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/14/openkomodo/trunk/test/stuff/xmlspec/xmlspec.kpf
+END
+REC-xslt-19991116.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/!svn/ver/14/openkomodo/trunk/test/stuff/xmlspec/REC-xslt-19991116.xml
+END
+xmlspec20.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/14/openkomodo/trunk/test/stuff/xmlspec/xmlspec20.xsl
+END

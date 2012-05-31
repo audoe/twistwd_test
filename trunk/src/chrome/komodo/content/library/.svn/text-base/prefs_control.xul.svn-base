@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<!DOCTYPE window SYSTEM "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" [
+  <!ENTITY % libraryDTD SYSTEM "chrome://komodo/locale/library.dtd">
+  %libraryDTD;
+]>
+
+<!-- ***** BEGIN LICENSE BLOCK *****
+ Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ 
+ The contents of this file are subject to the Mozilla Public License
+ Version 1.1 (the "License"); you may not use this file except in
+ compliance with the License. You may obtain a copy of the License at
+ http://www.mozilla.org/MPL/
+ 
+ Software distributed under the License is distributed on an "AS IS"
+ basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+ License for the specific language governing rights and limitations
+ under the License.
+ 
+ The Original Code is Komodo code.
+ 
+ The Initial Developer of the Original Code is ActiveState Software Inc.
+ Portions created by ActiveState Software Inc are Copyright (C) 2000-2007
+ ActiveState Software Inc. All Rights Reserved.
+ 
+ Contributor(s):
+   ActiveState Software Inc
+ 
+ Alternatively, the contents of this file may be used under the terms of
+ either the GNU General Public License Version 2 or later (the "GPL"), or
+ the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ in which case the provisions of the GPL or the LGPL are applicable instead
+ of those above. If you wish to allow use of your version of this file only
+ under the terms of either the GPL or the LGPL, and not to allow others to
+ use your version of this file under the terms of the MPL, indicate your
+ decision by deleting the provisions above and replace them with the notice
+ and other provisions required by the GPL or the LGPL. If you do not delete
+ the provisions above, a recipient may use your version of this file under
+ the terms of any one of the MPL, the GPL or the LGPL.
+ 
+ ***** END LICENSE BLOCK ***** -->
+
+<!-- Komodo Prefs control panel -->
+
+<?xml-stylesheet href="chrome://global/skin" type="text/css"?>
+<?xml-stylesheet href="chrome://komodo/skin/" type="text/css"?>
+
+<window id="komodo_prefs_control"
+        xmlns:html="http://www.w3.org/1999/xhtml"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        windowtype="Komodo:PrefsControl"
+        class="kodialog"
+        width="600"
+        height="400"
+        persist="width height screenX screenY"
+        orient="vertical"
+        onload="prefsControl_OnLoad();"
+        onunload="prefsControl_OnUnload();"
+        >
+
+<script src="chrome://xtk/content/xtk.js" type="application/x-javascript;version=1.7"/>
+<script type="application/x-javascript;version=1.7" src="chrome://komodo/content/library/logging.js"/>
+<script type="application/x-javascript;version=1.7" src="chrome://komodo/content/library/dialogs.js"/>
+<script type="application/x-javascript;version=1.7" src="chrome://komodo/content/library/prefs.js"/>
+<script type="application/x-javascript;version=1.7" src="chrome://komodo/content/library/prefs_control.js"/>
+
+    <popup id="configContext" onpopupshowing="return updateContextMenu(this);">
+      <!--<menuitem label="&copyName.label;" accesskey="&copyName.accesskey;" oncommand="copyName();"/>-->
+      <!--<menuitem label="&copyValue.label;" accesskey="&copyValue.accesskey;" oncommand="copyValue();"/>-->
+      <!--<menu label="&new.label;" accesskey="&new.accesskey;">-->
+      <!--  <menupopup>-->
+      <!--    <menuitem label="&string.label;" accesskey="&string.accesskey;" oncommand="NewPref(nsIPrefBranch.PREF_STRING);"/>-->
+      <!--    <menuitem label="&integer.label;" accesskey="&integer.accesskey;" oncommand="NewPref(nsIPrefBranch.PREF_INT);"/>-->
+      <!--    <menuitem label="&boolean.label;" accesskey="&boolean.accesskey;" oncommand="NewPref(nsIPrefBranch.PREF_BOOL);"/>-->
+      <!--  </menupopup>-->
+      <!--</menu>-->
+      <!--<menuitem label="&modify.label;" accesskey="&modify.accesskey;" oncommand="ModifySelected();"/>-->
+      <menuitem label="&deleteUnset.label;" oncommand="UnsetSelected();"/>
+    </popup>
+    <tree id="configTree" flex="1" seltype="single"
+          enableColumnDrag="true" context="configContext">
+          <!--class="plain" -->
+        <treecols>
+            <treecol id="prefName" label="&name.label;" flex="7"
+                class="treecell-header outset sortDirectionIndicator"
+                ignoreincolumnpicker="true"
+                persist="hidden width ordinal sortDirection"/>
+            <splitter class="tree-splitter" />
+            <treecol id="prefStatus" label="&status.label;" flex="1"
+                class="sortDirectionIndicator"
+                persist="hidden width ordinal sortDirection"/>
+            <splitter class="tree-splitter" />
+            <treecol id="prefType" label="&type.label;" flex="1"
+                class="sortDirectionIndicator"
+                persist="hidden width ordinal sortDirection"/>
+            <splitter class="tree-splitter" />
+            <treecol id="prefValue" label="&value.label;" flex="10"
+                class="sortDirectionIndicator"
+                persist="hidden width ordinal sortDirection"/>
+        </treecols>
+
+        <treechildren
+            container="true" id="configTreeBody"
+            ondblclick="if (event.button == 0) ModifySelected();"/>
+    </tree>
+</window>

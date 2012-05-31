@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/!svn/ver/9632/openkomodo/trunk/src/templates/default-templates/Web
+END
+RJS.rjs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/!svn/ver/14/openkomodo/trunk/src/templates/default-templates/Web/RJS.rjs
+END
+Perl.pl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/!svn/ver/14/openkomodo/trunk/src/templates/default-templates/Web/Perl.pl
+END
+CSS.css
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/!svn/ver/14/openkomodo/trunk/src/templates/default-templates/Web/CSS.css
+END
+Node.js
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/9632/openkomodo/trunk/src/templates/default-templates/Web/Node.js
+END
+JavaScript.js
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/!svn/ver/14/openkomodo/trunk/src/templates/default-templates/Web/JavaScript.js
+END
+CoffeeScript.coffee
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/!svn/ver/7807/openkomodo/trunk/src/templates/default-templates/Web/CoffeeScript.coffee
+END
+RXML.rxml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/14/openkomodo/trunk/src/templates/default-templates/Web/RXML.rxml
+END
+Ruby.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/3884/openkomodo/trunk/src/templates/default-templates/Web/Ruby.rb
+END

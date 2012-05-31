@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/!svn/ver/5242/openkomodo/trunk/src/codeintel/test2/scan_inputs/py3
+END
+metaclass.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/!svn/ver/4808/openkomodo/trunk/src/codeintel/test2/scan_inputs/py3/metaclass.py
+END
+type_annotations.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/!svn/ver/5242/openkomodo/trunk/src/codeintel/test2/scan_inputs/py3/type_annotations.py
+END
+exceptions.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/4808/openkomodo/trunk/src/codeintel/test2/scan_inputs/py3/exceptions.py
+END
+keyword_only_args.py
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/!svn/ver/5242/openkomodo/trunk/src/codeintel/test2/scan_inputs/py3/keyword_only_args.py
+END
+print_function.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/!svn/ver/4808/openkomodo/trunk/src/codeintel/test2/scan_inputs/py3/print_function.py
+END

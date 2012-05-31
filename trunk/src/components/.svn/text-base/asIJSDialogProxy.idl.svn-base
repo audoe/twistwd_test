@@ -1,0 +1,72 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
+ * The contents of this file are subject to the Mozilla Public License
+ * Version 1.1 (the "License"); you may not use this file except in
+ * compliance with the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ * 
+ * Software distributed under the License is distributed on an "AS IS"
+ * basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+ * License for the specific language governing rights and limitations
+ * under the License.
+ * 
+ * The Original Code is Komodo code.
+ * 
+ * The Initial Developer of the Original Code is ActiveState Software Inc.
+ * Portions created by ActiveState Software Inc are Copyright (C) 2000-2007
+ * ActiveState Software Inc. All Rights Reserved.
+ * 
+ * Contributor(s):
+ *   ActiveState Software Inc
+ * 
+ * Alternatively, the contents of this file may be used under the terms of
+ * either the GNU General Public License Version 2 or later (the "GPL"), or
+ * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the MPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK ***** */
+
+#include "nsISupports.idl"
+#include "nsIDOMWindow.idl"
+
+interface nsIDOMWindowInternal;
+
+[scriptable, uuid(E59E34ED-7D95-4460-87E9-FDCEF7C79D62)]
+interface asIDialogProxy: nsISupports {
+    /* alert is just a simplified alertEx, passing defaults for all additional parameters */
+    wstring alert(in wstring prompt);
+    /* alertEx:
+        okIsDefault should be true by default
+        hideCancel should be true by default
+        okLabel should be "OK" by default
+        cancelLabel should be "Cancel" by default
+    */
+    wstring alertEx(in wstring prompt,
+                         in PRBool okIsDefault,
+                         in PRBool hideCancel,
+                         in wstring okLabel,
+                         in wstring cancelLabel);
+    wstring prompt(in wstring prompt,
+                          in wstring defaultResponse,
+                          in wstring okLabel,
+                          in wstring cancelLabel);
+    // authenticate returns string with username:password
+    wstring authenticate(in wstring title,
+                                  in wstring server,
+                                  in wstring prompt,
+                                  in wstring loginname,
+                                  in PRBool allowAnonymous,
+                                  in PRBool allowPersist);
+    
+    wstring open(in wstring url, in wstring name, in wstring flags, in nsISupports obj);
+    wstring openDialog(in wstring url, in wstring name, in wstring flags, in nsISupports obj);
+    wstring eval_(in nsIDOMWindow window, in wstring evalcode);
+};

@@ -1,0 +1,206 @@
+<html>DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+
+DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+<!--[899,23,1] published at 2011-03-31 20:04:51 from #187 by 2602--><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=%SOUP-ENCODING%" http-equiv="Content-Type">
+<title>微博广场 新浪微博-随时随地分享身边的新鲜事儿</title>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible">
+<script type="text/javascript">
+	var conf = {js:"20120518173857"};
+	var $CONFIG = {
+		$lang		  : "zh",
+		$oid          : "",
+		$uid          : "",
+		$severtime    : "1337358670",
+		$product : "miniblog",
+		$pageid       : "square_topmblog",
+		$faceIcons      : [{"icon":"\u7cbd\u5b50","value":"[\u7cbd\u5b50]","src":"basic\/dumpling.gif"},{"icon":"\u8db3\u7403","value":"[\u8db3\u7403]","src":"basic\/football.gif"},{"icon":"\u54e8\u5b50","value":"[\u54e8\u5b50]","src":"basic\/shao.gif"},{"icon":"\u7ea2\u724c","value":"[\u7ea2\u724c]","src":"basic\/redcard.gif"},{"icon":"\u9ec4\u724c","value":"[\u9ec4\u724c]","src":"basic\/yellowcard.gif"},{"icon":"\u7eff\u4e1d\u5e26","value":"[\u7eff\u4e1d\u5e26]","src":"basic\/green.gif"},{"icon":"\u54c8\u54c8","value":"[\u54c8\u54c8]","src":"basic\/laugh.gif"},{"icon":"\u5475\u5475","value":"[\u5475\u5475]","src":"basic\/smile.gif"},{"icon":"\u8870","value":"[\u8870]","src":"basic\/cry.gif"},{"icon":"\u6c57","value":"[\u6c57]","src":"basic\/sweat.gif"},{"icon":"\u7231\u4f60","value":"[\u7231\u4f60]","src":"basic\/love.gif"},{"icon":"\u563b\u563b","value":"[\u563b\u563b]","src":"basic\/tooth.gif"},{"icon":"\u54fc","value":"[\u54fc]","src":"basic\/hate.gif"},{"icon":"\u5fc3","value":"[\u5fc3]","src":"basic\/heart.gif"},{"icon":"\u6655","value":"[\u6655]","src":"basic\/dizzy.gif"},{"icon":"\u6012","value":"[\u6012]","src":"basic\/angry.gif"},{"icon":"\u86cb\u7cd5","value":"[\u86cb\u7cd5]","src":"basic\/cake.gif"},{"icon":"\u82b1","value":"[\u82b1]","src":"basic\/flower.gif"},{"icon":"\u6293\u72c2","value":"[\u6293\u72c2]","src":"basic\/crazy.gif"},{"icon":"\u56f0","value":"[\u56f0]","src":"basic\/sleepy.gif"},{"icon":"\u5e72\u676f","value":"[\u5e72\u676f]","src":"basic\/cheer.gif"},{"icon":"\u592a\u9633","value":"[\u592a\u9633]","src":"basic\/sun.gif"},{"icon":"\u4e0b\u96e8","value":"[\u4e0b\u96e8]","src":"basic\/rain.gif"},{"icon":"\u6cea","value":"[\u6cea]","src":"basic\/sad.gif"},{"icon":"\u6708\u4eae","value":"[\u6708\u4eae]","src":"basic\/moon.gif"},{"icon":"\u732a\u5934","value":"[\u732a\u5934]","src":"basic\/pig.gif"},{"icon":"\u8721\u70db","value":"[\u8721\u70db]","src":"basic\/candle.gif"},{"icon":"\u4f24\u5fc3","value":"[\u4f24\u5fc3]","src":"basic\/unheart.gif"},{"icon":"\u98ce\u6247","value":"[\u98ce\u6247]","src":"basic\/fan.gif"},{"icon":"\u51b0\u68cd","value":"[\u51b0\u68cd]","src":"basic\/ice.gif"},{"icon":"\u897f\u74dc","value":"[\u897f\u74dc]","src":"basic\/watermelon.gif"}],
+		$cuser_status	: "full",
+		$skin			: "skin_001",
+        $domain         : "http://weibo.com/"
+		
+		
+	};
+    var scope = $CONFIG;
+
+</script>
+<link href="http://img.t.sinajs.cn/t4/style/css/module/global/out_frame.css?version=1dfc35cf9656e9fa" type="text/css" rel="stylesheet">
+<link href="http://img.t.sinajs.cn/t36/style/css/square/square.css?version=20120518173857" type="text/css" rel="stylesheet">
+<script src="http://js.t.sinajs.cn/t36/miniblog/js/lang_zh.js?version=20120518173857" type="text/javascript"></script>
+<script src="http://js.t.sinajs.cn/t36/miniblog/js/plaza/square/square_topmblog.js?version=20120518173857" type="text/javascript"></script>
+<script type="text/javascript">
+scope.groupList = [];
+</script>
+<link href="http://img.t.sinajs.cn/t36/style/css/common/public.css" type="text/css" rel="stylesheet">
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible">
+</head>
+<body>
+<div class="MIB_bloga">
+<div class="MIB_blogb">
+<div id="weibo_top_public">
+</div>
+<script src="http://js.t.sinajs.cn/t4/home/js/public/top.js?version=1dfc35cf9656e9fa"></script>
+<script type="text/javascript">
+            var topPublic = {};
+            topPublic['uid'] = "";
+            topPublic['name'] = "";
+            topPublic['islogin'] = 1;
+            topPublic['setCover'] = 1;
+            topPublic['icon'] = "";
+			
+            WBtopPublic.init(topPublic);
+
+</script>
+<div class="MIB_v4body MIB_w800">
+
+<!--正文--><div class="MIB_blogbody">
+<div class="MIB_square_body">
+<div class="coCont_new">
+
+<!-- 头部导航 --><div class="coTitle">
+<ul>
+<li class="current"><strong><em>随便看看</em></strong></li>
+<li><strong><a href="/pub/sofa">抢沙发</a></strong></li>
+</ul>
+</div>
+
+<!--左边--><div class="coL">
+<div class="feed_tit2">
+<strong class="font_14 fb">随便看看</strong>
+<a href="javascript:void(0);" class="rt" onclick="App.publisherDialog.show('');return false;" id="publisher"><img src="http://img.t.sinajs.cn/t36/style/images/common/transparent.gif" align="absmiddle" class="small_icon saysomething" title="也说几句">我也说几句</a>
+</div>
+<div class="choTypediv">
+<div class="choTypeInfo" id="filter">
+<form action="" method="get" name="filter">
+<input type="hidden" name="s" value="1">
+<table class="tab">
+<tr>
+<th class="gray9">微博筛选：</th>
+<td class="td1">
+
+<!--
+						<input type="checkbox" id="chb1" class="labelbox" value="100" name="filter[]" checked="checked" /><label for="chb1">原创</label>
+                                <input type="checkbox" id="chb2" class="labelbox" value="2" name="filter[]"   /><label for="chb2">转发</label>
+<em>|</em>
+--><input checked name="filter[]" value="99" class="labelbox" type="checkbox" id="chb6"><label for="chb6">纯文字</label>
+<input checked name="filter[]" value="0" class="labelbox" type="checkbox" id="chb3"><label for="chb3">含图片</label>
+<input checked name="filter[]" value="5" class="labelbox" type="checkbox" id="chb4"><label for="chb4">含音乐</label>
+<input checked name="filter[]" value="4" class="labelbox" type="checkbox" id="chb5"><label for="chb5">含视频</label></td>
+<td class="td2"><a href="javascript:void(0);" class="btn_normal btnxs" onclick="document.filter.submit();return false;"><em>刷新</em></a></td>
+</tr>
+</table>
+</form>
+</div>
+<div class="choTypeOpt"><a class="on" href="javascript:void(0);" id="filter_btn" onclick="if($E('filter').style['display']==''){$E('filter').style['display']='none';this.className='';this.title='选择微博类型';}else{$E('filter').style['display']='';this.className='on';this.title='关闭'}" title="选择微博类型"></a><!-- <a href="#" title="关闭" class="on"></a> --></div>
+</div>
+<div class="moreBlog">
+<div style="text-align:center;" class="tip_no_miniblog font_14 MIB_txtbl">今天还没有这种类型的新微博，换个类型看看吧！
+</div>
+</div>
+<div class="feed_bt">
+<div class="ftop lf">
+<a href="#"><img src="http://img.t.sinajs.cn/t36/style/images/common/transparent.gif" class="small_icon returntop" title="返回顶部">返回顶部</a>
+</div>
+</div>
+</div>
+
+<!-- 右边 --><div class="coR">
+<dl class="top10 hotTipS">
+<dt class="topTit"><a href="http://data.weibo.com/top/keyword">1小时热词榜</a></dt>
+<dd class="topCont">
+<div class="line">
+<div class="width13"><em class="topNum1">1</em></div>
+<div class="topName"><a href="http://s.weibo.com/weibo/%E5%91%A8%E7%AC%94%E7%95%85%E5%A4%A9%E5%A3%B0%E4%B8%80%E9%98%9F" title="周笔畅天声一队">周笔畅天声一...</a><em class="tipNums">(5182)</em></div>
+<div class="trend"><em class="upicon"></em></div>
+</div>
+<div class="line">
+<div class="width13"><em class="topNum2">2</em></div>
+<div class="topName"><a href="http://s.weibo.com/weibo/%E6%9D%8E%E5%AE%87%E6%98%A5%E6%88%91%E7%88%B1%E4%BD%A0%E6%97%A0%E6%89%80%E7%95%8F" title="李宇春我爱你无所畏">李宇春我爱你...</a><em class="tipNums">(2079)</em></div>
+<div class="trend"><em class="downicon"></em></div>
+</div>
+<div class="line">
+<div class="width13"><em class="topNum3">3</em></div>
+<div class="topName"><a href="http://s.weibo.com/weibo/facebook%E4%B8%8A%E5%B8%82" title="facebook上市">facebook上市...</a><em class="tipNums">(1706)</em></div>
+<div class="trend"><em class="upicon"></em></div>
+</div>
+<div class="line">
+<div class="width13">4</div>
+<div class="topName"><a href="http://s.weibo.com/weibo/%E6%9C%80%E7%82%AB%E6%B0%91%E6%97%8F%E9%A3%8E" title="最炫民族风">最炫民族风</a><em class="tipNums">(1582)</em></div>
+<div class="trend"><em class="downicon"></em></div>
+</div>
+<div class="line">
+<div class="width13">5</div>
+<div class="topName"><a href="http://s.weibo.com/weibo/%E9%99%88%E7%BF%94%E6%9E%9C%E6%9E%9C%E5%A4%A9%E7%94%9F%E4%B8%80%E5%AF%B9" title="陈翔果果天生一对">陈翔果果天生...</a><em class="tipNums">(1551)</em></div>
+<div class="trend"><em class="upicon"></em></div>
+</div>
+<div class="line">
+<div class="width13">6</div>
+<div class="topName"><a href="http://s.weibo.com/weibo/%E5%A4%8D%E4%BB%87%E8%80%85%E8%81%94%E7%9B%9F" title="复仇者联盟">复仇者联盟</a><em class="tipNums">(1396)</em></div>
+<div class="trend"><em class="upicon"></em></div>
+</div>
+<div class="line">
+<div class="width13">7</div>
+<div class="topName"><a href="http://s.weibo.com/weibo/%E5%A4%A7%E5%AD%A6%E6%9C%80%E9%81%97%E6%86%BE%E7%9A%84%E4%BA%8B" title="大学最遗憾的事">大学最遗憾的...</a><em class="tipNums">(993)</em></div>
+<div class="trend"><em class="downicon"></em></div>
+</div>
+<div class="line">
+<div class="width13">8</div>
+<div class="topName"><a href="http://s.weibo.com/weibo/%E9%99%88%E7%BF%94%E8%A5%BF%E5%8C%97%E5%B0%8F%E9%87%8E%E7%8B%BC" title="陈翔西北小野狼">陈翔西北小野...</a><em class="tipNums">(837)</em></div>
+<div class="trend"><em class="upicon"></em></div>
+</div>
+<div class="line">
+<div class="width13">9</div>
+<div class="topName"><a href="http://s.weibo.com/weibo/%E7%B2%BE%E5%93%8120%E5%B9%B4" title="精品20年">精品20年</a><em class="tipNums">(682)</em></div>
+<div class="trend"><em class="downicon"></em></div>
+</div>
+<div class="line">
+<div class="width13">10</div>
+<div class="topName"><a href="http://s.weibo.com/weibo/%E9%87%91%E8%B4%A4%E9%87%8D%E5%8F%B0%E6%B9%BE%E6%BC%94%E5%94%B1%E4%BC%9A" title="金贤重台湾演唱会">金贤重台湾演...</a><em class="tipNums">(589)</em></div>
+<div class="trend"><em class="downicon"></em></div>
+</div>
+</dd>
+<dd class="link_c"><a href="http://data.weibo.com/top/keyword">查看更多<em>&gt;&gt;</em></a></dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+
+<!--/正文--></div>
+
+<!--尾--><div class="global_footer global_footer_narrow">
+<div class="clearfix">
+</div>
+<div class="other_link clearfix">
+<div class="help_link">
+<p><a href="http://help.weibo.com/?refer=didao" target="_blank">微博帮助</a>　<a href="http://weibo.com/k/weijianyi" target="_blank">意见反馈</a>　<a href="http://open.weibo.com/" target="_blank">开放平台</a>　<a href="http://hr.weibo.com/" target="_blank">微博招聘</a>　<a href="http://news.sina.com.cn/guide/" target="_blank">新浪网导航</a>　<a href="javascript:void(0);" onclick="javascript:window.open('http://weibo.com/reportspam?type=3&amp;rid=&amp;url=http%253A%252F%252Fweibo.com%252Fpub%252Fnews', 'newwindow', 'height=600, width=500');">不良信息举报</a></p>
+<p>北京微梦创科网络技术有限公司 <a href="http://weibo.com/aj/static/jww.html" target="_blank">京网文[2011]0398-130号</a> <a href="http://www.miibeian.gov.cn" target="_blank">京ICP证100780号</a></p>
+</div>
+<div class="copy">
+<p>
+</p>
+<p>Copyright © 1996-2011 SINA</p>
+</div>
+</div>
+</div>
+
+<!--/尾--></div>
+</div>
+
+<!-- SUDA_CODE_START --><div style="position:absolute;top:0;left:0;width:0;height:0;z-index:1"><div style="position:absolute;top:0;left:0;width:1;height:1;"></div><div style="position:absolute;top:0;left:0;width:0;height:0;visibility:hidden" id="SUDA_CS_DIV"></div></div>
+<noscript>
+<div style="position:absolute;top:0;left:0;width:0;height:
+0;visibility:hidden"><img width="0" alt="" src="http://beacon.sina.com.cn/e.gif?noScript" border="0" height="0"></div>
+</noscript>
+
+<!-- SUDA_CODE_END --><script>
+	var css = document.createElement('link');
+	css.rel = 'stylesheet';
+	css.type = 'text/css';
+	css.href = 'http://img.t.sinajs.cn/t35/style/css/common/layer.css?version=20120518173857';
+	document.getElementsByTagName('head')[0].appendChild(css);
+</script>
+</body>
+</html>
+</html>

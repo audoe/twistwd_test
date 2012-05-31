@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/repos/!svn/ver/9657/openkomodo/trunk/src/samples
+END
+ruby_sample.p.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/8116/openkomodo/trunk/src/samples/ruby_sample.p.rb
+END
+tcl_sample.p.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/8116/openkomodo/trunk/src/samples/tcl_sample.p.tcl
+END
+sample_project.p.komodoproject
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/!svn/ver/9459/openkomodo/trunk/src/samples/sample_project.p.komodoproject
+END
+Conscript
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/!svn/ver/9628/openkomodo/trunk/src/samples/Conscript
+END
+html_sample.p.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/9025/openkomodo/trunk/src/samples/html_sample.p.html
+END
+python_sample.p.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/8116/openkomodo/trunk/src/samples/python_sample.p.py
+END
+python3_sample.p.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/!svn/ver/9657/openkomodo/trunk/src/samples/python3_sample.p.py
+END
+perl_sample.p.pl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/8116/openkomodo/trunk/src/samples/perl_sample.p.pl
+END
+php_sample.p.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/8116/openkomodo/trunk/src/samples/php_sample.p.php
+END
+xslt_sample.p.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/!svn/ver/8116/openkomodo/trunk/src/samples/xslt_sample.p.xsl
+END
+birds.p.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/!svn/ver/8116/openkomodo/trunk/src/samples/birds.p.xml
+END
+javascript_sample.p.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/1051/openkomodo/trunk/src/samples/javascript_sample.p.js
+END

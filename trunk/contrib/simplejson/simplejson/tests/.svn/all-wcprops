@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/!svn/ver/14/openkomodo/trunk/contrib/simplejson/simplejson/tests
+END
+test_indent.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/!svn/ver/14/openkomodo/trunk/contrib/simplejson/simplejson/tests/test_indent.py
+END
+test_separators.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/!svn/ver/14/openkomodo/trunk/contrib/simplejson/simplejson/tests/test_separators.py
+END
+test_dump.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/!svn/ver/14/openkomodo/trunk/contrib/simplejson/simplejson/tests/test_dump.py
+END
+test_unicode.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/14/openkomodo/trunk/contrib/simplejson/simplejson/tests/test_unicode.py
+END
+test_pass1.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/!svn/ver/14/openkomodo/trunk/contrib/simplejson/simplejson/tests/test_pass1.py
+END
+test_pass2.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/!svn/ver/14/openkomodo/trunk/contrib/simplejson/simplejson/tests/test_pass2.py
+END
+test_pass3.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/!svn/ver/14/openkomodo/trunk/contrib/simplejson/simplejson/tests/test_pass3.py
+END
+test_recursion.py
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/!svn/ver/14/openkomodo/trunk/contrib/simplejson/simplejson/tests/test_recursion.py
+END
+test_attacks.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/14/openkomodo/trunk/contrib/simplejson/simplejson/tests/test_attacks.py
+END
+test_fail.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/!svn/ver/14/openkomodo/trunk/contrib/simplejson/simplejson/tests/test_fail.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/!svn/ver/14/openkomodo/trunk/contrib/simplejson/simplejson/tests/__init__.py
+END

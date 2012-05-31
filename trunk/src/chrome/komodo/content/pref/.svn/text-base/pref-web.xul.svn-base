@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<!DOCTYPE window SYSTEM "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" [
+  <!ENTITY % prefDTD SYSTEM "chrome://komodo/locale/pref/pref.dtd">
+  %prefDTD;
+]>
+
+<!-- ***** BEGIN LICENSE BLOCK *****
+ Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ 
+ The contents of this file are subject to the Mozilla Public License
+ Version 1.1 (the "License"); you may not use this file except in
+ compliance with the License. You may obtain a copy of the License at
+ http://www.mozilla.org/MPL/
+ 
+ Software distributed under the License is distributed on an "AS IS"
+ basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+ License for the specific language governing rights and limitations
+ under the License.
+ 
+ The Original Code is Komodo code.
+ 
+ The Initial Developer of the Original Code is ActiveState Software Inc.
+ Portions created by ActiveState Software Inc are Copyright (C) 2000-2007
+ ActiveState Software Inc. All Rights Reserved.
+ 
+ Contributor(s):
+   ActiveState Software Inc
+ 
+ Alternatively, the contents of this file may be used under the terms of
+ either the GNU General Public License Version 2 or later (the "GPL"), or
+ the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ in which case the provisions of the GPL or the LGPL are applicable instead
+ of those above. If you wish to allow use of your version of this file only
+ under the terms of either the GPL or the LGPL, and not to allow others to
+ use your version of this file under the terms of the MPL, indicate your
+ decision by deleting the provisions above and replace them with the notice
+ and other provisions required by the GPL or the LGPL. If you do not delete
+ the provisions above, a recipient may use your version of this file under
+ the terms of any one of the MPL, the GPL or the LGPL.
+ 
+ ***** END LICENSE BLOCK ***** -->
+
+<?xml-stylesheet href="chrome://global/skin" type="text/css"?>
+<?xml-stylesheet href="chrome://komodo/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://komodo/skin/bindings/widgets.css" type="text/css"?>
+<?xml-stylesheet href="chrome://komodo/skin/prefs/prefs.css" type="text/css"?>
+
+<window xmlns:html="http://www.w3.org/1999/xhtml"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        orient="vertical"
+        onload="PrefWeb_OnLoad();">
+
+    <script src="chrome://xtk/content/xtk.js" type="application/x-javascript;version=1.7"/>
+    <script src="chrome://komodo/content/library/logging.js" type="application/x-javascript;version=1.7"/>
+    <script src="chrome://komodo/content/library/dialogs.js" type="application/x-javascript;version=1.7"/>
+    <script src="chrome://komodo/content/library/filepickers.js" type="application/x-javascript;version=1.7"/>
+    <script src="chrome://komodo/content/library/windowManager.js" type="application/x-javascript;version=1.7"/>
+    <script src="chrome://komodo/content/pref/pref-web.js" type="application/x-javascript;version=1.7"/>
+
+    <!-- This main vbox is to ensure *all* the pref widgets are accessible,
+         as it adds a scrollbar when the contents are too long. -->
+    <vbox id="web-prefs-vbox" flex="1" class="autoscroll">
+
+        <groupbox orient="vertical">
+            <caption label="&webBrowser.label;"/>
+            <vbox flex="1">
+                <description>&whichBrowserUse.description;</description>
+            </vbox>
+            <spacer height="5"/>
+            <hbox>
+                <menulist id="selectedbrowser"
+                          flex="1"
+                          pref="true"
+                          prefstring="browser">
+                    <menupopup id="selectedbrowser-popup"/>
+                </menulist>
+                <button label="&browse.label;" oncommand="browseForBrowser();"/>
+            </hbox>
+        </groupbox>
+    
+        <groupbox orient="vertical">
+            <caption label="&previewInBrowser.label;"/>
+            <radiogroup id="browser_preview_method" flex="1" pref="true"
+                        prefattribute="value">
+                <description>&whichMethodUse.description;</description>
+                <radio value="in-tab-other-group"
+                       label="&previewInKomodoTabOtherTabGroup.label;"
+                       selected="true"/>
+                <radio value="in-tab-same-group"
+                       label="&previewInKomodoTabSameTabGroup.label;"/>
+                <radio value="external"
+                       label="&previewInExternalBrowserSpecifiedAbove.label;"/>
+            </radiogroup>
+        </groupbox>
+    
+        <groupbox orient="vertical">
+            <caption label="&saveChangedFiles.label;"/>
+            <label>&whenStartingPreviewOnUnsavedFile.label;</label>
+            <menulist pref="true" prefattribute="data"
+                      prefstrings="donotask_save_buffer_before_preview,donotask_action_save_buffer_before_preview">
+                <menupopup>
+                    <menuitem data="false,"   label="&askToSaveCurrentFile.label;"/>
+                    <menuitem data="true,All" label="&alwaysSaveCurrentFile.label;"/>
+                    <menuitem data="true,None"  label="&dontSaveCurrentFile.label;"/>
+                </menupopup>
+            </menulist>
+        </groupbox>
+        
+        <groupbox id="connectionGroup">
+            <caption label="&connection.label;"/>
+          
+            <hbox align="center">
+                <description flex="1" control="connectionSettings">&connectionDesc.label;</description>
+                <button id="connectionSettings" icon="network" label="&connectionSettings.label;"
+                      accesskey="&connectionSettings.accesskey;"
+                      oncommand="configureProxies();"/>
+            </hbox>
+            <hbox align="center">
+                <description flex="1" control="showCertificates">&certManager.description;</description>
+                <button id="showCertificates" icon="network"
+                        label="&certManager.label;"
+                        accesskey="&certManager.accesskey;"
+                        oncommand="showCertificates();"/>
+            </hbox>
+        </groupbox>
+
+    </vbox>
+
+</window>

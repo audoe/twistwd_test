@@ -1,0 +1,162 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
+ * The contents of this file are subject to the Mozilla Public License
+ * Version 1.1 (the "License"); you may not use this file except in
+ * compliance with the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ * 
+ * Software distributed under the License is distributed on an "AS IS"
+ * basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+ * License for the specific language governing rights and limitations
+ * under the License.
+ * 
+ * The Original Code is Komodo code.
+ * 
+ * The Initial Developer of the Original Code is ActiveState Software Inc.
+ * Portions created by ActiveState Software Inc are Copyright (C) 2000-2007
+ * ActiveState Software Inc. All Rights Reserved.
+ * 
+ * Contributor(s):
+ *   ActiveState Software Inc
+ * 
+ * Alternatively, the contents of this file may be used under the terms of
+ * either the GNU General Public License Version 2 or later (the "GPL"), or
+ * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the MPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK ***** */
+
+#include "nsISupports.idl"
+#include "nsITreeView.idl"
+#include "koIFinder.idl"
+#include "koIFindContext.idl"
+
+
+[scriptable, uuid(19692197-756C-41b9-88A3-331125971FEA)]
+interface koIFindResultsView : nsITreeView {
+    // An tree view for find results data.
+
+    attribute long id; // the unique id of this results view, set by creator
+
+    // Clear the list of find results.
+    void Clear();
+
+    // Add a single find/replace result.
+    void AddFindResult(in wstring type,
+                       in wstring url,
+                       in PRUint32 startIndex, // character offset
+                       in PRUint32 endIndex,  // character offset
+                       in wstring value,
+                       in wstring fileName,
+                       in PRUint32 lineNum,
+                       in PRUint32 columnNum,
+                       in wstring context_);
+    void AddReplaceResult(in wstring type,
+                          in wstring url,
+                          in PRUint32 startIndex, // character offset
+                          in PRUint32 endIndex, // character offset
+                          in wstring value,
+                          in wstring replacement,
+                          in wstring fileName,
+                          in PRUint32 lineNum,
+                          in PRUint32 columnNum,
+                          in wstring context_);
+
+    // Optimization: add multiple find/replace results at once.
+    void AddFindResults(in unsigned long type_count,
+                        [array, size_is(type_count)] in wstring type,
+                        in unsigned long url_count,
+                        [array, size_is(url_count)] in wstring url,
+                        in unsigned long startIndex_count,
+                        [array, size_is(startIndex_count)] in PRUint32 startIndex, // character offset
+                        in unsigned long endIndex_count,
+                        [array, size_is(endIndex_count)] in PRUint32 endIndex, // character offset
+                        in unsigned long value_count,
+                        [array, size_is(value_count)] in wstring value,
+                        in unsigned long fileName_count,
+                        [array, size_is(fileName_count)] in wstring fileName,
+                        in unsigned long lineNum_count,
+                        [array, size_is(lineNum_count)] in PRUint32 lineNum,
+                        in unsigned long columnNum_count,
+                        [array, size_is(columnNum_count)] in PRUint32 columnNum,
+                        in unsigned long context_count,
+                        [array, size_is(context_count)] in wstring context_);
+    void AddReplaceResults(
+            in unsigned long type_count,
+            [array, size_is(type_count)] in wstring type,
+            in unsigned long url_count,
+            [array, size_is(url_count)] in wstring url,
+            in unsigned long startIndex_count,
+            [array, size_is(startIndex_count)] in PRUint32 startIndex,
+            in unsigned long endIndex_count,
+            [array, size_is(endIndex_count)] in PRUint32 endIndex,
+            in unsigned long value_count,
+            [array, size_is(value_count)] in wstring value,
+            in unsigned long replacement_count,
+            [array, size_is(replacement_count)] in wstring replacement,
+            in unsigned long fileName_count,
+            [array, size_is(fileName_count)] in wstring fileName,
+            in unsigned long lineNum_count,
+            [array, size_is(lineNum_count)] in PRUint32 lineNum,
+            in unsigned long columnNum_count,
+            [array, size_is(columnNum_count)] in PRUint32 columnNum,
+            in unsigned long context_count,
+            [array, size_is(context_count)] in wstring context_);
+
+    // Extract part of the find result data at a specific index.
+    wstring GetType(in PRUint32 index);
+    wstring GetUrl(in PRUint32 index);
+    PRUint32 GetStartIndex(in PRUint32 index); // character offset
+    PRUint32 GetEndIndex(in PRUint32 index); // character offset
+    wstring GetValue(in PRUint32 index);
+    wstring GetReplacement(in PRUint32 index);
+    PRUint32 GetLineNum(in PRUint32 index);
+    PRUint32 GetColumnNum(in PRUint32 index);
+
+    // Sort the find result data by a certain key (this key typically matches
+    // the <treecol id=.../>  id's).
+    void Sort(in string sortBy);
+
+    // Filter the results using the given text.
+    void SetFilterText(in AString text);
+
+    // Some useful queries into the current find results data
+    PRUint32 GetNumUrls();
+};
+
+
+// Implemented in find's JS code. This is too allow find's Python code to
+// work with the Find Results Tab.
+//
+// History: This was added because the "Find in Files" functionality is
+// asynchronous and the Python-level and needed a way to callback (I could
+// have used nsIObserverService instead but chose this).
+[scriptable, uuid(53A53E47-A32E-4BC3-A242-8935D9271CFA)]
+interface koIFindResultsTabManager : nsISupports {
+    attribute koIFindResultsView view;
+    attribute koIFindContext context_;
+    
+    // Set the "Find Results" tab's description label.
+    //
+    // "important" message will be marked in red and will, as well, be
+    // sent to the status bar.
+    void setDescription(in wstring desc, in boolean important);
+    
+    // Methods for the Find back-end to notify the UI of the searching state.
+    void searchStarted();
+    void searchFinished(in boolean success,  // terminated normally
+                        in long numResults,
+                        in long numFiles,
+                        in long numFilesSearched,
+                        in wstring journalId);  // for "Replace All in Files" operation
+};
+
+

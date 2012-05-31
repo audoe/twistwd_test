@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/7847/openkomodo/trunk/contrib/pycrypto/lib/Crypto/SelfTest
+END
+st_common.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/4769/openkomodo/trunk/contrib/pycrypto/lib/Crypto/SelfTest/st_common.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/!svn/ver/4769/openkomodo/trunk/contrib/pycrypto/lib/Crypto/SelfTest/__init__.py
+END

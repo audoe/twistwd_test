@@ -1,0 +1,58 @@
+10
+
+dir
+10184
+http://svn.openkomodo.com/repos/openkomodo/trunk/src/modules
+http://svn.openkomodo.com/repos
+
+
+
+2012-05-16T23:31:10.114643Z
+10183
+toddw
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+b87d16e7-d29f-4ee1-b5ec-817d645d335f
+
+places
+dir
+
+stackato
+dir
+
+rails
+dir
+
+casper
+dir
+
+spellcheck
+dir
+
+zendframework
+dir
+
+fastopen
+dir
+
+klint
+dir
+
+kotcllint
+dir
+
+koextgen
+dir
+

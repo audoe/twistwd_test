@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/!svn/ver/10067/openkomodo/trunk/src/modules/casper
+END
+install.rdf
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/8526/openkomodo/trunk/src/modules/casper/install.rdf
+END
+chrome.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/7485/openkomodo/trunk/src/modules/casper/chrome.manifest
+END
+devbuild.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/7485/openkomodo/trunk/src/modules/casper/devbuild.manifest
+END
+Conscript
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/!svn/ver/10067/openkomodo/trunk/src/modules/casper/Conscript
+END

@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/repos/!svn/ver/4399/mk/trunk/mklib
+END
+tasks.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/repos/!svn/ver/2957/mk/trunk/mklib/tasks.py
+END
+Makefile.py.template
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/!svn/ver/478/mk/trunk/mklib/Makefile.py.template
+END
+configuration.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/repos/!svn/ver/2181/mk/trunk/mklib/configuration.py
+END
+common.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/repos/!svn/ver/199/mk/trunk/mklib/common.py
+END
+runner.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/repos/!svn/ver/4328/mk/trunk/mklib/runner.py
+END
+sh.py
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/repos/!svn/ver/3420/mk/trunk/mklib/sh.py
+END
+path.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/repos/!svn/ver/199/mk/trunk/mklib/path.py
+END
+makefile.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/repos/!svn/ver/2957/mk/trunk/mklib/makefile.py
+END
+taskmaster.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/repos/!svn/ver/488/mk/trunk/mklib/taskmaster.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/repos/!svn/ver/4399/mk/trunk/mklib/__init__.py
+END
+utils.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/repos/!svn/ver/476/mk/trunk/mklib/utils.py
+END

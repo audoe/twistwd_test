@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/!svn/ver/8668/openkomodo/trunk/src/codeintel/test2/scan_inputs/tcl
+END
+ftp.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/8498/openkomodo/trunk/src/codeintel/test2/scan_inputs/tcl/ftp.tcl
+END
+package.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/!svn/ver/8498/openkomodo/trunk/src/codeintel/test2/scan_inputs/tcl/package.tcl
+END
+tcl_lassign_bug75267a.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/!svn/ver/8498/openkomodo/trunk/src/codeintel/test2/scan_inputs/tcl/tcl_lassign_bug75267a.tcl
+END
+package2.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/!svn/ver/8498/openkomodo/trunk/src/codeintel/test2/scan_inputs/tcl/package2.tcl
+END
+dialog.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/!svn/ver/8498/openkomodo/trunk/src/codeintel/test2/scan_inputs/tcl/dialog.tcl
+END
+namespaces.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/!svn/ver/8498/openkomodo/trunk/src/codeintel/test2/scan_inputs/tcl/namespaces.tcl
+END
+script.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/!svn/ver/8498/openkomodo/trunk/src/codeintel/test2/scan_inputs/tcl/script.tcl
+END
+signatures.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/!svn/ver/8498/openkomodo/trunk/src/codeintel/test2/scan_inputs/tcl/signatures.tcl
+END
+bug74850a_escape_braces.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/!svn/ver/8668/openkomodo/trunk/src/codeintel/test2/scan_inputs/tcl/bug74850a_escape_braces.tcl
+END
+script2.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/!svn/ver/8498/openkomodo/trunk/src/codeintel/test2/scan_inputs/tcl/script2.tcl
+END

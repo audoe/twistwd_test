@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/10148/openkomodo/trunk/src/chrome/komodo/locale/en-US/pref
+END
+pref.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/!svn/ver/10148/openkomodo/trunk/src/chrome/komodo/locale/en-US/pref/pref.dtd
+END
+pref-alllangfonts.properties
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/!svn/ver/9423/openkomodo/trunk/src/chrome/komodo/locale/en-US/pref/pref-alllangfonts.properties
+END
+pref-winInteg.properties
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/!svn/ver/9238/openkomodo/trunk/src/chrome/komodo/locale/en-US/pref/pref-winInteg.properties
+END
+pref-editor.properties
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/!svn/ver/6765/openkomodo/trunk/src/chrome/komodo/locale/en-US/pref/pref-editor.properties
+END
+pref-languages.properties
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/!svn/ver/10120/openkomodo/trunk/src/chrome/komodo/locale/en-US/pref/pref-languages.properties
+END
+pref-helplang.properties
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/!svn/ver/7017/openkomodo/trunk/src/chrome/komodo/locale/en-US/pref/pref-helplang.properties
+END
+file-permissions.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/!svn/ver/3944/openkomodo/trunk/src/chrome/komodo/locale/en-US/pref/file-permissions.dtd
+END
+file-properties.properties
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/!svn/ver/10113/openkomodo/trunk/src/chrome/komodo/locale/en-US/pref/file-properties.properties
+END

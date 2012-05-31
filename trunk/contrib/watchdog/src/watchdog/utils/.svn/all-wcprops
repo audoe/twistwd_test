@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/!svn/ver/8878/openkomodo/trunk/contrib/watchdog/src/watchdog/utils
+END
+bricks.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/!svn/ver/8878/openkomodo/trunk/contrib/watchdog/src/watchdog/utils/bricks.py
+END
+dirsnapshot.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/!svn/ver/8878/openkomodo/trunk/contrib/watchdog/src/watchdog/utils/dirsnapshot.py
+END
+echo.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/8878/openkomodo/trunk/contrib/watchdog/src/watchdog/utils/echo.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/!svn/ver/8878/openkomodo/trunk/contrib/watchdog/src/watchdog/utils/__init__.py
+END
+platform.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/!svn/ver/8878/openkomodo/trunk/contrib/watchdog/src/watchdog/utils/platform.py
+END
+decorators.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/8878/openkomodo/trunk/contrib/watchdog/src/watchdog/utils/decorators.py
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/!svn/ver/9489/openkomodo/trunk/src/codeintel/src/patches
+END
+ciElementTree-4-cache.patch
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/!svn/ver/9114/openkomodo/trunk/src/codeintel/src/patches/ciElementTree-4-cache.patch
+END
+ciElementTree-3-ciElementTree.patch
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/!svn/ver/8429/openkomodo/trunk/src/codeintel/src/patches/ciElementTree-3-ciElementTree.patch
+END
+ciElementTree-1-repr.patch
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/!svn/ver/501/openkomodo/trunk/src/codeintel/src/patches/ciElementTree-1-repr.patch
+END
+silvercity-scintilla-neighbour.patch
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/!svn/ver/501/openkomodo/trunk/src/codeintel/src/patches/silvercity-scintilla-neighbour.patch
+END
+ciElementTree-0-removePositioning.patch
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/!svn/ver/9487/openkomodo/trunk/src/codeintel/src/patches/ciElementTree-0-removePositioning.patch
+END
+ciElementTree-2-names.patch
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/!svn/ver/9489/openkomodo/trunk/src/codeintel/src/patches/ciElementTree-2-names.patch
+END

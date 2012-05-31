@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/!svn/ver/9991/openkomodo/trunk/mozilla/patches-new/mozilla-7.0-pyxpcom
+END
+__patchinfo__.py
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/!svn/ver/8731/openkomodo/trunk/mozilla/patches-new/mozilla-7.0-pyxpcom/__patchinfo__.py
+END
+pyxpcom-interface-function.patch
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/!svn/ver/8908/openkomodo/trunk/mozilla/patches-new/mozilla-7.0-pyxpcom/pyxpcom-interface-function.patch
+END
+bug-79803-return-voidp.patch
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/!svn/ver/9991/openkomodo/trunk/mozilla/patches-new/mozilla-7.0-pyxpcom/bug-79803-return-voidp.patch
+END
+pyxpcom_crashreporter_log_last_call.patch
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/!svn/ver/8731/openkomodo/trunk/mozilla/patches-new/mozilla-7.0-pyxpcom/pyxpcom_crashreporter_log_last_call.patch
+END
+pyxpcom_proxy_decorator.patch
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/!svn/ver/8731/openkomodo/trunk/mozilla/patches-new/mozilla-7.0-pyxpcom/pyxpcom_proxy_decorator.patch
+END
+pyloader-threadutils.patch
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/!svn/ver/8731/openkomodo/trunk/mozilla/patches-new/mozilla-7.0-pyxpcom/pyloader-threadutils.patch
+END
+pyxpcom_xpcom_exceptions.patch
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/!svn/ver/8731/openkomodo/trunk/mozilla/patches-new/mozilla-7.0-pyxpcom/pyxpcom_xpcom_exceptions.patch
+END
+pyxpcom_fixproxy.patch
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/!svn/ver/8731/openkomodo/trunk/mozilla/patches-new/mozilla-7.0-pyxpcom/pyxpcom_fixproxy.patch
+END
+pyxpcom_apppath.patch
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/!svn/ver/8731/openkomodo/trunk/mozilla/patches-new/mozilla-7.0-pyxpcom/pyxpcom_apppath.patch
+END
+pyxpcom_make.patch
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/!svn/ver/8731/openkomodo/trunk/mozilla/patches-new/mozilla-7.0-pyxpcom/pyxpcom_make.patch
+END

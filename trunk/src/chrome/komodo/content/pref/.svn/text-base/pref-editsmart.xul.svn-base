@@ -1,0 +1,280 @@
+<?xml version="1.0"?>
+<!DOCTYPE window SYSTEM "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" [
+  <!ENTITY % prefDTD SYSTEM "chrome://komodo/locale/pref/pref.dtd">
+  %prefDTD;
+]>
+
+<!-- ***** BEGIN LICENSE BLOCK *****
+ Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ 
+ The contents of this file are subject to the Mozilla Public License
+ Version 1.1 (the "License"); you may not use this file except in
+ compliance with the License. You may obtain a copy of the License at
+ http://www.mozilla.org/MPL/
+ 
+ Software distributed under the License is distributed on an "AS IS"
+ basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+ License for the specific language governing rights and limitations
+ under the License.
+ 
+ The Original Code is Komodo code.
+ 
+ The Initial Developer of the Original Code is ActiveState Software Inc.
+ Portions created by ActiveState Software Inc are Copyright (C) 2000-2007
+ ActiveState Software Inc. All Rights Reserved.
+ 
+ Contributor(s):
+   ActiveState Software Inc
+ 
+ Alternatively, the contents of this file may be used under the terms of
+ either the GNU General Public License Version 2 or later (the "GPL"), or
+ the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ in which case the provisions of the GPL or the LGPL are applicable instead
+ of those above. If you wish to allow use of your version of this file only
+ under the terms of either the GPL or the LGPL, and not to allow others to
+ use your version of this file under the terms of the MPL, indicate your
+ decision by deleting the provisions above and replace them with the notice
+ and other provisions required by the GPL or the LGPL. If you do not delete
+ the provisions above, a recipient may use your version of this file under
+ the terms of any one of the MPL, the GPL or the LGPL.
+ 
+ ***** END LICENSE BLOCK ***** -->
+
+<?xml-stylesheet href="chrome://global/skin" type="text/css"?>
+<?xml-stylesheet href="chrome://komodo/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://komodo/skin/bindings/widgets.css" type="text/css"?>
+<?xml-stylesheet href="chrome://komodo/skin/prefs/prefs.css" type="text/css"?>
+
+<window xmlns:html="http://www.w3.org/1999/xhtml"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        class="kodialog"
+        orient="vertical"
+        onload="editsmart_OnLoad();">
+
+    <script src="chrome://xtk/content/xtk.js" type="application/x-javascript;version=1.7"/>
+    <script src="chrome://komodo/content/library/logging.js" type="application/x-javascript;version=1.7"/>
+    <script src="chrome://komodo/content/library/filepickers.js" type="application/x-javascript;version=1.7"/>
+    <script src="chrome://komodo/content/library/windowManager.js" type="application/x-javascript;version=1.7" />
+
+    <script type="text/javascript">
+        var useTabCharacterToCompleteWords="&useTabCharacterToCompleteWords.message;";
+        var showEdgeLine="&showEdgeLine.label;";
+        var highlightCharactersBeyondEdgeLine="&highlightCharactersBeyondEdgeLine.label;";
+    </script>
+    <script type="application/x-javascript;version=1.7">
+    <![CDATA[
+
+    function OnPreferencePageLoading(prefset) {
+        try {
+            var schemeName = prefset.getStringPref('editor-scheme');
+            var schemeService = Components.classes['@activestate.com/koScintillaSchemeService;1'].getService()
+            var currentScheme = schemeService.getScheme(schemeName);
+            var edgeCheckbox = document.getElementById('editUseEdge');
+            if (currentScheme.preferFixed) {
+                edgeCheckbox.setAttribute('label', showEdgeLine);
+            } else {
+                edgeCheckbox.setAttribute('label', highlightCharactersBeyondEdgeLine);
+            }
+        } catch (ex) {
+            // Ignore any errors.
+        }
+    }
+
+    function editsmart_OnLoad() {
+        try {
+        var gMainWindow = ko.windowManager.getMainWindow();
+        // get a keybinding and set the text correctly
+        var text = useTabCharacterToCompleteWords;
+        var keylabel = gMainWindow.ko.keybindings.manager.command2keylabel('cmd_completeWord');
+        text = text.replace('__KEY__', keylabel);
+        document.getElementById('editTabCompletes').setAttribute('label', text);
+
+        parent.hPrefWindow.onpageload();
+
+        pref_edgeLine_doEnabling();
+        pref_hyperlinks_doEnabling();
+
+        parent.initPanel();
+        }catch(e) {dump(e+'\n');}
+    }
+
+    var _pref_lint_log = ko.logging.getLogger("pref-lint");
+
+    function _pref_setElementEnabledState(elt, enabled) {
+        if (typeof(elt) == "string") {
+            elt = document.getElementById(elt);
+        }
+        if (enabled) {
+            if (elt.hasAttribute('disabled')) {
+                elt.removeAttribute('disabled');
+            }
+        } else {
+            elt.setAttribute('disabled', true);
+        }
+    }
+
+    function pref_edgeLine_doEnabling() {
+        var enabled = document.getElementById("editUseEdge").checked;
+        _pref_setElementEnabledState("editAutoWrapColumn", enabled);
+    }
+
+    function pref_hyperlinks_doEnabling() {
+        var enabled = document.getElementById("hyperlinksEnabled").checked;
+        _pref_setElementEnabledState("hyperlinksEnableGotoDefinition", enabled);
+    }
+
+    function pref_softChars_doEnabling() {
+        var enabled = document.getElementById("editSmartSoftCharacters").checked;
+        _pref_setElementEnabledState("enableSmartSoftCharactersInsideLine", enabled);
+    }
+
+    ]]>
+    </script>
+
+    <!-- This main vbox is to ensure *all* the pref widgets are accessible,
+         as it adds a scrollbar when the contents are too long. -->
+    <vbox id="editsmart-prefs-vbox" flex="1" class="autoscroll">
+
+        <groupbox orient="vertical">
+            <caption label="&smartEditing.label;"/>
+            <checkbox id="editTabCompletes"
+                      label="&useTabCharacterToCompleteWordsLikeCtrlSpace.label;"
+                      pref="true"/>
+            <hbox align="center">
+                <label value="&fileEditSmartWrapLines.label;"/>
+                <menulist pref="true"
+                          id="editWrapType"
+                          prefattribute="data"
+                          prefstring="editWrapType">
+                    <menupopup>
+                        <menuitem data="0" label="&none.label;"/>
+                        <menuitem data="1" label="&word.label;"/>
+                        <menuitem data="2" label="&character.label;"/>
+                    </menupopup>
+                </menulist>
+            </hbox>
+            <!-- editWordWrapMarker and editWordWrapIndentation are used
+                 in scintilla.p.xml, where we have access only to global prefs.
+                 They're used in koDocSettingsManager.py as well, but those
+                 will bubble up from doc prefs to global prefs
+              -->
+            <vbox id="wordwrap_settings_vbox" class="load-context-check" showIfLoadContext="global">
+                <hbox id="wordwrap_markers_hbox"
+                      align="center"
+                      style="margin-left: 27px;">
+                    <label id="wordwrap_markers_label"
+                           value="&fileEditSmartWrapMarkers.label;"/>
+                    <menulist pref="true"
+                              id="editWordWrapMarker"
+                              prefattribute="data"
+                              prefstring="editWordWrapMarker">
+                        <menupopup id="wordwrap_markers_menupopup">
+                            <menuitem id="wordwrap_markers_menuitem_0"
+                                      data="0"
+                                      label="&none.label;"/>
+                            <menuitem id="wordwrap_markers_menuitem_1"
+                                      data="1"
+                                      label="&endOfLine.label;"/>
+                            <menuitem id="wordwrap_markers_menuitem_2"
+                                      data="2"
+                                      label="&startOfLine.label;"/>
+                            <menuitem id="wordwrap_markers_menuitem_3"
+                                      data="3"
+                                      label="&both.label;"/>
+                        </menupopup>
+                    </menulist>
+                </hbox>
+                <hbox id="wordwrap_indentation_hbox"
+                      align="center"
+                      style="margin-left: 27px;">
+                    <label id="wordwrap_indentation_label"
+                           value="&fileEditSmartWrapIndentation.label;"/>
+                    <menulist pref="true"
+                              id="editWordWrapIndentation"
+                              prefattribute="data"
+                              prefstring="editWordWrapIndentation">
+                        <menupopup id="wordwrap_indentation_menupopup">
+                            <menuitem id="wordwrap_indentation_menuitem_0"
+                                      data="0"
+                                      label="&wordwrapIndentationFixed.label;"/>
+                            <menuitem id="wordwrap_indentation_menuitem_1"
+                                      data="1"
+                                      label="&wordwrapIndentationSame.label;"/>
+                            <menuitem id="wordwrap_indentation_menuitem_2"
+                                      data="2"
+                                      label="&wordwrapIndentationOneLevel.label;"/>
+                        </menupopup>
+                    </menulist>
+                </hbox>
+            </vbox>
+    
+            <separator class="thin"/>
+            <checkbox id="editUseEdge"
+                      label="&showEdgeLine.label;"
+                      pref="true"
+                      oncommand="pref_edgeLine_doEnabling();"/>
+            <hbox align="center" style="margin-left: 27px;">
+                <label value="&fileEditSmartEdgeLine.label;"/>
+                <textbox id="editAutoWrapColumn" size="3" pref="true"/>
+            </hbox>
+    
+            <separator class="thin"/>
+            <!-- smart-char processing is done in scintilla handlers where
+                 we don't have access to the containing view/koDoc.
+            -->
+            <vbox class="load-context-check" showIfLoadContext="global">
+            <checkbox id="editSmartSoftCharacters" label="&enableSoftCharacters.label;" pref="true"
+                    prefstring="editSmartSoftCharacters" prefattribute="checked"
+                      oncommand="pref_softChars_doEnabling();"/>
+            <description style="margin-left: 27px;">&enableSoftCharacters.description;</description>
+            <checkbox id="enableSmartSoftCharactersInsideLine"
+                      style="margin-left: 27px;"
+                      label="&enableSmartSoftCharactersInsideLine.label;"
+                      pref="true"/>
+    
+            <separator class="thin"/>
+            <checkbox id="editSmartCutCopyWithoutSelection"
+                      label="&cutCopyWithoutSelection.label;" pref="true"
+                      prefstring="editSmartCutCopyWithoutSelection"
+                      prefattribute="checked"/>
+            </vbox>
+        </groupbox>
+    
+        <!-- hyperlinksEnabled is used with doc prefs, but
+             hyperlinksEnableGotoDefinition is used only with global prefs
+        -->
+        <groupbox orient="vertical" class="load-context-check" showIfLoadContext="global">
+            <caption label="&hyperlinks.label;"/>
+            <checkbox id="hyperlinksEnabled"
+                      label="&hyperlinksEnabled.label;"
+                      pref="true"
+                      oncommand="pref_hyperlinks_doEnabling();"/>
+            <checkbox id="hyperlinksEnableGotoDefinition"
+                      style="margin-left: 27px;"
+                      label="&hyperlinksEnableGotoDefinition.label;"
+                      pref="true"/>
+        </groupbox>
+    
+        <groupbox orient="vertical">
+            <caption label="&folding.label;"/>
+            <hbox align="center">
+              <label value="&fileEditSmartFoldMarkStyle.label;"/>
+              <menulist id="editFoldStyle" pref="true" prefattribute="data">
+                  <menupopup>
+                      <menuitem data="none" label="&donTShowFoldMarks.label;"/>
+                      <menuitem data="squaretree" label="&squareTrees.label;"/>
+                      <menuitem data="curvytree" label="&curvyTrees.label;"/>
+                      <menuitem data="plusminus" label="&signs.label;"/>
+                      <menuitem data="arrows" label="&arrows.label;"/>
+                  </menupopup>
+              </menulist>
+            </hbox>
+            <checkbox id="editFoldLines" label="&useHorizontalLineOnFolds.label;" pref="true"
+                      prefstring="editFoldLines" prefattribute="checked"/>
+            <checkbox id="editRestoreFoldPoints" label="&restoreFoldStateOnDocumentLoadSlowsDownFileOpening.label;" pref="true"
+                      prefstring="editRestoreFoldPoints" prefattribute="checked"/>
+        </groupbox>
+
+    </vbox>
+
+</window>

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/!svn/ver/6272/openkomodo/trunk/src/editor/catalogs/mozilla
+END
+xbl.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/!svn/ver/14/openkomodo/trunk/src/editor/catalogs/mozilla/xbl.dtd
+END
+xul.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/!svn/ver/6272/openkomodo/trunk/src/editor/catalogs/mozilla/xul.dtd
+END
+moz.soc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/!svn/ver/14/openkomodo/trunk/src/editor/catalogs/mozilla/moz.soc
+END
+catalog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/14/openkomodo/trunk/src/editor/catalogs/mozilla/catalog.xml
+END

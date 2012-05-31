@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<!-- ***** BEGIN LICENSE BLOCK *****
+ Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ 
+ The contents of this file are subject to the Mozilla Public License
+ Version 1.1 (the "License"); you may not use this file except in
+ compliance with the License. You may obtain a copy of the License at
+ http://www.mozilla.org/MPL/
+ 
+ Software distributed under the License is distributed on an "AS IS"
+ basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+ License for the specific language governing rights and limitations
+ under the License.
+ 
+ The Original Code is Komodo code.
+ 
+ The Initial Developer of the Original Code is ActiveState Software Inc.
+ Portions created by ActiveState Software Inc are Copyright (C) 2000-2007
+ ActiveState Software Inc. All Rights Reserved.
+ 
+ Contributor(s):
+   ActiveState Software Inc
+ 
+ Alternatively, the contents of this file may be used under the terms of
+ either the GNU General Public License Version 2 or later (the "GPL"), or
+ the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ in which case the provisions of the GPL or the LGPL are applicable instead
+ of those above. If you wish to allow use of your version of this file only
+ under the terms of either the GPL or the LGPL, and not to allow others to
+ use your version of this file under the terms of the MPL, indicate your
+ decision by deleting the provisions above and replace them with the notice
+ and other provisions required by the GPL or the LGPL. If you do not delete
+ the provisions above, a recipient may use your version of this file under
+ the terms of any one of the MPL, the GPL or the LGPL.
+ 
+ ***** END LICENSE BLOCK ***** -->
+
+<!DOCTYPE bindings PUBLIC "-//MOZILLA//DTD XBL V1.0//EN" "http://www.mozilla.org/xbl">
+
+<!--
+TODO:
+look at mozilla\xpfe\global\resources\content\bindings\button.xml
+and see if we really need *ANY* of this stuff.  I think we can
+use moz bindings with CSS to acheive everything we have here.
+-->
+
+<bindings
+    xmlns="http://www.mozilla.org/xbl"
+    xmlns:xbl="http://www.mozilla.org/xbl"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+    <!-- include our css, but inherit from mozilla's button base
+         which includes access controls -->
+    <binding id="button-base" extends="chrome://global/content/bindings/button.xml#button-base">
+        <resources>
+            <stylesheet src="chrome://komodo/skin/bindings/buttons.css"/>
+        </resources>
+    </binding>
+
+  <!-- XUL <button>s -->
+  <!-- used for button menus in several places
+    style class: rightarrow-button -->
+  <binding id="rightarrow-button" display="xul:menu"
+    extends="chrome://komodo/content/bindings/buttons.xml#button-base">
+    <content>
+      <xul:box class="button-internal-box" align="center" pack="center" flex="1">
+        <xul:image class="button-icon" xbl:inherits="src=image"/>
+      </xul:box>
+      <children includes="menupopup"/>
+    </content>
+  </binding>
+
+  <!-- USED! style: button-toolbar-a -->
+  <binding id="button-toolbar-a" display="xul:button"
+    extends="chrome://komodo/content/bindings/buttons.xml#button-base">
+    <content>
+      <xul:vbox class="button-internal-box" align="center" pack="center" flex="1">
+        <xul:image class="button-icon" xbl:inherits="src=image"/>
+      </xul:vbox>
+    </content>
+  </binding>
+
+  <!-- USED! style: button-toolbar-b,c,d; button-link; button-link-a -->
+  <binding id="button-toolbar-b" display="xul:button"
+    extends="chrome://komodo/content/bindings/buttons.xml#button-base">
+    <content>
+    <xul:vbox class="button-internal-box" align="center" pack="center" flex="1">
+        <xul:image class="button-icon" xbl:inherits="src=image"/>
+        <xul:vbox class="button-text-container" align="center" pack="center" flex="1">
+          <xul:label class="button-text" xbl:inherits="value=label,accesskey,crop,dragover-top"/>
+        </xul:vbox>
+      </xul:vbox>
+    </content>
+  </binding>
+
+  <!-- USED! style: button-link-b
+     gettingstarted page -->
+  <binding id="button-link-b" display="xul:button"
+    extends="chrome://komodo/content/bindings/buttons.xml#button-base">
+    <content>
+    <xul:hbox class="button-internal-box" xbl:inherits="align=valign"
+              pack="center" flex="1">
+        <xul:image class="button-icon" xbl:inherits="src=image"/>
+        <xul:vbox class="button-text-container" xbl:inherits="align=halign"
+                  pack="center" flex="1">
+          <xul:label class="button-text" xbl:inherits="value=label,accesskey,crop,dragover-top"/>
+        </xul:vbox>
+      </xul:hbox>
+    </content>
+  </binding>
+
+  <binding id="button-menu-a" display="xul:menu"
+           extends="chrome://komodo/content/bindings/buttons.xml#button-base">
+    <content>
+      <children includes="observes|template|menupopup|tooltip"/>
+      <xul:hbox class="button-internal-box box-inherit button-box" xbl:inherits="align,dir,pack,orient"
+                align="center" pack="center" flex="1">
+        <children>
+          <xul:image class="button-icon" xbl:inherits="src=image"/>
+          <xul:dropmarker class="button-menu-dropmarker" xbl:inherits="open,disabled"/>
+        </children>
+      </xul:hbox>
+    </content>
+  </binding>
+
+</bindings>

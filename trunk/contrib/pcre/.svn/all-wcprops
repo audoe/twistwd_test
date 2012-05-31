@@ -1,0 +1,407 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/repos/!svn/ver/8995/openkomodo/trunk/contrib/pcre
+END
+pcre_internal.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/pcre_internal.h
+END
+libpcre.def
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/libpcre.def
+END
+ucp.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/ucp.h
+END
+pcre_exec.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/pcre_exec.c
+END
+pcredemo.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/pcredemo.c
+END
+pcre_stringpiece.h.in
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/pcre_stringpiece.h.in
+END
+configure
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/!svn/ver/8995/openkomodo/trunk/contrib/pcre/configure
+END
+pcre_compile.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/pcre_compile.c
+END
+libpcre.pc.in
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/libpcre.pc.in
+END
+pcrecpp.h.in
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/pcrecpp.h.in
+END
+pcre_xclass.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/pcre_xclass.c
+END
+config.guess
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/config.guess
+END
+config.sub
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/config.sub
+END
+pcre_config.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/pcre_config.c
+END
+pcre_maketables.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/pcre_maketables.c
+END
+LICENCE
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/LICENCE
+END
+INSTALL
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/INSTALL
+END
+ucp_findchar.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/ucp_findchar.c
+END
+pcre_stringpiece.cc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/pcre_stringpiece.cc
+END
+pcre_get.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/pcre_get.c
+END
+pcretest.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/pcretest.c
+END
+pcre_try_flipped.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/pcre_try_flipped.c
+END
+pcre_globals.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/pcre_globals.c
+END
+pcrecpp_unittest.cc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/!svn/ver/8861/openkomodo/trunk/contrib/pcre/pcrecpp_unittest.cc
+END
+pcre_ucp_findchar.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/pcre_ucp_findchar.c
+END
+mkinstalldirs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/mkinstalldirs
+END
+pcre.def
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/pcre.def
+END
+pcre_dfa_exec.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/pcre_dfa_exec.c
+END
+pcregrep.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/pcregrep.c
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/README
+END
+pcre_printint.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/pcre_printint.c
+END
+install-sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/install-sh
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/Makefile.in
+END
+pcre_scanner_unittest.cc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/pcre_scanner_unittest.cc
+END
+VERSION
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/VERSION
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/AUTHORS
+END
+pcre_scanner.cc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/pcre_scanner.cc
+END
+makevp.bat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/makevp.bat
+END
+ltmain.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/ltmain.sh
+END
+pcre.in
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/pcre.in
+END
+libpcreposix.def
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/libpcreposix.def
+END
+pcre-config.in
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/pcre-config.in
+END
+perltest
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/perltest
+END
+pcre_ord2utf8.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/pcre_ord2utf8.c
+END
+pcre_fullinfo.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/pcre_fullinfo.c
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/COPYING
+END
+RunTest.in
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/RunTest.in
+END
+config.in
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/config.in
+END
+ucpinternal.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/ucpinternal.h
+END
+NEWS
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/NEWS
+END
+pcre_version.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/pcre_version.c
+END
+pcre_refcount.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/pcre_refcount.c
+END
+pcrecpp.cc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/pcrecpp.cc
+END
+ucptable.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/ucptable.c
+END
+pcre_info.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/pcre_info.c
+END
+configure.in
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/configure.in
+END
+RunGrepTest.in
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/RunGrepTest.in
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/ChangeLog
+END
+pcre_scanner.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/pcre_scanner.h
+END
+pcreposix.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/pcreposix.c
+END
+pcre_valid_utf8.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/pcre_valid_utf8.c
+END
+pcreposix.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/pcreposix.h
+END
+pcre_study.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/pcre_study.c
+END
+pcre_tables.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/pcre_tables.c
+END
+NON-UNIX-USE
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/NON-UNIX-USE
+END
+dftables.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/dftables.c
+END
+pcre_stringpiece_unittest.cc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/!svn/ver/14/openkomodo/trunk/contrib/pcre/pcre_stringpiece_unittest.cc
+END

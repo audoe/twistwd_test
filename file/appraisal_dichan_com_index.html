@@ -1,0 +1,451 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>测评中心 - 新浪地产网</title>
+<link href="http://bj.house.sina.com.cn/favicon.ico" type="image/x-icon" rel="icon">
+<link href="http://bj.house.sina.com.cn/favicon.ico" type="image/x-icon" rel="shortcut icon">
+<script src="http://appraisal.dichan.com/js/jquery-1.3.1.min.js" type="text/javascript"></script>
+<script src="http://appraisal.dichan.com/js/jquery.idTabs.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    //是否符合Email格式
+    function IsEmail(str) {
+        if (str.length > 100) {
+            return false;
+        }
+
+        var regu = "^(([0-9a-zA-Z_.]+)|([0-9a-zA-Z]+[_.0-9a-zA-Z-]*[0-9a-zA-Z_.]+))@([a-zA-Z0-9-]+[.])+([a-zA-Z]{2}|net|NET|com|COM|gov|GOV|mil|MIL|org|ORG|edu|EDU|int|INT|name|NAME)$"
+        var re = new RegExp(regu);
+        if (str.search(re) != -1)
+            return true;
+        else
+            return false;
+    }
+    //添加邮箱信息
+    function addEmail() {
+        var email = $('#txtEmail').val();
+        if (!IsEmail(email)) {
+            window.alert("请输入正确的邮箱格式");
+        } else {
+            var res = _Index.AddEmail(email);
+            if (res != null && res.value) {
+                $('#txtEmail').val('');
+                window.alert("邮箱订阅成功");
+            } else {
+                window.alert("邮箱订阅失败，请重试");
+            }
+        }
+    }
+</script>
+</head>
+<body>
+<link href="http://appraisal.dichan.com/style/style.css" type="text/css" rel="stylesheet">
+<link href="http://appraisal.dichan.com/style/style_4.css" type="text/css" rel="stylesheet">
+<link href="http://dichan.sina.com.cn/styles/Header2010.css" type="text/css" rel="stylesheet">
+<link href="http://dichan.sina.com.cn/styles/global2010_2.css" type="text/css" rel="stylesheet">
+<script type="text/javascript">
+    function onSearchDichan() {
+        var key = document.getElementById("txtDataSearch").value;
+        if (key == '' || key == '请输入搜索条件') {
+            window.open('http://search.dichan.com/');
+        }
+        else {
+            var url = 'http://search.dichan.com/twosearch.aspx?q=' + escape(key);
+            window.open(url);
+        }
+    }
+</script>
+
+<!--页眉 start--><div id="NewHeader">
+<div class="con">
+<div class="t clearfix">
+<div class="row1" id="UserLoginState">
+<ul>
+<li>登录名</li>
+<li>
+<input name="headeruid" value="" id="headeruid" maxlength="20" type="text" class="txt"></li>
+<li>密码</li>
+<li>
+<input class="txt" maxlength="50" type="password" id="headerpwd" name="headerpwd"></li>
+<li>
+<input type="button" name="" value="登 录" class="btn"></li>
+<li style="width: 50px"><a href="http://login.dichan.com/login.aspxreg.aspx" target="_blank" onclick="SetBackUrl(this)">注册</a></li>
+</ul>
+</div>
+<div class="row2">
+<a href="http://www.cric2009.com" target="_blank">CRIC2009</a><span class="Dot3"></span><a href="http://zst.dichan.com/" target="_blank">知识通</a></div>
+<div class="row3">
+<ul>
+<li class="select"><a href="http://dichan.sina.com.cn/" class="yellow" target="_blank">地产</a></li>
+<li><a href="http://house.sina.com.cn/" target="_blank">房产</a></li>
+<li><a href="http://jiaju.sina.com.cn/" target="_blank">家居</a></li>
+<li><a href="http://esf.sina.com.cn/" target="_blank">二手房</a></li>
+<li><a href="http://www.sina.com.cn/" target="_blank">新浪首页</a></li>
+<li class="CricLogo"><a href="http://www.cric.com/" target="_blank" class="CricLogo">
+<img src="http://www.sinaimg.cn/hs/dichan/20100610/logo2010.gif" alt="CRIC"></a></li>
+</ul>
+</div>
+</div>
+<div class="HSpace_10">
+</div>
+<script src="http://i3.sinaimg.cn/home/sinaflash.js" type="text/javascript"></script>
+<table width="950" align="center" cellspacing="0">
+<tr>
+<td width="177">
+
+<!--左侧翻牌开始--><div id="FP_L">
+</div>
+<script type="text/javascript">
+    var fp_pics = "", fp_links = "";
+    var def_pic = "", def_link = "";
+                    </script>
+<script src="http://dichan.sina.com.cn/iframe/2009-09-23/29/20.js" charset="gb2312" type="text/javascript"></script>
+<script src="http://dichan.sina.com.cn/iframe/2009-09-23/29/21.js" charset="gb2312" type="text/javascript"></script>
+<script src="http://dichan.sina.com.cn/iframe/2009-09-23/29/5.js" type="text/javascript"></script>
+<script type="text/javascript">
+    fp_pics = fp_pics.substring(1);
+    fp_links = fp_links.substring(1);
+                    </script>
+<script type="text/javascript">
+    var FP = new sinaFlash("http://i0.sinaimg.cn/hs/zjwei/base/swf/picshow_160x90.swf", "FP_L_swf", 165, 95, "7", "#FFFFFF", false, "High");
+    FP.addParam("menu", "false");
+    FP.addParam("wmode", "transparent");
+    FP.addVariable("ad_num", "2"); //翻牌数量
+    FP.addVariable("pic_width", "160"); //图片宽
+    FP.addVariable("pic_height", "90"); //图片高
+    FP.addVariable("flip_time", "300"); //翻牌速度
+    FP.addVariable("pause_time", "4000"); //间隔时间
+    FP.addVariable("wait_time", "1000"); //等待时间
+    FP.addVariable("pics", fp_pics); //广告图片地址
+    FP.addVariable("urls", fp_links); //广告链接地址
+    FP.addVariable("def_pic", def_pic); //默认图片地址
+    FP.addVariable("def_link", def_link); //默认链接地址
+    FP.write("FP_L");
+    //-->
+                    </script>
+
+<!--左侧翻牌结束--></td>
+<td>
+
+<!--中间通栏585x90开始--><script src="http://dichan.sina.com.cn/pdps/28/2009/0919/18.js" type="text/javascript"></script>
+
+<!--中间通栏585x90结束--></td>
+<td>
+
+<!--右侧翻牌开始--><div id="FP_R">
+</div>
+<script type="text/javascript">
+    var fp_pics = "", fp_links = "";
+    var def_pic = "", def_link = "";
+                    </script>
+<script src="http://dichan.sina.com.cn/iframe/2009-09-23/29/22.js" type="text/javascript"></script>
+<script src="http://dichan.sina.com.cn/iframe/2009-09-23/29/23.js" type="text/javascript"></script>
+<script src="http://dichan.sina.com.cn/iframe/2009-09-23/29/6.js" type="text/javascript"></script>
+<script type="text/javascript">
+    fp_pics = fp_pics.substring(1);
+    fp_links = fp_links.substring(1);
+                    </script>
+<script type="text/javascript">
+    var FP = new sinaFlash("http://i0.sinaimg.cn/hs/zjwei/base/swf/picshow_160x90.swf", "FP_L_swf", 165, 95, "7", "#FFFFFF", false, "High");
+    FP.addParam("menu", "false");
+    FP.addParam("wmode", "transparent");
+    FP.addVariable("ad_num", "2"); //翻牌数量
+    FP.addVariable("pic_width", "160"); //图片宽
+    FP.addVariable("pic_height", "90"); //图片高
+    FP.addVariable("flip_time", "300"); //翻牌速度
+    FP.addVariable("pause_time", "4000"); //间隔时间
+    FP.addVariable("wait_time", "1000"); //等待时间
+    FP.addVariable("pics", fp_pics); //广告图片地址
+    FP.addVariable("urls", fp_links); //广告链接地址
+    FP.addVariable("def_pic", def_pic); //默认图片地址
+    FP.addVariable("def_link", def_link); //默认链接地址
+    FP.write("FP_R");
+    //-->
+                    </script>
+
+<!--右侧翻牌结束--></td>
+</tr>
+</table>
+<div class="HSpace_10">
+</div>
+
+<!--新闻导航 start--><div class="SubNav">
+<div class="clearfix">
+<ul class="logo">
+<li><a href="http://dichan.sina.com.cn/" target="_blank">
+<img src="http://www.sinaimg.cn/hs/dichan/20100617/sublogo.gif" alt="新浪地产"></a></li>
+<li><a title="地产新闻" href="http://news.dichan.sina.com.cn" target="_blank" class="current_1">
+</a></li>
+<li id="divMoreCities" class="curentcity">
+<div>
+                            全国站</div>
+<div style="display: none;" id="divMoreCitiesContainer" class="pop_up">
+<a href="http://news.dichan.sina.com.cn/" target="_blank" class="red">全国站</a> <a href="http://news.dichan.sina.com.cn/bj/" target="_blank">北京</a> <a href="http://news.dichan.sina.com.cn/sh/" target="_blank">
+                                    上海</a> <a href="http://news.dichan.sina.com.cn/gz/" target="_blank">广州</a> <a href="http://news.dichan.sina.com.cn/sz/" target="_blank">深圳</a> <a href="http://news.dichan.sina.com.cn/tj/" target="_blank">
+                                            天津</a> <a href="http://news.dichan.sina.com.cn/sy/" target="_blank">沈阳</a>
+<a href="http://news.dichan.sina.com.cn/cq/" target="_blank">重庆</a> <a href="http://news.dichan.sina.com.cn/wh/" target="_blank">武汉</a> <a href="http://news.dichan.sina.com.cn/cs/" target="_blank">
+                                    长沙</a> <a href="http://news.dichan.sina.com.cn/hz/" target="_blank">杭州</a> <a href="http://news.dichan.sina.com.cn/nj/" target="_blank">南京</a> <a href="http://news.dichan.sina.com.cn/jn/" target="_blank">
+                                            山东</a> <a href="http://news.dichan.sina.com.cn/dl/" target="_blank">大连</a>
+<a href="http://news.dichan.sina.com.cn/haikou/" target="_blank">海南</a> <a href="http://news.dichan.sina.com.cn/cd/" target="_blank">成都</a> <a href="http://news.dichan.sina.com.cn/suzhou/" target="_blank">苏州</a>
+</div>
+</li>
+</ul>
+<ul style="width:602px;" class="SubNavlist">
+<li><a href="http://dichan.sina.com.cn/" target="_blank">首页</a></li>
+<li><span class="selected">地产新闻</span></li>
+<li><a href="http://data.dichan.com/Default.html" target="_blank">地产数据</a></li>
+<li><a href="http://xiazai.dichan.com" target="_blank">地产智库</a></li>
+<li><a href="http://shequ.dichan.com" target="_blank">地产社区</a></li>
+<li><a href="http://job.dichan.com" target="_blank">地产职场</a></li>
+<li class="no_bg"><a href="http://business.dichan.com" target="_blank" class="red">地产商务</a></li>
+</ul>
+</div>
+<div class="s_nav">
+<ul>
+<li id="SM_News"><a href="http://news.dichan.sina.com.cn/" target="_blank">地产新闻首页</a></li>
+<li id="SM_Category23"><a href="http://topic.dichan.com" target="_blank">
+                        话题讨论</a></li>
+<li id="SM_Category21"><a href="http://dichan.sina.com.cn/cn/focus/index.html" target="_blank">
+                        专题</a></li>
+<li id="SM_Category22"><a href="http://column.dichan.com" target="_blank">专栏</a></li>
+<li id="SM_Category01"><a href="http://news.dichan.sina.com.cn/cn/newslist01/index.html" target="_blank">
+                        政策</a></li>
+<li id="SM_Category02"><a href="http://news.dichan.sina.com.cn/cn/newslist02/index.html" target="_blank">
+                        市场</a></li>
+<li id="SM_Category03"><a href="http://news.dichan.sina.com.cn/cn/newslist03/index.html" target="_blank">
+                        土地</a></li>
+<li id="SM_Category04"><a href="http://news.dichan.sina.com.cn/cn/newslist04/index.html" target="_blank">
+                        公司</a></li>
+<li id="SM_Category05"><a href="http://news.dichan.sina.com.cn/cn/newslist05/index.html" target="_blank">
+                        机构</a></li>
+<li id="SM_Category07"><a href="http://news.dichan.sina.com.cn/cn/newslist07/index.html" target="_blank">
+                        商办</a></li>
+<li id="SM_Category13"><a href="http://news.dichan.sina.com.cn/cn/newslist13/index.html" target="_blank">
+                        项目</a></li>
+<li id="SM_Category24"><a href="http://news.dichan.sina.com.cn/cn/newslist24/index.html" target="_blank">
+                        宏观</a></li>
+<li id="SM_Category30"><a href="http://news.dichan.sina.com.cn/cn/newslist30/index.html" target="_blank">
+                        人物</a></li>
+<li id="SM_Category08"><a href="http://news.dichan.sina.com.cn/cn/newslist08/index.html" target="_blank">
+                        海外</a></li>
+<li id="SM_Category09"><a href="http://news.dichan.sina.com.cn/cn/newslist09/index.html" target="_blank">
+                        八卦</a></li>
+<li id="SM_Category33"><a href="http://news.dichan.sina.com.cn/cn/newslist33/index.html" target="_blank">
+                        内参</a></li>
+<li id="Li1" class="selected">测评</li>
+<li id="SM_Category29"><a href="http://news.dichan.sina.com.cn/business/newslist29/index.html" target="_blank">新技术新材料</a></li>
+<li id="SM_Category26"><a href="http://news.dichan.sina.com.cn/cn/newslist26/index.html" target="_blank">
+                        图片</a></li>
+<li id="SM_Category100"><a href="http://news.dichan.sina.com.cn/cn/newslist100/index.html" target="_blank">
+                        即时</a></li>
+</ul>
+</div>
+</div>
+
+<!--新闻导航 end--></div>
+<div class="ad"><script src="http://dichan.sina.com.cn/pdps/28/2009/0919/16.js" charset="gb2312" type="text/javascript"></script></div>
+</div>
+<script src="http://inx.dichan.com/gol/getuserinfo.ashx?st=00" charset="gb2312" type="text/javascript"></script>
+<script src="http://dichan.sina.com.cn/js/Menu2010.js" type="text/javascript"></script>
+<script src="http://inx.dichan.com/gol/getuserinfo.ashx" charset="gb2312" type="text/javascript"></script>
+
+<!--页眉 end--><form action="index.aspx" id="form1" name="form1" method="post">
+<input type="hidden" name="__VIEWSTATE" value="/wEPDwUKMjEwODg2MDk3MmRka+QvdTgAKtDKgWYelLGT3G5x93Y=" id="__VIEWSTATE">
+<script src="/ajaxpro/prototype.ashx" type="text/javascript"></script>
+<script src="/ajaxpro/core.ashx" type="text/javascript"></script>
+<script src="/ajaxpro/converter.ashx" type="text/javascript"></script>
+<script src="/ajaxpro/_Index,App_Web_ak8dhhfn.ashx" type="text/javascript"></script>
+<div id="wrap" class="clearfix">
+<div id="cp_l">
+<div tid="sina_appraisal_index_toppic" tcity="cn" class="focus DTL">
+<a href="http://dichan.sina.com.cn/zt/2010Q3report/index.shtml" target="_blank"><img src="http://img2.dichan.com/docs/2010/10/08/20101008111930114.gif" alt="中国房地产测评中心主任龙胜平 解读2010年前三季度中国房地产企业销售排行榜" height="157" width="274"></a>
+</div>
+<div class="HSpace_10"></div>
+<div style="height:1390px" class="box1">
+<div class="t t2"> <a style="display:none" href="#" class="fr more" target="_blank">更多</a>
+<h2>测评预告</h2>
+</div>
+<ul tid="sina_appraisal_index_notice" tcity="cn" class="list1 DTL">
+<li>·<a href="http://dichan.sina.com.cn/zt/MaterialElection/index.shtml" target="_blank">TOP500开发商首（备）选建材部品品牌测评</a>
+<p>　　<font class="gray">中国房地产测评中心联合新浪地产网，举行开发商建材部品应用认可度的测评活动，以500强房地产开发企业为调查对象，运用专家访谈调查法和现场实地调查法相结合的方式，评估开发商在实际开发过程中所采购的建材品牌。</font><a href="http://dichan.sina.com.cn/zt/MaterialElection/index.shtml" class="blue" target="_blank">[详细]</a></p>
+</li>
+</ul>
+
+<!--测评报告 start--><div tid="sina_appraisal_index_report" tcity="cn" class="report DTL">
+<div class="t3"><h2><a href="http://xiazai.dichan.com/show-367908.html" target="_blank">2010年中国房地产上市公司测评研究</a></h2></div>
+<div class="img"><a href="http://xiazai.dichan.com/show-367908.html" target="_blank"><img width="140" alt="2010年中国房地产上市公司测评研究报告" src="http://img2.dichan.com/docs/2010/07/02/20100702151646775.jpg" height="175"></a> </div>
+<div class="t3"><h2><a href="http://xiazai.dichan.com/show-367907.html" target="_blank">2009年中国建材首选品牌测评研究报告</a></h2></div>
+<div class="img"><a href="http://xiazai.dichan.com/show-367907.html" target="_blank"><img width="140" alt="2009年中国建材首选品牌测评研究报告" src="http://img2.dichan.com/docs/2010/07/02/20100702151831181.jpg" height="175"></a> </div>
+<div class="t3"><h2><a href="http://news.dichan.sina.com.cn/2010/02/03/119756.html" target="_blank">2010低碳地产绿色生活测评研究报告</a></h2></div>
+<div class="img"><a href="http://news.dichan.sina.com.cn/2010/02/03/119756.html" target="_blank"><img width="140" alt="低碳地产绿色生活测评研究报告" src="http://img2.dichan.com/news/pic/2010/2/5/20102514483468083.jpg" height="175"></a> </div>
+<div class="t3"><h2><a href="http://img2.dichan.com/docs/2009/12/2/20091202113718564088.pdf" target="_blank">2009年中国房地产开发企业500强测评</a></h2></div>
+<div class="img"><a href="http://img2.dichan.com/docs/2009/12/2/20091202113718564088.pdf" target="_blank"><img width="140" alt="2009年中国房地产开发企业500强测评研究" src="http://img2.dichan.com/news/pic/2009/12/2/20091221138565245552.jpg" height="175"></a> </div>
+</div>
+
+<!--测评报告 end--></div>
+</div>
+<div id="cp_c">
+
+<!--评测研究 start--><div class="box1">
+<div class="t t2"> <a href="http://info.dichan.sina.com.cn/appraisal_search.php" class="fr more" target="_blank">更多</a>
+<h2>测评研究</h2>
+</div>
+<div tid="sina_appraisal_index_research" tcity="cn" class="list1 DTL">
+<h3><a href="http://dichan.sina.com.cn/zt/2010Q3report/index.shtml" target="_blank">2010年前三季度中国房地产企业销售排行榜</a></h3>
+<p>10月1日，中房信集团联合中国房地产测评中心共同发布《2010年前三季度中国房企住宅销售排行榜》。万科以692亿元业绩位居销售金额榜首。<br>
+<a href="http://news.dichan.sina.com.cn/2010/09/30/219772.html" class="blue" target="_blank">万科俨然在打造地产航母 恒大持续稳居销售面积榜首</a><br>
+<a href="http://news.dichan.sina.com.cn/2010/07/09/183188.html" class="blue" target="_blank">2010年上半年中国房地产企业销售TOP20报告</a>
+</p>
+<div class="line4"> </div>
+<h3><a href="http://dichan.sina.com.cn/zt/2010halfsalesreport/index.shtml" target="_blank">2010年上半年中国房地产企业销售排行榜</a></h3>
+<p>2010年7月1日，中国房产信息集团联合中国房地产测评中心共同发布《2010年中国房地产企业上半年销售排行榜》。<br>
+<a href="http://news.dichan.sina.com.cn/2010/07/01/179345.html" class="blue" target="_blank">2010年上半年全国重点城市房企及项目销售排行榜</a>
+</p>
+<div class="line4"> </div>
+<h3><a href="http://dichan.sina.com.cn/zt/2010enterprisebycp/index.shtml" target="_blank">2010年中国房地产上市公司测评研究报告</a></h3>
+<p>2010年6月1日，中国房地产测评中心隆重推出《2010年中国房地产上市公司测评研究报告》。万科、中海、保利位列三甲。 <br>
+<a href="http://news.dichan.sina.com.cn/2010/05/31/167397.html" class="blue" target="_blank">2010年中国房地产上市公司50强排行榜解读</a>
+</p>
+<div class="line4"> </div>
+<h3><a>2009中国房地产开发企业500强荣誉殿堂</a></h3>
+<p>中国房地产测评中心隆重推出《2009中国房地产开发企业500强测评排行榜》，万科、中海、保利位列前三甲。本次测评排行中，根据主成份分析法对房地产上市公司的各项指标进行测算。</p>
+</div>
+</div>
+
+<!--评测研究 end--><div class="HSpace_10"></div>
+
+<!--最新评测报告 start--><div class="box1">
+<div class="t t2"> <a href="http://news.dichan.sina.com.cn/cn/newslist32/index.html" class="fr more" target="_blank">更多</a>
+<h2>最新测评报告</h2>
+</div>
+<ul class="list2"><li><span class="fr gray">2011/10/09 10:15</span>·<a href="http://news.dichan.sina.com.cn/2011/10/09/385362.html" class="blue">[全国]</a> <a href="http://news.dichan.sina.com.cn/2011/10/09/385362.html" target="_blank" title="长江流域居民室内污染认知盲点多">长江流域居民室内污染认知盲点多</a></li><li><span class="fr gray">2011/10/09 10:10</span>·<a href="http://news.dichan.sina.com.cn/2011/10/09/385359.html" class="blue">[全国]</a> <a href="http://news.dichan.sina.com.cn/2011/10/09/385359.html" target="_blank" title="八成住宅VOC超标 城市室内环境状况触目惊心">八成住宅VOC超标 城市室内环境状况</a></li><li><span class="fr gray">2011/09/28 14:42</span>·<a href="http://news.dichan.sina.com.cn/2011/09/28/381825.html" class="blue">[全国]</a> <a href="http://news.dichan.sina.com.cn/2011/09/28/381825.html" target="_blank" title="中国建筑工业化保障性住房项目节能减排效果显著">中国建筑工业化保障性住房项目节能</a></li><li><span class="fr gray">2011/09/24 15:42</span>·<a href="http://news.dichan.sina.com.cn/2011/09/24/379828.html" class="blue">[全国]</a> <a href="http://news.dichan.sina.com.cn/2011/09/24/379828.html" target="_blank" title="三大交通网畅达清水湾成就新升值潜力(组图)">三大交通网畅达清水湾成就新升值潜</a></li><li><span class="fr gray">2011/08/15 10:11</span>·<a href="http://news.dichan.sina.com.cn/2011/08/15/358428.html" class="blue">[全国]</a> <a href="http://news.dichan.sina.com.cn/2011/08/15/358428.html" target="_blank" title="稳定价格须对症下药">稳定价格须对症下药</a></li><li><span class="fr gray">2011/08/15 10:10</span>·<a href="http://news.dichan.sina.com.cn/2011/08/15/358427.html" class="blue">[全国]</a> <a href="http://news.dichan.sina.com.cn/2011/08/15/358427.html" target="_blank" title="和你一起养养鸡">和你一起养养鸡</a></li><li><span class="fr gray">2011/08/15 10:09</span>·<a href="http://news.dichan.sina.com.cn/2011/08/15/358425.html" class="blue">[全国]</a> <a href="http://news.dichan.sina.com.cn/2011/08/15/358425.html" target="_blank" title="调控的副作用不容忽视">调控的副作用不容忽视</a></li><li><span class="fr gray">2011/08/15 10:08</span>·<a href="http://news.dichan.sina.com.cn/2011/08/15/358422.html" class="blue">[全国]</a> <a href="http://news.dichan.sina.com.cn/2011/08/15/358422.html" target="_blank" title="“限”与“竞”凸显三难境地">“限”与“竞”凸显三难境地</a></li><li><span class="fr gray">2011/07/12 09:00</span>·<a href="http://news.dichan.sina.com.cn/2011/07/12/343497.html" class="blue">[全国]</a> <a href="http://news.dichan.sina.com.cn/2011/07/12/343497.html" target="_blank" title="公租房项目资本金可按20%测算">公租房项目资本金可按20%测算</a></li><li><span class="fr gray">2011/06/07 11:49</span>·<a href="http://news.dichan.sina.com.cn/2011/06/07/329516.html" class="blue">[全国]</a> <a href="http://news.dichan.sina.com.cn/2011/06/07/329516.html" target="_blank" title="乐居调查：限购令是否有必要推广至三四线城市？">乐居调查：限购令是否有必要推广至</a></li></ul><div class="line4"></div><ul class="list2"><li><span class="fr gray">2011/06/01 11:11</span>·<a href="http://news.dichan.sina.com.cn/2011/06/01/327206.html" class="blue">[全国]</a> <a href="http://news.dichan.sina.com.cn/2011/06/01/327206.html" target="_blank" title="乐居调查：宏观调控发力 开发商撑不住？">乐居调查：宏观调控发力 开发商撑</a></li><li><span class="fr gray">2011/05/30 11:50</span>·<a href="http://news.dichan.sina.com.cn/2011/05/30/325976.html" class="blue">[全国]</a> <a href="http://news.dichan.sina.com.cn/2011/05/30/325976.html" target="_blank" title="乐居调查：商业银行全面收紧开发贷 房价进入下行拐点？">乐居调查：商业银行全面收紧开发贷</a></li><li><span class="fr gray">2011/05/26 11:28</span>·<a href="http://news.dichan.sina.com.cn/2011/05/26/324376.html" class="blue">[上海]</a> <a href="http://news.dichan.sina.com.cn/2011/05/26/324376.html" target="_blank" title="乐居调查：商业银行自主提高首付比例严重挫伤刚需？">乐居调查：商业银行自主提高首付比</a></li><li><span class="fr gray">2011/05/20 19:49</span>·<a href="http://news.dichan.sina.com.cn/2011/05/20/321820.html" class="blue">[上海]</a> <a href="http://news.dichan.sina.com.cn/2011/05/20/321820.html" target="_blank" title="金地艺镜违规预售叫板新政 六成多网友认为监管不力">金地艺镜违规预售叫板新政 六成多</a></li><li><span class="fr gray">2011/05/18 12:25</span>·<a href="http://news.dichan.sina.com.cn/2011/05/18/320262.html" class="blue">[上海]</a> <a href="http://news.dichan.sina.com.cn/2011/05/18/320262.html" target="_blank" title="乐居调查：金地违规预售叫板新政？">乐居调查：金地违规预售叫板新政？</a></li><li><span class="fr gray">2011/05/17 11:35</span>·<a href="http://news.dichan.sina.com.cn/2011/05/17/319580.html" class="blue">[上海]</a> <a href="http://news.dichan.sina.com.cn/2011/05/17/319580.html" target="_blank" title="乐居调查：房地产电子商务频道上线 您使用了吗？">乐居调查：房地产电子商务频道上线</a></li><li><span class="fr gray">2011/05/17 10:00</span>·<a href="http://news.dichan.sina.com.cn/2011/05/17/319461.html" class="blue">[全国]</a> <a href="http://news.dichan.sina.com.cn/2011/05/17/319461.html" target="_blank" title="乐居调查：您是否会去香港投资置业？">乐居调查：您是否会去香港投资置业</a></li><li><span class="fr gray">2011/05/17 09:55</span>·<a href="http://news.dichan.sina.com.cn/2011/05/17/319451.html" class="blue">[全国]</a> <a href="http://news.dichan.sina.com.cn/2011/05/17/319451.html" target="_blank" title="乐居调查：您是否会去香港投资置业？">乐居调查：您是否会去香港投资置业</a></li><li><span class="fr gray">2011/05/10 10:52</span>·<a href="http://news.dichan.sina.com.cn/2011/05/10/315942.html" class="blue">[上海]</a> <a href="http://news.dichan.sina.com.cn/2011/05/10/315942.html" target="_blank" title="乐居调查：购房者2011下半年上海置业心态大调查">乐居调查：购房者2011下半年上海置</a></li><li><span class="fr gray">2011/05/08 19:46</span>·<a href="http://news.dichan.sina.com.cn/2011/05/08/314937.html" class="blue">[广州]</a> <a href="http://news.dichan.sina.com.cn/2011/05/08/314937.html" target="_blank" title="乐居联合南都调查：你的实际住房支出是多少">乐居联合南都调查：你的实际住房支</a></li></ul><div class="line4"></div><ul class="list2"><li><span class="fr gray">2011/05/06 13:26</span>·<a href="http://news.dichan.sina.com.cn/2011/05/06/314459.html" class="blue">[广州]</a> <a href="http://news.dichan.sina.com.cn/2011/05/06/314459.html" target="_blank" title="联合羊城晚报调查：楼价众人谈">联合羊城晚报调查：楼价众人谈</a></li><li><span class="fr gray">2011/05/05 17:57</span>·<a href="http://news.dichan.sina.com.cn/2011/05/05/313910.html" class="blue">[上海]</a> <a href="http://news.dichan.sina.com.cn/2011/05/05/313910.html" target="_blank" title="新浪调查：美联物业撤离上海 二手房中介还能走多远">新浪调查：美联物业撤离上海 二手</a></li><li><span class="fr gray">2011/04/12 12:44</span>·<a href="http://news.dichan.sina.com.cn/2011/04/12/301950.html" class="blue">[广州]</a> <a href="http://news.dichan.sina.com.cn/2011/04/12/301950.html" target="_blank" title="调查：增城商品房变限价房 你会去抢吗？">调查：增城商品房变限价房 你会去</a></li><li><span class="fr gray">2011/04/02 14:18</span>·<a href="http://news.dichan.sina.com.cn/2011/04/02/298295.html" class="blue">[公子哥]</a> <a href="http://news.dichan.sina.com.cn/2011/04/02/298295.html" target="_blank" title="调查：您觉得住建部会否推翻各地房价控制目标？">调查：您觉得住建部会否推翻各地房</a></li><li><span class="fr gray">2011/03/30 12:06</span>·<a href="http://news.dichan.sina.com.cn/2011/03/30/296431.html" class="blue">[广州]</a> <a href="http://news.dichan.sina.com.cn/2011/03/30/296431.html" target="_blank" title="调查：广州房价控制目标不提跌 涨幅不超11%合理吗">调查：广州房价控制目标不提跌 涨</a></li><li><span class="fr gray">2011/03/28 16:51</span>·<a href="http://news.dichan.sina.com.cn/2011/03/28/295243.html" class="blue">[广州]</a> <a href="http://news.dichan.sina.com.cn/2011/03/28/295243.html" target="_blank" title="联合南都调查：2011楼市变局，你看到了吗？">联合南都调查：2011楼市变局，你看</a></li><li><span class="fr gray">2011/03/23 16:36</span>·<a href="http://news.dichan.sina.com.cn/2011/03/23/293074.html" class="blue">[全国]</a> <a href="http://news.dichan.sina.com.cn/2011/03/23/293074.html" target="_blank" title="2011中国500强房企评测结果出炉 百强房企重庆占4席">2011中国500强房企评测结果出炉 </a></li><li><span class="fr gray">2011/03/17 12:36</span>·<a href="http://news.dichan.sina.com.cn/2011/03/17/290171.html" class="blue">[全国]</a> <a href="http://news.dichan.sina.com.cn/2011/03/17/290171.html" target="_blank" title="央行调查显示：房地产仍为居民投资首选">央行调查显示：房地产仍为居民投资</a></li><li><span class="fr gray">2011/03/15 13:33</span>·<a href="http://news.dichan.sina.com.cn/2011/03/15/289068.html" class="blue">[全国]</a> <a href="http://news.dichan.sina.com.cn/2011/03/15/289068.html" target="_blank" title="福布斯中国地产首富更迭 资本之手主导变局">福布斯中国地产首富更迭 资本之手</a></li><li><span class="fr gray">2011/03/09 18:05</span>·<a href="http://news.dichan.sina.com.cn/2011/03/09/286495.html" class="blue">[沈阳]</a> <a href="http://news.dichan.sina.com.cn/2011/03/09/286495.html" target="_blank" title="宜家发布中国家庭存储收纳习惯调研结果">宜家发布中国家庭存储收纳习惯调研</a></li></ul><div class="line4"></div><ul class="list2"><li><span class="fr gray">2011/03/04 14:47</span>·<a href="http://news.dichan.sina.com.cn/2011/03/04/284359.html" class="blue">[广州]</a> <a href="http://news.dichan.sina.com.cn/2011/03/04/284359.html" target="_blank" title="限价房民意调查：100人争两套 限价房靠谱吗？">限价房民意调查：100人争两套 限价</a></li><li><span class="fr gray">2011/03/03 11:24</span>·<a href="http://news.dichan.sina.com.cn/2011/03/03/283541.html" class="blue">[全国]</a> <a href="http://news.dichan.sina.com.cn/2011/03/03/283541.html" target="_blank" title="六成受访者表示结婚先买房 两成表示租房也行">六成受访者表示结婚先买房 两成表</a></li><li><span class="fr gray">2011/03/02 10:33</span>·<a href="http://news.dichan.sina.com.cn/2011/03/02/282812.html" class="blue">[全国]</a> <a href="http://news.dichan.sina.com.cn/2011/03/02/282812.html" target="_blank" title="中小企业发展调查：炒房与实业 现实的选择题">中小企业发展调查：炒房与实业 现</a></li><li><span class="fr gray">2011/03/02 08:09</span>·<a href="http://news.dichan.sina.com.cn/2011/03/02/282608.html" class="blue">[全国]</a> <a href="http://news.dichan.sina.com.cn/2011/03/02/282608.html" target="_blank" title="京沪投资方式调查：36%受访者选择投资房地产">京沪投资方式调查：36%受访者选择</a></li><li><span class="fr gray">2011/02/10 17:26</span>·<a href="http://news.dichan.sina.com.cn/2011/02/10/273882.html" class="blue">[全国]</a> <a href="http://news.dichan.sina.com.cn/2011/02/10/273882.html" target="_blank" title="重拳出招迎“政”开市 2011买房您“鸭梨”有多大">重拳出招迎“政”开市 2011买房您</a></li></ul>
+</div>
+
+<!--最新评测报告 end--></div>
+<div id="cp_r">
+
+<!--中心背景 start--><div class="box1">
+<div class="t t2">
+<h2>中国房地产测评中心背景</h2>
+</div>
+<p class="con1"><img src="images/zgfdclogo.jpg" style="border:1px solid #E7ECF3;float:right;margin-bottom:5px;">中国房地产测评中心是一家不以盈利为目的的专业测评机构，工作宗旨是在房地产行业内建立一个公正、公开的测评平台，为房地产业发展营造健康、规范的行业环境。</p>
+</div>
+
+<!--中心背景 end--><div class="HSpace_10"></div>
+
+<!--发起单位 start--><div class="box1">
+<div class="t t2">
+<h2>发起单位</h2>
+</div>
+<ul class="list1 clearfix">
+<li>
+<a href="http://www.sina.com.cn/" target="_blank"><img src="images/pczx/logo1.png" height="40" width="110"></a>
+<a href="http://www.sina.com.cn/" target="_blank">新浪技术（中国）有限公司</a>
+</li>
+<li>
+<a href="http://www.yiju.org/" target="_blank"><img src="images/pczx/logo2.png" height="40" width="110"></a>
+<a href="http://www.yiju.org/" target="_blank">上海易居房地产研究院</a>
+</li>
+<li>
+<a href="http://www.environ.pku.edu.cn/xisuo/CRESA/INDEX.HTM" target="_blank"><img src="images/pczx/logo3.png" height="40" width="110"></a>
+<a href="http://www.environ.pku.edu.cn/xisuo/CRESA/INDEX.HTM" target="_blank">北京大学不动产研究鉴定中心</a>
+</li>
+<li>
+<a href="http://sjz.house.sina.com.cn/news/company/2009-08-25/100810617.html" target="_blank"><img src="images/pczx/logo4.png" height="40" width="110"></a>
+<a href="http://sjz.house.sina.com.cn/news/company/2009-08-25/100810617.html" target="_blank">中国房地产研究会</a>
+</li>
+<li>
+<a href="http://www.ceea.gov.cn/" target="_blank"><img src="images/pczx/logo5.png" height="40" width="110"></a>
+<a href="http://www.ceea.gov.cn/" target="_blank">中国企业评价协会</a>
+</li>
+</ul>
+</div>
+
+<!--发起单位 end--><div class="HSpace_10"></div>
+
+<!--理事会成员 start--><div class="box1">
+<div class="t t2">
+<h2>理事会成员</h2>
+</div>
+<ul class="list2 clearfix">
+<li>
+<div><img src="images/pczx/img1.jpg" height="86" width="76"></div>
+<p>中国房地产研究会<br>副会长<br><span class="blue">顾云昌</span></p>
+</li>
+<li>
+<div><img src="images/pczx/img4.jpg" height="86" width="76"></div>
+<p>上海易居房地产<br>研究院院长<br><span class="blue">张永岳</span></p>
+</li>
+<li>
+<div><img src="images/pczx/img6.jpg" height="86" width="76"></div>
+<p>上海易居房地产<br>研究院副院长<br><span class="blue">龙胜平教授</span></p>
+</li>
+<li>
+<div><img src="images/pczx/img2.jpg" height="86" width="76"></div>
+<p>中国企业评价协会<br>副秘书长<br><span class="blue">李春伟</span></p>
+</li>
+<li>
+<div><img src="images/pczx/img3.jpg" height="86" width="76"></div>
+<p>北京大学不动产<br>研究鉴定中心<br><span class="blue">冯长春教授</span></p>
+</li>
+<li>
+<div><img src="images/pczx/img5.jpg" height="86" width="76"></div>
+<p>上海易居房地产<br>研究院副院长<br><span class="blue">丁祖昱先生</span></p>
+</li>
+<li>
+<div><img src="images/pczx/img8.jpg" height="86" width="76"></div>
+<p>中国房产信息集团<br>联席总裁<br><span class="blue">罗军先生</span></p>
+</li>
+<li>
+<div><img src="images/pczx/img7.jpg" height="86" width="76"></div>
+<p>上海易居房地产<br>研究院副院长<br><span class="blue">彭加亮博士</span></p>
+</li>
+<li>
+<div><img src="images/pczx/img9.jpg" height="86" width="76"></div>
+<p>华东师范大学<br>副教授<br><span class="blue">孙斌艺博士</span></p>
+</li>
+</ul>
+</div>
+
+<!--理事会成员 end--><div class="HSpace_10"></div>
+
+<!--研究团队 start--><div class="box1">
+<div style="padding-right:0;" class="t t2">
+<h2>中国房地产测评中心研究团队</h2>
+</div>
+<ul class="list3 clearfix">
+<li>龙胜平</li>
+<li>孙斌艺</li>
+<li>王盛</li>
+<li>刘顺玲</li>
+<li>陆勇</li>
+<li>喻建齐</li>
+<li>杜静</li>
+<li>沈迪</li>
+<li>周克</li>
+</ul>
+</div>
+
+<!--研究团队 end--></div>
+</div>
+<div class="ad"><script src="http://dichan.sina.com.cn/pdps/28/2009/0919/17.js" charset="gb2312" type="text/javascript"></script></div>
+<div id="footer">
+<a href="http://bj.house.sina.com.cn/sina-leju/lj_about.html" target="_blank">乐居简介</a>┊ <a href="http://bj.house.sina.com.cn/sina-leju/lj_english.html" target="_blank">About Leju</a>┊ <a href="http://dichan.sina.com.cn/help/index.htm" target="_blank">网站帮助</a>┊ <a href="http://www.leju.com/ads/" target="_blank">广告服务</a>┊ <a href="http://bj.house.sina.com.cn/partner/index.html" target="_blank">合作伙伴</a>┊ <a href="http://bj.house.sina.com.cn/sina-leju/lj_contact.html" target="_blank">联系我们</a>┊ <a href="http://bj.house.sina.com.cn/sina-leju/lj_job.html" target="_blank">诚聘英才</a>┊ <a href="http://bj.house.sina.com.cn/sina-leju/lj_lawyer.html" target="_blank">网站律师</a>┊<a href="http://i.house.sina.com.cn/register.html" target="_blank">会员注册</a>┊ <a href="http://tech.sina.com.cn/focus/sinahelp.shtml" target="_blank">产品答疑</a>┊ <a href="http://shequ.dichan.com/feedback/" target="_blank">意见反馈</a><br>
+	Copyright @ 1996-2010 SINA Corporation, All Rights Reserved<br>
+	乐居房产、家居产品用户服务、产品咨询购买、技术支持客服服务热线：400-606-6969
+
+</div>
+<script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-8039256-1");
+    pageTracker._setDomainName("dichan.com");
+    pageTracker._initData();
+    pageTracker._trackPageview();
+</script>
+
+<!-- START OF SmartSource Data Collector TAG --><script src="http://traffic.house.sina.com.cn/dichan_5w4x_tag.js" type="text/javascript"></script>
+
+<!-- END OF SmartSource Data Collector TAG --></form>
+</body>
+</html>

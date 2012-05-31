@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ***** BEGIN LICENSE BLOCK *****
+ Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ 
+ The contents of this file are subject to the Mozilla Public License
+ Version 1.1 (the "License"); you may not use this file except in
+ compliance with the License. You may obtain a copy of the License at
+ http://www.mozilla.org/MPL/
+ 
+ Software distributed under the License is distributed on an "AS IS"
+ basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+ License for the specific language governing rights and limitations
+ under the License.
+ 
+ The Original Code is Komodo code.
+ 
+ The Initial Developer of the Original Code is ActiveState Software Inc.
+ Portions created by ActiveState Software Inc are Copyright (C) 2000-2007
+ ActiveState Software Inc. All Rights Reserved.
+ 
+ Contributor(s):
+   ActiveState Software Inc
+ 
+ Alternatively, the contents of this file may be used under the terms of
+ either the GNU General Public License Version 2 or later (the "GPL"), or
+ the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ in which case the provisions of the GPL or the LGPL are applicable instead
+ of those above. If you wish to allow use of your version of this file only
+ under the terms of either the GPL or the LGPL, and not to allow others to
+ use your version of this file under the terms of the MPL, indicate your
+ decision by deleting the provisions above and replace them with the notice
+ and other provisions required by the GPL or the LGPL. If you do not delete
+ the provisions above, a recipient may use your version of this file under
+ the terms of any one of the MPL, the GPL or the LGPL.
+ 
+ ***** END LICENSE BLOCK ***** -->
+
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>kpf</string>
+				<string>komodoproject</string>
+				<string>komodotool</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>kpf.icns</string>
+			<key>CFBundleTypeName</key>
+			<string>Komodo Project File</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSIsAppleDefaultForType</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>ui</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>ui.icns</string>
+			<key>CFBundleTypeName</key>
+			<string>GUI Builder UI File</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSIsAppleDefaultForType</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>HTML Document</string>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>HTML</string>
+			</array>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>html</string>
+				<string>htm</string>
+				<string>shtml</string>
+				<string>xhtml</string>
+				<string>XHTML</string>
+				</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>html.icns</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>xml</string>
+				<string>XML</string>
+				<string>xsl</string>
+				<string>XSL</string>
+				<string>xslt</string>
+				<string>XSLT</string>
+				<string>xul</string>
+				<string>rdf</string>
+				<string>plist</string>
+				<string>PLIST</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>xml.icns</string>
+			<key>CFBundleTypeName</key>
+			<string>XML File</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>pl</string>
+				<string>PL</string>
+				<string>plx</string>
+				<string>PLX</string>
+				<string>pm</string>
+				<string>PM</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>perl.icns</string>
+			<key>CFBundleTypeName</key>
+			<string>Perl File</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>js</string>
+				<string>JS</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>javascript.icns</string>
+			<key>CFBundleTypeName</key>
+			<string>JavaScript file</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>php</string>
+				<string>PHP</string>
+				<string>inc</string>
+				<string>INC</string>
+				<string>php3</string>
+				<string>PHP3</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>php.icns</string>
+			<key>CFBundleTypeName</key>
+			<string>PHP File</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>TEXT</string>
+				<string>utxt</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>py</string>
+				<string>PY</string>
+				<string>pyw</string>
+				<string>PYW</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>python.icns</string>
+			<key>CFBundleTypeName</key>
+			<string>Python File</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>rb</string>
+				<string>RB</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>ruby.icns</string>
+			<key>CFBundleTypeName</key>
+			<string>Ruby File</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>tcl</string>
+				<string>TCL</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>tcl.icns</string>
+			<key>CFBundleTypeName</key>
+			<string>Tcl File</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>css</string>
+				<string>CSS</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>css.icns</string>
+			<key>CFBundleTypeName</key>
+			<string>Cascading Style Sheet File</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>txt</string>
+				<string>text</string>
+				<string>log</string>
+				<string>diff</string>
+				<string>patch</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>text.icns</string>
+			<key>CFBundleTypeMIMETypes</key>
+			<array>
+				<string>text/plain</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>Text Document</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>TEXT</string>
+				<string>utxt</string>
+				<string>****</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+		</dict>
+	</array>
+	<key>CFBundleExecutable</key>
+	<string>komodo-bin</string>
+	<key>CFBundleGetInfoString</key>
+	<string>Komodo PP_KO_SHORT_VERSION, (c) 2000-2007 ActiveState Software Inc.</string>
+    <!-- Don't use Apple Help for now. See bug 37359
+	<key>CFBundleHelpBookFolder</key>
+	<string>KomodoHelp</string>
+	<key>CFBundleHelpBookName</key>
+	<string>Komodo Help</string>
+    -->
+	<key>CFBundleIconFile</key>
+	<string>komodo.icns</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.activestate.Komodo</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Komodo</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>PP_KO_SHORT_VERSION</string>
+	<key>CFBundleSignature</key>
+	<string>KOMO</string>
+	<key>CFBundleVersion</key>
+	<string>PP_KO_VERSION</string>
+	<key>NSAppleScriptEnabled</key>
+	<true/>
+</dict>
+</plist>

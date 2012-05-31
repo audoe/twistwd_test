@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/!svn/ver/4769/openkomodo/trunk/contrib/pycrypto/lib/Crypto/SelfTest/Protocol
+END
+test_rfc1751.py
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/!svn/ver/4769/openkomodo/trunk/contrib/pycrypto/lib/Crypto/SelfTest/Protocol/test_rfc1751.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/!svn/ver/4769/openkomodo/trunk/contrib/pycrypto/lib/Crypto/SelfTest/Protocol/__init__.py
+END
+test_chaffing.py
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/!svn/ver/4769/openkomodo/trunk/contrib/pycrypto/lib/Crypto/SelfTest/Protocol/test_chaffing.py
+END

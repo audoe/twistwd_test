@@ -1,0 +1,97 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
+ * The contents of this file are subject to the Mozilla Public License
+ * Version 1.1 (the "License"); you may not use this file except in
+ * compliance with the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ * 
+ * Software distributed under the License is distributed on an "AS IS"
+ * basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+ * License for the specific language governing rights and limitations
+ * under the License.
+ * 
+ * The Original Code is Komodo code.
+ * 
+ * The Initial Developer of the Original Code is ActiveState Software Inc.
+ * Portions created by ActiveState Software Inc are Copyright (C) 2000-2007
+ * ActiveState Software Inc. All Rights Reserved.
+ * 
+ * Contributor(s):
+ *   ActiveState Software Inc
+ * 
+ * Alternatively, the contents of this file may be used under the terms of
+ * either the GNU General Public License Version 2 or later (the "GPL"), or
+ * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the MPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK ***** */
+
+#include "nsISupports.idl"
+
+// Remote file information/stats
+[scriptable, uuid(BFC74D98-589A-4AAC-963A-44371976D65E)]
+interface koIRemoteFileInfo : nsISupports {
+
+    // Note: Changed the size, uid and gid to be strings
+    // Why:  This is so we can support sizes > 4GB (bigger than a C long int)
+    // Reasoning:
+    // - paramiko/openSSH returns error code of -1 for uid/gid for cygwin SSH server
+    // - mixed usage of signed/unsigned int for data results in MAX_INT values
+    // - potential limitation with (Py)XPCOM dealing with an unsigned long
+    // - decided to use strings because resolving these issues would only fix
+    //   the problem for gid/uid, not for size
+    void initFromStats(in wstring dirname, in wstring filename, in wstring size,
+                       in wstring uid, in wstring gid, in long mode, in PRUint64 mtime);
+    // returns false if initialization fails
+    boolean initFromDirectoryListing(in wstring dirname, in wstring line);
+
+    // checker methods
+    boolean isFile();
+    boolean isDirectory();
+    boolean isSymlink();
+
+    // Use this attribute -- the above is only useful internally
+    // near as I can determine.  RemoteFileInfo symlinks are actually
+    // resolved into hybrids: the name remains, but everything else
+    // is pointing to the eventual target.  Sometimes we need to know
+    // if the directory entry is a symlink, without caring about its target.
+    attribute boolean originalIsSymlink;
+
+    boolean isReadable();
+    boolean isWriteable();
+    boolean isExecutable();
+    boolean isHidden();
+    boolean needsDirectoryListing();
+
+    // getter methods
+    wstring getFilepath();
+    wstring getEncoding();
+    wstring getFilename();
+    wstring getDirname();
+    wstring getLinkTarget();
+    wstring getFileSize();
+    PRUint64 getModifiedTime();
+    long getTimeRefreshed();
+    void getChildren(out unsigned long count, [array, size_is(count), retval] out koIRemoteFileInfo children);
+
+    // setter methods
+    void setLinkTarget(in wstring link_target);
+    void setChildren(in unsigned long count, [array, size_is(count)] in koIRemoteFileInfo children);
+    void setMode(in long mode);
+
+    // readonly attributes
+    readonly attribute wstring size;
+    readonly attribute long mode;
+    readonly attribute wstring uid;
+    readonly attribute wstring gid;
+    readonly attribute PRUint64 mtime;
+    attribute wstring encoding;
+};

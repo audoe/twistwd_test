@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/!svn/ver/7314/openkomodo/trunk/contrib/html5lib/src/html5lib/treebuilders
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/!svn/ver/7314/openkomodo/trunk/contrib/html5lib/src/html5lib/treebuilders/__init__.py
+END
+dom.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/7314/openkomodo/trunk/contrib/html5lib/src/html5lib/treebuilders/dom.py
+END
+etree_lxml.py
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/!svn/ver/7314/openkomodo/trunk/contrib/html5lib/src/html5lib/treebuilders/etree_lxml.py
+END
+etree.py
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/!svn/ver/7314/openkomodo/trunk/contrib/html5lib/src/html5lib/treebuilders/etree.py
+END
+soup.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/!svn/ver/7314/openkomodo/trunk/contrib/html5lib/src/html5lib/treebuilders/soup.py
+END
+_base.py
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/!svn/ver/7314/openkomodo/trunk/contrib/html5lib/src/html5lib/treebuilders/_base.py
+END
+simpletree.py
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/!svn/ver/7314/openkomodo/trunk/contrib/html5lib/src/html5lib/treebuilders/simpletree.py
+END

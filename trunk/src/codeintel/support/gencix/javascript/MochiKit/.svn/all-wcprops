@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/!svn/ver/4203/openkomodo/trunk/src/codeintel/support/gencix/javascript/MochiKit
+END
+mochikit_to_cix.py
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/!svn/ver/4203/openkomodo/trunk/src/codeintel/support/gencix/javascript/MochiKit/mochikit_to_cix.py
+END
+test_mochikit.py
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/!svn/ver/4203/openkomodo/trunk/src/codeintel/support/gencix/javascript/MochiKit/test_mochikit.py
+END

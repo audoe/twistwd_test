@@ -1,0 +1,89 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
+ * The contents of this file are subject to the Mozilla Public License
+ * Version 1.1 (the "License"); you may not use this file except in
+ * compliance with the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ * 
+ * Software distributed under the License is distributed on an "AS IS"
+ * basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+ * License for the specific language governing rights and limitations
+ * under the License.
+ * 
+ * The Original Code is Komodo code.
+ * 
+ * The Initial Developer of the Original Code is ActiveState Software Inc.
+ * Portions created by ActiveState Software Inc are Copyright (C) 2000-2007
+ * ActiveState Software Inc. All Rights Reserved.
+ * 
+ * Contributor(s):
+ *   ActiveState Software Inc
+ * 
+ * Alternatively, the contents of this file may be used under the terms of
+ * either the GNU General Public License Version 2 or later (the "GPL"), or
+ * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the MPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK ***** */
+
+#include "nsISupports.idl"
+
+// A place for light PyXPCOM interfaces to parts of Python's std library.
+// 
+// Eventually, perhaps other modules in this spirit (koIOs, part of
+// koISysUtils, koIWebbrowser, koIUrllib, etc.) could move here but there is
+// no hurry. The idea is to create *one* file in which all further such
+// interfaces can be added.
+// 
+
+[scriptable, uuid(1D55BFC1-5DCA-4CE6-85A5-22B58AB2E054)]
+interface koITime : nsISupports {
+    double time();
+    AString asctime(in PRUint32 count,
+                    [array, size_is(count)] in PRUint32 timetuple);
+    void localtime(in double secs, out PRUint32 count,
+                   [retval, array, size_is(count)] out PRUint32 tuple);
+    AString strftime(in wstring format, in PRUint32 count,
+                     [array, size_is(count)] in PRUint32 timetuple);
+    
+    // XXX Other possibly useful ones:
+    //     .sleep()
+    
+    //---- Extra methods not strictly part of the Python 'time' module.
+    
+    /* Return a pretty string giving the approximate time since the
+     * given path was last modified.
+     */
+    wstring nice_modtime_from_path(in wstring path);
+};
+
+
+
+[scriptable, uuid(862D0CE5-B99E-4eea-9355-56EDB28E6AB6)]
+interface koIShUtil : nsISupports {
+    // These routines all use the koILastErrorService to if an exception
+    // is raised.
+    void copyfile(in wstring src, in wstring dst);
+    void copymode(in wstring src, in wstring dst);
+    void copystat(in wstring src, in wstring dst);
+    void copy(in wstring src, in wstring dst);
+    void copy2(in wstring src, in wstring dst);
+    void copytree(in wstring src, in wstring dst, in boolean symlinks);
+    void rmtree(in wstring path, in boolean ignore_errors);
+};
+
+[scriptable, uuid(5B252430-996B-4FC5-B578-D69FF0BE470F)]
+interface koIGlob : nsISupports {
+    void glob(in wstring expression,
+              out PRUint32 count,
+              [retval, array, size_is(count)] out wstring filenames);
+};
+

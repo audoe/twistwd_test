@@ -1,0 +1,99 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
+ * The contents of this file are subject to the Mozilla Public License
+ * Version 1.1 (the "License"); you may not use this file except in
+ * compliance with the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ * 
+ * Software distributed under the License is distributed on an "AS IS"
+ * basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+ * License for the specific language governing rights and limitations
+ * under the License.
+ * 
+ * The Original Code is Komodo code.
+ * 
+ * The Initial Developer of the Original Code is ActiveState Software Inc.
+ * Portions created by ActiveState Software Inc are Copyright (C) 2000-2007
+ * ActiveState Software Inc. All Rights Reserved.
+ * 
+ * Contributor(s):
+ *   ActiveState Software Inc
+ * 
+ * Alternatively, the contents of this file may be used under the terms of
+ * either the GNU General Public License Version 2 or later (the "GPL"), or
+ * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the MPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK ***** */
+
+#include "nsISupports.idl"
+#include "nsITreeView.idl"
+
+/* Templates use in Komodo (mainly for "New File" dialog
+ *
+ * The "New File" dialog has two outliners/trees: one for template categories
+ * and one for templates in those categories. The nsITreeView sub-interfaces
+ * below are for those. Here is a basic outline on how to use this stuff:
+ *
+ *  - get a koITemplateService service
+ *  - generate the template tree from disk (.loadTemplates())
+ *    (This step can be skipped as the .initialize() will do this if
+ *    necessary.)
+ *  - get koITemplateCategoriesView and koITemplatesView instances
+ *  - initialize() the koITemplateCategoriesView with the koITemplatesView
+ *    (It needs to be able to drive the koITemplatesView on selection changes.
+ *    Initialization will also result in last selections being restored.)
+ *  - use the components...
+ *  - optionally .saveSelections() to persist the current user selections.
+ */
+
+[scriptable, uuid(EDB3CD03-F434-4315-A286-B0681CF362FE)]
+interface koITemplateService : nsISupports {
+    // Initialize a template tree in the user's AppData directory, if
+    // necessary.
+    //
+    // This should be called on Komodo initialization. If such a tree already
+    // exists, then this is no-op. If there is an error an exception is
+    // raised at set on the koILastErrorService.
+    void initializeUserTemplateTree();
+    
+    void loadTemplates(); // Load the template tree from disk.
+    void dumpTemplates(); // Dump the currently loaded template tree to stdout.
+    readonly attribute boolean loaded;
+
+    wstring getDefaultTemplatesDir();
+    wstring getUserTemplatesDir();
+    wstring getSharedTemplatesDir();
+    
+    wstring getJSONTree();
+};
+
+[scriptable, uuid(A116EEDF-C8C9-42BD-AEEE-FDCCBA0456B7)]
+interface koITemplatesView : nsITreeView {
+    // Return the full path to the currently selected template.
+    // If no template is currently selected, null is returned.
+    wstring getSelectedTemplate();
+};
+
+[scriptable, uuid(2B4EFE2D-A1BF-4FFF-8C0D-D5664C5A19BF)]
+interface koITemplateCategoriesView : nsITreeView {
+    // Restore the last user selection states in the views.
+    // This will .loadTemplates() if necessary.
+    void initialize(in koITemplateService templateSvc,
+                    in koITemplatesView templatesView);
+    void saveSelections(); // Persist the user selection states.
+    
+    void templateSelectionChanged();
+    long getDefaultCategoryIndex();
+    long getDefaultTemplateIndex();  // ... for the current category
+};
+
+

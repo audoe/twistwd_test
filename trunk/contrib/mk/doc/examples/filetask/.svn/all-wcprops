@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/repos/!svn/ver/199/mk/trunk/doc/examples/filetask
+END
+one.txt
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/!svn/ver/199/mk/trunk/doc/examples/filetask/one.txt
+END
+Doitfile.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/!svn/ver/199/mk/trunk/doc/examples/filetask/Doitfile.py
+END
+two.txt
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/!svn/ver/199/mk/trunk/doc/examples/filetask/two.txt
+END

@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/!svn/ver/9993/openkomodo/trunk/src/codeintel/support/gencix/javascript
+END
+ecmaToCodeintel.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/!svn/ver/280/openkomodo/trunk/src/codeintel/support/gencix/javascript/ecmaToCodeintel.py
+END
+ECMAScript.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/!svn/ver/14/openkomodo/trunk/src/codeintel/support/gencix/javascript/ECMAScript.xml
+END
+XMLHttpRequest.cix
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/!svn/ver/280/openkomodo/trunk/src/codeintel/support/gencix/javascript/XMLHttpRequest.cix
+END
+dom0_to_cix.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/!svn/ver/280/openkomodo/trunk/src/codeintel/support/gencix/javascript/dom0_to_cix.py
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/!svn/ver/14/openkomodo/trunk/src/codeintel/support/gencix/javascript/README.txt
+END
+updateAllJSLibraries.py
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/!svn/ver/280/openkomodo/trunk/src/codeintel/support/gencix/javascript/updateAllJSLibraries.py
+END
+dom1_to_cix.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/!svn/ver/280/openkomodo/trunk/src/codeintel/support/gencix/javascript/dom1_to_cix.py
+END
+dom2_to_cix.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/!svn/ver/280/openkomodo/trunk/src/codeintel/support/gencix/javascript/dom2_to_cix.py
+END
+dom3_to_cix.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/!svn/ver/280/openkomodo/trunk/src/codeintel/support/gencix/javascript/dom3_to_cix.py
+END
+dom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/!svn/ver/14/openkomodo/trunk/src/codeintel/support/gencix/javascript/dom.xml
+END
+ECMAScript.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/!svn/ver/280/openkomodo/trunk/src/codeintel/support/gencix/javascript/ECMAScript.xsl
+END
+dom.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/!svn/ver/280/openkomodo/trunk/src/codeintel/support/gencix/javascript/dom.xsl
+END

@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<!DOCTYPE dialog SYSTEM "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" [
+  <!ENTITY % prefDTD SYSTEM "chrome://komodo/locale/pref/pref.dtd">
+  %prefDTD;
+]>
+
+<!-- ***** BEGIN LICENSE BLOCK *****
+ Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ 
+ The contents of this file are subject to the Mozilla Public License
+ Version 1.1 (the "License"); you may not use this file except in
+ compliance with the License. You may obtain a copy of the License at
+ http://www.mozilla.org/MPL/
+ 
+ Software distributed under the License is distributed on an "AS IS"
+ basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+ License for the specific language governing rights and limitations
+ under the License.
+ 
+ The Original Code is Komodo code.
+ 
+ The Initial Developer of the Original Code is ActiveState Software Inc.
+ Portions created by ActiveState Software Inc are Copyright (C) 2000-2007
+ ActiveState Software Inc. All Rights Reserved.
+ 
+ Contributor(s):
+   ActiveState Software Inc
+ 
+ Alternatively, the contents of this file may be used under the terms of
+ either the GNU General Public License Version 2 or later (the "GPL"), or
+ the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ in which case the provisions of the GPL or the LGPL are applicable instead
+ of those above. If you wish to allow use of your version of this file only
+ under the terms of either the GPL or the LGPL, and not to allow others to
+ use your version of this file under the terms of the MPL, indicate your
+ decision by deleting the provisions above and replace them with the notice
+ and other provisions required by the GPL or the LGPL. If you do not delete
+ the provisions above, a recipient may use your version of this file under
+ the terms of any one of the MPL, the GPL or the LGPL.
+ 
+ ***** END LICENSE BLOCK ***** -->
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://komodo/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://komodo/skin/global/global.css" type="text/css"?>
+<?xml-stylesheet href="chrome://komodo/skin/bindings/buttons.css" type="text/css"?>
+<?xml-stylesheet href="chrome://komodo/skin/bindings/widgets.css" type="text/css"?>
+<?xml-stylesheet href="chrome://komodo/skin/bindings/listbox.css" type="text/css"?>
+
+<dialog id="dialog-editenvironvar"
+        title="&environmentVariable.title;"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        xmlns:html="http://www.w3.org/1999/xhtml"
+        orient="vertical"
+        style="min-width: 35em;"
+        buttons="accept,cancel"
+        ondialogaccept="return doOk();"
+        ondialogcancel="return doCancel();"
+        onload="Startup();"
+        persist="screenX screenY"
+        onunload="doUnLoad();">
+
+<script src="chrome://xtk/content/xtk.js" type="application/x-javascript;version=1.7"/>
+<script type="application/x-javascript;version=1.7" src="chrome://komodo/content/library/logging.js"/>
+<script type="application/x-javascript;version=1.7" src="chrome://komodo/content/library/filepickers.js"/>
+<script type="application/x-javascript;version=1.7" src="chrome://komodo/content/library/dialogs.js"/>
+<script src="chrome://komodo/content/pref/koPrefUtils.js" type="application/x-javascript;version=1.7" />
+<script type="application/x-javascript;version=1.7" src="chrome://komodo/content/pref/editenvironvar.js"/>
+
+<vbox flex="1">
+            <label value="&AddEditEnvir.label;"
+                   style="margin: 5px 1px;"/>
+    <grid>
+        <columns>
+            <column/>
+            <column flex="1"/>
+        </columns>
+        <rows>
+        <row>
+            <label value="&AddEditEnvirName.label;" control="varName" class="kopadded"
+                   style="width: 50px;margin: 5px 1px;"/>
+            <textbox id="VarName" flex="1"/>
+        </row>
+        <row>
+            <label value="&AddEditEnvirValue.label;" control="varValue" class="kopadded"
+                   style="width: 50px; margin: 5px 1px;"/>
+            <hbox align="top">
+                <deck id="VarDeck" selectedIndex="0" flex="1">
+                    <textbox id="VarValue" flex="1"/>
+                    <pathlist
+                            id="VarPaths"
+                            collapsed="true"
+                            flex="1"
+                            seltype="multiple"
+                            rows="4"/>
+                </deck>
+                <hbox align="center">
+                <button id="pathButton" class="more-icon button-toolbar-a" style="margin-top: 2px; width: 20px; height: 20px;" tooltiptext="&editPaths.tooltiptext;" oncommand="doPathVar(1);"/>
+                </hbox>
+            </hbox>
+        </row>
+        </rows>
+    </grid>
+</vbox>
+</dialog>

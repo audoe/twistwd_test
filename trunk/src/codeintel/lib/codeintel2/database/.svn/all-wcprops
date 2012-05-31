@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/9886/openkomodo/trunk/src/codeintel/lib/codeintel2/database
+END
+langlibbase.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/!svn/ver/9077/openkomodo/trunk/src/codeintel/lib/codeintel2/database/langlibbase.py
+END
+multilanglib.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/!svn/ver/9078/openkomodo/trunk/src/codeintel/lib/codeintel2/database/multilanglib.py
+END
+database.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/9097/openkomodo/trunk/src/codeintel/lib/codeintel2/database/database.py
+END
+resource.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/4851/openkomodo/trunk/src/codeintel/lib/codeintel2/database/resource.py
+END
+langlib.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/!svn/ver/9307/openkomodo/trunk/src/codeintel/lib/codeintel2/database/langlib.py
+END
+catalog.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/!svn/ver/9886/openkomodo/trunk/src/codeintel/lib/codeintel2/database/catalog.py
+END
+util.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/!svn/ver/1979/openkomodo/trunk/src/codeintel/lib/codeintel2/database/util.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/!svn/ver/280/openkomodo/trunk/src/codeintel/lib/codeintel2/database/__init__.py
+END
+projlib.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/!svn/ver/5186/openkomodo/trunk/src/codeintel/lib/codeintel2/database/projlib.py
+END
+stdlib.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/!svn/ver/9886/openkomodo/trunk/src/codeintel/lib/codeintel2/database/stdlib.py
+END

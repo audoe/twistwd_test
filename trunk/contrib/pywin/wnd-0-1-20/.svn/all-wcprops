@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/!svn/ver/5365/openkomodo/trunk/contrib/pywin/wnd-0-1-20
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/!svn/ver/161/openkomodo/trunk/contrib/pywin/wnd-0-1-20/__init__.py
+END
+fwtypes.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/161/openkomodo/trunk/contrib/pywin/wnd-0-1-20/fwtypes.py
+END
+wintypes.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/!svn/ver/161/openkomodo/trunk/contrib/pywin/wnd-0-1-20/wintypes.py
+END
+news.txt
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/!svn/ver/161/openkomodo/trunk/contrib/pywin/wnd-0-1-20/news.txt
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/161/openkomodo/trunk/contrib/pywin/wnd-0-1-20/readme.txt
+END
+license.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/!svn/ver/161/openkomodo/trunk/contrib/pywin/wnd-0-1-20/license.txt
+END

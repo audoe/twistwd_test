@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/4769/openkomodo/trunk/contrib/pycrypto/lib/Crypto/Protocol
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/!svn/ver/4769/openkomodo/trunk/contrib/pycrypto/lib/Crypto/Protocol/__init__.py
+END
+AllOrNothing.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/!svn/ver/4769/openkomodo/trunk/contrib/pycrypto/lib/Crypto/Protocol/AllOrNothing.py
+END
+Chaffing.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/!svn/ver/4769/openkomodo/trunk/contrib/pycrypto/lib/Crypto/Protocol/Chaffing.py
+END

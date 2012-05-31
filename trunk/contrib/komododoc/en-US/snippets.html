@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/screen.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="favicon.ico" type=
+  "image/x-icon" />
+
+  <title>Snippets</title>
+</head>
+
+<body>
+<div id="content">
+  <h1><a name="snippets_top" id="snippets_top">Snippets</a></h1>
+
+  <div class="right-float-box">
+    <p><strong>Feature Showcases</strong></p>
+
+    <ul>
+      <li> <a href="abbreviations.html">Abbreviations</a>: inserting
+      snippets by name</li>
+      
+      <li>a snippet that <a href=
+      "tutorial/tourlet_snipinput.html#snipinput_top">prompts for
+      input</a></li>
+
+      <li>a snippet containing a <a href=
+      "tutorial/tourlet_codecomp.html#codecomp_top">code
+      fragment</a></li>
+    </ul>
+  </div>
+
+  <p>Snippets are frequently used strings that can be quickly
+  inserted into the current document. For example, repetitive
+  sections of code or standard comments can be stored within a
+  snippet. Snippets have advanced properties; they support the use
+  of <a href="tabstops.html#tabstops_top">Tabstops</a>
+  and <a href=
+  "shortcuts.html#shortcuts_top">Interpolation
+  Shortcuts</a>, can be assigned to <a href=
+  "prefs.html#Config_Key_Bindings">Key Bindings</a>, and
+  allow for the specification of indentation context and cursor
+  position.</p>
+
+  <p>Snippets are stored in the <a href=
+  "project.html#project_top">Projects sidebar</a> or the
+  <a href="toolbox.html#toolbox_top">Toolbox</a>.</p>
+
+  <h2><a name="snippets_creating" id="snippets_creating">Creating
+  Snippets</a></h2>
+
+  <p>To create a code snippet, select the desired block of text in
+  the Editor Pane. Then drag and drop the selected section onto the
+  <a href="toolbox.html#toolbox_top">Toolbox</a> tab or
+  into a project on the <a href=
+  "project.html#project_top">Projects</a> tab.</p>
+
+  <p>Alternatively, select the desired text, then right-click and
+  select <strong>Add as Snippet in the Toolbox</strong>.</p>
+
+  <p>Alternatively, right-click a folder in the Toolbox or on a
+  project or folder name in the <strong>Projects</strong> sidebar, and
+  select <strong>New Snippet</strong>. If you use this method, you
+  must manually enter the contents of the snippet; text selected in
+  the Editor Pane is not automatically added to the Snippet dialog
+  box.</p>
+
+  <h2><a name="snippets_config" id="snippets_config">Configuring
+  Snippets</a></h2>
+
+  <p>To configure snippet properties, right-click the snippet on
+  either the <a class="doc" href=
+  "toolbox.html#toolbox_top">Toolbox</a> tab or the
+  <a class="doc" href=
+  "project.html#project_top">Projects</a> tab, and
+  select <strong>Properties</strong>. The following configuration
+  properties are available:</p>
+
+  <ul>
+    <li><strong>Snippet Name</strong>: Enter the text that should
+    display in the Projects or Toolbox sidebars for this code snippet.
+    If the snippet was created by dragging a text selection from
+    the Editor Pane, the snippet is named after the text in the
+    snippet.</li>
+
+    <li><strong>Snippet Contents</strong>: If the snippet was
+    created by dragging a text selection from the Editor Pane, the
+    contents of the selected text are displayed in the Snippet
+    Contents field. Otherwise, enter the contents of the snippet
+    manually. Add or edit snippet content as desired.</li>
+
+    <li><strong>Snippet Shortcuts</strong>: Add <a class="doc"
+    href="shortcuts.html#shortcuts_top">Interpolation
+    Shortcuts</a> or <a class="doc" href=
+    "tabstops.html#tabstops_top">Tabstops</a>
+    to a snippet by clicking the arrow button to the right
+    of the Snippets Contents field, and selecting a shortcut from
+    the drop-down menu. Interpolation shortcuts in snippets are not
+    executed when the snippet is inserted in the Editor Pane via
+    dragging and dropping.</li>
+
+    <li><strong>Maintain selected text or cursor position after
+    insertion</strong>: Within the snippet contents field, either
+    select a portion of the snippet (by dragging the mouse pointer
+    over the desired selection) or position the editing cursor
+    within the string. If this check box is selected, when the
+    snippet is inserted into the Editor Pane, the selected text or
+    the cursor position is displayed in the same manner.</li>
+
+    <li><strong>Maintain indentation context after
+    insertion</strong>: If the snippet is inserted into the Editor
+    Pane when the editing cursor is in an indented position, select
+    this check box to use the indentation point as an indentation
+    "prefix". The indentation structure of the snippet is preserved
+    at the position of insertion.</li>
+  </ul>
+
+  <h2><a name="snippets_using" id="snippets_using">Using
+  Snippets</a></h2>
+
+  <p>To insert the contents of a snippet at the current cursor
+  position in the Editor Pane, double-click it, or right-click the
+  snippet and select <strong>Insert Snippet</strong>.</p>
+
+  <p>Although you can also drag and drop snippets onto the Editor
+  Pane, the cursor position and indentation check box options
+  explained above in <a class="doc" href=
+  "#snippets_config">Configuring Snippets</a> will only take effect
+  if the snippet is added using the double-click or <strong>Insert
+  Snippet</strong> method.</p>
+  
+  <h3><a name="snippets_abbreviations">Abbreviations</a></h3>
+  
+  <p>Snippets saved in a toolbox or project folder called
+  "Abbreviations" (or a language-specific sub-directory) can be inserted
+  by typing the snippet name in the buffer. See <a
+  href="abbreviations.html">Abbreviations</a>.</p>
+
+  <h2><a name="snippets_options" id="snippets_options">Snippet
+  Options</a></h2>
+
+  <p>To access options for the selected snippet, right-click a snippet
+  in the Toolbox and select the desired option.</p>
+
+  <p>The following options are available:</p>
+
+  <ul>
+    <li><strong>Insert Snippet</strong>: Use this option to insert
+    the snippet at the current cursor position in the editor, as
+    described above in <a href="#snippets_using">Using
+    Snippets</a>.</li>
+
+    <li><strong>Cut/Copy/Paste</strong>: Used to duplicate or move a
+    snippet when dragging is not convenient (e.g. to a project which is
+    currently closed).</li>
+
+    <li><strong>Show in File Manager</strong>: Shows the JSON file for
+    the snippet in the system's default file manager.</li>
+
+    <li><strong>Export as Zip File...</strong>: Exports the snippet in a
+    standard ".zip" archive.</li>
+
+    <li><strong>Rename</strong>: Changes the snippet name.</li>
+
+    <li><strong>Delete</strong>: Permanently removes the selected
+    snippet from the toolbox.</li>
+  </ul>
+
+  <h3><a name="snippets_properties" id=
+  "snippets_properties">Snippet Properties</a></h3>
+
+  <p>Snippet properties are used to alter or rename snippets (as
+  described in <a href="#snippets_config">Configuring Snippets</a>,
+  above). The Properties dialog box is also used to assign a custom
+  icon to a snippet or to assign a custom key binding. To access
+  the Properties dialog box, right-click the snippet and select
+  <strong>Properties</strong>.</p>
+
+  <h4><a name="snippets_Cust_Icons" id=
+  "snippets_Cust_Icons">Assigning Custom Icons to Snippets</a></h4>
+
+  <p>The default snippet icons can be replaced with custom icons.
+  Komodo includes more than 600 icons; alternatively, select a
+  custom image stored on a local or network drive (use 16x16-pixel
+  images for best results).</p>
+
+  <p>To assign a custom icon to a snippet:</p>
+
+  <ol>
+    <li>In the Projects or Toolbox sidebar, right-click the desired
+    snippet and select <strong>Properties</strong>. Alternatively,
+    click the icon in the Projects or Toolbox sidebar, then select
+    <strong>Projects|<em>snippet_name</em>|Properties</strong> or
+    <strong>Toolbox<em>snippet_name</em>|Properties</strong>.</li>
+
+    <li>In the Properties dialog box, click <strong>Change
+    Icon</strong>.</li>
+
+    <li>In the Pick an Icon dialog box, select a new icon and click
+    <strong>OK</strong>. Alternatively, click <strong>Choose
+    Other</strong>, and browse to the desired image file.</li>
+
+    <li>In the Properties dialog box for the snippet, click
+    <strong>OK</strong>. The custom icon is displayed next to the
+    snippet.</li>
+  </ol>
+
+  <p>To revert to the default icon for a selected snippet:</p>
+
+  <ol>
+    <li>In the Projects or Toolbox sidebar, right-click the desired
+    snippet and select <strong>Properties</strong>.</li>
+
+    <li>Click <strong>Reset</strong>, then click
+    <strong>OK</strong>. The default icon is displayed next to the
+    snippet.</li>
+  </ol>
+
+  <h4><a name="snippets_key_bindings" id=
+  "snippets_key_bindings">Snippet Key Bindings</a></h4>
+
+  <p>To assign a key binding to a snippet, right-click the snippet
+  on either the <a class="doc" href=
+  "toolbox.html#toolbox_top">Toolbox</a>, and
+  select <strong>Properties</strong>. Select the <strong>Key
+  Bindings</strong> tab, and configure the desired binding. See
+  <a href="prefs.html#Config_Key_Bindings">Key Bindings
+  for Custom Components</a> for more information.</p>
+  
+  <p>See <a href="abbreviations.html">Abbreviations</a> for details on
+  inserting snippets by name.</p>
+  <!-- Footer Start -->
+  <hr />
+
+</div> <!-- content -->
+</body>
+</html>

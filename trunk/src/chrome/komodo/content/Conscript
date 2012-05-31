@@ -1,0 +1,109 @@
+#!/usr/local/bin/perl
+# ***** BEGIN LICENSE BLOCK *****
+# Version: MPL 1.1/GPL 2.0/LGPL 2.1
+# 
+# The contents of this file are subject to the Mozilla Public License
+# Version 1.1 (the "License"); you may not use this file except in
+# compliance with the License. You may obtain a copy of the License at
+# http://www.mozilla.org/MPL/
+# 
+# Software distributed under the License is distributed on an "AS IS"
+# basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+# License for the specific language governing rights and limitations
+# under the License.
+# 
+# The Original Code is Komodo code.
+# 
+# The Initial Developer of the Original Code is ActiveState Software Inc.
+# Portions created by ActiveState Software Inc are Copyright (C) 2000-2007
+# ActiveState Software Inc. All Rights Reserved.
+# 
+# Contributor(s):
+#   ActiveState Software Inc
+# 
+# Alternatively, the contents of this file may be used under the terms of
+# either the GNU General Public License Version 2 or later (the "GPL"), or
+# the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+# in which case the provisions of the GPL or the LGPL are applicable instead
+# of those above. If you wish to allow use of your version of this file only
+# under the terms of either the GPL or the LGPL, and not to allow others to
+# use your version of this file under the terms of the MPL, indicate your
+# decision by deleting the provisions above and replace them with the notice
+# and other provisions required by the GPL or the LGPL. If you do not delete
+# the provisions above, a recipient may use your version of this file under
+# the terms of any one of the MPL, the GPL or the LGPL.
+# 
+# ***** END LICENSE BLOCK *****
+
+
+Import(
+    'cons',
+    'platform',
+    'mozChromeDir',
+    'mozResourcesDir',
+    'mozBin',
+    'mozExe',
+    'mozSrc',
+    'unsiloedPythonExe',
+    'productType',
+    'jarring',
+    'buildFlavour',
+    'komodoTitleBarName',
+    'mozVersion',
+    'komodoDevDir',
+    'sdkDir',
+);
+
+$cons->Preprocess('komodo.p.manifest', "$mozChromeDir/komodo.manifest",
+                  {'WITH_JARRING' => $jarring}, 1);
+$cons->Command("komodo.manifest.landmark",
+               "$mozChromeDir/komodo.manifest",
+               "$mozBin/chrome.manifest",
+               "$sdkDir/pylib/chromereg.py",
+               "$mozExe",
+               qq(
+                 $unsiloedPythonExe %3 %2 %1 "chrome"
+                 touch %>
+               ));
+
+$cons->Preprocess('commandsOverlay.p.xul', 'commandsOverlay.xul');
+$cons->InstallInChrome('commandsOverlay.xul');
+$cons->Preprocess('komodo.p.xul', 'komodo.xul',
+                  {'PP_KO_TITLE_BAR_NAME' => "$komodoTitleBarName"});
+$cons->InstallInChrome('komodo.xul');
+$cons->Preprocess('komodo.p.js', 'komodo.js');
+$cons->InstallInChrome('komodo.js');
+$cons->InstallInChrome('browse.js');
+$cons->Preprocess('launch.p.js', 'launch.js');
+$cons->InstallInChrome('launch.js');
+$cons->Preprocess('views.p.js', 'views.js');
+$cons->InstallInChrome('views.js');
+$cons->Preprocess('workspace.p.js', 'workspace.js');
+$cons->InstallInChrome('workspace.js');
+$cons->Preprocess('statusbar.p.js', 'statusbar.js');
+$cons->InstallInChrome('statusbar.js');
+$cons->InstallInChrome('editor.js');
+$cons->InstallInChrome('markers.js');
+# $cons->Depends('komodo.unprocessed.xul', 'testmenu.xul');
+
+$cons->Preprocess('testkeys.p.xul', 'testkeys.xul');
+$cons->InstallInChrome("testkeys.xul");
+$cons->Preprocess('testkeys.p.js', 'testkeys.js');
+$cons->InstallInChrome("testkeys.js");
+$cons->InstallInChrome("testscintilla.xul");
+$cons->InstallInChrome("printPreview.xul");
+$cons->InstallInChrome("hiddenWindow.xul");
+
+# "About" dialog files.
+$cons->Preprocess('about/credits.p.html', 'about/credits.html',
+    {'PP_CONTRIBUTORS_PATH' => "$komodoDevDir/CONTRIBUTORS.txt"});
+$cons->InstallInChrome("about/credits.html");
+$cons->Depends('about/credits.p.html', "$komodoDevDir/CONTRIBUTORS.txt");
+$cons->Preprocess('about/about.p.xul', 'about/about.xul');
+$cons->InstallInChrome("about/about.xul");
+$cons->InstallAs("$mozChromeDir/komodo/content/about/img/komodo.png",
+    "$komodoDevDir/src/main/komodo256.$productType.png");
+$cons->InstallRecursive("$mozChromeDir/komodo/content/about",
+    cwd()."/src/chrome/komodo/content/about",
+    ('\.svn', 'about.p.xul', 'credits.p.html'));
+

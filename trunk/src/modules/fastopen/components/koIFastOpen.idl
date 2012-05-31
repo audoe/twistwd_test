@@ -1,0 +1,98 @@
+/* Copyright (c) 2009 ActiveState Software Inc.
+   See the file LICENSE.txt for licensing information. */
+
+#include "nsISupports.idl"
+#include "nsITreeView.idl"
+#include "nsIDOMElement.idl"
+#include "koIProject.idl"
+#include "koIViews.idl"
+
+
+/* An object that represents a selection in the 'Go to File' dialog. */
+[scriptable, uuid(0dd87bd7-8df3-5d4b-b417-c2067a45d214)]
+interface koIFastOpenHit: nsISupports {
+    readonly attribute wstring type;  // The type of hit
+    readonly attribute wstring path;
+    readonly attribute boolean isdir;
+    
+    // Only defined for type "path" and "go" hits.
+    readonly attribute wstring dir;     // dirname(path)
+    readonly attribute wstring base;    // basename(path)
+    
+    // These are currently only set for `type == "open-view"` hits.
+    readonly attribute koIView view;
+    readonly attribute wstring viewType;
+    readonly attribute long windowNum;
+    readonly attribute long tabGroupId;
+};
+
+/* Handler for tree showing results in the "Go to File" (aka fast open)
+ * dialog.
+ */
+[scriptable, uuid(9d9d5b8d-0992-f840-be4a-6e1fe722dc57)]
+interface koIFastOpenTreeView: nsITreeView {
+    // Internal APIs not exposed because it a pain and unnecessary.
+    //void resetHits();
+    //void addHit(in Hit hits);
+    //void addHits(in array of Hits hits);
+    //void searchStarted();
+    //void searchAborted();
+    //void searchCompleted();
+
+    void getSelectedHits(out PRUint32 count,
+        [retval, array, size_is(count)] out koIFastOpenHit hits);
+};
+
+
+/* UI Driver API for the "Go to File" dialog.
+ * This is a component implemented in the dialog's JavaScript.
+ */
+[scriptable, uuid(131d4343-19ba-f942-9410-e2f019684937)]
+interface koIFastOpenUIDriver: nsISupports {
+    void setTreeView(in koIFastOpenTreeView view);
+    void setCurrPath(in wstring path);
+
+    void searchStarted();
+    void searchAborted();
+    void searchCompleted();
+};
+
+
+/* Driver API for the "Go to File" dialog. */
+[scriptable, uuid(2c4ddcd5-77b4-e347-85d5-106b2f403dd9)]
+interface koIFastOpenSession: nsISupports {
+    //TODO: drop this if not used
+    readonly attribute koIFastOpenUIDriver uiDriver;
+    
+    // Configuration items from which query results are derived.
+    void setCurrProject(in koIProject project);
+    // - Ordered (in viewhistory order) list of currently open views.
+    void setOpenViews(in PRUint32 count,
+        [array, size_is(count)] in nsIDOMElement views);
+    void setCurrentPlace(in AString placesURI);
+    void setCurrHistorySession(in wstring sessionName);
+
+    // Start a search for files with the given query string. This
+    // will cancel a previous `findFiles` call. Results are returned
+    // by calling the `uiDriver`.
+    void findFiles(in wstring query);
+    
+    // Synchronously search with the given query string and return the first
+    // hit, or null.
+    koIFastOpenHit findFileSync(in wstring query, in double timeout);
+
+    // Abort a current search (if any).
+    void abortSearch();
+
+    // Truncate the path as best as possible, such as relavatizing from the
+    // home directory or relavatizing from the base project directory.
+    AString relavatizePath(in AString path);
+};
+
+[scriptable, uuid(6c8c66cb-f1c3-834e-86ac-905cb155d595)]
+interface koIFastOpenService: nsISupports {
+    // Default value for the `fastopen_path_excludes` preference.
+    readonly attribute wstring DEFAULT_PATH_EXCLUDES;
+    
+    koIFastOpenSession getSession(in koIFastOpenUIDriver uiDriver);
+};

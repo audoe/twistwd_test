@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/repos/!svn/ver/3407/mk/trunk/test/data/lazycfg
+END
+config.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/!svn/ver/3407/mk/trunk/test/data/lazycfg/config.py
+END
+Makefile.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/!svn/ver/3407/mk/trunk/test/data/lazycfg/Makefile.py
+END
+do.doctest
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/!svn/ver/3407/mk/trunk/test/data/lazycfg/do.doctest
+END
+configure.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/!svn/ver/3407/mk/trunk/test/data/lazycfg/configure.py
+END

@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/!svn/ver/4938/openkomodo/trunk/test/textinfo_data/doctype
+END
+html-2.0.html.textinfo
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/4938/openkomodo/trunk/test/textinfo_data/doctype/html-2.0.html.textinfo
+END
+html-2.0.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/!svn/ver/568/openkomodo/trunk/test/textinfo_data/doctype/html-2.0.html
+END
+xbl-via-doctype.xml.textinfo
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/!svn/ver/4938/openkomodo/trunk/test/textinfo_data/doctype/xbl-via-doctype.xml.textinfo
+END
+xbl-via-doctype.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/!svn/ver/568/openkomodo/trunk/test/textinfo_data/doctype/xbl-via-doctype.xml
+END
+html-3.2.html.textinfo
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/4938/openkomodo/trunk/test/textinfo_data/doctype/html-3.2.html.textinfo
+END
+html-3.2.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/!svn/ver/568/openkomodo/trunk/test/textinfo_data/doctype/html-3.2.html
+END
+xhtml-with-html-doctype.html.textinfo
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/!svn/ver/4938/openkomodo/trunk/test/textinfo_data/doctype/xhtml-with-html-doctype.html.textinfo
+END
+xhtml-with-html-doctype.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/!svn/ver/568/openkomodo/trunk/test/textinfo_data/doctype/xhtml-with-html-doctype.html
+END
+html-via-doctype.textinfo
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/!svn/ver/4938/openkomodo/trunk/test/textinfo_data/doctype/html-via-doctype.textinfo
+END
+html-norm-public-id.html.textinfo
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/!svn/ver/4938/openkomodo/trunk/test/textinfo_data/doctype/html-norm-public-id.html.textinfo
+END
+html-via-doctype
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/4938/openkomodo/trunk/test/textinfo_data/doctype/html-via-doctype
+END
+html-norm-public-id.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/!svn/ver/568/openkomodo/trunk/test/textinfo_data/doctype/html-norm-public-id.html
+END
+html-4.01-frameset.html.textinfo
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/!svn/ver/4938/openkomodo/trunk/test/textinfo_data/doctype/html-4.01-frameset.html.textinfo
+END
+html-4.01-transitional.html.textinfo
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/!svn/ver/4938/openkomodo/trunk/test/textinfo_data/doctype/html-4.01-transitional.html.textinfo
+END
+html-4.01-frameset.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/568/openkomodo/trunk/test/textinfo_data/doctype/html-4.01-frameset.html
+END
+html-4.01-transitional.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/!svn/ver/568/openkomodo/trunk/test/textinfo_data/doctype/html-4.01-transitional.html
+END
+html-4.01-strict.html.textinfo
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/!svn/ver/4938/openkomodo/trunk/test/textinfo_data/doctype/html-4.01-strict.html.textinfo
+END
+html-4.01-strict.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/!svn/ver/568/openkomodo/trunk/test/textinfo_data/doctype/html-4.01-strict.html
+END
+xhtml-1.0-frameset.html.textinfo
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/!svn/ver/4938/openkomodo/trunk/test/textinfo_data/doctype/xhtml-1.0-frameset.html.textinfo
+END
+xhtml-1.0-frameset.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/568/openkomodo/trunk/test/textinfo_data/doctype/xhtml-1.0-frameset.html
+END
+xhtml-1.0-transitional.html.textinfo
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/!svn/ver/4938/openkomodo/trunk/test/textinfo_data/doctype/xhtml-1.0-transitional.html.textinfo
+END
+xhtml-1.0-strict.html.textinfo
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/!svn/ver/4938/openkomodo/trunk/test/textinfo_data/doctype/xhtml-1.0-strict.html.textinfo
+END
+xhtml-1.0-transitional.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/!svn/ver/568/openkomodo/trunk/test/textinfo_data/doctype/xhtml-1.0-transitional.html
+END
+xhtml-1.0-strict.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/!svn/ver/568/openkomodo/trunk/test/textinfo_data/doctype/xhtml-1.0-strict.html
+END

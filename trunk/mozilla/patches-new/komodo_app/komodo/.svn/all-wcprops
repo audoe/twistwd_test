@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/8851/openkomodo/trunk/mozilla/patches-new/komodo_app/komodo
+END
+confvars.sh
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/8006/openkomodo/trunk/mozilla/patches-new/komodo_app/komodo/confvars.sh
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/!svn/ver/14/openkomodo/trunk/mozilla/patches-new/komodo_app/komodo/Makefile.in
+END
+build.mk
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/!svn/ver/8799/openkomodo/trunk/mozilla/patches-new/komodo_app/komodo/build.mk
+END

@@ -1,0 +1,162 @@
+<!-- ***** BEGIN LICENSE BLOCK *****
+ Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ 
+ The contents of this file are subject to the Mozilla Public License
+ Version 1.1 (the "License"); you may not use this file except in
+ compliance with the License. You may obtain a copy of the License at
+ http://www.mozilla.org/MPL/
+ 
+ Software distributed under the License is distributed on an "AS IS"
+ basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+ License for the specific language governing rights and limitations
+ under the License.
+ 
+ The Original Code is Komodo code.
+ 
+ The Initial Developer of the Original Code is ActiveState Software Inc.
+ Portions created by ActiveState Software Inc are Copyright (C) 2000-2007
+ ActiveState Software Inc. All Rights Reserved.
+ 
+ Contributor(s):
+   ActiveState Software Inc
+ 
+ Alternatively, the contents of this file may be used under the terms of
+ either the GNU General Public License Version 2 or later (the "GPL"), or
+ the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ in which case the provisions of the GPL or the LGPL are applicable instead
+ of those above. If you wish to allow use of your version of this file only
+ under the terms of either the GPL or the LGPL, and not to allow others to
+ use your version of this file under the terms of the MPL, indicate your
+ decision by deleting the provisions above and replace them with the notice
+ and other provisions required by the GPL or the LGPL. If you do not delete
+ the provisions above, a recipient may use your version of this file under
+ the terms of any one of the MPL, the GPL or the LGPL.
+ 
+ ***** END LICENSE BLOCK ***** -->
+
+<!ENTITY DDirectoryPathOfFile.label "[[&#37;D]] : directory path of file">
+<!ENTITY FFilePath.label "[[&#37;F]] : file path">
+<!ENTITY LCurrentLineNumber.label "[[&#37;L]] : current line number">
+<!ENTITY PPathOfTheActiveProject.label "[[&#37;P]]: path of the active project">
+<!ENTITY SURLEscapedSelection.label "[[&#37;S]] : URL-escaped selection">
+<!ENTITY URIMapping.title "URI Mapping">
+<!ENTITY URI.label "URI:">
+<!ENTITY WURLEscapedSelectionOrWordUnderCursor.label "[[&#37;W]] : URL-escaped selection or word under cursor">
+<!ENTITY addEditPathMapping.label "Add/Edit Path Mapping">
+<!ENTITY addPath.accesskey "A">
+<!ENTITY addPath.label "Add Path...">
+<!ENTITY anonymous.accesskey "A">
+<!ENTITY askAskForUserInput.label "[[&#37;ask]] : ask for user input">
+<!ENTITY askpassAskForPassword.label "[[&#37;askpass]] : ask for password">
+<!ENTITY bFileBaseNameWithoutExtension.label "[[&#37;b]]: file base name without extension">
+<!ENTITY browse.label "Browse...">
+<!ENTITY browseButton.accesskey "B">
+<!ENTITY browserConfiguredBrowser.label "[[&#37;browser]] : Configured browser">
+<!ENTITY clearAll.accesskey "l">
+<!ENTITY clearAll.label "Clear All">
+<!ENTITY configureNodeJS.tooltiptext "Configure Node.js">
+<!ENTITY configurePHP.tooltiptext "Configure PHP">
+<!ENTITY configurePerl.tooltiptext "Configure Perl">
+<!ENTITY configurePython.tooltiptext "Configure Python">
+<!ENTITY configurePython3.tooltiptext "Configure Python3">
+<!ENTITY configureRuby.tooltiptext "Configure Ruby">
+<!ENTITY copy.label "Copy">
+<!ENTITY currentProjectPreferences.label "Current Project Preferences">
+<!ENTITY dDirectoryBaseNameOfFile.label "[[&#37;d]] : directory base name of file">
+<!ENTITY doNotAskCheckbox.accesskey "d">
+<!ENTITY donTAskMeAgain.label "Don't ask me again.">
+<!ENTITY donTShowMeThisAgain.label "Don't show me this again.">
+<!ENTITY escapedPercentSign.label "[[&#37;&#37;]] : escaped percent sign">
+<!ENTITY fFileBaseName.label "[[&#37;f]] : file base name">
+<!ENTITY famFamFamSilkIcons.label "FamFamFam Silk Icons (1000 icons)">
+<!ENTITY featureControlPanel.title "Feature Control Panel">
+<!ENTITY globalPreferences.label "Global Preferences">
+<!ENTITY helpOnBackgroundSyntaxChecking.tooltiptext "Help on Background Syntax Checking">
+<!ENTITY helpOnShortcuts.label "Help on Shortcuts...">
+<!ENTITY internalKomodoError.title "Internal Komodo Error">
+<!ENTITY local.label "Local...">
+<!ENTITY loginAnonymously.label "Login Anonymously">
+<!ENTITY mapsTo.label "Maps to:">
+<!ENTITY nextDiff.label "Next Diff">
+<!ENTITY openOfficeIcons.label "Open Office Icons (670 icons)">
+<!ENTITY pDirectoryPathOfTheActiveProject.label "[[&#37;p]]: directory path of the active project">
+<!ENTITY passwordLabel.accesskey "P">
+<!ENTITY perlConfiguredPerlInterpreter.label "[[&#37;perl]] : Configured Perl Interpreter">
+<!ENTITY phpConfiguredPHPInterpreter.label "[[&#37;php]] : Configured PHP Interpreter">
+<!ENTITY pickAnIcon.title "Pick an icon">
+<!ENTITY previewWithAnotherFileOrURL.label "Preview with another file or URL:">
+<!ENTITY previewWithThisFile.label "Preview with this file.">
+<!ENTITY previewUsing.label "Preview using:">
+<!ENTITY previewUsingDefaultBrowser.value "Default Browser">
+<!ENTITY previousDiff.label "Previous Diff">
+<!ENTITY pythonConfiguredPythonInterpreter.label "[[&#37;python]] : Configured Python Interpreter">
+<!ENTITY remember.accesskey "R">
+<!ENTITY rememberThisSelectionForThisFile.label "Remember this selection for this file">
+<!ENTITY remote.label "Remote...">
+<!ENTITY revealPositionInEditor.label "Reveal Position in Editor">
+<!ENTITY sSelection.label "[[&#37;s]] : selection">
+<!ENTITY saveMappingTo.label "Save mapping to:">
+<!ENTITY selectAll.accesskey "a">
+<!ENTITY selectAll.label "Select All">
+<!ENTITY shortcuts.tooltiptext "Shortcuts">
+<!ENTITY useAnotherFile.accesskey "a">
+<!ENTITY useThisFile.accesskey "t">
+<!ENTITY viewEOLMarkers.label "View EOL Markers">
+<!ENTITY viewIndentationGuides.label "View Indentation Guides">
+<!ENTITY viewLineNumbers.label "View Line Numbers">
+<!ENTITY viewWhitespace.label "View Whitespace">
+<!ENTITY wSelectionOrWordUnderCursor.label "[[&#37;w]] : selection or word under cursor">
+<!ENTITY wordWrap.label "Word Wrap">
+
+<!--authenticate.xul-->
+<!ENTITY server.label "Server:">
+<!ENTITY userName.label "User Name:">
+<!ENTITY userName.accesskey "U">
+<!ENTITY password.label "Password:">
+
+<!--compare.xul-->
+<!ENTITY chooseFileToCompare.description "Please choose two files that you wish to compare.">
+<!ENTITY noteCompareFiles.description "Note that if the two files are very large or very different, then comparing them may take a few seconds.">
+<!ENTITY compareFirstFile.label "First file:">
+<!ENTITY compareSecondFile.label "Second file:">
+
+<!--editEnvVar.xul-->
+<!ENTITY variableName.label "Variable Name:">
+<!ENTITY variableValue.label "Variable Value:">
+
+<!--featureControlPanel.xul-->
+<!ENTITY languageFeatures.label "Language Features">
+<!ENTITY nodejs.label "Node.js">
+<!ENTITY perl.label "Perl">
+<!ENTITY php.label "Php">
+<!ENTITY python.label "Python">
+<!ENTITY python3.label "Python3">
+<!ENTITY ruby.label "Ruby">
+<!ENTITY xslt.label "XSLT">
+<!ENTITY otherLanguages.label "Other Languages">
+<!ENTITY sintaxCheckingUnknown.label "Syntax Checking: Status Unknown">
+<!ENTITY sintaxCheckingReady.label "Syntax Checking: Ready">
+<!ENTITY sintaxCheckingReadyJavscriptHtmlXml.label "Syntax Checking for JavaScript, HTML, XML: Ready">
+
+<!--iconpicker.xul-->
+<!ENTITY iconpicker.description "Select an icon to use from Komodo's standard set or click on 'Choose Other' to pick your own.  Choose a 16x16 image file for best results.">
+
+<!--internalError.xul-->
+<!ENTITY pleaseReport.label "You can help make Komodo better by reporting this to:">
+<!ENTITY or.label "or">
+<!ENTITY pleaseInclude.label "Please be sure to include the following text. Thank you.">
+
+<!--pickPreview.xul-->
+<!ENTITY pickPreviewInformation.description "Typically a file is used to preview itself but sometimes it is useful to preview another file that includes your file, e.g. using an HTML file to preview a CSS file.">
+
+<!--commented in compare.xul-->
+<!--
+<!ENTITY pressEnterToFind.tooltiptext "Press Enter to Find in Files">
+                                                                    -->
+
+<!--commented in editPathMap.xul-->
+<!--
+<!ENTITY browseLocalRemotoDir.tooltiptext "Browse for a local or remote directory">
+<!ENTITY browseLocally.label "Browse Locally...">
+<!ENTITY browseRemotely.label "Browse Remotely...">
+                                                                                     -->

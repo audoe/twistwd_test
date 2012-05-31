@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/9051/openkomodo/trunk/src/codeintel/test2/scan_outputs/perl
+END
+bug_32815.pl.cix
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/!svn/ver/8492/openkomodo/trunk/src/codeintel/test2/scan_outputs/perl/bug_32815.pl.cix
+END
+NEXT.pm.cix
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/8492/openkomodo/trunk/src/codeintel/test2/scan_outputs/perl/NEXT.pm.cix
+END
+uses_and_requires.pl.cix
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/!svn/ver/8492/openkomodo/trunk/src/codeintel/test2/scan_outputs/perl/uses_and_requires.pl.cix
+END
+state01.pl.cix
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/!svn/ver/8492/openkomodo/trunk/src/codeintel/test2/scan_outputs/perl/state01.pl.cix
+END
+ParseModule.pm.cix
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/!svn/ver/8492/openkomodo/trunk/src/codeintel/test2/scan_outputs/perl/ParseModule.pm.cix
+END
+bug36802a.pl.cix
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/!svn/ver/8492/openkomodo/trunk/src/codeintel/test2/scan_outputs/perl/bug36802a.pl.cix
+END
+state02.pl.cix
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/!svn/ver/8492/openkomodo/trunk/src/codeintel/test2/scan_outputs/perl/state02.pl.cix
+END
+global_var_defined_in_sub.pl.cix
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/!svn/ver/8492/openkomodo/trunk/src/codeintel/test2/scan_outputs/perl/global_var_defined_in_sub.pl.cix
+END
+AutoSplit.pm.cix
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/!svn/ver/8492/openkomodo/trunk/src/codeintel/test2/scan_outputs/perl/AutoSplit.pm.cix
+END
+bz43676a.pl.cix
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/!svn/ver/8492/openkomodo/trunk/src/codeintel/test2/scan_outputs/perl/bz43676a.pl.cix
+END
+bug_80856a.pl.cix
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/!svn/ver/8492/openkomodo/trunk/src/codeintel/test2/scan_outputs/perl/bug_80856a.pl.cix
+END
+bug_36954.pm.cix
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/!svn/ver/8492/openkomodo/trunk/src/codeintel/test2/scan_outputs/perl/bug_36954.pm.cix
+END
+Buffer1.pm.cix
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/!svn/ver/8492/openkomodo/trunk/src/codeintel/test2/scan_outputs/perl/Buffer1.pm.cix
+END
+client1.pm.cix
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/!svn/ver/8492/openkomodo/trunk/src/codeintel/test2/scan_outputs/perl/client1.pm.cix
+END
+embedded_sub.pl.cix
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/!svn/ver/8492/openkomodo/trunk/src/codeintel/test2/scan_outputs/perl/embedded_sub.pl.cix
+END
+escape_var.pl.cix
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/!svn/ver/8492/openkomodo/trunk/src/codeintel/test2/scan_outputs/perl/escape_var.pl.cix
+END
+PerlModule.pm.cix
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/!svn/ver/8492/openkomodo/trunk/src/codeintel/test2/scan_outputs/perl/PerlModule.pm.cix
+END
+sub1.pl.cix
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/8492/openkomodo/trunk/src/codeintel/test2/scan_outputs/perl/sub1.pl.cix
+END
+all_uppercase_vars.pl.cix
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/!svn/ver/8492/openkomodo/trunk/src/codeintel/test2/scan_outputs/perl/all_uppercase_vars.pl.cix
+END
+hashes-and-arrays.pl.cix
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/!svn/ver/8492/openkomodo/trunk/src/codeintel/test2/scan_outputs/perl/hashes-and-arrays.pl.cix
+END
+sub2.pl.cix
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/8492/openkomodo/trunk/src/codeintel/test2/scan_outputs/perl/sub2.pl.cix
+END
+multi.dotted.1.pl.cix
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/!svn/ver/8492/openkomodo/trunk/src/codeintel/test2/scan_outputs/perl/multi.dotted.1.pl.cix
+END
+user_agent_1.pl.cix
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/!svn/ver/8492/openkomodo/trunk/src/codeintel/test2/scan_outputs/perl/user_agent_1.pl.cix
+END
+multi.dotted.2.pl.cix
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/!svn/ver/8492/openkomodo/trunk/src/codeintel/test2/scan_outputs/perl/multi.dotted.2.pl.cix
+END
+bug_32615.pl.cix
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/!svn/ver/8492/openkomodo/trunk/src/codeintel/test2/scan_outputs/perl/bug_32615.pl.cix
+END
+bug_32642.pl.cix
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/!svn/ver/8492/openkomodo/trunk/src/codeintel/test2/scan_outputs/perl/bug_32642.pl.cix
+END
+eval_screws_up_sub_parsing.pl.cix
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/!svn/ver/8492/openkomodo/trunk/src/codeintel/test2/scan_outputs/perl/eval_screws_up_sub_parsing.pl.cix
+END
+bz32615a.pm.cix
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/!svn/ver/8492/openkomodo/trunk/src/codeintel/test2/scan_outputs/perl/bz32615a.pm.cix
+END

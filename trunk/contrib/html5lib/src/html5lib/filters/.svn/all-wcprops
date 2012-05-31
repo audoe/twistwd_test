@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/7314/openkomodo/trunk/contrib/html5lib/src/html5lib/filters
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/7314/openkomodo/trunk/contrib/html5lib/src/html5lib/filters/__init__.py
+END
+formfiller.py
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/!svn/ver/7314/openkomodo/trunk/contrib/html5lib/src/html5lib/filters/formfiller.py
+END
+optionaltags.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/!svn/ver/7314/openkomodo/trunk/contrib/html5lib/src/html5lib/filters/optionaltags.py
+END
+lint.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/!svn/ver/7314/openkomodo/trunk/contrib/html5lib/src/html5lib/filters/lint.py
+END
+sanitizer.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/!svn/ver/7314/openkomodo/trunk/contrib/html5lib/src/html5lib/filters/sanitizer.py
+END
+_base.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/!svn/ver/7314/openkomodo/trunk/contrib/html5lib/src/html5lib/filters/_base.py
+END
+inject_meta_charset.py
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/!svn/ver/7314/openkomodo/trunk/contrib/html5lib/src/html5lib/filters/inject_meta_charset.py
+END
+whitespace.py
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/!svn/ver/7314/openkomodo/trunk/contrib/html5lib/src/html5lib/filters/whitespace.py
+END

@@ -1,0 +1,216 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
+ * The contents of this file are subject to the Mozilla Public License
+ * Version 1.1 (the "License"); you may not use this file except in
+ * compliance with the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ * 
+ * Software distributed under the License is distributed on an "AS IS"
+ * basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+ * License for the specific language governing rights and limitations
+ * under the License.
+ * 
+ * The Original Code is Komodo code.
+ * 
+ * The Initial Developer of the Original Code is ActiveState Software Inc.
+ * Portions created by ActiveState Software Inc are Copyright (C) 2000-2007
+ * ActiveState Software Inc. All Rights Reserved.
+ * 
+ * Contributor(s):
+ *   ActiveState Software Inc
+ * 
+ * Alternatively, the contents of this file may be used under the terms of
+ * either the GNU General Public License Version 2 or later (the "GPL"), or
+ * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the MPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK ***** */
+
+/* *    Authors: David Ascher, Shane Caraveo
+   
+*/
+
+#include "nsISupports.idl"
+
+#include "koIFileEx.idl"
+#include "koIDocument.idl"
+
+#include "ISciMoz.idl"
+
+#include "koIPrefs.idl"
+
+
+// forward declarations
+interface koIView;
+
+/*
+  koIViewList is a list of koIViewList's.  It manages the notion
+  of a current view in a list, and allows iteration and traversal
+  over all of the viewlists (or views) in a koIViewList.
+*/
+[scriptable, uuid(86259E00-5910-42E3-9C39-C7828A563046)]
+interface koIViewList : nsISupports
+{
+    // Create a new view (of the given type) from the given document.
+    // If "index" is given, the new view is inserted at the given index
+    // in the view list. If index is -1 (or otherwise invalid), the new
+    // view is appended.
+    koIView createViewFromDocument(in koIDocument document, in wstring type,
+                                   in PRUint32 index);
+
+    koIView findViewForDocument(in koIDocument document);
+
+    attribute koIView topView;
+
+    attribute koIView currentView;
+    void makeNextViewCurrent();
+    void makePreviousViewCurrent();
+
+    /**
+     * Return all view instances for the given type. If viewtype is given, it
+     * must be one of the know view types, i.e. "editor", "browser", etc...
+     */
+    void getAllViews(in AString viewtype,
+                     out PRUint32 count,
+                     [array, size_is(count), retval] out koIView views);
+
+    // Getting views. The following methods return a list of views matching
+    // given criteria. By default only the viewlist's immediate views will
+    // be returned.
+    //
+    //      "recursive" is a boolean indicating if the child views of this
+    //          viewlist's views should be included. This is only meaningful
+    //          for viewlists that hold viewlists. For example, Komodo's
+    //          gViewMgr.topView is a "multiview" viewlist that holds two
+    //          "tabbed" viewlists that themselves hold views.
+    //      "type" is a string indicating the view type, e.g. "editor",
+    //          "tabbed". Leaving this blank (or null) means to include all
+    //          view types.
+    //      "uri" is a string indicating the URI of the document for the view.
+    //
+    // Note: Viewlists are currently implemented in JS. Return lists through
+    //       XPCOM from JS painful (must use list and count objects and
+    //       assign to their .value attr, cannot use return semantics),
+    //       therefore each of the following methods is appended with an 'X'
+    //       (for XPCOM or cross-language or whatever). There are non-X
+    //       versions for simplified calling from JavaScript code.
+    void getViewsX(in boolean recursive,
+                   [array, size_is(count)] out koIView views,
+                   out PRUint32 count);
+    void getViewsByTypeX(in boolean recursive,
+                         in wstring type,
+                         [array, size_is(count)] out koIView views,
+                         out PRUint32 count);
+    void getViewsByTypeAndURIX(in boolean recursive,
+                               in wstring type,
+                               in wstring uri,
+                               [array, size_is(count)] out koIView views,
+                               out PRUint32 count);
+};
+
+/*
+  koIView is the representation of a view on a particular
+  koIDocument.  There may be multiple views of a given document. 
+*/
+[scriptable, uuid(CFA83607-094F-4FF8-937E-2BE52E338EB9)]
+interface koIView : koIViewList
+{
+    attribute koIDocument document; // DEPRECATED in Komodo 6.0.0, use `koDoc` attribute
+    attribute koIDocument koDoc;
+    attribute koIViewList parentView;
+    void makeCurrent(in boolean doNotGrabFocus);
+    readonly attribute boolean isCurrent;
+    void setFocus();
+    void close(); // this will decrease the refcount on the koDocument
+    void saveAs(in wstring URI); // XXX review signature
+    void gotoLine(in long lineNo);
+    void printView(); // 'print' is a python keyword :(
+    attribute koIPreferenceSet prefs;
+    attribute koILanguage languageObj;
+    attribute long tabbedViewId;
+    attribute long windowNum;
+    attribute string historySessionName;
+    attribute string uid;
+};
+
+interface koIScintillaScheme;
+
+[scriptable, uuid(C7166644-0E65-41DF-9CB5-C317ECFA33AF)]
+interface koIScintillaView : koIView
+{
+    attribute AString selection;
+    attribute long transientMark;
+    void rotateTransientMarkRing();
+    void transientMarkPop();
+    attribute string encoding;
+    attribute boolean alternateFaceType;
+    attribute ISciMoz scimoz;
+    attribute koIScintillaScheme scheme;
+    void setFoldStyle(in long whichMargin, in wstring foldStyle);
+    // If there are tabstops in the document, this routine moves to
+    // and selects the next tabstop, and returns true.
+    // Otherwise it returns false.
+    // On true return, no further processing of the tab event should be done.
+    boolean moveToNextTabstop();
+    /**
+     * Insert the given text into the view at the current cursor position.
+     * This function will ensure that the view settings, such as EOL and tabs
+     * vs. spaces are maintained for the text being inserted. If the view has
+     * a selection, this selection will be replaced by the provided text
+     * otherwise the text is inserted at the current position.
+     */
+    void insertText(in AString text);
+};
+
+[scriptable, uuid(D10DFEB9-D312-49B9-A180-20A89EF47DE6)]
+interface koIBrowserView : koIView
+{
+
+};
+
+[scriptable, uuid(EB87167B-163A-4F34-8605-C134B07FA586)]
+interface koIXULView : koIView
+{
+
+};
+
+[scriptable, uuid(139B47D9-014C-463b-826C-DEC33F7E157A)]
+interface koIStartPageView : koIView
+{
+
+};
+
+[scriptable, uuid(4F4EFA9D-DE1C-472C-B067-67B9B81F8720)]
+interface koIBookmarkableView : nsISupports
+{
+    void addBookmark(in long lineNo);
+    void removeBookmark(in long lineNo);
+    void removeAllBookmarks();
+    void hasBookmark(in long lineNo);
+};
+
+
+[scriptable, uuid(CB7148A2-F1EA-4533-9C5A-3285246A7441)]
+interface koIBreakpointableView : nsISupports
+{
+    void addBreakpoint(in long lineNo);
+    void removeBreakpoint(in long lineNo);
+    void hasBreakpoint(in long lineNo);
+};
+
+[scriptable, uuid(72511F7E-D0FF-4DA8-902F-7224A4B82309)]
+interface koIFoldableView : nsISupports
+{
+    void fold(in long lineNo);
+    void unfold(in long lineNo);
+    void getFoldState(in long lineNo);
+};
+

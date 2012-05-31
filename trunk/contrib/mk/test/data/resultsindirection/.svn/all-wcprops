@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/!svn/ver/3406/mk/trunk/test/data/resultsindirection
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/199/mk/trunk/test/data/resultsindirection/Makefile
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/199/mk/trunk/test/data/resultsindirection/Rakefile
+END
+Makefile.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/!svn/ver/3406/mk/trunk/test/data/resultsindirection/Makefile.py
+END
+do.doctest
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/!svn/ver/3406/mk/trunk/test/data/resultsindirection/do.doctest
+END

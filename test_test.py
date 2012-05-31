@@ -14,8 +14,16 @@ class subClass(object):
 	def testDel(self):
 		del self.one
 		print '删除了one'
+        import pdb; pdb.set_trace() ### XXX BREAKPOINT
+        print 'fdf'
 
-		
+class subClass(object):
+	def __init__(self,x,y):
+		self.x=x
+		self.y=y
+	def testAdd(self):
+		print 'dsdsjkhsdjhd'
+
 
 
 if __name__ == '__main__':
@@ -26,6 +34,7 @@ if __name__ == '__main__':
 	tmp=test.testAdd()
 	print '得到的结果是：',tmp
 	print '试试删除一个塑性试试:'
+    pdb.set_trace()
 	test.testDel()
 	print '再打印一次：'
 	try:

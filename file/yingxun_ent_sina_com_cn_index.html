@@ -1,0 +1,741 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>±±¾©Ó°Ñ¶ Ó°Ñ¶¿â_ÐÂÀËÓéÀÖ_ÐÂÀËÍø</title>
+<meta content="text/html; charset=%SOUP-ENCODING%" http-equiv="Content-type">
+<meta content="±±¾©Ó°Ñ¶,Ó°Ñ¶,Ó°Æ¬ÅÅÓ³,ÉÏÓ³Ê±¼ä" name="keywords">
+<meta content="ÐÂÀËÓ°Ñ¶£¬ÊµÊ±²éÑ¯Ó°Æ¬ÉÏÓ³ÅÅÆÚ¡£" name="description">
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible">
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="/js/url.js" language="javascript"></script>
+<script src="js/hidden_menu.js" type="text/javascript"></script>
+<script src="js/cinema.js" type="text/javascript"></script>
+<script src="js/function.js" type="text/javascript"></script>
+<script language="javascript">
+// ÉèÖÃ¼ôÇÐÄ¬ÈÏÊý¾Ý
+function setClipBoardContent(){
+	//window.clipboardData.setData("Text","¸ÐÐ»Äú²é¿´ÐÂÀËÓ°Ñ¶£¡ÈçÐè×ªÔØÇëÓëÐÂÀËÍøÓéÀÖÆµµÀÁªÏµ¡£");
+	copyToClipboard("¸ÐÐ»Äú²é¿´ÐÂÀËÓ°Ñ¶£¡ÈçÐè×ªÔØÇëÓëÐÂÀËÍøÓéÀÖÆµµÀÁªÏµ¡£");
+}
+function copyToClipboard(txt) {
+	if(window.clipboardData) {
+		window.clipboardData.clearData();
+		window.clipboardData.setData("Text",txt);
+		//alert("¸´ÖÆ³É¹¦£¡");
+	} else if(navigator.userAgent.indexOf("Opera")!= -1) {
+		window.location = txt;
+	} else if (window.netscape) {
+		try {
+			netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+		} catch (e) {
+			alert("ÄúµÄfirefox°²È«ÏÞÖÆÏÞÖÆÄú½øÐÐ¼ôÌù°å²Ù×÷\r\n¸ÐÐ»Äú²é¿´ÐÂÀËÓ°Ñ¶£¡ÈçÐè×ªÔØÇëÓëÐÂÀËÍøÓéÀÖÆµµÀÁªÏµ¡£"); 
+			return false;
+		}
+		var clip = Components.classes["@mozilla.org/widget/clipboard;1"].createInstance(Components.interfaces.nsIClipboard);
+		if (!clip)
+		return;
+		var trans = Components.classes["@mozilla.org/widget/transferable;1"].createInstance(Components.interfaces.nsITransferable);
+		if (!trans)
+		return;
+		trans.addDataFlavor('text/unicode');
+		var str = new Object();
+		var len = new Object();
+		var str = Components.classes["@mozilla.org/supports-string;1"].createInstance(Components.interfaces.nsISupportsString);
+		var copytext = txt;
+		str.data = copytext;
+		trans.setTransferData("text/unicode",str,copytext.length*2);
+		var clipid = Components.interfaces.nsIClipboard;
+		if (!clip)
+		return false;
+		clip.setData(trans,null,clipid.kGlobalClipboard);
+	}
+}
+</script>
+<style type="text/css">
+.displayNone{display:none;}
+</style>
+
+<!--  ||  --><style type="text/css">
+/* Í¨ÓÃ */
+html, body, ul, li, ol , dl , dd , dt , p, h1, h2, h3, h4, h5, h6, form, fieldset, legend , table, td, img, label {margin: 0;padding: 0;border: 0; font-weight:normal;}
+ul,ol{list-style-type:none;}
+select,input{vertical-align:middle;}
+body {background:transparent;color:#333;font-family:"ËÎÌå";font-size:12px;padding:5px 0;}
+select,input,textarea {font-size:12px;}
+/* clearfix Ìæ»»  by zhuxuehua*/
+.clearfix:after{content:" "; display:block; height:0; visibility:hidden; clear:both;}
+.clearfix{zoom:1;}
+/* clearfix Ìæ»»  by zhuxuehua end */
+
+.clearit{clear:both;height:0px;overflow:hidden;}
+.f12 {font-size:12px;}
+.f14 {font-size:14px;}
+.fB{font-weight:bold;}
+.fwhite{color:#fff;}
+.fblack{color:#000;}
+.fred{color:#c00;}
+a.fnoL{text-decoration:none;}
+a.fnoL:hover{text-decoration:underline;}
+.fB{font-weight:bold;}
+.fgray{color:#666;}
+.space{height:10px;background:#fff;overflow:hidden;clear:both;}
+a {color:#333;text-decoration:none;}
+a:hover, a:active, a:focus {color: #f00;text-decoration:underline;}
+a:visited{color:#800080;}
+.wrap{margin: 0 auto;width:950px;}
+/*   header style */
+.secondaryHeader{height:33px;overflow:hidden;background:url(http://i2.sinaimg.cn/dy/images/header/2008/standardl2nav_bg.gif) repeat-x #fff;color:#000;font-size:12px;font-weight:100;margin-bottom:5px;}
+.secondaryHeader a,.secondaryHeader a:visited{color:#000;text-decoration:none;}
+.secondaryHeader a:hover,.secondaryHeader a:active{color:#c00;text-decoration:underline;}
+.sHBorder{border:1px #e3e3e3 solid;padding:0 10px 0 12px;overflow:hidden;zoom:1;}
+.sHLogo{float:left;height:31px;line-height:31px;overflow:hidden;}
+.sHLogo span{display:block;float:left;display:table-cell;vertical-align:middle;*display:block;*font-size:27px;*font-family:Arial;height:31px;}
+.sHLogo span img{vertical-align:middle;}
+.sHLinks{float:right;line-height:31px;}
+/*   search style */
+.search{background:url(images/index/movie_zxh_20091019_01.gif); position:relative; z-index:99}
+.search .left{width:471px; float:left; line-height:24px; border-right:solid 1px #e9e9e9; padding:4px 0 4px 92px;} /* modify by zhuxuehua at 20091127 */
+.search .search_btn{ cursor:pointer;margin-left:6px;background:url(images/index/movie_zxh_20091019_01.gif) no-repeat 0 -50px; height:26px; width:90px; border:none; font-size:14px;}
+.search .keyword{width:351px; height:18px; border:solid 1px #9a9a9a; background:#fff; color:#9a9a9a; padding:4px 0 0 6px;}
+.search .right{ width:360px; white-space:nowrap; padding:0 16px 0 6px;float:right;line-height:33px; margin:1px 0}
+.search #current_city{font-size:14px; float:left;}
+.search .change_city,.search .change_city:visited{ cursor:pointer;background:url(images/index/movie_zxh_20091019_01.gif) no-repeat -100px -47px; padding-left:10px; width:82px; margin-left:5px;  display:block; float:left; color:#000}
+.search .add_favor,.search .add_favor:visited{background:url(images/index/movie_zxh_20091019_01.gif) no-repeat -200px -47px;; float:right; color:#050496; width:60px; height:33px; padding-left:25px; text-decoration:underline}
+.search .add_favor:hover{ text-decoration:none; color:#c00}
+.box-city { position:absolute; left:650px; top:30px; width:230px; padding:5px; line-height:20px; border:#cbdcf7 3px solid; background:#fff; color:#999; z-index:100 }
+.box-city a { color:#03c;white-space:nowrap;text-align:center;width:50px;display:inline-block; }
+
+/*   left 1 style */
+
+.main{ overflow:hidden;zoom:1; margin-top:8px; background:url(images/index/movie_zxh_20091019_03.gif) repeat-y;} /* modify by zhuxuehua at 20091209 */
+.bot{ overflow:hidden;zoom:1; background:url(images/index/movie_zxh_20091019_03.gif) no-repeat -950px 0; clear:both; height:1px; font-size:0} /* modify by zhuxuehua at 20091209 */
+.main .left{width:695px; float:left;}
+.main .left .l1{ padding:1px 1px 2px 1px; border:solid 1px #c0d8f0;position:relative;z-index:90} /* modify by zhuxuehua at 20091209 */
+/* l1_cont Ìæ»»  by zhuxuehua*/
+.l1 .l1_cont{ background:#f5fafe; height:192px; padding:15px 0 0 7px;}
+.l1 .l1_cont .l1_sd{ padding-top:0;}
+.l1 .l1_cont .l1_sd select{float:left; margin-top:6px; margin-right:15px;}
+.l1 .l1_cont div.lp{ line-height:30px;zoom:1}
+.l1 .l1_cont  a,.l1 .l1_cont  a:visited{color:#050193;display:inline-block;line-height:17px; margin:7px 1px 0 1px; padding:0 8px 0 7px; float:left}
+.l1 .l1_cont  a:hover{ color:#000;background:#b4d6f9; text-decoration:none;}
+.l1 .l1_cont  a.active,.l1 .l1_cont  a.active:visited{ color:#000;background:#b4d6f9;}
+.l1 .l1_cont  a.more,.l1 .l1_cont  a.more:visited{background:url(images/index/movie_zxh_20091019_01.gif) no-repeat -150px -100px; padding-right:30px;}
+.l1 .l1_cont  select{width:140px; border:solid 1px #cfcfcf;color:#000;}
+.l1 .l1_cont  label{ float:left;padding-top:1px;background:url(images/index/movie_zxh_20091019_01.gif) no-repeat 0 -100px; height:30px; line-height:30px; width:45px; padding-left:32px;display:inline-block;}
+
+.l1 .l1_cont .label_02{background-position:0 -130px;}
+.l1 .l1_cont .label_03{background-position:0 -160px;}
+.l1 .l1_cont .label_04{background-position:0 -190px;}
+.l1 .l1_cont .label_05{background-position:0 -220px;}
+.l1 .l1_cont .label_06{background-position:0 -250px;}
+.showmore{ position:relative; float:left}
+.more_movie{border:solid 2px #C0D8F0; line-height:23px; background:#F5FAFE;padding:3px;position:absolute; top:23px; left:5px; z-index:100}
+.l1 .l1_cont  .more_movie a{color:#050193; padding:2px 0; }
+.l1 .l1_cont  .more_movie td{word-break: keep-all; padding:2px 5px}
+
+.more_movie a:hover{color:#000;background:#b4d6f9; text-decoration:none}
+.more_movie a{float:none!important;}
+/* l1_cont Ìæ»»  by zhuxuehua end */
+/*   right style */
+.main .right{width:246px; float:right;}
+.main .right .r1{border:solid 1px #c0d8f0; height:204px; padding:6px 0 0; text-align:center}  /* modify by zhuxuehua at 20091209 */
+.main .right .r2{border:solid 1px #c0d8f0;}
+.main .right .r1 .r1_title{ text-align:left;line-height:33px; font-size:14px;}
+.main .right .r1 .r1_title{ background:url(images/index/movie_zxh_20091019_01.gif) no-repeat -100px -200px; padding-left:40px;}
+.main .right .r2 .r2_title{border-bottom:solid 1px #c0d8f0; padding:1px;}
+.main .right .r2 .r2_title_cont{ background:url(images/index/movie_zxh_20091019_01.gif) no-repeat -450px -50px; line-height:29px; font-size:14px; padding-left:15px; color:#000}
+.main .right .r2 .r2_title_cont a{color:#000}
+.r2 .r2_cont{padding:20px 21px 20px 14px; overflow:hidden;zoom:1}
+.r2 .r2_cont div{ line-height:24px; color:#070197}
+.r2 .r2_cont a,.r2 .r2_cont a:visited{color:#070197}
+.r2 .r2_cont .date{ text-align:right; margin-top:-24px;}
+/*   footer style */
+#uni_footer {
+background:transparent url(http://i3.sinaimg.cn/ent/deco/2008/0312/ent_index_lmy_005.gif) no-repeat scroll 0 0;
+color:#000000;
+font-size:12px;
+line-height:28px;
+margin:10px auto 0;
+padding-top:10px;
+text-align:center;
+width:950px;
+}
+#uni_footer a:link, #uni_footer a:visited {
+text-decoration:underline;
+}
+#uni_footer a:hover, #uni_footer a:active {
+text-decoration:underline;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+
+<!--±ê×¼µ¼º½ start--><!-- ±ê×¼¶þ¼¶µ¼º½_ÊýÂë begin --><div class="secondaryHeader">
+<div class="sHBorder">
+<div class="sHLogo"><span><a href="http://ent.sina.com.cn/"><img src="http://i1.sinaimg.cn/dy/images/header/2009/standardl2nav_sina_new.gif" alt="ÐÂÀËÓéÀÖ"></a><a href="http://ent.sina.com.cn/"><img src="http://i1.sinaimg.cn/dy/images/header/2009/standardl2nav_ent.gif" alt="ÐÂÀËÓéÀÖ"></a></span></div>
+<div class="sHLinks"><a href="http://ent.sina.com.cn/">ÐÂÀËÓéÀÖ</a> | <a href="http://www.sina.com.cn/">ÐÂÀËÊ×Ò³</a> | <a href="http://news.sina.com.cn/guide/">ÐÂÀËµ¼º½</a></div>
+</div>
+</div>
+
+
+
+<!-- ±ê×¼¶þ¼¶µ¼º½_ÊýÂë end --><!--±ê×¼µ¼º½ end--><!-- ËÑË÷À¸Ä¿¿ªÊ¼--><script language="javascript">
+String.prototype.reallength = function(){return this.replace(/[^\x00-\xff]/g,"^^").length;}
+// ¶¥²¿ËÑË÷
+function checkTopSearch(theForm){
+	var key = $.trim(theForm.keyword.value);
+	if( key==""||key=='ÊäÈëµçÓ°Ãû»òÓ°ÔºÃû¾ù¿É' ){
+		alert("ÇëÊäÈëµçÓ°Ãû»òÓ°ÔºÃû");
+		theForm.keyword.focus();
+		return false;
+	}
+	if( key.reallength()>34 ){
+		alert("×î¶àÔÊÐí17¸öºº×Ö");
+		theForm.keyword.focus();
+		return false;
+	}
+	return true;
+}
+</script>
+<form action="search_key.php" method="GET" onsubmit="return checkTopSearch(this);" id="top_search" name="top_search">
+<div class="search">
+<div class="clearfix">
+<div style="height:30px;width:92px;float:left;textindent:-100;overflow:hidden;cursor:pointer;" onclick="location.replace('/')" title="·µ»ØÊ×Ò³"></div>
+<div style="padding:4px 0 4px 0;float:left;" class="left">
+<input onblur="if(this.value=='') { this.value='ÊäÈëµçÓ°Ãû»òÓ°ÔºÃû¾ù¿É'; return false; }" name="keyword" value="ÊäÈëµçÓ°Ãû»òÓ°ÔºÃû¾ù¿É" class="keyword" onfocus="if (this.value=='ÊäÈëµçÓ°Ãû»òÓ°ÔºÃû¾ù¿É') {this.value='';}" type="text" id="keyword">
+<input type="hidden" name="city_id" value="110100">
+<input type="submit" name="button" value="²é Ñ¯" class="search_btn">
+<input type="hidden" name="iframe" value="">
+</div>
+<div class="right"><span id="current_city">±±¾©</span><a class="change_city" id="cityBtn">ÇÐ»»³ÇÊÐ</a>
+<a href="javascript:void(0);" class="add_favor" onclick="AddFavorite();">¼ÓÈëÊÕ²Ø¼Ð</a>
+</div>
+</div>
+<div style="display:none;" class="box-city" id="cityMenu">
+<p>
+<a href="search.php?city_id=110100&amp;iframe=">±±¾©</a>
+
+<!--|--><a href="search.php?city_id=310100&amp;iframe=">ÉÏº£</a>
+
+<!--|--><a href="search.php?city_id=440100&amp;iframe=">¹ãÖÝ</a>
+
+<!--|--><a href="search.php?city_id=440800&amp;iframe=">Õ¿½­</a>
+
+<!--|--><a href="search.php?city_id=441700&amp;iframe=">Ñô½­</a>
+<a href="search.php?city_id=510100&amp;iframe=">³É¶¼</a>
+
+<!--|--><a href="search.php?city_id=320100&amp;iframe=">ÄÏ¾©</a>
+
+<!--|--><a href="search.php?city_id=210100&amp;iframe=">ÉòÑô</a>
+
+<!--|--><a href="search.php?city_id=210200&amp;iframe=">´óÁ¬</a>
+
+<!--|--><a href="search.php?city_id=120100&amp;iframe=">Ìì½ò</a>
+<a href="search.php?city_id=440300&amp;iframe=">ÉîÛÚ</a>
+
+<!--|--><a href="search.php?city_id=500100&amp;iframe=">ÖØÇì</a>
+
+<!--|--><a href="search.php?city_id=330100&amp;iframe=">º¼ÖÝ</a>
+
+<!--|--><a href="search.php?city_id=330400&amp;iframe=">¼ÎÐË</a>
+
+<!--|--><a href="search.php?city_id=420100&amp;iframe=">Îäºº</a>
+<a href="search.php?city_id=350200&amp;iframe=">ÏÃÃÅ</a>
+
+<!--|--><a href="search.php?city_id=441900&amp;iframe=">¶«Ý¸</a>
+
+<!--|--><a href="search.php?city_id=610100&amp;iframe=">Î÷°²</a>
+
+<!--|--><a href="search.php?city_id=430100&amp;iframe=">³¤É³</a>
+
+<!--|--><a href="search.php?city_id=370200&amp;iframe=">Çàµº</a>
+<a href="search.php?city_id=220100&amp;iframe=">³¤´º</a>
+
+<!--|--><a href="search.php?city_id=450100&amp;iframe=">ÄÏÄþ</a>
+
+<!--|--><a href="search.php?city_id=450300&amp;iframe=">¹ðÁÖ</a>
+
+<!--|--><a href="search.php?city_id=460100&amp;iframe=">º£¿Ú</a>
+
+<!--|--><a href="search.php?city_id=360100&amp;iframe=">ÄÏ²ý</a>
+<a href="search.php?city_id=320200&amp;iframe=">ÎÞÎý</a>
+
+<!--|--><a href="search.php?city_id=320400&amp;iframe=">³£ÖÝ</a>
+
+<!--|--><a href="search.php?city_id=520100&amp;iframe=">¹óÑô</a>
+
+<!--|--><a href="search.php?city_id=530100&amp;iframe=">À¥Ã÷</a>
+
+<!--|--><a href="search.php?city_id=350100&amp;iframe=">¸£ÖÝ</a>
+<a href="search.php?city_id=320500&amp;iframe=">ËÕÖÝ</a>
+
+<!--|--><a href="search.php?city_id=441200&amp;iframe=">ÕØÇì</a>
+
+<!--|--><a href="search.php?city_id=370100&amp;iframe=">¼ÃÄÏ</a>
+
+<!--|--><a href="search.php?city_id=442000&amp;iframe=">ÖÐÉ½</a>
+
+<!--|--><a href="search.php?city_id=620100&amp;iframe=">À¼ÖÝ</a>
+<a href="search.php?city_id=410300&amp;iframe=">ÂåÑô</a>
+
+<!--|--><a href="search.php?city_id=330200&amp;iframe=">Äþ²¨</a>
+
+<!--|--><a href="search.php?city_id=130200&amp;iframe=">ÌÆÉ½</a>
+
+<!--|--><a href="search.php?city_id=321000&amp;iframe=">ÑïÖÝ</a>
+
+<!--|--><a href="search.php?city_id=330300&amp;iframe=">ÎÂÖÝ</a>
+<a href="search.php?city_id=430200&amp;iframe=">ÖêÖÞ</a>
+
+<!--|--><a href="search.php?city_id=440400&amp;iframe=">Öéº£</a>
+
+<!--|--><a href="search.php?city_id=370700&amp;iframe=">Î«·»</a>
+
+<!--|--><a href="search.php?city_id=230100&amp;iframe=">¹þ¶û±õ</a>
+
+<!--|--><a href="search.php?city_id=130100&amp;iframe=">Ê¯¼Ò×¯</a>
+<a href="search.php?city_id=130300&amp;iframe=">ÇØ»Êµº</a>
+
+<!--|--><a href="search.php?city_id=150100&amp;iframe=">ºôºÍºÆÌØ</a>
+
+<!--|--><a href="search.php?city_id=440600&amp;iframe=">·ðÉ½</a>
+
+<!--|--><a href="search.php?city_id=410100&amp;iframe=">Ö£ÖÝ</a>
+
+<!--|--><a href="search.php?city_id=340100&amp;iframe=">ºÏ·Ê</a>
+<a href="search.php?city_id=640100&amp;iframe=">Òø´¨</a>
+
+<!--|--><a href="search.php?city_id=330600&amp;iframe=">ÉÜÐË</a>
+
+<!--|--><a href="search.php?city_id=441400&amp;iframe=">Ã·ÖÝ</a>
+
+<!--|--><a href="search.php?city_id=420300&amp;iframe=">Ê®Ñß</a>
+
+<!--|--><a href="search.php?city_id=140100&amp;iframe=">Ì«Ô­</a>
+<a href="search.php?city_id=460200&amp;iframe=">ÈýÑÇ</a>
+
+<!--|--><a href="search.php?city_id=370600&amp;iframe=">ÑÌÌ¨</a>
+
+<!--|--><a href="search.php?city_id=340500&amp;iframe=">Âí°°É½</a>
+
+<!--|--><a href="search.php?city_id=341000&amp;iframe=">»ÆÉ½</a>
+
+<!--|--></p>
+</div>
+</div>
+</form>
+<script type="text/javascript">
+var showFn = new ShowHideMenu("cityBtn","cityMenu");
+showFn._init();
+</script> 
+
+<!-- ËÑË÷À¸Ä¿½áÊø --><!-- main ¿ªÊ¼--><div class="main">
+
+<!-- left --><div class="left">
+<script language="javascript">
+var search_string = "date=2012-05-19&time=&area=0&city_id=110100&city_name=%B1%B1%BE%A9&district=0&cinema_id=0&keyword=&film_id=0&iframe=";
+// ¸ü¸ÄÊ±¼ä
+function changeTime(time){
+	$("#search_hidden_time").val(time);
+	$("#search_form").submit();
+}
+</script>
+<form action="search.php" method="GET" name="search_form" id="search_form">
+<input type="hidden" id="search_hidden_date" value="2012-05-19" name="date">
+<input type="hidden" id="search_hidden_time" value="" name="time">
+<input type="hidden" id="search_hidden_area" value="0" name="area">
+<input type="hidden" id="search_hidden_city_id" value="110100" name="city_id">
+<input type="hidden" id="search_hidden_city_name" value="%B1%B1%BE%A9" name="city_name">
+<input type="hidden" id="search_hidden_district" value="0" name="district">
+<input type="hidden" id="search_hidden_cinema_id" value="0" name="cinema_id">
+<input type="hidden" id="search_hidden_keyword" value="" name="keyword">
+<input type="hidden" id="search_hidden_film_id" value="0" name="film_id">
+<input type="hidden" id="search_hidden_iframe" value="" name="iframe">
+</form>
+<div class="l1">
+<div class="l1_cont">
+<div class="clearfix">
+<label class="label_01">Ê±¼ä£º</label>
+<a href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=0&amp;keyword=&amp;film_id=0&amp;iframe=" title="ÖÜÁù(05ÔÂ19ÈÕ)">½ñÌì</a>
+<a href="search.php?date=2012-05-20&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=0&amp;keyword=&amp;film_id=0&amp;iframe=" title="ÖÜÈÕ(05ÔÂ20ÈÕ)">Ã÷Ìì</a>
+<a href="search.php?date=2012-05-21&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=0&amp;keyword=&amp;film_id=0&amp;iframe=" title="ÖÜÒ»(05ÔÂ21ÈÕ)">ºóÌì</a>
+<a href="search.php?date=2012-05-22&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=0&amp;keyword=&amp;film_id=0&amp;iframe=" title="ÖÜ¶þ(05ÔÂ22ÈÕ)">ÖÜ¶þ</a>
+</div>
+<div class="clearfix">
+<label class="label_02">Ê±¶Î£º</label>
+<a href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=0&amp;keyword=&amp;film_id=0&amp;iframe=" class="active">È«Ìì</a>
+<div class="l1_sd">
+<a href="search.php?date=2012-05-19&amp;time=00:00-12:59&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=0&amp;keyword=&amp;film_id=0&amp;iframe=">ÉÏÎç</a>
+<select style="width:110px;" onchange="changeTime(this.value);" name="time_am" id="time_am">
+<option value="0">ÉÏÎçÏêÏ¸Ê±¶Î</option>
+<option value="00:00-07:59">00:00-07:59</option>
+<option value="08:00-08:59">08:00-08:59</option>
+<option value="09:00-09:59">09:00-09:59</option>
+<option value="10:00-10:59">10:00-10:59</option>
+<option value="11:00-11:59">11:00-11:59</option>
+<option value="12:00-12:59">12:00-12:59</option>
+</select>
+<a href="search.php?date=2012-05-19&amp;time=13:00-17:59&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=0&amp;keyword=&amp;film_id=0&amp;iframe=">ÏÂÎç</a>
+<select style="width:110px;" onchange="changeTime(this.value);" name="time_pm" id="time_pm">
+<option value="0">ÏÂÎçÏêÏ¸Ê±¶Î</option>
+<option value="13:00-13:59">13:00-13:59</option>
+<option value="14:00-14:59">14:00-14:59</option>
+<option value="15:00-15:59">15:00-15:59</option>
+<option value="16:00-16:59">16:00-16:59</option>
+<option value="17:00-17:59">17:00-17:59</option>
+</select>
+<a href="search.php?date=2012-05-19&amp;time=18:00-23:59&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=0&amp;keyword=&amp;film_id=0&amp;iframe=">ÍíÉÏ</a>
+<select style="width:110px;" onchange="changeTime(this.value);" name="time_night" id="time_night">
+<option value="0">ÍíÉÏÏêÏ¸Ê±¶Î</option>
+<option value="18:00-18:59">18:00-18:59</option>
+<option value="19:00-19:59">19:00-19:59</option>
+<option value="20:00-20:59">20:00-20:59</option>
+<option value="21:00-21:59">21:00-21:59</option>
+<option value="22:00-22:59">22:00-22:59</option>
+<option value="23:00-23:59">23:00-23:59</option>
+</select>
+</div>
+</div>
+<div class="clearfix">
+<label class="label_03">µØÓò£º</label>
+<a href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=0&amp;keyword=&amp;film_id=&amp;iframe=" class="active">È«²¿</a>
+<a href="search.php?date=2012-05-19&amp;time=&amp;area=1&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=0&amp;keyword=&amp;film_id=&amp;iframe=">ÄÚµØ</a>
+<a href="search.php?date=2012-05-19&amp;time=&amp;area=2&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=0&amp;keyword=&amp;film_id=&amp;iframe=">Å·ÃÀ</a>
+<a href="search.php?date=2012-05-19&amp;time=&amp;area=3&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=0&amp;keyword=&amp;film_id=&amp;iframe=">¸ÛÌ¨</a>
+<a href="search.php?date=2012-05-19&amp;time=&amp;area=4&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=0&amp;keyword=&amp;film_id=&amp;iframe=">ÑÇÖÞ</a>
+</div>
+<div class="clearfix">
+<label class="label_04">ÇøÏØ£º</label>
+<a href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=0&amp;keyword=&amp;film_id=0&amp;iframe=" class="active">È«²¿</a>
+<a href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=110101&amp;cinema_id=0&amp;keyword=&amp;film_id=0&amp;iframe=">º£µíÇø</a>
+<a href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=110102&amp;cinema_id=0&amp;keyword=&amp;film_id=0&amp;iframe=">³¯ÑôÇø</a>
+<a href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=110103&amp;cinema_id=0&amp;keyword=&amp;film_id=0&amp;iframe=">²ýÆ½Çø</a>
+<a href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=110104&amp;cinema_id=0&amp;keyword=&amp;film_id=0&amp;iframe=">Ê¯¾°É½Çø</a>
+<a href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=110105&amp;cinema_id=0&amp;keyword=&amp;film_id=0&amp;iframe=">Î÷³ÇÇø</a>
+<a href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=110106&amp;cinema_id=0&amp;keyword=&amp;film_id=0&amp;iframe=">¶«³ÇÇø</a>
+<a href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=110107&amp;cinema_id=0&amp;keyword=&amp;film_id=0&amp;iframe=">Ë³ÒåÇø</a>
+<a href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=110108&amp;cinema_id=0&amp;keyword=&amp;film_id=0&amp;iframe=">´óÐËÇø</a>
+<a href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=110109&amp;cinema_id=0&amp;keyword=&amp;film_id=0&amp;iframe=">·¿É½Çø</a>
+<div style="z-index:200;" class="showmore"><a href="javascript:void(0);" id="district_more" class="more">¸ü¶à</a>
+<div style="display:none;" class="more_movie" id="more_district">
+<div style="background-color:#b4d6f9;height:10px;width:10px;text-align:center; vertical-align:middle;line-height:10px;cursor:pointer;color:#000;padding:0px;" onclick="$('#district_more').click();return false;" title="¹Ø±Õ">¡Á</div>
+<table border="0">
+<tr>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=110110&amp;cinema_id=0&amp;keyword=&amp;film_id=0&amp;iframe=">·áÌ¨Çø</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=110111&amp;cinema_id=0&amp;keyword=&amp;film_id=0&amp;iframe=">ÃÅÍ·¹µÇø</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=110112&amp;cinema_id=0&amp;keyword=&amp;film_id=0&amp;iframe=">ÃÜÔÆÏØ</a></td>
+</tr>
+<tr>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=110113&amp;cinema_id=0&amp;keyword=&amp;film_id=0&amp;iframe=">Í¨ÖÝÇø</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=110114&amp;cinema_id=0&amp;keyword=&amp;film_id=0&amp;iframe=">»³ÈáÇø</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=110115&amp;cinema_id=0&amp;keyword=&amp;film_id=0&amp;iframe=">ÑÓÇìÏØ</a></td>
+</tr>
+</table>
+</div>
+</div>
+<script type="text/javascript">
+			var district_showFn = new ShowHideMenu("district_more","more_district");
+			district_showFn._init();
+			</script>
+</div>
+<div class="clearfix">
+<label class="label_05">Ó°Ôº£º</label>
+<a href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=0&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1" class="active">È«²¿</a>
+<a href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=3&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">Íò´ïCBDµê</a>
+<a href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=1&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">UME»ªÐÇÓ°³Ç</a>
+<a href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=8&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">ÐÇÃÀ½ðÔ´µê</a>
+<a href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=6&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">½ðÒÝÖÐ¹Ø´åµê</a>
+<a href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=438&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">Ò«À³¹ú¼ÊÓ°³Ç</a>
+<div class="showmore"><a href="javascript:void(0);" id="movie_more" class="more">¸ü¶à</a>
+<div style="display:none;" class="more_movie" id="more_movie">
+<div style="background-color:#b4d6f9;height:10px;width:10px;text-align:center; vertical-align:middle;line-height:10px;cursor:pointer;color:#000;padding:0px;" onclick="$('#movie_more').click();return false;" title="¹Ø±Õ">¡Á</div>
+<table border="0">
+<tr>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=237&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">²©ÄÉÓÆÌÆÓ°³Ç</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=13&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">ÐÂÊÀ¼ÍÓ°³Ç</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=14&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">ÐÂ¶«°²Ó°³Ç</a></td>
+</tr>
+<tr>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=5&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">Íò´ïÊ¯¾°É½µê</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=4&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">Íò´ïÌìÍ¨Ô·µê</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=743&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">Íò´ïÍû¾©µê</a></td>
+</tr>
+<tr>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=12&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">¶«»·Ó°³Ç</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=11&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">Ñô¹âÓ°³Ç</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=338&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">UME°²Õêµê</a></td>
+</tr>
+<tr>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=2&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">UMEË«¾®µê</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=347&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">ÊÀ½ç³ÇÐÇÃÀ</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=9&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">Íû¾©ÐÇÃÀÓ°³Ç</a></td>
+</tr>
+<tr>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=10&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">»ØÁú¹ÛÐÇÃÀ</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=959&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">½ðÒÝÓ°³ÇË«ÇÅµê</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=15&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">¶«¶¼Ó°³Ç</a></td>
+</tr>
+<tr>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=406&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">½ðÒÝ³¯Ñô´óÔÃ³Çµê</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=917&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">ÐÇÃÀ·ÖÖÓËÂµê</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=202&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">°ÙÀö¹¬½ð±¦»ãµê</a></td>
+</tr>
+<tr>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=511&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">»ªÒêÐÖµÜÓ°Ôº</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=582&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">½ðÒÝÐÂ¶¼µê</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=904&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">°ÙÀö¹¬¹úÃ³µê</a></td>
+</tr>
+<tr>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=745&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">²©ÄÉÓ°³Ç·½×¯µê</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=385&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">MOMA°ÙÀÏ»ãÓ°³Ç</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=521&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">¼Î»ªÓ°³Ç</a></td>
+</tr>
+<tr>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=7&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">Ê×¶¼Ó°ÔºÎ÷µ¥µê</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=17&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">ÃÀ¼ÎÖÐ¹Ø´åµê</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=129&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">ÃÀ¼ÎÈýÀïÍÍµê</a></td>
+</tr>
+<tr>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=221&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">°ÙÀÏ»ã¹úÈð³Çµê</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=547&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">±£ÀûÂí¼Ò±¤µê</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=461&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">ºáµêµçÓ°³Ç</a></td>
+</tr>
+<tr>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=222&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">±£ÀûÍòÔ´Ó°³Ç</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=159&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">´«ÆæÊ±´úÓ°³Ç</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=180&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">ÖÐ¹úµçÓ°²©Îï¹Ý</a></td>
+</tr>
+<tr>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=753&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">ÖÐ¹ú¿Æ¼¼¹ÝÓ°³Ç</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=1086&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">²©ÄÉ¾§Æ·Ó°³Ç</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=1092&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">Â³ÐÅÓ°³ÇÁ¢Ë®ÇÅµê</a></td>
+</tr>
+<tr>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=1041&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">´óµØ½ðÂàÍåµê</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=16&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">³¤ºçÓ°³Ç</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=18&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">ÖÐÓ°µçÓ°Ôº</a></td>
+</tr>
+<tr>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=329&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">ÖÐÓ°Ó°³ÇÓÀÍúµê</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=22&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">¹ú°²¾çÔº</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=581&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">CGVÐÇÐÇÓ°³Ç°ÂÌåµê</a></td>
+</tr>
+<tr>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=216&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">¼ÎºÌÉÏµØµê</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=830&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">º£º½ÎÄ»¯Ìì±¦Ó°³Ç</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=450&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">¼ÎºÌÍòÁøÓ°³Ç</a></td>
+</tr>
+<tr>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=1097&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">³ÈÌì¼ÎºÌ·ï»Ë³Çµê</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=524&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">Í¨ÖÝÇøµçÓ°Ôº</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=19&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">½ð¼¦°Ù»¨µçÓ°Ôº</a></td>
+</tr>
+<tr>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=33&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">ÖÐ¹úÄ¾Å¼¾çÔº</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=142&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">Ê×¶¼Ê±´úÓ°³Ç</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=123&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">Î÷µ¥4DÊý×ÖÓ°Ôº</a></td>
+</tr>
+<tr>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=980&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">´«Ææ¹ú¼ÊÓ°³Ç</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=32&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">ÎåµÀ¿Ú¹¤ÈË¾ãÀÖ²¿</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=126&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">º£µí¹¤ÈËÎÄ»¯¹¬</a></td>
+</tr>
+<tr>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=24&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">º£µí¾çÔº</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=346&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">17.5½ñÈÕÓ°Ôº</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=21&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">±±¾©¾çÔº</a></td>
+</tr>
+<tr>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=448&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">°ÂË¹¿¨Ó°³Ç</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=20&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">ËÑÐãÓ°³Ç</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=28&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">×Ï¹âµçÓ°Ôº</a></td>
+</tr>
+<tr>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=958&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">¶«Ö±ÃÅ±£ÀûÓ°³Ç</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=1045&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">Ê×¶¼Ó°Ôº½ðÈÚ½Öµê</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=160&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">¹ã°²ÃÅµçÓ°Ôº</a></td>
+</tr>
+<tr>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=218&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">ÖÐ»ªµçÓ°ÓéÀÖ¹¬</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=219&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">ÐÂ»ª´óÖÓËÂµê</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=122&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">±±¾©¹¤ÈË¾ãÀÖ²¿</a></td>
+</tr>
+<tr>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=388&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">Á¼ÏçÓ°¾çÔº</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=785&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">ÐÂ»ªÓ°³Ç´óÐËµê</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=882&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">DMCÍû¾©Ó°³Ç</a></td>
+</tr>
+<tr>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=883&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">17.5ËÄµÀ¿ÚÓ°³Ç</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=631&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">´óµØ²ýÆ½Ç‘Áëµê</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=27&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">µØÖÊÀñÌÃ</a></td>
+</tr>
+<tr>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=26&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">ÇàÄê¹¬µçÓ°³Ç</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=124&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">ÐÂ½Ö¿ÚµçÓ°Ôº</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=692&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">²ýÆ½±£Àû¾çÔº</a></td>
+</tr>
+<tr>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=25&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">17.5½ñµä»¨Ô°Ó°Ôº</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=31&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">¾¢ËÉµçÓ°Ôº</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=121&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">ºìÂ¥µçÓ°Ôº</a></td>
+</tr>
+<tr>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=400&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">17.5Æ»¹ûÅÉÓ°Ôº</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=128&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">³¯ÑôÇøÎÄ»¯¹Ý</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=752&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">17.5½ñµä±ÈÈçÓ°³Ç</a></td>
+</tr>
+<tr>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=1043&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">CGV½«Ì¨Â·µê</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=119&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">³¯Ñô¾ç³¡</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=905&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">K¿áÓ°³Ç</a></td>
+</tr>
+<tr>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=23&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">¹úÍ¼ÒôÀÖÌü</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=587&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">±±¾©Õý»ªÓ°³Ç</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=512&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">¹ú±öÝ¼Ó¢Ó°Ôº</a></td>
+</tr>
+<tr>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=629&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">ÑàÉ½Ó°¾çÔº</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=693&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">±£Àû¿ÆÑ§¹ÝÓ°³Ç</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=520&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">¹Å³ÇµçÓ°Ôº</a></td>
+</tr>
+<tr>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=30&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">¶«ËÄ¹¤ÈËÎÄ»¯¹¬</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=29&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">´ó¹ÛÂ¥Ó°³Ç</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=127&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">·ã»¨Ô°Æû³µÓ°Ôº</a></td>
+</tr>
+<tr>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=580&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">²©ÄÉÓ°³ÇË³Òåµê</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=1042&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">ÐÂ»ª·¿É½µê</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=1044&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">²©ÄÉÓ°³ÇÍ¨ÖÝµê</a></td>
+</tr>
+<tr>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=360&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">ÃÅÍ·¹µÓ°¾çÔº</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=120&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">Ë³ÒåÓ°¾çÔº</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=813&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">´óÁÏÓ°³Ç</a></td>
+</tr>
+<tr>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=125&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">»Ý¶ûÊï¹âµçÓ°Ôº</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=217&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">´óÐËÓ°¾çÔº</a></td>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=523&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">ÃÜÔÆ´ó¾çÔº</a></td>
+</tr>
+<tr>
+<td nowrap><a style="line-height:10px;" href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=790&amp;keyword=&amp;film_id=0&amp;iframe=&amp;cinema_back=1">Î÷²¿Å£×ÐÆû³µÓ°Ôº</a></td>
+</tr>
+</table>
+</div>
+</div>
+<script type="text/javascript">
+			var movie_showFn = new ShowHideMenu("movie_more","more_movie");
+			movie_showFn._init();
+			</script>
+</div>
+<div class="clearfix">
+<label class="label_06">ÍÆ¼ö£º</label>
+<a href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=0&amp;keyword=&amp;film_id=0&amp;iframe=" class="active">È«²¿</a>
+<a href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=0&amp;keyword=&amp;film_id=16699&amp;iframe=">¸¡³Ç´óºà</a>
+<a href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=0&amp;keyword=&amp;film_id=15565&amp;iframe=">ÈËÀÇ´óÕ½</a>
+<a href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=0&amp;keyword=&amp;film_id=15107&amp;iframe=">ÎÒ11</a>
+<a href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=0&amp;keyword=&amp;film_id=15117&amp;iframe=">Èý¸ö»ðÇ¹ÊÖ</a>
+<a href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=0&amp;keyword=&amp;film_id=16140&amp;iframe=">·ÉÔ½ÀÏÈËÔº</a>
+<a href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=0&amp;keyword=&amp;film_id=16724&amp;iframe=">ÈüµÂ¿Ë°ÍÀ³</a>
+<a href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=0&amp;keyword=&amp;film_id=15784&amp;iframe=">¸´³ðÕßÁªÃË</a>
+<a href="search.php?date=2012-05-19&amp;time=&amp;area=0&amp;city_id=110100&amp;city_name=%B1%B1%BE%A9&amp;district=0&amp;cinema_id=0&amp;keyword=&amp;film_id=14869&amp;iframe=">»Æ½ð´ó½Ù°¸</a>
+</div>
+</div>
+</div> <div class="space"></div>
+<iframe src="movie.php?_a=frame&amp;city_id=110100&amp;iframe=" scrolling="no" name="myframe" frameborder="0" width="695"></iframe>
+</div>
+
+
+<!-- left end --><!-- right --><div class="right">
+<div class="r1">
+<div class="r1_title">ÊÖ»ú²éÓ°Ñ¶·½·¨</div>
+<div class="r1_cont"><a href="http://news.sina.com.cn/437/2008/1111/57.html" target="_blank"><img src="images/search/yingxudx2.jpg" height="166" width="232"></a></div>
+</div>
+<div class="space"></div>
+<div class="r2">
+<div class="r2_title">
+<div class="r2_title_cont">ÎÒä¯ÀÀ¹ýµÄµçÓ°Ôº</div>
+</div>
+<div class="r2_cont" id="recent_cinema_div">
+</div>
+</div>
+<div class="space"></div> <div class="r2">
+<div class="r2_title">
+<div class="r2_title_cont">¼´½«ÉÏÓ³</div>
+</div>
+<div class="r2_cont">
+<div><a style="text-decoration:underline;" href="http://data.ent.sina.com.cn/movie/15107.html" target="_blank">ÎÒ11</a></div>
+<div style="color:#000;" class="date">2012.05.18</div>
+<div><a style="text-decoration:underline;" href="http://data.ent.sina.com.cn/movie/15565.html" target="_blank">ÈËÀÇ´óÕ½</a></div>
+<div style="color:#000;" class="date">2012.05.18</div>
+<div><a style="text-decoration:underline;" href="http://data.ent.sina.com.cn/movie/16699.html" target="_blank">¸¡³Ç´óÏí</a></div>
+<div style="color:#000;" class="date">2012.05.18</div>
+<div><a style="text-decoration:underline;" href="http://data.ent.sina.com.cn/movie/15984.html" target="_blank">ÎçÒ¹Î¢²©</a></div>
+<div style="color:#000;" class="date">2012.05.18</div>
+<div><a style="text-decoration:underline;" href="http://data.ent.sina.com.cn/movie/16700.html" target="_blank">ÇÜ°®¼Ç</a></div>
+<div style="color:#000;" class="date">2012.05.18</div>
+<div><a style="text-decoration:underline;" href="http://data.ent.sina.com.cn/movie/16532.html" target="_blank">ËÄ½ä</a></div>
+<div style="color:#000;" class="date">2012.05.18</div>
+<div><a style="text-decoration:underline;" href="http://data.ent.sina.com.cn/movie/15191.html" target="_blank">ºÚÒÂÈË3</a></div>
+<div style="color:#000;" class="date">2012.05.25</div>
+<div><a style="text-decoration:underline;" href="http://data.ent.sina.com.cn/movie/15312.html" target="_blank">Óê¹û</a></div>
+<div style="color:#000;" class="date">2012.05.30</div>
+<div><a style="text-decoration:underline;" href="http://data.ent.sina.com.cn/movie/15817.html" target="_blank">±¦µºË«ÐÛ</a></div>
+<div style="color:#000;" class="date">2012.06.09</div>
+<div><a style="text-decoration:underline;" href="http://data.ent.sina.com.cn/movie/15415.html" target="_blank">»­Æ¤2</a></div>
+<div style="color:#000;" class="date">2012.06.28</div>
+<div><a style="text-decoration:underline;" href="http://data.ent.sina.com.cn/movie/16783.html" target="_blank">´óÎäµ±</a></div>
+<div style="color:#000;" class="date">2012.07.17</div>
+<div><a style="text-decoration:underline;" href="http://data.ent.sina.com.cn/movie/16732.html" target="_blank">±ÊÏÉ</a></div>
+<div style="color:#000;" class="date">2012.07.17</div>
+</div>
+</div>
+<div class="space"></div>
+<div style="border-bottom:none;" class="r2">
+<div class="r2_title">
+<div class="r2_title_cont">Òâ¼û·´À¡</div>
+</div>
+<div class="r2_cont">
+<div><a style="text-decoration:underline;" href="http://comment4.news.sina.com.cn/comment/skin/feedback.html?channel=ly&amp;newsid=220" target="_blank">ÐÂÀËÓ°Ñ¶Òâ¼û·´À¡ÁôÑÔ°å</a></div>
+<div><span style="color:#000;">»¶Ó­ÅúÆÀÖ¸Õý</span></div>
+</div>
+</div>
+</div>
+
+<!-- right end --><div class="bot"></div>
+</div>
+
+
+<!-- main ½áÊø--><!-- sina footer start --><div id="uni_footer">
+<a href="http://ent.sina.com.cn/guest.html" target="_blank">Ó°ÒôÓéÀÖÒâ¼û·´À¡ÁôÑÔ°å</a> µç»°£º010-62647003 »¶Ó­ÅúÆÀÖ¸Õý<br>
+<a href="http://corp.sina.com.cn/chn/">ÐÂÀË¼ò½é</a> | <a href="http://corp.sina.com.cn/eng/">About Sina</a> | <a href="http://ads.sina.com.cn/">¹ã¸æ·þÎñ</a> | <a href="http://www.sina.com.cn/contactus.html">ÁªÏµÎÒÃÇ</a> | <a href="http://corp.sina.com.cn/chn/sina_job.html">ÕÐÆ¸ÐÅÏ¢</a> | <a href="http://www.sina.com.cn/intro/lawfirm.shtml">ÍøÕ¾ÂÉÊ¦</a> | <a href="http://english.sina.com">SINA English</a> | <a href="http://members.sina.com.cn/apply/">»áÔ±×¢²á</a> | <a href="http://tech.sina.com.cn/focus/sinahelp.shtml">²úÆ·´ðÒÉ</a><br>
+	Copyright © 1996-2012 SINA Corporation, All Rights Reserved<br>
+	ÐÂÀË¹«Ë¾ <a href="http://www.sina.com.cn/intro/copyright.shtml">°æÈ¨ËùÓÐ</a>
+</div>
+
+
+<!-- sina footer end --><!-- SUDA_CODE_START --><script src="http://www.sinaimg.cn/unipro/pub/suda_s_v851c.js" type="text/javascript"></script>
+<script type="text/javascript">
+	_S_pSt(_S_PID_);
+	</script>
+<noscript>
+<div style="position:absolute;top:0;left:0;width:0;height:0;visibility:hidden"><img width="0" alt="" src="http://beacon.sina.com.cn/a.gif?noScript" border="0" height="0"></div>
+</noscript>
+
+<!-- SUDA_CODE_END --></div>
+<script language="javascript">
+flashData.onload = function(){
+	getRecentCinema();
+}
+</script>
+<div style:display="none">
+<iframe src="data.html" style="height:0px;width:1px;overflow:hidden;" scrolling="no" id="dataFrame" frameborder="0"></iframe>
+</div>
+<script src="http://www.sinaimg.cn/unipro/pub/suda_m_v629.js" type="text/javascript"></script>
+<script type="text/javascript">suds_init(2089,100.0000,985,2);</script>
+</body>
+</html>

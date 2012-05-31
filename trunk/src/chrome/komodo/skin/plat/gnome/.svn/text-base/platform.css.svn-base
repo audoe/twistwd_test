@@ -1,0 +1,151 @@
+@import url("chrome://komodo/skin/tabs/tabs.css");
+@import url("chrome://komodo/skin/tabs/verticaltabs.css");
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+
+/* "workspace_splitter": A splitter used between main panes in the
+ * Komodo window.
+ *
+ * Intentionally blank: use default splitter style.
+ */
+
+/* "multiview_splitter": A splitter used for splitting tab groups in the main
+ * Komodo editor pane.
+ */
+
+splitter.multiview_splitter {
+  background-image: url("chrome://komodo/skin/images/grippy_horizontal.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 9px;
+}
+
+splitter[orient="vertical"].multiview_splitter {
+  background-image: url("chrome://komodo/skin/images/grippy_vertical.png");
+}
+
+
+/* Sidebar and editor tabs styling. */
+
+tabpanel {
+  -moz-appearance: none;
+  border: None;
+  padding: 0px;
+  margin: 0px;
+}
+
+tabpanels {
+  -moz-appearance: none;
+  border: 1px solid;
+  -moz-border-left-colors: ThreeDShadow;
+  -moz-border-right-colors: ThreeDShadow;
+  -moz-border-top-colors: ThreeDShadow;
+  -moz-border-bottom-colors: ThreeDShadow;
+  padding: 0px;
+  margin: 0px;
+}
+
+/**
+ * Remove tree borders inside of a page (for the ko-panes, aka "side panels").
+ */
+page tree {
+  -moz-appearance: none;
+  border: 0;
+  /* We want to show top and bottom borders.
+     This combination seems the best for creating a light framed border.
+   */
+  border-top: 1px ridge;
+  border-bottom: 1px groove;
+}
+
+/* Fix disabled autocomplete-textbox styling on Linux and Vista (bug 75996).
+ * 
+ * Only *specifically* doing this for non-MacOSX and for textboxes of
+ * type autocomplete because for those other cases the result is a
+ * properly colored hbox inside the textbox **with a white border area
+ * around it that I am unable to style**.
+ *
+ * As well, on Mac OS X the border of the textbox is the standard (albeit
+ * subtle) distinguishing UI for the readonly-ness of the textbox. The
+ * current XUL theme handles that already.
+ */
+textbox[type="autocomplete"][disabled="true"] > hbox {
+  background-color: -moz-Dialog;
+}
+
+/**
+ * Don't style the toolbar elements that wrap around the menubar - otherwise
+ * you end up with a double-border at the bottom of the menubar - ToddW.
+ */
+#toolbar-menubar,
+#menubar-items {
+  -moz-appearance: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/* Prevent menubar getting squished on toolbar overflow (bug 79530) */
+menubar {
+    min-height: 1.9em;
+}
+
+
+/* for the toolbar overflow menupopup, always display icons */
+#main-toolboxrow .overflow-menupopup menuitem.menuitem-iconic .menu-iconic-left {
+  visibility: visible;
+}
+
+
+/*---- history toolbar items
+ * Based on FF back/forward buttons,
+ * http://mxr.mozilla.org/firefox/source/browser/themes/gnomestripe/browser/browser.css#390
+ */
+/*
+  -moz-appearance: none;
+  -moz-padding-end: 2px;
+*/
+
+/* unified back button with keyhole icons, small icons mode */
+/*
+toolbar #historyBackButton {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+toolbar #historyBackButton {
+  list-style-image : url("moz-icon://stock/gtk-go-back-ltr?size=toolbar");
+}
+toolbar #historyBackButton[disabled="true"] {
+  list-style-image : url("moz-icon://stock/gtk-go-back-ltr?size=toolbar&state=disabled");
+}
+
+toolbar #historyForwardButton {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+toolbar #historyForwardButton {
+  list-style-image : url("moz-icon://stock/gtk-go-forward-ltr?size=toolbar");
+}
+toolbar #historyForwardButton[disabled="true"] {
+  list-style-image : url("moz-icon://stock/gtk-go-forward-ltr?size=toolbar&state=disabled");
+}
+*/
+toolbar #historyRecentLocations {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  width: 24px;
+}
+
+
+/**
+ * File Status within menu items.
+ */
+.menu-file-status-image-box {
+  padding-left: 4px;
+}

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/!svn/ver/9037/openkomodo/trunk/mozilla/patches-new/komodo-7.0/komodo/app/profile/extensions
+END
+Extensions.rdf
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/!svn/ver/9037/openkomodo/trunk/mozilla/patches-new/komodo-7.0/komodo/app/profile/extensions/Extensions.rdf
+END
+installed-extensions.txt
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/!svn/ver/9037/openkomodo/trunk/mozilla/patches-new/komodo-7.0/komodo/app/profile/extensions/installed-extensions.txt
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/!svn/ver/9037/openkomodo/trunk/mozilla/patches-new/komodo-7.0/komodo/app/profile/extensions/Makefile.in
+END

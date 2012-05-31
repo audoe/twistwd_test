@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/!svn/ver/6762/openkomodo/trunk/src/udl/udl/tracwiki
+END
+python2tracwiki.udl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/!svn/ver/3717/openkomodo/trunk/src/udl/udl/tracwiki/python2tracwiki.udl
+END
+html2tracwiki.udl
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/!svn/ver/3717/openkomodo/trunk/src/udl/udl/tracwiki/html2tracwiki.udl
+END
+tracwikilex.udl
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/6762/openkomodo/trunk/src/udl/udl/tracwiki/tracwikilex.udl
+END

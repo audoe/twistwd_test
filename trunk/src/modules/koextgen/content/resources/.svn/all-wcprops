@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/!svn/ver/10178/openkomodo/trunk/src/modules/koextgen/content/resources
+END
+setup.xul
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/!svn/ver/9297/openkomodo/trunk/src/modules/koextgen/content/resources/setup.xul
+END
+build.js
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/!svn/ver/10178/openkomodo/trunk/src/modules/koextgen/content/resources/build.js
+END
+reconfigure.js
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/!svn/ver/10177/openkomodo/trunk/src/modules/koextgen/content/resources/reconfigure.js
+END

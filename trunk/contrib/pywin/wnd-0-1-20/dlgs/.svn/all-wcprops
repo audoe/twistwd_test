@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/!svn/ver/5365/openkomodo/trunk/contrib/pywin/wnd-0-1-20/dlgs
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/!svn/ver/5365/openkomodo/trunk/contrib/pywin/wnd-0-1-20/dlgs/__init__.py
+END
+choosecolor.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/!svn/ver/5365/openkomodo/trunk/contrib/pywin/wnd-0-1-20/dlgs/choosecolor.py
+END
+opensavefile.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/!svn/ver/5365/openkomodo/trunk/contrib/pywin/wnd-0-1-20/dlgs/opensavefile.py
+END
+replacetext.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/!svn/ver/5365/openkomodo/trunk/contrib/pywin/wnd-0-1-20/dlgs/replacetext.py
+END
+browseforfolder.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/!svn/ver/5365/openkomodo/trunk/contrib/pywin/wnd-0-1-20/dlgs/browseforfolder.py
+END
+findtext.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/!svn/ver/5365/openkomodo/trunk/contrib/pywin/wnd-0-1-20/dlgs/findtext.py
+END
+choosefont.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/5365/openkomodo/trunk/contrib/pywin/wnd-0-1-20/dlgs/choosefont.py
+END
+error.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/!svn/ver/5365/openkomodo/trunk/contrib/pywin/wnd-0-1-20/dlgs/error.py
+END

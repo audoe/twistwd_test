@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/!svn/ver/9789/openkomodo/trunk/src/install/wix/aswixui
+END
+ErrorDlg.wxs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/14/openkomodo/trunk/src/install/wix/aswixui/ErrorDlg.wxs
+END
+VerifyReadyDlg.wxs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/!svn/ver/14/openkomodo/trunk/src/install/wix/aswixui/VerifyReadyDlg.wxs
+END
+WelcomeDlg.wxs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/14/openkomodo/trunk/src/install/wix/aswixui/WelcomeDlg.wxs
+END
+OutOfRbDiskDlg.wxs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/!svn/ver/14/openkomodo/trunk/src/install/wix/aswixui/OutOfRbDiskDlg.wxs
+END
+PrepareDlg.wxs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/14/openkomodo/trunk/src/install/wix/aswixui/PrepareDlg.wxs
+END
+MaintenanceWelcomeDlg.wxs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/!svn/ver/14/openkomodo/trunk/src/install/wix/aswixui/MaintenanceWelcomeDlg.wxs
+END
+ResumeDlg.wxs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/!svn/ver/14/openkomodo/trunk/src/install/wix/aswixui/ResumeDlg.wxs
+END
+Common.wxs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/2507/openkomodo/trunk/src/install/wix/aswixui/Common.wxs
+END
+BrowseDlg.wxs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/!svn/ver/14/openkomodo/trunk/src/install/wix/aswixui/BrowseDlg.wxs
+END
+WelcomeEulaDlg.wxs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/!svn/ver/14/openkomodo/trunk/src/install/wix/aswixui/WelcomeEulaDlg.wxs
+END
+ExitDialog.wxs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/!svn/ver/2507/openkomodo/trunk/src/install/wix/aswixui/ExitDialog.wxs
+END
+SetupTypeDlg.wxs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/!svn/ver/14/openkomodo/trunk/src/install/wix/aswixui/SetupTypeDlg.wxs
+END
+WaitForCostingDlg.wxs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/14/openkomodo/trunk/src/install/wix/aswixui/WaitForCostingDlg.wxs
+END
+ProgressDlg.wxs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/14/openkomodo/trunk/src/install/wix/aswixui/ProgressDlg.wxs
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/!svn/ver/14/openkomodo/trunk/src/install/wix/aswixui/README.txt
+END
+License.rtf
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/!svn/ver/14/openkomodo/trunk/src/install/wix/aswixui/License.rtf
+END
+wixui.mak
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/!svn/ver/14/openkomodo/trunk/src/install/wix/aswixui/wixui.mak
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/14/openkomodo/trunk/src/install/wix/aswixui/Makefile
+END
+VerifyRepairDlg.wxs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/!svn/ver/14/openkomodo/trunk/src/install/wix/aswixui/VerifyRepairDlg.wxs
+END
+OutOfDiskDlg.wxs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/!svn/ver/14/openkomodo/trunk/src/install/wix/aswixui/OutOfDiskDlg.wxs
+END
+LicenseAgreementDlg.wxs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/!svn/ver/14/openkomodo/trunk/src/install/wix/aswixui/LicenseAgreementDlg.wxs
+END
+FatalError.wxs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/14/openkomodo/trunk/src/install/wix/aswixui/FatalError.wxs
+END
+FilesInUse.wxs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/14/openkomodo/trunk/src/install/wix/aswixui/FilesInUse.wxs
+END
+UserExit.wxs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/14/openkomodo/trunk/src/install/wix/aswixui/UserExit.wxs
+END
+CustomizeDlg.wxs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/!svn/ver/14/openkomodo/trunk/src/install/wix/aswixui/CustomizeDlg.wxs
+END
+VerifyRemoveDlg.wxs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/!svn/ver/14/openkomodo/trunk/src/install/wix/aswixui/VerifyRemoveDlg.wxs
+END
+DiskCostDlg.wxs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/14/openkomodo/trunk/src/install/wix/aswixui/DiskCostDlg.wxs
+END
+MaintenanceTypeDlg.wxs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/!svn/ver/14/openkomodo/trunk/src/install/wix/aswixui/MaintenanceTypeDlg.wxs
+END
+CancelDlg.wxs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/!svn/ver/14/openkomodo/trunk/src/install/wix/aswixui/CancelDlg.wxs
+END

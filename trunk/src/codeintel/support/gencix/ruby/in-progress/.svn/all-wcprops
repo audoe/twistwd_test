@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/!svn/ver/280/openkomodo/trunk/src/codeintel/support/gencix/ruby/in-progress
+END
+object_to_cix.rb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/!svn/ver/280/openkomodo/trunk/src/codeintel/support/gencix/ruby/in-progress/object_to_cix.rb
+END
+binary-gencix.rb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/!svn/ver/280/openkomodo/trunk/src/codeintel/support/gencix/ruby/in-progress/binary-gencix.rb
+END
+builtins-gencix.rb
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/!svn/ver/280/openkomodo/trunk/src/codeintel/support/gencix/ruby/in-progress/builtins-gencix.rb
+END

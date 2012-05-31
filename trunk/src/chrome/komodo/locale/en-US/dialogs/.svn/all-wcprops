@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/!svn/ver/8704/openkomodo/trunk/src/chrome/komodo/locale/en-US/dialogs
+END
+authenticate.properties
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/!svn/ver/2973/openkomodo/trunk/src/chrome/komodo/locale/en-US/dialogs/authenticate.properties
+END
+customizeToolbar.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/!svn/ver/8704/openkomodo/trunk/src/chrome/komodo/locale/en-US/dialogs/customizeToolbar.dtd
+END
+compare.properties
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/!svn/ver/2973/openkomodo/trunk/src/chrome/komodo/locale/en-US/dialogs/compare.properties
+END
+iconpicker.properties
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/!svn/ver/7240/openkomodo/trunk/src/chrome/komodo/locale/en-US/dialogs/iconpicker.properties
+END
+diff.properties
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/!svn/ver/2973/openkomodo/trunk/src/chrome/komodo/locale/en-US/dialogs/diff.properties
+END
+pickPreview.properties
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/!svn/ver/3411/openkomodo/trunk/src/chrome/komodo/locale/en-US/dialogs/pickPreview.properties
+END

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- ***** BEGIN LICENSE BLOCK *****
+ Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ 
+ The contents of this file are subject to the Mozilla Public License
+ Version 1.1 (the "License"); you may not use this file except in
+ compliance with the License. You may obtain a copy of the License at
+ http://www.mozilla.org/MPL/
+ 
+ Software distributed under the License is distributed on an "AS IS"
+ basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+ License for the specific language governing rights and limitations
+ under the License.
+ 
+ The Original Code is Komodo code.
+ 
+ The Initial Developer of the Original Code is ActiveState Software Inc.
+ Portions created by ActiveState Software Inc are Copyright (C) 2000-2007
+ ActiveState Software Inc. All Rights Reserved.
+ 
+ Contributor(s):
+   ActiveState Software Inc
+ 
+ Alternatively, the contents of this file may be used under the terms of
+ either the GNU General Public License Version 2 or later (the "GPL"), or
+ the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ in which case the provisions of the GPL or the LGPL are applicable instead
+ of those above. If you wish to allow use of your version of this file only
+ under the terms of either the GPL or the LGPL, and not to allow others to
+ use your version of this file under the terms of the MPL, indicate your
+ decision by deleting the provisions above and replace them with the notice
+ and other provisions required by the GPL or the LGPL. If you do not delete
+ the provisions above, a recipient may use your version of this file under
+ the terms of any one of the MPL, the GPL or the LGPL.
+ 
+ ***** END LICENSE BLOCK ***** -->
+
+<Include>
+  <!-- Is this a build for debugging the MSI? "yes" or "no" -->
+  <?define IsMSIDebugBuild = "no" ?>
+
+  <!-- Conditional values (i.e. upon which WiX preprocessor conditional
+       statements key) -->
+  <!-- Is this a final or a pre-release version of Komodo: "yes" or "no" -->
+  <?define IsPreReleaseVersion = "PP_MSI_IS_PRE_RELEASE_VERSION" ?>
+  <?define ProductType = "PRODUCT_TYPE" ?> <!-- e.g., edit -->
+  <?define ProductTagLine = "PP_PRODUCT_TAG_LINE" ?>
+  <?define MozMajorVersion = "PP_MOZ_MAJOR_VERSION" ?> <!-- string, e.g. "7" -->
+  <?define KomodoUpdateChannel = "PP_UPDATE_CHANNEL" ?> <!-- string, e.g. "nightly" -->
+
+  <?define WithDocJarring = "PP_MSI_AVEC_DOC_JARRING" ?> <!-- yes|no -->
+  <?define WithCrypto = "PP_MSI_AVEC_CRYPTO" ?> <!-- yes|no -->
+  <?define WithCasper = "PP_MSI_AVEC_CASPER" ?> <!-- yes|no -->
+  <?define WithJSLib = "PP_MSI_AVEC_JSLIB" ?> <!-- yes|no -->
+  <?define WithPlaces = "PP_MSI_AVEC_PLACES" ?> <!-- yes|no -->
+  <?define WithStackato = "PP_MSI_AVEC_STACKATO" ?> <!-- yes|no -->
+  <?define WithWatchdogFSNotifications = "PP_MSI_AVEC_WATCHDOG_FS_NOTIFICATIONS" ?> <!-- yes|no -->
+
+  <!-- Basic configuration data -->
+  <?if $(var.IsMSIDebugBuild) = "yes" ?>
+    <?define ProductName = "PP_MSI_PRODUCT_NAME [MSIDebug]" ?>
+  <?else ?>
+    <?define ProductName = "PP_MSI_PRODUCT_NAME" ?>
+  <?endif ?>
+  <?define InstallName = "PP_MSI_INSTALL_NAME" ?>
+  <?define KomodoPrettyId = "PP_MSI_KOMODO_PRETTY_ID" ?>
+  <?define KomodoId = "PP_MSI_KOMODO_ID" ?>
+  <?define KomodoVersion = "PP_MSI_KOMODO_VERSION" ?>
+  <?define KomodoRegistryId = "PP_MSI_REGISTRY_ID" ?>
+  <?define KomodoHelpFile = "[INSTALLDIR]lib\mozilla\chrome\komododoc\locale\en-US\top.html" ?>
+  <?if $(var.ProductType) = "edit" ?>
+    <?define ProductURL = "http://www.activestate.com/products/komodo_edit/" ?>
+  <?else ?>
+    <?define ProductURL = "http://www.activestate.com/products/komodo_ide/" ?>
+  <?endif ?>
+  <?define UninstallText = "Modify or Uninstall Komodo" ?>
+  <?define VccrtMsmPath = "PP_MSI_VCCRT_MSM_PATH" ?>
+  <?define VccrtPolicyMsmPath = "PP_MSI_VCCRT_POLICY_MSM_PATH" ?>
+
+  <?if $(var.IsPreReleaseVersion) = "yes" ?>
+    <?define InstallLevel = "500" ?>  <!-- skip some features by default -->
+  <?else ?>
+    <?define InstallLevel = "1000" ?> <!-- install everything by default -->
+  <?endif ?>
+</Include>
+

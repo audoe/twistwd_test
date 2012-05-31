@@ -1,0 +1,73 @@
+10
+
+dir
+4631
+http://svn.openkomodo.com/repos/mk/trunk/test/data
+http://svn.openkomodo.com/repos
+
+
+
+2009-04-07T19:25:55.927756Z
+3407
+trentm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+b87d16e7-d29f-4ee1-b5ec-817d645d335f
+
+simplecproj
+dir
+
+includes2
+dir
+
+resultsindirection
+dir
+
+outofdate
+dir
+
+lazycfg
+dir
+
+synerr_1
+dir
+
+filetask
+dir
+
+synerr_2
+dir
+
+play
+dir
+
+staticcfg
+dir
+
+virtualtask
+dir
+
+simplecfg
+dir
+
+subdirfiletask
+dir
+
+list
+dir
+
+taskgroup
+dir
+

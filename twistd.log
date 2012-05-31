@@ -1,0 +1,32 @@
+2012-05-15 23:03:22+0800 [-] Log opened.
+2012-05-15 23:03:22+0800 [-] twistd 11.1.0 (/usr/bin/python 2.7.3) starting up.
+2012-05-15 23:03:22+0800 [-] reactor class: twisted.internet.pollreactor.PollReactor.
+2012-05-15 23:03:22+0800 [-] Site starting on 8000
+2012-05-15 23:03:22+0800 [-] Starting factory <twisted.web.server.Site instance at 0x33d2998>
+2012-05-15 23:03:22+0800 [-] Factory_test starting on 79
+2012-05-15 23:03:22+0800 [-] Starting factory <__builtin__.Factory_test instance at 0x33d2a70>
+2012-05-15 23:03:22+0800 [-] set uid/gid 1/1
+2012-05-15 23:03:32+0800 [HTTPChannel,0,127.0.0.1] 127.0.0.1 - - [15/May/2012:15:03:32 +0000] "GET /addsdsdddsdsdsdsd?dfsadfsd HTTP/1.1" 200 28 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19"
+2012-05-15 23:03:33+0800 [HTTPChannel,0,127.0.0.1] 127.0.0.1 - - [15/May/2012:15:03:32 +0000] "GET /favicon.ico HTTP/1.1" 200 22 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19"
+2012-05-15 23:03:33+0800 [HTTPChannel,0,127.0.0.1] 127.0.0.1 - - [15/May/2012:15:03:33 +0000] "GET /addsdsdddsdsdsdsd?dfsadfsd HTTP/1.1" 200 28 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19"
+2012-05-15 23:03:33+0800 [HTTPChannel,0,127.0.0.1] 127.0.0.1 - - [15/May/2012:15:03:33 +0000] "GET /favicon.ico HTTP/1.1" 200 22 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19"
+2012-05-15 23:04:22+0800 [-] Received SIGTERM, shutting down.
+2012-05-15 23:04:22+0800 [-] (TCP Port 79 Closed)
+2012-05-15 23:04:22+0800 [-] Stopping factory <__builtin__.Factory_test instance at 0x33d2a70>
+2012-05-15 23:04:22+0800 [-] (TCP Port 8000 Closed)
+2012-05-15 23:04:22+0800 [-] Stopping factory <twisted.web.server.Site instance at 0x33d2998>
+2012-05-15 23:04:22+0800 [-] Main loop terminated.
+2012-05-15 23:04:22+0800 [-] Warning: No permission to delete pid file
+2012-05-15 23:04:22+0800 [-] Server Shut Down.
+2012-05-18 00:22:36+0800 [-] Log opened.
+2012-05-18 00:22:36+0800 [-] twistd 11.1.0 (/usr/bin/python 2.7.3) starting up.
+2012-05-18 00:22:36+0800 [-] reactor class: twisted.internet.pollreactor.PollReactor.
+2012-05-18 00:22:36+0800 [-] FingerFactory starting on 79
+2012-05-18 00:22:36+0800 [-] Starting factory <__builtin__.FingerFactory instance at 0x23bbe60>
+2012-05-18 00:22:36+0800 [-] set uid/gid 1/1
+2012-05-18 03:35:30+0800 [-] Received SIGTERM, shutting down.
+2012-05-18 03:35:30+0800 [-] (TCP Port 79 Closed)
+2012-05-18 03:35:30+0800 [-] Stopping factory <__builtin__.FingerFactory instance at 0x23bbe60>
+2012-05-18 03:35:30+0800 [-] Main loop terminated.
+2012-05-18 03:35:30+0800 [-] Warning: No permission to delete pid file
+2012-05-18 03:35:30+0800 [-] Server Shut Down.

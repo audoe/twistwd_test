@@ -1,0 +1,16 @@
+K 10
+svn:ignore
+V 59
+*.pyc
+bkconfig.*
+qbtable.pik
+build
+install
+export
+packages
+
+K 19
+svnmerge-integrated
+V 82
+/komodo/branches/ericp-reproject02:1-59736 /openkomodo/branches/shanec:1-1199,1285
+END

@@ -1,0 +1,214 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
+ * The contents of this file are subject to the Mozilla Public License
+ * Version 1.1 (the "License"); you may not use this file except in
+ * compliance with the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ * 
+ * Software distributed under the License is distributed on an "AS IS"
+ * basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+ * License for the specific language governing rights and limitations
+ * under the License.
+ * 
+ * The Original Code is Komodo code.
+ * 
+ * The Initial Developer of the Original Code is ActiveState Software Inc.
+ * Portions created by ActiveState Software Inc are Copyright (C) 2000-2010
+ * ActiveState Software Inc. All Rights Reserved.
+ * 
+ * Contributor(s):
+ *   ActiveState Software Inc
+ * 
+ * Alternatively, the contents of this file may be used under the terms of
+ * either the GNU General Public License Version 2 or later (the "GPL"), or
+ * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the MPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK ***** */
+
+#include "nsISupports.idl"
+#include "nsITreeView.idl"
+#include "koIPrefs.idl"
+#include "koIProject.idl"
+
+interface koIFileEx;
+/* IDL for the hierarchical Toolbox2 view
+ *
+ */
+
+[scriptable, uuid(5c022eab-9e93-41e9-a113-4aca20f3bcb5)]
+interface koITool: koIPart_Common {
+    //NOTYET: attribute wstring keyboard_shortcut;
+
+    attribute wstring path;
+    //NOTYET: attribute long favoriteRating;
+    //NOTYET: attribute long timesRun;
+    //NOTYET: attribute double lastRun;
+
+    void save();
+
+    //TODO: Implement
+    //NOTYET: attribute wstring tags;
+    
+    // Parent in the filesystem, but also in tree if it's visible.
+    attribute koITool parent;
+    /* is the tool my ancestor? */
+    //NOTYET: boolean isAncestor(in koITool tool);
+
+};
+
+[scriptable, uuid(1d1db2c4-8054-418d-a0d2-4b65c5039bb1)]
+interface koIMacroTool: koITool {
+    wstring evalAsPython(in nsIDOMDocument domdocument,
+                         in nsIDOMWindowInternal window,
+                         in ISciMoz scimoz,
+                         in koIDocument koDoc,
+                         in koIView view,
+                         in wstring code,
+                         in boolean asynchronous);
+    wstring evalAsPythonObserver(in nsIDOMDocument domdocument,
+                                 in nsIDOMWindowInternal window,
+                                 in ISciMoz scimoz,
+                                 in koIDocument koDoc,
+                                 in koIView view,
+                                 in wstring code,
+                                 in boolean asynchronous,
+                                 // These three args are same as
+                                 // nsIObserver.observe
+                                 in nsISupports subject,
+                                 in string      topic,
+                                 in wstring     data );
+};
+
+[scriptable, uuid(793f34de-1c51-4dd1-a60d-15b2abfae148)]
+interface koIContainerBaseTool: koITool {
+    //Used and implemented.
+    void getChildren([array, size_is(count)] out koITool child,
+                     out unsigned long count);
+    koITool getChildByName(in wstring name,
+                           in boolean recurse);
+    koITool getChildByTypeAndName(in wstring type,
+                                  in wstring name,
+                                  in boolean recurse);
+
+    //OBSOLETE koITool getChildById(in wstring id);
+    /* hasChild does not recurse */
+    //OBSOLETE boolean hasChild(in koITool child);
+    //OBSOLETE boolean isEmpty();
+    /*NOTYET: void getChildrenByType(in wstring type,
+                           in boolean recurse,
+                           [array, size_is(count)] out koITool child,
+                           out unsigned long count);
+    */
+    /*OBSOLETE
+    koITool getChildWithTypeAndStringAttribute(in wstring type,
+                                               in wstring attribname,
+                                               in wstring attribvalue,
+                                               in boolean recurse);
+    */
+    /*OBSOLETE
+    koITool getChildByAttributeValue(in wstring attribname,
+                                     in wstring attribvalue,
+                                     in boolean recurse);
+    */
+    void addChild(in koITool child);
+    void removeChild(in koITool child);
+};
+
+[scriptable, uuid(e574867b-10f5-4809-8e93-09b0ef927f33)]
+interface koIContainerTool: koIContainerBaseTool {
+};
+
+[scriptable, uuid(f587b8c6-96ae-4af3-9362-a0fd40d541f7)]
+interface koIToolbox2HTreeView: nsITreeView {
+    const short SORT_BY_NATURAL_ORDER = 1; // AKA NAME_ASCENDING_FOLDERS_FIRST
+    const short SORT_BY_NAME_ASCENDING = 2;
+    const short SORT_BY_NAME_DESCENDING = 3;
+
+    void initialize(in koIPart currentProject);
+    void terminate();
+    wstring get_toolType(in long index);
+
+    wstring getPathFromIndex(in long index);
+    koITool getTool(in long index);
+
+    long getIndexByTool(in koITool tool);
+    boolean selectedItemsHaveSameParent();
+    // Is the src node an ancestor of the target node?
+    boolean isAncestor(in long srcIndex, in long targetIndex);
+    
+    // Eventually these should get moved to the tool, but for
+    // now we're going to hit the database each time.
+    //NOTYET: long get_favoriteRating(in long index);
+    //NOTYET: long get_timesRun(in long index);
+    //NOTYET: double get_lastRun(in long index);
+    
+    void addNewItemToParent(in koITool parent, in koITool item);
+    void deleteToolAt(in long index);
+
+    void copyLocalFolder(in wstring srcPath, in wstring targetDirPath);
+    void pasteItemsIntoTarget(in long index,
+                              [array, size_is(count)] in wstring paths,
+                              in unsigned long count,
+                              in boolean copying);
+    void copyItemIntoTargetWithNewName(in long targetIndex,
+                                       in wstring srcPath,
+                                       in wstring newBaseName);
+
+    // This routine figures out which top-level nodes to display
+    // in the tree, and rebuilds it.
+    void redoTreeView(in koIPart currentProject);
+
+    // This routine assumes that we're keeping
+    // the current toolboxes, and just refreshes the tree.
+    void refreshFullView();
+    void reloadToolsDirectoryView(in long index);
+    void renameTool(in long index, in wstring newName);
+    long zipSelectionToFile(in wstring zipFile, in boolean zipStandardToolboxOnly);
+    long getNextSiblingIndex(in long index); // not in nsITreeView...
+
+    void setFilter(in wstring filterPattern);
+    boolean isToolboxRow(in long index);
+    attribute long sortDirection;
+
+    // Track projects
+    void addProject(in koIPart project);
+    void removeProject(in koIPart project);
+};
+
+
+[scriptable, uuid(3b9d3a45-89b3-4082-964f-74c425cdc0cb)]
+interface koIToolbox2ToolManager: nsISupports {
+    koITool createToolFromType(in wstring type);
+
+    koITool getToolById(in long id);
+    koITool getToolFromPath(in wstring path);
+    void getToolsByTypeAndName(in wstring type, in wstring name,
+                        [array, size_is(count)] out koITool tools,
+                          out unsigned long count);
+
+    koITool getAbbreviationSnippet(in wstring abbrev,
+                                [array, size_is(count)] in wstring subnames,
+                                in unsigned long count);
+
+    void getCustomMenus(in wstring path,
+                        [array, size_is(count)] out koITool tools,
+                          out unsigned long count);
+    void getCustomToolbars(in wstring path,
+                           [array, size_is(count)] out koITool tools,
+                          out unsigned long count);
+    void getToolsWithKeyboardShortcuts(in wstring path,
+                                       [array, size_is(count)] out koITool tools,
+                                       out unsigned long count);
+    void getTriggerMacros(in wstring path,
+                          [array, size_is(count)] out koITool tools,
+                          out unsigned long count);
+};

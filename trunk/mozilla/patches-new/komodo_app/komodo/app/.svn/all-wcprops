@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/!svn/ver/8851/openkomodo/trunk/mozilla/patches-new/komodo_app/komodo/app
+END
+koStart.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/!svn/ver/310/openkomodo/trunk/mozilla/patches-new/komodo_app/komodo/app/koStart.c
+END
+nsKomodoApp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/!svn/ver/8851/openkomodo/trunk/mozilla/patches-new/komodo_app/komodo/app/nsKomodoApp.cpp
+END
+mozilla.in
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/!svn/ver/8284/openkomodo/trunk/mozilla/patches-new/komodo_app/komodo/app/mozilla.in
+END
+komodo.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/!svn/ver/1915/openkomodo/trunk/mozilla/patches-new/komodo_app/komodo/app/komodo.exe.manifest
+END
+koStart.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/!svn/ver/310/openkomodo/trunk/mozilla/patches-new/komodo_app/komodo/app/koStart.h
+END
+nsStaticComponents.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/!svn/ver/14/openkomodo/trunk/mozilla/patches-new/komodo_app/komodo/app/nsStaticComponents.cpp
+END
+module.ver
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/!svn/ver/14/openkomodo/trunk/mozilla/patches-new/komodo_app/komodo/app/module.ver
+END
+brand.properties
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/!svn/ver/14/openkomodo/trunk/mozilla/patches-new/komodo_app/komodo/app/brand.properties
+END
+application.ini
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/!svn/ver/2118/openkomodo/trunk/mozilla/patches-new/komodo_app/komodo/app/application.ini
+END
+jar.mn
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/!svn/ver/14/openkomodo/trunk/mozilla/patches-new/komodo_app/komodo/app/jar.mn
+END
+mozicon50.xpm
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/!svn/ver/14/openkomodo/trunk/mozilla/patches-new/komodo_app/komodo/app/mozicon50.xpm
+END
+default.xpm
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/!svn/ver/14/openkomodo/trunk/mozilla/patches-new/komodo_app/komodo/app/default.xpm
+END
+my_getopt.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/!svn/ver/14/openkomodo/trunk/mozilla/patches-new/komodo_app/komodo/app/my_getopt.c
+END
+mozicon16.xpm
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/!svn/ver/14/openkomodo/trunk/mozilla/patches-new/komodo_app/komodo/app/mozicon16.xpm
+END
+mozicon128.png
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/!svn/ver/14/openkomodo/trunk/mozilla/patches-new/komodo_app/komodo/app/mozicon128.png
+END
+splash.rc
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/!svn/ver/2045/openkomodo/trunk/mozilla/patches-new/komodo_app/komodo/app/splash.rc
+END
+brand.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/!svn/ver/2040/openkomodo/trunk/mozilla/patches-new/komodo_app/komodo/app/brand.dtd
+END
+komodo.ico
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/!svn/ver/14/openkomodo/trunk/mozilla/patches-new/komodo_app/komodo/app/komodo.ico
+END

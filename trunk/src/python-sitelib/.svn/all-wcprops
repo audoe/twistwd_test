@@ -1,0 +1,263 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/!svn/ver/10067/openkomodo/trunk/src/python-sitelib
+END
+langinfo_prog.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/!svn/ver/8847/openkomodo/trunk/src/python-sitelib/langinfo_prog.py
+END
+wininteg.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/9998/openkomodo/trunk/src/python-sitelib/wininteg.py
+END
+langinfo_mozilla.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/!svn/ver/3392/openkomodo/trunk/src/python-sitelib/langinfo_mozilla.py
+END
+mozutils.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/1987/openkomodo/trunk/src/python-sitelib/mozutils.py
+END
+koUnicodeEncoding.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/!svn/ver/280/openkomodo/trunk/src/python-sitelib/koUnicodeEncoding.py
+END
+kotaclib.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/2810/openkomodo/trunk/src/python-sitelib/kotaclib.py
+END
+ctypesutils.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/!svn/ver/4940/openkomodo/trunk/src/python-sitelib/ctypesutils.py
+END
+koprocessutils.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/!svn/ver/740/openkomodo/trunk/src/python-sitelib/koprocessutils.py
+END
+koXMLPrefs.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/!svn/ver/9964/openkomodo/trunk/src/python-sitelib/koXMLPrefs.py
+END
+uriparse.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/4784/openkomodo/trunk/src/python-sitelib/uriparse.py
+END
+langinfo_other.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/9263/openkomodo/trunk/src/python-sitelib/langinfo_other.py
+END
+reflow.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/3935/openkomodo/trunk/src/python-sitelib/reflow.py
+END
+langinfo_binary.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/2232/openkomodo/trunk/src/python-sitelib/langinfo_binary.py
+END
+HTMLTreeParser.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/4068/openkomodo/trunk/src/python-sitelib/HTMLTreeParser.py
+END
+pyxpcomProfiler.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/6955/openkomodo/trunk/src/python-sitelib/pyxpcomProfiler.py
+END
+which.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/!svn/ver/14/openkomodo/trunk/src/python-sitelib/which.py
+END
+koDTD.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/!svn/ver/1232/openkomodo/trunk/src/python-sitelib/koDTD.py
+END
+langinfo_komodo.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/3715/openkomodo/trunk/src/python-sitelib/langinfo_komodo.py
+END
+textutils.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/!svn/ver/9385/openkomodo/trunk/src/python-sitelib/textutils.py
+END
+eollib.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/4922/openkomodo/trunk/src/python-sitelib/eollib.py
+END
+timeline.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/!svn/ver/280/openkomodo/trunk/src/python-sitelib/timeline.py
+END
+koXMLDatasetInfo.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/!svn/ver/7688/openkomodo/trunk/src/python-sitelib/koXMLDatasetInfo.py
+END
+Conscript
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/4616/openkomodo/trunk/src/python-sitelib/Conscript
+END
+process.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/!svn/ver/8576/openkomodo/trunk/src/python-sitelib/process.py
+END
+langinfo_doc.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/6180/openkomodo/trunk/src/python-sitelib/langinfo_doc.py
+END
+koTreeView.p.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/9884/openkomodo/trunk/src/python-sitelib/koTreeView.p.py
+END
+koSimpleLexer.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/280/openkomodo/trunk/src/python-sitelib/koSimpleLexer.py
+END
+sitepyxpcom.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/!svn/ver/7774/openkomodo/trunk/src/python-sitelib/sitepyxpcom.py
+END
+timeline_hook.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/280/openkomodo/trunk/src/python-sitelib/timeline_hook.py
+END
+langinfo_template.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/!svn/ver/7908/openkomodo/trunk/src/python-sitelib/langinfo_template.py
+END
+koXMLTreeService.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/280/openkomodo/trunk/src/python-sitelib/koXMLTreeService.py
+END
+difflibex.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/!svn/ver/5179/openkomodo/trunk/src/python-sitelib/difflibex.py
+END
+langinfo.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/9247/openkomodo/trunk/src/python-sitelib/langinfo.py
+END
+langinfo_tiny.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/544/openkomodo/trunk/src/python-sitelib/langinfo_tiny.py
+END
+fileutils.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/!svn/ver/9198/openkomodo/trunk/src/python-sitelib/fileutils.py
+END
+textinfo.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/!svn/ver/10067/openkomodo/trunk/src/python-sitelib/textinfo.py
+END
+koCatalog.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/!svn/ver/10067/openkomodo/trunk/src/python-sitelib/koCatalog.py
+END
+directoryServiceUtils.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/7483/openkomodo/trunk/src/python-sitelib/directoryServiceUtils.py
+END
+applib.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/5736/openkomodo/trunk/src/python-sitelib/applib.py
+END
+strptime.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/14/openkomodo/trunk/src/python-sitelib/strptime.py
+END
+pythonVersionUtils.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/!svn/ver/9962/openkomodo/trunk/src/python-sitelib/pythonVersionUtils.py
+END
+upgradeutils.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/!svn/ver/883/openkomodo/trunk/src/python-sitelib/upgradeutils.py
+END
+koRNGElementTree.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/280/openkomodo/trunk/src/python-sitelib/koRNGElementTree.py
+END

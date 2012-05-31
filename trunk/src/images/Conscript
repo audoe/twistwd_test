@@ -1,0 +1,218 @@
+#!/usr/local/bin/perl
+# ***** BEGIN LICENSE BLOCK *****
+# Version: MPL 1.1/GPL 2.0/LGPL 2.1
+# 
+# The contents of this file are subject to the Mozilla Public License
+# Version 1.1 (the "License"); you may not use this file except in
+# compliance with the License. You may obtain a copy of the License at
+# http://www.mozilla.org/MPL/
+# 
+# Software distributed under the License is distributed on an "AS IS"
+# basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+# License for the specific language governing rights and limitations
+# under the License.
+# 
+# The Original Code is Komodo code.
+# 
+# The Initial Developer of the Original Code is ActiveState Software Inc.
+# Portions created by ActiveState Software Inc are Copyright (C) 2000-2007
+# ActiveState Software Inc. All Rights Reserved.
+# 
+# Contributor(s):
+#   ActiveState Software Inc
+# 
+# Alternatively, the contents of this file may be used under the terms of
+# either the GNU General Public License Version 2 or later (the "GPL"), or
+# the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+# in which case the provisions of the GPL or the LGPL are applicable instead
+# of those above. If you wish to allow use of your version of this file only
+# under the terms of either the GPL or the LGPL, and not to allow others to
+# use your version of this file under the terms of the MPL, indicate your
+# decision by deleting the provisions above and replace them with the notice
+# and other provisions required by the GPL or the LGPL. If you do not delete
+# the provisions above, a recipient may use your version of this file under
+# the terms of any one of the MPL, the GPL or the LGPL.
+# 
+# ***** END LICENSE BLOCK *****
+
+
+Import(
+    "cons",
+    "build",
+    "platform",
+    "komodoVersion",
+    "mozComponentsDir",
+    "mozIdlIncludePath",
+    "mozChromeDir",
+    "mozExtensionDir",
+    "mozBin",
+    "idlExportDir",
+    "ranRegxpcomStateFileName",
+    "mozChromeDir",
+    "productType",
+    "version",
+);
+
+my $imagesDir = "$mozChromeDir/komodo/skin/images";
+
+# Autocomplete UI images (named cb_* for codebrowser from IDE)
+$cons->Install($imagesDir, "icons/cb_class.png");
+$cons->Install($imagesDir, "icons/cb_directory.png");
+$cons->Install($imagesDir, "icons/cb_function.png");
+$cons->Install($imagesDir, "icons/cb_module.png");
+$cons->Install($imagesDir, "icons/cb_variable.png");
+$cons->Install($imagesDir, "icons/cb_variable_scalar.png");
+$cons->Install($imagesDir, "icons/cb_variable_array.png");
+$cons->Install($imagesDir, "icons/cb_variable_hash.png");
+$cons->Install($imagesDir, "icons/cb_constant.png");
+$cons->Install($imagesDir, "icons/cb_interface.png");
+$cons->Install($imagesDir, "icons/cb_namespace.png");
+$cons->Install($imagesDir, "icons/cb_xml_element.png");
+$cons->Install($imagesDir, "icons/cb_xml_attribute.png");
+
+# Find system icons
+$cons->Install($imagesDir, "icons/find_stop.png");
+$cons->Install($imagesDir, "icons/find_stop_disable.png");
+
+$cons->Install($imagesDir, "icons/find.png");
+$cons->Install($imagesDir, "icons/find_in_files.png");
+
+
+# Other tool icons
+$cons->InstallAs("$imagesDir/preview_in_browser.png", "icons/preview.png");
+$cons->InstallAs("$imagesDir/preview_in_browser_disable.png", "icons/preview-disabled.png");
+
+
+# Right/left/bottom pane internal icons and icons for the "Workspace" toolbar
+$cons->Install($imagesDir, "icons/minimize_left.gif");
+$cons->Install($imagesDir, "icons/minimize_left_hover.gif");
+$cons->Install($imagesDir, "icons/minimize_left_disable.gif");
+$cons->Install($imagesDir, "icons/minimize_right.png");
+$cons->Install($imagesDir, "icons/minimize_right_hover.png");
+$cons->Install($imagesDir, "icons/minimize_right_disable.png");
+$cons->Install($imagesDir, "icons/minimize_down.gif");
+$cons->Install($imagesDir, "icons/minimize_down_hover.gif");
+$cons->Install($imagesDir, "icons/minimize_down_disable.gif");
+
+$cons->Install($imagesDir, "icons/show_left_pane.png");
+$cons->Install($imagesDir, "icons/hide_left_pane.png");
+$cons->Install($imagesDir, "icons/show_right_pane.png");
+$cons->Install($imagesDir, "icons/hide_right_pane.png");
+$cons->Install($imagesDir, "icons/show_bottom_pane.png");
+$cons->Install($imagesDir, "icons/hide_bottom_pane.png");
+
+# Macro icons
+# Other macro icons are coming from src/images/famfamfam[_derived]/...
+# now. This one still needs a replacement at some point.
+$cons->Install($imagesDir, "icons/macro.png");
+
+
+# Other icons
+$cons->Install($imagesDir, "icons/list_item_add.png");
+$cons->Install($imagesDir, "icons/list_item_add_disable.png");
+$cons->Install($imagesDir, "icons/list_item_edit.png");
+$cons->Install($imagesDir, "icons/list_item_edit_disable.png");
+$cons->Install($imagesDir, "icons/list_item_remove.png");
+$cons->Install($imagesDir, "icons/list_item_remove_disable.png");
+
+$cons->Install($imagesDir, "icons/menupopup_arrows.png");
+
+$cons->Install($imagesDir, "icons/tree_select.png");
+$cons->Install($imagesDir, "icons/tree_select_disable.png");
+
+$cons->Install($imagesDir, "icons/grippy.png");
+$cons->Install($imagesDir, "icons/grippy_vertical.png");
+$cons->Install($imagesDir, "icons/grippy_horizontal.png");
+$cons->Install($imagesDir, "icons/grippy_horizontal_left.png");
+$cons->Install($imagesDir, "icons/grippy_horizontal_right.png");
+$cons->Install($imagesDir, "icons/grippy_vertical_up.png");
+$cons->Install($imagesDir, "icons/grippy_vertical_down.png");
+
+# derived famfamfam icons
+$cons->InstallAs("$imagesDir/redo.png", "famfamfam_derived/arrow_redo.png");
+
+$cons->InstallAs("$imagesDir/undo.png", "famfamfam_derived/arrow_undo.png");
+
+$cons->InstallAs("$imagesDir/macro_pause.png", "famfamfam_derived/control_pause_blue.png");
+$cons->InstallAs("$imagesDir/macro_pause_disable.png", "famfamfam_derived/control_pause.png");
+
+$cons->InstallAs("$imagesDir/macro_play.png", "famfamfam_derived/control_play_blue.png");
+$cons->InstallAs("$imagesDir/macro_play_disable.png", "famfamfam_derived/control_play.png");
+
+$cons->InstallAs("$imagesDir/macro_record.png", "famfamfam_derived/control_record_blue.png");
+$cons->InstallAs("$imagesDir/macro_record_disable.png", "famfamfam_derived/control_record.png");
+
+$cons->InstallAs("$imagesDir/macro_save.png", "famfamfam_derived/control_save_blue.png");
+$cons->InstallAs("$imagesDir/macro_save_disable.png", "famfamfam_derived/control_save.png");
+
+$cons->InstallAs("$imagesDir/macro_stop.png", "famfamfam_derived/control_stop_blue.png");
+$cons->InstallAs("$imagesDir/macro_stop_disable.png", "famfamfam_derived/control_stop.png");
+
+$cons->InstallAs("$imagesDir/cut.png", "famfamfam_derived/cut.png");
+
+$cons->InstallAs("$imagesDir/copy.png", "famfamfam_derived/page_copy.png");
+
+$cons->InstallAs("$imagesDir/paste.png", "famfamfam_derived/page_paste.png");
+
+$cons->InstallAs("$imagesDir/print_button.png", "famfamfam_derived/printer.png");
+
+$cons->InstallAs("$imagesDir/help.png", "famfamfam_derived/help.png");
+$cons->InstallAs("$imagesDir/help_disabled.png", "famfamfam_derived/help_disabled.png");
+
+$cons->InstallAs("$imagesDir/save.png", "famfamfam_derived/disk.png");
+
+$cons->InstallAs("$imagesDir/saveAll.png", "famfamfam_derived/disk_multiple.png");
+$cons->InstallAs("$imagesDir/saveAll_disabled.png", "famfamfam_derived/disk_multiple_disabled.png");
+
+$cons->InstallAs("$imagesDir/newText.png", "famfamfam_derived/newText.png");
+$cons->InstallAs("$imagesDir/newText_disabled.png", "famfamfam_derived/newText_disabled.png");
+
+$cons->InstallAs("$imagesDir/open.png", "famfamfam_derived/folder.png");
+$cons->InstallAs("$imagesDir/open_hover.png", "famfamfam_derived/folder_hover.png");
+$cons->InstallAs("$imagesDir/open_disabled.png", "famfamfam_derived/folder_disabled.png");
+
+$cons->InstallAs("$imagesDir/wand.png", "famfamfam_derived/wand.png");
+$cons->InstallAs("$imagesDir/wand_hover.png", "famfamfam_derived/wand_hover.png");
+$cons->InstallAs("$imagesDir/wand_disabled.png", "famfamfam_derived/wand_disabled.png");
+
+
+# Raw famfamfam icons
+# (Eventually we may just want to install a bunch of these for users to
+# use in toolbar stuff.)
+my %images = (
+    "famfamfam_derived/arrow_up.png" => "$imagesDir/famfamfam/arrow_up.png",
+    "famfamfam_derived/arrow_down.png" => "$imagesDir/famfamfam/arrow_down.png",
+    "famfamfam_derived/page_white_go.png" => "$imagesDir/famfamfam/page_white_go.png",
+    "famfamfam_derived/information.png" => "$imagesDir/famfamfam/information.png",
+);
+foreach my $src (keys %images) {
+    my $dst = $images{$src};
+    $cons->InstallAs($dst, $src);
+}
+
+
+
+# Install the about box images.
+my $aboutSrc;
+if ($komodoVersion =~ /alpha/) {
+    $aboutSrc = "other/about_edit_alpha.png";
+} elsif ($komodoVersion =~ /beta/) {
+    $aboutSrc = "other/about_edit_beta.png";
+} else {
+    $aboutSrc = "other/about_edit.png";
+}
+$cons->InstallAs("$imagesDir/about.png", $aboutSrc);
+
+# Bordered checkbox icons.
+$cons->Install($imagesDir, "icons/checkbox_bordered_checked.png");
+$cons->Install($imagesDir, "icons/checkbox_bordered_unchecked.png");
+
+# install famfamfam extension
+$cons->InstallAs("$mozExtensionDir/silk\@famfamfam.com/silkicons.jar", 'famfamfam/silkicons.jar');
+$cons->InstallAs("$mozExtensionDir/silk\@famfamfam.com/install.rdf", 'famfamfam/install.rdf');
+$cons->InstallAs("$mozExtensionDir/silk\@famfamfam.com/chrome.manifest", 'famfamfam/chrome.manifest');
+
+# install openoffice extension
+$cons->InstallAs("$mozExtensionDir/industrial\@openoffice.org/industrial.jar", 'openoffice/industrial.jar');
+$cons->InstallAs("$mozExtensionDir/industrial\@openoffice.org/install.rdf", 'openoffice/install.rdf');
+$cons->InstallAs("$mozExtensionDir/industrial\@openoffice.org/chrome.manifest", 'openoffice/chrome.manifest');

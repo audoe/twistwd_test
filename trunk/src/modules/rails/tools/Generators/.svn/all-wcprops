@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/9359/openkomodo/trunk/src/modules/rails/tools/Generators
+END
+.folderdata
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/!svn/ver/9359/openkomodo/trunk/src/modules/rails/tools/Generators/.folderdata
+END
+model.komodotool
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/!svn/ver/9359/openkomodo/trunk/src/modules/rails/tools/Generators/model.komodotool
+END
+controller-method.komodotool
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/!svn/ver/9359/openkomodo/trunk/src/modules/rails/tools/Generators/controller-method.komodotool
+END
+scaffold.komodotool
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/!svn/ver/9359/openkomodo/trunk/src/modules/rails/tools/Generators/scaffold.komodotool
+END
+controller.komodotool
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/!svn/ver/9359/openkomodo/trunk/src/modules/rails/tools/Generators/controller.komodotool
+END
+migration.komodotool
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/!svn/ver/9359/openkomodo/trunk/src/modules/rails/tools/Generators/migration.komodotool
+END

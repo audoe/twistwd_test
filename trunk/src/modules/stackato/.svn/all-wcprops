@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/!svn/ver/10138/openkomodo/trunk/src/modules/stackato
+END
+chrome.p.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/!svn/ver/9712/openkomodo/trunk/src/modules/stackato/chrome.p.manifest
+END
+install.rdf
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/!svn/ver/10117/openkomodo/trunk/src/modules/stackato/install.rdf
+END
+.folderdata
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/!svn/ver/9712/openkomodo/trunk/src/modules/stackato/.folderdata
+END
+Conscript
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/9714/openkomodo/trunk/src/modules/stackato/Conscript
+END
+stackato.komodoproject
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/9712/openkomodo/trunk/src/modules/stackato/stackato.komodoproject
+END

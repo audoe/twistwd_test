@@ -1,0 +1,152 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ * 
+ * The contents of this file are subject to the Mozilla Public License
+ * Version 1.1 (the "License"); you may not use this file except in
+ * compliance with the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ * 
+ * Software distributed under the License is distributed on an "AS IS"
+ * basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+ * License for the specific language governing rights and limitations
+ * under the License.
+ * 
+ * The Original Code is Komodo code.
+ * 
+ * The Initial Developer of the Original Code is ActiveState Software Inc.
+ * Portions created by ActiveState Software Inc are Copyright (C) 2000-2007
+ * ActiveState Software Inc. All Rights Reserved.
+ * 
+ * Contributor(s):
+ *   ActiveState Software Inc
+ * 
+ * Alternatively, the contents of this file may be used under the terms of
+ * either the GNU General Public License Version 2 or later (the "GPL"), or
+ * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the MPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL or the LGPL.
+ * 
+ * ***** END LICENSE BLOCK ***** */
+
+/* *    Authors: David Ascher, Shane Caraveo
+   
+*/
+
+#include "nsISupports.idl"
+
+/*
+  koIFile represents a file on disk.
+  
+  this is very close to the nsIFile interface, we could
+  consider inheriting from that
+*/
+
+[scriptable, uuid(46D252D6-1A08-49AA-9396-338034BA537B)]
+interface koIFileEx : nsISupports
+{
+    /* Permissions - note that these values are octal. */
+    const long PERM_ISUID = 04000;  /* set user id bit                       */
+    const long PERM_ISGID = 02000;  /* set group id bit                      */
+    const long PERM_ISVTX = 01000;  /* set sticky bit                        */
+    const long PERM_IRWXU = 00700;  /* read, write, execute/search by owner  */
+    const long PERM_IRUSR = 00400;  /* read permission, owner                */
+    const long PERM_IWUSR = 00200;  /* write permission, owner               */
+    const long PERM_IXUSR = 00100;  /* execute/search permission, owner      */
+    const long PERM_IRWXG = 00070;  /* read, write, execute/search by group  */
+    const long PERM_IRGRP = 00040;  /* read permission, group                */
+    const long PERM_IWGRP = 00020;  /* write permission, group               */
+    const long PERM_IXGRP = 00010;  /* execute/search permission, group      */
+    const long PERM_IRWXO = 00007;  /* read, write, execute/search by others */
+    const long PERM_IROTH = 00004;  /* read permission, others               */
+    const long PERM_IWOTH = 00002;  /* write permission, others              */
+    const long PERM_IXOTH = 00001;  /* execute/search permission, others     */
+
+    boolean open(in string mode);
+    void read(in unsigned long aCount, out unsigned long count, [array, size_is(count), retval] out octet text);
+    void write([array, size_is(count)] in octet text, in unsigned long count);
+    // xpconnect does not handle 'octet' correctly, so need alternative
+    // to write()
+    void puts(in AString text);
+    AString readfile();
+    void flush();
+    void close();
+    void chmod(in unsigned long permissions);
+
+    // changing any one of the following three affects the following 6
+    attribute wstring displayPath;// URI if URI not of file:// scheme.
+    attribute wstring URI; 
+    attribute wstring server;
+    attribute wstring path;
+    attribute wstring leafName; // XXX get rid of this
+    readonly attribute wstring prePath;  // Everything before the path.
+    readonly attribute wstring baseName;
+    readonly attribute wstring dirName;
+    readonly attribute string scheme;
+    readonly attribute wstring ext; // the extension
+    readonly attribute string md5name;
+    
+    // these return the uri/path encoded to the filesystem encoding
+    // which is, in python, sys.getfilesystemencoding().
+    // on windows, mbcs, on darwin, utf-8, linux may be many things
+    // these should be used for any low level file operations such as open
+    // in python
+    attribute string encodedURI; 
+    attribute string encodedPath;
+    
+    attribute unsigned long permissions; // aka "mode"
+    
+    // various attributes of a file
+    readonly attribute boolean isLocal;
+    readonly attribute boolean isRemoteFile;    // FTP, SCP, SFTP etc...
+    // A network file is a local file (isLocal is *always* true), but it is
+    // actually residing on a mounted network drive, such as Samba, SSHFS,
+    // etc...
+    // The user is able to customize through Komodo's preferences which
+    // file locations are to be treated as network shares.
+    // Note: Network shared are automatically detected on Windows.
+    readonly attribute boolean isNetworkFile;
+    readonly attribute PRInt64 lastModifiedTime;
+    readonly attribute PRInt64 createdTime;
+    readonly attribute PRInt64 lastAccessedTime;
+    readonly attribute PRInt64 fileSize;
+    readonly attribute boolean exists;
+    readonly attribute boolean closed;
+    readonly attribute boolean isWriteable;
+    readonly attribute boolean isReadable;
+    readonly attribute boolean isReadOnly;
+    readonly attribute boolean isReadWrite;
+    readonly attribute boolean isExecutable;
+    readonly attribute boolean isHidden;
+    readonly attribute boolean isDirectory;
+    readonly attribute boolean isFile;
+    readonly attribute boolean isSymlink;
+    
+    /* This is a FIFO, SOCKET, etc. file type on linux.  Basicly, it
+       is an alternate protocol using the file descriptor.  We also
+       mark it true for the DBGP file spec */
+    readonly attribute boolean isSpecial; 
+
+    // hasChanged does a stat, checks to see if our cached stat info
+    // is different than a current stat call.  If it is, then the
+    // new stat info is saved into the cache
+    readonly attribute boolean hasChanged; 
+
+    // hasChangedNoStatUpdate does a stat, checks to see if our cached stat info
+    // is different than a current stat call, but does not update the current
+    // stat info with the new one.
+    readonly attribute boolean hasChangedNoStatUpdate;
+
+    // a method to retrieve keys and values for all status attributes
+    // this is an optimization for js when we need to retreive all
+    // of it.
+    void getStatusMap([array, size_is(key_count)] out wstring keys,
+                      out unsigned long key_count,
+                      [array, size_is(val_count)] out wstring values,
+                      out unsigned long val_count);
+};

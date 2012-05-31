@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repos/!svn/ver/280/openkomodo/trunk/src/udl/udl/haml
+END
+hamllex.udl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/!svn/ver/280/openkomodo/trunk/src/udl/udl/haml/hamllex.udl
+END
+haml2ruby.udl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/!svn/ver/280/openkomodo/trunk/src/udl/udl/haml/haml2ruby.udl
+END
+ruby2haml.udl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/!svn/ver/280/openkomodo/trunk/src/udl/udl/haml/ruby2haml.udl
+END

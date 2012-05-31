@@ -1,0 +1,121 @@
+#!/usr/local/bin/perl
+# ***** BEGIN LICENSE BLOCK *****
+# Version: MPL 1.1/GPL 2.0/LGPL 2.1
+# 
+# The contents of this file are subject to the Mozilla Public License
+# Version 1.1 (the "License"); you may not use this file except in
+# compliance with the License. You may obtain a copy of the License at
+# http://www.mozilla.org/MPL/
+# 
+# Software distributed under the License is distributed on an "AS IS"
+# basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+# License for the specific language governing rights and limitations
+# under the License.
+# 
+# The Original Code is Komodo code.
+# 
+# The Initial Developer of the Original Code is ActiveState Software Inc.
+# Portions created by ActiveState Software Inc are Copyright (C) 2000-2007
+# ActiveState Software Inc. All Rights Reserved.
+# 
+# Contributor(s):
+#   ActiveState Software Inc
+# 
+# Alternatively, the contents of this file may be used under the terms of
+# either the GNU General Public License Version 2 or later (the "GPL"), or
+# the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+# in which case the provisions of the GPL or the LGPL are applicable instead
+# of those above. If you wish to allow use of your version of this file only
+# under the terms of either the GPL or the LGPL, and not to allow others to
+# use your version of this file under the terms of the MPL, indicate your
+# decision by deleting the provisions above and replace them with the notice
+# and other provisions required by the GPL or the LGPL. If you do not delete
+# the provisions above, a recipient may use your version of this file under
+# the terms of any one of the MPL, the GPL or the LGPL.
+# 
+# ***** END LICENSE BLOCK *****
+
+
+Import(
+    'cons',
+    'build',
+    'platform',
+    'productType',
+    'buildFlavour',
+    'buildType',
+    'unsiloedPythonExe',
+    'ranRegxpcomStateFileName',
+    'mozComponentsDir',
+    'mozIdlIncludePath',
+    'idlExportDir',
+    'supportDir',
+    'komodoPythonUtilsDir',
+    'mozVersion',
+    'sdkDir',
+    'mozSrc',
+);
+
+$cons->InstallPythonUtility('styles.py');
+$cons->Preprocess('factoryStyleSettings.p.py',
+                  'factoryStyleSettings.py');
+$cons->InstallPythonUtility('factoryStyleSettings.py');
+$cons->InstallPythonUtility('userStyleSettings.py');
+$cons->Install($idlExportDir, 'koIScintillaSchemeService.idl');
+$cons->BuildAndInstallXpt('koIScintillaSchemeService.idl');
+$cons->Preprocess('koScintillaSchemeService.p.py',
+                  'koScintillaSchemeService.py');
+$cons->InstallXpcomComponent('koScintillaSchemeService.py');
+
+$cons->Preprocess('color_schemes/Default.p.ksf', 'color_schemes/Default.ksf');
+$cons->InstallAs("$supportDir/schemes/Default.ksf", 'color_schemes/Default.ksf');
+$cons->Preprocess('color_schemes/Medium.p.ksf', 'color_schemes/Medium.ksf');
+$cons->InstallAs("$supportDir/schemes/Medium.ksf", 'color_schemes/Medium.ksf');
+$cons->Preprocess('color_schemes/Bright.p.ksf', 'color_schemes/Bright.ksf');
+$cons->InstallAs("$supportDir/schemes/Bright.ksf", 'color_schemes/Bright.ksf');
+$cons->Preprocess('color_schemes/Dark_Default.p.ksf', 'color_schemes/Dark_Default.ksf');
+$cons->InstallAs("$supportDir/schemes/Dark_Default.ksf", 'color_schemes/Dark_Default.ksf');
+$cons->Preprocess('color_schemes/Dark_Chalkboard.p.ksf', 'color_schemes/Dark_Chalkboard.ksf');
+$cons->InstallAs("$supportDir/schemes/Dark_Chalkboard.ksf", 'color_schemes/Dark_Chalkboard.ksf');
+$cons->Preprocess('color_schemes/Dark_Cobalt.p.ksf', 'color_schemes/Dark_Cobalt.ksf');
+$cons->InstallAs("$supportDir/schemes/Dark_Cobalt.ksf", 'color_schemes/Dark_Cobalt.ksf');
+$cons->Preprocess('color_schemes/Dark_Luxury.p.ksf', 'color_schemes/Dark_Luxury.ksf');
+$cons->InstallAs("$supportDir/schemes/Dark_Luxury.ksf", 'color_schemes/Dark_Luxury.ksf');
+$cons->Preprocess('color_schemes/Dark_Oblivion.p.ksf', 'color_schemes/Dark_Oblivion.ksf');
+$cons->InstallAs("$supportDir/schemes/Dark_Oblivion.ksf", 'color_schemes/Dark_Oblivion.ksf');
+$cons->Preprocess('color_schemes/Dark_Solarized.p.ksf', 'color_schemes/Dark_Solarized.ksf');
+$cons->InstallAs("$supportDir/schemes/Dark_Solarized.ksf", 'color_schemes/Dark_Solarized.ksf');
+$cons->Preprocess('color_schemes/Dark_Soothing.p.ksf', 'color_schemes/Dark_Soothing.ksf');
+$cons->InstallAs("$supportDir/schemes/Dark_Soothing.ksf", 'color_schemes/Dark_Soothing.ksf');
+$cons->Preprocess('color_schemes/Dark_Wombatsosia.p.ksf', 'color_schemes/Dark_Wombatsosia.ksf');
+$cons->InstallAs("$supportDir/schemes/Dark_Wombatsosia.ksf", 'color_schemes/Dark_Wombatsosia.ksf');
+$cons->Preprocess('color_schemes/LowContrast_Zenburn.p.ksf', 'color_schemes/LowContrast_Zenburn.ksf');
+$cons->InstallAs("$supportDir/schemes/LowContrast_Zenburn.ksf", 'color_schemes/LowContrast_Zenburn.ksf');
+$cons->Preprocess('color_schemes/BlueWater.p.ksf', 'color_schemes/BlueWater.ksf');
+$cons->InstallAs("$supportDir/schemes/BlueWater.ksf", 'color_schemes/BlueWater.ksf');
+$cons->Preprocess('color_schemes/Solarized.p.ksf', 'color_schemes/Solarized.ksf');
+$cons->InstallAs("$supportDir/schemes/Solarized.ksf", 'color_schemes/Solarized.ksf');
+
+$cons->BuildAndInstallXpt('koIKeybindingSchemeService.idl');
+$cons->InstallXpcomComponent('koKeybindingSchemeService.py');
+if ($platform eq "darwin") {
+    $cons->Preprocess('Default.p.kkf', 'Windows.kkf');
+    $cons->Install("$supportDir/schemes", 'Windows.kkf');
+    $cons->Preprocess('Mac.p.kkf', 'Default.kkf');
+    $cons->Install("$supportDir/schemes", 'Default.kkf');
+} else {
+    $cons->Preprocess('Default.p.kkf', 'Default.kkf');
+    $cons->Install("$supportDir/schemes", 'Default.kkf');
+}
+$cons->Preprocess('Emacs.p.kkf', 'Emacs.kkf');
+$cons->Install("$supportDir/schemes", 'Emacs.kkf');
+
+$cons->BuildAndInstallXpt('koIViCommandDetail.idl');
+$cons->InstallXpcomComponent('koViCommandDetail.py');
+
+$cons->Preprocess("_vi.p.kkf", "_vi.kkf");
+$cons->Install("$supportDir/schemes", '_vi.kkf');
+$cons->Depends("_vi.kkf", "Default.kkf");
+
+$cons->Preprocess("Vi.p.kkf", "Vi.kkf");
+$cons->Install("$supportDir/schemes", 'Vi.kkf');
+$cons->Depends("Vi.kkf", "_vi.kkf");

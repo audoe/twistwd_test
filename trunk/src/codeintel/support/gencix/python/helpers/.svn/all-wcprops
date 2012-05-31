@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/!svn/ver/10035/openkomodo/trunk/src/codeintel/support/gencix/python/helpers
+END
+_imaging_helper.py
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/!svn/ver/280/openkomodo/trunk/src/codeintel/support/gencix/python/helpers/_imaging_helper.py
+END
+pyexpat_helper.py
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/!svn/ver/280/openkomodo/trunk/src/codeintel/support/gencix/python/helpers/pyexpat_helper.py
+END
+_tkinter_helper.py
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/!svn/ver/280/openkomodo/trunk/src/codeintel/support/gencix/python/helpers/_tkinter_helper.py
+END
+zlib_helper.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/!svn/ver/280/openkomodo/trunk/src/codeintel/support/gencix/python/helpers/zlib_helper.py
+END
+re_helper.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/!svn/ver/10035/openkomodo/trunk/src/codeintel/support/gencix/python/helpers/re_helper.py
+END
+string_helper.py
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/!svn/ver/10034/openkomodo/trunk/src/codeintel/support/gencix/python/helpers/string_helper.py
+END
+_sre_helper.py
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/!svn/ver/10035/openkomodo/trunk/src/codeintel/support/gencix/python/helpers/_sre_helper.py
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/!svn/ver/310/openkomodo/trunk/mozilla/patches-new/freebsd
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/14/openkomodo/trunk/mozilla/patches-new/freebsd/README.txt
+END
+__patchinfo__.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/310/openkomodo/trunk/mozilla/patches-new/freebsd/__patchinfo__.py
+END
+js_src_jsnum.c.patch
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/!svn/ver/14/openkomodo/trunk/mozilla/patches-new/freebsd/js_src_jsnum.c.patch
+END
+patch-libm.patch
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/!svn/ver/14/openkomodo/trunk/mozilla/patches-new/freebsd/patch-libm.patch
+END
+pthread-link.patch
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/!svn/ver/14/openkomodo/trunk/mozilla/patches-new/freebsd/pthread-link.patch
+END
+config-rules.mk.patch
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/!svn/ver/14/openkomodo/trunk/mozilla/patches-new/freebsd/config-rules.mk.patch
+END
+js_src_Makefile.in.patch
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/!svn/ver/14/openkomodo/trunk/mozilla/patches-new/freebsd/js_src_Makefile.in.patch
+END
+storage_build_Makefile.in.patch
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/!svn/ver/14/openkomodo/trunk/mozilla/patches-new/freebsd/storage_build_Makefile.in.patch
+END
+modules_libpref_src_init_all.js.patch
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/!svn/ver/14/openkomodo/trunk/mozilla/patches-new/freebsd/modules_libpref_src_init_all.js.patch
+END
+js_src_standalone.patch
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/14/openkomodo/trunk/mozilla/patches-new/freebsd/js_src_standalone.patch
+END

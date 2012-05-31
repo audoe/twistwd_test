@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repos/!svn/ver/10154/openkomodo/trunk/mozilla/support
+END
+regmozbuild.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/1915/openkomodo/trunk/mozilla/support/regmozbuild.py
+END
+set-curr-python.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/2389/openkomodo/trunk/mozilla/support/set-curr-python.py
+END
+get_mozilla_tree.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/10154/openkomodo/trunk/mozilla/support/get_mozilla_tree.py
+END
+envrun-moz-vc6-x86.bat
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/310/openkomodo/trunk/mozilla/support/envrun-moz-vc6-x86.bat
+END
+envrun-moz-vc8-x86.bat
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/!svn/ver/1915/openkomodo/trunk/mozilla/support/envrun-moz-vc8-x86.bat
+END

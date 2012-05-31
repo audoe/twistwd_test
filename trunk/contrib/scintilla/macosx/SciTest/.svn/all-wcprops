@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/!svn/ver/8716/openkomodo/trunk/contrib/scintilla/macosx/SciTest
+END
+version.plist
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/!svn/ver/14/openkomodo/trunk/contrib/scintilla/macosx/SciTest/version.plist
+END
+SciTest_Prefix.pch
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/14/openkomodo/trunk/contrib/scintilla/macosx/SciTest/SciTest_Prefix.pch
+END
+Info.plist
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/!svn/ver/14/openkomodo/trunk/contrib/scintilla/macosx/SciTest/Info.plist
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/!svn/ver/8716/openkomodo/trunk/contrib/scintilla/macosx/SciTest/main.cpp
+END

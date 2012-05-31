@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/!svn/ver/14/openkomodo/trunk/src/codeintel/test2/bits/rails/habitual-readers/db/migrate
+END
+006_add_amazon_metadata.rb
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/!svn/ver/14/openkomodo/trunk/src/codeintel/test2/bits/rails/habitual-readers/db/migrate/006_add_amazon_metadata.rb
+END
+009_create_reader_images.rb
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/!svn/ver/14/openkomodo/trunk/src/codeintel/test2/bits/rails/habitual-readers/db/migrate/009_create_reader_images.rb
+END
+007_add_amazon_time_stamp.rb
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/!svn/ver/14/openkomodo/trunk/src/codeintel/test2/bits/rails/habitual-readers/db/migrate/007_add_amazon_time_stamp.rb
+END
+008_add_image_url_to_reader.rb
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/!svn/ver/14/openkomodo/trunk/src/codeintel/test2/bits/rails/habitual-readers/db/migrate/008_add_image_url_to_reader.rb
+END
+002_create_readers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/!svn/ver/14/openkomodo/trunk/src/codeintel/test2/bits/rails/habitual-readers/db/migrate/002_create_readers.rb
+END
+005_add_uname_and_password_to_readers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/!svn/ver/14/openkomodo/trunk/src/codeintel/test2/bits/rails/habitual-readers/db/migrate/005_add_uname_and_password_to_readers.rb
+END
+010_add_reader_id_to_reader_image.rb
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/!svn/ver/14/openkomodo/trunk/src/codeintel/test2/bits/rails/habitual-readers/db/migrate/010_add_reader_id_to_reader_image.rb
+END
+004_add_taggable_support.rb
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/!svn/ver/14/openkomodo/trunk/src/codeintel/test2/bits/rails/habitual-readers/db/migrate/004_add_taggable_support.rb
+END
+001_create_books.rb
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/!svn/ver/14/openkomodo/trunk/src/codeintel/test2/bits/rails/habitual-readers/db/migrate/001_create_books.rb
+END
+003_create_readings.rb
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/!svn/ver/14/openkomodo/trunk/src/codeintel/test2/bits/rails/habitual-readers/db/migrate/003_create_readings.rb
+END
