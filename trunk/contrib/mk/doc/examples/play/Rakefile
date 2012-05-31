@@ -1,5 +1,0 @@
-task :default => :answer
-task :answer => ["answer.txt"] do
-    puts "do answer"
-end
-

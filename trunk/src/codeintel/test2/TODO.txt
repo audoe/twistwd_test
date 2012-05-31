@@ -1,4 +1,0 @@
-- test_ciElementTree:
-    test_repr
-    test_names
-- test db upgrading

@@ -1,64 +1,0 @@
-10
-
-dir
-10184
-http://svn.openkomodo.com/repos/openkomodo/trunk/mozilla/patches-new
-http://svn.openkomodo.com/repos
-
-
-
-2012-05-11T18:42:36.050853Z
-10128
-toddw
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-b87d16e7-d29f-4ee1-b5ec-817d645d335f
-
-mozilla-6.0-pyxpcom
-dir
-
-mozilla-7.0-pyxpcom
-dir
-
-mozilla-5.0
-dir
-
-komodo_app
-dir
-
-mozilla-6.0
-dir
-
-mozilla-7.0
-dir
-
-freebsd
-dir
-
-komodo-7.0
-dir
-
-MOZILLA_1_9_1
-dir
-
-mozilla-2.0-pyxpcom
-dir
-
-mozilla-2.0
-dir
-
-mozilla-5.0-pyxpcom
-dir
-

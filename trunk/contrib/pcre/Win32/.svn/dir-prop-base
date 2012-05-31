@@ -1,8 +1,0 @@
-K 10
-svn:ignore
-V 24
-Debug
-pcre.ncb
-pcre.opt
-
-END

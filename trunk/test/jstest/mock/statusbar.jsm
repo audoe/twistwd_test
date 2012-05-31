@@ -1,3 +1,0 @@
-ko.statusBar = {
-    AddMessage: function() {},
-};

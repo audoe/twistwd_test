@@ -1,126 +1,0 @@
-10
-
-dir
-10184
-http://svn.openkomodo.com/repos/openkomodo/trunk/src/codeintel/test2/bits/rails/habitual-readers
-http://svn.openkomodo.com/repos
-
-
-
-2007-09-24T17:33:23.013332Z
-14
-trentm
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-b87d16e7-d29f-4ee1-b5ec-817d645d335f
-
-spec
-dir
-
-README
-file
-
-
-
-
-2012-05-17T15:58:17.073888Z
-c03e541e76f777df453c8a9696199d46
-2007-09-24T17:33:23.013332Z
-14
-trentm
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-7353
-
-public
-dir
-
-test
-dir
-
-app
-dir
-
-log
-dir
-
-Rakefile
-file
-
-
-
-
-2012-05-17T15:58:17.073888Z
-17f2f134da4cd31ea095d5868ca89e86
-2007-09-24T17:33:23.013332Z
-14
-trentm
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-307
-
-script
-dir
-
-config
-dir
-
-db
-dir
-
-doc
-dir
-
-lib
-dir
-

@@ -1,2 +1,0 @@
-answer:
-	@echo do answer
