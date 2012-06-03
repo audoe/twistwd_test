@@ -4,14 +4,16 @@ from twisted.internet import protocol, reactor, defer
 from twisted.web import resource,server,static
 #import pdb; pdb.set_trace() ### XXX BREAKPOINT
 from twisted.protocols import basic
+import time
 class FingerProtocol(basic.LineReceiver):
     #protocol 管理着全部的链接
     def connectionMade(self):
+        self.cycleMessage()
+    def cycleMessage(self):
         ti=self.factory.getTime()
-        timeString='%d:%d:%d:%d:%d:%d'%(ti.tm_year,ti.tm_mon,ti.tm_mday,ti.tm_hour,ti.tm_min,ti.tm_sec)
-   #     import pdb; pdb.set_trace() ### XXX BREAKPOINT
+        timeString='%4d:%02d:%02d-%02d:%02d:%02d'%(ti.tm_year,ti.tm_mon,ti.tm_mday,ti.tm_hour,ti.tm_min,ti.tm_sec)
         self.transport.write(timeString)
-        self.transport.loseConnection()
+        self.call=reactor.callLater(5,self.cycleMessage)
 class FingerFactory(protocol.ServerFactory):
     protocol=FingerProtocol
     def __init__(self,service):
@@ -116,4 +118,4 @@ factory_one=FingerFactory_one(serviceOne)
 internet.TCPServer(79,factory).setServiceParent(service.IServiceCollection(application))
 internet.TCPServer(89,factory_one).setServiceParent(service.IServiceCollection(application))
 webOne=webT(serviceOne)
-internet.TCPServer(80,server.Site(webOne)).setServiceParent(service.IServiceCollection(application))
+internet.TCPServer(8080,server.Site(webOne)).setServiceParent(service.IServiceCollection(application))
